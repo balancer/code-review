@@ -8,6 +8,8 @@
 - Deployed at:
     - [\<network:address\>](\<link to contract on block explorer\>)
     - [\<network:address\>](\<link to contract on block explorer\>)
+- Audit report(s):
+    - [\<audit title\>](\<link to audit\>)
 
 ## Context
 \<Write a brief description of the intended functionality here.\>
