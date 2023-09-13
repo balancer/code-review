@@ -1,0 +1,74 @@
+name: Request for Security Review
+description: Request a security-focused peer review for a Balancer smart contract integration such as a rate provider or token wrapper. This is not a substitute for a full protocol audit.
+labels: ["request"]
+assignees:
+  - rabmarut
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this request form! Please be as thorough as possible to avoid delays in scoping.
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type of Smart Contract
+      description: Please describe the nature of the smart contract you'd like reviewed.
+      options:
+        - Rate Provider
+        - Token Wrapper
+        - Other
+      default: 0
+    validations:
+      required: true
+  - type: input
+    id: type-extended
+    attributes:
+      description: If you selected Other above, please elaborate here.
+    validations:
+      required: false
+  - type: input
+    id: contract
+    attributes:
+      label: Contract Source Code
+      description: Please link to the verified contract deployment on etherscan. If not yet deployed, please link to the contract source on GitHub.
+      placeholder: https://etherscan.io/address/0xBA12222222228d8Ba445958a75a0704d566BF2C8#code
+    validations:
+      required: true
+  - type: textarea
+    id: more-links
+    attributes:
+      label: Additional Links
+      description: If this contract has multiple instances or is deployed to multiple networks, please provide the remaining links here.
+      placeholder: https://etherscan.io/address/0xBA12222222228d8Ba445958a75a0704d566BF2C8#code
+    validations:
+      required: false
+  - type: input
+    id: documentation
+    attributes:
+      label: Protocol Documentation
+      description: Please link to the integrated protocol's documentation for additional context.
+      placeholder: https://docs.balancer.fi/concepts/pools/composable-stable.html
+    validations:
+      required: false
+  - type: input
+    id: audits
+    attributes:
+      label: Protocol Audits
+      description: Please link to any public audit reports available for the integrated protocol.
+      placeholder: https://docs.balancer.fi/reference/contracts/security.html#audits
+    validations:
+      required: false
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Terms and Conditions
+      description: By submitting this issue, you certify that the following are true to the best of your knowledge.
+      options:
+        - label: The protocol to be integrated has been audited by at least one security firm or independent researcher.
+          required: true
+        - label: If deployed, the contract is verified on etherscan.
+          required: true
+        - label: The contract does not rely upon an EOA to supply any critical data (e.g., price).
+          required: true
+        - label: If upgradeable, the contract's administrator is not an EOA.
+          required: true
