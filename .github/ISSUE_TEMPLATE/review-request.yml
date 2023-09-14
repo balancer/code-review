@@ -7,7 +7,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this request form! Please be as thorough as possible to avoid delays in scoping.
+        Thanks for taking the time to fill out this request form! Please be as thorough as possible to avoid delays in scoping. Someone from our team will confirm or reject your submission, or ask for clarity, within 1 business day. Confirmation of the request will be accompanied by an estimated time to completion which is typically 1 week and will not exceed 2 weeks. Estimation depends on the complexity of the smart contract and connected contracts, as well as engineering time available.
   - type: dropdown
     id: type
     attributes:
