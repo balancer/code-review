@@ -122,6 +122,14 @@
             "warnings": [],
             "factory": "0x97390050B63eb56C0e39bB0D8d364333Eb3AFD12",
             "upgradeableComponents": []
+        },
+        "0xc7177B6E18c1Abd725F5b75792e5F7A3bA5DBC2c": {
+            "name": "SavingsDAIRateProvider",
+            "summary": "safe",
+            "review": "./SavingsDAIRateProvider.md",
+            "warnings": [],
+            "factory": "",
+            "upgradeableComponents": []
         }
     },
     "zkevm": {
