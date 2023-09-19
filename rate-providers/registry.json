@@ -17,7 +17,7 @@
                 }
             ]
         },
-        "0x4d8798836b630025C5c98FEbd10a90B3D7596777": {
+        "0xD438f19b1Dd47EbECc5f904d8Fd44583CbFB7c85": {
             "name": "BalancerRateProvider",
             "summary": "safe",
             "review": "./BalancerRateProvider_USDF.md",
