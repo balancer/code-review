@@ -1,0 +1,146 @@
+{
+    "arbitrum": {
+        "0xFC8d81A01deD207aD3DEB4FE91437CAe52deD0b5": {
+            "name": "AnkrETHRateProvider",
+            "summary": "safe",
+            "review": "./AnkrETHRateProvider.md",
+            "warnings": [],
+            "factory": "",
+            "upgradeableComponents": [
+                {
+                    "entrypoint": "0xe05A08226c49b636ACf99c40Da8DC6aF83CE5bB3",
+                    "implementationReviewed": "0x4d8798836b630025C5c98FEbd10a90B3D7596777"
+                },
+                {
+                    "entrypoint": "0xCb0006B31e6b403fEeEC257A8ABeE0817bEd7eBa",
+                    "implementationReviewed": "0xd00b967296B6d8Ec266E4BA64594f892D03A4d0a"
+                }
+            ]
+        },
+        "0x4d8798836b630025C5c98FEbd10a90B3D7596777": {
+            "name": "BalancerRateProvider",
+            "summary": "safe",
+            "review": "./BalancerRateProvider_USDF.md",
+            "warnings": [],
+            "factory": "",
+            "upgradeableComponents": [
+                {
+                    "entrypoint": "0x80e1a981285181686a3951B05dEd454734892a09",
+                    "implementationReviewed": "0x038C8535269E4AdC083Ba90388f15788174d7da7"
+                }
+            ]
+        }
+    },
+    "avalanche": {
+        "0xd6Fd021662B83bb1aAbC2006583A62Ad2Efb8d4A": {
+            "name": "AnkrETHRateProvider",
+            "summary": "safe",
+            "review": "./AnkrETHRateProvider.md",
+            "warnings": [],
+            "factory": "",
+            "upgradeableComponents": [
+                {
+                    "entrypoint": "0x12D8CE035c5DE3Ce39B1fDD4C1d5a745EAbA3b8C",
+                    "implementationReviewed": "0x4d8798836b630025C5c98FEbd10a90B3D7596777"
+                },
+                {
+                    "entrypoint": "0xEf3C162450E1d08804493aA27BE60CDAa054050F",
+                    "implementationReviewed": "0x8ff4fb91c9FFf1F57310dE52D52d033c00523F81"
+                }
+            ]
+        },
+        "0x1bB74eC551cCd9FE416C71F904D64f42079A0a7f": {
+            "name": "GGAVAXRateProvider",
+            "summary": "safe",
+            "review": "./GGAVAXRateProvider.md",
+            "warnings": [
+                "donation"
+            ],
+            "factory": "",
+            "upgradeableComponents": [
+                {
+                    "entrypoint": "0xA25EaF2906FA1a3a13EdAc9B9657108Af7B703e3",
+                    "implementationReviewed": "0xf80Eb498bBfD45f5E2d123DFBdb752677757843E"
+                }
+            ]
+        },
+        "0x13a80aBe608A054059CfB54Ef08809a05Fc07b82": {
+            "name": "YyAvaxRateProvider",
+            "summary": "safe",
+            "review": "./YyAvaxRateProvider.md",
+            "warnings": [],
+            "factory": "",
+            "upgradeableComponents": [
+                {
+                    "entrypoint": "0x4fe8C658f268842445Ae8f95D4D6D8Cfd356a8C8",
+                    "implementationReviewed": "0x280b6475BE9A67DF23B0EF75D00c876a74Bfc4b7"
+                }
+            ]
+        }
+    },
+    "ethereum": {
+        "0x2c3b8c5e98A6e89AAAF21Deebf5FF9d08c4A9FF7": {
+            "name": "BalancerRateProxy",
+            "summary": "safe",
+            "review": "./BalancerRateProxy_uniETH.md",
+            "warnings": [
+                "donation"
+            ],
+            "factory": "",
+            "upgradeableComponents": [
+                {
+                    "entrypoint": "0x4beFa2aA9c305238AA3E0b5D17eB20C045269E9d",
+                    "implementationReviewed": "0x9Ba573D531b45521a4409f3D3e1bC0d7dfF7C757"
+                }
+            ]
+        },
+        "0xAAE054B9b822554dd1D9d1F48f892B4585D3bbf0": {
+            "name": "ETHxRateProvider",
+            "summary": "safe",
+            "review": "./ETHxRateProvider.md",
+            "warnings": [],
+            "factory": "",
+            "upgradeableComponents": [
+                {
+                    "entrypoint": "0xcf5EA1b38380f6aF39068375516Daf40Ed70D299",
+                    "implementationReviewed": "0x9dceaeB1C035C1427E64E6c6fEC61F816e0d0FF5"
+                }
+            ]
+        },
+        "0x67560A970FFaB46D65cB520dD3C2fF4E684f29c2": {
+            "name": "TBYRateProvider",
+            "summary": "safe",
+            "review": "./TBYRateProvider.md",
+            "warnings": [],
+            "factory": "0x97390050B63eb56C0e39bB0D8d364333Eb3AFD12",
+            "upgradeableComponents": []
+        },
+        "0xDceC4350d189Ea7e1DD2C9BDa63cB0e0Ae34b81F": {
+            "name": "TBYRateProvider",
+            "summary": "safe",
+            "review": "./TBYRateProvider.md",
+            "warnings": [],
+            "factory": "0x97390050B63eb56C0e39bB0D8d364333Eb3AFD12",
+            "upgradeableComponents": []
+        }
+    },
+    "zkevm": {
+        "0xFC8d81A01deD207aD3DEB4FE91437CAe52deD0b5": {
+            "name": "AnkrETHRateProvider",
+            "summary": "safe",
+            "review": "./AnkrETHRateProvider.md",
+            "warnings": [],
+            "factory": "",
+            "upgradeableComponents": [
+                {
+                    "entrypoint": "0x12D8CE035c5DE3Ce39B1fDD4C1d5a745EAbA3b8C",
+                    "implementationReviewed": "0x8d98D8ec0D930078a083C7be54430D2093d3D4aB"
+                },
+                {
+                    "entrypoint": "0xEf3C162450E1d08804493aA27BE60CDAa054050F",
+                    "implementationReviewed": "0xd00b967296B6d8Ec266E4BA64594f892D03A4d0a"
+                }
+            ]
+        }
+    }
+}
