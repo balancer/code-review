@@ -143,6 +143,26 @@
             ],
             "factory": "",
             "upgradeableComponents": []
+        },
+        "0xff315299C4d3FB984b67e31F028724b6a9aEb077": {
+            "name": "ERC4626RateProvider",
+            "summary": "safe",
+            "review": "./stAgEurRateProvider.md",
+            "warnings": [
+                "donation",
+                "only18decimals"
+            ],
+            "factory": "",
+            "upgradeableComponents": [
+                {
+                    "entrypoint": "0x004626A008B1aCdC4c74ab51644093b155e59A23",
+                    "implementationReviewed": "0x6C04c39B9E73aC91106D12F828e2E29Fd8ef1024"
+                },
+                {
+                    "entrypoint": "0x4b1E2c2762667331Bc91648052F646d1b0d35984",
+                    "implementationReviewed": "0x59153e939c5b4721543251ff3049Ea04c755373B"
+                }
+            ]
         }
     },
     "zkevm": {
