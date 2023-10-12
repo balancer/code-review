@@ -132,6 +132,19 @@
             "upgradeableComponents": []
         }
     },
+    "gnosis": {
+        "0x89C80A4540A00b5270347E02e2E144c71da2EceD": {
+            "name": "ERC4626RateProvider",
+            "summary": "safe",
+            "review": "./SavingsDAIRateProviderGnosis.md",
+            "warnings": [
+                "donation",
+                "only18decimals"
+            ],
+            "factory": "",
+            "upgradeableComponents": []
+        }
+    },
     "zkevm": {
         "0xFC8d81A01deD207aD3DEB4FE91437CAe52deD0b5": {
             "name": "AnkrETHRateProvider",
