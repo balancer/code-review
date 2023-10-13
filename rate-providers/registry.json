@@ -29,6 +29,31 @@
                     "implementationReviewed": "0x038C8535269E4AdC083Ba90388f15788174d7da7"
                 }
             ]
+        },
+        "0x2bA447d4B823338435057571bF70907F8224BB47": {
+            "name": "WrappedUsdPlusRateProvider",
+            "summary": "safe",
+            "review": "./WrappedUsdPlusRateProvider.md",
+            "warnings": [],
+            "factory": "",
+            "upgradeableComponents": [
+                {
+                    "entrypoint": "0xB86fb1047A955C0186c77ff6263819b37B32440D",
+                    "implementationReviewed": "0xA7E51DF47dcd98F729a80b1C931aAC2b5194f4A0"
+                },
+                {
+                    "entrypoint": "0xe80772Eaf6e2E18B651F160Bc9158b2A5caFCA65",
+                    "implementationReviewed": "0x159f28F598b5C5340D6A902D34eB373D30499660"
+                },
+                {
+                    "entrypoint": "0x73cb180bf0521828d8849bc8CF2B920918e23032",
+                    "implementationReviewed": "0x763018d8B4c27a6Fb320CD588e2Bc355D0d3049E"
+                },
+                {
+                    "entrypoint": "0xa44dF8A8581C2cb536234E6640112fFf932ED2c4",
+                    "implementationReviewed": "0x45523bC29D4bCec386f548bDc295DB28483c56E8"
+                }
+            ]
         }
     },
     "avalanche": {
@@ -74,6 +99,33 @@
                 {
                     "entrypoint": "0x4fe8C658f268842445Ae8f95D4D6D8Cfd356a8C8",
                     "implementationReviewed": "0x280b6475BE9A67DF23B0EF75D00c876a74Bfc4b7"
+                }
+            ]
+        }
+    },
+    "base": {
+        "0xe561451322a5efC51E6f8ffa558C7482c892Bc1A": {
+            "name": "WrappedUsdPlusRateProvider",
+            "summary": "safe",
+            "review": "./WrappedUsdPlusRateProvider.md",
+            "warnings": [],
+            "factory": "",
+            "upgradeableComponents": [
+                {
+                    "entrypoint": "0xd95ca61CE9aAF2143E81Ef5462C0c2325172E028",
+                    "implementationReviewed": "0xE3434045a3bE5376e8d3Cf841981835996561f80"
+                },
+                {
+                    "entrypoint": "0xB79DD08EA68A908A97220C76d19A6aA9cBDE4376",
+                    "implementationReviewed": "0x441Df98011aD427C5692418999ba2150e6d84277"
+                },
+                {
+                    "entrypoint": "0x7cb1B38591021309C64f451859d79312d8Ca2789",
+                    "implementationReviewed": "0x083f016e9928a3eaa3aca0ff9f4e4ded5db3b4b7"
+                },
+                {
+                    "entrypoint": "0x8ab9012D1BfF1b62c2ad82AE0106593371e6b247",
+                    "implementationReviewed": "0x292F13d4BfD6f6aE0Bf8Be981bcC44eC4850e5E9"
                 }
             ]
         }
@@ -161,6 +213,33 @@
                 {
                     "entrypoint": "0x4b1E2c2762667331Bc91648052F646d1b0d35984",
                     "implementationReviewed": "0x59153e939c5b4721543251ff3049Ea04c755373B"
+                }
+            ]
+        }
+    },
+    "optimism": {
+        "0xe561451322a5efC51E6f8ffa558C7482c892Bc1A": {
+            "name": "WrappedUsdPlusRateProvider",
+            "summary": "safe",
+            "review": "./WrappedUsdPlusRateProvider.md",
+            "warnings": [],
+            "factory": "",
+            "upgradeableComponents": [
+                {
+                    "entrypoint": "0xA348700745D249c3b49D2c2AcAC9A5AE8155F826",
+                    "implementationReviewed": "0x52A8F84672B9778632F98478B4DCfa2Efb7E3247"
+                },
+                {
+                    "entrypoint": "0x73cb180bf0521828d8849bc8CF2B920918e23032",
+                    "implementationReviewed": "0xB79DD08EA68A908A97220C76d19A6aA9cBDE4376"
+                },
+                {
+                    "entrypoint": "0xe80772Eaf6e2E18B651F160Bc9158b2A5caFCA65",
+                    "implementationReviewed": "0xcf02cf91b5ec8230d6bd26c48a8b762ce6081c0f"
+                },
+                {
+                    "entrypoint": "0xBf3FCee0E856c2aa89dc022f00D6D8159A80F011",
+                    "implementationReviewed": "0x98ae7F3fD47100b174014dCD143Eb43AD7acd79A"
                 }
             ]
         }
