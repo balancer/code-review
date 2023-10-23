@@ -182,6 +182,33 @@
             "warnings": [],
             "factory": "",
             "upgradeableComponents": []
+        },
+        "0x4b697C8c3220FcBdd02DFFa46db5a896ae7a0843": {
+            "name": "TruMaticRateProvider",
+            "summary": "safe",
+            "review": "./TruMaticRateProvider.md",
+            "warnings": [
+                "donation"
+            ],
+            "factory": "",
+            "upgradeableComponents": [
+                {
+                    "entrypoint": "0x4b697C8c3220FcBdd02DFFa46db5a896ae7a0843",
+                    "implementationReviewed": "0x6e8135b003F288aA4009D948e9646588861C5575"
+                },
+                {
+                    "entrypoint": "0xA43A7c62D56dF036C187E1966c03E2799d8987ed",
+                    "implementationReviewed": "0x2a9fD373Ed3Ce392bb5ad8Ee146CFAB66c9fAEae"
+                },
+                {
+                    "entrypoint": "0xeA077b10A0eD33e4F68Edb2655C18FDA38F84712",
+                    "implementationReviewed": "0xf98864DA30a5bd657B13e70A57f5718aBf7BAB31"
+                },
+                {
+                    "entrypoint": "0x5e3Ef299fDDf15eAa0432E6e66473ace8c13D908",
+                    "implementationReviewed": "0xbA9Ac3C9983a3e967f0f387c75cCbD38Ad484963"
+                }
+            ]
         }
     },
     "gnosis": {
