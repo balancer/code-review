@@ -4,7 +4,7 @@
 - Reviewed by: @baileyspraggins
 - Checked by: @gerrrg 
 - Deployed at:
-    - [eth:0xd8689E8740C23d73136744817347fd6aC464E842>](https://etherscan.io/address/0xd8689E8740C23d73136744817347fd6aC464E842)
+    - [eth:0xd8689E8740C23d73136744817347fd6aC464E842](https://etherscan.io/address/0xd8689E8740C23d73136744817347fd6aC464E842)
 - Audit report(s):
     - [Kuma Protocol](https://docs.kuma.bond/kuma-protocol/ressources/security-and-audits)
 

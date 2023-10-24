@@ -159,6 +159,16 @@
                 }
             ]
         },
+        "0xA6aeD7922366611953546014A3f9e93f058756a2": {
+            "name": "QueenRateProvider",
+            "summary": "safe",
+            "review": "./QueenRateProvider.md",
+            "warnings": [
+                "donation"
+            ],
+            "factory": "",
+            "upgradeableComponents": []
+        },
         "0x67560A970FFaB46D65cB520dD3C2fF4E684f29c2": {
             "name": "TBYRateProvider",
             "summary": "safe",
@@ -180,6 +190,16 @@
             "summary": "safe",
             "review": "./SavingsDAIRateProvider.md",
             "warnings": [],
+            "factory": "",
+            "upgradeableComponents": []
+        },
+        "0xd8689E8740C23d73136744817347fd6aC464E842": {
+            "name": "wUSDKRateProvider",
+            "summary": "safe",
+            "review": "./wUSDKRateProvider.md",
+            "warnings": [
+                "donation"
+            ],
             "factory": "",
             "upgradeableComponents": []
         },
