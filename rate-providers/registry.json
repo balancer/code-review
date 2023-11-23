@@ -239,6 +239,39 @@
             ],
             "factory": "",
             "upgradeableComponents": []
+        },
+        "0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee": {
+            "name": "WeETH",
+            "summary": "safe",
+            "review": "./WeETH.md",
+            "warnings": [],
+            "factory": "",
+            "upgradeableComponents": [
+                {
+                    "entrypoint": "0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee",
+                    "implementationReviewed": "0xe629ee84C1Bd9Ea9c677d2D5391919fCf5E7d5D9"
+                },
+                {
+                    "entrypoint": "0x308861A430be4cce5502d0A12724771Fc6DaF216",
+                    "implementationReviewed": "0x4D784Aa9eacc108ea5A326747870897f88d93860"
+                },
+                {
+                    "entrypoint": "0x35fA164735182de50811E8e2E824cFb9B6118ac2",
+                    "implementationReviewed": "0x1B47A665364bC15C28B05f449B53354d0CefF72f"
+                },
+                {
+                    "entrypoint": "0x3d320286E014C3e1ce99Af6d6B00f0C1D63E3000",
+                    "implementationReviewed": "0x047A7749AD683C2Fd8A27C7904Ca8dD128F15889"
+                },
+                {
+                    "entrypoint": "0x0EF8fa4760Db8f5Cd4d993f3e3416f30f942D705",
+                    "implementationReviewed": "0x9D6fC3cBaaD0ef36b2B3a4b4b311C9dd267a4aeA"
+                },
+                {
+                    "entrypoint": "0x57AaF0004C716388B21795431CD7D5f9D3Bb6a41",
+                    "implementationReviewed": "0x698cB4508F13Cc12aAD36D2B64413C302B781d9A"
+                }
+            ]
         }
     },
     "gnosis": {
