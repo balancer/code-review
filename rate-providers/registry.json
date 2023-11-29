@@ -272,6 +272,14 @@
                     "implementationReviewed": "0x698cB4508F13Cc12aAD36D2B64413C302B781d9A"
                 }
             ]
+        },
+        "0x8023518b2192FB5384DAdc596765B3dD1cdFe471": {
+            "name": "PriceFeed",
+            "summary": "safe",
+            "review": "./osEthRateProvider.md",
+            "warnings": [],
+            "factory": "",
+            "upgradeableComponents": []
         }
     },
     "gnosis": {
