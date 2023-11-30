@@ -54,6 +54,21 @@
                     "implementationReviewed": "0x45523bC29D4bCec386f548bDc295DB28483c56E8"
                 }
             ]
+        },
+        "0x6dbF2155B0636cb3fD5359FCcEFB8a2c02B6cb51": {
+            "name": "PlsRdntTokenV2",
+            "summary": "safe",
+            "review": "./PlsRdntTokenV2.md",
+            "warnings": [
+                "donation"
+            ],
+            "factory": "",
+            "upgradeableComponents": [
+                {
+                    "entrypoint": "0x6dbF2155B0636cb3fD5359FCcEFB8a2c02B6cb51",
+                    "implementationReviewed": "0xF7eB1efc5A3fD02399aC82aa983962280324F9b7"
+                }
+            ]
         }
     },
     "avalanche": {
