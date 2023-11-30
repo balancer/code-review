@@ -357,6 +357,35 @@
             ]
         }
     },
+    "polygon": {
+        "0x76D8B79Fb9afD4dA89913458C90B6C09676628E2": {
+            "name": "RateProvider",
+            "summary": "safe",
+            "review": "./RateProvider_wFRK.md",
+            "warnings": [
+                "donation"
+            ],
+            "factory": "",
+            "upgradeableComponents": [
+                {
+                    "entrypoint": "0x2cb7285733A30BB08303B917A7a519C88146C6Eb",
+                    "implementationReviewed": "0xEdb20e3cD8C7c149Ea57fe470fb9685c4b1B8703"
+                },
+                {
+                    "entrypoint": "0x4dBA794671B891D2Ee2E3E7eA9E993026219941C",
+                    "implementationReviewed": "0x7714fcFe0d9C4726F6C1E3B1275C2951B9B54F65"
+                },
+                {
+                    "entrypoint": "0x0aC2E3Cd1E9b2DA91972d2363e76B5A0cE514e73",
+                    "implementationReviewed": "0x41d4D26F70951a2134DC862ea6248fFBE2a516bb"
+                },
+                {
+                    "entrypoint": "0x173EB1d561CcEFd8e83a3741483a8Bd76dF827Ef",
+                    "implementationReviewed": "0x72e923047245D2B58D87f311a2b5b487620EE60A"
+                }
+            ]
+        }
+    },
     "zkevm": {
         "0xFC8d81A01deD207aD3DEB4FE91437CAe52deD0b5": {
             "name": "AnkrETHRateProvider",
