@@ -28,8 +28,8 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 ### Administrative Privileges
 - [ ] The Rate Provider is upgradeable (e.g., via a proxy architecture or an `onlyOwner` function that updates the price source address).
 - [x] Some other portion of the price pipeline is upgradeable (e.g., the token itself, an oracle, or some piece of a larger system that tracks the price).
-    - upgradeable component: `ReaperStrategyStabilityPool` [optimism:0x8F813Bc36261669E8F75e1ebC341B6845B0D7824](https://optimistic.etherscan.io/address/0x766da60cc688e45b5948f05cb947d3b8df7274f5#code)
-    - implementation: ([optimism:0xFBD08A6869D3e4EC8A21895c1e269f4b980813f0](https://optimistic.etherscan.io/address/0xfa097bd1e57d720c2f884c3dff0b5fce23a2b09e#code))
+    - upgradeable component: `ReaperStrategyStabilityPool` [optimism:0xFBD08A6869D3e4EC8A21895c1e269f4b980813f0](https://optimistic.etherscan.io/address/0xFBD08A6869D3e4EC8A21895c1e269f4b980813f0#writeProxyContract)
+    - implementation: [optimism:0xfA097bD1E57d720C2f884C3DFF0B5FCE23A2B09e](https://optimistic.etherscan.io/address/0xfa097bd1e57d720c2f884c3dff0b5fce23a2b09e#code)
     - admin address: [optimism:0x9BC776dBb134Ef9D7014dB1823Cd755Ac5015203](https://optimistic.etherscan.io/address/0xeb9C9b785aA7818B2EBC8f9842926c4B9f707e4B)
     - admin type: multisig
         - multisig threshold/signers: 4/9
@@ -40,7 +40,6 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
     - admin address: [optimism:0x9BC776dBb134Ef9D7014dB1823Cd755Ac5015203](https://optimistic.etherscan.io/address/0x9BC776dBb134Ef9D7014dB1823Cd755Ac5015203)
     - admin type: multisig:
         - multisig threshold/signers: 4/9
-        - trustworthy signers? NO
     - comment: Upgradeability in this section refers to an admin having the authority to add a new contract that is allowed to report gains & losses to the Vault. Note: Before a strategy can report losses, it needs to have funds allocated to it. A freshly created strategy can not report losses to the Vault if it did not previously get funds allocated to it.
 
 ### Oracles
@@ -51,7 +50,7 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 ### Common Manipulation Vectors
 - [x] The Rate Provider is susceptible to donation attacks.
     - It is possible to manipulate the exchange rate rate via a donation attack. The workflow would be as follows:
-        - Send ERN token to the strategy before a `harvest` call. During the execution of `harvest` the balance Of the `want` token (ERN) is being read and used as a parameter for `roi` reporting on the `ReaperVaultV2`. 
+        - Send ERN token to the strategy before a `harvest` call. During the execution of `harvest` the balance of the `want` token (ERN) is being read and used as a parameter for `roi` reporting on the `ReaperVaultV2`. 
 
 ## Additional Findings
 To save time, we do not bother pointing out low-severity/informational issues or gas optimizations (unless the gas usage is particularly egregious). Instead, we focus only on high- and medium-severity findings which materially impact the contract's functionality and could harm users.
