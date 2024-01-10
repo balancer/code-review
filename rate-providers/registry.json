@@ -366,12 +366,12 @@
             "factory": "",
             "upgradeableComponents": [
                 {
-                    "entrypoint": "0x8F813Bc36261669E8F75e1ebC341B6845B0D7824",
-                    "implementationReviewed": "0xFBD08A6869D3e4EC8A21895c1e269f4b980813f0"
+                    "entrypoint": "0xFBD08A6869D3e4EC8A21895c1e269f4b980813f0",
+                    "implementationReviewed": "0xfA097bD1E57d720C2f884C3DFF0B5FCE23A2B09e"
                 },
                 {
-                    "entrypoint": "0x1225c53F510877074d0D1Bace26C4f0581c24cF7",
-                    "implementationReviewed": "0x1225c53F510877074d0D1Bace26C4f0581c24cF7"
+                    "entrypoint": "0x3eE6107d9C93955acBb3f39871D32B02F82B78AB",
+                    "implementationReviewed": "0x3eE6107d9C93955acBb3f39871D32B02F82B78AB"
                 }
             ]
         }
