@@ -355,6 +355,25 @@
                     "implementationReviewed": "0x98ae7F3fD47100b174014dCD143Eb43AD7acd79A"
                 }
             ]
+        },
+        "0xBCEBb4dcdEc1c12bf7eB31bd26bc9C3b8F55C966": {
+            "name": "",
+            "summary": "safe",
+            "review": "./stERNRateProvider.md",
+            "warnings": [
+                "donation"
+            ],
+            "factory": "",
+            "upgradeableComponents": [
+                {
+                    "entrypoint": "0x8F813Bc36261669E8F75e1ebC341B6845B0D7824",
+                    "implementationReviewed": "0xFBD08A6869D3e4EC8A21895c1e269f4b980813f0"
+                },
+                {
+                    "entrypoint": "0x1225c53F510877074d0D1Bace26C4f0581c24cF7",
+                    "implementationReviewed": "0x1225c53F510877074d0D1Bace26C4f0581c24cF7"
+                }
+            ]
         }
     },
     "polygon": {
