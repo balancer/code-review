@@ -10,7 +10,7 @@
     - [Multistrategy Vault](https://3473490336-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-M_3DKLtyg_0E-mdery8%2Fuploads%2FlKd5309SYDm9KrE6jiBs%2FMULTISTRATEGY_REP-final-20221108T194523Z.pdf?alt=media&token=bcfa792a-f59c-4043-b069-fa297958bf71)
 
 ## Context
-Ethos Reserve let's users borrow ERN against deposited collateral. ERN aims to be a dollar pegged Stablecoin. users can stake the ERN token in Ethos Reserve's Stability pool and receive the stERN token. stERN is implemented as ReaperVaultERC4626 and captures the yield generated from liquidations and the underlying collateral.
+Ethos Reserve lets users borrow ERN against deposited collateral. ERN aims to be a dollar pegged Stablecoin. users can stake the ERN token in Ethos Reserve's Stability pool and receive the stERN token. stERN is implemented as ReaperVaultERC4626 and captures the yield generated from liquidations and the underlying collateral.
 
 the stERN Rate Provider reads the exchange rate from the ReaperVaultERC4626 
 
@@ -35,8 +35,8 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
         - multisig threshold/signers: 4/9
         - multisig timelock? YES - 48 hours.
 
-    - upgradeable component: `ReaperVaultV2`
-    [optimism:0x1225c53F510877074d0D1Bace26C4f0581c24cF7](https://optimistic.etherscan.io/address/0x1225c53f510877074d0d1bace26c4f0581c24cf7#code)
+    - upgradeable component: `ReaperVaultERC4626`
+    [optimism:0x3eE6107d9C93955acBb3f39871D32B02F82B78AB](https://optimistic.etherscan.io/address/0x3eE6107d9C93955acBb3f39871D32B02F82B78AB)
     - admin address: [optimism:0x9BC776dBb134Ef9D7014dB1823Cd755Ac5015203](https://optimistic.etherscan.io/address/0x9BC776dBb134Ef9D7014dB1823Cd755Ac5015203)
     - admin type: multisig:
         - multisig threshold/signers: 4/9
@@ -57,6 +57,6 @@ To save time, we do not bother pointing out low-severity/informational issues or
 
 
 ## Conclusion
-**Summary judgment: SAFE
+**Summary judgment: SAFE**
 
-Overall this Rate Provider should work well in pool operations with Balancer pools. However it depends on the admin being trusted.They key components having an influence over the reported price are the `ReaperVaultV2` and the `ReaperStrategyStabilityPool`.
+Overall this Rate Provider should work well in pool operations with Balancer pools. However it depends on the admin being trusted.The key components having an influence over the reported price are the `ReaperVaultERC4626` and the `ReaperStrategyStabilityPool`.
