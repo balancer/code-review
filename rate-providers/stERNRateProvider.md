@@ -2,7 +2,7 @@
 
 ## Details
 - Reviewed by: @mkflow27
-- Checked by: @\<GitHub handle of secondary reviewer\>
+- Checked by: @danielmkm & @SHAKOTN
 - Deployed at:
     - [optimism:0xBCEBb4dcdEc1c12bf7eB31bd26bc9C3b8F55C966](https://optimistic.etherscan.io/address/0xBCEBb4dcdEc1c12bf7eB31bd26bc9C3b8F55C966#code)
 - Audit report(s):
