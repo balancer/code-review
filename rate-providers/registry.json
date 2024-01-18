@@ -295,6 +295,45 @@
             "warnings": [],
             "factory": "",
             "upgradeableComponents": []
+        },
+        "0x387dBc0fB00b26fb085aa658527D5BE98302c84C": {
+            "name": "BalancerRateProvider",
+            "summary": "safe",
+            "review": "ezETHRateProvider.md",
+            "warnings": [
+                "donation"
+            ],
+            "factory": "",
+            "upgradeableComponents": [
+                {
+                    "entrypoint": "0x387dBc0fB00b26fb085aa658527D5BE98302c84C",
+                    "implementationReviewed": "0x9284cEFf248315377e782df0666EE9832E119508"
+                },
+                {
+                    "entrypoint": "0xbf5495Efe5DB9ce00f80364C8B423567e58d2110",
+                    "implementationReviewed": "0x1e756B7bCca7B26FB9D85344B3525F5559bbacb0"
+                },
+                {
+                    "entrypoint": "0x74a09653A083691711cF8215a6ab074BB4e99ef5",
+                    "implementationReviewed": "0x18Ac4D26ACD4c5C4FE98C9098D2E5e1e501A042a"
+                },
+                {
+                    "entrypoint": "0x4994EFc62101A9e3F885d872514c2dC7b3235849",
+                    "implementationReviewed": "0x09aA40B6e0e768a04d650302e1879DCED6b7666E"
+                },
+                {
+                    "entrypoint": "0x5a12796f7e7EBbbc8a402667d266d2e65A814042",
+                    "implementationReviewed": "0x5a12796f7e7EBbbc8a402667d266d2e65A814042"
+                },
+                {
+                    "entrypoint": "0xbAf5f3A05BD7Af6f3a0BBA207803bf77e2657c8F",
+                    "implementationReviewed": "0xceEa4f26924F2CF55f59A560d6F323241728019a"
+                },
+                {
+                    "entrypoint": "0x0B1981a9Fcc24A445dE15141390d3E46DA0e425c",
+                    "implementationReviewed": "0xceEa4f26924F2CF55f59A560d6F323241728019a"
+                }
+            ]
         }
     },
     "gnosis": {
