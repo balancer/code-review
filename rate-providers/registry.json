@@ -69,6 +69,21 @@
                     "implementationReviewed": "0xF7eB1efc5A3fD02399aC82aa983962280324F9b7"
                 }
             ]
+        },
+        "0xd4e96ef8eee8678dbff4d535e033ed1a4f7605b7": {
+            "name": "RocketBalancerRateProvider",
+            "summary": "safe",
+            "review": "./rETHRateProvider.md",
+            "warnings": [
+                "donation"
+            ],
+            "factory": "",
+            "upgradeableComponents": [
+                {
+                    "entrypoint": "0x1d8f8f00cfa6758d7bE78336684788Fb0ee0Fa46",
+                    "implementationReviewed": "0x1d8f8f00cfa6758d7bE78336684788Fb0ee0Fa46"
+                }
+            ]
         }
     },
     "avalanche": {
