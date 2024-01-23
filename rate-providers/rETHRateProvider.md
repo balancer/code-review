@@ -2,7 +2,7 @@
 
 ## Details
 - Reviewed by: @mkflow27
-- Checked by: @\<GitHub handle of secondary reviewer\>
+- Checked by: @danielmkm
 - Deployed at:
     - [arbitrum:0xd4e96ef8eee8678dbff4d535e033ed1a4f7605b7](https://arbiscan.io/address/0xd4e96ef8eee8678dbff4d535e033ed1a4f7605b7#readContract)
 - Audit report(s):
