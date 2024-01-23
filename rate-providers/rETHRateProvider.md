@@ -33,7 +33,7 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 
 ### Oracles
 - [x] Price data is provided by an off-chain source (e.g., a Chainlink oracle, a multisig, or a network of nodes).
-    - source: The `onlyTrustedNodes` modifiers ensures that the caller, which updates pricing data is a trusted `msg.sender`. A list of nodes which can successfully update `RocketStorage` via `RocketNetworkBalances.updateBalances` is out of scope here.
+    - source: The `onlyTrustedNodes` modifier ensures that the caller, which updates pricing data is a trusted `msg.sender`. A list of nodes which can successfully update `RocketStorage` via `RocketNetworkBalances.updateBalances` is out of scope here.
     - any protections? YES: Many protections are in place to ensure only valid core rocket pool protocol data is submitted. Such as: Timestamp protection, duplicate submissions, unique submitters, threshold protection.
 
 
