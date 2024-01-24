@@ -2,7 +2,7 @@ name: Request for Security Review
 description: Request a security-focused peer review for a Balancer smart contract integration such as a rate provider or token wrapper. This is not a substitute for a full protocol audit.
 labels: ["request"]
 assignees:
-  - rabmarut
+  - mkflow27
 body:
   - type: markdown
     attributes:
