@@ -349,6 +349,38 @@
                     "implementationReviewed": "0xceEa4f26924F2CF55f59A560d6F323241728019a"
                 }
             ]
+        },
+        "0x746df66bc1Bb361b9E8E2a794C299c3427976e6C": {
+            "name": "RsETHRateProvider",
+            "summary": "unsafe",
+            "review": "rsETHRateProvider.md",
+            "warnings": [
+                "donation",
+                "eoa"
+            ],
+            "factory": "",
+            "upgradeableComponents": [
+                {
+                    "entrypoint": "0x349A73444b1a310BAe67ef67973022020d70020d",
+                    "implementationReviewed": "0xf1bed40dbee8fc0f324fa06322f2bbd62d11c97d,"
+                },
+                {
+                    "entrypoint": "0x947Cb49334e6571ccBFEF1f1f1178d8469D65ec7",
+                    "implementationReviewed": "0x8d9cd771c51b7f6217e0000c1c735f05adbe6594"
+                },
+                {
+                    "entrypoint": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7",
+                    "implementationReviewed": "0x8e2fe2f55f295f3f141213789796fa79e709ef23"
+                },
+                {
+                    "entrypoint": "0x3D08ccb47ccCde84755924ED6B0642F9aB30dFd2",
+                    "implementationReviewed": "0x0379e85188bc416a1d43ab04b28f38b5c63f129e"
+                },
+                {
+                    "entrypoint": "0x8546A7C8C3C537914C3De24811070334568eF427",
+                    "implementationReviewed": "0xd7db9604ef925af96cda6b45026be64c691c7704"
+                }
+            ]
         }
     },
     "gnosis": {
