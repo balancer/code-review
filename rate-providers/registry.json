@@ -352,11 +352,10 @@
         },
         "0x746df66bc1Bb361b9E8E2a794C299c3427976e6C": {
             "name": "RsETHRateProvider",
-            "summary": "unsafe",
+            "summary": "safe",
             "review": "rsETHRateProvider.md",
             "warnings": [
-                "donation",
-                "eoa"
+                "donation"
             ],
             "factory": "",
             "upgradeableComponents": [
