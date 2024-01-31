@@ -31,11 +31,6 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
     - admin type: multisig
         - multisig threshold/signers: 3/5
 
-- upgradeable component: `LRTOracle` ([ethereum:0x349A73444b1a310BAe67ef67973022020d70020d](https://etherscan.io/address/0x349A73444b1a310BAe67ef67973022020d70020d))
-    - admin address: [ethereum:0x7aad74b7f0d60d5867b59dbd377a71783425af47](https://etherscan.io/address/0x7aad74b7f0d60d5867b59dbd377a71783425af47)
-    - admin type: EOA
-        - comment: This address is allowed to call `updatePriceOracleFor` changing the target of an external call and potentially forcing the return of a malicious bad pricing component.
-
 - upgradeable component: `LRTConfig` ([ethereum:0x947Cb49334e6571ccBFEF1f1f1178d8469D65ec7](https://etherscan.io/address/0x947Cb49334e6571ccBFEF1f1f1178d8469D65ec7#code))
     - admin address: [ethereum:0xb9577E83a6d9A6DE35047aa066E3758221FE0DA2](https://etherscan.io/address/0xb9577E83a6d9A6DE35047aa066E3758221FE0DA2)
     - admin type: multisig
@@ -70,17 +65,11 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 ## Additional Findings
 To save time, we do not bother pointing out low-severity/informational issues or gas optimizations (unless the gas usage is particularly egregious). Instead, we focus only on high- and medium-severity findings which materially impact the contract's functionality and could harm users.
 
-### H-01: Part of the pricing pipeline can be upgraded by an EOA. 
-The pricing calculation requires an external call to an oracle contract of the allowed assets. The `LRTOracle` reads an asset price via `getAssetPrice`. The target of the external call can be set by calling `updatePriceOracleFor`. Currently 0x7aad74b7f0d60d5867b59dbd377a71783425af47 is allowed to update the oracle target address. Since this is an EOA, the rate Provider is unfit for operations in Balancer pools. 
-Recommendation: Set the LRTManager to be a multisig. 
-
 ### M-01: Hardcoded stETH price 
 The rsETH pricing logic loops over the involved assets pricing oracles. This includes the [pricing oracle for stETH](https://etherscan.io/address/0x4cB8d6DCd56d6b371210E70837753F2a835160c4#code). The price of stETH in the Rate Provider pricing system is set to 1e18 which can pose a risk depending on LIDOs operational staking integrity. 
 Recommendation: Consider replacing the hardcoded value to incorporate for example a stETH/ETH Chainlink price feed. 
 
-
 ## Conclusion
-**Summary judgment: UNSAFE**
+**Summary judgment: SAFE**
 
-Currently this rateProvider is unfit to use as part of the pricing pipeline depends on an EOA that has administrative privileges to update the oracle address. The oracle address is relevant as it has a direct impact on price calculation.
-Upgradeability further down the asset oracle contracts have not been investigated and can exist potentially adding more administrative controls.
+This rate Provider can be considered safe under the assumption that the stETH/ETH peg holds the peg of 1:1. This should be made clear to users in the Balancer Pool. 
