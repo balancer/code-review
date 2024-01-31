@@ -72,4 +72,4 @@ Recommendation: Consider replacing the hardcoded value to incorporate for exampl
 ## Conclusion
 **Summary judgment: SAFE**
 
-This rate Provider can be considered safe under the assumption that the stETH/ETH peg holds the peg of 1:1. This should be made clear to users in the Balancer Pool. 
+This rate Provider can be considered fit for pool operations under the assumption that the stETH/ETH peg holds at 1:1. This should be made clear to users in the Balancer Pool.
