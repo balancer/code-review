@@ -479,11 +479,10 @@
         },
         "0x4186BFC76E2E237523CBC30FD220FE055156b41F": {
             "name": "RSETHRateReceiver",
-            "summary": "unsafe",
+            "summary": "safe",
             "review": "./rsEthRateProviderPolygonZKEVM.md",
             "warnings": [
-                "donation",
-                "eoa"
+                "donation"
             ],
             "factory": "",
             "upgradeableComponents": [
