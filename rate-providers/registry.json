@@ -507,6 +507,21 @@
                     "implementationReviewed": "0xd00b967296B6d8Ec266E4BA64594f892D03A4d0a"
                 }
             ]
+        },
+        "0x4186BFC76E2E237523CBC30FD220FE055156b41F": {
+            "name": "RSETHRateReceiver",
+            "summary": "safe",
+            "review": "./rsEthRateProviderPolygonZKEVM.md",
+            "warnings": [
+                "donation"
+            ],
+            "factory": "",
+            "upgradeableComponents": [
+                {
+                    "entrypoint": "0x4186BFC76E2E237523CBC30FD220FE055156b41F",
+                    "implementationReviewed": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
+                }
+            ]
         }
     }
 }
