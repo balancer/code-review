@@ -9,7 +9,7 @@
     - [Vector Reserve security review](https://github.com/JacoboLansac/audits/blob/main/solo/vector-reserve.md)
 
 ## Context
-staked Vector ETH is a staked version of Vector ETH. Vector eth is a token designed to follow the price of eth. A user deciding to stake vETH for svETH earns rewards accrued by the collateral backing vETH.
+staked Vector ETH is a staked version of Vector ETH. Vector eth is a token designed to follow the price of ETH. A user deciding to stake vETH for svETH earns rewards accrued by the collateral backing vETH.
 ## Review Checklist: Bare Minimum Compatibility
 Each of the items below represents an absolute requirement for the Rate Provider. If any of these is unchecked, the Rate Provider is unfit to use.
 
@@ -39,7 +39,7 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 ### Common Manipulation Vectors
 - [x] The Rate Provider is susceptible to donation attacks.
 
-The price computation is based on the balance of vETH in the svETH contract. Minting vETH against a `_restakedLST` is also based on a internal exchange rate which the vETH contract owner has access to. Meaning a donation attack is possible by the owner since the owner has access to set the exchangeRate of `_restakedLST` for vETH by setting `vETHPerRestakedLST` via `updatevETHPerLST()`. 
+The price computation is based on the balance of vETH in the svETH contract. Minting vETH against a `_restakedLST` is also based on a internal exchange rate which the vETH contract owner has access to. Meaning a donation attack is cost efficient by the owner since the owner has access to set the exchangeRate of `_restakedLST` for vETH by setting `vETHPerRestakedLST` via `updatevETHPerLST()`. 
 
 ## Additional Findings
 To save time, we do not bother pointing out low-severity/informational issues or gas optimizations (unless the gas usage is particularly egregious). Instead, we focus only on high- and medium-severity findings which materially impact the contract's functionality and could harm users.
