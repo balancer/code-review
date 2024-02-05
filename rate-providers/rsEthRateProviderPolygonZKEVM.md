@@ -2,7 +2,7 @@
 
 ## Details
 - Reviewed by: @mkflow27
-- Checked by: @\<GitHub handle of secondary reviewer\>
+- Checked by: @danielmkm
 - Deployed at:
     - [polygonzkevm:0x4186BFC76E2E237523CBC30FD220FE055156b41F](https://zkevm.polygonscan.com/address/0x4186bfc76e2e237523cbc30fd220fe055156b41f#readContract)
 - Audit report(s):
