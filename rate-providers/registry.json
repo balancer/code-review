@@ -380,6 +380,21 @@
                     "implementationReviewed": "0xd7db9604ef925af96cda6b45026be64c691c7704"
                 }
             ]
+        },
+        "0xad4bFaFAe75ECd3fED5cFad4E4E9847Cd47A1879": {
+            "name": "svETHRateProvider",
+            "summary": "safe",
+            "review": "sveth.md",
+            "warnings": [
+                "donation"
+            ],
+            "factory": "",
+            "upgradeableComponents": [
+                {
+                    "entrypoint": "0x38D64ce1Bdf1A9f24E0Ec469C9cAde61236fB4a0",
+                    "implementationReviewed": "0x38D64ce1Bdf1A9f24E0Ec469C9cAde61236fB4a0"
+                }
+            ]
         }
     },
     "gnosis": {
