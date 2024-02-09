@@ -82,4 +82,4 @@ To save time, we do not bother pointing out low-severity/informational issues or
 ## Conclusion
 **Summary judgment: SAFE**
 
-The reviewed Rate Provider can be considered safe for operations with Balancer pools. This however rests on the built in protections of the `reprice()` function which guard against potentially malicious price data reported by the `BOT` role. Reason being that the `BOT` role currently is given to an EOA where private key leak is a risk factor.
+The reviewed Rate Provider can be considered safe for operations with Balancer pools. This however rests on the built in protections of the `reprice()` function which guard against potentially malicious price data reported by the `BOT` role. Reason being that the `BOT` role currently is given to an EOA where private key leak is a risk factor. Exposing setter functions for safety features such as `setMaximumRepriceDifferencePercentage` and `setMinimumRepriceTime` could be moved behind a timelock to increase system robustness. 
