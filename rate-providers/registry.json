@@ -418,6 +418,16 @@
                     "implementationReviewed": "0x527d6db79bFf473B8DD722429bDB3B0C8b855D23"
                 }
             ]
+        },
+        "0xD02011C6C8AEE310D0aA42AA98BFE9DCa547fCc0": {
+            "name": "ERC4626RateProvider",
+            "summary": "safe",
+            "review": "./sDOLARateProvider.md",
+            "warnings": [
+                "donation"
+            ],
+            "factory": "",
+            "upgradeableComponents": []
         }
     },
     "gnosis": {
