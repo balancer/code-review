@@ -395,6 +395,29 @@
                     "implementationReviewed": "0x38D64ce1Bdf1A9f24E0Ec469C9cAde61236fB4a0"
                 }
             ]
+        },
+        "0xFAe103DC9cf190eD75350761e95403b7b8aFa6c0": {
+            "name": "RswETH",
+            "summary": "safe",
+            "review": "./rswethRateProvider.md",
+            "warnings": [
+                ""
+            ],
+            "factory": "",
+            "upgradeableComponents": [
+                {
+                    "entrypoint": "0xFAe103DC9cf190eD75350761e95403b7b8aFa6c0",
+                    "implementationReviewed": "0xcD284A617b4ED7697c2E455d95049c7Fc538785c"
+                },
+                {
+                    "entrypoint": "0xd5A73c748449a45CC7D9f21c7ed3aB9eB3D2e959",
+                    "implementationReviewed": "0xF00E70450EB294C6fe430c842A09796D73c28977"
+                },
+                {
+                    "entrypoint": "0x796592b2092F7E150C48643dA19Dd2F28be3333F",
+                    "implementationReviewed": "0x527d6db79bFf473B8DD722429bDB3B0C8b855D23"
+                }
+            ]
         }
     },
     "gnosis": {
