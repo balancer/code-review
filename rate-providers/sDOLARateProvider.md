@@ -9,7 +9,7 @@
     - [sDOLA audit](https://www.inverse.finance/audits/sDOLA-yAudit.pdf)
 
 ## Context
-sDOLA is a yield-bearing stablecoin structured as an ERC-4626 wrapper around a DOLA Savings Account (DSA) contract that continuously streams DOLA Borrowing Rights rewards to staked DOLA and auto-compounds them. The Rate provider exposes the `convertToAssets` of sDOLA and makes the rate consumable by Balancer pools.
+sDOLA is a yield-bearing stablecoin structured as an ERC-4626 wrapper around a DOLA Savings Account (DSA) contract that continuously streams DOLA Borrowing Rights rewards to staked DOLA and auto-compounds them. The Rate provider exposes the `convertToAssets` of sDOLA via a `getRate()` function and makes the rate consumable by Balancer pools.
 
 ## Review Checklist: Bare Minimum Compatibility
 Each of the items below represents an absolute requirement for the Rate Provider. If any of these is unchecked, the Rate Provider is unfit to use.
