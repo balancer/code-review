@@ -5,6 +5,9 @@
 - Checked by: @\<GitHub handle of secondary reviewer\>
 - Deployed at:
     - [ethereum:0x9cE2837d6d84bb521A5a3002a2132B9E9E9cc4C8](https://etherscan.io/address/0x9cE2837d6d84bb521A5a3002a2132B9E9E9cc4C8#code)
+    - [arbitrum:0x3bB6861c0Be6673809D55b9D346b6774B634a9D7](https://arbiscan.io/address/0x3bB6861c0Be6673809D55b9D346b6774B634a9D7)
+    - [optimism:0x33A48e4aA79A66fc4f7061f5D9E274528C213029](https://optimistic.etherscan.io/address/0x33A48e4aA79A66fc4f7061f5D9E274528C213029)
+    - [avalanche:0x709d075147a10495e5c3bBF3dfc0c138F34C6E72](https://snowtrace.dev/address/0x709d075147a10495e5c3bBF3dfc0c138F34C6E72)
 - Audit report(s):
     - [Sweep protocol audit report](https://github.com/SweeprFi/sweepr-contracts/blob/main/audits/sublime/Sweep%20Protocol%20Audit%20Report.pdf)
 
@@ -32,6 +35,18 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
     - admin address: [ethereum:0x3afd8feED6Bbd1D8254d92eAFA1F695Dce16387a](https://etherscan.io/address/0x70dd60bc899675abae27623fd5a508f8a28e7c91#readContract)
     - admin type: multisig
         - multisig threshold/signers: 2/3
+    - upgradeable component `SweepCoin` ([arbitrum:0xB88a5Ac00917a02d82c7cd6CEBd73E2852d43574](https://arbiscan.io/address/0xB88a5Ac00917a02d82c7cd6CEBd73E2852d43574))
+    - admin address: [arbitrum:0x23Ab3E2954Ec5577730B7674f4bA9e78Eb96C4d1](https://arbiscan.io/address/0x23Ab3E2954Ec5577730B7674f4bA9e78Eb96C4d1#code)
+    - admin type: multisig
+        - multisig threshold/signers: 2/3
+    - upgradeable component: `SweepCoin` ([optimism:0xB88a5Ac00917a02d82c7cd6CEBd73E2852d43574](https://etherscan.io/address/0xB88a5Ac00917a02d82c7cd6CEBd73E2852d43574#readProxyContract))
+    - admin address: [optimism:0xE0585bDaee364deAd2683c5Aa1520B87F1d2FBAD](https://optimistic.etherscan.io/address/0xE0585bDaee364deAd2683c5Aa1520B87F1d2FBAD#readContract)
+    - admin type: multisig
+        - multisig threshold/signers: 2/3
+    - upgradeable component: `SweepCoin` ([avalanche:0xB88a5Ac00917a02d82c7cd6CEBd73E2852d43574](https://snowtrace.dev/address/0xB88a5Ac00917a02d82c7cd6CEBd73E2852d43574/contract/43114/code))
+    - admin address: [avalanche:0x04997790D83C9f8021c63f6f613458507B73056c](https://snowtrace.dev/address/0x04997790D83C9f8021c63f6f613458507B73056c/contract/43114/code)
+    - admin type: multisig
+        - multisig threshold/signers: 2/3
 
 ### Oracles
 - [x] Price data is provided by an off-chain source (e.g., a Chainlink oracle, a multisig, or a network of nodes).
@@ -39,7 +54,19 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
     - source address:
         - owner: [ethereum:0x3afd8feED6Bbd1D8254d92eAFA1F695Dce16387a](https://etherscan.io/address/0x3afd8feED6Bbd1D8254d92eAFA1F695Dce16387a)
         - fast multisig: [ethereum:0x3afd8feED6Bbd1D8254d92eAFA1F695Dce16387a](https://etherscan.io/address/0x3afd8feED6Bbd1D8254d92eAFA1F695Dce16387a)
-    - any protections? `setInterestRate` & `setTargetPrice` do not have any protections. 
+    - any protections? `setInterestRate` & `setTargetPrice` do not have any protections besides `onlyMultisigOrGov`.
+    - source address:
+        - owner: [arbitrum:0x23Ab3E2954Ec5577730B7674f4bA9e78Eb96C4d1](https://arbiscan.io/address/0x23Ab3E2954Ec5577730B7674f4bA9e78Eb96C4d1)
+        - fast multisig: [arbitrum:0x23Ab3E2954Ec5577730B7674f4bA9e78Eb96C4d1](https://arbiscan.io/address/0x23Ab3E2954Ec5577730B7674f4bA9e78Eb96C4d1)
+    - any protections? `setInterestRate` & `setTargetPrice` do not have any protections besides `onlyMultisigOrGov`.
+    - source address:
+        - owner: [optimism:0xE0585bDaee364deAd2683c5Aa1520B87F1d2FBAD](https://optimistic.etherscan.io/address/0xE0585bDaee364deAd2683c5Aa1520B87F1d2FBAD)
+        - fast multisig: [optimism:0xE0585bDaee364deAd2683c5Aa1520B87F1d2FBAD](https://optimistic.etherscan.io/address/0xE0585bDaee364deAd2683c5Aa1520B87F1d2FBAD)
+    - any protections? `setInterestRate` & `setTargetPrice` do not have any protections besides `onlyMultisigOrGov`.
+    - source address:
+        - owner: [avalanche:0x04997790D83C9f8021c63f6f613458507B73056c](https://snowtrace.dev/address/0x04997790D83C9f8021c63f6f613458507B73056c)
+        - fast multisig: [avalanche:0x04997790D83C9f8021c63f6f613458507B73056c](https://snowtrace.dev/address/0x04997790D83C9f8021c63f6f613458507B73056c)
+    - any protections? `setInterestRate` & `setTargetPrice` do not have any protections besides `onlyMultisigOrGov`.
 
 - [ ] Price data is expected to be volatile (e.g., because it represents an open market price instead of a (mostly) monotonically increasing price).
 
