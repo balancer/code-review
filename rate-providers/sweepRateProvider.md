@@ -7,7 +7,7 @@
     - [ethereum:0x9cE2837d6d84bb521A5a3002a2132B9E9E9cc4C8](https://etherscan.io/address/0x9cE2837d6d84bb521A5a3002a2132B9E9E9cc4C8#code)
     - [arbitrum:0x3bB6861c0Be6673809D55b9D346b6774B634a9D7](https://arbiscan.io/address/0x3bB6861c0Be6673809D55b9D346b6774B634a9D7)
     - [optimism:0x33A48e4aA79A66fc4f7061f5D9E274528C213029](https://optimistic.etherscan.io/address/0x33A48e4aA79A66fc4f7061f5D9E274528C213029)
-    - [avalanche:0x709d075147a10495e5c3bBF3dfc0c138F34C6E72](https://snowtrace.dev/address/0x709d075147a10495e5c3bBF3dfc0c138F34C6E72)
+    - [avalanche:0x709d075147a10495e5c3bBF3dfc0c138F34C6E72](https://snowtrace.dev/address/0x709d075147a10495e5c3bBF3dfc0c13ore8F34C6E72)
 - Audit report(s):
     - [Sweep protocol audit report](https://github.com/SweeprFi/sweepr-contracts/blob/main/audits/sublime/Sweep%20Protocol%20Audit%20Report.pdf)
 
@@ -75,11 +75,6 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 
 ## Additional Findings
 To save time, we do not bother pointing out low-severity/informational issues or gas optimizations (unless the gas usage is particularly egregious). Instead, we focus only on high- and medium-severity findings which materially impact the contract's functionality and could harm users.
-
-### \<H-01: Example High-severity Finding\>
-### \<H-02: Example High-severity Finding\>
-### \<M-01: Example Medium-severity Finding\>
-### \<M-02: Example Medium-severity Finding\>
 
 ## Conclusion
 **Summary judgment: SAFE/UNSAFE**
