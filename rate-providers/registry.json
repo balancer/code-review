@@ -428,6 +428,25 @@
             ],
             "factory": "",
             "upgradeableComponents": []
+        },
+        "0x343281Bb5029C4b698fE736D800115ac64D5De39": {
+            "name": "InstETHRateProvider",
+            "summary": "safe",
+            "review": "./InstETHRateProvider.md",
+            "warnings": [
+                "donation"
+            ],
+            "factory": "",
+            "upgradeableComponents": [
+                {
+                    "entrypoint": "0x814CC6B8fd2555845541FB843f37418b05977d8d",
+                    "implementationReviewed": "0xbBf7fc7036B60D1E88913bD583dC5E39957F9f17"
+                },
+                {
+                    "entrypoint": "0x7FA768E035F956c41d6aeaa3Bd857e7E5141CAd5",
+                    "implementationReviewed": "0xBAa61A8d8BC52f5a9256612Fab498c542188A132"
+                }
+            ]
         }
     },
     "gnosis": {
