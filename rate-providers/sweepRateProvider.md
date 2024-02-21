@@ -7,7 +7,7 @@
     - [ethereum:0x9cE2837d6d84bb521A5a3002a2132B9E9E9cc4C8](https://etherscan.io/address/0x9cE2837d6d84bb521A5a3002a2132B9E9E9cc4C8#code)
     - [arbitrum:0x3bB6861c0Be6673809D55b9D346b6774B634a9D7](https://arbiscan.io/address/0x3bB6861c0Be6673809D55b9D346b6774B634a9D7)
     - [optimism:0x33A48e4aA79A66fc4f7061f5D9E274528C213029](https://optimistic.etherscan.io/address/0x33A48e4aA79A66fc4f7061f5D9E274528C213029)
-    - [avalanche:0x709d075147a10495e5c3bBF3dfc0c138F34C6E72](https://snowtrace.dev/address/0x709d075147a10495e5c3bBF3dfc0c13ore8F34C6E72)
+    - [avalanche:0x709d075147a10495e5c3bBF3dfc0c138F34C6E72](https://snowtrace.dev/address/0x709d075147a10495e5c3bBF3dfc0c138F34C6E72/contract/43114/code)
 - Audit report(s):
     - [Sweep protocol audit report](https://github.com/SweeprFi/sweepr-contracts/blob/main/audits/sublime/Sweep%20Protocol%20Audit%20Report.pdf)
 
@@ -54,19 +54,19 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
     - source address:
         - owner: [ethereum:0x3afd8feED6Bbd1D8254d92eAFA1F695Dce16387a](https://etherscan.io/address/0x3afd8feED6Bbd1D8254d92eAFA1F695Dce16387a)
         - fast multisig: [ethereum:0x3afd8feED6Bbd1D8254d92eAFA1F695Dce16387a](https://etherscan.io/address/0x3afd8feED6Bbd1D8254d92eAFA1F695Dce16387a)
-    - any protections? `setInterestRate` & `setTargetPrice` do not have any protections besides `onlyMultisigOrGov`.
+    - any protections? `setTargetPrice` has zero input checks and variance protection via a threshold.
     - source address:
         - owner: [arbitrum:0x23Ab3E2954Ec5577730B7674f4bA9e78Eb96C4d1](https://arbiscan.io/address/0x23Ab3E2954Ec5577730B7674f4bA9e78Eb96C4d1)
         - fast multisig: [arbitrum:0x23Ab3E2954Ec5577730B7674f4bA9e78Eb96C4d1](https://arbiscan.io/address/0x23Ab3E2954Ec5577730B7674f4bA9e78Eb96C4d1)
-    - any protections? `setInterestRate` & `setTargetPrice` do not have any protections besides `onlyMultisigOrGov`.
+    - any protections? `setTargetPrice` has zero input checks and variance protection via a threshold.
     - source address:
         - owner: [optimism:0xE0585bDaee364deAd2683c5Aa1520B87F1d2FBAD](https://optimistic.etherscan.io/address/0xE0585bDaee364deAd2683c5Aa1520B87F1d2FBAD)
         - fast multisig: [optimism:0xE0585bDaee364deAd2683c5Aa1520B87F1d2FBAD](https://optimistic.etherscan.io/address/0xE0585bDaee364deAd2683c5Aa1520B87F1d2FBAD)
-    - any protections? `setInterestRate` & `setTargetPrice` do not have any protections besides `onlyMultisigOrGov`.
+    - any protections? `setTargetPrice` has zero input checks and variance protection via a threshold.
     - source address:
         - owner: [avalanche:0x04997790D83C9f8021c63f6f613458507B73056c](https://snowtrace.dev/address/0x04997790D83C9f8021c63f6f613458507B73056c)
         - fast multisig: [avalanche:0x04997790D83C9f8021c63f6f613458507B73056c](https://snowtrace.dev/address/0x04997790D83C9f8021c63f6f613458507B73056c)
-    - any protections? `setInterestRate` & `setTargetPrice` do not have any protections besides `onlyMultisigOrGov`.
+    - any protections? `setTargetPrice` has zero input checks and variance protection via a threshold.
 
 - [ ] Price data is expected to be volatile (e.g., because it represents an open market price instead of a (mostly) monotonically increasing price).
 
@@ -77,6 +77,6 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 To save time, we do not bother pointing out low-severity/informational issues or gas optimizations (unless the gas usage is particularly egregious). Instead, we focus only on high- and medium-severity findings which materially impact the contract's functionality and could harm users.
 
 ## Conclusion
-**Summary judgment: SAFE/UNSAFE**
+**Summary judgment: SAFE**
 
-This Rate Provider system is based on a multisig supplying price data. While the account is a multisig no guardrails are in place against accidentally or intentionally supplying bad prices such as `setTargetPrice(0,0)`. While some parameters are assumed to be updated via `refreshInterestRate` the threshold protections there are not applied to all pricing parameters. Meaning overall an offchain component accidentally triggering a price update would not have any checks done on it and will directly impact the Balancer pool. 
+This Rate Provider system is based on a multisig supplying price data. Protections against this multisig supplying bad prices are in place. Input validation has been added in the form of protecting against `0` (zero) price input and against prices outside the allowed threshold being supplied. This Rate Provider should work well with Balancer Pools.
