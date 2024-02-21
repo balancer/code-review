@@ -84,6 +84,19 @@
                     "implementationReviewed": "0x1d8f8f00cfa6758d7bE78336684788Fb0ee0Fa46"
                 }
             ]
+        },
+        "0x3bB6861c0Be6673809D55b9D346b6774B634a9D7": {
+            "name": "BalancerAMM",
+            "summary": "safe",
+            "review": "./sweepRateProvider.md",
+            "warnings": [],
+            "factory": "",
+            "upgradeableComponents": [
+                {
+                    "entrypoint": "0xB88a5Ac00917a02d82c7cd6CEBd73E2852d43574",
+                    "implementationReviewed": "0x19E4F40584824029Fc100c60A74BF41b43EC4976"
+                }
+            ]
         }
     },
     "avalanche": {
@@ -129,6 +142,19 @@
                 {
                     "entrypoint": "0x4fe8C658f268842445Ae8f95D4D6D8Cfd356a8C8",
                     "implementationReviewed": "0x280b6475BE9A67DF23B0EF75D00c876a74Bfc4b7"
+                }
+            ]
+        },
+        "0x709d075147a10495e5c3bBF3dfc0c138F34C6E72": {
+            "name": "BalancerAMM",
+            "summary": "safe",
+            "review": "./sweepRateProvider.md",
+            "warnings": [],
+            "factory": "",
+            "upgradeableComponents": [
+                {
+                    "entrypoint": "0xB88a5Ac00917a02d82c7cd6CEBd73E2852d43574",
+                    "implementationReviewed": "0x8A7d9967A31fe557041519c131B355176734d907"
                 }
             ]
         }
@@ -429,6 +455,19 @@
             "factory": "",
             "upgradeableComponents": []
         },
+        "0x9cE2837d6d84bb521A5a3002a2132B9E9E9cc4C8": {
+            "name": "BalancerAMM",
+            "summary": "safe",
+            "review": "./sweepRateProvider.md",
+            "warnings": [],
+            "factory": "",
+            "upgradeableComponents": [
+                {
+                    "entrypoint": "0xB88a5Ac00917a02d82c7cd6CEBd73E2852d43574",
+                    "implementationReviewed": "0xf0604A1c725F8eeb14FF082F2275AfE0B67A32D5"
+                }
+            ]
+        },
         "0x343281Bb5029C4b698fE736D800115ac64D5De39": {
             "name": "InstETHRateProvider",
             "summary": "safe",
@@ -524,6 +563,19 @@
                 {
                     "entrypoint": "0x3eE6107d9C93955acBb3f39871D32B02F82B78AB",
                     "implementationReviewed": "0x3eE6107d9C93955acBb3f39871D32B02F82B78AB"
+                }
+            ]
+        },
+        "0x33A48e4aA79A66fc4f7061f5D9E274528C213029": {
+            "name": "BalancerAMM",
+            "summary": "safe",
+            "review": "./sweepRateProvider.md",
+            "warnings": [],
+            "factory": "",
+            "upgradeableComponents": [
+                {
+                    "entrypoint": "0xB88a5Ac00917a02d82c7cd6CEBd73E2852d43574",
+                    "implementationReviewed": "0x8adEa764cabd2C61E51cEb6937Fd026fA39d8E64"
                 }
             ]
         }
