@@ -486,6 +486,27 @@
                     "implementationReviewed": "0xBAa61A8d8BC52f5a9256612Fab498c542188A132"
                 }
             ]
+        },
+        "0xC29783738A475112Cafe58433Dd9D19F3a406619": {
+            "name": "GenEthRateProvider",
+            "summary": "safe",
+            "review": "./genETHRateProvider.md",
+            "warnings": [],
+            "factory": "",
+            "upgradeableComponents": [
+                {
+                    "entrypoint": "0xf073bAC22DAb7FaF4a3Dd6c6189a70D54110525C",
+                    "implementationReviewed": "0x59114182500d834b8E41A397314C97EeE96Ee9bD"
+                },
+                {
+                    "entrypoint": "0x81b98D3a51d4aC35e0ae132b0CF6b50EA1Da2603",
+                    "implementationReviewed": "0xe99AD80f1367ef20e81Ad72134192358670F7bf9"
+                },
+                {
+                    "entrypoint": "0x122ee24Cb3Cc1b6B987800D3B54A68FC16910Dbf",
+                    "implementationReviewed": "0xB7A63a69cc0e635915e65379D2794f0b687D63EC"
+                }
+            ]
         }
     },
     "gnosis": {
