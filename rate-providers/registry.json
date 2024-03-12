@@ -97,6 +97,14 @@
                     "implementationReviewed": "0x19E4F40584824029Fc100c60A74BF41b43EC4976"
                 }
             ]
+        },
+        "0xf7c5c26B574063e7b098ed74fAd6779e65E3F836": {
+            "name": "ChainlinkRateProvider",
+            "summary": "safe",
+            "review": "./wstethRateProvider.md",
+            "warnings": [],
+            "factory": "",
+            "upgradeableComponents": []
         }
     },
     "avalanche": {
@@ -507,6 +515,14 @@
                     "implementationReviewed": "0xB7A63a69cc0e635915e65379D2794f0b687D63EC"
                 }
             ]
+        },
+        "0x72D07D7DcA67b8A406aD1Ec34ce969c90bFEE768": {
+            "name": "WstETHRateProvider",
+            "summary": "safe",
+            "review": "./wstethRateProvider.md",
+            "warnings": [],
+            "factory": "",
+            "upgradeableComponents": []
         }
     },
     "gnosis": {
