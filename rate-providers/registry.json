@@ -105,6 +105,27 @@
             "warnings": [],
             "factory": "",
             "upgradeableComponents": []
+        },
+        "0xf25484650484DE3d554fB0b7125e7696efA4ab99": {
+            "name": "xRenzoDeposit",
+            "summary": "safe",
+            "review": "./ezETHRateProviderArbitrum.md",
+            "warnings": [],
+            "factory": "",
+            "upgradeableComponents": [
+                {
+                    "entrypoint": "0x0e60fd361fF5b90088e1782e6b21A7D177d462C5",
+                    "implementationReviewed": "0x3E5c63644E683549055b9Be8653de26E0B4CD36E"
+                },
+                {
+                    "entrypoint": "0xc1036D6bBa2FE24c65823110B348Ee80D3386ACd",
+                    "implementationReviewed": "0x5665F1F7ED2dcaD5Dc4CC9B41CA90Bae9DEE1a3A"
+                },
+                {
+                    "entrypoint": "0x387dBc0fB00b26fb085aa658527D5BE98302c84C",
+                    "implementationReviewed": "0x9284cEFf248315377e782df0666EE9832E119508"
+                }
+            ]
         }
     },
     "avalanche": {
