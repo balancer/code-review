@@ -3,7 +3,7 @@
 
 ## Details
 - Reviewed by: @mkflow27
-- Checked by: @\<GitHub handle of secondary reviewer\>
+- Checked by: @danielmkm
 - Deployed at:
     - [arbitrum:0xf25484650484DE3d554fB0b7125e7696efA4ab99](https://arbiscan.io/address/0xf25484650484de3d554fb0b7125e7696efa4ab99#readProxyContract)
 - Audit report(s):
