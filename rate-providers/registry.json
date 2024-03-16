@@ -1,704 +1,707 @@
 {
+  "reviewed": {
     "arbitrum": {
-        "0xFC8d81A01deD207aD3DEB4FE91437CAe52deD0b5": {
-            "name": "AnkrETHRateProvider",
-            "summary": "safe",
-            "review": "./AnkrETHRateProvider.md",
-            "warnings": [],
-            "factory": "",
-            "upgradeableComponents": [
-                {
-                    "entrypoint": "0xe05A08226c49b636ACf99c40Da8DC6aF83CE5bB3",
-                    "implementationReviewed": "0x4d8798836b630025C5c98FEbd10a90B3D7596777"
-                },
-                {
-                    "entrypoint": "0xCb0006B31e6b403fEeEC257A8ABeE0817bEd7eBa",
-                    "implementationReviewed": "0xd00b967296B6d8Ec266E4BA64594f892D03A4d0a"
-                }
-            ]
-        },
-        "0xD438f19b1Dd47EbECc5f904d8Fd44583CbFB7c85": {
-            "name": "BalancerRateProvider",
-            "summary": "safe",
-            "review": "./BalancerRateProvider_USDF.md",
-            "warnings": [],
-            "factory": "",
-            "upgradeableComponents": [
-                {
-                    "entrypoint": "0x80e1a981285181686a3951B05dEd454734892a09",
-                    "implementationReviewed": "0x038C8535269E4AdC083Ba90388f15788174d7da7"
-                }
-            ]
-        },
-        "0x2bA447d4B823338435057571bF70907F8224BB47": {
-            "name": "WrappedUsdPlusRateProvider",
-            "summary": "safe",
-            "review": "./WrappedUsdPlusRateProvider.md",
-            "warnings": [],
-            "factory": "",
-            "upgradeableComponents": [
-                {
-                    "entrypoint": "0xB86fb1047A955C0186c77ff6263819b37B32440D",
-                    "implementationReviewed": "0xA7E51DF47dcd98F729a80b1C931aAC2b5194f4A0"
-                },
-                {
-                    "entrypoint": "0xe80772Eaf6e2E18B651F160Bc9158b2A5caFCA65",
-                    "implementationReviewed": "0x159f28F598b5C5340D6A902D34eB373D30499660"
-                },
-                {
-                    "entrypoint": "0x73cb180bf0521828d8849bc8CF2B920918e23032",
-                    "implementationReviewed": "0x763018d8B4c27a6Fb320CD588e2Bc355D0d3049E"
-                },
-                {
-                    "entrypoint": "0xa44dF8A8581C2cb536234E6640112fFf932ED2c4",
-                    "implementationReviewed": "0x45523bC29D4bCec386f548bDc295DB28483c56E8"
-                }
-            ]
-        },
-        "0x6dbF2155B0636cb3fD5359FCcEFB8a2c02B6cb51": {
-            "name": "PlsRdntTokenV2",
-            "summary": "safe",
-            "review": "./PlsRdntTokenV2.md",
-            "warnings": [
-                "donation"
-            ],
-            "factory": "",
-            "upgradeableComponents": [
-                {
-                    "entrypoint": "0x6dbF2155B0636cb3fD5359FCcEFB8a2c02B6cb51",
-                    "implementationReviewed": "0xF7eB1efc5A3fD02399aC82aa983962280324F9b7"
-                }
-            ]
-        },
-        "0xd4e96ef8eee8678dbff4d535e033ed1a4f7605b7": {
-            "name": "RocketBalancerRateProvider",
-            "summary": "safe",
-            "review": "./rETHRateProvider.md",
-            "warnings": [
-                "donation"
-            ],
-            "factory": "",
-            "upgradeableComponents": [
-                {
-                    "entrypoint": "0x1d8f8f00cfa6758d7bE78336684788Fb0ee0Fa46",
-                    "implementationReviewed": "0x1d8f8f00cfa6758d7bE78336684788Fb0ee0Fa46"
-                }
-            ]
-        },
-        "0x3bB6861c0Be6673809D55b9D346b6774B634a9D7": {
-            "name": "BalancerAMM",
-            "summary": "safe",
-            "review": "./sweepRateProvider.md",
-            "warnings": [],
-            "factory": "",
-            "upgradeableComponents": [
-                {
-                    "entrypoint": "0xB88a5Ac00917a02d82c7cd6CEBd73E2852d43574",
-                    "implementationReviewed": "0x19E4F40584824029Fc100c60A74BF41b43EC4976"
-                }
-            ]
-        },
-        "0xf7c5c26B574063e7b098ed74fAd6779e65E3F836": {
-            "name": "ChainlinkRateProvider",
-            "summary": "safe",
-            "review": "./wstethRateProvider.md",
-            "warnings": [],
-            "factory": "",
-            "upgradeableComponents": []
-        },
-        "0xf25484650484DE3d554fB0b7125e7696efA4ab99": {
-            "name": "xRenzoDeposit",
-            "summary": "safe",
-            "review": "./ezETHRateProviderArbitrum.md",
-            "warnings": [],
-            "factory": "",
-            "upgradeableComponents": [
-                {
-                    "entrypoint": "0x0e60fd361fF5b90088e1782e6b21A7D177d462C5",
-                    "implementationReviewed": "0x3E5c63644E683549055b9Be8653de26E0B4CD36E"
-                },
-                {
-                    "entrypoint": "0xc1036D6bBa2FE24c65823110B348Ee80D3386ACd",
-                    "implementationReviewed": "0x5665F1F7ED2dcaD5Dc4CC9B41CA90Bae9DEE1a3A"
-                },
-                {
-                    "entrypoint": "0x387dBc0fB00b26fb085aa658527D5BE98302c84C",
-                    "implementationReviewed": "0x9284cEFf248315377e782df0666EE9832E119508"
-                }
-            ]
-        }
+      "0xFC8d81A01deD207aD3DEB4FE91437CAe52deD0b5": {
+        "asset":"0xe05A08226c49b636ACf99c40Da8DC6aF83CE5bB3",
+        "name": "AnkrETHRateProvider",
+        "summary": "safe",
+        "review": "./AnkrETHRateProvider.md",
+        "warnings": [],
+        "factory": "",
+        "upgradeableComponents": [
+          {
+            "entrypoint": "0xe05A08226c49b636ACf99c40Da8DC6aF83CE5bB3",
+            "implementationReviewed": "0x4d8798836b630025C5c98FEbd10a90B3D7596777"
+          },
+          {
+            "entrypoint": "0xCb0006B31e6b403fEeEC257A8ABeE0817bEd7eBa",
+            "implementationReviewed": "0xd00b967296B6d8Ec266E4BA64594f892D03A4d0a"
+          }
+        ]
+      },
+      "0xD438f19b1Dd47EbECc5f904d8Fd44583CbFB7c85": {
+        "asset": "0xae48b7C8e096896E32D53F10d0Bf89f82ec7b987",
+        "name": "BalancerRateProvider",
+        "summary": "safe",
+        "review": "./BalancerRateProvider_USDF.md",
+        "warnings": [],
+        "factory": "",
+        "upgradeableComponents": [
+          {
+            "entrypoint": "0x80e1a981285181686a3951B05dEd454734892a09",
+            "implementationReviewed": "0x038C8535269E4AdC083Ba90388f15788174d7da7"
+          }
+        ]
+      },
+      "0x2bA447d4B823338435057571bF70907F8224BB47": {
+        "asset": "0xB86fb1047A955C0186c77ff6263819b37B32440D",
+        "name": "WrappedUsdPlusRateProvider",
+        "summary": "safe",
+        "review": "./WrappedUsdPlusRateProvider.md",
+        "warnings": [],
+        "factory": "",
+        "upgradeableComponents": [
+          {
+            "entrypoint": "0xB86fb1047A955C0186c77ff6263819b37B32440D",
+            "implementationReviewed": "0xA7E51DF47dcd98F729a80b1C931aAC2b5194f4A0"
+          },
+          {
+            "entrypoint": "0xe80772Eaf6e2E18B651F160Bc9158b2A5caFCA65",
+            "implementationReviewed": "0x159f28F598b5C5340D6A902D34eB373D30499660"
+          },
+          {
+            "entrypoint": "0x73cb180bf0521828d8849bc8CF2B920918e23032",
+            "implementationReviewed": "0x763018d8B4c27a6Fb320CD588e2Bc355D0d3049E"
+          },
+          {
+            "entrypoint": "0xa44dF8A8581C2cb536234E6640112fFf932ED2c4",
+            "implementationReviewed": "0x45523bC29D4bCec386f548bDc295DB28483c56E8"
+          }
+        ]
+      },
+      "0x6dbF2155B0636cb3fD5359FCcEFB8a2c02B6cb51": {
+        "asset": "0x6dbF2155B0636cb3fD5359FCcEFB8a2c02B6cb51",
+        "name": "PlsRdntassetV2",
+        "summary": "safe",
+        "review": "./PlsRdntassetV2.md",
+        "warnings": ["donation"],
+        "factory": "",
+        "upgradeableComponents": [
+          {
+            "entrypoint": "0x6dbF2155B0636cb3fD5359FCcEFB8a2c02B6cb51",
+            "implementationReviewed": "0xF7eB1efc5A3fD02399aC82aa983962280324F9b7"
+          }
+        ]
+      },
+      "0xd4e96ef8eee8678dbff4d535e033ed1a4f7605b7": {
+        "asset": "0xEC70Dcb4A1EFa46b8F2D97C310C9c4790ba5ffA8",
+        "name": "RocketBalancerRateProvider",
+        "summary": "safe",
+        "review": "./rETHRateProvider.md",
+        "warnings": ["donation"],
+        "factory": "",
+        "upgradeableComponents": [
+          {
+            "entrypoint": "0x1d8f8f00cfa6758d7bE78336684788Fb0ee0Fa46",
+            "implementationReviewed": "0x1d8f8f00cfa6758d7bE78336684788Fb0ee0Fa46"
+          }
+        ]
+      },
+      "0x3bB6861c0Be6673809D55b9D346b6774B634a9D7": {
+        "asset": "0xB88a5Ac00917a02d82c7cd6CEBd73E2852d43574",
+        "name": "BalancerAMM",
+        "summary": "safe",
+        "review": "./sweepRateProvider.md",
+        "warnings": [],
+        "factory": "",
+        "upgradeableComponents": [
+          {
+            "entrypoint": "0xB88a5Ac00917a02d82c7cd6CEBd73E2852d43574",
+            "implementationReviewed": "0x19E4F40584824029Fc100c60A74BF41b43EC4976"
+          }
+        ]
+      },
+      "0xf7c5c26B574063e7b098ed74fAd6779e65E3F836": {
+        "asset": "0x5979D7b546E38E414F7E9822514be443A4800529",
+        "name": "ChainlinkRateProvider",
+        "summary": "safe",
+        "review": "./wstethRateProvider.md",
+        "warnings": [],
+        "factory": "",
+        "upgradeableComponents": []
+      },
+      "0xf25484650484DE3d554fB0b7125e7696efA4ab99": {
+        "asset": "0x2416092f143378750bb29b79eD961ab195CcEea5",
+        "name": "xRenzoDeposit",
+        "summary": "safe",
+        "review": "./ezETHRateProviderArbitrum.md",
+        "warnings": [],
+        "factory": "",
+        "upgradeableComponents": [
+          {
+            "entrypoint": "0x0e60fd361fF5b90088e1782e6b21A7D177d462C5",
+            "implementationReviewed": "0x3E5c63644E683549055b9Be8653de26E0B4CD36E"
+          },
+          {
+            "entrypoint": "0xc1036D6bBa2FE24c65823110B348Ee80D3386ACd",
+            "implementationReviewed": "0x5665F1F7ED2dcaD5Dc4CC9B41CA90Bae9DEE1a3A"
+          },
+          {
+            "entrypoint": "0x387dBc0fB00b26fb085aa658527D5BE98302c84C",
+            "implementationReviewed": "0x9284cEFf248315377e782df0666EE9832E119508"
+          }
+        ]
+      }
     },
     "avalanche": {
-        "0xd6Fd021662B83bb1aAbC2006583A62Ad2Efb8d4A": {
-            "name": "AnkrETHRateProvider",
-            "summary": "safe",
-            "review": "./AnkrETHRateProvider.md",
-            "warnings": [],
-            "factory": "",
-            "upgradeableComponents": [
-                {
-                    "entrypoint": "0x12D8CE035c5DE3Ce39B1fDD4C1d5a745EAbA3b8C",
-                    "implementationReviewed": "0x4d8798836b630025C5c98FEbd10a90B3D7596777"
-                },
-                {
-                    "entrypoint": "0xEf3C162450E1d08804493aA27BE60CDAa054050F",
-                    "implementationReviewed": "0x8ff4fb91c9FFf1F57310dE52D52d033c00523F81"
-                }
-            ]
-        },
-        "0x1bB74eC551cCd9FE416C71F904D64f42079A0a7f": {
-            "name": "GGAVAXRateProvider",
-            "summary": "safe",
-            "review": "./GGAVAXRateProvider.md",
-            "warnings": [
-                "donation"
-            ],
-            "factory": "",
-            "upgradeableComponents": [
-                {
-                    "entrypoint": "0xA25EaF2906FA1a3a13EdAc9B9657108Af7B703e3",
-                    "implementationReviewed": "0xf80Eb498bBfD45f5E2d123DFBdb752677757843E"
-                }
-            ]
-        },
-        "0x13a80aBe608A054059CfB54Ef08809a05Fc07b82": {
-            "name": "YyAvaxRateProvider",
-            "summary": "safe",
-            "review": "./YyAvaxRateProvider.md",
-            "warnings": [],
-            "factory": "",
-            "upgradeableComponents": [
-                {
-                    "entrypoint": "0x4fe8C658f268842445Ae8f95D4D6D8Cfd356a8C8",
-                    "implementationReviewed": "0x280b6475BE9A67DF23B0EF75D00c876a74Bfc4b7"
-                }
-            ]
-        },
-        "0x709d075147a10495e5c3bBF3dfc0c138F34C6E72": {
-            "name": "BalancerAMM",
-            "summary": "safe",
-            "review": "./sweepRateProvider.md",
-            "warnings": [],
-            "factory": "",
-            "upgradeableComponents": [
-                {
-                    "entrypoint": "0xB88a5Ac00917a02d82c7cd6CEBd73E2852d43574",
-                    "implementationReviewed": "0x8A7d9967A31fe557041519c131B355176734d907"
-                }
-            ]
-        }
+      "0xd6Fd021662B83bb1aAbC2006583A62Ad2Efb8d4A": {
+        "asset": "0x12d8ce035c5de3ce39b1fdd4c1d5a745eaba3b8c",
+        "name": "AnkrETHRateProvider",
+        "summary": "safe",
+        "review": "./AnkrETHRateProvider.md",
+        "warnings": [],
+        "factory": "",
+        "upgradeableComponents": [
+          {
+            "entrypoint": "0x12D8CE035c5DE3Ce39B1fDD4C1d5a745EAbA3b8C",
+            "implementationReviewed": "0x4d8798836b630025C5c98FEbd10a90B3D7596777"
+          },
+          {
+            "entrypoint": "0xEf3C162450E1d08804493aA27BE60CDAa054050F",
+            "implementationReviewed": "0x8ff4fb91c9FFf1F57310dE52D52d033c00523F81"
+          }
+        ]
+      },
+      "0x1bB74eC551cCd9FE416C71F904D64f42079A0a7f": {
+        "asset": "0xa25eaf2906fa1a3a13edac9b9657108af7b703e3",
+        "name": "GGAVAXRateProvider",
+        "summary": "safe",
+        "review": "./GGAVAXRateProvider.md",
+        "warnings": ["donation"],
+        "factory": "",
+        "upgradeableComponents": [
+          {
+            "entrypoint": "0xA25EaF2906FA1a3a13EdAc9B9657108Af7B703e3",
+            "implementationReviewed": "0xf80Eb498bBfD45f5E2d123DFBdb752677757843E"
+          }
+        ]
+      },
+      "0x13a80aBe608A054059CfB54Ef08809a05Fc07b82": {
+        "asset": "0xf7d9281e8e363584973f946201b82ba72c965d27",
+        "name": "YyAvaxRateProvider",
+        "summary": "safe",
+        "review": "./YyAvaxRateProvider.md",
+        "warnings": [],
+        "factory": "",
+        "upgradeableComponents": [
+          {
+            "entrypoint": "0x4fe8C658f268842445Ae8f95D4D6D8Cfd356a8C8",
+            "implementationReviewed": "0x280b6475BE9A67DF23B0EF75D00c876a74Bfc4b7"
+          }
+        ]
+      },
+      "0x709d075147a10495e5c3bBF3dfc0c138F34C6E72": {
+        "asset": "0xB88a5Ac00917a02d82c7cd6CEBd73E2852d43574",
+        "name": "BalancerAMM",
+        "summary": "safe",
+        "review": "./sweepRateProvider.md",
+        "warnings": [],
+        "factory": "",
+        "upgradeableComponents": [
+          {
+            "entrypoint": "0xB88a5Ac00917a02d82c7cd6CEBd73E2852d43574",
+            "implementationReviewed": "0x8A7d9967A31fe557041519c131B355176734d907"
+          }
+        ]
+      }
     },
     "base": {
-        "0xe561451322a5efC51E6f8ffa558C7482c892Bc1A": {
-            "name": "WrappedUsdPlusRateProvider",
-            "summary": "safe",
-            "review": "./WrappedUsdPlusRateProvider.md",
-            "warnings": [],
-            "factory": "",
-            "upgradeableComponents": [
-                {
-                    "entrypoint": "0xd95ca61CE9aAF2143E81Ef5462C0c2325172E028",
-                    "implementationReviewed": "0xE3434045a3bE5376e8d3Cf841981835996561f80"
-                },
-                {
-                    "entrypoint": "0xB79DD08EA68A908A97220C76d19A6aA9cBDE4376",
-                    "implementationReviewed": "0x441Df98011aD427C5692418999ba2150e6d84277"
-                },
-                {
-                    "entrypoint": "0x7cb1B38591021309C64f451859d79312d8Ca2789",
-                    "implementationReviewed": "0x083f016e9928a3eaa3aca0ff9f4e4ded5db3b4b7"
-                },
-                {
-                    "entrypoint": "0x8ab9012D1BfF1b62c2ad82AE0106593371e6b247",
-                    "implementationReviewed": "0x292F13d4BfD6f6aE0Bf8Be981bcC44eC4850e5E9"
-                }
-            ]
-        }
+      "0xe561451322a5efC51E6f8ffa558C7482c892Bc1A": {
+        "asset": "0xd95ca61CE9aAF2143E81Ef5462C0c2325172E028",
+        "name": "WrappedUsdPlusRateProvider",
+        "summary": "safe",
+        "review": "./WrappedUsdPlusRateProvider.md",
+        "warnings": [],
+        "factory": "",
+        "upgradeableComponents": [
+          {
+            "entrypoint": "0xd95ca61CE9aAF2143E81Ef5462C0c2325172E028",
+            "implementationReviewed": "0xE3434045a3bE5376e8d3Cf841981835996561f80"
+          },
+          {
+            "entrypoint": "0xB79DD08EA68A908A97220C76d19A6aA9cBDE4376",
+            "implementationReviewed": "0x441Df98011aD427C5692418999ba2150e6d84277"
+          },
+          {
+            "entrypoint": "0x7cb1B38591021309C64f451859d79312d8Ca2789",
+            "implementationReviewed": "0x083f016e9928a3eaa3aca0ff9f4e4ded5db3b4b7"
+          },
+          {
+            "entrypoint": "0x8ab9012D1BfF1b62c2ad82AE0106593371e6b247",
+            "implementationReviewed": "0x292F13d4BfD6f6aE0Bf8Be981bcC44eC4850e5E9"
+          }
+        ]
+      }
     },
     "ethereum": {
-        "0x2c3b8c5e98A6e89AAAF21Deebf5FF9d08c4A9FF7": {
-            "name": "BalancerRateProxy",
-            "summary": "safe",
-            "review": "./BalancerRateProxy_uniETH.md",
-            "warnings": [
-                "donation"
-            ],
-            "factory": "",
-            "upgradeableComponents": [
-                {
-                    "entrypoint": "0x4beFa2aA9c305238AA3E0b5D17eB20C045269E9d",
-                    "implementationReviewed": "0x9Ba573D531b45521a4409f3D3e1bC0d7dfF7C757"
-                }
-            ]
-        },
-        "0xAAE054B9b822554dd1D9d1F48f892B4585D3bbf0": {
-            "name": "ETHxRateProvider",
-            "summary": "safe",
-            "review": "./ETHxRateProvider.md",
-            "warnings": [],
-            "factory": "",
-            "upgradeableComponents": [
-                {
-                    "entrypoint": "0xcf5EA1b38380f6aF39068375516Daf40Ed70D299",
-                    "implementationReviewed": "0x9dceaeB1C035C1427E64E6c6fEC61F816e0d0FF5"
-                }
-            ]
-        },
-        "0xA6aeD7922366611953546014A3f9e93f058756a2": {
-            "name": "QueenRateProvider",
-            "summary": "safe",
-            "review": "./QueenRateProvider.md",
-            "warnings": [
-                "donation"
-            ],
-            "factory": "",
-            "upgradeableComponents": []
-        },
-        "0x67560A970FFaB46D65cB520dD3C2fF4E684f29c2": {
-            "name": "TBYRateProvider",
-            "summary": "safe",
-            "review": "./TBYRateProvider.md",
-            "warnings": [],
-            "factory": "0x97390050B63eb56C0e39bB0D8d364333Eb3AFD12",
-            "upgradeableComponents": []
-        },
-        "0xDceC4350d189Ea7e1DD2C9BDa63cB0e0Ae34b81F": {
-            "name": "TBYRateProvider",
-            "summary": "safe",
-            "review": "./TBYRateProvider.md",
-            "warnings": [],
-            "factory": "0x97390050B63eb56C0e39bB0D8d364333Eb3AFD12",
-            "upgradeableComponents": []
-        },
-        "0xc7177B6E18c1Abd725F5b75792e5F7A3bA5DBC2c": {
-            "name": "SavingsDAIRateProvider",
-            "summary": "safe",
-            "review": "./SavingsDAIRateProvider.md",
-            "warnings": [],
-            "factory": "",
-            "upgradeableComponents": []
-        },
-        "0xd8689E8740C23d73136744817347fd6aC464E842": {
-            "name": "wUSDKRateProvider",
-            "summary": "safe",
-            "review": "./wUSDKRateProvider.md",
-            "warnings": [
-                "donation"
-            ],
-            "factory": "",
-            "upgradeableComponents": []
-        },
-        "0x4b697C8c3220FcBdd02DFFa46db5a896ae7a0843": {
-            "name": "TruMaticRateProvider",
-            "summary": "safe",
-            "review": "./TruMaticRateProvider.md",
-            "warnings": [
-                "donation"
-            ],
-            "factory": "",
-            "upgradeableComponents": [
-                {
-                    "entrypoint": "0x4b697C8c3220FcBdd02DFFa46db5a896ae7a0843",
-                    "implementationReviewed": "0x6e8135b003F288aA4009D948e9646588861C5575"
-                },
-                {
-                    "entrypoint": "0xA43A7c62D56dF036C187E1966c03E2799d8987ed",
-                    "implementationReviewed": "0x2a9fD373Ed3Ce392bb5ad8Ee146CFAB66c9fAEae"
-                },
-                {
-                    "entrypoint": "0xeA077b10A0eD33e4F68Edb2655C18FDA38F84712",
-                    "implementationReviewed": "0xf98864DA30a5bd657B13e70A57f5718aBf7BAB31"
-                },
-                {
-                    "entrypoint": "0x5e3Ef299fDDf15eAa0432E6e66473ace8c13D908",
-                    "implementationReviewed": "0xbA9Ac3C9983a3e967f0f387c75cCbD38Ad484963"
-                }
-            ]
-        },
-        "0xf518f2EbeA5df8Ca2B5E9C7996a2A25e8010014b": {
-            "name": "MevEthRateProvider",
-            "summary": "safe",
-            "review": "./MevEthRateProvider.md",
-            "warnings": [
-                "donation"
-            ],
-            "factory": "",
-            "upgradeableComponents": []
-        },
-        "0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee": {
-            "name": "WeETH",
-            "summary": "safe",
-            "review": "./WeETH.md",
-            "warnings": [],
-            "factory": "",
-            "upgradeableComponents": [
-                {
-                    "entrypoint": "0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee",
-                    "implementationReviewed": "0xe629ee84C1Bd9Ea9c677d2D5391919fCf5E7d5D9"
-                },
-                {
-                    "entrypoint": "0x308861A430be4cce5502d0A12724771Fc6DaF216",
-                    "implementationReviewed": "0x4D784Aa9eacc108ea5A326747870897f88d93860"
-                },
-                {
-                    "entrypoint": "0x35fA164735182de50811E8e2E824cFb9B6118ac2",
-                    "implementationReviewed": "0x1B47A665364bC15C28B05f449B53354d0CefF72f"
-                },
-                {
-                    "entrypoint": "0x3d320286E014C3e1ce99Af6d6B00f0C1D63E3000",
-                    "implementationReviewed": "0x047A7749AD683C2Fd8A27C7904Ca8dD128F15889"
-                },
-                {
-                    "entrypoint": "0x0EF8fa4760Db8f5Cd4d993f3e3416f30f942D705",
-                    "implementationReviewed": "0x9D6fC3cBaaD0ef36b2B3a4b4b311C9dd267a4aeA"
-                },
-                {
-                    "entrypoint": "0x57AaF0004C716388B21795431CD7D5f9D3Bb6a41",
-                    "implementationReviewed": "0x698cB4508F13Cc12aAD36D2B64413C302B781d9A"
-                }
-            ]
-        },
-        "0x8023518b2192FB5384DAdc596765B3dD1cdFe471": {
-            "name": "PriceFeed",
-            "summary": "safe",
-            "review": "./osEthRateProvider.md",
-            "warnings": [],
-            "factory": "",
-            "upgradeableComponents": []
-        },
-        "0x387dBc0fB00b26fb085aa658527D5BE98302c84C": {
-            "name": "BalancerRateProvider",
-            "summary": "safe",
-            "review": "ezETHRateProvider.md",
-            "warnings": [
-                "donation"
-            ],
-            "factory": "",
-            "upgradeableComponents": [
-                {
-                    "entrypoint": "0x387dBc0fB00b26fb085aa658527D5BE98302c84C",
-                    "implementationReviewed": "0x9284cEFf248315377e782df0666EE9832E119508"
-                },
-                {
-                    "entrypoint": "0xbf5495Efe5DB9ce00f80364C8B423567e58d2110",
-                    "implementationReviewed": "0x1e756B7bCca7B26FB9D85344B3525F5559bbacb0"
-                },
-                {
-                    "entrypoint": "0x74a09653A083691711cF8215a6ab074BB4e99ef5",
-                    "implementationReviewed": "0x18Ac4D26ACD4c5C4FE98C9098D2E5e1e501A042a"
-                },
-                {
-                    "entrypoint": "0x4994EFc62101A9e3F885d872514c2dC7b3235849",
-                    "implementationReviewed": "0x09aA40B6e0e768a04d650302e1879DCED6b7666E"
-                },
-                {
-                    "entrypoint": "0x5a12796f7e7EBbbc8a402667d266d2e65A814042",
-                    "implementationReviewed": "0x5a12796f7e7EBbbc8a402667d266d2e65A814042"
-                },
-                {
-                    "entrypoint": "0xbAf5f3A05BD7Af6f3a0BBA207803bf77e2657c8F",
-                    "implementationReviewed": "0xceEa4f26924F2CF55f59A560d6F323241728019a"
-                },
-                {
-                    "entrypoint": "0x0B1981a9Fcc24A445dE15141390d3E46DA0e425c",
-                    "implementationReviewed": "0xceEa4f26924F2CF55f59A560d6F323241728019a"
-                }
-            ]
-        },
-        "0x746df66bc1Bb361b9E8E2a794C299c3427976e6C": {
-            "name": "RsETHRateProvider",
-            "summary": "safe",
-            "review": "rsETHRateProvider.md",
-            "warnings": [
-                "donation"
-            ],
-            "factory": "",
-            "upgradeableComponents": [
-                {
-                    "entrypoint": "0x349A73444b1a310BAe67ef67973022020d70020d",
-                    "implementationReviewed": "0xf1bed40dbee8fc0f324fa06322f2bbd62d11c97d,"
-                },
-                {
-                    "entrypoint": "0x947Cb49334e6571ccBFEF1f1f1178d8469D65ec7",
-                    "implementationReviewed": "0x8d9cd771c51b7f6217e0000c1c735f05adbe6594"
-                },
-                {
-                    "entrypoint": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7",
-                    "implementationReviewed": "0x8e2fe2f55f295f3f141213789796fa79e709ef23"
-                },
-                {
-                    "entrypoint": "0x3D08ccb47ccCde84755924ED6B0642F9aB30dFd2",
-                    "implementationReviewed": "0x0379e85188bc416a1d43ab04b28f38b5c63f129e"
-                },
-                {
-                    "entrypoint": "0x8546A7C8C3C537914C3De24811070334568eF427",
-                    "implementationReviewed": "0xd7db9604ef925af96cda6b45026be64c691c7704"
-                }
-            ]
-        },
-        "0xad4bFaFAe75ECd3fED5cFad4E4E9847Cd47A1879": {
-            "name": "svETHRateProvider",
-            "summary": "safe",
-            "review": "sveth.md",
-            "warnings": [
-                "donation"
-            ],
-            "factory": "",
-            "upgradeableComponents": [
-                {
-                    "entrypoint": "0x38D64ce1Bdf1A9f24E0Ec469C9cAde61236fB4a0",
-                    "implementationReviewed": "0x38D64ce1Bdf1A9f24E0Ec469C9cAde61236fB4a0"
-                }
-            ]
-        },
-        "0xFAe103DC9cf190eD75350761e95403b7b8aFa6c0": {
-            "name": "RswETH",
-            "summary": "safe",
-            "review": "./rswethRateProvider.md",
-            "warnings": [
-                ""
-            ],
-            "factory": "",
-            "upgradeableComponents": [
-                {
-                    "entrypoint": "0xFAe103DC9cf190eD75350761e95403b7b8aFa6c0",
-                    "implementationReviewed": "0xcD284A617b4ED7697c2E455d95049c7Fc538785c"
-                },
-                {
-                    "entrypoint": "0xd5A73c748449a45CC7D9f21c7ed3aB9eB3D2e959",
-                    "implementationReviewed": "0xF00E70450EB294C6fe430c842A09796D73c28977"
-                },
-                {
-                    "entrypoint": "0x796592b2092F7E150C48643dA19Dd2F28be3333F",
-                    "implementationReviewed": "0x527d6db79bFf473B8DD722429bDB3B0C8b855D23"
-                }
-            ]
-        },
-        "0xD02011C6C8AEE310D0aA42AA98BFE9DCa547fCc0": {
-            "name": "ERC4626RateProvider",
-            "summary": "safe",
-            "review": "./sDOLARateProvider.md",
-            "warnings": [
-                "donation"
-            ],
-            "factory": "",
-            "upgradeableComponents": []
-        },
-        "0x9cE2837d6d84bb521A5a3002a2132B9E9E9cc4C8": {
-            "name": "BalancerAMM",
-            "summary": "safe",
-            "review": "./sweepRateProvider.md",
-            "warnings": [],
-            "factory": "",
-            "upgradeableComponents": [
-                {
-                    "entrypoint": "0xB88a5Ac00917a02d82c7cd6CEBd73E2852d43574",
-                    "implementationReviewed": "0xf0604A1c725F8eeb14FF082F2275AfE0B67A32D5"
-                }
-            ]
-        },
-        "0x343281Bb5029C4b698fE736D800115ac64D5De39": {
-            "name": "InstETHRateProvider",
-            "summary": "safe",
-            "review": "./InstETHRateProvider.md",
-            "warnings": [
-                "donation"
-            ],
-            "factory": "",
-            "upgradeableComponents": [
-                {
-                    "entrypoint": "0x814CC6B8fd2555845541FB843f37418b05977d8d",
-                    "implementationReviewed": "0xbBf7fc7036B60D1E88913bD583dC5E39957F9f17"
-                },
-                {
-                    "entrypoint": "0x7FA768E035F956c41d6aeaa3Bd857e7E5141CAd5",
-                    "implementationReviewed": "0xBAa61A8d8BC52f5a9256612Fab498c542188A132"
-                }
-            ]
-        },
-        "0xC29783738A475112Cafe58433Dd9D19F3a406619": {
-            "name": "GenEthRateProvider",
-            "summary": "safe",
-            "review": "./genETHRateProvider.md",
-            "warnings": [],
-            "factory": "",
-            "upgradeableComponents": [
-                {
-                    "entrypoint": "0xf073bAC22DAb7FaF4a3Dd6c6189a70D54110525C",
-                    "implementationReviewed": "0x59114182500d834b8E41A397314C97EeE96Ee9bD"
-                },
-                {
-                    "entrypoint": "0x81b98D3a51d4aC35e0ae132b0CF6b50EA1Da2603",
-                    "implementationReviewed": "0xe99AD80f1367ef20e81Ad72134192358670F7bf9"
-                },
-                {
-                    "entrypoint": "0x122ee24Cb3Cc1b6B987800D3B54A68FC16910Dbf",
-                    "implementationReviewed": "0xB7A63a69cc0e635915e65379D2794f0b687D63EC"
-                }
-            ]
-        },
-        "0x72D07D7DcA67b8A406aD1Ec34ce969c90bFEE768": {
-            "name": "WstETHRateProvider",
-            "summary": "safe",
-            "review": "./wstethRateProvider.md",
-            "warnings": [],
-            "factory": "",
-            "upgradeableComponents": []
-        }
+      "0x2c3b8c5e98A6e89AAAF21Deebf5FF9d08c4A9FF7": {
+        "asset": "0xF1376bceF0f78459C0Ed0ba5ddce976F1ddF51F4",
+        "name": "BalancerRateProxy",
+        "summary": "safe",
+        "review": "./BalancerRateProxy_uniETH.md",
+        "warnings": ["donation"],
+        "factory": "",
+        "upgradeableComponents": [
+          {
+            "entrypoint": "0x4beFa2aA9c305238AA3E0b5D17eB20C045269E9d",
+            "implementationReviewed": "0x9Ba573D531b45521a4409f3D3e1bC0d7dfF7C757"
+          }
+        ]
+      },
+      "0xAAE054B9b822554dd1D9d1F48f892B4585D3bbf0": {
+        "asset": "0xA35b1B31Ce002FBF2058D22F30f95D405200A15b",
+        "name": "ETHxRateProvider",
+        "summary": "safe",
+        "review": "./ETHxRateProvider.md",
+        "warnings": [],
+        "factory": "",
+        "upgradeableComponents": [
+          {
+            "entrypoint": "0xcf5EA1b38380f6aF39068375516Daf40Ed70D299",
+            "implementationReviewed": "0x9dceaeB1C035C1427E64E6c6fEC61F816e0d0FF5"
+          }
+        ]
+      },
+      "0xA6aeD7922366611953546014A3f9e93f058756a2": {
+        "asset": "0x93ef1Ea305D11A9b2a3EbB9bB4FCc34695292E7d",
+        "name": "QueenRateProvider",
+        "summary": "safe",
+        "review": "./QueenRateProvider.md",
+        "warnings": ["donation"],
+        "factory": "",
+        "upgradeableComponents": []
+      },
+      "0x67560A970FFaB46D65cB520dD3C2fF4E684f29c2": {
+        "asset": "0xC4cafEFBc3dfeA629c589728d648CB6111DB3136",
+        "name": "TBYRateProvider",
+        "summary": "safe",
+        "review": "./TBYRateProvider.md",
+        "warnings": [],
+        "factory": "0x97390050B63eb56C0e39bB0D8d364333Eb3AFD12",
+        "upgradeableComponents": []
+      },
+      "0xDceC4350d189Ea7e1DD2C9BDa63cB0e0Ae34b81F": {
+        "asset": "0x8dc5BE35672D650bc8A176A4bafBfC33555D80AC",
+        "name": "TBYRateProvider",
+        "summary": "safe",
+        "review": "./TBYRateProvider.md",
+        "warnings": [],
+        "factory": "0x97390050B63eb56C0e39bB0D8d364333Eb3AFD12",
+        "upgradeableComponents": []
+      },
+      "0xc7177B6E18c1Abd725F5b75792e5F7A3bA5DBC2c": {
+        "asset": "0x83F20F44975D03b1b09e64809B757c47f942BEeA",
+        "name": "SavingsDAIRateProvider",
+        "summary": "safe",
+        "review": "./SavingsDAIRateProvider.md",
+        "warnings": [],
+        "factory": "",
+        "upgradeableComponents": []
+      },
+      "0xd8689E8740C23d73136744817347fd6aC464E842": {
+        "asset": "0xaF4ce7CD4F8891ecf1799878c3e9A35b8BE57E09",
+        "name": "wUSDKRateProvider",
+        "summary": "safe",
+        "review": "./wUSDKRateProvider.md",
+        "warnings": ["donation"],
+        "factory": "",
+        "upgradeableComponents": []
+      },
+      "0x4b697C8c3220FcBdd02DFFa46db5a896ae7a0843": {
+        "asset": "0xA43A7c62D56dF036C187E1966c03E2799d8987ed",
+        "name": "TruMaticRateProvider",
+        "summary": "safe",
+        "review": "./TruMaticRateProvider.md",
+        "warnings": ["donation"],
+        "factory": "",
+        "upgradeableComponents": [
+          {
+            "entrypoint": "0x4b697C8c3220FcBdd02DFFa46db5a896ae7a0843",
+            "implementationReviewed": "0x6e8135b003F288aA4009D948e9646588861C5575"
+          },
+          {
+            "entrypoint": "0xA43A7c62D56dF036C187E1966c03E2799d8987ed",
+            "implementationReviewed": "0x2a9fD373Ed3Ce392bb5ad8Ee146CFAB66c9fAEae"
+          },
+          {
+            "entrypoint": "0xeA077b10A0eD33e4F68Edb2655C18FDA38F84712",
+            "implementationReviewed": "0xf98864DA30a5bd657B13e70A57f5718aBf7BAB31"
+          },
+          {
+            "entrypoint": "0x5e3Ef299fDDf15eAa0432E6e66473ace8c13D908",
+            "implementationReviewed": "0xbA9Ac3C9983a3e967f0f387c75cCbD38Ad484963"
+          }
+        ]
+      },
+      "0xf518f2EbeA5df8Ca2B5E9C7996a2A25e8010014b": {
+        "asset": "0x24Ae2dA0f361AA4BE46b48EB19C91e02c5e4f27E",
+        "name": "MevEthRateProvider",
+        "summary": "safe",
+        "review": "./MevEthRateProvider.md",
+        "warnings": ["donation"],
+        "factory": "",
+        "upgradeableComponents": []
+      },
+      "0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee": {
+        "asset": "0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee",
+        "name": "WeETH",
+        "summary": "safe",
+        "review": "./WeETH.md",
+        "warnings": [],
+        "factory": "",
+        "upgradeableComponents": [
+          {
+            "entrypoint": "0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee",
+            "implementationReviewed": "0xe629ee84C1Bd9Ea9c677d2D5391919fCf5E7d5D9"
+          },
+          {
+            "entrypoint": "0x308861A430be4cce5502d0A12724771Fc6DaF216",
+            "implementationReviewed": "0x4D784Aa9eacc108ea5A326747870897f88d93860"
+          },
+          {
+            "entrypoint": "0x35fA164735182de50811E8e2E824cFb9B6118ac2",
+            "implementationReviewed": "0x1B47A665364bC15C28B05f449B53354d0CefF72f"
+          },
+          {
+            "entrypoint": "0x3d320286E014C3e1ce99Af6d6B00f0C1D63E3000",
+            "implementationReviewed": "0x047A7749AD683C2Fd8A27C7904Ca8dD128F15889"
+          },
+          {
+            "entrypoint": "0x0EF8fa4760Db8f5Cd4d993f3e3416f30f942D705",
+            "implementationReviewed": "0x9D6fC3cBaaD0ef36b2B3a4b4b311C9dd267a4aeA"
+          },
+          {
+            "entrypoint": "0x57AaF0004C716388B21795431CD7D5f9D3Bb6a41",
+            "implementationReviewed": "0x698cB4508F13Cc12aAD36D2B64413C302B781d9A"
+          }
+        ]
+      },
+      "0x8023518b2192FB5384DAdc596765B3dD1cdFe471": {
+        "asset": "0xf1C9acDc66974dFB6dEcB12aA385b9cD01190E38",
+        "name": "PriceFeed",
+        "summary": "safe",
+        "review": "./osEthRateProvider.md",
+        "warnings": [],
+        "factory": "",
+        "upgradeableComponents": []
+      },
+      "0x387dBc0fB00b26fb085aa658527D5BE98302c84C": {
+        "asset": "0xbf5495Efe5DB9ce00f80364C8B423567e58d2110",
+        "name": "BalancerRateProvider",
+        "summary": "safe",
+        "review": "ezETHRateProvider.md",
+        "warnings": ["donation"],
+        "factory": "",
+        "upgradeableComponents": [
+          {
+            "entrypoint": "0x387dBc0fB00b26fb085aa658527D5BE98302c84C",
+            "implementationReviewed": "0x9284cEFf248315377e782df0666EE9832E119508"
+          },
+          {
+            "entrypoint": "0xbf5495Efe5DB9ce00f80364C8B423567e58d2110",
+            "implementationReviewed": "0x1e756B7bCca7B26FB9D85344B3525F5559bbacb0"
+          },
+          {
+            "entrypoint": "0x74a09653A083691711cF8215a6ab074BB4e99ef5",
+            "implementationReviewed": "0x18Ac4D26ACD4c5C4FE98C9098D2E5e1e501A042a"
+          },
+          {
+            "entrypoint": "0x4994EFc62101A9e3F885d872514c2dC7b3235849",
+            "implementationReviewed": "0x09aA40B6e0e768a04d650302e1879DCED6b7666E"
+          },
+          {
+            "entrypoint": "0x5a12796f7e7EBbbc8a402667d266d2e65A814042",
+            "implementationReviewed": "0x5a12796f7e7EBbbc8a402667d266d2e65A814042"
+          },
+          {
+            "entrypoint": "0xbAf5f3A05BD7Af6f3a0BBA207803bf77e2657c8F",
+            "implementationReviewed": "0xceEa4f26924F2CF55f59A560d6F323241728019a"
+          },
+          {
+            "entrypoint": "0x0B1981a9Fcc24A445dE15141390d3E46DA0e425c",
+            "implementationReviewed": "0xceEa4f26924F2CF55f59A560d6F323241728019a"
+          }
+        ]
+      },
+      "0x746df66bc1Bb361b9E8E2a794C299c3427976e6C": {
+        "asset": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7",
+        "name": "RsETHRateProvider",
+        "summary": "safe",
+        "review": "rsETHRateProvider.md",
+        "warnings": ["donation"],
+        "factory": "",
+        "upgradeableComponents": [
+          {
+            "entrypoint": "0x349A73444b1a310BAe67ef67973022020d70020d",
+            "implementationReviewed": "0xf1bed40dbee8fc0f324fa06322f2bbd62d11c97d,"
+          },
+          {
+            "entrypoint": "0x947Cb49334e6571ccBFEF1f1f1178d8469D65ec7",
+            "implementationReviewed": "0x8d9cd771c51b7f6217e0000c1c735f05adbe6594"
+          },
+          {
+            "entrypoint": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7",
+            "implementationReviewed": "0x8e2fe2f55f295f3f141213789796fa79e709ef23"
+          },
+          {
+            "entrypoint": "0x3D08ccb47ccCde84755924ED6B0642F9aB30dFd2",
+            "implementationReviewed": "0x0379e85188bc416a1d43ab04b28f38b5c63f129e"
+          },
+          {
+            "entrypoint": "0x8546A7C8C3C537914C3De24811070334568eF427",
+            "implementationReviewed": "0xd7db9604ef925af96cda6b45026be64c691c7704"
+          }
+        ]
+      },
+      "0xad4bFaFAe75ECd3fED5cFad4E4E9847Cd47A1879": {
+        "asset": "0x6733F0283711F225A447e759D859a70b0c0Fd2bC",
+        "name": "svETHRateProvider",
+        "summary": "safe",
+        "review": "sveth.md",
+        "warnings": ["donation"],
+        "factory": "",
+        "upgradeableComponents": [
+          {
+            "entrypoint": "0x38D64ce1Bdf1A9f24E0Ec469C9cAde61236fB4a0",
+            "implementationReviewed": "0x38D64ce1Bdf1A9f24E0Ec469C9cAde61236fB4a0"
+          }
+        ]
+      },
+      "0xFAe103DC9cf190eD75350761e95403b7b8aFa6c0": {
+        "asset": "0xFAe103DC9cf190eD75350761e95403b7b8aFa6c0",
+        "name": "RswETH",
+        "summary": "safe",
+        "review": "./rswethRateProvider.md",
+        "warnings": [""],
+        "factory": "",
+        "upgradeableComponents": [
+          {
+            "entrypoint": "0xFAe103DC9cf190eD75350761e95403b7b8aFa6c0",
+            "implementationReviewed": "0xcD284A617b4ED7697c2E455d95049c7Fc538785c"
+          },
+          {
+            "entrypoint": "0xd5A73c748449a45CC7D9f21c7ed3aB9eB3D2e959",
+            "implementationReviewed": "0xF00E70450EB294C6fe430c842A09796D73c28977"
+          },
+          {
+            "entrypoint": "0x796592b2092F7E150C48643dA19Dd2F28be3333F",
+            "implementationReviewed": "0x527d6db79bFf473B8DD722429bDB3B0C8b855D23"
+          }
+        ]
+      },
+      "0xD02011C6C8AEE310D0aA42AA98BFE9DCa547fCc0": {
+        "asset": "0xb45ad160634c528Cc3D2926d9807104FA3157305",
+        "name": "ERC4626RateProvider",
+        "summary": "safe",
+        "review": "./sDOLARateProvider.md",
+        "warnings": ["donation"],
+        "factory": "",
+        "upgradeableComponents": []
+      },
+      "0x9cE2837d6d84bb521A5a3002a2132B9E9E9cc4C8": {
+        "asset": "0xB88a5Ac00917a02d82c7cd6CEBd73E2852d43574",
+        "name": "BalancerAMM",
+        "summary": "safe",
+        "review": "./sweepRateProvider.md",
+        "warnings": [],
+        "factory": "",
+        "upgradeableComponents": [
+          {
+            "entrypoint": "0xB88a5Ac00917a02d82c7cd6CEBd73E2852d43574",
+            "implementationReviewed": "0xf0604A1c725F8eeb14FF082F2275AfE0B67A32D5"
+          }
+        ]
+      },
+      "0x343281Bb5029C4b698fE736D800115ac64D5De39": {
+        "asset": "0x7FA768E035F956c41d6aeaa3Bd857e7E5141CAd5",
+        "name": "InstETHRateProvider",
+        "summary": "safe",
+        "review": "./InstETHRateProvider.md",
+        "warnings": ["donation"],
+        "factory": "",
+        "upgradeableComponents": [
+          {
+            "entrypoint": "0x814CC6B8fd2555845541FB843f37418b05977d8d",
+            "implementationReviewed": "0xbBf7fc7036B60D1E88913bD583dC5E39957F9f17"
+          },
+          {
+            "entrypoint": "0x7FA768E035F956c41d6aeaa3Bd857e7E5141CAd5",
+            "implementationReviewed": "0xBAa61A8d8BC52f5a9256612Fab498c542188A132"
+          }
+        ]
+      },
+      "0xC29783738A475112Cafe58433Dd9D19F3a406619": {
+        "asset": "0xf073bAC22DAb7FaF4a3Dd6c6189a70D54110525C",
+        "name": "GenEthRateProvider",
+        "summary": "safe",
+        "review": "./genETHRateProvider.md",
+        "warnings": [],
+        "factory": "",
+        "upgradeableComponents": [
+          {
+            "entrypoint": "0xf073bAC22DAb7FaF4a3Dd6c6189a70D54110525C",
+            "implementationReviewed": "0x59114182500d834b8E41A397314C97EeE96Ee9bD"
+          },
+          {
+            "entrypoint": "0x81b98D3a51d4aC35e0ae132b0CF6b50EA1Da2603",
+            "implementationReviewed": "0xe99AD80f1367ef20e81Ad72134192358670F7bf9"
+          },
+          {
+            "entrypoint": "0x122ee24Cb3Cc1b6B987800D3B54A68FC16910Dbf",
+            "implementationReviewed": "0xB7A63a69cc0e635915e65379D2794f0b687D63EC"
+          }
+        ]
+      },
+      "0x72D07D7DcA67b8A406aD1Ec34ce969c90bFEE768": {
+        "asset": "0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0",
+        "name": "WstETHRateProvider",
+        "summary": "safe",
+        "review": "./wstethRateProvider.md",
+        "warnings": [],
+        "factory": "",
+        "upgradeableComponents": []
+      }
     },
     "gnosis": {
-        "0x89C80A4540A00b5270347E02e2E144c71da2EceD": {
-            "name": "ERC4626RateProvider",
-            "summary": "safe",
-            "review": "./SavingsDAIRateProviderGnosis.md",
-            "warnings": [
-                "donation",
-                "only18decimals"
-            ],
-            "factory": "",
-            "upgradeableComponents": []
-        },
-        "0xff315299C4d3FB984b67e31F028724b6a9aEb077": {
-            "name": "ERC4626RateProvider",
-            "summary": "safe",
-            "review": "./stAgEurRateProvider.md",
-            "warnings": [
-                "donation",
-                "only18decimals"
-            ],
-            "factory": "",
-            "upgradeableComponents": [
-                {
-                    "entrypoint": "0x004626A008B1aCdC4c74ab51644093b155e59A23",
-                    "implementationReviewed": "0x6C04c39B9E73aC91106D12F828e2E29Fd8ef1024"
-                },
-                {
-                    "entrypoint": "0x4b1E2c2762667331Bc91648052F646d1b0d35984",
-                    "implementationReviewed": "0x59153e939c5b4721543251ff3049Ea04c755373B"
-                }
-            ]
-        }
+      "0x89C80A4540A00b5270347E02e2E144c71da2EceD": {
+        "asset": "0xaf204776c7245bF4147c2612BF6e5972Ee483701",
+        "name": "ERC4626RateProvider",
+        "summary": "safe",
+        "review": "./SavingsDAIRateProviderGnosis.md",
+        "warnings": ["donation", "only18decimals"],
+        "factory": "",
+        "upgradeableComponents": []
+      },
+      "0xff315299C4d3FB984b67e31F028724b6a9aEb077": {
+        "asset": "0x004626A008B1aCdC4c74ab51644093b155e59A23",
+        "name": "ERC4626RateProvider",
+        "summary": "safe",
+        "review": "./stAgEurRateProvider.md - now stEUR",
+        "warnings": ["donation", "only18decimals"],
+        "factory": "",
+        "upgradeableComponents": [
+          {
+            "entrypoint": "0x004626A008B1aCdC4c74ab51644093b155e59A23",
+            "implementationReviewed": "0x6C04c39B9E73aC91106D12F828e2E29Fd8ef1024"
+          },
+          {
+            "entrypoint": "0x4b1E2c2762667331Bc91648052F646d1b0d35984",
+            "implementationReviewed": "0x59153e939c5b4721543251ff3049Ea04c755373B"
+          }
+        ]
+      }
     },
     "optimism": {
-        "0xe561451322a5efC51E6f8ffa558C7482c892Bc1A": {
-            "name": "WrappedUsdPlusRateProvider",
-            "summary": "safe",
-            "review": "./WrappedUsdPlusRateProvider.md",
-            "warnings": [],
-            "factory": "",
-            "upgradeableComponents": [
-                {
-                    "entrypoint": "0xA348700745D249c3b49D2c2AcAC9A5AE8155F826",
-                    "implementationReviewed": "0x52A8F84672B9778632F98478B4DCfa2Efb7E3247"
-                },
-                {
-                    "entrypoint": "0x73cb180bf0521828d8849bc8CF2B920918e23032",
-                    "implementationReviewed": "0xB79DD08EA68A908A97220C76d19A6aA9cBDE4376"
-                },
-                {
-                    "entrypoint": "0xe80772Eaf6e2E18B651F160Bc9158b2A5caFCA65",
-                    "implementationReviewed": "0xcf02cf91b5ec8230d6bd26c48a8b762ce6081c0f"
-                },
-                {
-                    "entrypoint": "0xBf3FCee0E856c2aa89dc022f00D6D8159A80F011",
-                    "implementationReviewed": "0x98ae7F3fD47100b174014dCD143Eb43AD7acd79A"
-                }
-            ]
-        },
-        "0xBCEBb4dcdEc1c12bf7eB31bd26bc9C3b8F55C966": {
-            "name": "",
-            "summary": "safe",
-            "review": "./stERNRateProvider.md",
-            "warnings": [
-                "donation"
-            ],
-            "factory": "",
-            "upgradeableComponents": [
-                {
-                    "entrypoint": "0xFBD08A6869D3e4EC8A21895c1e269f4b980813f0",
-                    "implementationReviewed": "0xfA097bD1E57d720C2f884C3DFF0B5FCE23A2B09e"
-                },
-                {
-                    "entrypoint": "0x3eE6107d9C93955acBb3f39871D32B02F82B78AB",
-                    "implementationReviewed": "0x3eE6107d9C93955acBb3f39871D32B02F82B78AB"
-                }
-            ]
-        },
-        "0x33A48e4aA79A66fc4f7061f5D9E274528C213029": {
-            "name": "BalancerAMM",
-            "summary": "safe",
-            "review": "./sweepRateProvider.md",
-            "warnings": [],
-            "factory": "",
-            "upgradeableComponents": [
-                {
-                    "entrypoint": "0xB88a5Ac00917a02d82c7cd6CEBd73E2852d43574",
-                    "implementationReviewed": "0x8adEa764cabd2C61E51cEb6937Fd026fA39d8E64"
-                }
-            ]
-        }
+      "0xe561451322a5efC51E6f8ffa558C7482c892Bc1A": {
+        "asset": "0xA348700745D249c3b49D2c2AcAC9A5AE8155F826",
+        "name": "WrappedUsdPlusRateProvider",
+        "summary": "safe",
+        "review": "./WrappedUsdPlusRateProvider.md",
+        "warnings": [],
+        "factory": "",
+        "upgradeableComponents": [
+          {
+            "entrypoint": "0xA348700745D249c3b49D2c2AcAC9A5AE8155F826",
+            "implementationReviewed": "0x52A8F84672B9778632F98478B4DCfa2Efb7E3247"
+          },
+          {
+            "entrypoint": "0x73cb180bf0521828d8849bc8CF2B920918e23032",
+            "implementationReviewed": "0xB79DD08EA68A908A97220C76d19A6aA9cBDE4376"
+          },
+          {
+            "entrypoint": "0xe80772Eaf6e2E18B651F160Bc9158b2A5caFCA65",
+            "implementationReviewed": "0xcf02cf91b5ec8230d6bd26c48a8b762ce6081c0f"
+          },
+          {
+            "entrypoint": "0xBf3FCee0E856c2aa89dc022f00D6D8159A80F011",
+            "implementationReviewed": "0x98ae7F3fD47100b174014dCD143Eb43AD7acd79A"
+          }
+        ]
+      },
+      "0xBCEBb4dcdEc1c12bf7eB31bd26bc9C3b8F55C966": {
+        "asset": "0x3eE6107d9C93955acBb3f39871D32B02F82B78AB",
+        "name": "",
+        "summary": "safe",
+        "review": "./stERNRateProvider.md",
+        "warnings": ["donation"],
+        "factory": "",
+        "upgradeableComponents": [
+          {
+            "entrypoint": "0xFBD08A6869D3e4EC8A21895c1e269f4b980813f0",
+            "implementationReviewed": "0xfA097bD1E57d720C2f884C3DFF0B5FCE23A2B09e"
+          },
+          {
+            "entrypoint": "0x3eE6107d9C93955acBb3f39871D32B02F82B78AB",
+            "implementationReviewed": "0x3eE6107d9C93955acBb3f39871D32B02F82B78AB"
+          }
+        ]
+      },
+      "0x33A48e4aA79A66fc4f7061f5D9E274528C213029": {
+        "asset": "0xB88a5Ac00917a02d82c7cd6CEBd73E2852d43574",
+        "name": "BalancerAMM",
+        "summary": "safe",
+        "review": "./sweepRateProvider.md",
+        "warnings": [],
+        "factory": "",
+        "upgradeableComponents": [
+          {
+            "entrypoint": "0xB88a5Ac00917a02d82c7cd6CEBd73E2852d43574",
+            "implementationReviewed": "0x8adEa764cabd2C61E51cEb6937Fd026fA39d8E64"
+          }
+        ]
+      }
     },
     "polygon": {
-        "0x76D8B79Fb9afD4dA89913458C90B6C09676628E2": {
-            "name": "RateProvider",
-            "summary": "safe",
-            "review": "./RateProvider_wFRK.md",
-            "warnings": [
-                "donation"
-            ],
-            "factory": "",
-            "upgradeableComponents": [
-                {
-                    "entrypoint": "0x2cb7285733A30BB08303B917A7a519C88146C6Eb",
-                    "implementationReviewed": "0xEdb20e3cD8C7c149Ea57fe470fb9685c4b1B8703"
-                },
-                {
-                    "entrypoint": "0x4dBA794671B891D2Ee2E3E7eA9E993026219941C",
-                    "implementationReviewed": "0x7714fcFe0d9C4726F6C1E3B1275C2951B9B54F65"
-                },
-                {
-                    "entrypoint": "0x0aC2E3Cd1E9b2DA91972d2363e76B5A0cE514e73",
-                    "implementationReviewed": "0x41d4D26F70951a2134DC862ea6248fFBE2a516bb"
-                },
-                {
-                    "entrypoint": "0x173EB1d561CcEFd8e83a3741483a8Bd76dF827Ef",
-                    "implementationReviewed": "0x72e923047245D2B58D87f311a2b5b487620EE60A"
-                }
-            ]
-        }
+      "0x76D8B79Fb9afD4dA89913458C90B6C09676628E2": {
+        "asset": "0x01d1a890D40d890d59795aFCce22F5AdbB511A3a",
+        "name": "RateProvider",
+        "summary": "safe",
+        "review": "./RateProvider_wFRK.md",
+        "warnings": ["donation"],
+        "factory": "",
+        "upgradeableComponents": [
+          {
+            "entrypoint": "0x2cb7285733A30BB08303B917A7a519C88146C6Eb",
+            "implementationReviewed": "0xEdb20e3cD8C7c149Ea57fe470fb9685c4b1B8703"
+          },
+          {
+            "entrypoint": "0x4dBA794671B891D2Ee2E3E7eA9E993026219941C",
+            "implementationReviewed": "0x7714fcFe0d9C4726F6C1E3B1275C2951B9B54F65"
+          },
+          {
+            "entrypoint": "0x0aC2E3Cd1E9b2DA91972d2363e76B5A0cE514e73",
+            "implementationReviewed": "0x41d4D26F70951a2134DC862ea6248fFBE2a516bb"
+          },
+          {
+            "entrypoint": "0x173EB1d561CcEFd8e83a3741483a8Bd76dF827Ef",
+            "implementationReviewed": "0x72e923047245D2B58D87f311a2b5b487620EE60A"
+          }
+        ]
+      }
     },
     "zkevm": {
-        "0xFC8d81A01deD207aD3DEB4FE91437CAe52deD0b5": {
-            "name": "AnkrETHRateProvider",
-            "summary": "safe",
-            "review": "./AnkrETHRateProvider.md",
-            "warnings": [],
-            "factory": "",
-            "upgradeableComponents": [
-                {
-                    "entrypoint": "0x12D8CE035c5DE3Ce39B1fDD4C1d5a745EAbA3b8C",
-                    "implementationReviewed": "0x8d98D8ec0D930078a083C7be54430D2093d3D4aB"
-                },
-                {
-                    "entrypoint": "0xEf3C162450E1d08804493aA27BE60CDAa054050F",
-                    "implementationReviewed": "0xd00b967296B6d8Ec266E4BA64594f892D03A4d0a"
-                }
-            ]
-        },
-        "0x4186BFC76E2E237523CBC30FD220FE055156b41F": {
-            "name": "RSETHRateReceiver",
-            "summary": "safe",
-            "review": "./rsEthRateProviderPolygonZKEVM.md",
-            "warnings": [
-                "donation"
-            ],
-            "factory": "",
-            "upgradeableComponents": [
-                {
-                    "entrypoint": "0x4186BFC76E2E237523CBC30FD220FE055156b41F",
-                    "implementationReviewed": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-                }
-            ]
-        }
+      "0xFC8d81A01deD207aD3DEB4FE91437CAe52deD0b5": {
+        "asset": "0x12D8CE035c5DE3Ce39B1fDD4C1d5a745EAbA3b8C",
+        "name": "AnkrETHRateProvider",
+        "summary": "safe",
+        "review": "./AnkrETHRateProvider.md",
+        "warnings": [],
+        "factory": "",
+        "upgradeableComponents": [
+          {
+            "entrypoint": "0x12D8CE035c5DE3Ce39B1fDD4C1d5a745EAbA3b8C",
+            "implementationReviewed": "0x8d98D8ec0D930078a083C7be54430D2093d3D4aB"
+          },
+          {
+            "entrypoint": "0xEf3C162450E1d08804493aA27BE60CDAa054050F",
+            "implementationReviewed": "0xd00b967296B6d8Ec266E4BA64594f892D03A4d0a"
+          }
+        ]
+      },
+      "0x4186BFC76E2E237523CBC30FD220FE055156b41F": {
+        "asset": "0x8C7D118B5c47a5BCBD47cc51789558B98dAD17c5",
+        "name": "RSETHRateReceiver",
+        "summary": "safe",
+        "review": "./rsEthRateProviderPolygonZKEVM.md",
+        "warnings": ["donation"],
+        "factory": "",
+        "upgradeableComponents": [
+          {
+            "entrypoint": "0x4186BFC76E2E237523CBC30FD220FE055156b41F",
+            "implementationReviewed": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
+          }
+        ]
+      }
     }
+  }
 }
