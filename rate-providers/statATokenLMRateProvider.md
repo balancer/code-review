@@ -1,5 +1,3 @@
-\<Template: Copy this file and replace all elements inside \<\> brackets. Delete this particular block.\>
-
 # Rate Provider: `ERC4626RateProvider`
 
 ## Details
@@ -18,7 +16,7 @@
     - [Formal Verification Report For StaticAToken](https://github.com/bgd-labs/static-a-token-v3/blob/main/audits/Formal_Verification_Report_staticAToken.pdf)
 
 ## Context
-The ERC4626 RateProvider fetches the rate of Static Aave Ethereum USDT in terms of USDT. The exchange rate is provided by the Aave V3 `POOL` and fetched via `getReserveNormalizedIncome` from the pool and wrapped as part of the `convertToAsset` call to the `StaticATokenLM`. 
+The ERC4626 RateProvider fetches the rate of Static Aave Tokens in terms of USDC or USDT. The exchange rate is provided by the Aave V3 `POOL` and fetched via `getReserveNormalizedIncome` from the pool and wrapped as part of the `convertToAsset` call to the `StaticATokenLM`. 
 
 ## Review Checklist: Bare Minimum Compatibility
 Each of the items below represents an absolute requirement for the Rate Provider. If any of these is unchecked, the Rate Provider is unfit to use.
@@ -89,7 +87,7 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
     - admin type: Aave governance system.
         - multisig timelock? YES: 24 hours
 
-    - upgradeable component: `StaticATokenLM` ([optimism:0x035c93db04E5aAea54E6cd0261C492a3e0638b37]())
+    - upgradeable component: `StaticATokenLM` ([optimism:0x035c93db04E5aAea54E6cd0261C492a3e0638b37](https://optimistic.etherscan.io/address/0x035c93db04E5aAea54E6cd0261C492a3e0638b37#code))
     - admin address: [optimism:0x746c675dAB49Bcd5BB9Dc85161f2d7Eb435009bf](https://optimistic.etherscan.io/address/0x746c675dAB49Bcd5BB9Dc85161f2d7Eb435009bf)
     - admin type: Aave governance system.
         - multisig timelock? YES: 24 hours.
@@ -108,6 +106,6 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 - [ ] The Rate Provider is susceptible to donation attacks.
 
 ## Conclusion
-**Summary judgment: \<SAFE/UNSAFE\>**
+**Summary judgment: SAFE**
 
-\<Delete this hint: Formulate a nuanced conclusion here. Remember, it's okay if some of the boxes above are checked as long as reasonable protections are in place. If the Rate Provider is very obviously safe, say so. If it's very obviously not, say so: what specifically needs to change before it can be considered safe? If the conclusion is hazy, explain why, and leave the final determination up to the reader. Examples of completely unacceptable conditions include, but are not limited to: EOA admins, EOA price sources, market prices (instead of deposit/redemption prices).\>
+The Rate Providers should work well with Balancer pools. The underlying contracts have been audited and been in production for an extended period of time. The upgradeability of the underlying Aave protocol is guarded behind decentralized governance and has a minimum execution delay of 24 hours. 
