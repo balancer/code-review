@@ -597,6 +597,25 @@
             "warnings": [],
             "factory": "",
             "upgradeableComponents": []
+        },
+        "": {
+            "name": "",
+            "summary": "safe",
+            "review": "./PufEthRateProvider.md",
+            "warnings": [
+                "donation"
+            ],
+            "factory": "",
+            "upgradeableComponents": [
+                {
+                    "entrypoint": "0x71f80e2CfAFA5EC2F0bF12f71FA7Ea57c3D0c7Af",
+                    "implementationReviewed": "0x1025aAa9ceB206303984Af4cc831B8A792c363d0"
+                },
+                {
+                    "entrypoint": "0xD9A442856C234a39a81a089C06451EBAa4306a72",
+                    "implementationReviewed": "0x39Ca0a6438B6050ea2aC909Ba65920c7451305C1"
+                }
+            ]
         }
     },
     "gnosis": {
