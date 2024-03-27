@@ -126,6 +126,40 @@
                     "implementationReviewed": "0x9284cEFf248315377e782df0666EE9832E119508"
                 }
             ]
+        },
+        "0x87cD462A781c0ca843EAB131Bf368328848bB6fD": {
+            "name": "ERC4626RateProvider",
+            "summary": "safe",
+            "review": "./statATokenLMRateProvider.md",
+            "warnings": [],
+            "factory": "",
+            "upgradeableComponents": [
+                {
+                    "entrypoint": "0x7CFaDFD5645B50bE87d546f42699d863648251ad",
+                    "implementationReviewed": "0x4c0633bf70fb2bb984a9eec5d9052bdea451c70a"
+                },
+                {
+                    "entrypoint": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+                    "implementationReviewed": "0x03e8c5cd5e194659b16456bb43dd5d38886fe541"
+                }
+            ]
+        },
+        "0x48942B49B5bB6f3E1d43c204a3F40a4c5F696ef6": {
+            "name": "ERC4626RateProvider",
+            "summary": "safe",
+            "review": "./statATokenLMRateProvider.md",
+            "warnings": [],
+            "factory": "",
+            "upgradeableComponents": [
+                {
+                    "entrypoint": "0xb165a74407fE1e519d6bCbDeC1Ed3202B35a4140",
+                    "implementationReviewed": "0x4c0633bf70fb2bb984a9eec5d9052bdea451c70a"
+                },
+                {
+                    "entrypoint": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+                    "implementationReviewed": "0x03e8c5cd5e194659b16456bb43dd5d38886fe541"
+                }
+            ]
         }
     },
     "avalanche": {
@@ -516,6 +550,25 @@
                 }
             ]
         },
+        "": {
+            "name": "",
+            "summary": "safe",
+            "review": "./statATokenLMRateProvider.md",
+            "warnings": [
+                ""
+            ],
+            "factory": "",
+            "upgradeableComponents": [
+                {
+                    "entrypoint": "0x862c57d48becB45583AEbA3f489696D22466Ca1b",
+                    "implementationReviewed": "0xc026f5dd7869e0ddc44a759ea3dec6d5cd8d996b"
+                },
+                {
+                    "entrypoint": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+                    "implementationReviewed": "0x5faab9e1adbddad0a08734be8a52185fd6558e14"
+                }
+            ]
+        },
         "0xC29783738A475112Cafe58433Dd9D19F3a406619": {
             "name": "GenEthRateProvider",
             "summary": "safe",
@@ -544,6 +597,25 @@
             "warnings": [],
             "factory": "",
             "upgradeableComponents": []
+        },
+        "0x71f80e2CfAFA5EC2F0bF12f71FA7Ea57c3D0c7Af": {
+            "name": "",
+            "summary": "safe",
+            "review": "./PufEthRateProvider.md",
+            "warnings": [
+                "donation"
+            ],
+            "factory": "",
+            "upgradeableComponents": [
+                {
+                    "entrypoint": "0x71f80e2CfAFA5EC2F0bF12f71FA7Ea57c3D0c7Af",
+                    "implementationReviewed": "0x1025aAa9ceB206303984Af4cc831B8A792c363d0"
+                },
+                {
+                    "entrypoint": "0xD9A442856C234a39a81a089C06451EBAa4306a72",
+                    "implementationReviewed": "0x39Ca0a6438B6050ea2aC909Ba65920c7451305C1"
+                }
+            ]
         }
     },
     "gnosis": {
@@ -636,6 +708,40 @@
                     "implementationReviewed": "0x8adEa764cabd2C61E51cEb6937Fd026fA39d8E64"
                 }
             ]
+        },
+        "0xdFa8d2b3c146b8a10B5d63CA0306AEa84B602cfb": {
+            "name": "",
+            "summary": "safe",
+            "review": "./statATokenLMRateProvider.md",
+            "warnings": [],
+            "factory": "",
+            "upgradeableComponents": [
+                {
+                    "entrypoint": "0x4DD03dfD36548C840B563745e3FBeC320F37BA7e",
+                    "implementationReviewed": "0xD792a3779D3C80bAEe8CF3304D6aEAc74bC432BE"
+                },
+                {
+                    "entrypoint": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+                    "implementationReviewed": "0x03e8C5Cd5E194659b16456bb43Dd5D38886FE541"
+                }
+            ]
+        },
+        "0x3f921Ebabab0703BC06d1828D09a245e8390c263": {
+            "name": "",
+            "summary": "safe",
+            "review": "./statATokenLMRateProvider.md",
+            "warnings": [],
+            "factory": "",
+            "upgradeableComponents": [
+                {
+                    "entrypoint": "0x035c93db04E5aAea54E6cd0261C492a3e0638b37",
+                    "implementationReviewed": "0xD792a3779D3C80bAEe8CF3304D6aEAc74bC432BE"
+                },
+                {
+                    "entrypoint": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+                    "implementationReviewed": "0x03e8C5Cd5E194659b16456bb43Dd5D38886FE541"
+                }
+            ]
         }
     },
     "polygon": {
@@ -663,6 +769,44 @@
                 {
                     "entrypoint": "0x173EB1d561CcEFd8e83a3741483a8Bd76dF827Ef",
                     "implementationReviewed": "0x72e923047245D2B58D87f311a2b5b487620EE60A"
+                }
+            ]
+        },
+        "0x7d10050F608c8EFFf118eDd1416D82a0EF2d7531": {
+            "name": "ERC4626RateProvider",
+            "summary": "safe",
+            "review": "./statATokenLMRateProvider.md",
+            "warnings": [
+                ""
+            ],
+            "factory": "",
+            "upgradeableComponents": [
+                {
+                    "entrypoint": "0x2dCa80061632f3F87c9cA28364d1d0c30cD79a19",
+                    "implementationReviewed": "0x6a7192c55e9298874e49675a63d5ebb11ed99a66"
+                },
+                {
+                    "entrypoint": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+                    "implementationReviewed": "0x1ed647b250e5b6d71dc7b25806f44c33f5658f71"
+                }
+            ]
+        },
+        "0x9977a61a6aa950044d4dcD8aA0cAb76F84ea5aCd": {
+            "name": "ERC4626RateProvider",
+            "summary": "safe",
+            "review": "./statATokenLMRateProvider.md",
+            "warnings": [
+                ""
+            ],
+            "factory": "",
+            "upgradeableComponents": [
+                {
+                    "entrypoint": "0x87A1fdc4C726c459f597282be639a045062c0E46",
+                    "implementationReviewed": "0x6a7192c55e9298874e49675a63d5ebb11ed99a66"
+                },
+                {
+                    "entrypoint": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+                    "implementationReviewed": "0x1ed647b250e5b6d71dc7b25806f44c33f5658f71"
                 }
             ]
         }
