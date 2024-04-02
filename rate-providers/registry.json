@@ -616,6 +616,48 @@
                     "implementationReviewed": "0x39Ca0a6438B6050ea2aC909Ba65920c7451305C1"
                 }
             ]
+        },
+        "0xB3351000db2A9a3638d6bbf1c229BEFeb98377DB": {
+            "name": "MswETHRateProvider",
+            "summary": "safe",
+            "review": "./MagpieMswETHRateProvider.md",
+            "warnings": [],
+            "factory": "",
+            "upgradeableComponents": [
+                {
+                    "entrypoint": "0x32bd822d615A3658A68b6fDD30c2fcb2C996D678", //msweth
+                    "implementationReviewed": "0x19513d54df2e0e8432f6053f08e10907a2165d4e"
+                },
+                {
+                    "entrypoint": "0x20b70E4A1883b81429533FeD944d7957121c7CAB", //eigenpiconfig
+                    "implementationReviewed": "0x90790a124c8a598651beb56243e92679bd012761"
+                },
+                {
+                    "entrypoint": "0x9daA893D4Dfb96F46eA879f08ca46f39DaC07767", //priceProvider
+                    "implementationReviewed": "0xfd2145b374cd9f6cc3bcde92b08e0018adc743d0"
+                }
+            ]
+        },
+        "0xCC701e2D472dFa2857Bf9AE24c263DAa39fD2C61": {
+            "name": "./MagpieMstETHRateProvider.md",
+            "summary": "safe",
+            "review": "./.md",
+            "warnings": [],
+            "factory": "",
+            "upgradeableComponents": [
+                {
+                    "entrypoint": "0x49446A0874197839D15395B908328a74ccc96Bc0",
+                    "implementationReviewed": "0x50e0D2241f45DBfE071B6A05b798B028a39BF0bd"
+                },
+                {
+                    "entrypoint": "0x20b70E4A1883b81429533FeD944d7957121c7CAB",
+                    "implementationReviewed": "0x90790a124c8a598651beb56243e92679bd012761"
+                },
+                {
+                    "entrypoint": "0x9daA893D4Dfb96F46eA879f08ca46f39DaC07767",
+                    "implementationReviewed": "0xfd2145b374cd9f6cc3bcde92b08e0018adc743d0"
+                }
+            ]
         }
     },
     "gnosis": {
