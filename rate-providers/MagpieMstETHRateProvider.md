@@ -83,5 +83,5 @@ To save time, we do not bother pointing out low-severity/informational issues or
 ## Conclusion
 **Summary judgment: SAFE**
 
-This Rate Provider should work well with Balancer pools. The two options of price chainges are either based on a fixed calculation logic based on stakedAsset value received from Eigenlayer or a price Update via a multisig. Both price updates are checked for deviation and update frequency.
+This Rate Provider should work well with Balancer pools. The two options of price changes are either based on a fixed calculation logic based on stakedAsset value received from Eigenlayer or a price update via a multisig. Both price updates are checked for deviation and update frequency.
 
