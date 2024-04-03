@@ -163,7 +163,7 @@
         },
         "0x3A236F67Fce401D87D7215695235e201966576E4": {
             "name": "MergedAdapterWithoutRoundsSusdeRateProviderV1",
-            "summary": "",
+            "summary": "safe",
             "review": "./sUSDERateProvider.md",
             "warnings": [],
             "factory": "",

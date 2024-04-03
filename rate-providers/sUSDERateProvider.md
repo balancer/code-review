@@ -99,6 +99,9 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 To save time, we do not bother pointing out low-severity/informational issues or gas optimizations (unless the gas usage is particularly egregious). Instead, we focus only on high- and medium-severity findings which materially impact the contract's functionality and could harm users.
 
 ## Conclusion
-**Summary judgment: **
+**Summary judgment: SAFE**
 
-This Rate Provider is expected to work well with Balancer Pools. While the Price data can be updated by various EOAs the checks for data validity are essential and are what protects against malicious price data being provided.
+This Rate Provider is expected to work well with Balancer Pools. This verdict is based on the following assumptions: Both unverified contracts and the mentioned EOAs act as relayers which:
+> can update the price but only using our signed data packages. In other words, they act only as relayers passing already signed data without the ability to modify content.
+Given these accounts acting as relayers as outlined in the RedStone classic oracle model and rate deviation protection measures being in place, this Rate Provider should work with Balancer pools.
+
