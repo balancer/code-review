@@ -2,7 +2,7 @@
 
 ## Details
 - Reviewed by: @mkflow27
-- Checked by: @\<GitHub handle of secondary reviewer\>
+- Checked by: @danielmkm
 - Deployed at:
     - [arbitrum:0x3A236F67Fce401D87D7215695235e201966576E4](https://arbiscan.io/address/0x3A236F67Fce401D87D7215695235e201966576E4#readProxyContract)
 - Audit report(s):
@@ -42,7 +42,7 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 
     - any protections? YES: The Rate that is being written to the Rate Providers storage has checks that need to be passed. This includes: 
         - A new Rate must have a timestamp more recent than the last one written to storage.
-        - A new Rate cannot be updated more frequent than 12 hours.
+        - A new Rate cannot be updated more frequent than once every 12 hours.
         - A new Rate cannot be changed more than 2% compared to the last stored Rate.
         - A new returned rate cannot be 0.
 
