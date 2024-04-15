@@ -173,6 +173,19 @@
                     "implementationReviewed": "0x0e2d75D760b12ac1F2aE84CD2FF9fD13Cb632942"
                 }
             ]
+        },
+        "0x8aa73EC870DC4a0af6b471937682a8FC3b8A21f8": {
+            "name": "StakePoolRate",
+            "summary": "safe",
+            "review": "./jitoSOLRateProvider.md",
+            "warnings": [],
+            "factory": "",
+            "upgradeableComponents": [
+                {
+                    "entrypoint": "0xa5f208e072434bC67592E4C49C1B991BA79BCA46",
+                    "implementationReviewed": "0x621199f6beB2ba6fbD962E8A52A320EA4F6D4aA3"
+                }
+            ]
         }
     },
     "avalanche": {
