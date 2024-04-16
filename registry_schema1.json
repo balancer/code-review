@@ -1,0 +1,42 @@
+{
+  "arbitrum": {
+    "0xFC8d81A01deD207aD3DEB4FE91437CAe52deD0b5": {
+      "asset": "0x12D8CE035c5DE3Ce39B1fDD4C1d5a745EAbA3b8C",
+      "name": "AnkrETHRateProvider",
+      "summary": "safe",
+      "review": "./AnkrETHRateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xe05A08226c49b636ACf99c40Da8DC6aF83CE5bB3",
+          "implementationReviewed": "0x4d8798836b630025C5c98FEbd10a90B3D7596777"
+        },
+        {
+          "entrypoint": "0xCb0006B31e6b403fEeEC257A8ABeE0817bEd7eBa",
+          "implementationReviewed": "0xd00b967296B6d8Ec266E4BA64594f892D03A4d0a"
+        }
+      ]
+    },
+    "0xd983d5560129475bFC210332422FAdCb4EcD09B0": {
+      "asset": "0x1DEBd73E752bEaF79865Fd6446b0c970EaE7732f",
+      "name": "Chainlink cbETH Rate Provider",
+      "summary": "safe",
+      "review": "", // maybe add a generic Chainlink.md ?
+      "warnings": ["legacy"],
+      "factory": "0x5dbad78818d4c8958eff2d5b95b28385a22113cd",
+      "upgradeableComponents": []
+    }
+  },
+  "avalanche": {
+    "0x5f8147f9e4fB550C5be815C8a20013171eEFB46D": {
+      "asset": "0x2b2C81e08f1Af8835a78Bb2A90AE924ACE0eA4bE",
+      "name": "sAVAX Rate Provider",
+      "summary": "safe",
+      "review": "", // maybe add a generic Legacy.md ?
+      "warnings": ["legacy"],
+      "factory": "",
+      "upgradeableComponents": []
+    }
+  }
+}
