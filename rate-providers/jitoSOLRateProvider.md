@@ -9,7 +9,8 @@
     - [Wormhole audits](https://github.com/wormhole-foundation/wormhole/blob/main/SECURITY.md#3rd-party-security-audits)
 
 ## Context
-The oracle contract at is an immutable QueryResponse processor, which accepts valid queries for the designated Stake Pool account via updatePool() and provides the last totalActiveStake and poolTokenSupply via getRate() as long as the last update is not older than the configured allowedStaleness.
+The oracle contract is an immutable QueryResponse processor. It accepts valid queries for the designated Stake Pool account via the `updatePool()` function and provides the last totalActiveStake and poolTokenSupply via the `getRate()` function, as long as the last update is not older than the configured allowedStaleness.
+
 
 ## Review Checklist: Bare Minimum Compatibility
 Each of the items below represents an absolute requirement for the Rate Provider. If any of these is unchecked, the Rate Provider is unfit to use.
@@ -35,7 +36,7 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 ### Oracles
 - [x] Price data is provided by an off-chain source (e.g., a Chainlink oracle, a multisig, or a network of nodes).
     - source: Wormhole 
-    - any protections? Various protections are in place. Most importantly the signature of the guardians that signed the data since the `updatePool` function is public. Other important validations are if data is being updated consistently (otherwise the call to `validateBlockTime` of `updatePool` would fail.). 
+    - any protections? Various protections are in place. Most importantly, the signature of the guardians that signed the data since the `updatePool` function is public. Other important validations are if data is being updated consistently (otherwise the call to `validateBlockTime` of `updatePool` would fail.). 
 
 - [ ] Price data is expected to be volatile (e.g., because it represents an open market price instead of a (mostly) monotonically increasing price).
 ### Common Manipulation Vectors
@@ -48,4 +49,4 @@ To save time, we do not bother pointing out low-severity/informational issues or
 ## Conclusion
 **Summary judgment: SAFE**
 
-The conclusion of this review rests on the assumption that the guardians signing the data have come to consensus on the correctness of it. Similar to how Chainlink data consumption works. One important caveat to mention as part of this review is that consistent reporting of rates via Wormhole is **required**. If no new report has come it, the call to `getRate` will revert and once the CSPs rates need to be cached anew, the pool interaction will revert, requiring a recovery mode for LPs to withdraw their funds.
+The conclusion of this review rests on the assumption that the guardians signing the data have come to consensus on the correctness of it. Similar to how Chainlink data consumption works. One important caveat to mention as part of this review is that consistent reporting of rates via Wormhole is **required**. If no new report has come in, the call to `getRate` will revert and once the CSP's rate need to be cached anew, the pool interaction will revert, requiring a recovery mode for LPs to withdraw their funds.
