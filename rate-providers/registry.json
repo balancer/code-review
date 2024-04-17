@@ -684,6 +684,16 @@
                     "implementationReviewed": "0xfd2145b374cd9f6cc3bcde92b08e0018adc743d0"
                 }
             ]
+        },
+        "0x3A244e6B3cfed21593a5E5B347B593C0B48C7dA1": {
+            "name": "EthenaBalancerRateProvider",
+            "summary": "safe",
+            "review": "./sUSDERateProviderMainnet.md",
+            "warnings": [
+                "donation"
+            ],
+            "factory": "",
+            "upgradeableComponents": []
         }
     },
     "gnosis": {
