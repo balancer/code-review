@@ -694,6 +694,16 @@
             ],
             "factory": "",
             "upgradeableComponents": []
+        },
+        "0x033E20068Db853Fa6C077F38faa4670423FC55fF": {
+            "name": "ERC4626RateProvider",
+            "summary": "safe",
+            "review": "./sFRAXRateProvider.md",
+            "warnings": [
+                "donation"
+            ],
+            "factory": "",
+            "upgradeableComponents": []
         }
     },
     "gnosis": {
