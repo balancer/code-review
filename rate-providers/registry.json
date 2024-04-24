@@ -17,6 +17,25 @@
                 }
             ]
         },
+        "0x1aCB59d7c5D23C0310451bcd7bA5AE46d18c108C": {
+            "name": "asETHRateProvider",
+            "summary": "safe",
+            "review": "./asETHRateProvider.md",
+            "warnings": [
+                "donation"
+            ],
+            "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
+            "upgradeableComponents": [
+                {
+                    "entrypoint": "0xF1617882A71467534D14EEe865922de1395c9E89",
+                    "implementationReviewed": "0xD9F64Ee3DD6F552c1BcfC8862dbD130bc6697a66"
+                },
+                {
+                    "entrypoint": "0xFC87753Df5Ef5C368b5FBA8D4C5043b77e8C5b39",
+                    "implementationReviewed": "0x5f898DC62d699ecBeD578E4A9bEf46009EA8424b"
+                }
+            ]
+        },
         "0xD438f19b1Dd47EbECc5f904d8Fd44583CbFB7c85": {
             "name": "BalancerRateProvider",
             "summary": "safe",
