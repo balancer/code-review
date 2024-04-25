@@ -4,10 +4,7 @@
 - Reviewed by: @wei3erHase
 - Checked by: @\<GitHub handle of secondary reviewer\>
 - Deployed at:
-    - `saETH(Proxy)` [eth:0xF1617882A71467534D14EEe865922de1395c9E89](https://etherscan.io/address/0xF1617882A71467534D14EEe865922de1395c9E89)
-    - `saETH(Implementation)` [eth:0xD9F64Ee3DD6F552c1BcfC8862dbD130bc6697a66](https://etherscan.io/address/0xD9F64Ee3DD6F552c1BcfC8862dbD130bc6697a66)
-    - `aETH(Proxy)` [eth:0xFC87753Df5Ef5C368b5FBA8D4C5043b77e8C5b39](https://etherscan.io/address/0xFC87753Df5Ef5C368b5FBA8D4C5043b77e8C5b39)
-    - `aETH(Implementation)` [eth:0x5f898DC62d699ecBeD578E4A9bEf46009EA8424b](https://etherscan.io/address/0x5f898DC62d699ecBeD578E4A9bEf46009EA8424b)
+    - [ethereum:0x1aCB59d7c5D23C0310451bcd7bA5AE46d18c108C](https://etherscan.io/address/0x1aCB59d7c5D23C0310451bcd7bA5AE46d18c108C#code)  
 - Audit report(s):
     - [MixBytes - Aspida Network Contracts Security Audit Report](https://github.com/aspidanet/documents/blob/main/audits/Aspida%20Network%20Contracts%20Security%20Audit%20Report.pdf)
 
@@ -26,7 +23,7 @@ Each of the items below represents a common red flag found in Rate Provider cont
 ### Administrative Privileges
 - [ ] The Rate Provider is upgradeable (e.g., via a proxy architecture or an `onlyOwner` function that updates the price source address).
 
-- [x] Some other portion of the price pipeline is upgradeable (e.g., the token itself, an oracle, or some piece of a larger system that tracks the price). \<Delete this hint: If unchecked, delete all of the bullets below.\>
+- [x] Some other portion of the price pipeline is upgradeable (e.g., the token itself, an oracle, or some piece of a larger system that tracks the price).
     - upgradeable component: saETH `ERC4626Upgradeable` [eth:0xF1617882A71467534D14EEe865922de1395c9E89](https://etherscan.io/address/0xF1617882A71467534D14EEe865922de1395c9E89#code)
         - admin address: [eth:0xEC852538b5b6A62390fEE1432756a61834B7D79A](https://etherscan.io/address/0xEC852538b5b6A62390fEE1432756a61834B7D79A)
         - admin type: multisig
