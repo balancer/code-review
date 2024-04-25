@@ -2,7 +2,7 @@
 
 ## Details
 - Reviewed by: @wei3erHase
-- Checked by: @\<GitHub handle of secondary reviewer\>
+- Checked by: @mkflow27
 - Deployed at:
     - [ethereum:0x1aCB59d7c5D23C0310451bcd7bA5AE46d18c108C](https://etherscan.io/address/0x1aCB59d7c5D23C0310451bcd7bA5AE46d18c108C#code)  
 - Audit report(s):
