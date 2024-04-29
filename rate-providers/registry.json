@@ -694,7 +694,7 @@
         "0xCC701e2D472dFa2857Bf9AE24c263DAa39fD2C61": {
             "name": "./MagpieMstETHRateProvider.md",
             "summary": "safe",
-            "review": "./.md",
+            "review": "./MagpieMstETHRateProvider.md",
             "warnings": [],
             "factory": "",
             "upgradeableComponents": [
