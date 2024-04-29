@@ -603,7 +603,7 @@
                 }
             ]
         },
-        "": {
+        "0xda3E8CD08753a05Ed4103aF28c69C47e35d6D8Da": {
             "name": "",
             "summary": "safe",
             "review": "./statATokenLMRateProvider.md",
