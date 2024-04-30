@@ -281,6 +281,23 @@
             "warnings": [],
             "factory": "",
             "upgradeableComponents": []
+        },
+        "0x4467Ab7BC794bb3929d77e826328BD378bf5392F": {
+            "name": "ERC4626RateProvider",
+            "summary": "safe",
+            "review": "./statATokenLMRateProvider.md",
+            "warnings": [],
+            "factory": "",
+            "upgradeableComponents": [
+                {
+                    "entrypoint": "0x4EA71A20e655794051D1eE8b6e4A3269B13ccaCc",
+                    "implementationReviewed": "0xF1Cd4193bbc1aD4a23E833170f49d60f3D35a621"
+                },
+                {
+                    "entrypoint": "0xA238Dd80C259a72e81d7e4664a9801593F98d1c5",
+                    "implementationReviewed": "0xE9547fc44C271dBddf94D8E20b46836B87DA6789"
+                }
+            ]
         }
     },
     "ethereum": {
