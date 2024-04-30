@@ -102,7 +102,7 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
         - admin address: [optimism:0x746c675dAB49Bcd5BB9Dc85161f2d7Eb435009bf](https://optimistic.etherscan.io/address/0x746c675dAB49Bcd5BB9Dc85161f2d7Eb435009bf)
         - admin type: Aave governance system.
             - multisig timelock? YES: 24 hours.
-        - upgradeable component: `L2Pool` ([optimism:0x794a61358D6845594F94dc1DB02A252b5b4814aD]())
+        - upgradeable component: `L2Pool` ([optimism:0x794a61358D6845594F94dc1DB02A252b5b4814aD](https://optimistic.etherscan.io/address/0x794a61358D6845594F94dc1DB02A252b5b4814aD#code))
         - admin address: [optimism:0x746c675dAB49Bcd5BB9Dc85161f2d7Eb435009bf](https://optimistic.etherscan.io/address/0x746c675dAB49Bcd5BB9Dc85161f2d7Eb435009bf)
         - admin type: Aave governance system.
             - multisig timelock? YES: 24 hours
