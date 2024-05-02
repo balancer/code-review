@@ -604,7 +604,7 @@
         "0x343281Bb5029C4b698fE736D800115ac64D5De39": {
             "name": "InstETHRateProvider",
             "summary": "safe",
-            "review": "./InstETHRateProvider.md",
+            "review": "./InceptionLRTRateProvider.md",
             "warnings": [
                 "donation"
             ],
@@ -748,6 +748,25 @@
             ],
             "factory": "",
             "upgradeableComponents": []
+        },
+        "0x8bC73134A736437da780570308d3b37b67174ddb": {
+            "name": "",
+            "summary": "safe",
+            "review": "./InceptionLRTRateProvider.md",
+            "warnings": [
+                "donation"
+            ],
+            "factory": "",
+            "upgradeableComponents": [
+                {
+                    "entrypoint": "0x36B429439AB227fAB170A4dFb3321741c8815e55",
+                    "implementationReviewed": "0x540529f2CF6B0CE1cd39c65815487AfD54B61c2f"
+                },
+                {
+                    "entrypoint": "0xfa2629B9cF3998D52726994E0FcdB750224D8B9D",
+                    "implementationReviewed": "0xf0b06794b6B068f728481b4F44C9AD0bE42fB8aB"
+                }
+            ]
         }
     },
     "gnosis": {
