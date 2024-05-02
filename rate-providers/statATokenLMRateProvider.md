@@ -11,6 +11,7 @@
     - [arbitrum:0x48942B49B5bB6f3E1d43c204a3F40a4c5F696ef6](https://arbiscan.io/address/0x48942B49B5bB6f3E1d43c204a3F40a4c5F696ef6)
     - [optimism:0xdFa8d2b3c146b8a10B5d63CA0306AEa84B602cfb](https://optimistic.etherscan.io/address/0xdFa8d2b3c146b8a10B5d63CA0306AEa84B602cfb#code)
     - [optimism:0x3f921Ebabab0703BC06d1828D09a245e8390c263](https://optimistic.etherscan.io/address/0x3f921Ebabab0703BC06d1828D09a245e8390c263#code)
+    - [base:0x4467Ab7BC794bb3929d77e826328BD378bf5392F](https://basescan.org/address/0x4467Ab7BC794bb3929d77e826328BD378bf5392F)
 
 - Audit report(s):
     - [Formal Verification Report For StaticAToken](https://github.com/bgd-labs/static-a-token-v3/blob/main/audits/Formal_Verification_Report_staticAToken.pdf)
@@ -101,8 +102,18 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
         - admin address: [optimism:0x746c675dAB49Bcd5BB9Dc85161f2d7Eb435009bf](https://optimistic.etherscan.io/address/0x746c675dAB49Bcd5BB9Dc85161f2d7Eb435009bf)
         - admin type: Aave governance system.
             - multisig timelock? YES: 24 hours.
-        - upgradeable component: `L2Pool` ([optimism:0x794a61358D6845594F94dc1DB02A252b5b4814aD]())
+        - upgradeable component: `L2Pool` ([optimism:0x794a61358D6845594F94dc1DB02A252b5b4814aD](https://optimistic.etherscan.io/address/0x794a61358D6845594F94dc1DB02A252b5b4814aD#code))
         - admin address: [optimism:0x746c675dAB49Bcd5BB9Dc85161f2d7Eb435009bf](https://optimistic.etherscan.io/address/0x746c675dAB49Bcd5BB9Dc85161f2d7Eb435009bf)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours
+
+    - [base:0x4467Ab7BC794bb3929d77e826328BD378bf5392F](https://basescan.org/address/0x4467Ab7BC794bb3929d77e826328BD378bf5392F#code)
+        - upgradeable component: `StaticATokenLM` ([base:0x4EA71A20e655794051D1eE8b6e4A3269B13ccaCc](https://basescan.org/address/0x4EA71A20e655794051D1eE8b6e4A3269B13ccaCc#readProxyContract))
+        - admin address: [base:0x9390B1735def18560c509E2d0bc090E9d6BA257a](https://basescan.org/address/0x9390B1735def18560c509E2d0bc090E9d6BA257a)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours.
+        - upgradeable component: `L2Pool` ([base:0xA238Dd80C259a72e81d7e4664a9801593F98d1c5](https://basescan.org/address/0xA238Dd80C259a72e81d7e4664a9801593F98d1c5#readProxyContract))
+        - admin address: [base:0x9390B1735def18560c509E2d0bc090E9d6BA257a](https://basescan.org/address/0x9390B1735def18560c509E2d0bc090E9d6BA257a)
         - admin type: Aave governance system.
             - multisig timelock? YES: 24 hours
     
