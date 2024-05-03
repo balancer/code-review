@@ -578,7 +578,7 @@
       "upgradeableComponents": [
         {
           "entrypoint": "0x349A73444b1a310BAe67ef67973022020d70020d",
-          "implementationReviewed": "0xf1bed40dbee8fc0f324fa06322f2bbd62d11c97d,"
+          "implementationReviewed": "0xf1bed40dbee8fc0f324fa06322f2bbd62d11c97d"
         },
         {
           "entrypoint": "0x947Cb49334e6571ccBFEF1f1f1178d8469D65ec7",
