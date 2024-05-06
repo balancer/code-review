@@ -132,7 +132,7 @@
       ]
     },
     "0x87cD462A781c0ca843EAB131Bf368328848bB6fD": {
-      "asset": "",
+      "asset": "0x7CFaDFD5645B50bE87d546f42699d863648251ad",
       "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./statATokenLMRateProvider.md",
@@ -150,7 +150,7 @@
       ]
     },
     "0x48942B49B5bB6f3E1d43c204a3F40a4c5F696ef6": {
-      "asset": "",
+      "asset": "0xb165a74407fE1e519d6bCbDeC1Ed3202B35a4140",
       "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./statATokenLMRateProvider.md",
@@ -168,7 +168,7 @@
       ]
     },
     "0x3A236F67Fce401D87D7215695235e201966576E4": {
-      "asset": "",
+      "asset": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2",
       "name": "MergedAdapterWithoutRoundsSusdeRateProviderV1",
       "summary": "safe",
       "review": "./sUSDERateProvider.md",
@@ -182,7 +182,7 @@
       ]
     },
     "0x8aa73EC870DC4a0af6b471937682a8FC3b8A21f8": {
-      "asset": "",
+      "asset": "0x83e1d2310Ade410676B1733d16e89f91822FD5c3",
       "name": "StakePoolRate",
       "summary": "safe",
       "review": "./jitoSOLRateProvider.md",
@@ -349,7 +349,7 @@
       "upgradeableComponents": []
     },
     "0x4467Ab7BC794bb3929d77e826328BD378bf5392F": {
-      "asset": "",
+      "asset": "0x4EA71A20e655794051D1eE8b6e4A3269B13ccaCc",
       "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./statATokenLMRateProvider.md",
@@ -396,7 +396,7 @@
   },
   "ethereum": {
     "0x1aCB59d7c5D23C0310451bcd7bA5AE46d18c108C": {
-      "asset": "",
+      "asset": "0xF1617882A71467534D14EEe865922de1395c9E89",
       "name": "asETHRateProvider",
       "summary": "safe",
       "review": "./asETHRateProvider.md",
@@ -414,7 +414,7 @@
       ]
     },
     "0x2c3b8c5e98A6e89AAAF21Deebf5FF9d08c4A9FF7": {
-      "asset": "",
+      "asset": "0xF1376bceF0f78459C0Ed0ba5ddce976F1ddF51F4",
       "name": "BalancerRateProxy",
       "summary": "safe",
       "review": "./BalancerRateProxy_uniETH.md",
@@ -428,7 +428,7 @@
       ]
     },
     "0xAAE054B9b822554dd1D9d1F48f892B4585D3bbf0": {
-      "asset": "",
+      "asset": "0xA35b1B31Ce002FBF2058D22F30f95D405200A15b",
       "name": "ETHxRateProvider",
       "summary": "safe",
       "review": "./ETHxRateProvider.md",
@@ -442,7 +442,7 @@
       ]
     },
     "0xA6aeD7922366611953546014A3f9e93f058756a2": {
-      "asset": "",
+      "asset": "0x93ef1Ea305D11A9b2a3EbB9bB4FCc34695292E7d",
       "name": "QueenRateProvider",
       "summary": "safe",
       "review": "./QueenRateProvider.md",
@@ -451,7 +451,7 @@
       "upgradeableComponents": []
     },
     "0x67560A970FFaB46D65cB520dD3C2fF4E684f29c2": {
-      "asset": "",
+      "asset": "0xC4cafEFBc3dfeA629c589728d648CB6111DB3136",
       "name": "TBYRateProvider",
       "summary": "safe",
       "review": "./TBYRateProvider.md",
@@ -460,7 +460,7 @@
       "upgradeableComponents": []
     },
     "0xDceC4350d189Ea7e1DD2C9BDa63cB0e0Ae34b81F": {
-      "asset": "",
+      "asset": "0x8dc5BE35672D650bc8A176A4bafBfC33555D80AC",
       "name": "TBYRateProvider",
       "summary": "safe",
       "review": "./TBYRateProvider.md",
@@ -469,7 +469,7 @@
       "upgradeableComponents": []
     },
     "0xc7177B6E18c1Abd725F5b75792e5F7A3bA5DBC2c": {
-      "asset": "",
+      "asset": "0x83F20F44975D03b1b09e64809B757c47f942BEeA",
       "name": "SavingsDAIRateProvider",
       "summary": "safe",
       "review": "./SavingsDAIRateProvider.md",
@@ -478,7 +478,7 @@
       "upgradeableComponents": []
     },
     "0xd8689E8740C23d73136744817347fd6aC464E842": {
-      "asset": "",
+      "asset": "0xaF4ce7CD4F8891ecf1799878c3e9A35b8BE57E09",
       "name": "wUSDKRateProvider",
       "summary": "safe",
       "review": "./wUSDKRateProvider.md",
@@ -487,7 +487,7 @@
       "upgradeableComponents": []
     },
     "0x4b697C8c3220FcBdd02DFFa46db5a896ae7a0843": {
-      "asset": "",
+      "asset": "0xA43A7c62D56dF036C187E1966c03E2799d8987ed",
       "name": "TruMaticRateProvider",
       "summary": "safe",
       "review": "./TruMaticRateProvider.md",
@@ -513,7 +513,7 @@
       ]
     },
     "0xf518f2EbeA5df8Ca2B5E9C7996a2A25e8010014b": {
-      "asset": "",
+      "asset": "0x24Ae2dA0f361AA4BE46b48EB19C91e02c5e4f27E",
       "name": "MevEthRateProvider",
       "summary": "safe",
       "review": "./MevEthRateProvider.md",
@@ -522,7 +522,7 @@
       "upgradeableComponents": []
     },
     "0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee": {
-      "asset": "",
+      "asset": "0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee",
       "name": "WeETH",
       "summary": "safe",
       "review": "./WeETH.md",
@@ -556,7 +556,7 @@
       ]
     },
     "0x8023518b2192FB5384DAdc596765B3dD1cdFe471": {
-      "asset": "",
+      "asset": "0xf1C9acDc66974dFB6dEcB12aA385b9cD01190E38",
       "name": "PriceFeed",
       "summary": "safe",
       "review": "./osEthRateProvider.md",
@@ -565,7 +565,7 @@
       "upgradeableComponents": []
     },
     "0x387dBc0fB00b26fb085aa658527D5BE98302c84C": {
-      "asset": "",
+      "asset": "0xbf5495Efe5DB9ce00f80364C8B423567e58d2110",
       "name": "BalancerRateProvider",
       "summary": "safe",
       "review": "ezETHRateProvider.md",
@@ -603,7 +603,7 @@
       ]
     },
     "0x746df66bc1Bb361b9E8E2a794C299c3427976e6C": {
-      "asset": "",
+      "asset": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7",
       "name": "RsETHRateProvider",
       "summary": "safe",
       "review": "rsETHRateProvider.md",
@@ -633,7 +633,7 @@
       ]
     },
     "0xad4bFaFAe75ECd3fED5cFad4E4E9847Cd47A1879": {
-      "asset": "",
+      "asset": "0x6733F0283711F225A447e759D859a70b0c0Fd2bC",
       "name": "svETHRateProvider",
       "summary": "safe",
       "review": "sveth.md",
@@ -647,7 +647,7 @@
       ]
     },
     "0xFAe103DC9cf190eD75350761e95403b7b8aFa6c0": {
-      "asset": "",
+      "asset": "0xFAe103DC9cf190eD75350761e95403b7b8aFa6c0",
       "name": "RswETH",
       "summary": "safe",
       "review": "./rswethRateProvider.md",
@@ -669,7 +669,7 @@
       ]
     },
     "0xD02011C6C8AEE310D0aA42AA98BFE9DCa547fCc0": {
-      "asset": "",
+      "asset": "0xb45ad160634c528Cc3D2926d9807104FA3157305",
       "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./sDOLARateProvider.md",
@@ -678,7 +678,7 @@
       "upgradeableComponents": []
     },
     "0x9cE2837d6d84bb521A5a3002a2132B9E9E9cc4C8": {
-      "asset": "",
+      "asset": "0xB88a5Ac00917a02d82c7cd6CEBd73E2852d43574",
       "name": "BalancerAMM",
       "summary": "safe",
       "review": "./sweepRateProvider.md",
@@ -692,7 +692,7 @@
       ]
     },
     "0x343281Bb5029C4b698fE736D800115ac64D5De39": {
-      "asset": "",
+      "asset": "0x7FA768E035F956c41d6aeaa3Bd857e7E5141CAd5",
       "name": "InstETHRateProvider",
       "summary": "safe",
       "review": "./InceptionLRTRateProvider.md",
@@ -710,7 +710,7 @@
       ]
     },
     "0xda3E8CD08753a05Ed4103aF28c69C47e35d6D8Da": {
-      "asset": "",
+      "asset": "0x862c57d48becB45583AEbA3f489696D22466Ca1b",
       "name": "",
       "summary": "safe",
       "review": "./statATokenLMRateProvider.md",
@@ -728,7 +728,7 @@
       ]
     },
     "0xC29783738A475112Cafe58433Dd9D19F3a406619": {
-      "asset": "",
+      "asset": "0xf073bAC22DAb7FaF4a3Dd6c6189a70D54110525C",
       "name": "GenEthRateProvider",
       "summary": "safe",
       "review": "./genETHRateProvider.md",
@@ -750,7 +750,7 @@
       ]
     },
     "0x72D07D7DcA67b8A406aD1Ec34ce969c90bFEE768": {
-      "asset": "",
+      "asset": "0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0",
       "name": "WstETHRateProvider",
       "summary": "safe",
       "review": "./wstethRateProvider.md",
@@ -759,7 +759,7 @@
       "upgradeableComponents": []
     },
     "0x71f80e2CfAFA5EC2F0bF12f71FA7Ea57c3D0c7Af": {
-      "asset": "",
+      "asset": "0xD9A442856C234a39a81a089C06451EBAa4306a72",
       "name": "",
       "summary": "safe",
       "review": "./PufEthRateProvider.md",
@@ -777,7 +777,7 @@
       ]
     },
     "0xB3351000db2A9a3638d6bbf1c229BEFeb98377DB": {
-      "asset": "",
+      "asset": "0x32bd822d615A3658A68b6fDD30c2fcb2C996D678",
       "name": "MswETHRateProvider",
       "summary": "safe",
       "review": "./MagpieMswETHRateProvider.md",
@@ -799,7 +799,7 @@
       ]
     },
     "0xCC701e2D472dFa2857Bf9AE24c263DAa39fD2C61": {
-      "asset": "",
+      "asset": "0x49446A0874197839D15395B908328a74ccc96Bc0",
       "name": "./MagpieMstETHRateProvider.md",
       "summary": "safe",
       "review": "./MagpieMstETHRateProvider.md",
@@ -821,7 +821,7 @@
       ]
     },
     "0x3A244e6B3cfed21593a5E5B347B593C0B48C7dA1": {
-      "asset": "",
+      "asset": "0x9D39A5DE30e57443BfF2A8307A4256c8797A3497",
       "name": "EthenaBalancerRateProvider",
       "summary": "safe",
       "review": "./sUSDERateProviderMainnet.md",
@@ -1007,7 +1007,7 @@
   },
   "optimism": {
     "0xe561451322a5efC51E6f8ffa558C7482c892Bc1A": {
-      "asset": "",
+      "asset": "0xA348700745D249c3b49D2c2AcAC9A5AE8155F826",
       "name": "WrappedUsdPlusRateProvider",
       "summary": "safe",
       "review": "./WrappedUsdPlusRateProvider.md",
