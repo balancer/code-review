@@ -947,6 +947,17 @@
       "upgradeableComponents": []
     }
   },
+  "fantom": {
+    "0x629d4c27057915e59dd94bca8d48c6d80735b521": {
+      "asset": "0xd7028092c830b5c8fce061af2e593413ebbc1fc1",
+      "name": "sFTMx Rateprovider",
+      "summary": "safe",
+      "review": "./LegacyReview.md",
+      "warnings": ["legacy"],
+      "factory": "",
+      "upgradeableComponents": []
+    }
+  },
   "gnosis": {
     "0x89C80A4540A00b5270347E02e2E144c71da2EceD": {
       "asset": "0xaf204776c7245bF4147c2612BF6e5972Ee483701",
