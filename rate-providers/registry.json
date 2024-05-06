@@ -198,6 +198,42 @@
                     "implementationReviewed": "0x621199f6beB2ba6fbD962E8A52A320EA4F6D4aA3"
                 }
             ]
+        },
+        "0xd983d5560129475bFC210332422FAdCb4EcD09B0": {
+            "asset": "0x1DEBd73E752bEaF79865Fd6446b0c970EaE7732f",
+            "name": "cbETH Rate Provider",
+            "summary": "safe",
+            "review": "./ChainlinkRateProvider.md",
+            "warnings": ["chainlink"],
+            "factory": "0x5DbAd78818D4c8958EfF2d5b95b28385A22113Cd",
+            "upgradeableComponents": []
+        },
+        "0x2237a270E87F81A30a1980422185f806e4549346": {
+            "asset": "0x95aB45875cFFdba1E5f451B950bC2E42c0053f39",
+            "name": "sfrxETH Rate Provider",
+            "summary": "safe",
+            "review": "./ChainlinkRateProvider.md",
+            "warnings": ["chainlink"],
+            "factory": "0x5DbAd78818D4c8958EfF2d5b95b28385A22113Cd",
+            "upgradeableComponents": []
+        },
+        "0x320CFa1a78d37a13C5D1cA5aA51563fF6Bb0f686": {
+            "asset": "0xe3b3FE7bcA19cA77Ad877A5Bebab186bEcfAD906",
+            "name": "sFRAX Rate Provider",
+            "summary": "safe",
+            "review": "./ChainlinkRateProvider.md",
+            "warnings": ["chainlink"],
+            "factory": "0x5DbAd78818D4c8958EfF2d5b95b28385A22113Cd",
+            "upgradeableComponents": []
+        },
+        "0x155a25c8C3a9353d47BCDBc3650E19d1aEa13E54": {
+            "asset": "0xe3b3FE7bcA19cA77Ad877A5Bebab186bEcfAD906",
+            "name": "sFRAX Rate Provider Duplicate",
+            "summary": "safe",
+            "review": "./ChainlinkRateProvider.md",
+            "warnings": ["chainlink"],
+            "factory": "0x5DbAd78818D4c8958EfF2d5b95b28385A22113Cd",
+            "upgradeableComponents": []
         }
     },
     "avalanche": {
@@ -317,6 +353,15 @@
                     "implementationReviewed": "0xE9547fc44C271dBddf94D8E20b46836B87DA6789"
                 }
             ]
+        },
+        "0x3786a6CAAB433f5dfE56503207DF31DF87C5b5C1": {
+            "asset": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+            "name": "cbETH Rate Provider",
+            "summary": "safe",
+            "review": "./ChainlinkRateProvider.md",
+            "warnings": ["chainlink"],
+            "factory": "0x0A973B6DB16C2ded41dC91691Cc347BEb0e2442B",
+            "upgradeableComponents": []
         }
     },
     "ethereum": {
@@ -849,6 +894,24 @@
                     "implementationReviewed": "0x59153e939c5b4721543251ff3049Ea04c755373B"
                 }
             ]
+        },
+        "0x09f9611FE9d24c6A518f656E925e3628A2ECDE3b": {
+            "asset": "0x6C76971f98945AE98dD7d4DFcA8711ebea946eA6",
+            "name": "wstETH Rate Provider",
+            "summary": "safe",
+            "review": "",
+            "warnings": ["chainlink"],
+            "factory": "0xE7511f6e5C593007eA8A7F52af4B066333765e03",
+            "upgradeableComponents": []
+        },
+        "0xE7511f6e5C593007eA8A7F52af4B066333765e03": {
+            "asset": "0xcB444e90D8198415266c6a2724b7900fb12FC56E",
+            "name": "EURe Rate Provider",
+            "summary": "safe",
+            "review": "./ChainlinkRateProvider.md",
+            "warnings": ["chainlink"],
+            "factory": "0xE7511f6e5C593007eA8A7F52af4B066333765e03",
+            "upgradeableComponents": []
         }
     },
     "optimism": {
@@ -956,6 +1019,33 @@
             "warnings": [],
             "factory": "",
             "upgradeableComponents": []
+        },
+        "0x9aa3cd420f830E049e2b223D0b07D8c809C94d15": {
+            "asset": "0x1F32b1c2345538c0c6f582fCB022739c4A194Ebb",
+            "name": "wstETH Rate Provider",
+            "summary": "safe",
+            "review": "./ChainlinkRateProvider.md",
+            "warnings": ["chainlink"],
+            "factory": "0x83E443EF4f9963C77bd860f94500075556668cb8",
+            "upgradeableComponents": []
+        },
+        "0xf752dd899F87a91370C1C8ac1488Aef6be687505": {
+            "asset": "0x484c2D6e3cDd945a8B2DF735e079178C1036578c",
+            "name": "sfrxETH Rate Provider",
+            "summary": "safe",
+            "review": "./ChainlinkRateProvider.md",
+            "warnings": ["chainlink"],
+            "factory": "0x83E443EF4f9963C77bd860f94500075556668cb8",
+            "upgradeableComponents": []
+        },
+        "0xDe3B7eC86B67B05D312ac8FD935B6F59836F2c41": {
+            "asset": "0x2Dd1B4D4548aCCeA497050619965f91f78b3b532",
+            "name": "sFRAX Rate Provider",
+            "summary": "safe",
+            "review": "./ChainlinkRateProvider.md",
+            "warnings": ["chainlink"],
+            "factory": "0x83E443EF4f9963C77bd860f94500075556668cb8",
+            "upgradeableComponents": []
         }
     },
     "polygon": {
@@ -1026,6 +1116,24 @@
                     "implementationReviewed": "0x1ed647b250e5b6d71dc7b25806f44c33f5658f71"
                 }
             ]
+        },
+        "0x8c1944E305c590FaDAf0aDe4f737f5f95a4971B6": {
+            "asset": "0x03b54A6e9a984069379fae1a4fC4dBAE93B3bCCD",
+            "name": "wstETH / ETH Rate Provider",
+            "summary": "unsafe",
+            "review": "./ChainlinkRateProvider.md",
+            "warnings": ["chainlink"],
+            "factory": "0xa3b370092aeb56770B23315252aB5E16DAcBF62B",
+            "upgradeableComponents": []
+        },
+        "0x693A9Aca2f7b699BBd3d55d980Ac8a5D7a66868B": {
+            "asset": "0x03b54A6e9a984069379fae1a4fC4dBAE93B3bCCD",
+            "name": "wstETH Rate Provider Duplicate",
+            "summary": "safe",
+            "review": "./ChainlinkRateProvider.md",
+            "warnings": ["chainlink"],
+            "factory": "0xa3b370092aeb56770B23315252aB5E16DAcBF62B",
+            "upgradeableComponents": []
         }
     },
     "zkevm": {
