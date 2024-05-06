@@ -1,6 +1,7 @@
 {
     "arbitrum": {
         "0xFC8d81A01deD207aD3DEB4FE91437CAe52deD0b5": {
+            "asset": "",
             "name": "AnkrETHRateProvider",
             "summary": "safe",
             "review": "./AnkrETHRateProvider.md",
@@ -18,6 +19,7 @@
             ]
         },
         "0xD438f19b1Dd47EbECc5f904d8Fd44583CbFB7c85": {
+            "asset": "",
             "name": "BalancerRateProvider",
             "summary": "safe",
             "review": "./BalancerRateProvider_USDF.md",
@@ -31,6 +33,7 @@
             ]
         },
         "0x2bA447d4B823338435057571bF70907F8224BB47": {
+            "asset": "",
             "name": "WrappedUsdPlusRateProvider",
             "summary": "safe",
             "review": "./WrappedUsdPlusRateProvider.md",
@@ -56,6 +59,7 @@
             ]
         },
         "0x6dbF2155B0636cb3fD5359FCcEFB8a2c02B6cb51": {
+            "asset": "",
             "name": "PlsRdntTokenV2",
             "summary": "safe",
             "review": "./PlsRdntTokenV2.md",
@@ -71,6 +75,7 @@
             ]
         },
         "0xd4e96ef8eee8678dbff4d535e033ed1a4f7605b7": {
+            "asset": "",
             "name": "RocketBalancerRateProvider",
             "summary": "safe",
             "review": "./rETHRateProvider.md",
@@ -86,6 +91,7 @@
             ]
         },
         "0x3bB6861c0Be6673809D55b9D346b6774B634a9D7": {
+            "asset": "",
             "name": "BalancerAMM",
             "summary": "safe",
             "review": "./sweepRateProvider.md",
@@ -99,6 +105,7 @@
             ]
         },
         "0xf7c5c26B574063e7b098ed74fAd6779e65E3F836": {
+            "asset": "",
             "name": "ChainlinkRateProvider",
             "summary": "safe",
             "review": "./wstethRateProvider.md",
@@ -107,6 +114,7 @@
             "upgradeableComponents": []
         },
         "0xf25484650484DE3d554fB0b7125e7696efA4ab99": {
+            "asset": "",
             "name": "xRenzoDeposit",
             "summary": "safe",
             "review": "./ezETHRateProviderArbitrum.md",
@@ -128,6 +136,7 @@
             ]
         },
         "0x87cD462A781c0ca843EAB131Bf368328848bB6fD": {
+            "asset": "",
             "name": "ERC4626RateProvider",
             "summary": "safe",
             "review": "./statATokenLMRateProvider.md",
@@ -145,6 +154,7 @@
             ]
         },
         "0x48942B49B5bB6f3E1d43c204a3F40a4c5F696ef6": {
+            "asset": "",
             "name": "ERC4626RateProvider",
             "summary": "safe",
             "review": "./statATokenLMRateProvider.md",
@@ -162,6 +172,7 @@
             ]
         },
         "0x3A236F67Fce401D87D7215695235e201966576E4": {
+            "asset": "",
             "name": "MergedAdapterWithoutRoundsSusdeRateProviderV1",
             "summary": "safe",
             "review": "./sUSDERateProvider.md",
@@ -175,6 +186,7 @@
             ]
         },
         "0x8aa73EC870DC4a0af6b471937682a8FC3b8A21f8": {
+            "asset": "",
             "name": "StakePoolRate",
             "summary": "safe",
             "review": "./jitoSOLRateProvider.md",
@@ -190,6 +202,7 @@
     },
     "avalanche": {
         "0xd6Fd021662B83bb1aAbC2006583A62Ad2Efb8d4A": {
+            "asset": "",
             "name": "AnkrETHRateProvider",
             "summary": "safe",
             "review": "./AnkrETHRateProvider.md",
@@ -207,6 +220,7 @@
             ]
         },
         "0x1bB74eC551cCd9FE416C71F904D64f42079A0a7f": {
+            "asset": "",
             "name": "GGAVAXRateProvider",
             "summary": "safe",
             "review": "./GGAVAXRateProvider.md",
@@ -222,6 +236,7 @@
             ]
         },
         "0x13a80aBe608A054059CfB54Ef08809a05Fc07b82": {
+            "asset": "",
             "name": "YyAvaxRateProvider",
             "summary": "safe",
             "review": "./YyAvaxRateProvider.md",
@@ -235,6 +250,7 @@
             ]
         },
         "0x709d075147a10495e5c3bBF3dfc0c138F34C6E72": {
+            "asset": "",
             "name": "BalancerAMM",
             "summary": "safe",
             "review": "./sweepRateProvider.md",
@@ -250,6 +266,7 @@
     },
     "base": {
         "0xe561451322a5efC51E6f8ffa558C7482c892Bc1A": {
+            "asset": "",
             "name": "WrappedUsdPlusRateProvider",
             "summary": "safe",
             "review": "./WrappedUsdPlusRateProvider.md",
@@ -275,6 +292,7 @@
             ]
         },
         "0xeC0C14Ea7fF20F104496d960FDEBF5a0a0cC14D0": {
+            "asset": "",
             "name": "DSRBalancerRateProviderAdapter",
             "summary": "safe",
             "review": "./DSRRateProviderBase.md",
@@ -283,6 +301,7 @@
             "upgradeableComponents": []
         },
         "0x4467Ab7BC794bb3929d77e826328BD378bf5392F": {
+            "asset": "",
             "name": "ERC4626RateProvider",
             "summary": "safe",
             "review": "./statATokenLMRateProvider.md",
@@ -302,6 +321,7 @@
     },
     "ethereum": {
         "0x1aCB59d7c5D23C0310451bcd7bA5AE46d18c108C": {
+            "asset": "",
             "name": "asETHRateProvider",
             "summary": "safe",
             "review": "./asETHRateProvider.md",
@@ -321,6 +341,7 @@
             ]
         },
         "0x2c3b8c5e98A6e89AAAF21Deebf5FF9d08c4A9FF7": {
+            "asset": "",
             "name": "BalancerRateProxy",
             "summary": "safe",
             "review": "./BalancerRateProxy_uniETH.md",
@@ -336,6 +357,7 @@
             ]
         },
         "0xAAE054B9b822554dd1D9d1F48f892B4585D3bbf0": {
+            "asset": "",
             "name": "ETHxRateProvider",
             "summary": "safe",
             "review": "./ETHxRateProvider.md",
@@ -349,6 +371,7 @@
             ]
         },
         "0xA6aeD7922366611953546014A3f9e93f058756a2": {
+            "asset": "",
             "name": "QueenRateProvider",
             "summary": "safe",
             "review": "./QueenRateProvider.md",
@@ -359,6 +382,7 @@
             "upgradeableComponents": []
         },
         "0x67560A970FFaB46D65cB520dD3C2fF4E684f29c2": {
+            "asset": "",
             "name": "TBYRateProvider",
             "summary": "safe",
             "review": "./TBYRateProvider.md",
@@ -367,6 +391,7 @@
             "upgradeableComponents": []
         },
         "0xDceC4350d189Ea7e1DD2C9BDa63cB0e0Ae34b81F": {
+            "asset": "",
             "name": "TBYRateProvider",
             "summary": "safe",
             "review": "./TBYRateProvider.md",
@@ -375,6 +400,7 @@
             "upgradeableComponents": []
         },
         "0xc7177B6E18c1Abd725F5b75792e5F7A3bA5DBC2c": {
+            "asset": "",
             "name": "SavingsDAIRateProvider",
             "summary": "safe",
             "review": "./SavingsDAIRateProvider.md",
@@ -383,6 +409,7 @@
             "upgradeableComponents": []
         },
         "0xd8689E8740C23d73136744817347fd6aC464E842": {
+            "asset": "",
             "name": "wUSDKRateProvider",
             "summary": "safe",
             "review": "./wUSDKRateProvider.md",
@@ -393,6 +420,7 @@
             "upgradeableComponents": []
         },
         "0x4b697C8c3220FcBdd02DFFa46db5a896ae7a0843": {
+            "asset": "",
             "name": "TruMaticRateProvider",
             "summary": "safe",
             "review": "./TruMaticRateProvider.md",
@@ -420,6 +448,7 @@
             ]
         },
         "0xf518f2EbeA5df8Ca2B5E9C7996a2A25e8010014b": {
+            "asset": "",
             "name": "MevEthRateProvider",
             "summary": "safe",
             "review": "./MevEthRateProvider.md",
@@ -430,6 +459,7 @@
             "upgradeableComponents": []
         },
         "0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee": {
+            "asset": "",
             "name": "WeETH",
             "summary": "safe",
             "review": "./WeETH.md",
@@ -463,6 +493,7 @@
             ]
         },
         "0x8023518b2192FB5384DAdc596765B3dD1cdFe471": {
+            "asset": "",
             "name": "PriceFeed",
             "summary": "safe",
             "review": "./osEthRateProvider.md",
@@ -471,6 +502,7 @@
             "upgradeableComponents": []
         },
         "0x387dBc0fB00b26fb085aa658527D5BE98302c84C": {
+            "asset": "",
             "name": "BalancerRateProvider",
             "summary": "safe",
             "review": "ezETHRateProvider.md",
@@ -510,6 +542,7 @@
             ]
         },
         "0x746df66bc1Bb361b9E8E2a794C299c3427976e6C": {
+            "asset": "",
             "name": "RsETHRateProvider",
             "summary": "safe",
             "review": "rsETHRateProvider.md",
@@ -541,6 +574,7 @@
             ]
         },
         "0xad4bFaFAe75ECd3fED5cFad4E4E9847Cd47A1879": {
+            "asset": "",
             "name": "svETHRateProvider",
             "summary": "safe",
             "review": "sveth.md",
@@ -556,6 +590,7 @@
             ]
         },
         "0xFAe103DC9cf190eD75350761e95403b7b8aFa6c0": {
+            "asset": "",
             "name": "RswETH",
             "summary": "safe",
             "review": "./rswethRateProvider.md",
@@ -579,6 +614,7 @@
             ]
         },
         "0xD02011C6C8AEE310D0aA42AA98BFE9DCa547fCc0": {
+            "asset": "",
             "name": "ERC4626RateProvider",
             "summary": "safe",
             "review": "./sDOLARateProvider.md",
@@ -589,6 +625,7 @@
             "upgradeableComponents": []
         },
         "0x9cE2837d6d84bb521A5a3002a2132B9E9E9cc4C8": {
+            "asset": "",
             "name": "BalancerAMM",
             "summary": "safe",
             "review": "./sweepRateProvider.md",
@@ -602,6 +639,7 @@
             ]
         },
         "0x343281Bb5029C4b698fE736D800115ac64D5De39": {
+            "asset": "",
             "name": "InstETHRateProvider",
             "summary": "safe",
             "review": "./InceptionLRTRateProvider.md",
@@ -621,6 +659,7 @@
             ]
         },
         "0xda3E8CD08753a05Ed4103aF28c69C47e35d6D8Da": {
+            "asset": "",
             "name": "",
             "summary": "safe",
             "review": "./statATokenLMRateProvider.md",
@@ -640,6 +679,7 @@
             ]
         },
         "0xC29783738A475112Cafe58433Dd9D19F3a406619": {
+            "asset": "",
             "name": "GenEthRateProvider",
             "summary": "safe",
             "review": "./genETHRateProvider.md",
@@ -661,6 +701,7 @@
             ]
         },
         "0x72D07D7DcA67b8A406aD1Ec34ce969c90bFEE768": {
+            "asset": "",
             "name": "WstETHRateProvider",
             "summary": "safe",
             "review": "./wstethRateProvider.md",
@@ -669,6 +710,7 @@
             "upgradeableComponents": []
         },
         "0x71f80e2CfAFA5EC2F0bF12f71FA7Ea57c3D0c7Af": {
+            "asset": "",
             "name": "",
             "summary": "safe",
             "review": "./PufEthRateProvider.md",
@@ -688,6 +730,7 @@
             ]
         },
         "0xB3351000db2A9a3638d6bbf1c229BEFeb98377DB": {
+            "asset": "",
             "name": "MswETHRateProvider",
             "summary": "safe",
             "review": "./MagpieMswETHRateProvider.md",
@@ -709,6 +752,7 @@
             ]
         },
         "0xCC701e2D472dFa2857Bf9AE24c263DAa39fD2C61": {
+            "asset": "",
             "name": "./MagpieMstETHRateProvider.md",
             "summary": "safe",
             "review": "./MagpieMstETHRateProvider.md",
@@ -730,6 +774,7 @@
             ]
         },
         "0x3A244e6B3cfed21593a5E5B347B593C0B48C7dA1": {
+            "asset": "",
             "name": "EthenaBalancerRateProvider",
             "summary": "safe",
             "review": "./sUSDERateProviderMainnet.md",
@@ -740,6 +785,7 @@
             "upgradeableComponents": []
         },
         "0x033E20068Db853Fa6C077F38faa4670423FC55fF": {
+            "asset": "",
             "name": "ERC4626RateProvider",
             "summary": "safe",
             "review": "./sFRAXRateProvider.md",
@@ -750,6 +796,7 @@
             "upgradeableComponents": []
         },
         "0x8bC73134A736437da780570308d3b37b67174ddb": {
+            "asset": "",
             "name": "",
             "summary": "safe",
             "review": "./InceptionLRTRateProvider.md",
@@ -771,6 +818,7 @@
     },
     "gnosis": {
         "0x89C80A4540A00b5270347E02e2E144c71da2EceD": {
+            "asset": "",
             "name": "ERC4626RateProvider",
             "summary": "safe",
             "review": "./SavingsDAIRateProviderGnosis.md",
@@ -782,6 +830,7 @@
             "upgradeableComponents": []
         },
         "0xff315299C4d3FB984b67e31F028724b6a9aEb077": {
+            "asset": "",
             "name": "ERC4626RateProvider",
             "summary": "safe",
             "review": "./stAgEurRateProvider.md",
@@ -804,6 +853,7 @@
     },
     "optimism": {
         "0xe561451322a5efC51E6f8ffa558C7482c892Bc1A": {
+            "asset": "",
             "name": "WrappedUsdPlusRateProvider",
             "summary": "safe",
             "review": "./WrappedUsdPlusRateProvider.md",
@@ -829,6 +879,7 @@
             ]
         },
         "0xBCEBb4dcdEc1c12bf7eB31bd26bc9C3b8F55C966": {
+            "asset": "",
             "name": "",
             "summary": "safe",
             "review": "./stERNRateProvider.md",
@@ -848,6 +899,7 @@
             ]
         },
         "0x33A48e4aA79A66fc4f7061f5D9E274528C213029": {
+            "asset": "",
             "name": "BalancerAMM",
             "summary": "safe",
             "review": "./sweepRateProvider.md",
@@ -861,6 +913,7 @@
             ]
         },
         "0xdFa8d2b3c146b8a10B5d63CA0306AEa84B602cfb": {
+            "asset": "",
             "name": "",
             "summary": "safe",
             "review": "./statATokenLMRateProvider.md",
@@ -878,6 +931,7 @@
             ]
         },
         "0x3f921Ebabab0703BC06d1828D09a245e8390c263": {
+            "asset": "",
             "name": "",
             "summary": "safe",
             "review": "./statATokenLMRateProvider.md",
@@ -895,6 +949,7 @@
             ]
         },
         "0x15ACEE5F73b36762Ab1a6b7C98787b8148447898": {
+            "asset": "",
             "name": "DSRBalancerRateProviderAdapter",
             "summary": "safe",
             "review": "./DSRRateProviderOp.md",
@@ -905,6 +960,7 @@
     },
     "polygon": {
         "0x76D8B79Fb9afD4dA89913458C90B6C09676628E2": {
+            "asset": "",
             "name": "RateProvider",
             "summary": "safe",
             "review": "./RateProvider_wFRK.md",
@@ -932,6 +988,7 @@
             ]
         },
         "0x7d10050F608c8EFFf118eDd1416D82a0EF2d7531": {
+            "asset": "",
             "name": "ERC4626RateProvider",
             "summary": "safe",
             "review": "./statATokenLMRateProvider.md",
@@ -951,6 +1008,7 @@
             ]
         },
         "0x9977a61a6aa950044d4dcD8aA0cAb76F84ea5aCd": {
+            "asset": "",
             "name": "ERC4626RateProvider",
             "summary": "safe",
             "review": "./statATokenLMRateProvider.md",
@@ -972,6 +1030,7 @@
     },
     "zkevm": {
         "0xFC8d81A01deD207aD3DEB4FE91437CAe52deD0b5": {
+            "asset": "",
             "name": "AnkrETHRateProvider",
             "summary": "safe",
             "review": "./AnkrETHRateProvider.md",
@@ -989,6 +1048,7 @@
             ]
         },
         "0x4186BFC76E2E237523CBC30FD220FE055156b41F": {
+            "asset": "",
             "name": "RSETHRateReceiver",
             "summary": "safe",
             "review": "./rsEthRateProviderPolygonZKEVM.md",
