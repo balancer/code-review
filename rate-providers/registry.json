@@ -343,7 +343,7 @@
       "asset": "0x99aC4484e8a1dbd6A185380B3A811913Ac884D87",
       "name": "DSRBalancerRateProviderAdapter",
       "summary": "safe",
-      "review": "./DSRRateProviderBase.md",
+      "review": "./DSRRateProvider.md",
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
@@ -1104,7 +1104,7 @@
       "asset": "0x2218a117083f5B482B0bB821d27056Ba9c04b1D3",
       "name": "DSRBalancerRateProviderAdapter",
       "summary": "safe",
-      "review": "./DSRRateProviderOp.md",
+      "review": "./DSRRateProvider.md",
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
