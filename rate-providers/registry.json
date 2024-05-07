@@ -199,7 +199,7 @@
       "asset": "0x1DEBd73E752bEaF79865Fd6446b0c970EaE7732f",
       "name": "cbETH Rate Provider",
       "summary": "safe",
-      "review": "./ChainlinkRateProvider.md",
+      "review": "./ChainLinkRateProvider.md",
       "warnings": ["chainlink"],
       "factory": "0x5DbAd78818D4c8958EfF2d5b95b28385A22113Cd",
       "upgradeableComponents": []
@@ -208,7 +208,7 @@
       "asset": "0x95aB45875cFFdba1E5f451B950bC2E42c0053f39",
       "name": "sfrxETH Rate Provider",
       "summary": "safe",
-      "review": "./ChainlinkRateProvider.md",
+      "review": "./ChainLinkRateProvider.md",
       "warnings": ["chainlink"],
       "factory": "0x5DbAd78818D4c8958EfF2d5b95b28385A22113Cd",
       "upgradeableComponents": []
@@ -217,7 +217,7 @@
       "asset": "0xe3b3FE7bcA19cA77Ad877A5Bebab186bEcfAD906",
       "name": "sFRAX Rate Provider",
       "summary": "safe",
-      "review": "./ChainlinkRateProvider.md",
+      "review": "./ChainLinkRateProvider.md",
       "warnings": ["chainlink"],
       "factory": "0x5DbAd78818D4c8958EfF2d5b95b28385A22113Cd",
       "upgradeableComponents": []
@@ -226,7 +226,7 @@
       "asset": "0xe3b3FE7bcA19cA77Ad877A5Bebab186bEcfAD906",
       "name": "sFRAX Rate Provider Duplicate",
       "summary": "safe",
-      "review": "./ChainlinkRateProvider.md",
+      "review": "./ChainLinkRateProvider.md",
       "warnings": ["chainlink"],
       "factory": "0x5DbAd78818D4c8958EfF2d5b95b28385A22113Cd",
       "upgradeableComponents": []
@@ -370,7 +370,7 @@
       "asset": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
       "name": "cbETH Rate Provider",
       "summary": "safe",
-      "review": "./ChainlinkRateProvider.md",
+      "review": "./ChainLinkRateProvider.md",
       "warnings": ["chainlink"],
       "factory": "0x0A973B6DB16C2ded41dC91691Cc347BEb0e2442B",
       "upgradeableComponents": []
@@ -999,7 +999,7 @@
       "asset": "0xcB444e90D8198415266c6a2724b7900fb12FC56E",
       "name": "EURe Rate Provider",
       "summary": "safe",
-      "review": "./ChainlinkRateProvider.md",
+      "review": "./ChainLinkRateProvider.md",
       "warnings": ["chainlink"],
       "factory": "0xE7511f6e5C593007eA8A7F52af4B066333765e03",
       "upgradeableComponents": []
@@ -1113,7 +1113,7 @@
       "asset": "0x1F32b1c2345538c0c6f582fCB022739c4A194Ebb",
       "name": "wstETH Rate Provider",
       "summary": "safe",
-      "review": "./ChainlinkRateProvider.md",
+      "review": "./ChainLinkRateProvider.md",
       "warnings": ["chainlink"],
       "factory": "0x83E443EF4f9963C77bd860f94500075556668cb8",
       "upgradeableComponents": []
@@ -1122,7 +1122,7 @@
       "asset": "0x484c2D6e3cDd945a8B2DF735e079178C1036578c",
       "name": "sfrxETH Rate Provider",
       "summary": "safe",
-      "review": "./ChainlinkRateProvider.md",
+      "review": "./ChainLinkRateProvider.md",
       "warnings": ["chainlink"],
       "factory": "0x83E443EF4f9963C77bd860f94500075556668cb8",
       "upgradeableComponents": []
@@ -1131,7 +1131,7 @@
       "asset": "0x2Dd1B4D4548aCCeA497050619965f91f78b3b532",
       "name": "sFRAX Rate Provider",
       "summary": "safe",
-      "review": "./ChainlinkRateProvider.md",
+      "review": "./ChainLinkRateProvider.md",
       "warnings": ["chainlink"],
       "factory": "0x83E443EF4f9963C77bd860f94500075556668cb8",
       "upgradeableComponents": []
@@ -1222,7 +1222,7 @@
       "asset": "0x03b54A6e9a984069379fae1a4fC4dBAE93B3bCCD",
       "name": "wstETH / ETH Rate Provider",
       "summary": "unsafe",
-      "review": "./ChainlinkRateProvider.md",
+      "review": "./ChainLinkRateProvider.md",
       "warnings": ["chainlink"],
       "factory": "0xa3b370092aeb56770B23315252aB5E16DAcBF62B",
       "upgradeableComponents": []
@@ -1231,7 +1231,7 @@
       "asset": "0x03b54A6e9a984069379fae1a4fC4dBAE93B3bCCD",
       "name": "wstETH Rate Provider Duplicate",
       "summary": "safe",
-      "review": "./ChainlinkRateProvider.md",
+      "review": "./ChainLinkRateProvider.md",
       "warnings": ["chainlink"],
       "factory": "0xa3b370092aeb56770B23315252aB5E16DAcBF62B",
       "upgradeableComponents": []
