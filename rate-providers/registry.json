@@ -992,7 +992,7 @@
       "summary": "safe",
       "review": "",
       "warnings": ["chainlink"],
-      "factory": "0xE7511f6e5C593007eA8A7F52af4B066333765e03",
+      "factory": "",
       "upgradeableComponents": []
     },
     "0xE7511f6e5C593007eA8A7F52af4B066333765e03": {
@@ -1001,7 +1001,7 @@
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
       "warnings": ["chainlink"],
-      "factory": "0xE7511f6e5C593007eA8A7F52af4B066333765e03",
+      "factory": "",
       "upgradeableComponents": []
     }
   },
