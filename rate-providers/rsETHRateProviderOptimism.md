@@ -2,7 +2,7 @@
 
 ## Details
 - Reviewed by: @mkflow27
-- Checked by: @
+- Checked by: @danielmkm
 - Deployed at:
     - [optimism:0x1373A61449C26CC3F48C1B4c547322eDAa36eB12](https://optimistic.etherscan.io/address/0x1373A61449C26CC3F48C1B4c547322eDAa36eB12#code)
 - Audit report(s):
