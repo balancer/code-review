@@ -248,6 +248,15 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0xCd9e3fb32c8F258555b8292531112bBb5B87E2F4": {
+      "asset": "0x35751007a407ca6feffe80b3cb397736d2cf4dbe",
+      "name": "weETH ChainlinkRateProvider",
+      "summary": "safe",
+      "review": "./ChainLinkRateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   },
   "avalanche": {
@@ -937,6 +946,15 @@
       "factory": "",
       "upgradeableComponents": []
     },
+    "0xEE5327dd2D1D0284809ecF10251C7448792Db368": {
+      "asset": "0x198d7387Fa97A73F05b8578CdEFf8F2A1f34Cd1F",
+      "name": "jAuraRateProvider - wrong token",
+      "summary": "unsafe",
+      "review": "./LegacyReview.md",
+      "warnings": ["legacy"],
+      "factory": "",
+      "upgradeableComponents": []
+    },
     "0xf951E335afb289353dc249e82926178EaC7DEd78": {
       "asset": "0xf951E335afb289353dc249e82926178EaC7DEd78",
       "name": "swETH Rate Provider TransparentUpgradeableProxy",
@@ -959,6 +977,15 @@
       "asset": "0x4Bc3263Eb5bb2Ef7Ad9aB6FB68be80E43b43801F",
       "name": "Bitfrost vETHRateProvider",
       "summary": "safe",
+      "review": "./LegacyReview.md",
+      "warnings": ["legacy"],
+      "factory": "",
+      "upgradeableComponents": []
+    },
+    "0xA84C362e57489ce8F4E392e479D32E06779aF836": {
+      "asset": "0x4Bc3263Eb5bb2Ef7Ad9aB6FB68be80E43b43801F",
+      "name": "Bitfrost vETHRateProvider Wrong Direction - decreasing",
+      "summary": "unsafe",
       "review": "./LegacyReview.md",
       "warnings": ["legacy"],
       "factory": "",
