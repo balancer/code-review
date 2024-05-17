@@ -1,7 +1,7 @@
 {
   "arbitrum": {
     "0xFC8d81A01deD207aD3DEB4FE91437CAe52deD0b5": {
-      "asset": "0x12D8CE035c5DE3Ce39B1fDD4C1d5a745EAbA3b8C",
+      "asset": "0xe05A08226c49b636ACf99c40Da8DC6aF83CE5bB3",
       "name": "AnkrETHRateProvider",
       "summary": "safe",
       "review": "./AnkrETHRateProvider.md",
@@ -85,6 +85,15 @@
           "implementationReviewed": "0x1d8f8f00cfa6758d7bE78336684788Fb0ee0Fa46"
         }
       ]
+    },
+    "0xa73ec45fe405b5bfcdc0bf4cbc9014bb32a01cd2": {
+      "asset": "0xEC70Dcb4A1EFa46b8F2D97C310C9c4790ba5ffA8",
+      "name": "RocketBalancerRateProvider OLD",
+      "summary": "unsafe",
+      "review": "./rETHRateProvider.md",
+      "warnings": ["donation"],
+      "factory": "",
+      "upgradeableComponents": []
     },
     "0x3bB6861c0Be6673809D55b9D346b6774B634a9D7": {
       "asset": "0xB88a5Ac00917a02d82c7cd6CEBd73E2852d43574",
@@ -229,6 +238,15 @@
       "review": "./ChainLinkRateProvider.md",
       "warnings": ["chainlink"],
       "factory": "0x5DbAd78818D4c8958EfF2d5b95b28385A22113Cd",
+      "upgradeableComponents": []
+    },
+    "0xefa422c31fc71a636c2c630d226dba4cced1073a": {
+      "asset": "0xd8724322f44e5c58d7a815f542036fb17dbbf839",
+      "name": "ChainlinkRateProvider",
+      "summary": "safe",
+      "review": "./ChainLinkRateProvider.md",
+      "warnings": [],
+      "factory": "",
       "upgradeableComponents": []
     }
   },
@@ -375,6 +393,15 @@
       "factory": "0x0A973B6DB16C2ded41dC91691Cc347BEb0e2442B",
       "upgradeableComponents": []
     },
+    "0x5a7A419C59eAAdec8Dc00bc93ac95612e6e154Cf": {
+      "asset": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A",
+      "name": "weETH Rate Provider",
+      "summary": "safe",
+      "review": "./ChainLinkRateProvider.md",
+      "warnings": ["chainlink"],
+      "factory": "0x0A973B6DB16C2ded41dC91691Cc347BEb0e2442B",
+      "upgradeableComponents": []
+    },
     "0x039f7205C2cBa4535C2575123Ac3D657263892c4": {
       "asset": "0xB6fe221Fe9EeF5aBa221c348bA20A1Bf5e73624c",
       "name": "rETH RocketPool Rate Provider",
@@ -487,7 +514,7 @@
       "upgradeableComponents": []
     },
     "0x4b697C8c3220FcBdd02DFFa46db5a896ae7a0843": {
-      "asset": "0xA43A7c62D56dF036C187E1966c03E2799d8987ed",
+      "asset": "0xf33687811f3ad0cd6b48dd4b39f9f977bd7165a2",
       "name": "TruMaticRateProvider",
       "summary": "safe",
       "review": "./TruMaticRateProvider.md",
@@ -1136,6 +1163,15 @@
       "factory": "0x83E443EF4f9963C77bd860f94500075556668cb8",
       "upgradeableComponents": []
     },
+    "0x7E13b8b95d887c2326C25e71815F33Ea10A2674e": {
+      "asset": "0x2Dd1B4D4548aCCeA497050619965f91f78b3b532",
+      "name": "sFRAX Rate Provider Duplicate",
+      "summary": "safe",
+      "review": "./ChainLinkRateProvider.md",
+      "warnings": ["chainlink"],
+      "factory": "0x83E443EF4f9963C77bd860f94500075556668cb8",
+      "upgradeableComponents": []
+    },
     "0x658843BB859B7b85cEAb5cF77167e3F0a78dFE7f": {
       "asset": "0x9Bcef72be871e61ED4fBbc7630889beE758eb81D",
       "name": "rETH RocketPool Rate Provider",
@@ -1336,6 +1372,15 @@
       "review": "./LegacyReview.md",
       "warnings": ["legacy"],
       "factory": "",
+      "upgradeableComponents": []
+    },
+    "0x8c76aa5b78357e1fa104ea2bc4a219f0870251f1": {
+      "asset": "0xb23C20EFcE6e24Acca0Cef9B7B7aA196b84EC942",
+      "name": "rETH Rate Provider",
+      "summary": "safe",
+      "review": "./ChainLinkRateProvider.md",
+      "warnings": ["chainlink"],
+      "factory": "0x4132f7AcC9dB7A6cF7BE2Dd3A9DC8b30C7E6E6c8",
       "upgradeableComponents": []
     }
   }
