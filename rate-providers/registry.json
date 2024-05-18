@@ -245,7 +245,7 @@
       "name": "woETH ChainlinkRateProvider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": [],
+      "warnings": ["chainlink"],
       "factory": "0x5DbAd78818D4c8958EfF2d5b95b28385A22113Cd",
       "upgradeableComponents": []
     },
@@ -254,7 +254,7 @@
       "name": "weETH ChainlinkRateProvider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": [],
+      "warnings": ["chainlink"],
       "factory": "0x5DbAd78818D4c8958EfF2d5b95b28385A22113Cd",
       "upgradeableComponents": []
     },
