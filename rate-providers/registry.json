@@ -242,7 +242,7 @@
     },
     "0xefa422c31fc71a636c2c630d226dba4cced1073a": {
       "asset": "0xd8724322f44e5c58d7a815f542036fb17dbbf839",
-      "name": "ChainlinkRateProvider",
+      "name": "woETH ChainlinkRateProvider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
       "warnings": [],
