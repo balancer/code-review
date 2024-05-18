@@ -257,6 +257,15 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0x8581953084FfdDBB82fC63f30f11bDb0E7300284": {
+      "asset": "0xED65C5085a18Fa160Af0313E60dcc7905E944Dc7",
+      "name": "ETHx Rate Provider",
+      "summary": "safe",
+      "review": "./ChainLinkRateProvider.md",
+      "warnings": ["chainlink"],
+      "factory": "0x5DbAd78818D4c8958EfF2d5b95b28385A22113Cd",
+      "upgradeableComponents": []
     }
   },
   "avalanche": {
