@@ -954,29 +954,29 @@
       "warnings": ["legacy"],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0xaC18187f90Bab1081d08dE076a62D1314AAA07C5": {
+      "asset": "0x5d74468b69073f809D4FaE90AfeC439e69Bf6263",
+      "name": "csETHRateProvider",
+      "summary": "",
+      "review": "./csETHRateProvider.md",
+      "warnings": [""],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x331312DAbaf3d69138c047AaC278c9f9e0E8FFf8",
+          "implementationReviewed": "0x41446668f264F493633aCeEbd811FaA16605Cb88"
+        },
+        {
+          "entrypoint": "0x93b7a777D333c4F8dce3135bCd3Dac85aD14D708",
+          "implementationReviewed": "0x547d6013a3ffa103d051e6aaa225a7c7b29f6cf0"
+        },
+        {
+          "entrypoint": "0x349405b80C8bAfd74DA9d4308F3c7b60B4Bf10E5",
+          "implementationReviewed": "0xdcf7dbe6865e52409a0fa2b4b23433db2af3646f"
+        }
+      ]
     }
-  },
-  "0xaC18187f90Bab1081d08dE076a62D1314AAA07C5": {
-    "asset": "0x5d74468b69073f809D4FaE90AfeC439e69Bf6263",
-    "name": "csETHRateProvider",
-    "summary": "",
-    "review": "./csETHRateProvider.md",
-    "warnings": [""],
-    "factory": "",
-    "upgradeableComponents": [
-      {
-        "entrypoint": "0x331312DAbaf3d69138c047AaC278c9f9e0E8FFf8",
-        "implementationReviewed": "0x41446668f264F493633aCeEbd811FaA16605Cb88"
-      },
-      {
-        "entrypoint": "0x93b7a777D333c4F8dce3135bCd3Dac85aD14D708 ",
-        "implementationReviewed": "0x547d6013a3ffa103d051e6aaa225a7c7b29f6cf0"
-      },
-      {
-        "entrypoint": "0x349405b80C8bAfd74DA9d4308F3c7b60B4Bf10E5 ",
-        "implementationReviewed": "0xdcf7dbe6865e52409a0fa2b4b23433db2af3646f"
-      }
-    ]
   },
   "fantom": {
     "0x629d4c27057915e59dd94bca8d48c6d80735b521": {
