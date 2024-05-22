@@ -6,7 +6,7 @@
 - Deployed at:
     - [ethereum:0xe3E123ED9fec48a6f40A8aC7bE9afEDDAD80F146](https://etherscan.io/address/0xe3E123ED9fec48a6f40A8aC7bE9afEDDAD80F146#code)
     - [arbitrum:0x3bB6861c0Be6673809D55b9D346b6774B634a9D7](https://arbiscan.io/address/0x3bB6861c0Be6673809D55b9D346b6774B634a9D7)
-    - [optimism:0xff368E106EA8782FaB6B2D4AD69739a60C66400E](https://optimistic.etherscan.io/address/0x33A48e4aA79A66fc4f7061f5D9E274528C213029)
+    - [optimism:0xff368E106EA8782FaB6B2D4AD69739a60C66400E](https://optimistic.etherscan.io/address/0xff368E106EA8782FaB6B2D4AD69739a60C66400E#readContract)
     - [avalanche:0x9693AEea2B32452e0834C860E01C33295d2164a5](https://snowtrace.dev/address/0x9693AEea2B32452e0834C860E01C33295d2164a5/contract/43114/code)
 - Audit report(s):
     - [Sweep protocol audit report](https://github.com/SweeprFi/sweepr-contracts/blob/main/audits/sublime/Sweep%20Protocol%20Audit%20Report.pdf)
