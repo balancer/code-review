@@ -322,7 +322,7 @@
     }
   },
   "base": {
-    "0xe561451322a5efC51E6f8ffa558C7482c892Bc1A": {
+    "0xe1b1e024f4Bc01Bdde23e891E081b76a1A914ddd": {
       "asset": "0xd95ca61CE9aAF2143E81Ef5462C0c2325172E028",
       "name": "WrappedUsdPlusRateProvider",
       "summary": "safe",
