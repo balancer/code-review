@@ -288,7 +288,7 @@
         }
       ]
     },
-    "0x709d075147a10495e5c3bBF3dfc0c138F34C6E72": {
+    "0x9693AEea2B32452e0834C860E01C33295d2164a5": {
       "asset": "0xB88a5Ac00917a02d82c7cd6CEBd73E2852d43574",
       "name": "BalancerAMM",
       "summary": "safe",
@@ -686,7 +686,7 @@
       "factory": "",
       "upgradeableComponents": []
     },
-    "0x9cE2837d6d84bb521A5a3002a2132B9E9E9cc4C8": {
+    "0xe3E123ED9fec48a6f40A8aC7bE9afEDDAD80F146": {
       "asset": "0xB88a5Ac00917a02d82c7cd6CEBd73E2852d43574",
       "name": "BalancerAMM",
       "summary": "safe",
@@ -1059,7 +1059,7 @@
         }
       ]
     },
-    "0x33A48e4aA79A66fc4f7061f5D9E274528C213029": {
+    "0xff368E106EA8782FaB6B2D4AD69739a60C66400E": {
       "asset": "0xB88a5Ac00917a02d82c7cd6CEBd73E2852d43574",
       "name": "BalancerAMM",
       "summary": "safe",
