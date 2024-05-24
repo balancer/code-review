@@ -6,7 +6,7 @@
 - Deployed at:
     - [arbitrum:0x2bA447d4B823338435057571bF70907F8224BB47](https://arbiscan.io/address/0x2bA447d4B823338435057571bF70907F8224BB47)
     - [optimism:0xe561451322a5efC51E6f8ffa558C7482c892Bc1A](https://optimistic.etherscan.io/address/0xe561451322a5efC51E6f8ffa558C7482c892Bc1A)
-    - [base:0xe561451322a5efC51E6f8ffa558C7482c892Bc1A](https://basescan.org/address/0xe1b1e024f4Bc01Bdde23e891E081b76a1A914ddd)
+    - [base:0xe1b1e024f4Bc01Bdde23e891E081b76a1A914ddd](https://basescan.org/address/0xe1b1e024f4bc01bdde23e891e081b76a1a914ddd#code)
 - Audit report(s):
     - [USD+](https://2173993027-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F9HhCCgYexXiRot0OWAJY%2Fuploads%2FCKqeV09QHnfTVum3rtBd%2Fabch-ovn-core-report.pdf?alt=media&token=2eb0419d-4695-43a0-ba2f-f3caebfc75b4)
 
