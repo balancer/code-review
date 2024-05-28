@@ -1347,5 +1347,7 @@
       "factory": "",
       "upgradeableComponents": []
     }
-  }
+  },
+  "mode": {},
+  "fraxtal": {}
 }
