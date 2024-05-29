@@ -954,6 +954,32 @@
       "warnings": ["legacy"],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0xd2C59781F1Db84080A0592CE83Fe265642A4a8Eb": {
+      "asset": "0x80ac24aA929eaF5013f6436cdA2a7ba190f5Cc0b",
+      "name": "SyrupRateProvider",
+      "summary": "safe",
+      "review": "./SyrupRateProvider.md",
+      "warnings": ["donation"],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x0055c00ba4Dec5ed545A5419C4d430daDa8cb1CE",
+          "implementationReviewed": "0x0055c00ba4Dec5ed545A5419C4d430daDa8cb1CE"
+        },
+        {
+          "entrypoint": "0x804a6F5F667170F545Bf14e5DDB48C70B788390C",
+          "implementationReviewed": "0x5A64417823E8382a7e8957E4411873FE758E73a8"
+        },
+        {
+          "entrypoint": "0x6ACEb4cAbA81Fa6a8065059f3A944fb066A10fAc",
+          "implementationReviewed": "0xbAD003DA1e107f537Ae2f687f5FE7a7aFFe9B241"
+        },
+        {
+          "entrypoint": "0x4A1c3F0D9aD0b3f9dA085bEBfc22dEA54263371b",
+          "implementationReviewed": "0x5b97c9dcce2693844b90cea40ba1fd15bf99eb01"
+        }
+      ]
     }
   },
   "fantom": {
