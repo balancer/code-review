@@ -1048,6 +1048,24 @@
       "warnings": ["chainlink"],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0x821aFE819450A359E29a5209C48f2Fa3321C8AD2": {
+      "asset": "0x270bA1f35D8b87510D24F693fcCc0da02e6E4EeB",
+      "name": "ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./statATokenLMRateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x270bA1f35D8b87510D24F693fcCc0da02e6E4EeB",
+          "implementationReviewed": "0x8be473dCfA93132658821E67CbEB684ec8Ea2E74"
+        },
+        {
+          "entrypoint": "0xb50201558B00496A145fE76f7424749556E326D8",
+          "implementationReviewed": "0x5b522140fabeB6b6232336295581e63902e9b4ad"
+        }
+      ]
     }
   },
   "optimism": {

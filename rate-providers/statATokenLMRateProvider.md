@@ -12,6 +12,7 @@
     - [optimism:0xdFa8d2b3c146b8a10B5d63CA0306AEa84B602cfb](https://optimistic.etherscan.io/address/0xdFa8d2b3c146b8a10B5d63CA0306AEa84B602cfb#code)
     - [optimism:0x3f921Ebabab0703BC06d1828D09a245e8390c263](https://optimistic.etherscan.io/address/0x3f921Ebabab0703BC06d1828D09a245e8390c263#code)
     - [base:0x4467Ab7BC794bb3929d77e826328BD378bf5392F](https://basescan.org/address/0x4467Ab7BC794bb3929d77e826328BD378bf5392F)
+    - [gnosis:0x821aFE819450A359E29a5209C48f2Fa3321C8AD2](https://gnosisscan.io/address/0x821aFE819450A359E29a5209C48f2Fa3321C8AD2#readContract)
 
 - Audit report(s):
     - [Formal Verification Report For StaticAToken](https://github.com/bgd-labs/static-a-token-v3/blob/main/audits/Formal_Verification_Report_staticAToken.pdf)
@@ -114,6 +115,16 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
             - multisig timelock? YES: 24 hours.
         - upgradeable component: `L2Pool` ([base:0xA238Dd80C259a72e81d7e4664a9801593F98d1c5](https://basescan.org/address/0xA238Dd80C259a72e81d7e4664a9801593F98d1c5#readProxyContract))
         - admin address: [base:0x9390B1735def18560c509E2d0bc090E9d6BA257a](https://basescan.org/address/0x9390B1735def18560c509E2d0bc090E9d6BA257a)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours
+
+    - [gnosis:0x270bA1f35D8b87510D24F693fcCc0da02e6E4EeB](https://gnosisscan.io/address/0x270bA1f35D8b87510D24F693fcCc0da02e6E4EeB#readProxyContract)
+        - upgradeable component: `StaticATokenLM` ([gnosis:0x270bA1f35D8b87510D24F693fcCc0da02e6E4EeB](https://gnosisscan.io/address/0x270bA1f35D8b87510D24F693fcCc0da02e6E4EeB#readProxyContract))
+        - admin address: [gnosis:0x1dF462e2712496373A347f8ad10802a5E95f053D](https://gnosisscan.io/address/0x1dF462e2712496373A347f8ad10802a5E95f053D)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours.
+        - upgradeable component: `L2Pool` ([gnosis:0xb50201558B00496A145fE76f7424749556E326D8](https://gnosisscan.io/address/0xb50201558B00496A145fE76f7424749556E326D8#code))
+        - admin address: [gnosis:0x1dF462e2712496373A347f8ad10802a5E95f053D](https://gnosisscan.io/address/0x1dF462e2712496373A347f8ad10802a5E95f053D#code)
         - admin type: Aave governance system.
             - multisig timelock? YES: 24 hours
     
