@@ -1029,6 +1029,7 @@
       "upgradeableComponents": []
     }
   },
+  "fraxtal": {},
   "gnosis": {
     "0x89C80A4540A00b5270347E02e2E144c71da2EceD": {
       "asset": "0xaf204776c7245bF4147c2612BF6e5972Ee483701",
@@ -1092,6 +1093,17 @@
           "implementationReviewed": "0x5b522140fabeB6b6232336295581e63902e9b4ad"
         }
       ]
+    }
+  },
+  "mode": {
+    "0x054Ca7F10D555A0A34E35E6d95af9569468E40c0": {
+      "asset": "",
+      "name": "Api3AggregatorAdaptor",
+      "summary": "safe",
+      "review": "./ezETHRateProviderMode.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   },
   "optimism": {
@@ -1445,7 +1457,5 @@
       "factory": "0x4132f7AcC9dB7A6cF7BE2Dd3A9DC8b30C7E6E6c8",
       "upgradeableComponents": []
     }
-  },
-  "mode": {},
-  "fraxtal": {}
+  }
 }
