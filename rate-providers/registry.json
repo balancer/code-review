@@ -1092,6 +1092,15 @@
           "implementationReviewed": "0x5b522140fabeB6b6232336295581e63902e9b4ad"
         }
       ]
+    },
+    "0xdc90e2680094314CEaB45CE15100F6e02cEB7ceD": {
+      "asset": "",
+      "name": "TollgateChronicleRateProvider",
+      "summary": "",
+      "review": "./rETHRateProviderGnosis.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   },
   "optimism": {
