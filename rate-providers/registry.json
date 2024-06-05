@@ -1097,7 +1097,7 @@
   },
   "mode": {
     "0x054Ca7F10D555A0A34E35E6d95af9569468E40c0": {
-      "asset": "",
+      "asset": "0x2416092f143378750bb29b79eD961ab195CcEea5",
       "name": "Api3AggregatorAdaptor",
       "summary": "safe",
       "review": "./ezETHRateProviderMode.md",
