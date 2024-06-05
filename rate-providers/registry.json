@@ -1094,7 +1094,7 @@
       ]
     },
     "0xdc90e2680094314CEaB45CE15100F6e02cEB7ceD": {
-      "asset": "",
+      "asset": "0xc791240d1f2def5938e2031364ff4ed887133c3d",
       "name": "TollgateChronicleRateProvider",
       "summary": "",
       "review": "./rETHRateProviderGnosis.md",
