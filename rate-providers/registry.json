@@ -1097,7 +1097,16 @@
       "asset": "0xc791240d1f2def5938e2031364ff4ed887133c3d",
       "name": "TollgateChronicleRateProvider",
       "summary": "",
-      "review": "./rETHRateProviderGnosis.md",
+      "review": "./TollgateChronicleRateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
+    },
+    "0x92320D3C8Fd6BE59b22eB0eEe330901Fe4617f33": {
+      "asset": "",
+      "name": "TollgateChronicleRateProvider",
+      "summary": "",
+      "review": "./TollgateChronicleRateProvider.md",
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
