@@ -266,37 +266,37 @@
       "warnings": ["chainlink"],
       "factory": "0x5DbAd78818D4c8958EfF2d5b95b28385A22113Cd",
       "upgradeableComponents": []
+    },
+    "0x3222d3De5A9a3aB884751828903044CC4ADC627e": {
+      "asset": "0x4186BFC76E2E237523CBC30FD220FE055156b41F",
+      "name": "RsETHRateProvider",
+      "summary": "safe",
+      "review": "./rsETHRateProviderArbitrum.md",
+      "warnings": ["donation"],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x349A73444b1a310BAe67ef67973022020d70020d",
+          "implementationReviewed": "0x8B9991f89Fc31600DCE064566ccE28dC174Fb8E4"
+        },
+        {
+          "entrypoint": "0x947Cb49334e6571ccBFEF1f1f1178d8469D65ec7",
+          "implementationReviewed": "0xc5cD38d47D0c2BD7Fe18c64a50c512063DC29700"
+        },
+        {
+          "entrypoint": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7",
+          "implementationReviewed": "0x60FF20BACD9A647e4025Ed8b17CE30e40095A1d2"
+        },
+        {
+          "entrypoint": "0x3D08ccb47ccCde84755924ED6B0642F9aB30dFd2",
+          "implementationReviewed": "0x0379E85188BC416A1D43Ab04b28F38B5c63F129E"
+        },
+        {
+          "entrypoint": "0x8546A7C8C3C537914C3De24811070334568eF427",
+          "implementationReviewed": "0xD7DB9604EF925aF96CDa6B45026Be64C691C7704"
+        }
+      ]
     }
-  },
-  "0x3222d3De5A9a3aB884751828903044CC4ADC627e": {
-    "asset": "",
-    "name": "RsETHRateProvider",
-    "summary": "safe",
-    "review": "rsETHRateProvider.md",
-    "warnings": ["donation"],
-    "factory": "",
-    "upgradeableComponents": [
-      {
-        "entrypoint": "0x349A73444b1a310BAe67ef67973022020d70020d",
-        "implementationReviewed": "0x8B9991f89Fc31600DCE064566ccE28dC174Fb8E4"
-      },
-      {
-        "entrypoint": "0x947Cb49334e6571ccBFEF1f1f1178d8469D65ec7",
-        "implementationReviewed": "0xc5cD38d47D0c2BD7Fe18c64a50c512063DC29700"
-      },
-      {
-        "entrypoint": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7",
-        "implementationReviewed": "0x60FF20BACD9A647e4025Ed8b17CE30e40095A1d2"
-      },
-      {
-        "entrypoint": "0x3D08ccb47ccCde84755924ED6B0642F9aB30dFd2",
-        "implementationReviewed": "0x0379E85188BC416A1D43Ab04b28F38B5c63F129E"
-      },
-      {
-        "entrypoint": "0x8546A7C8C3C537914C3De24811070334568eF427",
-        "implementationReviewed": "0xD7DB9604EF925aF96CDa6B45026Be64C691C7704"
-      }
-    ]
   },
   "avalanche": {
     "0xd6Fd021662B83bb1aAbC2006583A62Ad2Efb8d4A": {

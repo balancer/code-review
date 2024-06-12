@@ -30,30 +30,30 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
     - comment: The main access control check is done by comparing the `msg.sender` against the `layerZeroEndpoint`. The `layerZeroEndpoint` endpoint address can be upgraded by the RateProviders admin via: `updateLayerZeroEndpoint`.
 
 - [x] Some other portion of the price pipeline is upgradeable (e.g., the token itself, an oracle, or some piece of a larger system that tracks the price).
-- upgradeable component: `LRTOracle` ([ethereum:0x349A73444b1a310BAe67ef67973022020d70020d](https://etherscan.io/address/0x349A73444b1a310BAe67ef67973022020d70020d))
-    - admin address: [ethereum:0xb9577E83a6d9A6DE35047aa066E3758221FE0DA2](https://etherscan.io/address/0xb9577E83a6d9A6DE35047aa066E3758221FE0DA2)
-    - admin type: multisig
-        - multisig threshold/signers: 3/5
+    - upgradeable component: `LRTOracle` ([ethereum:0x349A73444b1a310BAe67ef67973022020d70020d](https://etherscan.io/address/0x349A73444b1a310BAe67ef67973022020d70020d))
+        - admin address: [ethereum:0xb9577E83a6d9A6DE35047aa066E3758221FE0DA2](https://etherscan.io/address/0xb9577E83a6d9A6DE35047aa066E3758221FE0DA2)
+        - admin type: multisig
+            - multisig threshold/signers: 3/5
 
-- upgradeable component: `LRTConfig` ([ethereum:0x947Cb49334e6571ccBFEF1f1f1178d8469D65ec7](https://etherscan.io/address/0x947Cb49334e6571ccBFEF1f1f1178d8469D65ec7#code))
-    - admin address: [ethereum:0xb9577E83a6d9A6DE35047aa066E3758221FE0DA2](https://etherscan.io/address/0xb9577E83a6d9A6DE35047aa066E3758221FE0DA2)
-    - admin type: multisig
-        - multisig threshold/signers: 3/5
-    
-- upgradeable component: `RSETH` ([ethereum:0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7](https://etherscan.io/address/0xa1290d69c65a6fe4df752f95823fae25cb99e5a7))
-    - admin address: [ethereum:0xb9577E83a6d9A6DE35047aa066E3758221FE0DA2](https://etherscan.io/address/0xb9577E83a6d9A6DE35047aa066E3758221FE0DA2)
-    - admin type: multisig
-        - multisig threshold/signers: 3/5
+    - upgradeable component: `LRTConfig` ([ethereum:0x947Cb49334e6571ccBFEF1f1f1178d8469D65ec7](https://etherscan.io/address/0x947Cb49334e6571ccBFEF1f1f1178d8469D65ec7#code))
+        - admin address: [ethereum:0xb9577E83a6d9A6DE35047aa066E3758221FE0DA2](https://etherscan.io/address/0xb9577E83a6d9A6DE35047aa066E3758221FE0DA2)
+        - admin type: multisig
+            - multisig threshold/signers: 3/5
+        
+    - upgradeable component: `RSETH` ([ethereum:0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7](https://etherscan.io/address/0xa1290d69c65a6fe4df752f95823fae25cb99e5a7))
+        - admin address: [ethereum:0xb9577E83a6d9A6DE35047aa066E3758221FE0DA2](https://etherscan.io/address/0xb9577E83a6d9A6DE35047aa066E3758221FE0DA2)
+        - admin type: multisig
+            - multisig threshold/signers: 3/5
 
-- upgradeable component: `EthXPriceOracle` ([ethereum:0x3D08ccb47ccCde84755924ED6B0642F9aB30dFd2](https://etherscan.io/address/0x3D08ccb47ccCde84755924ED6B0642F9aB30dFd2#readProxyContract))
-    - admin address: [ethereum:0xb9577E83a6d9A6DE35047aa066E3758221FE0DA2](https://etherscan.io/address/0xb9577E83a6d9A6DE35047aa066E3758221FE0DA2)
-    - admin type: multisig
-        - multisig threshold/signers: 3/5
+    - upgradeable component: `EthXPriceOracle` ([ethereum:0x3D08ccb47ccCde84755924ED6B0642F9aB30dFd2](https://etherscan.io/address/0x3D08ccb47ccCde84755924ED6B0642F9aB30dFd2#readProxyContract))
+        - admin address: [ethereum:0xb9577E83a6d9A6DE35047aa066E3758221FE0DA2](https://etherscan.io/address/0xb9577E83a6d9A6DE35047aa066E3758221FE0DA2)
+        - admin type: multisig
+            - multisig threshold/signers: 3/5
 
-- upgradeable component: `SfrxETHPriceOracle` ([ethereum:0x8546A7C8C3C537914C3De24811070334568eF427](https://etherscan.io/address/0x8546A7C8C3C537914C3De24811070334568eF427#readProxyContract))
-    - admin address: [ethereum:0xb9577E83a6d9A6DE35047aa066E3758221FE0DA2](https://etherscan.io/address/0xb9577E83a6d9A6DE35047aa066E3758221FE0DA2)
-    - admin type: multisig
-        - multisig threshold/signers: 3/5
+    - upgradeable component: `SfrxETHPriceOracle` ([ethereum:0x8546A7C8C3C537914C3De24811070334568eF427](https://etherscan.io/address/0x8546A7C8C3C537914C3De24811070334568eF427#readProxyContract))
+        - admin address: [ethereum:0xb9577E83a6d9A6DE35047aa066E3758221FE0DA2](https://etherscan.io/address/0xb9577E83a6d9A6DE35047aa066E3758221FE0DA2)
+        - admin type: multisig
+            - multisig threshold/signers: 3/5
 
 
 
