@@ -13,9 +13,9 @@
     - [Frax audits](https://docs.frax.finance/other/audits#id-2024)
 
 ## Context
-Frax has developed a set of Bridge contracts, which provide Price Data on Fraxtal. The contract setup consists of a `TransportOracle`, `MerleProofPriceSource,
-`TimeLock`, `StateRootOracle` and a eoa sending price data updates via a merkle proof. The `TransportOracle` contracts adhere to the
-ChainLinkPrice feed Interface and therefor the `ChainlinkRateProviderFactory` can be used to access price data on Fraxtal.
+Frax has developed a set of bridge contracts which provide price data on Fraxtal. The contract setup consists of a `TransportOracle`, `MerleProofPriceSource`,
+`TimeLock`, `StateRootOracle` and an eoa sending price data updates via a merkle proof. The `TransportOracle` contracts adhere to the
+ChainLinkPrice feed Interface and thus the `ChainlinkRateProviderFactory` can be used to access price data on Fraxtal.
 
 
 ## Review Checklist: Bare Minimum Compatibility
