@@ -7,7 +7,7 @@
     - [gnosis:0xdc90e2680094314CEaB45CE15100F6e02cEB7ceD](https://gnosisscan.io/address/0xdc90e2680094314ceab45ce15100f6e02ceb7ced#code)
     - [gnosis:0x92320D3C8Fd6BE59b22eB0eEe330901Fe4617f33](https://gnosisscan.io/address/0x92320D3C8Fd6BE59b22eB0eEe330901Fe4617f33#code)
 - Audit report(s):
-    - [Chronicle Oracles audits](\<link to audit\>)
+    - [Chronicle audits](https://github.com/chronicleprotocol/scribe/tree/main/audits)
 
 ## Context
 This rate Provider bridges the eth/reth exchange rate & GBP/USD to gnosis chain. This is done via an oracle solution developed by chronicle. 
@@ -55,6 +55,6 @@ To save time, we do not bother pointing out low-severity/informational issues or
 
 
 ## Conclusion
-**Summary judgment: **
+**Summary judgment: SAFE**
 
-This rate provider should work well with Balancer pools. The oracle providing the rate data has various guardrails in place ensuring the integrity of the rate being provided. The `owner` of the rate provider has the capability to revert the call to `getRate`. However this potential revert scenario is guarded behind a Multisig of [1/4] for reth and [2/6] for GBP.
+This rate provider should work well with Balancer pools. The oracle providing the rate data has various guardrails in place ensuring the integrity of the rate being provided. The `owner` of the rate provider has the capability to revert the call to `getRate`. However this potential revert scenario is guarded behind a Multisig of [2/6] for reth and [2/6] for GBP.

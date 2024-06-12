@@ -1103,7 +1103,7 @@
       "upgradeableComponents": []
     },
     "0x92320D3C8Fd6BE59b22eB0eEe330901Fe4617f33": {
-      "asset": "",
+      "asset": "0x5Cb9073902F2035222B9749F8fB0c9BFe5527108",
       "name": "TollgateChronicleRateProvider",
       "summary": "",
       "review": "./TollgateChronicleRateProvider.md",
