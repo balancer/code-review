@@ -41,7 +41,7 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 - [x] Price data is provided by an off-chain source (e.g., a Chainlink oracle, a multisig, or a network of nodes).
     - source: WormholeRelayer
     - source address: [arbitrum:0x27428DD2d3DD32A4D7f7C497eAaa23130d894911](https://arbiscan.io/address/0x27428dd2d3dd32a4d7f7c497eaaa23130d894911)
-    - any protections? YES: The rate date is checked against the right sender (WormholeRelayer), if an identical message was already parsed, accurate sourceChain data origin and that no past data is sent. For more information see info on Wormhole's Verified Action approvals here: https://docs.wormhole.com/wormhole/explore-wormhole/vaa
+    - any protections? YES: The rate date is checked against the right sender (WormholeRelayer), if an identical message was already parsed, accurate sourceChain data origin and that no past data is sent. For more information see info on Wormhole's Verified Action approvals [here](https://docs.wormhole.com/wormhole/explore-wormhole/vaa).
 
 - [ ] Price data is expected to be volatile (e.g., because it represents an open market price instead of a (mostly) monotonically increasing price).
 

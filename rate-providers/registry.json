@@ -268,7 +268,7 @@
       "upgradeableComponents": []
     },
     "0xBA74737A078C05500dD98C970909e4A3b90c35C6": {
-      "asset": "",
+      "asset": "0xf7d4e7273E5015C96728A6b02f31C505eE184603",
       "name": "PriceFeed",
       "summary": "safe",
       "review": "./StakewiseRateProviderArbitrum.md",
