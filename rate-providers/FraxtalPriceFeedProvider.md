@@ -2,7 +2,7 @@
 
 ## Details
 - Reviewed by: @mkflow27
-- Checked by: @\<GitHub handle of secondary reviewer\>
+- Checked by: @danielmkm
 - Deployed at:
     - [fraxtal:0x3893E8e1584fF73188034D37Fc6B7d41A255E570](https://fraxscan.com/address/0x3893E8e1584fF73188034D37Fc6B7d41A255E570#code)
     - [fraxtal:0x95eedc9d10B6964a579948Fd717D34F45E15C0C6](https://fraxscan.com/address/0x95eedc9d10B6964a579948Fd717D34F45E15C0C6)
