@@ -1043,7 +1043,65 @@
       "upgradeableComponents": []
     }
   },
-  "fraxtal": {},
+  "fraxtal": {
+    "0x3893E8e1584fF73188034D37Fc6B7d41A255E570": {
+      "asset": "0xfc00000000000000000000000000000000000008",
+      "name": "ChainlinkRateProvider",
+      "summary": "safe",
+      "review": "./FraxtalPriceFeedProvider.md",
+      "warnings": [],
+      "factory": "0x3f170631ed9821Ca51A59D996aB095162438DC10",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x1B680F4385f24420D264D78cab7C58365ED3F1FF",
+          "implementationReviewed": "0x1B680F4385f24420D264D78cab7C58365ED3F1FF"
+        }
+      ]
+    },
+    "0x95eedc9d10B6964a579948Fd717D34F45E15C0C6": {
+      "asset": "0x09eadcbaa812a4c076c3a6cde765dc4a22e0d775",
+      "name": "ChainlinkRateProvider",
+      "summary": "safe",
+      "review": "./FraxtalPriceFeedProvider.md",
+      "warnings": [],
+      "factory": "0x3f170631ed9821Ca51A59D996aB095162438DC10",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xfdE8C36F32Bf32e73A1bdeb4ef3E17709674a838",
+          "implementationReviewed": "0xfdE8C36F32Bf32e73A1bdeb4ef3E17709674a838"
+        }
+      ]
+    },
+    "0x761efEF0347E23e2e75907A6e2df0Bbc6d3A3F38": {
+      "asset": "0xfc00000000000000000000000000000000000005",
+      "name": "ChainlinkRateProvider",
+      "summary": "safe",
+      "review": "./FraxtalPriceFeedProvider.md",
+      "warnings": [],
+      "factory": "0x3f170631ed9821Ca51A59D996aB095162438DC10",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xEE095b7d9191603126Da584a1179BB403a027c3A",
+          "implementationReviewed": "0xEE095b7d9191603126Da584a1179BB403a027c3A"
+        }
+      ]
+    },
+    "0x99D033888aCe9d8E01F793Cf85AE7d4EA56494F9": {
+      "asset": "0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2",
+      "name": "ChainlinkRateProvider",
+      "summary": "safe",
+      "review": "./FraxtalPriceFeedProvider.md",
+      "warnings": [],
+      "factory": "0x3f170631ed9821Ca51A59D996aB095162438DC10",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xd295936C8Bb465ADd1eC756a51698127CB4F4910",
+          "implementationReviewed": "0xd295936C8Bb465ADd1eC756a51698127CB4F4910"
+        }
+      ]
+    }
+
+  },
   "gnosis": {
     "0x89C80A4540A00b5270347E02e2E144c71da2EceD": {
       "asset": "0xaf204776c7245bF4147c2612BF6e5972Ee483701",
