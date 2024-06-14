@@ -1335,6 +1335,15 @@
       "warnings": ["legacy"],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0xef42D000a3e85C4e71C57e2C6A1E600e86f5a91B": {
+      "asset": "0x5A7fACB970D094B6C7FF1df0eA68D99E6e73CBFF",
+      "name": "weETH Rate Provider",
+      "summary": "safe",
+      "review": "./ChainLinkRateProvider.md",
+      "warnings": ["chainlink"],
+      "factory": "0x83E443EF4f9963C77bd860f94500075556668cb8",
+      "upgradeableComponents": []
     }
   },
   "polygon": {
