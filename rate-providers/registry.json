@@ -1337,7 +1337,7 @@
       "upgradeableComponents": []
     },
     "0xef42D000a3e85C4e71C57e2C6A1E600e86f5a91B": {
-      "asset": "0x346e03f8cce9fe01dcb3d0da3e9d00dc2c0e08f0",
+      "asset": "0x5A7fACB970D094B6C7FF1df0eA68D99E6e73CBFF",
       "name": "weETH Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
