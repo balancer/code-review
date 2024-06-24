@@ -1060,6 +1060,62 @@
           "implementationReviewed": "0x5b97c9dcce2693844b90cea40ba1fd15bf99eb01"
         }
       ]
+    },
+    "0x20EDB9299Ae83D9f22bE16279a4A2B422F34d020": {
+      "asset": "0xBEEF69Ac7870777598A04B2bd4771c71212E6aBc",
+      "name": "VaultRateOracle",
+      "summary": "safe",
+      "review": "./MellowRateProviders.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xBEEF69Ac7870777598A04B2bd4771c71212E6aBc",
+          "implementationReviewed": "0xaf108ae0AD8700ac41346aCb620e828c03BB8848"
+        }
+      ]
+    },
+    "0x9D09c1E832102A23215e27E85B37b139aEe95Ff4": {
+      "asset": "0x84631c0d0081FDe56DeB72F6DE77abBbF6A9f93a",
+      "name": "VaultRateOracle",
+      "summary": "safe",
+      "review": "./MellowRateProviders.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x84631c0d0081FDe56DeB72F6DE77abBbF6A9f93a",
+          "implementationReviewed": "0xaf108ae0AD8700ac41346aCb620e828c03BB8848"
+        }
+      ]
+    },
+    "0x6984F8E8ce474B69A2F32bE7dEc4d003d644B4B7": {
+      "asset": "0x7a4EffD87C2f3C55CA251080b1343b605f327E3a",
+      "name": "VaultRateOracle",
+      "summary": "safe",
+      "review": "./MellowRateProviders.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x7a4EffD87C2f3C55CA251080b1343b605f327E3a",
+          "implementationReviewed": "0xaf108ae0AD8700ac41346aCb620e828c03BB8848"
+        }
+      ]
+    },
+    "0x3A2228C7B3Bc3A32AEa9338d0A890A5EbD7bc977": {
+      "asset": "0x5fD13359Ba15A84B76f7F87568309040176167cd",
+      "name": "VaultRateOracle",
+      "summary": "safe",
+      "review": "./MellowRateProviders.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x5fD13359Ba15A84B76f7F87568309040176167cd",
+          "implementationReviewed": "0xaf108ae0AD8700ac41346aCb620e828c03BB8848"
+        }
+      ]
     }
   },
   "fantom": {
