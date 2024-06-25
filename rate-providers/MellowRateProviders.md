@@ -80,7 +80,37 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 
 - [ ] Price data is expected to be volatile (e.g., because it represents an open market price instead of a (mostly) monotonically increasing price).
 ### Common Manipulation Vectors
-- [ ] The Rate Provider is susceptible to donation attacks.
+- [x] The Rate Provider is susceptible to donation attacks.
+    - The involved modules `ERC20TvlModule` and `DefaultBondTvlModule` both read the balance of the Vault in the following manner
+        ```solidity
+        //DefaultBondTvlModule
+        function tvl(
+            address vault
+        ) external view noDelegateCall returns (Data[] memory data) {
+            bytes memory data_ = vaultParams[vault];
+            if (data_.length == 0) return data;
+            address[] memory bonds = abi.decode(data_, (address[]));
+            data = new Data[](bonds.length);
+            for (uint256 i = 0; i < bonds.length; i++) {
+                data[i].token = bonds[i];
+                data[i].underlyingToken = IBond(bonds[i]).asset();
+                data[i].amount = IERC20(bonds[i]).balanceOf(vault);
+                data[i].underlyingAmount = data[i].amount;
+            }
+        }
+        //ERC20TvlModule
+        function tvl(
+            address vault
+        ) external view noDelegateCall returns (Data[] memory data) {
+            address[] memory tokens = IVault(vault).underlyingTokens();
+            data = new Data[](tokens.length);
+            for (uint256 i = 0; i < tokens.length; i++) {
+                data[i].token = tokens[i];
+                data[i].underlyingToken = tokens[i];
+                data[i].amount = IERC20(tokens[i]).balanceOf(vault);
+                data[i].underlyingAmount = data[i].amount;
+            }
+        }
 
 ## Additional Findings
 To save time, we do not bother pointing out low-severity/informational issues or gas optimizations (unless the gas usage is particularly egregious). Instead, we focus only on high- and medium-severity findings which materially impact the contract's functionality and could harm users.
