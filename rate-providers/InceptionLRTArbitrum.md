@@ -28,9 +28,9 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 
 - [x] Some other portion of the price pipeline is upgradeable (e.g., the token itself, an oracle, or some piece of a larger system that tracks the price).
     - upgradeable component: `InceptionRatioFeed` ([arbitrum:0xfE715358368416E01d3A961D3a037b7359735d5e](https://arbiscan.io/address/0xfE715358368416E01d3A961D3a037b7359735d5e#readProxyContract))
-    - admin address: [arbitrum:0xa83b095cd14A89717e52718c7244885255e83223](https://arbiscan.io/address/0xa83b095cd14A89717e52718c7244885255e83223)
-    - admin type: EOA
-        - multisig threshold/signers: N.A
+    - admin address: [arbitrum:0x7411242477Ee9CfA06141398224586E65099f035](https://arbiscan.io/address/0x7411242477Ee9CfA06141398224586E65099f035)
+    - admin type: Multisig
+        - multisig threshold/signers: 3/5
 
 ### Oracles
 - [x] Price data is provided by an off-chain source (e.g., a Chainlink oracle, a multisig, or a network of nodes).
@@ -41,7 +41,7 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
         - validity of price update time
         - price growth direction
         - price deviation via a threshold check
-    - comment: However, the price data can also be updated from a different EOA which does circumvent the price data validity checks. The `owner` can call `repairRatioFor` and update price data without any validity checks of data. This is dangerous particularly as the `owner` is an EOA and private key leakage can have severe effects. The owner is currently [arbitrum:0xa83b095cd14A89717e52718c7244885255e83223](https://arbiscan.io/address/0xa83b095cd14A89717e52718c7244885255e83223).
+    - comment: However, the price data can also be updated from a different multisig which does circumvent the price data validity checks. The `owner` can call `repairRatioFor` and update price data with the only check being that the rate cannot be 0. The owner (3/5 multisig) is currently [arbitrum:0x7411242477Ee9CfA06141398224586E65099f035](https://arbiscan.io/address/0x7411242477Ee9CfA06141398224586E65099f035).
 
 - [ ] Price data is expected to be volatile (e.g., because it represents an open market price instead of a (mostly) monotonically increasing price).
 
@@ -53,6 +53,6 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 To save time, we do not bother pointing out low-severity/informational issues or gas optimizations (unless the gas usage is particularly egregious). Instead, we focus only on high- and medium-severity findings which materially impact the contract's functionality and could harm users.
 
 ## Conclusion
-**Summary judgment: UNSAFE**
+**Summary judgment: SAFE**
 
-The rate Provider has its price data updated by oracles, which are fed via EOAs. The normal operating procedure of updating prices via a call to `updateRatioBatch` has protections against bad price data. However the upgradeability of the ratio feed and an EOA being able to supply repaired price data without any validity checks does not make these rate providers fit for purpose. 
+The rate Provider has its price data updated by oracles - so called operators - (with rate validity checks). The normal operating procedure of updating prices via a call to `updateRatioBatch` has protections against bad price data. The `owner` being able to repair the exchange rates without validity checks except zero rate can be problematic. The suggestion is to additionally add further validity checks in case the ratio is being repaired. Overall this rate provider should work well with Balancer pools.
