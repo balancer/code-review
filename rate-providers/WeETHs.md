@@ -32,7 +32,7 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 - [ ] Some other portion of the price pipeline is upgradeable (e.g., the token itself, an oracle, or some piece of a larger system that tracks the price).
 
 ### Oracles
-- [x] Price data is provided by an off-chain source (e.g., a Chainlink oracle, a multisig, or a network of nodes). \<Delete this hint: If unchecked, delete all of the bullets below.\>
+- [x] Price data is provided by an off-chain source (e.g., a Chainlink oracle, a multisig, or a network of nodes).
     - source: Multisig 2/3
     - source address: [ethereum:0x41dfc53b13932a2690c9790527c1967d8579a6ae](https://etherscan.io/address/0x41dfc53b13932a2690c9790527c1967d8579a6ae)
     - any protections? NO: The rate provider contract has the following `getRate` implementation.
@@ -41,7 +41,7 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
         rate = accountantState.exchangeRate;
         }
         ````
-        and the `accountantStae` is updated by:
+        and the `accountantState` is updated by:
         ```solidity
         function updateExchangeRate(uint96 newExchangeRate) external requiresAuth {
         AccountantState storage state = accountantState;

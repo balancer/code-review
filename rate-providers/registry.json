@@ -1060,6 +1060,15 @@
           "implementationReviewed": "0x5b97c9dcce2693844b90cea40ba1fd15bf99eb01"
         }
       ]
+    },
+    "0xbe16605B22a7faCEf247363312121670DFe5afBE": {
+      "asset": "0x917ceE801a67f933F2e6b33fC0cD1ED2d5909D88",
+      "name": "AccountantWithRateProviders",
+      "summary": "",
+      "review": "./WeETHs.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   },
   "fantom": {
