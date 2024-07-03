@@ -29,18 +29,18 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
     - upgradeable component: `GToken` ([arbitrum:0xd3443ee1e91aF28e5FB858Fbd0D72A63bA8046E0](https://arbiscan.io/address/0xd3443ee1e91aF28e5FB858Fbd0D72A63bA8046E0#readProxyContract))
     - admin address: [arbitrum:0x80fd0accC8Da81b0852d2Dca17b5DDab68f22253](https://arbiscan.io/address/0x80fd0accC8Da81b0852d2Dca17b5DDab68f22253)
     - admin type: EOA
-        - multisig timelock? YES, 14 days. The admin mention top is the "executor", which can execute once the timelock has expired.
+        - multisig timelock? YES, 14 days. The admin mentioned above is the "executor", which can execute once the timelock has expired.
 
 ### Oracles
-- [] Price data is provided by an off-chain source (e.g., a Chainlink oracle, a multisig, or a network of nodes). 
+- [ ] Price data is provided by an off-chain source (e.g., a Chainlink oracle, a multisig, or a network of nodes). 
 
 - [ ] Price data is expected to be volatile (e.g., because it represents an open market price instead of a (mostly) monotonically increasing price).
 
 ### Common Manipulation Vectors
 - [x] The Rate Provider is susceptible to donation attacks.
-    - comment: Anyone can "donate" assets to the `GToken` contract. The donation here exists not in the form of simply sending erc20 Tokens to a contract bur in this particular case calling `distributeReward`. The `GToken` contract calls `transferFrom` on the sender and the amount sent is used for a new rate calculation.
+    - comment: Anyone can "donate" assets to the `GToken` contract. The donation here exists not in the form of simply sending erc20 Tokens to a contract but in this particular case calling `distributeReward`. The `GToken` contract calls `transferFrom` on the sender and the amount sent is used for a new rate calculation.
     ```solidity
-        // Distributes a reward evenly to all stakers of the vault
+    // Distributes a reward evenly to all stakers of the vault
     function distributeReward(uint256 assets) external {
         address sender = _msgSender();
         SafeERC20Upgradeable.safeTransferFrom(_assetIERC20(), sender, address(this), assets);
