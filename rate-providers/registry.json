@@ -338,6 +338,20 @@
           "implementationReviewed": "0xBf19Eead55a6B100667f04F8FBC5371E03E8ab2E"
         }
       ]
+    },
+    "0x601A3bC1A24d209A2C08D2d54eC3f3aa39c3a40A": {
+      "asset": "0xd3443ee1e91aF28e5FB858Fbd0D72A63bA8046E0",
+      "name": "GTokenRateProvider",
+      "summary": "safe",
+      "review": "./GTokenRateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xd3443ee1e91aF28e5FB858Fbd0D72A63bA8046E0",
+          "implementationReviewed": "0x9093939b9bdc5322d6e2b37b62867d744c98e874"
+        }
+      ]
     }
   },
   "avalanche": {
