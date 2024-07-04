@@ -338,6 +338,20 @@
           "implementationReviewed": "0xBf19Eead55a6B100667f04F8FBC5371E03E8ab2E"
         }
       ]
+    },
+    "0x7F55E509006C9Df7594C4819Ba7ebfE6EfE4854b": {
+      "asset": "0x57F5E098CaD7A3D1Eed53991D4d66C45C9AF7812",
+      "name": "wUSDM",
+      "summary": "unsafe",
+      "review": "./wUSDMRateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x57F5E098CaD7A3D1Eed53991D4d66C45C9AF7812",
+          "implementationReviewed": "0x0369d5De7619805238540F721a85c2C859B8da10"
+        }
+      ]
     }
   },
   "avalanche": {
