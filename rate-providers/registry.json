@@ -1297,7 +1297,7 @@
     "0xdc90e2680094314CEaB45CE15100F6e02cEB7ceD": {
       "asset": "0xc791240d1f2def5938e2031364ff4ed887133c3d",
       "name": "TollgateChronicleRateProvider",
-      "summary": "",
+      "summary": "safe",
       "review": "./TollgateChronicleRateProvider.md",
       "warnings": [],
       "factory": "",
@@ -1306,7 +1306,7 @@
     "0x92320D3C8Fd6BE59b22eB0eEe330901Fe4617f33": {
       "asset": "0x5Cb9073902F2035222B9749F8fB0c9BFe5527108",
       "name": "TollgateChronicleRateProvider",
-      "summary": "",
+      "summary": "safe",
       "review": "./TollgateChronicleRateProvider.md",
       "warnings": [],
       "factory": "",
