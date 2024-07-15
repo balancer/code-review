@@ -842,7 +842,7 @@
     },
     "0xda3E8CD08753a05Ed4103aF28c69C47e35d6D8Da": {
       "asset": "0x862c57d48becB45583AEbA3f489696D22466Ca1b",
-      "name": "",
+      "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./statATokenLMRateProvider.md",
       "warnings": [""],
@@ -891,7 +891,7 @@
     },
     "0x71f80e2CfAFA5EC2F0bF12f71FA7Ea57c3D0c7Af": {
       "asset": "0xD9A442856C234a39a81a089C06451EBAa4306a72",
-      "name": "",
+      "name": "pufETHRateProvider",
       "summary": "safe",
       "review": "./PufEthRateProvider.md",
       "warnings": ["donation"],
@@ -971,7 +971,7 @@
     },
     "0x8bC73134A736437da780570308d3b37b67174ddb": {
       "asset": "0xfa2629B9cF3998D52726994E0FcdB750224D8B9D",
-      "name": "",
+      "name": "InankrETHRateProvider",
       "summary": "safe",
       "review": "./InceptionLRTRateProvider.md",
       "warnings": ["donation"],
@@ -1353,7 +1353,7 @@
     },
     "0xBCEBb4dcdEc1c12bf7eB31bd26bc9C3b8F55C966": {
       "asset": "0x3eE6107d9C93955acBb3f39871D32B02F82B78AB",
-      "name": "",
+      "name": "StErnRateProvider",
       "summary": "safe",
       "review": "./stERNRateProvider.md",
       "warnings": ["donation"],
@@ -1385,7 +1385,7 @@
     },
     "0xdFa8d2b3c146b8a10B5d63CA0306AEa84B602cfb": {
       "asset": "0x4DD03dfD36548C840B563745e3FBeC320F37BA7e",
-      "name": "",
+      "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./statATokenLMRateProvider.md",
       "warnings": [],
@@ -1403,7 +1403,7 @@
     },
     "0x3f921Ebabab0703BC06d1828D09a245e8390c263": {
       "asset": "0x035c93db04E5aAea54E6cd0261C492a3e0638b37",
-      "name": "",
+      "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./statATokenLMRateProvider.md",
       "warnings": [],
