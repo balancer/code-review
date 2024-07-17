@@ -16,7 +16,7 @@ const schema = {
             asset: { type: "string", pattern: "^0x[a-fA-F0-9]{40}$" },
             name: { type: "string", minLength: 1 },
             summary: { type: "string", enum: ["safe", "unsafe"] },
-            review: { type: "string", minLength: 1},
+            review: { type: "string", minLength: 1, pattern: "^\\./"},
             warnings: { type: "array", items: { type: "string" } },
             factory: { type: "string" },
             upgradeableComponents: {
