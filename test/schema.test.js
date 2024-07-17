@@ -37,6 +37,7 @@ const schema = {
                 additionalProperties: false,
               },
             },
+            conclusion: { type: "string", minLength: 1},
           },
           required: [
             "asset",
@@ -46,6 +47,7 @@ const schema = {
             "warnings",
             "factory",
             "upgradeableComponents",
+            "conclusion",
           ],
           additionalProperties: false,
         },
