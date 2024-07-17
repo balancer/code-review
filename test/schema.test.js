@@ -14,8 +14,8 @@ const schema = {
           type: "object",
           properties: {
             asset: { type: "string", pattern: "^0x[a-fA-F0-9]{40}$" },
-            name: { type: "string" },
-            summary: { type: "string" },
+            name: { type: "string", minLength: 1 },
+            summary: { type: "string", enum: ["safe", "unsafe"] },
             review: { type: "string" },
             warnings: { type: "array", items: { type: "string" } },
             factory: { type: "string" },
