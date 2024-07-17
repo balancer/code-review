@@ -713,7 +713,7 @@
       "asset": "0xbf5495Efe5DB9ce00f80364C8B423567e58d2110",
       "name": "BalancerRateProvider",
       "summary": "safe",
-      "review": "ezETHRateProvider.md",
+      "review": "./ezETHRateProvider.md",
       "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": [
@@ -751,7 +751,7 @@
       "asset": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7",
       "name": "RsETHRateProvider",
       "summary": "safe",
-      "review": "rsETHRateProvider.md",
+      "review": "./rsETHRateProvider.md",
       "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": [
@@ -781,7 +781,7 @@
       "asset": "0x6733F0283711F225A447e759D859a70b0c0Fd2bC",
       "name": "svETHRateProvider",
       "summary": "safe",
-      "review": "sveth.md",
+      "review": "./sveth.md",
       "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": [
