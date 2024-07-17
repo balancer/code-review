@@ -1262,7 +1262,7 @@
       "asset": "0x6C76971f98945AE98dD7d4DFcA8711ebea946eA6",
       "name": "wstETH Rate Provider",
       "summary": "safe",
-      "review": "",
+      "review": "./ChainLinkRateProvider.md",
       "warnings": ["chainlink"],
       "factory": "",
       "upgradeableComponents": []
