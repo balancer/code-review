@@ -29,9 +29,7 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
     - upgradeable component: `wUSDM` ([arbitrum:0x57F5E098CaD7A3D1Eed53991D4d66C45C9AF7812](https://arbiscan.io/address/0x57F5E098CaD7A3D1Eed53991D4d66C45C9AF7812#readProxyContract))
     - admin address: [arbitrum:0xfD0C148Dd9bfb196D70981b96e27a294e51bd50F](https://arbiscan.io/address/0xfD0C148Dd9bfb196D70981b96e27a294e51bd50F)
     - admin type: EOA
-        - multisig threshold/signers: \<X/Y\>
-        - multisig timelock? \<YES: minimum duration/NO\>
-        - trustworthy signers? \<YES: whom/NO\> \<Delete this hint: Are the signers known entities such as Vitalik, Hudson, samczsun, or Fernando? Or are they random addresses?\>
+
 
 ### Oracles
 - [ ] Price data is provided by an off-chain source (e.g., a Chainlink oracle, a multisig, or a network of nodes).
@@ -52,8 +50,12 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 ## Additional Findings
 To save time, we do not bother pointing out low-severity/informational issues or gas optimizations (unless the gas usage is particularly egregious). Instead, we focus only on high- and medium-severity findings which materially impact the contract's functionality and could harm users.
 
+### M-01: Opaque upgradeability mechanism
+The account allowed to upgrade is an EOA (which according to mountain protocol is an openzeppelin relayer). It is not possibly to verify this onchain. A LP in pools which use this rate provider should be aware of it and verify if possible. For more information see: https://docs.openzeppelin.com/defender/v2/manage/relayers#security-considerations
+
+
 
 ## Conclusion
-**Summary judgment: UNSAFE**
+**Summary judgment: SAFE**
 
-The wUSDM contract leverages Openzeppelin's ERC4626 implementation with upgradeability functionality. The current account allowed to upgrade the contract is an EOA. In order to mark this rate provider safe, the upgradeability functionality should be moved to a multisig.
+The wUSDM contract leverages Openzeppelin's ERC4626 implementation with upgradeability functionality. This rate provider should work well with Balancer pools. 

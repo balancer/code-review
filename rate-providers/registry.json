@@ -342,7 +342,7 @@
     "0x7F55E509006C9Df7594C4819Ba7ebfE6EfE4854b": {
       "asset": "0x57F5E098CaD7A3D1Eed53991D4d66C45C9AF7812",
       "name": "wUSDM",
-      "summary": "unsafe",
+      "summary": "safe",
       "review": "./wUSDMRateProvider.md",
       "warnings": [],
       "factory": "",
