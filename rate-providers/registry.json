@@ -1504,6 +1504,20 @@
       "warnings": ["chainlink"],
       "factory": "0x83E443EF4f9963C77bd860f94500075556668cb8",
       "upgradeableComponents": []
+    },
+    "0x1373A61449C26CC3F48C1B4c547322eDAa36eB12": {
+      "asset": "0x4186BFC76E2E237523CBC30FD220FE055156b41F",
+      "name": "RSETHRateReceiver",
+      "summary": "safe",
+      "review": "./rsETHRateProviderOptimism.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x1373A61449C26CC3F48C1B4c547322eDAa36eB12",
+          "implementationReviewed": "0x1373A61449C26CC3F48C1B4c547322eDAa36eB12"
+        }
+      ]
     }
   },
   "polygon": {
@@ -1622,20 +1636,6 @@
       "warnings": ["legacy"],
       "factory": "",
       "upgradeableComponents": []
-    },
-    "0x1373A61449C26CC3F48C1B4c547322eDAa36eB12": {
-      "asset": "0x4186BFC76E2E237523CBC30FD220FE055156b41F",
-      "name": "RSETHRateReceiver",
-      "summary": "safe",
-      "review": "./rsETHRateProviderOptimism.md",
-      "warnings": [],
-      "factory": "",
-      "upgradeableComponents": [
-        {
-          "entrypoint": "0x1373A61449C26CC3F48C1B4c547322eDAa36eB12",
-          "implementationReviewed": "0x1373A61449C26CC3F48C1B4c547322eDAa36eB12"
-        }
-      ]
     }
   },
   "zkevm": {
