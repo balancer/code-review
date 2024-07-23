@@ -1172,6 +1172,29 @@
           "implementationReviewed": "0xaf108ae0AD8700ac41346aCb620e828c03BB8848"
         }
       ]
+    },
+    "0x8fDDab48DD17dDCeD87730020F4213528042dba3": {
+      "asset": "",
+      "name": "krETHRateProvider",
+      "summary": "",
+      "review": "./KernelProtocolRateProviders.md",
+      "warnings": [""],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee",
+          "implementationReviewed": "0xe629ee84C1Bd9Ea9c677d2D5391919fCf5E7d5D9"
+        }
+      ]
+    },
+    "0x1A9fA10CA260387314185B9D7763164FD3D51226": {
+      "asset": "",
+      "name": "ksETHRateProvider",
+      "summary": "",
+      "review": "./KernelProtocolRateProviders.md",
+      "warnings": [""],
+      "factory": "",
+      "upgradeableComponents": []
     }
   },
   "fantom": {
