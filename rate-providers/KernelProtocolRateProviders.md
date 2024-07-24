@@ -57,4 +57,4 @@ Kernel protocol uses Karak to mint LRTs to the user. Karak is a restaking protoc
 ## Conclusion
 **Summary judgment: **
 
-The Kernel protocol rate providers should work well with Balancer pools on a technical. They are essentially wrappers around downstream rate computations and expose this data as part of their onchain scope. However, the rate reported might be inaccurate if multiple LSTs/LRTs are used as deposit assets and if Karak generates yield, the rate reported and the true rate will deviate. 
+The Kernel protocol rate providers should work well with Balancer pools on a technical level. They are essentially wrappers around downstream rate computations and expose this data as part of their onchain scope. However, the rate reported might be inaccurate if multiple LSTs/LRTs are used as deposit assets and if Karak generates yield, the rate reported and the true rate will deviate. 
