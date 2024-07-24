@@ -1172,6 +1172,15 @@
           "implementationReviewed": "0xaf108ae0AD8700ac41346aCb620e828c03BB8848"
         }
       ]
+    },
+    "0xEd29fBe335A0602Bf100825b533B12133FE523A3": {
+      "asset": "0x68749665FF8D2d112Fa859AA293F07A622782F38",
+      "name": "XAUt Tether Gold Rate Provider",
+      "summary": "safe",
+      "review": "./ChainLinkRateProvider.md",
+      "warnings": ["chainlink"],
+      "factory": "0x1311Fbc9F60359639174c1e7cC2032DbDb5Cc4d1",
+      "upgradeableComponents": []
     }
   },
   "fantom": {
