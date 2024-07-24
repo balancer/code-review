@@ -10,7 +10,7 @@
     - [Kernel audits](https://drive.google.com/file/d/1MqenDKmDDb6OcsG-0YTlQAwlfFndSk7J/view)
 
 ## Context
-Kernel Protocol will be offering a suite of Karak Native LRTs that allow users to restake assets on Karak and receive LRT tokens that can be deployed in further yield-bearing DeFi activities. This rate provider is essentially a wrapper with some modifications around `WeETH`. krETHRateProvider calls weETHRateProvider which calls `WeETH`. The same is true for ksETHRateProvider. This rate provider calls into a wstETHRateProvider, which calls into wsteth.
+Kernel Protocol will be offering a suite of Karak Native LRTs that allow users to restake assets on Karak and receive LRT tokens that can be deployed in further yield-bearing DeFi activities. The rate providers in this review are essentially wrappers of downstream LST/LRT rate providers. krETHRateProvider calls weETHRateProvider which calls `WeETH`. The same is true for ksETHRateProvider, which calls into a wstETHRateProvider, which calls into wsteth.
 
 ## Review Checklist: Bare Minimum Compatibility
 Each of the items below represents an absolute requirement for the Rate Provider. If any of these is unchecked, the Rate Provider is unfit to use.
@@ -48,7 +48,8 @@ To save time, we do not bother pointing out low-severity/informational issues or
 
 ### M-01: Missing rate exposure of LSTs used to mint LRTs.
 > ksETH: Restake any ETH-denominated LST accepted by Karak (eg Lido’s stETH, Rocket Pool’s rETH etc) via Kernel Protocol to receive our ksETH LRT that can be deployed in further yield-bearing activities. [source](https://medium.com/@vectorreserve/introducing-kernel-protocol-the-first-suite-of-karak-native-lrts-unlocking-liquidity-yields-for-993f4995249d).
-For the example of ksETH, the rateProvider exposes the rate based on wsteth's rate. Since the documentation for Kernel states that multiple LSTs can be used to mint ksETH, the rate reported by the ksETHRateProvider does not take into account the distribution of LSTs backing ksETH. The same logic applies to krETH.
+
+For the example of ksETH, the rateProvider exposes the rate based on wsteth's rate. Since the documentation for Kernel states that multiple LSTs can be used to mint ksETH (apxETH, cbETH, rETH, swETH, wstETH), the rate reported by the ksETHRateProvider does not take into account the distribution of LSTs backing ksETH. The same logic applies to krETH.
 
 ### M-02: Missing rate exposure of LSTs used to mint LRTs.
 Kernel protocol uses Karak to mint LRTs to the user. Karak is a restaking protocol with the intention to generate yield for depositors. However this yield source is not accounted for in the rate providers. This means there is a deviation in rate reported by the rate provider and true rate generated. This will generate arbitrage opportunities between the pool and the protocol around the mint/redeem price.
