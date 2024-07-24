@@ -62,4 +62,4 @@ To save time, we do not bother pointing out low-severity/informational issues or
 ## Conclusion
 **Summary judgment: SAFE**
 
-This rate Provider should work well with Balancer pools. Upgradeability of the system is guarded behind a multisig with an uneffective Timelock.
+This rate Provider should work well with Balancer pools. Upgradeability of the system is guarded behind a multisig with a timelock of 1 second. The suggestion is to increase the timelock's `minDelay` to a higher duration like 24 hours.
