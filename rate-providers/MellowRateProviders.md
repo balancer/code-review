@@ -9,7 +9,7 @@
     - [ethereum:0x6984F8E8ce474B69A2F32bE7dEc4d003d644B4B7](https://etherscan.io/address/0x6984F8E8ce474B69A2F32bE7dEc4d003d644B4B7#code)
     - [ethereum:0x3A2228C7B3Bc3A32AEa9338d0A890A5EbD7bc977](https://etherscan.io/address/0x3A2228C7B3Bc3A32AEa9338d0A890A5EbD7bc977#code)
     - [ethereum:0x34406A8Ee75B5af34F8920D1960AC6a5B33A47b6](https://etherscan.io/address/0x34406A8Ee75B5af34F8920D1960AC6a5B33A47b6#readContract)
-    - [ethereum:0x34406A8Ee75B5af34F8920D1960AC6a5B33A47b6](https://etherscan.io/address/0x2A2f1b8c02Dafc5359B8E0e8BFc138400CB6d3a1#readContract)
+    - [ethereum:0x2A2f1b8c02Dafc5359B8E0e8BFc138400CB6d3a1](https://etherscan.io/address/0x2A2f1b8c02Dafc5359B8E0e8BFc138400CB6d3a1#readContract)
 - Audit report(s):
     - [Mellow LRT audits](https://docs.mellow.finance/mellow-lrt-primitive/audits)
 
