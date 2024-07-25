@@ -528,15 +528,6 @@
       "warnings": ["legacy"],
       "factory": "",
       "upgradeableComponents": []
-    },
-    "0xe1b1e024f4Bc01Bdde23e891E081b76a1A914ddd": {
-      "asset": "0xd95ca61CE9aAF2143E81Ef5462C0c2325172E028",
-      "name": "wUSD+ Overnight Rate Provider",
-      "summary": "safe",
-      "review": "./LegacyReview.md",
-      "warnings": ["legacy"],
-      "factory": "",
-      "upgradeableComponents": []
     }
   },
   "ethereum": {
