@@ -1208,6 +1208,15 @@
           "implementationReviewed": "0x9C49a829F1D726679cB505439BbF3ed018A7e9c6"
         }
       ]
+    },
+    "0xEd29fBe335A0602Bf100825b533B12133FE523A3": {
+      "asset": "0x68749665FF8D2d112Fa859AA293F07A622782F38",
+      "name": "XAUt Tether Gold Rate Provider",
+      "summary": "safe",
+      "review": "./ChainLinkRateProvider.md",
+      "warnings": ["chainlink"],
+      "factory": "0x1311Fbc9F60359639174c1e7cC2032DbDb5Cc4d1",
+      "upgradeableComponents": []
     }
   },
   "fantom": {
@@ -1540,6 +1549,20 @@
       "warnings": ["chainlink"],
       "factory": "0x83E443EF4f9963C77bd860f94500075556668cb8",
       "upgradeableComponents": []
+    },
+    "0x1373A61449C26CC3F48C1B4c547322eDAa36eB12": {
+      "asset": "0x4186BFC76E2E237523CBC30FD220FE055156b41F",
+      "name": "RSETHRateReceiver",
+      "summary": "safe",
+      "review": "./rsETHRateProviderOptimism.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x1373A61449C26CC3F48C1B4c547322eDAa36eB12",
+          "implementationReviewed": "0x1373A61449C26CC3F48C1B4c547322eDAa36eB12"
+        }
+      ]
     }
   },
   "polygon": {
@@ -1658,20 +1681,6 @@
       "warnings": ["legacy"],
       "factory": "",
       "upgradeableComponents": []
-    },
-    "0x1373A61449C26CC3F48C1B4c547322eDAa36eB12": {
-      "asset": "0x4186BFC76E2E237523CBC30FD220FE055156b41F",
-      "name": "RSETHRateReceiver",
-      "summary": "safe",
-      "review": "./rsETHRateProviderOptimism.md",
-      "warnings": [],
-      "factory": "",
-      "upgradeableComponents": [
-        {
-          "entrypoint": "0x1373A61449C26CC3F48C1B4c547322eDAa36eB12",
-          "implementationReviewed": "0x1373A61449C26CC3F48C1B4c547322eDAa36eB12"
-        }
-      ]
     }
   },
   "zkevm": {
