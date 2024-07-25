@@ -8,6 +8,8 @@
     - [ethereum:0x9D09c1E832102A23215e27E85B37b139aEe95Ff4](https://etherscan.io/address/0x9D09c1E832102A23215e27E85B37b139aEe95Ff4#code)
     - [ethereum:0x6984F8E8ce474B69A2F32bE7dEc4d003d644B4B7](https://etherscan.io/address/0x6984F8E8ce474B69A2F32bE7dEc4d003d644B4B7#code)
     - [ethereum:0x3A2228C7B3Bc3A32AEa9338d0A890A5EbD7bc977](https://etherscan.io/address/0x3A2228C7B3Bc3A32AEa9338d0A890A5EbD7bc977#code)
+    - [ethereum:0x34406A8Ee75B5af34F8920D1960AC6a5B33A47b6](https://etherscan.io/address/0x34406A8Ee75B5af34F8920D1960AC6a5B33A47b6#readContract)
+    - [ethereum:0x34406A8Ee75B5af34F8920D1960AC6a5B33A47b6](https://etherscan.io/address/0x2A2f1b8c02Dafc5359B8E0e8BFc138400CB6d3a1#readContract)
 - Audit report(s):
     - [Mellow LRT audits](https://docs.mellow.finance/mellow-lrt-primitive/audits)
 
@@ -53,6 +55,22 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
     - admin type: multisig
         - multisig threshold/signers: 5/8
     - comment: The `ADMIN_ROLE`has the capability to add new Tvl modules, which are target of an external call. An rogue `ADMIN_ROLE`could add malicious modules potentially inflating the the price. This functionality currently resides within: [ethereum:0x9437B2a8cF3b69D782a61f9814baAbc172f72003](https://etherscan.io/address/0x9437B2a8cF3b69D782a61f9814baAbc172f72003#code)
+    #### Renzo Restaked LST (pzETH)
+    - upgradeable component: `Vault` ([ethereum:0x8c9532a60E0E7C6BbD2B2c1303F63aCE1c3E9811](https://etherscan.io/address/0x8c9532a60e0e7c6bbd2b2c1303f63ace1c3e9811#readProxyContract))
+    - admin address: [ethereum:0x81698f87C6482bF1ce9bFcfC0F103C4A0Adf0Af0](https://etherscan.io/address/0x81698f87C6482bF1ce9bFcfC0F103C4A0Adf0Af0)
+    - admin type: multisig
+        - multisig threshold/signers: 5/8
+    - comment: The `ADMIN_ROLE`has the capability to add new Tvl modules, which are target of an external call. An rogue `ADMIN_ROLE`could add malicious modules potentially inflating the the price. This functionality currently resides within: [ethereum:0x9437B2a8cF3b69D782a61f9814baAbc172f72003](https://etherscan.io/address/0x9437B2a8cF3b69D782a61f9814baAbc172f72003#code)
+    #### InfStones Restaked ETH (ifsETH)
+    - upgradeable component: `Vault` ([ethereum:]())
+    - admin address: [ethereum:0x81698f87C6482bF1ce9bFcfC0F103C4A0Adf0Af0](https://etherscan.io/address/0x81698f87C6482bF1ce9bFcfC0F103C4A0Adf0Af0)
+    - admin type: multisig
+        - multisig threshold/signers: 5/8
+    - comment: The `ADMIN_ROLE`has the capability to add new Tvl modules, which are target of an external call. An rogue `ADMIN_ROLE`could add malicious modules potentially inflating the the price. This functionality currently resides within: [ethereum:0x9437B2a8cF3b69D782a61f9814baAbc172f72003](https://etherscan.io/address/0x9437B2a8cF3b69D782a61f9814baAbc172f72003)
+
+
+
+
 
 
 ### Oracles
@@ -77,6 +95,13 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
             decimals = IAggregatorV3(data.aggregatorV3).decimals();
         }
         ```
+    - Additionally the address of the `priceOracle` in this case ChainLink is upgradeable within the (`VaultConfigurator`)[https://etherscan.io/address/0xb1B912Be63a2DC4ECf5a6BFAd46780dD7F81022b#code] contract. In order to change this address the admin ROLE of the `Vault`can call `stagePriceOracle` and start the process of adding a new price oracle.
+    ```solidity
+    function stagePriceOracle(address oracle) external onlyAdmin nonReentrant {
+        if (oracle == address(0)) revert AddressZero();
+        _stage(_priceOracle, uint160(oracle));
+    }
+    ```
 
 - [ ] Price data is expected to be volatile (e.g., because it represents an open market price instead of a (mostly) monotonically increasing price).
 ### Common Manipulation Vectors

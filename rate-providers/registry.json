@@ -1173,6 +1173,42 @@
         }
       ]
     },
+    "0x34406A8Ee75B5af34F8920D1960AC6a5B33A47b6": {
+      "asset": "0x8c9532a60E0E7C6BbD2B2c1303F63aCE1c3E9811",
+      "name": "VaultRateOracle",
+      "summary": "safe",
+      "review": "./MellowRateProviders.md",
+      "warnings": ["donation"],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x8c9532a60E0E7C6BbD2B2c1303F63aCE1c3E9811",
+          "implementationReviewed": "0xaf108ae0AD8700ac41346aCb620e828c03BB8848"
+        },
+        {
+          "entrypoint": "0x9C49a829F1D726679cB505439BbF3ed018A7e9c6",
+          "implementationReviewed": "0x9C49a829F1D726679cB505439BbF3ed018A7e9c6"
+        }
+      ]
+    },
+    "0x34406A8Ee75B5af34F8920D1960AC6a5B33A47b6": {
+      "asset": "0x49cd586dd9BA227Be9654C735A659a1dB08232a9",
+      "name": "VaultRateOracle",
+      "summary": "safe",
+      "review": "./MellowRateProviders.md",
+      "warnings": ["donation"],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x49cd586dd9BA227Be9654C735A659a1dB08232a9",
+          "implementationReviewed": "0xaf108ae0AD8700ac41346aCb620e828c03BB8848"
+        },
+        {
+          "entrypoint": "0x9C49a829F1D726679cB505439BbF3ed018A7e9c6",
+          "implementationReviewed": "0x9C49a829F1D726679cB505439BbF3ed018A7e9c6"
+        }
+      ]
+    },
     "0xEd29fBe335A0602Bf100825b533B12133FE523A3": {
       "asset": "0x68749665FF8D2d112Fa859AA293F07A622782F38",
       "name": "XAUt Tether Gold Rate Provider",
