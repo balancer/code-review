@@ -1108,6 +1108,15 @@
         }
       ]
     },
+    "0x3f032432f239d86D36ccF01Fb0c86399a33BD004": {
+      "asset": "0xfe18aE03741a5b84e39C295Ac9C856eD7991C38e",
+      "name": "CDCETHBalancerRateProvider",
+      "summary": "unsafe",
+      "review": "./cdcEthRateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
+    },
     "0x20EDB9299Ae83D9f22bE16279a4A2B422F34d020": {
       "asset": "0xBEEF69Ac7870777598A04B2bd4771c71212E6aBc",
       "name": "VaultRateOracle",
