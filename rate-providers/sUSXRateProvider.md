@@ -2,7 +2,7 @@
 
 ## Details
 - Reviewed by: @mkflow27
-- Checked by: @\<GitHub handle of secondary reviewer\>
+- Checked by: @danielmkm
 - Deployed at:
     - [ethereum:0xc497F11326c3DE5086710EDa43354697b32c1541](https://etherscan.io/address/0xc497F11326c3DE5086710EDa43354697b32c1541)
     - [arbitrum:0xf7ec24690fBCEc489E7C9A7055C04Db5C221c397](https://arbiscan.io/address/0xf7ec24690fBCEc489E7C9A7055C04Db5C221c397)
