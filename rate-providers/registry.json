@@ -373,7 +373,7 @@
       "summary": "safe",
       "review": "./sUSXRateProvider.md",
       "warnings": [],
-      "factory": "",
+      "factory": "0xe548a29631f9E49830bE8edc22d407b2D2915F31",
       "upgradeableComponents": [
         {
           "entrypoint": "0xbC404429558292eE2D769E57d57D6E74bbd2792d",
@@ -1229,7 +1229,7 @@
       "summary": "safe",
       "review": "./sUSXRateProvider.md",
       "warnings": [],
-      "factory": "",
+      "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
       "upgradeableComponents": [
         {
           "entrypoint": "0xbC404429558292eE2D769E57d57D6E74bbd2792d",

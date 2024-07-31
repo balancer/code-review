@@ -46,7 +46,7 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
         - [ethereum:0x145c79A1F0e1Ad5ad7fC8d99548a02A07B24F8FD](https://etherscan.io/address/0x145c79A1F0e1Ad5ad7fC8d99548a02A07B24F8FD)
         #### Oracle on arbitrum (3/5)
         - [arbitrum:0x9d82033BB36217B44567edC635bE926f74D1b76f](https://arbiscan.io/address/0x9d82033BB36217B44567edC635bE926f74D1b76f)
-    - any protections? YES: the new rate is based on a `_newUsr` value being pushed to the `usrConfigs` array, which is being read during the rate computation. The values are pushed as part of the permission call to `_addNewUsrConfig`. Various checks are in place to ensure resulting rates are bound to certain increasing/decreasing threshold levels. This includes:
+    - any protections? YES: the new rate is based on a `_newUsr` value being pushed to the `usrConfigs` array, which is being read during the rate computation. The values are pushed as part of the permissioned call to `_addNewUsrConfig`. Various checks are in place to ensure resulting rates are bound to certain increasing/decreasing threshold levels. This includes:
         - New epoch start times needing to be equal to or greater then the current block.timestamp
         - new epoch start time needing to be greater or equal than the last epoch end time
         - and `newUsr >= MIN_USR && _newUsr <= MAX_USR` as a requirement. 
@@ -61,6 +61,6 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 To save time, we do not bother pointing out low-severity/informational issues or gas optimizations (unless the gas usage is particularly egregious). Instead, we focus only on high- and medium-severity findings which materially impact the contract's functionality and could harm users.
 
 ## Conclusion
-**Summary judgment: USABLE/**
+**Summary judgment: USABLE**
 
 These rate providers are usable with Balancer pools. The system upgradeability is behind a 3/5 multisig and oracle state updates are permissioned (3/5 multisig) as well as validity checks are done on the data being pushed by the oracle.
