@@ -366,6 +366,20 @@
           "implementationReviewed": "0x9093939b9bdc5322d6e2b37b62867d744c98e874"
         }
       ]
+    },
+    "0xf7ec24690fBCEc489E7C9A7055C04Db5C221c397": {
+      "asset": "0xbC404429558292eE2D769E57d57D6E74bbd2792d",
+      "name": "ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./sUSXRateProvider.md",
+      "warnings": [],
+      "factory": "0xe548a29631f9E49830bE8edc22d407b2D2915F31",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xbC404429558292eE2D769E57d57D6E74bbd2792d",
+          "implementationReviewed": "0x339B34965bD3A61025eEA3D5FDcADf75756cc0Db"
+        }
+      ]
     }
   },
   "avalanche": {
@@ -1208,6 +1222,20 @@
       "warnings": ["chainlink"],
       "factory": "0x1311Fbc9F60359639174c1e7cC2032DbDb5Cc4d1",
       "upgradeableComponents": []
+    },
+    "0xc497F11326c3DE5086710EDa43354697b32c1541": {
+      "asset": "0xbC404429558292eE2D769E57d57D6E74bbd2792d",
+      "name": "ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./sUSXRateProvider.md",
+      "warnings": [],
+      "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xbC404429558292eE2D769E57d57D6E74bbd2792d",
+          "implementationReviewed": "0xC80aD49191113d31fe52427c01A197106ef5EB5b"
+        }
+      ]
     }
   },
   "fantom": {
@@ -1278,7 +1306,6 @@
         }
       ]
     }
-
   },
   "gnosis": {
     "0x89C80A4540A00b5270347E02e2E144c71da2EceD": {
