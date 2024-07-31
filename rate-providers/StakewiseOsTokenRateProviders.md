@@ -2,7 +2,7 @@
 
 ## Details
 - Reviewed by: @mkflow27
-- Checked by: @\<GitHub handle of secondary reviewer\>
+- Checked by: @danielmkm
 - Deployed at:
     - [gnosis:0x9B1b13afA6a57e54C03AD0428a4766C39707D272](https://gnosisscan.io/address/0x9b1b13afa6a57e54c03ad0428a4766c39707d272#readContract)
 - Audit report(s):
