@@ -1361,6 +1361,15 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0x9B1b13afA6a57e54C03AD0428a4766C39707D272": {
+      "asset": "0xF490c80aAE5f2616d3e3BDa2483E30C4CB21d1A0",
+      "name": "PriceFeed",
+      "summary": "safe",
+      "review": "./StakewiseOsTokenRateProviders.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   },
   "mode": {
