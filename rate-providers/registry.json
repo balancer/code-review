@@ -17,7 +17,8 @@
           "implementationReviewed": "0xd00b967296B6d8Ec266E4BA64594f892D03A4d0a"
         }
       ],
-      "conclusion": "Assuming a reasonable set of 3/5 multisig signers, the behavior of this Rate Provider can be deemed safe. Reasonable protections are placed upon all other actors in the system."
+      "conclusion": "Assuming a reasonable set of 3/5 multisig signers, the behavior of this Rate Provider can be deemed safe. Reasonable protections are placed upon all other actors in the system.",
+      "isAllowed": "true"
     },
     "0xD438f19b1Dd47EbECc5f904d8Fd44583CbFB7c85": {
       "asset": "0xae48b7C8e096896E32D53F10d0Bf89f82ec7b987",
@@ -32,7 +33,8 @@
           "implementationReviewed": "0x038C8535269E4AdC083Ba90388f15788174d7da7"
         }
       ],
-      "conclusion": "The `BalancerRateProvider` for USDF is deemed safe for usage. Although price updates come from a trusted entity, they are reasonably constrained (1% max delta every 24 hours). Currently, that entity is a 3/4 Gnosis Safe with unclear signers, but even an EOA would be quite limited in its price update powers.It is worth noting that the same 3/4 multisig has upgrade authority over the entire USDF `Vault` implementation, and any protections could be rendered moot by a contract upgrade. Users should be careful to understand the trust they place in this multisig and try to identify and vet the signers if possible.This review also makes no determination as to the security of the USDF token itself or the Fractal protocol, as it is laser-focused on Balancer integration with the `BalancerRateProvider`. Before investing your funds in any DeFi protocol, please consult its source code, documentation, and historical audits."
+      "conclusion": "The `BalancerRateProvider` for USDF is deemed safe for usage. Although price updates come from a trusted entity, they are reasonably constrained (1% max delta every 24 hours). Currently, that entity is a 3/4 Gnosis Safe with unclear signers, but even an EOA would be quite limited in its price update powers.It is worth noting that the same 3/4 multisig has upgrade authority over the entire USDF `Vault` implementation, and any protections could be rendered moot by a contract upgrade. Users should be careful to understand the trust they place in this multisig and try to identify and vet the signers if possible.This review also makes no determination as to the security of the USDF token itself or the Fractal protocol, as it is laser-focused on Balancer integration with the `BalancerRateProvider`. Before investing your funds in any DeFi protocol, please consult its source code, documentation, and historical audits.",
+      "isAllowed": "true"
     },
     "0x2bA447d4B823338435057571bF70907F8224BB47": {
       "asset": "0xB86fb1047A955C0186c77ff6263819b37B32440D",
@@ -59,16 +61,15 @@
           "implementationReviewed": "0x45523bC29D4bCec386f548bDc295DB28483c56E8"
         }
       ],
-      "conclusion": "The `WrappedUsdPlusRateProvider` calculates the exchange rate of wUSD+ in terms of USD+ by multiplying `1e18` by the `liquidityIndex` of the underlying asset, USD+. This liquidityIndex is updated by the exchange everytime a payout occurs using the totalSupply of USD+. This occurs safely and is protected from donation attacks. We can state that this RateProvider is  for Balancer pools given a few trust assumptions. There are a large amount of upgradable components to this contract. While the RateProvider itself is nonupgradable, every other component in the price pipeline is upgradable. This includes the `WrappedUsdPlusToken`, `UsdPlusToken`, and `Exchange`. These components are upgradable by the `AgentTimelocks` contract, which is upgradable by Overnight Finance's Governance. The Overnight multisig, or as they call it, the `ovnAgent`, is the only actor allowed to execute calls on the `AgentTimelocks` to allow upgrades to the USD+ Protocol (This encapsalates all three contracts mentioned previously above). Given that there are a sufficient number of owners for the multisig and a reasonable threshold has been set, as well as the fact that a six hour timelock exists, we deem the `WrappedUsdPlusRateProvider`  for Balancer pools.It should also be noted that while the upgradable components of this contract use proxies that implement EIP-1967, the admin storage slot is not set. Instead Overnight Finance opts to use Openzeppelin's UPPS proxy within their implementation. This is a safe practice and does not affect the security of the contract, but if users would like to verify the address that has the power to upgrade the contract, they can query `hasRole` passing a zero address as the role and the address of the `AgentTimelocks` as the account. This will return true if the `AgentTimelocks` is the admin of the contract and has the ability to upgrade. This review also makes no determination as to the security of the wUSD+ token itself or the Overnight Finance protocol, as it is laser-focused on Balancer integration with the `WrappedUsdPlusRateProvider`. Before investing your funds in any DeFi protocol, please consult its source code, documentation, historical audits, and be aware of the risks when interacting with upgradable smart contracts."
+      "conclusion": "The `WrappedUsdPlusRateProvider` calculates the exchange rate of wUSD+ in terms of USD+ by multiplying `1e18` by the `liquidityIndex` of the underlying asset, USD+. This liquidityIndex is updated by the exchange everytime a payout occurs using the totalSupply of USD+. This occurs safely and is protected from donation attacks. We can state that this RateProvider is  for Balancer pools given a few trust assumptions. There are a large amount of upgradable components to this contract. While the RateProvider itself is nonupgradable, every other component in the price pipeline is upgradable. This includes the `WrappedUsdPlusToken`, `UsdPlusToken`, and `Exchange`. These components are upgradable by the `AgentTimelocks` contract, which is upgradable by Overnight Finance's Governance. The Overnight multisig, or as they call it, the `ovnAgent`, is the only actor allowed to execute calls on the `AgentTimelocks` to allow upgrades to the USD+ Protocol (This encapsalates all three contracts mentioned previously above). Given that there are a sufficient number of owners for the multisig and a reasonable threshold has been set, as well as the fact that a six hour timelock exists, we deem the `WrappedUsdPlusRateProvider`  for Balancer pools.It should also be noted that while the upgradable components of this contract use proxies that implement EIP-1967, the admin storage slot is not set. Instead Overnight Finance opts to use Openzeppelin's UPPS proxy within their implementation. This is a safe practice and does not affect the security of the contract, but if users would like to verify the address that has the power to upgrade the contract, they can query `hasRole` passing a zero address as the role and the address of the `AgentTimelocks` as the account. This will return true if the `AgentTimelocks` is the admin of the contract and has the ability to upgrade. This review also makes no determination as to the security of the wUSD+ token itself or the Overnight Finance protocol, as it is laser-focused on Balancer integration with the `WrappedUsdPlusRateProvider`. Before investing your funds in any DeFi protocol, please consult its source code, documentation, historical audits, and be aware of the risks when interacting with upgradable smart contracts.",
+      "isAllowed": "true"
     },
     "0x6dbF2155B0636cb3fD5359FCcEFB8a2c02B6cb51": {
       "asset": "0x6dbF2155B0636cb3fD5359FCcEFB8a2c02B6cb51",
       "name": "PlsRdntTokenV2",
       "summary": "safe",
       "review": "./PlsRdntTokenV2.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -76,16 +77,15 @@
           "implementationReviewed": "0xF7eB1efc5A3fD02399aC82aa983962280324F9b7"
         }
       ],
-      "conclusion": "This is a minimal ERC-4626 Rate Provider that computes the exchange rate using a ratio of deposited assets to minted shares. It is upgradeable by a 3/6 Gnosis Safe multisig.There is a potential risk of donation attacks, but these only impact downstream integrations (not Balancer directly). Integrators should be wary of the underlying token's manipulability via donations, which will propagate into the BPT price itself, and assess the unique risk this poses to their respective protocols."
+      "conclusion": "This is a minimal ERC-4626 Rate Provider that computes the exchange rate using a ratio of deposited assets to minted shares. It is upgradeable by a 3/6 Gnosis Safe multisig.There is a potential risk of donation attacks, but these only impact downstream integrations (not Balancer directly). Integrators should be wary of the underlying token's manipulability via donations, which will propagate into the BPT price itself, and assess the unique risk this poses to their respective protocols.",
+      "isAllowed": "true"
     },
     "0xd4e96ef8eee8678dbff4d535e033ed1a4f7605b7": {
       "asset": "0xEC70Dcb4A1EFa46b8F2D97C310C9c4790ba5ffA8",
       "name": "RocketBalancerRateProvider",
       "summary": "safe",
       "review": "./rETHRateProvider.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -93,19 +93,19 @@
           "implementationReviewed": "0x1d8f8f00cfa6758d7bE78336684788Fb0ee0Fa46"
         }
       ],
-      "conclusion": "Rocket Pool protocol has been operational for many years and it's protocol operations have been sound. The calculated rate gets bridged to Arbitrum via the suggested methods by Arbitrum (see: https://docs.arbitrum.io/arbos/l1-to-l2-messaging). The core check that determines who is allowed to update the rate on Arbitrum is implemented. This rate Provider should work well with Balancer pools. "
+      "conclusion": "Rocket Pool protocol has been operational for many years and it's protocol operations have been sound. The calculated rate gets bridged to Arbitrum via the suggested methods by Arbitrum (see: https://docs.arbitrum.io/arbos/l1-to-l2-messaging). The core check that determines who is allowed to update the rate on Arbitrum is implemented. This rate Provider should work well with Balancer pools. ",
+      "isAllowed": "true"
     },
     "0xa73ec45fe405b5bfcdc0bf4cbc9014bb32a01cd2": {
       "asset": "0xEC70Dcb4A1EFa46b8F2D97C310C9c4790ba5ffA8",
       "name": "RocketBalancerRateProvider OLD",
       "summary": "unsafe",
       "review": "./rETHRateProvider.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": [],
-      "conclusion": "Rocket Pool protocol has been operational for many years and it's protocol operations have been sound. The calculated rate gets bridged to Arbitrum via the suggested methods by Arbitrum (see: https://docs.arbitrum.io/arbos/l1-to-l2-messaging). The core check that determines who is allowed to update the rate on Arbitrum is implemented. This rate Provider should work well with Balancer pools. "
+      "conclusion": "Rocket Pool protocol has been operational for many years and it's protocol operations have been sound. The calculated rate gets bridged to Arbitrum via the suggested methods by Arbitrum (see: https://docs.arbitrum.io/arbos/l1-to-l2-messaging). The core check that determines who is allowed to update the rate on Arbitrum is implemented. This rate Provider should work well with Balancer pools. ",
+      "isAllowed": "false"
     },
     "0x3bB6861c0Be6673809D55b9D346b6774B634a9D7": {
       "asset": "0xB88a5Ac00917a02d82c7cd6CEBd73E2852d43574",
@@ -120,7 +120,8 @@
           "implementationReviewed": "0x19E4F40584824029Fc100c60A74BF41b43EC4976"
         }
       ],
-      "conclusion": "This Rate Provider system is based on a multisig supplying price data. Protections against this multisig supplying bad prices are in place. Input validation has been added in the form of protecting against `0` (zero) price input and against prices outside the allowed threshold being supplied. This Rate Provider should work well with Balancer Pools."
+      "conclusion": "This Rate Provider system is based on a multisig supplying price data. Protections against this multisig supplying bad prices are in place. Input validation has been added in the form of protecting against `0` (zero) price input and against prices outside the allowed threshold being supplied. This Rate Provider should work well with Balancer Pools.",
+      "isAllowed": "true"
     },
     "0xf7c5c26B574063e7b098ed74fAd6779e65E3F836": {
       "asset": "0x5979D7b546E38E414F7E9822514be443A4800529",
@@ -130,7 +131,8 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": [],
-      "conclusion": "This rateProvider has been operational since Aug-12-2021 (mainnet) & Aug-23-2022 (Arbitrum) and has passed the test of time. It is being added to this repo without a review being included."
+      "conclusion": "This rateProvider has been operational since Aug-12-2021 (mainnet) & Aug-23-2022 (Arbitrum) and has passed the test of time. It is being added to this repo without a review being included.",
+      "isAllowed": "true"
     },
     "0xf25484650484DE3d554fB0b7125e7696efA4ab99": {
       "asset": "0x2416092f143378750bb29b79eD961ab195CcEea5",
@@ -153,7 +155,8 @@
           "implementationReviewed": "0x9284cEFf248315377e782df0666EE9832E119508"
         }
       ],
-      "conclusion": "This RateProvider is expected to work well with Balancer pools. The main pricing data is bridged from mainnet via CCIP and can be updated by a 3/5 multisig on Arbitrum if required. "
+      "conclusion": "This RateProvider is expected to work well with Balancer pools. The main pricing data is bridged from mainnet via CCIP and can be updated by a 3/5 multisig on Arbitrum if required. ",
+      "isAllowed": "true"
     },
     "0x87cD462A781c0ca843EAB131Bf368328848bB6fD": {
       "asset": "0x7CFaDFD5645B50bE87d546f42699d863648251ad",
@@ -172,7 +175,8 @@
           "implementationReviewed": "0x03e8c5cd5e194659b16456bb43dd5d38886fe541"
         }
       ],
-      "conclusion": "The Rate Providers should work well with Balancer pools. The underlying contracts have been audited and been in production for an extended period of time. The upgradeability of the underlying Aave protocol is guarded behind decentralized governance and has a minimum execution delay of 24 hours. "
+      "conclusion": "The Rate Providers should work well with Balancer pools. The underlying contracts have been audited and been in production for an extended period of time. The upgradeability of the underlying Aave protocol is guarded behind decentralized governance and has a minimum execution delay of 24 hours. ",
+      "isAllowed": "true"
     },
     "0x48942B49B5bB6f3E1d43c204a3F40a4c5F696ef6": {
       "asset": "0xb165a74407fE1e519d6bCbDeC1Ed3202B35a4140",
@@ -191,7 +195,8 @@
           "implementationReviewed": "0x03e8c5cd5e194659b16456bb43dd5d38886fe541"
         }
       ],
-      "conclusion": "The Rate Providers should work well with Balancer pools. The underlying contracts have been audited and been in production for an extended period of time. The upgradeability of the underlying Aave protocol is guarded behind decentralized governance and has a minimum execution delay of 24 hours. "
+      "conclusion": "The Rate Providers should work well with Balancer pools. The underlying contracts have been audited and been in production for an extended period of time. The upgradeability of the underlying Aave protocol is guarded behind decentralized governance and has a minimum execution delay of 24 hours. ",
+      "isAllowed": "true"
     },
     "0x3A236F67Fce401D87D7215695235e201966576E4": {
       "asset": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2",
@@ -206,7 +211,8 @@
           "implementationReviewed": "0x0e2d75D760b12ac1F2aE84CD2FF9fD13Cb632942"
         }
       ],
-      "conclusion": "This Rate Provider is expected to work well with Balancer Pools. This verdict is based on the following assumptions: Both unverified contracts and the mentioned EOAs act as relayers which:> can update the price but only using our signed data packages. In other words, they act only as relayers passing already signed data without the ability to modify content.Given these accounts acting as relayers as outlined in the RedStone classic oracle model and rate deviation protection measures being in place, this Rate Provider should work with Balancer pools."
+      "conclusion": "This Rate Provider is expected to work well with Balancer Pools. This verdict is based on the following assumptions: Both unverified contracts and the mentioned EOAs act as relayers which:> can update the price but only using our signed data packages. In other words, they act only as relayers passing already signed data without the ability to modify content.Given these accounts acting as relayers as outlined in the RedStone classic oracle model and rate deviation protection measures being in place, this Rate Provider should work with Balancer pools.",
+      "isAllowed": "true"
     },
     "0x8aa73EC870DC4a0af6b471937682a8FC3b8A21f8": {
       "asset": "0x83e1d2310Ade410676B1733d16e89f91822FD5c3",
@@ -221,91 +227,85 @@
           "implementationReviewed": "0x621199f6beB2ba6fbD962E8A52A320EA4F6D4aA3"
         }
       ],
-      "conclusion": "The conclusion of this review rests on the assumption that the guardians signing the data have come to consensus on the correctness of it. Similar to how Chainlink data consumption works. One important caveat to mention as part of this review is that consistent reporting of rates via Wormhole is . If no new report has come in, the call to `getRate` will revert and once the CSP's rate need to be cached anew, the pool interaction will revert, requiring a recovery mode for LPs to withdraw their funds."
+      "conclusion": "The conclusion of this review rests on the assumption that the guardians signing the data have come to consensus on the correctness of it. Similar to how Chainlink data consumption works. One important caveat to mention as part of this review is that consistent reporting of rates via Wormhole is . If no new report has come in, the call to `getRate` will revert and once the CSP's rate need to be cached anew, the pool interaction will revert, requiring a recovery mode for LPs to withdraw their funds.",
+      "isAllowed": "true"
     },
     "0xd983d5560129475bFC210332422FAdCb4EcD09B0": {
       "asset": "0x1DEBd73E752bEaF79865Fd6446b0c970EaE7732f",
       "name": "cbETH Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": [
-        "chainlink"
-      ],
+      "warnings": ["chainlink"],
       "factory": "0x5DbAd78818D4c8958EfF2d5b95b28385A22113Cd",
       "upgradeableComponents": [],
-      "conclusion": "Chainlink Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible as this review is applicable to all Chainlink Rate Providers."
+      "conclusion": "Chainlink Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible as this review is applicable to all Chainlink Rate Providers.",
+      "isAllowed": "true"
     },
     "0x2237a270E87F81A30a1980422185f806e4549346": {
       "asset": "0x95aB45875cFFdba1E5f451B950bC2E42c0053f39",
       "name": "sfrxETH Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": [
-        "chainlink"
-      ],
+      "warnings": ["chainlink"],
       "factory": "0x5DbAd78818D4c8958EfF2d5b95b28385A22113Cd",
       "upgradeableComponents": [],
-      "conclusion": "Chainlink Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible as this review is applicable to all Chainlink Rate Providers."
+      "conclusion": "Chainlink Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible as this review is applicable to all Chainlink Rate Providers.",
+      "isAllowed": "true"
     },
     "0x320CFa1a78d37a13C5D1cA5aA51563fF6Bb0f686": {
       "asset": "0xe3b3FE7bcA19cA77Ad877A5Bebab186bEcfAD906",
       "name": "sFRAX Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": [
-        "chainlink"
-      ],
+      "warnings": ["chainlink"],
       "factory": "0x5DbAd78818D4c8958EfF2d5b95b28385A22113Cd",
       "upgradeableComponents": [],
-      "conclusion": "Chainlink Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible as this review is applicable to all Chainlink Rate Providers."
+      "conclusion": "Chainlink Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible as this review is applicable to all Chainlink Rate Providers.",
+      "isAllowed": "true"
     },
     "0x155a25c8C3a9353d47BCDBc3650E19d1aEa13E54": {
       "asset": "0xe3b3FE7bcA19cA77Ad877A5Bebab186bEcfAD906",
       "name": "sFRAX Rate Provider Duplicate",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": [
-        "chainlink"
-      ],
+      "warnings": ["chainlink"],
       "factory": "0x5DbAd78818D4c8958EfF2d5b95b28385A22113Cd",
       "upgradeableComponents": [],
-      "conclusion": "Chainlink Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible as this review is applicable to all Chainlink Rate Providers."
+      "conclusion": "Chainlink Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible as this review is applicable to all Chainlink Rate Providers.",
+      "isAllowed": "true"
     },
     "0x8581953084FfdDBB82fC63f30f11bDb0E7300284": {
       "asset": "0xED65C5085a18Fa160Af0313E60dcc7905E944Dc7",
       "name": "ETHx Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": [
-        "chainlink"
-      ],
+      "warnings": ["chainlink"],
       "factory": "0x5DbAd78818D4c8958EfF2d5b95b28385A22113Cd",
       "upgradeableComponents": [],
-      "conclusion": "Chainlink Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible as this review is applicable to all Chainlink Rate Providers."
+      "conclusion": "Chainlink Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible as this review is applicable to all Chainlink Rate Providers.",
+      "isAllowed": "true"
     },
     "0xefa422c31fc71a636c2c630d226dba4cced1073a": {
       "asset": "0xd8724322f44e5c58d7a815f542036fb17dbbf839",
       "name": "woETH Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": [
-        "chainlink"
-      ],
+      "warnings": ["chainlink"],
       "factory": "0x5DbAd78818D4c8958EfF2d5b95b28385A22113Cd",
       "upgradeableComponents": [],
-      "conclusion": "Chainlink Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible as this review is applicable to all Chainlink Rate Providers."
+      "conclusion": "Chainlink Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible as this review is applicable to all Chainlink Rate Providers.",
+      "isAllowed": "true"
     },
     "0xCd9e3fb32c8F258555b8292531112bBb5B87E2F4": {
       "asset": "0x35751007a407ca6feffe80b3cb397736d2cf4dbe",
       "name": "weETH Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": [
-        "chainlink"
-      ],
+      "warnings": ["chainlink"],
       "factory": "0x5DbAd78818D4c8958EfF2d5b95b28385A22113Cd",
       "upgradeableComponents": [],
-      "conclusion": "Chainlink Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible as this review is applicable to all Chainlink Rate Providers."
+      "conclusion": "Chainlink Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible as this review is applicable to all Chainlink Rate Providers.",
+      "isAllowed": "true"
     },
     "0xBA74737A078C05500dD98C970909e4A3b90c35C6": {
       "asset": "0xf7d4e7273E5015C96728A6b02f31C505eE184603",
@@ -320,16 +320,15 @@
           "implementationReviewed": "0xBA74737A078C05500dD98C970909e4A3b90c35C6"
         }
       ],
-      "conclusion": "This rate provider should work well with Balancer pools. The upgradeability of the price Source is protected behind a multisig and price Data is sent via an established Oracle service using receiving functionality as outlined in the [wormhole docs](https://docs.wormhole.com/wormhole/quick-start/tutorials/hello-wormhole/hello-wormhole-explained)."
+      "conclusion": "This rate provider should work well with Balancer pools. The upgradeability of the price Source is protected behind a multisig and price Data is sent via an established Oracle service using receiving functionality as outlined in the [wormhole docs](https://docs.wormhole.com/wormhole/quick-start/tutorials/hello-wormhole/hello-wormhole-explained).",
+      "isAllowed": "true"
     },
     "0x3222d3De5A9a3aB884751828903044CC4ADC627e": {
       "asset": "0x4186BFC76E2E237523CBC30FD220FE055156b41F",
       "name": "RsETHRateProvider",
       "summary": "safe",
       "review": "./rsETHRateProviderArbitrum.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -353,7 +352,8 @@
           "implementationReviewed": "0xD7DB9604EF925aF96CDa6B45026Be64C691C7704"
         }
       ],
-      "conclusion": "This rate Provider can be considered fit for pool operations under the assumption that the stETH/ETH peg holds at 1:1. This should be made clear to users in the Balancer Pool."
+      "conclusion": "This rate Provider can be considered fit for pool operations under the assumption that the stETH/ETH peg holds at 1:1. This should be made clear to users in the Balancer Pool.",
+      "isAllowed": "true"
     },
     "0x971b35225361535D04828F16442AAA54009efE1a": {
       "asset": "0x5A7a183B6B44Dc4EC2E3d2eF43F98C5152b1d76d",
@@ -368,7 +368,8 @@
           "implementationReviewed": "0xBf19Eead55a6B100667f04F8FBC5371E03E8ab2E"
         }
       ],
-      "conclusion": "The rate Provider has its price data updated by oracles - so called operators - (with rate validity checks). The normal operating procedure of updating prices via a call to `updateRatioBatch` has protections against bad price data. The `owner` being able to repair the exchange rates without validity checks except zero rate can be problematic. The suggestion is to additionally add further validity checks in case the ratio is being repaired. Overall this rate provider should work well with Balancer pools."
+      "conclusion": "The rate Provider has its price data updated by oracles - so called operators - (with rate validity checks). The normal operating procedure of updating prices via a call to `updateRatioBatch` has protections against bad price data. The `owner` being able to repair the exchange rates without validity checks except zero rate can be problematic. The suggestion is to additionally add further validity checks in case the ratio is being repaired. Overall this rate provider should work well with Balancer pools.",
+      "isAllowed": "true"
     },
     "0x57a5a0567187FF4A8dcC1A9bBa86155E355878F2": {
       "asset": "0xd08C3F25862077056cb1b710937576Af899a4959",
@@ -383,7 +384,8 @@
           "implementationReviewed": "0xBf19Eead55a6B100667f04F8FBC5371E03E8ab2E"
         }
       ],
-      "conclusion": "The rate Provider has its price data updated by oracles - so called operators - (with rate validity checks). The normal operating procedure of updating prices via a call to `updateRatioBatch` has protections against bad price data. The `owner` being able to repair the exchange rates without validity checks except zero rate can be problematic. The suggestion is to additionally add further validity checks in case the ratio is being repaired. Overall this rate provider should work well with Balancer pools."
+      "conclusion": "The rate Provider has its price data updated by oracles - so called operators - (with rate validity checks). The normal operating procedure of updating prices via a call to `updateRatioBatch` has protections against bad price data. The `owner` being able to repair the exchange rates without validity checks except zero rate can be problematic. The suggestion is to additionally add further validity checks in case the ratio is being repaired. Overall this rate provider should work well with Balancer pools.",
+      "isAllowed": "true"
     },
     "0x7F55E509006C9Df7594C4819Ba7ebfE6EfE4854b": {
       "asset": "0x57F5E098CaD7A3D1Eed53991D4d66C45C9AF7812",
@@ -398,7 +400,8 @@
           "implementationReviewed": "0x0369d5De7619805238540F721a85c2C859B8da10"
         }
       ],
-      "conclusion": "The wUSDM contract leverages Openzeppelin's ERC4626 implementation with upgradeability functionality. This rate provider should work well with Balancer pools. "
+      "conclusion": "The wUSDM contract leverages Openzeppelin's ERC4626 implementation with upgradeability functionality. This rate provider should work well with Balancer pools. ",
+      "isAllowed": "true"
     },
     "0x601A3bC1A24d209A2C08D2d54eC3f3aa39c3a40A": {
       "asset": "0xd3443ee1e91aF28e5FB858Fbd0D72A63bA8046E0",
@@ -413,7 +416,8 @@
           "implementationReviewed": "0x9093939b9bdc5322d6e2b37b62867d744c98e874"
         }
       ],
-      "conclusion": "This rate provider should work well with Balancer pools. While the pool is expected to trade in accordance to the rate read from the rate provider, it is important to mention that LPs cannot immediately withdraw their assets from the Vault as withdrawls follow an epoch system. This can have an impact on the pool in case of market volatility or issues with the gains protocol. "
+      "conclusion": "This rate provider should work well with Balancer pools. While the pool is expected to trade in accordance to the rate read from the rate provider, it is important to mention that LPs cannot immediately withdraw their assets from the Vault as withdrawls follow an epoch system. This can have an impact on the pool in case of market volatility or issues with the gains protocol. ",
+      "isAllowed": "true"
     }
   },
   "avalanche": {
@@ -434,16 +438,15 @@
           "implementationReviewed": "0x8ff4fb91c9FFf1F57310dE52D52d033c00523F81"
         }
       ],
-      "conclusion": "Assuming a reasonable set of 3/5 multisig signers, the behavior of this Rate Provider can be deemed safe. Reasonable protections are placed upon all other actors in the system."
+      "conclusion": "Assuming a reasonable set of 3/5 multisig signers, the behavior of this Rate Provider can be deemed safe. Reasonable protections are placed upon all other actors in the system.",
+      "isAllowed": "true"
     },
     "0x1bB74eC551cCd9FE416C71F904D64f42079A0a7f": {
       "asset": "0xa25eaf2906fa1a3a13edac9b9657108af7b703e3",
       "name": "GGAVAXRateProvider",
       "summary": "safe",
       "review": "./GGAVAXRateProvider.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -451,7 +454,8 @@
           "implementationReviewed": "0xf80Eb498bBfD45f5E2d123DFBdb752677757843E"
         }
       ],
-      "conclusion": "Assuming a reasonable set of 2/4 multisig signers, the behavior of this Rate Provider can be deemed safe. All current system components are fully on-chain and cannot be arbitrarily influenced by any actor, even a privileged one. As such, upgradeability would be the only concern, and that falls to the multisig.The risk of donation attacks is also worth pointing out; this won't directly impact Balancer pools, but it can have consequences for downstream integrations. Integrators should be wary of the underlying token's manipulability via donations, which will propagate into the BPT price itself."
+      "conclusion": "Assuming a reasonable set of 2/4 multisig signers, the behavior of this Rate Provider can be deemed safe. All current system components are fully on-chain and cannot be arbitrarily influenced by any actor, even a privileged one. As such, upgradeability would be the only concern, and that falls to the multisig.The risk of donation attacks is also worth pointing out; this won't directly impact Balancer pools, but it can have consequences for downstream integrations. Integrators should be wary of the underlying token's manipulability via donations, which will propagate into the BPT price itself.",
+      "isAllowed": "true"
     },
     "0x13a80aBe608A054059CfB54Ef08809a05Fc07b82": {
       "asset": "0xf7d9281e8e363584973f946201b82ba72c965d27",
@@ -466,7 +470,8 @@
           "implementationReviewed": "0x280b6475BE9A67DF23B0EF75D00c876a74Bfc4b7"
         }
       ],
-      "conclusion": "Assuming a reasonable set of 3/4 multisig signers, the behavior of this Rate Provider can be deemed safe. Reasonable protections are placed upon oracle updates, so the only concern would be upgradeability, which falls to the multisig."
+      "conclusion": "Assuming a reasonable set of 3/4 multisig signers, the behavior of this Rate Provider can be deemed safe. Reasonable protections are placed upon oracle updates, so the only concern would be upgradeability, which falls to the multisig.",
+      "isAllowed": "true"
     },
     "0x9693AEea2B32452e0834C860E01C33295d2164a5": {
       "asset": "0xB88a5Ac00917a02d82c7cd6CEBd73E2852d43574",
@@ -481,31 +486,30 @@
           "implementationReviewed": "0x8A7d9967A31fe557041519c131B355176734d907"
         }
       ],
-      "conclusion": "This Rate Provider system is based on a multisig supplying price data. Protections against this multisig supplying bad prices are in place. Input validation has been added in the form of protecting against `0` (zero) price input and against prices outside the allowed threshold being supplied. This Rate Provider should work well with Balancer Pools."
+      "conclusion": "This Rate Provider system is based on a multisig supplying price data. Protections against this multisig supplying bad prices are in place. Input validation has been added in the form of protecting against `0` (zero) price input and against prices outside the allowed threshold being supplied. This Rate Provider should work well with Balancer Pools.",
+      "isAllowed": "true"
     },
     "0x5f8147f9e4fB550C5be815C8a20013171eEFB46D": {
       "asset": "0x2b2C81e08f1Af8835a78Bb2A90AE924ACE0eA4bE",
       "name": "sAVAX Rate Provider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": [
-        "legacy"
-      ],
+      "warnings": ["legacy"],
       "factory": "",
       "upgradeableComponents": [],
-      "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible."
+      "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible.",
+      "isAllowed": "true"
     },
     "0xD70C8AaC058E6daFe3446F78091325F9E29bcee4": {
       "asset": "0xc3344870d52688874b06d844E0C36cc39FC727F6",
       "name": "ankrAVAX Rate Provider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": [
-        "legacy"
-      ],
+      "warnings": ["legacy"],
       "factory": "",
       "upgradeableComponents": [],
-      "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible."
+      "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible.",
+      "isAllowed": "true"
     }
   },
   "base": {
@@ -514,12 +518,11 @@
       "name": "wUSD+ Overnight Rate Provider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": [
-        "legacy"
-      ],
+      "warnings": ["legacy"],
       "factory": "",
       "upgradeableComponents": [],
-      "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible."
+      "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible.",
+      "isAllowed": "true"
     },
     "0xeC0C14Ea7fF20F104496d960FDEBF5a0a0cC14D0": {
       "asset": "0x99aC4484e8a1dbd6A185380B3A811913Ac884D87",
@@ -529,7 +532,8 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": [],
-      "conclusion": "The Rate Providers are expected to integrate well with Balancer pools. The non-upgradeability of the pricing pipeline serves as an additional feature that helps minimize potential risks associated with supplying inaccurate data. To maintain data accuracy on L2, the `refresh` function on the L1  forwarder contracts [DSROracleForwarderBase](https://etherscan.io/address/0x8Ed551D485701fe489c215E13E42F6fc59563e0e#code) & [DSROracleForwarderOptimism](https://etherscan.io/address/0x4042127DecC0cF7cc0966791abebf7F76294DeF3#writeContract) should be invoked regularly."
+      "conclusion": "The Rate Providers are expected to integrate well with Balancer pools. The non-upgradeability of the pricing pipeline serves as an additional feature that helps minimize potential risks associated with supplying inaccurate data. To maintain data accuracy on L2, the `refresh` function on the L1  forwarder contracts [DSROracleForwarderBase](https://etherscan.io/address/0x8Ed551D485701fe489c215E13E42F6fc59563e0e#code) & [DSROracleForwarderOptimism](https://etherscan.io/address/0x4042127DecC0cF7cc0966791abebf7F76294DeF3#writeContract) should be invoked regularly.",
+      "isAllowed": "true"
     },
     "0x4467Ab7BC794bb3929d77e826328BD378bf5392F": {
       "asset": "0x4EA71A20e655794051D1eE8b6e4A3269B13ccaCc",
@@ -548,43 +552,41 @@
           "implementationReviewed": "0xE9547fc44C271dBddf94D8E20b46836B87DA6789"
         }
       ],
-      "conclusion": "The Rate Providers should work well with Balancer pools. The underlying contracts have been audited and been in production for an extended period of time. The upgradeability of the underlying Aave protocol is guarded behind decentralized governance and has a minimum execution delay of 24 hours. "
+      "conclusion": "The Rate Providers should work well with Balancer pools. The underlying contracts have been audited and been in production for an extended period of time. The upgradeability of the underlying Aave protocol is guarded behind decentralized governance and has a minimum execution delay of 24 hours. ",
+      "isAllowed": "true"
     },
     "0x3786a6CAAB433f5dfE56503207DF31DF87C5b5C1": {
       "asset": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
       "name": "cbETH Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": [
-        "chainlink"
-      ],
+      "warnings": ["chainlink"],
       "factory": "0x0A973B6DB16C2ded41dC91691Cc347BEb0e2442B",
       "upgradeableComponents": [],
-      "conclusion": "Chainlink Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible as this review is applicable to all Chainlink Rate Providers."
+      "conclusion": "Chainlink Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible as this review is applicable to all Chainlink Rate Providers.",
+      "isAllowed": "true"
     },
     "0x5a7A419C59eAAdec8Dc00bc93ac95612e6e154Cf": {
       "asset": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A",
       "name": "weETH Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": [
-        "chainlink"
-      ],
+      "warnings": ["chainlink"],
       "factory": "0x0A973B6DB16C2ded41dC91691Cc347BEb0e2442B",
       "upgradeableComponents": [],
-      "conclusion": "Chainlink Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible as this review is applicable to all Chainlink Rate Providers."
+      "conclusion": "Chainlink Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible as this review is applicable to all Chainlink Rate Providers.",
+      "isAllowed": "true"
     },
     "0x039f7205C2cBa4535C2575123Ac3D657263892c4": {
       "asset": "0xB6fe221Fe9EeF5aBa221c348bA20A1Bf5e73624c",
       "name": "rETH RocketPool Rate Provider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": [
-        "legacy"
-      ],
+      "warnings": ["legacy"],
       "factory": "",
       "upgradeableComponents": [],
-      "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible."
+      "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible.",
+      "isAllowed": "true"
     }
   },
   "ethereum": {
@@ -593,9 +595,7 @@
       "name": "asETHRateProvider",
       "summary": "safe",
       "review": "./asETHRateProvider.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
       "upgradeableComponents": [
         {
@@ -607,16 +607,15 @@
           "implementationReviewed": "0x5f898DC62d699ecBeD578E4A9bEf46009EA8424b"
         }
       ],
-      "conclusion": "The upgradeability of the whole protocol involves no extra risk on the LPer, who chooses to hold or trade this token, in this sense, the rate provider pipeline can be understood as risk-neutral.The risk profile could be improved if the signers of the multisig where associated with some identity (X or Github user) or some funds (reduces possibility of sybil attack), instead of being 5 anonymous EOAs.Both donation susceptibility, and predictable drops in rate (because of slashing) are quite common in all LSDs, which results in no extra safety assumption being made for this particular one.As a strict \"rate provider\" between the wrapped `saETH` and underlying token `aETH`, the pipeline presented (despite upgradeable) is overall standard, and doesn't involve external oracles. Yet, the ultimate rate (when compared to `ETH`) may be dependant in more factors, that are not being considered in this review."
+      "conclusion": "The upgradeability of the whole protocol involves no extra risk on the LPer, who chooses to hold or trade this token, in this sense, the rate provider pipeline can be understood as risk-neutral.The risk profile could be improved if the signers of the multisig where associated with some identity (X or Github user) or some funds (reduces possibility of sybil attack), instead of being 5 anonymous EOAs.Both donation susceptibility, and predictable drops in rate (because of slashing) are quite common in all LSDs, which results in no extra safety assumption being made for this particular one.As a strict \"rate provider\" between the wrapped `saETH` and underlying token `aETH`, the pipeline presented (despite upgradeable) is overall standard, and doesn't involve external oracles. Yet, the ultimate rate (when compared to `ETH`) may be dependant in more factors, that are not being considered in this review.",
+      "isAllowed": "true"
     },
     "0x2c3b8c5e98A6e89AAAF21Deebf5FF9d08c4A9FF7": {
       "asset": "0xF1376bceF0f78459C0Ed0ba5ddce976F1ddF51F4",
       "name": "BalancerRateProxy",
       "summary": "safe",
       "review": "./BalancerRateProxy_uniETH.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -624,7 +623,8 @@
           "implementationReviewed": "0x9Ba573D531b45521a4409f3D3e1bC0d7dfF7C757"
         }
       ],
-      "conclusion": "The `BalancerRateProxy` for uniETH is deemed safe for usage. There is a potential risk of donation attacks, but these only impact downstream integrations (not Balancer directly). Integrators should be wary of the underlying token's manipulability via donations, which will propagate into the BPT price itself, and assess the unique risk this poses to their respective protocols.It is worth noting that a 2/3 multisig has upgrade authority over the entire `RockXStaking` implementation, and a contract upgrade could completely modify the behavior of the pricing algorithm. Users should be careful to understand the trust they place in this multisig and try to identify and vet the signers if possible.This review also makes no determination as to the security of the uniETH token itself or the RockX staking protocol, as it is laser-focused on Balancer integration with the `BalancerRateProxy`. Before investing your funds in any DeFi protocol, please consult its source code, documentation, and historical audits."
+      "conclusion": "The `BalancerRateProxy` for uniETH is deemed safe for usage. There is a potential risk of donation attacks, but these only impact downstream integrations (not Balancer directly). Integrators should be wary of the underlying token's manipulability via donations, which will propagate into the BPT price itself, and assess the unique risk this poses to their respective protocols.It is worth noting that a 2/3 multisig has upgrade authority over the entire `RockXStaking` implementation, and a contract upgrade could completely modify the behavior of the pricing algorithm. Users should be careful to understand the trust they place in this multisig and try to identify and vet the signers if possible.This review also makes no determination as to the security of the uniETH token itself or the RockX staking protocol, as it is laser-focused on Balancer integration with the `BalancerRateProxy`. Before investing your funds in any DeFi protocol, please consult its source code, documentation, and historical audits.",
+      "isAllowed": "true"
     },
     "0xAAE054B9b822554dd1D9d1F48f892B4585D3bbf0": {
       "asset": "0xA35b1B31Ce002FBF2058D22F30f95D405200A15b",
@@ -639,19 +639,19 @@
           "implementationReviewed": "0x9dceaeB1C035C1427E64E6c6fEC61F816e0d0FF5"
         }
       ],
-      "conclusion": "Upgradeable contracts sourcing price data from off-chain oracles is a pretty common design paradigm. It's not as reliable as immutable on-chain primitives, but as long as reasonable protections are in place, it can be close enough.In this case, Stader offers lots of protection against manipulation, so I would personally conclude that this rate provider is safe. Rather than trusting my own conclusion, I encourage the reader to examine the data points above and draw their own."
+      "conclusion": "Upgradeable contracts sourcing price data from off-chain oracles is a pretty common design paradigm. It's not as reliable as immutable on-chain primitives, but as long as reasonable protections are in place, it can be close enough.In this case, Stader offers lots of protection against manipulation, so I would personally conclude that this rate provider is safe. Rather than trusting my own conclusion, I encourage the reader to examine the data points above and draw their own.",
+      "isAllowed": "true"
     },
     "0xA6aeD7922366611953546014A3f9e93f058756a2": {
       "asset": "0x93ef1Ea305D11A9b2a3EbB9bB4FCc34695292E7d",
       "name": "QueenRateProvider",
       "summary": "safe",
       "review": "./QueenRateProvider.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": [],
-      "conclusion": "The `QueenRateProvider` is confirmed to be safe for use in Balancer Pools. It implements the required bare minimum requirments, does not contain any oracles, and is not upgradeable.There is a potential risk of donation attacks, but these only impact downstream integrations (not Balancer directly). Integrators should be wary of the underlying token's manipulability via donations, which will propagate into the BPT price itself, and assess the unique risk this poses to their respective protocols.This review also makes no determination as to the security of the Queen token itself or the Tranchess protocol, as it is laser-focused on Balancer integration with the `QueenRateProvider`. Before investing your funds in any DeFi protocol, please consult its source code, documentation, and historical audits."
+      "conclusion": "The `QueenRateProvider` is confirmed to be safe for use in Balancer Pools. It implements the required bare minimum requirments, does not contain any oracles, and is not upgradeable.There is a potential risk of donation attacks, but these only impact downstream integrations (not Balancer directly). Integrators should be wary of the underlying token's manipulability via donations, which will propagate into the BPT price itself, and assess the unique risk this poses to their respective protocols.This review also makes no determination as to the security of the Queen token itself or the Tranchess protocol, as it is laser-focused on Balancer integration with the `QueenRateProvider`. Before investing your funds in any DeFi protocol, please consult its source code, documentation, and historical audits.",
+      "isAllowed": "true"
     },
     "0x67560A970FFaB46D65cB520dD3C2fF4E684f29c2": {
       "asset": "0xC4cafEFBc3dfeA629c589728d648CB6111DB3136",
@@ -661,7 +661,8 @@
       "warnings": [],
       "factory": "0x97390050B63eb56C0e39bB0D8d364333Eb3AFD12",
       "upgradeableComponents": [],
-      "conclusion": "The `TBYRateProvider` has been confirmed to be safe given some fundamental trust assumptions. The rateProvider satisfies the minimum requirements and there are reasonable protections in place on rate updates, but due to interest rate calculations occuring off-chain, the user must assume that the Bloom team's multisig correctly calculates this average rate off-chain, using Chainlink's price feed, and accurately updates the rate."
+      "conclusion": "The `TBYRateProvider` has been confirmed to be safe given some fundamental trust assumptions. The rateProvider satisfies the minimum requirements and there are reasonable protections in place on rate updates, but due to interest rate calculations occuring off-chain, the user must assume that the Bloom team's multisig correctly calculates this average rate off-chain, using Chainlink's price feed, and accurately updates the rate.",
+      "isAllowed": "true"
     },
     "0xDceC4350d189Ea7e1DD2C9BDa63cB0e0Ae34b81F": {
       "asset": "0x8dc5BE35672D650bc8A176A4bafBfC33555D80AC",
@@ -671,7 +672,8 @@
       "warnings": [],
       "factory": "0x97390050B63eb56C0e39bB0D8d364333Eb3AFD12",
       "upgradeableComponents": [],
-      "conclusion": "The `TBYRateProvider` has been confirmed to be safe given some fundamental trust assumptions. The rateProvider satisfies the minimum requirements and there are reasonable protections in place on rate updates, but due to interest rate calculations occuring off-chain, the user must assume that the Bloom team's multisig correctly calculates this average rate off-chain, using Chainlink's price feed, and accurately updates the rate."
+      "conclusion": "The `TBYRateProvider` has been confirmed to be safe given some fundamental trust assumptions. The rateProvider satisfies the minimum requirements and there are reasonable protections in place on rate updates, but due to interest rate calculations occuring off-chain, the user must assume that the Bloom team's multisig correctly calculates this average rate off-chain, using Chainlink's price feed, and accurately updates the rate.",
+      "isAllowed": "true"
     },
     "0xc7177B6E18c1Abd725F5b75792e5F7A3bA5DBC2c": {
       "asset": "0x83F20F44975D03b1b09e64809B757c47f942BEeA",
@@ -681,28 +683,26 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": [],
-      "conclusion": "This is a highly minimal Rate Provider that queries the exchange rate directly from the `sDAI` token, which computes/queries it directly from the DAI Savings Rate (DSR) module. There are no privileges, upgradeability, or oracles anywhere in the system, and prices are fetched from verifiable on-chain data. The largest \"threat\" lies in MakerDAO's ability to set the Savings Rate, but this is hardly a threat at all. MakerDAO is one of the largest and longest-standing DAOs in DeFi, and the Savings Rate is fundamental in governing the `DAI` token.This Rate Provider sets the standard to which others should be measured."
+      "conclusion": "This is a highly minimal Rate Provider that queries the exchange rate directly from the `sDAI` token, which computes/queries it directly from the DAI Savings Rate (DSR) module. There are no privileges, upgradeability, or oracles anywhere in the system, and prices are fetched from verifiable on-chain data. The largest \"threat\" lies in MakerDAO's ability to set the Savings Rate, but this is hardly a threat at all. MakerDAO is one of the largest and longest-standing DAOs in DeFi, and the Savings Rate is fundamental in governing the `DAI` token.This Rate Provider sets the standard to which others should be measured.",
+      "isAllowed": "true"
     },
     "0xd8689E8740C23d73136744817347fd6aC464E842": {
       "asset": "0xaF4ce7CD4F8891ecf1799878c3e9A35b8BE57E09",
       "name": "wUSDKRateProvider",
       "summary": "safe",
       "review": "./wUSDKRateProvider.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": [],
-      "conclusion": "`RateProvider` by Kuma Protocol is safe to use in Balancer Pools. All minimum requirements are met. All contracts involved in pricing are non-upgradeable and don't rely on oracles or other external sources of data. However, users should be aware that this rate provider is susceptible to donation attacks. This will not impact Balancer Pool's, but could have negative affects on downstream integrations. Users must assess the unique risk this poses to their respective protocols.This review also makes no determination as to the security of the wUSK token itself or the Kuma protocol, as it is laser-focused on Balancer integration with the `RateProvider` of wUSK. Before investing your funds in any DeFi protocol, please consult its source code, documentation, and historical audits."
+      "conclusion": "`RateProvider` by Kuma Protocol is safe to use in Balancer Pools. All minimum requirements are met. All contracts involved in pricing are non-upgradeable and don't rely on oracles or other external sources of data. However, users should be aware that this rate provider is susceptible to donation attacks. This will not impact Balancer Pool's, but could have negative affects on downstream integrations. Users must assess the unique risk this poses to their respective protocols.This review also makes no determination as to the security of the wUSK token itself or the Kuma protocol, as it is laser-focused on Balancer integration with the `RateProvider` of wUSK. Before investing your funds in any DeFi protocol, please consult its source code, documentation, and historical audits.",
+      "isAllowed": "true"
     },
     "0x4b697C8c3220FcBdd02DFFa46db5a896ae7a0843": {
       "asset": "0xf33687811f3ad0cd6b48dd4b39f9f977bd7165a2",
       "name": "TruMaticRateProvider",
       "summary": "safe",
       "review": "./TruMaticRateProvider.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -722,19 +722,19 @@
           "implementationReviewed": "0xbA9Ac3C9983a3e967f0f387c75cCbD38Ad484963"
         }
       ],
-      "conclusion": "This Rate Provider computes the exchange rate using a ratio of total assets available to the Vault & vault shares. This Rate Provider is susceptible to donation attacks. "
+      "conclusion": "This Rate Provider computes the exchange rate using a ratio of total assets available to the Vault & vault shares. This Rate Provider is susceptible to donation attacks. ",
+      "isAllowed": "true"
     },
     "0xf518f2EbeA5df8Ca2B5E9C7996a2A25e8010014b": {
       "asset": "0x24Ae2dA0f361AA4BE46b48EB19C91e02c5e4f27E",
       "name": "MevEthRateProvider",
       "summary": "safe",
       "review": "./MevEthRateProvider.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": [],
-      "conclusion": "This is a minimal Rate Provider that computes the exchange rate using a ratio of protocol-owned assets to minted shares. The system is not upgradeable and does not utilize oracles; all price updates are accompanied by actual asset inflows. There are some privileged operators in the system who have the power to rehypothecate deposited ETH for staking purposes, but this is to be expected from an ETH staking system.There is a potential risk of donation attacks, but these are privileged and only impact downstream integrations (not Balancer directly). Integrators should be wary of the underlying token's manipulability via donations, which will propagate into the BPT price itself, and assess the unique risk this poses to their respective protocols."
+      "conclusion": "This is a minimal Rate Provider that computes the exchange rate using a ratio of protocol-owned assets to minted shares. The system is not upgradeable and does not utilize oracles; all price updates are accompanied by actual asset inflows. There are some privileged operators in the system who have the power to rehypothecate deposited ETH for staking purposes, but this is to be expected from an ETH staking system.There is a potential risk of donation attacks, but these are privileged and only impact downstream integrations (not Balancer directly). Integrators should be wary of the underlying token's manipulability via donations, which will propagate into the BPT price itself, and assess the unique risk this poses to their respective protocols.",
+      "isAllowed": "true"
     },
     "0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee": {
       "asset": "0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee",
@@ -769,7 +769,8 @@
           "implementationReviewed": "0x698cB4508F13Cc12aAD36D2B64413C302B781d9A"
         }
       ],
-      "conclusion": "The Rate Provider embedded within the `weETH` token tracks an exchange rate based on internal accounting of ETH available to the system. This internal accounting is always updated in synchronization with deposits and withdrawals, and is properly handled on arbitrary receipt of ETH to avoid donation attacks. The only exception to this synchronous accounting system is the `rebase()` function described in this report.This reviewer determines that the `rebase()` function is not only critical to the behavior of the LST but is also adequately protected against centralization risk, even in the case of a rogue administrator.Note that this review makes no determination as to the security of the `weETH` token itself or the ether.fi protocol, as it is laser-focused on Balancer integration with the embedded Rate Provider. Before investing your funds in any DeFi protocol, please consult its source code, documentation, and historical audits; and be aware of the risks when interacting with upgradable smart contracts."
+      "conclusion": "The Rate Provider embedded within the `weETH` token tracks an exchange rate based on internal accounting of ETH available to the system. This internal accounting is always updated in synchronization with deposits and withdrawals, and is properly handled on arbitrary receipt of ETH to avoid donation attacks. The only exception to this synchronous accounting system is the `rebase()` function described in this report.This reviewer determines that the `rebase()` function is not only critical to the behavior of the LST but is also adequately protected against centralization risk, even in the case of a rogue administrator.Note that this review makes no determination as to the security of the `weETH` token itself or the ether.fi protocol, as it is laser-focused on Balancer integration with the embedded Rate Provider. Before investing your funds in any DeFi protocol, please consult its source code, documentation, and historical audits; and be aware of the risks when interacting with upgradable smart contracts.",
+      "isAllowed": "true"
     },
     "0x8023518b2192FB5384DAdc596765B3dD1cdFe471": {
       "asset": "0xf1C9acDc66974dFB6dEcB12aA385b9cD01190E38",
@@ -779,16 +780,15 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": [],
-      "conclusion": "This is a solid rateProvider that reports the osETH <> ETH exchange rate. While part of the price data is based on off-chain components, the off-chain component is guarded behind solid validity checks. The rate Provider should work well with pool operations. "
+      "conclusion": "This is a solid rateProvider that reports the osETH <> ETH exchange rate. While part of the price data is based on off-chain components, the off-chain component is guarded behind solid validity checks. The rate Provider should work well with pool operations. ",
+      "isAllowed": "true"
     },
     "0x387dBc0fB00b26fb085aa658527D5BE98302c84C": {
       "asset": "0xbf5495Efe5DB9ce00f80364C8B423567e58d2110",
       "name": "BalancerRateProvider",
       "summary": "safe",
       "review": "./ezETHRateProvider.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -820,16 +820,15 @@
           "implementationReviewed": "0xceEa4f26924F2CF55f59A560d6F323241728019a"
         }
       ],
-      "conclusion": "The overall system is complex and the functionality when Renzo protocol is fully operational could not be determined. The reason for that is:The `RestakeManager`'s `caclculateTVLs` function is involved in the pools price computation. As part of the execution of this function external calls to an `OperatorDelegator` is made to get a tokenBalance. The `OperatorDelegator` calls a to be certainly added in the future contract stored in a mapping called `tokenStrategyMapping` via `userUnderlyingView`. This is pointed out here as it represents a likely addition to the rateProvider scope in the near future that cannot be investigated as of now.With that many upgradeable components involved in the rate computation a thorough review of the involved implementation contracts was not made and is assumed to be correct.The current implementation of the rateProvider is considered safe and should work well with Balancer pools. However, this Rate Provider should continue to be monitored until Renzo protocol is fully operational and a majority of LSTs have been added to their system."
+      "conclusion": "The overall system is complex and the functionality when Renzo protocol is fully operational could not be determined. The reason for that is:The `RestakeManager`'s `caclculateTVLs` function is involved in the pools price computation. As part of the execution of this function external calls to an `OperatorDelegator` is made to get a tokenBalance. The `OperatorDelegator` calls a to be certainly added in the future contract stored in a mapping called `tokenStrategyMapping` via `userUnderlyingView`. This is pointed out here as it represents a likely addition to the rateProvider scope in the near future that cannot be investigated as of now.With that many upgradeable components involved in the rate computation a thorough review of the involved implementation contracts was not made and is assumed to be correct.The current implementation of the rateProvider is considered safe and should work well with Balancer pools. However, this Rate Provider should continue to be monitored until Renzo protocol is fully operational and a majority of LSTs have been added to their system.",
+      "isAllowed": "true"
     },
     "0x746df66bc1Bb361b9E8E2a794C299c3427976e6C": {
       "asset": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7",
       "name": "RsETHRateProvider",
       "summary": "safe",
       "review": "./rsETHRateProvider.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -853,16 +852,15 @@
           "implementationReviewed": "0xd7db9604ef925af96cda6b45026be64c691c7704"
         }
       ],
-      "conclusion": "This rate Provider can be considered fit for pool operations under the assumption that the stETH/ETH peg holds at 1:1. This should be made clear to users in the Balancer Pool."
+      "conclusion": "This rate Provider can be considered fit for pool operations under the assumption that the stETH/ETH peg holds at 1:1. This should be made clear to users in the Balancer Pool.",
+      "isAllowed": "true"
     },
     "0xad4bFaFAe75ECd3fED5cFad4E4E9847Cd47A1879": {
       "asset": "0x6733F0283711F225A447e759D859a70b0c0Fd2bC",
       "name": "svETHRateProvider",
       "summary": "safe",
       "review": "./sveth.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -870,16 +868,15 @@
           "implementationReviewed": "0x38D64ce1Bdf1A9f24E0Ec469C9cAde61236fB4a0"
         }
       ],
-      "conclusion": "This light review of the svETH Rate Provider concludes that the svETH Rate Provider is fit to be used with Balancer pools."
+      "conclusion": "This light review of the svETH Rate Provider concludes that the svETH Rate Provider is fit to be used with Balancer pools.",
+      "isAllowed": "true"
     },
     "0xFAe103DC9cf190eD75350761e95403b7b8aFa6c0": {
       "asset": "0xFAe103DC9cf190eD75350761e95403b7b8aFa6c0",
       "name": "RswETH",
       "summary": "safe",
       "review": "./rswethRateProvider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -895,19 +892,19 @@
           "implementationReviewed": "0x527d6db79bFf473B8DD722429bDB3B0C8b855D23"
         }
       ],
-      "conclusion": "The reviewed Rate Provider can be considered safe for operations with Balancer pools. This however rests on the built in protections of the `reprice()` function which guard against potentially malicious price data reported by the `BOT` role. Reason being that the `BOT` role currently is given to an EOA where private key leak is a risk factor. Exposing setter functions for safety features such as `setMaximumRepriceDifferencePercentage` and `setMinimumRepriceTime` could be moved behind a timelock to increase system robustness. Additionally, the entire system is upgradable by a 3/5 multisig, and is not behind a timelock."
+      "conclusion": "The reviewed Rate Provider can be considered safe for operations with Balancer pools. This however rests on the built in protections of the `reprice()` function which guard against potentially malicious price data reported by the `BOT` role. Reason being that the `BOT` role currently is given to an EOA where private key leak is a risk factor. Exposing setter functions for safety features such as `setMaximumRepriceDifferencePercentage` and `setMinimumRepriceTime` could be moved behind a timelock to increase system robustness. Additionally, the entire system is upgradable by a 3/5 multisig, and is not behind a timelock.",
+      "isAllowed": "true"
     },
     "0xD02011C6C8AEE310D0aA42AA98BFE9DCa547fCc0": {
       "asset": "0xb45ad160634c528Cc3D2926d9807104FA3157305",
       "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./sDOLARateProvider.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": [],
-      "conclusion": "This Rate Provider should work well with Balancer pools. The Rate Provider and downstream contracts not being upgradeable decrease the potential attack surface and make the Rate Provider immutable. "
+      "conclusion": "This Rate Provider should work well with Balancer pools. The Rate Provider and downstream contracts not being upgradeable decrease the potential attack surface and make the Rate Provider immutable. ",
+      "isAllowed": "true"
     },
     "0xe3E123ED9fec48a6f40A8aC7bE9afEDDAD80F146": {
       "asset": "0xB88a5Ac00917a02d82c7cd6CEBd73E2852d43574",
@@ -922,16 +919,15 @@
           "implementationReviewed": "0xf0604A1c725F8eeb14FF082F2275AfE0B67A32D5"
         }
       ],
-      "conclusion": "This Rate Provider system is based on a multisig supplying price data. Protections against this multisig supplying bad prices are in place. Input validation has been added in the form of protecting against `0` (zero) price input and against prices outside the allowed threshold being supplied. This Rate Provider should work well with Balancer Pools."
+      "conclusion": "This Rate Provider system is based on a multisig supplying price data. Protections against this multisig supplying bad prices are in place. Input validation has been added in the form of protecting against `0` (zero) price input and against prices outside the allowed threshold being supplied. This Rate Provider should work well with Balancer Pools.",
+      "isAllowed": "true"
     },
     "0x343281Bb5029C4b698fE736D800115ac64D5De39": {
       "asset": "0x7FA768E035F956c41d6aeaa3Bd857e7E5141CAd5",
       "name": "InstETHRateProvider",
       "summary": "safe",
       "review": "./InceptionLRTRateProvider.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -943,16 +939,15 @@
           "implementationReviewed": "0xBAa61A8d8BC52f5a9256612Fab498c542188A132"
         }
       ],
-      "conclusion": "These RateProviders are expected to work well with Balancer pools. Especially the concerns around upgradeability of part of the pricing pipeline is guarded behind a TimeLock of 24 hours, which allows LPs to take action in case they do not agree with the to be executed upgrades."
+      "conclusion": "These RateProviders are expected to work well with Balancer pools. Especially the concerns around upgradeability of part of the pricing pipeline is guarded behind a TimeLock of 24 hours, which allows LPs to take action in case they do not agree with the to be executed upgrades.",
+      "isAllowed": "true"
     },
     "0xda3E8CD08753a05Ed4103aF28c69C47e35d6D8Da": {
       "asset": "0x862c57d48becB45583AEbA3f489696D22466Ca1b",
       "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./statATokenLMRateProvider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -964,7 +959,8 @@
           "implementationReviewed": "0x5faab9e1adbddad0a08734be8a52185fd6558e14"
         }
       ],
-      "conclusion": "The Rate Providers should work well with Balancer pools. The underlying contracts have been audited and been in production for an extended period of time. The upgradeability of the underlying Aave protocol is guarded behind decentralized governance and has a minimum execution delay of 24 hours. "
+      "conclusion": "The Rate Providers should work well with Balancer pools. The underlying contracts have been audited and been in production for an extended period of time. The upgradeability of the underlying Aave protocol is guarded behind decentralized governance and has a minimum execution delay of 24 hours. ",
+      "isAllowed": "true"
     },
     "0xC29783738A475112Cafe58433Dd9D19F3a406619": {
       "asset": "0xf073bAC22DAb7FaF4a3Dd6c6189a70D54110525C",
@@ -987,7 +983,8 @@
           "implementationReviewed": "0xB7A63a69cc0e635915e65379D2794f0b687D63EC"
         }
       ],
-      "conclusion": "This Rate Provider should work well with Balancer Pools. The oracle supplying price data is an EOA which is a risk due to private key leakage. However, since there are very tight controls around how price values (threshold & time delays) are supplied, this acts as reasonable protection. Additionally a 24 hour timelock in place for contract upgrades further protects LPs. "
+      "conclusion": "This Rate Provider should work well with Balancer Pools. The oracle supplying price data is an EOA which is a risk due to private key leakage. However, since there are very tight controls around how price values (threshold & time delays) are supplied, this acts as reasonable protection. Additionally a 24 hour timelock in place for contract upgrades further protects LPs. ",
+      "isAllowed": "true"
     },
     "0x72D07D7DcA67b8A406aD1Ec34ce969c90bFEE768": {
       "asset": "0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0",
@@ -997,16 +994,15 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": [],
-      "conclusion": "This rateProvider has been operational since Aug-12-2021 (mainnet) & Aug-23-2022 (Arbitrum) and has passed the test of time. It is being added to this repo without a review being included."
+      "conclusion": "This rateProvider has been operational since Aug-12-2021 (mainnet) & Aug-23-2022 (Arbitrum) and has passed the test of time. It is being added to this repo without a review being included.",
+      "isAllowed": "true"
     },
     "0x71f80e2CfAFA5EC2F0bF12f71FA7Ea57c3D0c7Af": {
       "asset": "0xD9A442856C234a39a81a089C06451EBAa4306a72",
       "name": "pufETHRateProvider",
       "summary": "safe",
       "review": "./PufEthRateProvider.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -1018,7 +1014,8 @@
           "implementationReviewed": "0x39Ca0a6438B6050ea2aC909Ba65920c7451305C1"
         }
       ],
-      "conclusion": "This Rate Provider should work well with Balancer pools. The PufEth contract calculates the exchange rate by dividing the total assets by the total supply. The contract's ability to be upgraded leverages both OpenZeppelin's AccessManager and a Timelock, which allows contract upgrades to be made instantly by a community multisig. Please note, the upgradeability of Eigenlayer and Lido Finance was not included in this review."
+      "conclusion": "This Rate Provider should work well with Balancer pools. The PufEth contract calculates the exchange rate by dividing the total assets by the total supply. The contract's ability to be upgraded leverages both OpenZeppelin's AccessManager and a Timelock, which allows contract upgrades to be made instantly by a community multisig. Please note, the upgradeability of Eigenlayer and Lido Finance was not included in this review.",
+      "isAllowed": "true"
     },
     "0xB3351000db2A9a3638d6bbf1c229BEFeb98377DB": {
       "asset": "0x32bd822d615A3658A68b6fDD30c2fcb2C996D678",
@@ -1041,7 +1038,8 @@
           "implementationReviewed": "0xfd2145b374cd9f6cc3bcde92b08e0018adc743d0"
         }
       ],
-      "conclusion": "This Rate Provider should work well with Balancer pools. The two options of price changes are either based on a fixed calculation logic based on stakedAsset value received from Eigenlayer or a price update via a multisig. Both price updates are checked for deviation and update frequency."
+      "conclusion": "This Rate Provider should work well with Balancer pools. The two options of price changes are either based on a fixed calculation logic based on stakedAsset value received from Eigenlayer or a price update via a multisig. Both price updates are checked for deviation and update frequency.",
+      "isAllowed": "true"
     },
     "0xCC701e2D472dFa2857Bf9AE24c263DAa39fD2C61": {
       "asset": "0x49446A0874197839D15395B908328a74ccc96Bc0",
@@ -1064,40 +1062,37 @@
           "implementationReviewed": "0xfd2145b374cd9f6cc3bcde92b08e0018adc743d0"
         }
       ],
-      "conclusion": "This Rate Provider should work well with Balancer pools. The two options of price changes are either based on a fixed calculation logic based on stakedAsset value received from Eigenlayer or a price update via a multisig. Both price updates are checked for deviation and update frequency."
+      "conclusion": "This Rate Provider should work well with Balancer pools. The two options of price changes are either based on a fixed calculation logic based on stakedAsset value received from Eigenlayer or a price update via a multisig. Both price updates are checked for deviation and update frequency.",
+      "isAllowed": "true"
     },
     "0x3A244e6B3cfed21593a5E5B347B593C0B48C7dA1": {
       "asset": "0x9D39A5DE30e57443BfF2A8307A4256c8797A3497",
       "name": "EthenaBalancerRateProvider",
       "summary": "safe",
       "review": "./sUSDERateProviderMainnet.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": [],
-      "conclusion": "This Rate Provider should work well with Balancer pools. It's approach towards handling protocol internal donations for rate increases has a smoothing effect. "
+      "conclusion": "This Rate Provider should work well with Balancer pools. It's approach towards handling protocol internal donations for rate increases has a smoothing effect. ",
+      "isAllowed": "true"
     },
     "0x033E20068Db853Fa6C077F38faa4670423FC55fF": {
       "asset": "0xA663B02CF0a4b149d2aD41910CB81e23e1c41c32",
       "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./sFRAXRateProvider.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": [],
-      "conclusion": "This rate provider should work well with Balancer pools. No part of the pricing pipeline is upgradeable, reducing the surface for inaccurate rate data being supplied. Also a spiking rate due to reward donations does not happen as it scales with time passed as can be seen in `calculateRewardsToDistribute`. "
+      "conclusion": "This rate provider should work well with Balancer pools. No part of the pricing pipeline is upgradeable, reducing the surface for inaccurate rate data being supplied. Also a spiking rate due to reward donations does not happen as it scales with time passed as can be seen in `calculateRewardsToDistribute`. ",
+      "isAllowed": "true"
     },
     "0x8bC73134A736437da780570308d3b37b67174ddb": {
       "asset": "0xfa2629B9cF3998D52726994E0FcdB750224D8B9D",
       "name": "InankrETHRateProvider",
       "summary": "safe",
       "review": "./InceptionLRTRateProvider.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -1109,136 +1104,125 @@
           "implementationReviewed": "0xf0b06794b6B068f728481b4F44C9AD0bE42fB8aB"
         }
       ],
-      "conclusion": "These RateProviders are expected to work well with Balancer pools. Especially the concerns around upgradeability of part of the pricing pipeline is guarded behind a TimeLock of 24 hours, which allows LPs to take action in case they do not agree with the to be executed upgrades."
+      "conclusion": "These RateProviders are expected to work well with Balancer pools. Especially the concerns around upgradeability of part of the pricing pipeline is guarded behind a TimeLock of 24 hours, which allows LPs to take action in case they do not agree with the to be executed upgrades.",
+      "isAllowed": "true"
     },
     "0x1a8F81c256aee9C640e14bB0453ce247ea0DFE6F": {
       "asset": "0xae78736Cd615f374D3085123A210448E74Fc6393",
       "name": "RocketBalancerRETHRateProvider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": [
-        "legacy"
-      ],
+      "warnings": ["legacy"],
       "factory": "",
       "upgradeableComponents": [],
-      "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible."
+      "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible.",
+      "isAllowed": "true"
     },
     "0x302013E7936a39c358d07A3Df55dc94EC417E3a1": {
       "asset": "0xac3E018457B222d93114458476f3E3416Abbe38F",
       "name": "sfrxETH ERC4626RateProvider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": [
-        "legacy"
-      ],
+      "warnings": ["legacy"],
       "factory": "",
       "upgradeableComponents": [],
-      "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible."
+      "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible.",
+      "isAllowed": "true"
     },
     "0x00F8e64a8651E3479A0B20F46b1D462Fe29D6aBc": {
       "asset": "0xE95A203B1a91a908F9B9CE46459d101078c2c3cb",
       "name": "AnkrETHRateProvider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": [
-        "legacy"
-      ],
+      "warnings": ["legacy"],
       "factory": "",
       "upgradeableComponents": [],
-      "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible."
+      "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible.",
+      "isAllowed": "true"
     },
     "0x7311E4BB8a72e7B300c5B8BDE4de6CdaA822a5b1": {
       "asset": "0xBe9895146f7AF43049ca1c1AE358B0541Ea49704",
       "name": "CbEthRateProvider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": [
-        "legacy"
-      ],
+      "warnings": ["legacy"],
       "factory": "",
       "upgradeableComponents": [],
-      "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible."
+      "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible.",
+      "isAllowed": "true"
     },
     "0x3D40f9dd83bd404fA4047c15da494E58C3c1f1ac": {
       "asset": "0x9559Aaa82d9649C7A7b220E7c461d2E74c9a3593",
       "name": "Stafi RETHRateProvider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": [
-        "legacy"
-      ],
+      "warnings": ["legacy"],
       "factory": "",
       "upgradeableComponents": [],
-      "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible."
+      "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible.",
+      "isAllowed": "true"
     },
     "0x3556F710c165090AAE9f98Eb62F5b04ADeF7Eaea": {
       "asset": "0x198d7387Fa97A73F05b8578CdEFf8F2A1f34Cd1F",
       "name": "wjAuraRateProvider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": [
-        "legacy"
-      ],
+      "warnings": ["legacy"],
       "factory": "",
       "upgradeableComponents": [],
-      "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible."
+      "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible.",
+      "isAllowed": "true"
     },
     "0xf951E335afb289353dc249e82926178EaC7DEd78": {
       "asset": "0xf951E335afb289353dc249e82926178EaC7DEd78",
       "name": "swETH Rate Provider TransparentUpgradeableProxy",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": [
-        "legacy"
-      ],
+      "warnings": ["legacy"],
       "factory": "",
       "upgradeableComponents": [],
-      "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible."
+      "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible.",
+      "isAllowed": "true"
     },
     "0xdE76434352633349f119bcE523d092743fEF20E9": {
       "asset": "0xa2E3356610840701BDf5611a53974510Ae27E2e1",
       "name": "wBETH BinanceBeaconEthRateProvider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": [
-        "legacy"
-      ],
+      "warnings": ["legacy"],
       "factory": "",
       "upgradeableComponents": [],
-      "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible."
+      "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible.",
+      "isAllowed": "true"
     },
     "0x12589A727aeFAc3fbE5025F890f1CB97c269BEc2": {
       "asset": "0x4Bc3263Eb5bb2Ef7Ad9aB6FB68be80E43b43801F",
       "name": "Bitfrost vETHRateProvider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": [
-        "legacy"
-      ],
+      "warnings": ["legacy"],
       "factory": "",
       "upgradeableComponents": [],
-      "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible."
+      "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible.",
+      "isAllowed": "true"
     },
     "0x5F0A29e479744DcA0D3d912f87F1a6E3237A55D3": {
       "asset": "0x0Ae38f7E10A43B5b2fB064B42a2f4514cbA909ef",
       "name": "unshETHRateProvider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": [
-        "legacy"
-      ],
+      "warnings": ["legacy"],
       "factory": "",
       "upgradeableComponents": [],
-      "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible."
+      "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible.",
+      "isAllowed": "true"
     },
     "0xd2C59781F1Db84080A0592CE83Fe265642A4a8Eb": {
       "asset": "0x80ac24aA929eaF5013f6436cdA2a7ba190f5Cc0b",
       "name": "SyrupRateProvider",
       "summary": "safe",
       "review": "./SyrupRateProvider.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -1258,7 +1242,8 @@
           "implementationReviewed": "0x5b97c9dcce2693844b90cea40ba1fd15bf99eb01"
         }
       ],
-      "conclusion": "This Rate Provider should work well with Balancer pools. Risk of upgradeability is guarded behind a 4/7 multisig and callable functions which influence the rate are access controlled. "
+      "conclusion": "This Rate Provider should work well with Balancer pools. Risk of upgradeability is guarded behind a 4/7 multisig and callable functions which influence the rate are access controlled. ",
+      "isAllowed": "true"
     },
     "0x20EDB9299Ae83D9f22bE16279a4A2B422F34d020": {
       "asset": "0xBEEF69Ac7870777598A04B2bd4771c71212E6aBc",
@@ -1273,7 +1258,8 @@
           "implementationReviewed": "0xaf108ae0AD8700ac41346aCb620e828c03BB8848"
         }
       ],
-      "conclusion": "This was a timeboxed review of the Mellow Restaking vaults and their ability to provide pricing data for Balancer pools. These rate providers should work well with Balancer pools. "
+      "conclusion": "This was a timeboxed review of the Mellow Restaking vaults and their ability to provide pricing data for Balancer pools. These rate providers should work well with Balancer pools. ",
+      "isAllowed": "true"
     },
     "0x9D09c1E832102A23215e27E85B37b139aEe95Ff4": {
       "asset": "0x84631c0d0081FDe56DeB72F6DE77abBbF6A9f93a",
@@ -1288,7 +1274,8 @@
           "implementationReviewed": "0xaf108ae0AD8700ac41346aCb620e828c03BB8848"
         }
       ],
-      "conclusion": "This was a timeboxed review of the Mellow Restaking vaults and their ability to provide pricing data for Balancer pools. These rate providers should work well with Balancer pools. "
+      "conclusion": "This was a timeboxed review of the Mellow Restaking vaults and their ability to provide pricing data for Balancer pools. These rate providers should work well with Balancer pools. ",
+      "isAllowed": "true"
     },
     "0x6984F8E8ce474B69A2F32bE7dEc4d003d644B4B7": {
       "asset": "0x7a4EffD87C2f3C55CA251080b1343b605f327E3a",
@@ -1303,7 +1290,8 @@
           "implementationReviewed": "0xaf108ae0AD8700ac41346aCb620e828c03BB8848"
         }
       ],
-      "conclusion": "This was a timeboxed review of the Mellow Restaking vaults and their ability to provide pricing data for Balancer pools. These rate providers should work well with Balancer pools. "
+      "conclusion": "This was a timeboxed review of the Mellow Restaking vaults and their ability to provide pricing data for Balancer pools. These rate providers should work well with Balancer pools. ",
+      "isAllowed": "true"
     },
     "0x3A2228C7B3Bc3A32AEa9338d0A890A5EbD7bc977": {
       "asset": "0x5fD13359Ba15A84B76f7F87568309040176167cd",
@@ -1318,7 +1306,8 @@
           "implementationReviewed": "0xaf108ae0AD8700ac41346aCb620e828c03BB8848"
         }
       ],
-      "conclusion": "This was a timeboxed review of the Mellow Restaking vaults and their ability to provide pricing data for Balancer pools. These rate providers should work well with Balancer pools. "
+      "conclusion": "This was a timeboxed review of the Mellow Restaking vaults and their ability to provide pricing data for Balancer pools. These rate providers should work well with Balancer pools. ",
+      "isAllowed": "true"
     }
   },
   "fantom": {
@@ -1327,12 +1316,11 @@
       "name": "sFTMx Rateprovider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": [
-        "legacy"
-      ],
+      "warnings": ["legacy"],
       "factory": "",
       "upgradeableComponents": [],
-      "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible."
+      "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible.",
+      "isAllowed": "true"
     }
   },
   "fraxtal": {
@@ -1349,7 +1337,8 @@
           "implementationReviewed": "0x1B680F4385f24420D264D78cab7C58365ED3F1FF"
         }
       ],
-      "conclusion": "The Frax oracle service should work well with Balancer pools especially since the Pricefeeds implement the well known ChainLink interfaces, & already established smart contracts (`ChainLinkRateProviderFactory`) can be used to provide price data on fraxtal. It is important to note, that the timelock should be monitored for potential calls to `setPriceSource` as the `priceSource` could be changed to a contract which does not work with merkle proofs of the price data."
+      "conclusion": "The Frax oracle service should work well with Balancer pools especially since the Pricefeeds implement the well known ChainLink interfaces, & already established smart contracts (`ChainLinkRateProviderFactory`) can be used to provide price data on fraxtal. It is important to note, that the timelock should be monitored for potential calls to `setPriceSource` as the `priceSource` could be changed to a contract which does not work with merkle proofs of the price data.",
+      "isAllowed": "true"
     },
     "0x95eedc9d10B6964a579948Fd717D34F45E15C0C6": {
       "asset": "0x09eadcbaa812a4c076c3a6cde765dc4a22e0d775",
@@ -1364,7 +1353,8 @@
           "implementationReviewed": "0xfdE8C36F32Bf32e73A1bdeb4ef3E17709674a838"
         }
       ],
-      "conclusion": "The Frax oracle service should work well with Balancer pools especially since the Pricefeeds implement the well known ChainLink interfaces, & already established smart contracts (`ChainLinkRateProviderFactory`) can be used to provide price data on fraxtal. It is important to note, that the timelock should be monitored for potential calls to `setPriceSource` as the `priceSource` could be changed to a contract which does not work with merkle proofs of the price data."
+      "conclusion": "The Frax oracle service should work well with Balancer pools especially since the Pricefeeds implement the well known ChainLink interfaces, & already established smart contracts (`ChainLinkRateProviderFactory`) can be used to provide price data on fraxtal. It is important to note, that the timelock should be monitored for potential calls to `setPriceSource` as the `priceSource` could be changed to a contract which does not work with merkle proofs of the price data.",
+      "isAllowed": "true"
     },
     "0x761efEF0347E23e2e75907A6e2df0Bbc6d3A3F38": {
       "asset": "0xfc00000000000000000000000000000000000005",
@@ -1379,7 +1369,8 @@
           "implementationReviewed": "0xEE095b7d9191603126Da584a1179BB403a027c3A"
         }
       ],
-      "conclusion": "The Frax oracle service should work well with Balancer pools especially since the Pricefeeds implement the well known ChainLink interfaces, & already established smart contracts (`ChainLinkRateProviderFactory`) can be used to provide price data on fraxtal. It is important to note, that the timelock should be monitored for potential calls to `setPriceSource` as the `priceSource` could be changed to a contract which does not work with merkle proofs of the price data."
+      "conclusion": "The Frax oracle service should work well with Balancer pools especially since the Pricefeeds implement the well known ChainLink interfaces, & already established smart contracts (`ChainLinkRateProviderFactory`) can be used to provide price data on fraxtal. It is important to note, that the timelock should be monitored for potential calls to `setPriceSource` as the `priceSource` could be changed to a contract which does not work with merkle proofs of the price data.",
+      "isAllowed": "true"
     },
     "0x99D033888aCe9d8E01F793Cf85AE7d4EA56494F9": {
       "asset": "0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2",
@@ -1394,7 +1385,8 @@
           "implementationReviewed": "0xd295936C8Bb465ADd1eC756a51698127CB4F4910"
         }
       ],
-      "conclusion": "The Frax oracle service should work well with Balancer pools especially since the Pricefeeds implement the well known ChainLink interfaces, & already established smart contracts (`ChainLinkRateProviderFactory`) can be used to provide price data on fraxtal. It is important to note, that the timelock should be monitored for potential calls to `setPriceSource` as the `priceSource` could be changed to a contract which does not work with merkle proofs of the price data."
+      "conclusion": "The Frax oracle service should work well with Balancer pools especially since the Pricefeeds implement the well known ChainLink interfaces, & already established smart contracts (`ChainLinkRateProviderFactory`) can be used to provide price data on fraxtal. It is important to note, that the timelock should be monitored for potential calls to `setPriceSource` as the `priceSource` could be changed to a contract which does not work with merkle proofs of the price data.",
+      "isAllowed": "true"
     }
   },
   "gnosis": {
@@ -1403,23 +1395,18 @@
       "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./SavingsDAIRateProviderGnosis.md",
-      "warnings": [
-        "donation",
-        "only18decimals"
-      ],
+      "warnings": ["donation", "only18decimals"],
       "factory": "",
       "upgradeableComponents": [],
-      "conclusion": "This is a minimal ERC-4626 Rate Provider that computes the exchange rate using a ratio of deposited assets to minted shares. There are no privileges, upgradeability, or oracles anywhere in the system.There is a potential risk of donation attacks, but these only impact downstream integrations (not Balancer directly). Integrators should be wary of the underlying token's manipulability via donations, which will propagate into the BPT price itself, and assess the unique risk this poses to their respective protocols.WARNING: This Rate Provider targets an ERC-4626 Vault whose underlying `asset` has 18 decimals. It will not work with any ERC-4626 Vault whose underlying `asset` has more or fewer than 18 decimals."
+      "conclusion": "This is a minimal ERC-4626 Rate Provider that computes the exchange rate using a ratio of deposited assets to minted shares. There are no privileges, upgradeability, or oracles anywhere in the system.There is a potential risk of donation attacks, but these only impact downstream integrations (not Balancer directly). Integrators should be wary of the underlying token's manipulability via donations, which will propagate into the BPT price itself, and assess the unique risk this poses to their respective protocols.WARNING: This Rate Provider targets an ERC-4626 Vault whose underlying `asset` has 18 decimals. It will not work with any ERC-4626 Vault whose underlying `asset` has more or fewer than 18 decimals.",
+      "isAllowed": "true"
     },
     "0xff315299C4d3FB984b67e31F028724b6a9aEb077": {
       "asset": "0x004626A008B1aCdC4c74ab51644093b155e59A23",
       "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./stAgEurRateProvider.md",
-      "warnings": [
-        "donation",
-        "only18decimals"
-      ],
+      "warnings": ["donation", "only18decimals"],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -1431,31 +1418,30 @@
           "implementationReviewed": "0x59153e939c5b4721543251ff3049Ea04c755373B"
         }
       ],
-      "conclusion": "The rateProvider can be used in production. While the entity who has upgrading power is a 4/6 Multisig, an additional Timelock could protect users additionally from malicious admin power. Since this rateProvider'S source-code is created to interact with any ERC4626 Vault, it will only work correctly with ERC4626 Vault's which `asset` have 18 decimals. Care is therefor to be taken."
+      "conclusion": "The rateProvider can be used in production. While the entity who has upgrading power is a 4/6 Multisig, an additional Timelock could protect users additionally from malicious admin power. Since this rateProvider'S source-code is created to interact with any ERC4626 Vault, it will only work correctly with ERC4626 Vault's which `asset` have 18 decimals. Care is therefor to be taken.",
+      "isAllowed": "true"
     },
     "0x09f9611FE9d24c6A518f656E925e3628A2ECDE3b": {
       "asset": "0x6C76971f98945AE98dD7d4DFcA8711ebea946eA6",
       "name": "wstETH Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": [
-        "chainlink"
-      ],
+      "warnings": ["chainlink"],
       "factory": "",
       "upgradeableComponents": [],
-      "conclusion": "Chainlink Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible as this review is applicable to all Chainlink Rate Providers."
+      "conclusion": "Chainlink Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible as this review is applicable to all Chainlink Rate Providers.",
+      "isAllowed": "true"
     },
     "0xE7511f6e5C593007eA8A7F52af4B066333765e03": {
       "asset": "0xcB444e90D8198415266c6a2724b7900fb12FC56E",
       "name": "EURe Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": [
-        "chainlink"
-      ],
+      "warnings": ["chainlink"],
       "factory": "",
       "upgradeableComponents": [],
-      "conclusion": "Chainlink Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible as this review is applicable to all Chainlink Rate Providers."
+      "conclusion": "Chainlink Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible as this review is applicable to all Chainlink Rate Providers.",
+      "isAllowed": "true"
     },
     "0x821aFE819450A359E29a5209C48f2Fa3321C8AD2": {
       "asset": "0x270bA1f35D8b87510D24F693fcCc0da02e6E4EeB",
@@ -1474,7 +1460,8 @@
           "implementationReviewed": "0x5b522140fabeB6b6232336295581e63902e9b4ad"
         }
       ],
-      "conclusion": "The Rate Providers should work well with Balancer pools. The underlying contracts have been audited and been in production for an extended period of time. The upgradeability of the underlying Aave protocol is guarded behind decentralized governance and has a minimum execution delay of 24 hours. "
+      "conclusion": "The Rate Providers should work well with Balancer pools. The underlying contracts have been audited and been in production for an extended period of time. The upgradeability of the underlying Aave protocol is guarded behind decentralized governance and has a minimum execution delay of 24 hours. ",
+      "isAllowed": "true"
     },
     "0xdc90e2680094314CEaB45CE15100F6e02cEB7ceD": {
       "asset": "0xc791240d1f2def5938e2031364ff4ed887133c3d",
@@ -1484,7 +1471,8 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": [],
-      "conclusion": "This rate provider should work well with Balancer pools. The oracle providing the rate data has various guardrails in place ensuring the integrity of the rate being provided. The `owner` of the rate provider has the capability to revert the call to `getRate`. However this potential revert scenario is guarded behind a Multisig of [2/6] for reth and [2/6] for GBP."
+      "conclusion": "This rate provider should work well with Balancer pools. The oracle providing the rate data has various guardrails in place ensuring the integrity of the rate being provided. The `owner` of the rate provider has the capability to revert the call to `getRate`. However this potential revert scenario is guarded behind a Multisig of [2/6] for reth and [2/6] for GBP.",
+      "isAllowed": "true"
     },
     "0x92320D3C8Fd6BE59b22eB0eEe330901Fe4617f33": {
       "asset": "0x5Cb9073902F2035222B9749F8fB0c9BFe5527108",
@@ -1494,7 +1482,8 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": [],
-      "conclusion": "This rate provider should work well with Balancer pools. The oracle providing the rate data has various guardrails in place ensuring the integrity of the rate being provided. The `owner` of the rate provider has the capability to revert the call to `getRate`. However this potential revert scenario is guarded behind a Multisig of [2/6] for reth and [2/6] for GBP."
+      "conclusion": "This rate provider should work well with Balancer pools. The oracle providing the rate data has various guardrails in place ensuring the integrity of the rate being provided. The `owner` of the rate provider has the capability to revert the call to `getRate`. However this potential revert scenario is guarded behind a Multisig of [2/6] for reth and [2/6] for GBP.",
+      "isAllowed": "true"
     }
   },
   "mode": {
@@ -1506,7 +1495,8 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": [],
-      "conclusion": "This rate provider should work well with Balancer pools. API3 updates the rate on mode regularly and has various protections in place to ensure the correct values are bridged accurately. "
+      "conclusion": "This rate provider should work well with Balancer pools. API3 updates the rate on mode regularly and has various protections in place to ensure the correct values are bridged accurately. ",
+      "isAllowed": "true"
     }
   },
   "optimism": {
@@ -1535,16 +1525,15 @@
           "implementationReviewed": "0x98ae7F3fD47100b174014dCD143Eb43AD7acd79A"
         }
       ],
-      "conclusion": "The `WrappedUsdPlusRateProvider` calculates the exchange rate of wUSD+ in terms of USD+ by multiplying `1e18` by the `liquidityIndex` of the underlying asset, USD+. This liquidityIndex is updated by the exchange everytime a payout occurs using the totalSupply of USD+. This occurs safely and is protected from donation attacks. We can state that this RateProvider is  for Balancer pools given a few trust assumptions. There are a large amount of upgradable components to this contract. While the RateProvider itself is nonupgradable, every other component in the price pipeline is upgradable. This includes the `WrappedUsdPlusToken`, `UsdPlusToken`, and `Exchange`. These components are upgradable by the `AgentTimelocks` contract, which is upgradable by Overnight Finance's Governance. The Overnight multisig, or as they call it, the `ovnAgent`, is the only actor allowed to execute calls on the `AgentTimelocks` to allow upgrades to the USD+ Protocol (This encapsalates all three contracts mentioned previously above). Given that there are a sufficient number of owners for the multisig and a reasonable threshold has been set, as well as the fact that a six hour timelock exists, we deem the `WrappedUsdPlusRateProvider`  for Balancer pools.It should also be noted that while the upgradable components of this contract use proxies that implement EIP-1967, the admin storage slot is not set. Instead Overnight Finance opts to use Openzeppelin's UPPS proxy within their implementation. This is a safe practice and does not affect the security of the contract, but if users would like to verify the address that has the power to upgrade the contract, they can query `hasRole` passing a zero address as the role and the address of the `AgentTimelocks` as the account. This will return true if the `AgentTimelocks` is the admin of the contract and has the ability to upgrade. This review also makes no determination as to the security of the wUSD+ token itself or the Overnight Finance protocol, as it is laser-focused on Balancer integration with the `WrappedUsdPlusRateProvider`. Before investing your funds in any DeFi protocol, please consult its source code, documentation, historical audits, and be aware of the risks when interacting with upgradable smart contracts."
+      "conclusion": "The `WrappedUsdPlusRateProvider` calculates the exchange rate of wUSD+ in terms of USD+ by multiplying `1e18` by the `liquidityIndex` of the underlying asset, USD+. This liquidityIndex is updated by the exchange everytime a payout occurs using the totalSupply of USD+. This occurs safely and is protected from donation attacks. We can state that this RateProvider is  for Balancer pools given a few trust assumptions. There are a large amount of upgradable components to this contract. While the RateProvider itself is nonupgradable, every other component in the price pipeline is upgradable. This includes the `WrappedUsdPlusToken`, `UsdPlusToken`, and `Exchange`. These components are upgradable by the `AgentTimelocks` contract, which is upgradable by Overnight Finance's Governance. The Overnight multisig, or as they call it, the `ovnAgent`, is the only actor allowed to execute calls on the `AgentTimelocks` to allow upgrades to the USD+ Protocol (This encapsalates all three contracts mentioned previously above). Given that there are a sufficient number of owners for the multisig and a reasonable threshold has been set, as well as the fact that a six hour timelock exists, we deem the `WrappedUsdPlusRateProvider`  for Balancer pools.It should also be noted that while the upgradable components of this contract use proxies that implement EIP-1967, the admin storage slot is not set. Instead Overnight Finance opts to use Openzeppelin's UPPS proxy within their implementation. This is a safe practice and does not affect the security of the contract, but if users would like to verify the address that has the power to upgrade the contract, they can query `hasRole` passing a zero address as the role and the address of the `AgentTimelocks` as the account. This will return true if the `AgentTimelocks` is the admin of the contract and has the ability to upgrade. This review also makes no determination as to the security of the wUSD+ token itself or the Overnight Finance protocol, as it is laser-focused on Balancer integration with the `WrappedUsdPlusRateProvider`. Before investing your funds in any DeFi protocol, please consult its source code, documentation, historical audits, and be aware of the risks when interacting with upgradable smart contracts.",
+      "isAllowed": "true"
     },
     "0xBCEBb4dcdEc1c12bf7eB31bd26bc9C3b8F55C966": {
       "asset": "0x3eE6107d9C93955acBb3f39871D32B02F82B78AB",
       "name": "StErnRateProvider",
       "summary": "safe",
       "review": "./stERNRateProvider.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -1556,7 +1545,8 @@
           "implementationReviewed": "0x3eE6107d9C93955acBb3f39871D32B02F82B78AB"
         }
       ],
-      "conclusion": "Overall this Rate Provider should work well in pool operations with Balancer pools. However it depends on the admin being trusted.The key components having an influence over the reported price are the `ReaperVaultERC4626` and the `ReaperStrategyStabilityPool`."
+      "conclusion": "Overall this Rate Provider should work well in pool operations with Balancer pools. However it depends on the admin being trusted.The key components having an influence over the reported price are the `ReaperVaultERC4626` and the `ReaperStrategyStabilityPool`.",
+      "isAllowed": "true"
     },
     "0xff368E106EA8782FaB6B2D4AD69739a60C66400E": {
       "asset": "0xB88a5Ac00917a02d82c7cd6CEBd73E2852d43574",
@@ -1571,7 +1561,8 @@
           "implementationReviewed": "0x8adEa764cabd2C61E51cEb6937Fd026fA39d8E64"
         }
       ],
-      "conclusion": "This Rate Provider system is based on a multisig supplying price data. Protections against this multisig supplying bad prices are in place. Input validation has been added in the form of protecting against `0` (zero) price input and against prices outside the allowed threshold being supplied. This Rate Provider should work well with Balancer Pools."
+      "conclusion": "This Rate Provider system is based on a multisig supplying price data. Protections against this multisig supplying bad prices are in place. Input validation has been added in the form of protecting against `0` (zero) price input and against prices outside the allowed threshold being supplied. This Rate Provider should work well with Balancer Pools.",
+      "isAllowed": "true"
     },
     "0xdFa8d2b3c146b8a10B5d63CA0306AEa84B602cfb": {
       "asset": "0x4DD03dfD36548C840B563745e3FBeC320F37BA7e",
@@ -1590,7 +1581,8 @@
           "implementationReviewed": "0x03e8C5Cd5E194659b16456bb43Dd5D38886FE541"
         }
       ],
-      "conclusion": "The Rate Providers should work well with Balancer pools. The underlying contracts have been audited and been in production for an extended period of time. The upgradeability of the underlying Aave protocol is guarded behind decentralized governance and has a minimum execution delay of 24 hours. "
+      "conclusion": "The Rate Providers should work well with Balancer pools. The underlying contracts have been audited and been in production for an extended period of time. The upgradeability of the underlying Aave protocol is guarded behind decentralized governance and has a minimum execution delay of 24 hours. ",
+      "isAllowed": "true"
     },
     "0x3f921Ebabab0703BC06d1828D09a245e8390c263": {
       "asset": "0x035c93db04E5aAea54E6cd0261C492a3e0638b37",
@@ -1609,7 +1601,8 @@
           "implementationReviewed": "0x03e8C5Cd5E194659b16456bb43Dd5D38886FE541"
         }
       ],
-      "conclusion": "The Rate Providers should work well with Balancer pools. The underlying contracts have been audited and been in production for an extended period of time. The upgradeability of the underlying Aave protocol is guarded behind decentralized governance and has a minimum execution delay of 24 hours. "
+      "conclusion": "The Rate Providers should work well with Balancer pools. The underlying contracts have been audited and been in production for an extended period of time. The upgradeability of the underlying Aave protocol is guarded behind decentralized governance and has a minimum execution delay of 24 hours. ",
+      "isAllowed": "true"
     },
     "0x15ACEE5F73b36762Ab1a6b7C98787b8148447898": {
       "asset": "0x2218a117083f5B482B0bB821d27056Ba9c04b1D3",
@@ -1619,91 +1612,85 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": [],
-      "conclusion": "The Rate Providers are expected to integrate well with Balancer pools. The non-upgradeability of the pricing pipeline serves as an additional feature that helps minimize potential risks associated with supplying inaccurate data. To maintain data accuracy on L2, the `refresh` function on the L1  forwarder contracts [DSROracleForwarderBase](https://etherscan.io/address/0x8Ed551D485701fe489c215E13E42F6fc59563e0e#code) & [DSROracleForwarderOptimism](https://etherscan.io/address/0x4042127DecC0cF7cc0966791abebf7F76294DeF3#writeContract) should be invoked regularly."
+      "conclusion": "The Rate Providers are expected to integrate well with Balancer pools. The non-upgradeability of the pricing pipeline serves as an additional feature that helps minimize potential risks associated with supplying inaccurate data. To maintain data accuracy on L2, the `refresh` function on the L1  forwarder contracts [DSROracleForwarderBase](https://etherscan.io/address/0x8Ed551D485701fe489c215E13E42F6fc59563e0e#code) & [DSROracleForwarderOptimism](https://etherscan.io/address/0x4042127DecC0cF7cc0966791abebf7F76294DeF3#writeContract) should be invoked regularly.",
+      "isAllowed": "true"
     },
     "0x9aa3cd420f830E049e2b223D0b07D8c809C94d15": {
       "asset": "0x1F32b1c2345538c0c6f582fCB022739c4A194Ebb",
       "name": "wstETH Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": [
-        "chainlink"
-      ],
+      "warnings": ["chainlink"],
       "factory": "0x83E443EF4f9963C77bd860f94500075556668cb8",
       "upgradeableComponents": [],
-      "conclusion": "Chainlink Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible as this review is applicable to all Chainlink Rate Providers."
+      "conclusion": "Chainlink Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible as this review is applicable to all Chainlink Rate Providers.",
+      "isAllowed": "true"
     },
     "0xf752dd899F87a91370C1C8ac1488Aef6be687505": {
       "asset": "0x484c2D6e3cDd945a8B2DF735e079178C1036578c",
       "name": "sfrxETH Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": [
-        "chainlink"
-      ],
+      "warnings": ["chainlink"],
       "factory": "0x83E443EF4f9963C77bd860f94500075556668cb8",
       "upgradeableComponents": [],
-      "conclusion": "Chainlink Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible as this review is applicable to all Chainlink Rate Providers."
+      "conclusion": "Chainlink Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible as this review is applicable to all Chainlink Rate Providers.",
+      "isAllowed": "true"
     },
     "0xDe3B7eC86B67B05D312ac8FD935B6F59836F2c41": {
       "asset": "0x2Dd1B4D4548aCCeA497050619965f91f78b3b532",
       "name": "sFRAX Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": [
-        "chainlink"
-      ],
+      "warnings": ["chainlink"],
       "factory": "0x83E443EF4f9963C77bd860f94500075556668cb8",
       "upgradeableComponents": [],
-      "conclusion": "Chainlink Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible as this review is applicable to all Chainlink Rate Providers."
+      "conclusion": "Chainlink Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible as this review is applicable to all Chainlink Rate Providers.",
+      "isAllowed": "true"
     },
     "0x7E13b8b95d887c2326C25e71815F33Ea10A2674e": {
       "asset": "0x2Dd1B4D4548aCCeA497050619965f91f78b3b532",
       "name": "sFRAX Rate Provider Duplicate",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": [
-        "chainlink"
-      ],
+      "warnings": ["chainlink"],
       "factory": "0x83E443EF4f9963C77bd860f94500075556668cb8",
       "upgradeableComponents": [],
-      "conclusion": "Chainlink Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible as this review is applicable to all Chainlink Rate Providers."
+      "conclusion": "Chainlink Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible as this review is applicable to all Chainlink Rate Providers.",
+      "isAllowed": "true"
     },
     "0x658843BB859B7b85cEAb5cF77167e3F0a78dFE7f": {
       "asset": "0x9Bcef72be871e61ED4fBbc7630889beE758eb81D",
       "name": "rETH RocketPool Rate Provider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": [
-        "legacy"
-      ],
+      "warnings": ["legacy"],
       "factory": "",
       "upgradeableComponents": [],
-      "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible."
+      "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible.",
+      "isAllowed": "true"
     },
     "0x97b323fc033323B66159402bcDb9D7B9DC604235": {
       "asset": "0xe05A08226c49b636ACf99c40Da8DC6aF83CE5bB3",
       "name": "ankrETH Staking Rate Provider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": [
-        "legacy"
-      ],
+      "warnings": ["legacy"],
       "factory": "",
       "upgradeableComponents": [],
-      "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible."
+      "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible.",
+      "isAllowed": "true"
     },
     "0xef42D000a3e85C4e71C57e2C6A1E600e86f5a91B": {
       "asset": "0x5A7fACB970D094B6C7FF1df0eA68D99E6e73CBFF",
       "name": "weETH Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": [
-        "chainlink"
-      ],
+      "warnings": ["chainlink"],
       "factory": "0x83E443EF4f9963C77bd860f94500075556668cb8",
       "upgradeableComponents": [],
-      "conclusion": "Chainlink Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible as this review is applicable to all Chainlink Rate Providers."
+      "conclusion": "Chainlink Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible as this review is applicable to all Chainlink Rate Providers.",
+      "isAllowed": "true"
     }
   },
   "polygon": {
@@ -1712,9 +1699,7 @@
       "name": "RateProvider",
       "summary": "safe",
       "review": "./RateProvider_wFRK.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -1734,16 +1719,15 @@
           "implementationReviewed": "0x72e923047245D2B58D87f311a2b5b487620EE60A"
         }
       ],
-      "conclusion": "This is a minimal ERC-4626 Rate Provider that computes the exchange rate using a ratio of deposited assets to minted shares. The Rate Provider and ERC-4626 Vault are not upgradeable, but the underlying rebasing token (`FRK`) is upgradeable by a 4/7 multisig.There is a potential risk of donation attacks, but these only impact downstream integrations (not Balancer directly). Integrators should be wary of the underlying token's manipulability via donations, which will propagate into the BPT price itself, and assess the unique risk this poses to their respective protocols.Parts of the underlying `FRK` system have not been thoroughly vetted, but the `wFRK` wrapper and Rate Provider do not introduce any additional price complexity. Before investing your funds in any DeFi protocol, please consult its source code, documentation, historical audits, and be aware of the risks when interacting with upgradable smart contracts."
+      "conclusion": "This is a minimal ERC-4626 Rate Provider that computes the exchange rate using a ratio of deposited assets to minted shares. The Rate Provider and ERC-4626 Vault are not upgradeable, but the underlying rebasing token (`FRK`) is upgradeable by a 4/7 multisig.There is a potential risk of donation attacks, but these only impact downstream integrations (not Balancer directly). Integrators should be wary of the underlying token's manipulability via donations, which will propagate into the BPT price itself, and assess the unique risk this poses to their respective protocols.Parts of the underlying `FRK` system have not been thoroughly vetted, but the `wFRK` wrapper and Rate Provider do not introduce any additional price complexity. Before investing your funds in any DeFi protocol, please consult its source code, documentation, historical audits, and be aware of the risks when interacting with upgradable smart contracts.",
+      "isAllowed": "true"
     },
     "0x7d10050F608c8EFFf118eDd1416D82a0EF2d7531": {
       "asset": "0x2dCa80061632f3F87c9cA28364d1d0c30cD79a19",
       "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./statATokenLMRateProvider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -1755,16 +1739,15 @@
           "implementationReviewed": "0x1ed647b250e5b6d71dc7b25806f44c33f5658f71"
         }
       ],
-      "conclusion": "The Rate Providers should work well with Balancer pools. The underlying contracts have been audited and been in production for an extended period of time. The upgradeability of the underlying Aave protocol is guarded behind decentralized governance and has a minimum execution delay of 24 hours. "
+      "conclusion": "The Rate Providers should work well with Balancer pools. The underlying contracts have been audited and been in production for an extended period of time. The upgradeability of the underlying Aave protocol is guarded behind decentralized governance and has a minimum execution delay of 24 hours. ",
+      "isAllowed": "true"
     },
     "0x9977a61a6aa950044d4dcD8aA0cAb76F84ea5aCd": {
       "asset": "0x87A1fdc4C726c459f597282be639a045062c0E46",
       "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./statATokenLMRateProvider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -1776,79 +1759,74 @@
           "implementationReviewed": "0x1ed647b250e5b6d71dc7b25806f44c33f5658f71"
         }
       ],
-      "conclusion": "The Rate Providers should work well with Balancer pools. The underlying contracts have been audited and been in production for an extended period of time. The upgradeability of the underlying Aave protocol is guarded behind decentralized governance and has a minimum execution delay of 24 hours. "
+      "conclusion": "The Rate Providers should work well with Balancer pools. The underlying contracts have been audited and been in production for an extended period of time. The upgradeability of the underlying Aave protocol is guarded behind decentralized governance and has a minimum execution delay of 24 hours. ",
+      "isAllowed": "true"
     },
     "0x8c1944E305c590FaDAf0aDe4f737f5f95a4971B6": {
       "asset": "0x03b54A6e9a984069379fae1a4fC4dBAE93B3bCCD",
       "name": "wstETH / ETH Rate Provider",
       "summary": "unsafe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": [
-        "chainlink"
-      ],
+      "warnings": ["chainlink"],
       "factory": "0xa3b370092aeb56770B23315252aB5E16DAcBF62B",
       "upgradeableComponents": [],
-      "conclusion": "Chainlink Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible as this review is applicable to all Chainlink Rate Providers."
+      "conclusion": "Chainlink Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible as this review is applicable to all Chainlink Rate Providers.",
+      "isAllowed": "false"
     },
     "0x693A9Aca2f7b699BBd3d55d980Ac8a5D7a66868B": {
       "asset": "0x03b54A6e9a984069379fae1a4fC4dBAE93B3bCCD",
       "name": "wstETH Rate Provider Duplicate",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": [
-        "chainlink"
-      ],
+      "warnings": ["chainlink"],
       "factory": "0xa3b370092aeb56770B23315252aB5E16DAcBF62B",
       "upgradeableComponents": [],
-      "conclusion": "Chainlink Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible as this review is applicable to all Chainlink Rate Providers."
+      "conclusion": "Chainlink Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible as this review is applicable to all Chainlink Rate Providers.",
+      "isAllowed": "true"
     },
     "0xeE652bbF72689AA59F0B8F981c9c90e2A8Af8d8f": {
       "asset": "0xfa68FB4628DFF1028CFEc22b4162FCcd0d45efb6",
       "name": "MaticX Rate Provider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": [
-        "legacy"
-      ],
+      "warnings": ["legacy"],
       "factory": "",
       "upgradeableComponents": [],
-      "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible."
+      "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible.",
+      "isAllowed": "true"
     },
     "0xdEd6C522d803E35f65318a9a4d7333a22d582199": {
       "asset": "0x3A58a54C066FdC0f2D55FC9C89F0415C92eBf3C4",
       "name": "stMATIC Rate Provider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": [
-        "legacy"
-      ],
+      "warnings": ["legacy"],
       "factory": "",
       "upgradeableComponents": [],
-      "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible."
+      "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible.",
+      "isAllowed": "true"
     },
     "0x87393BE8ac323F2E63520A6184e5A8A9CC9fC051": {
       "asset": "0xFcBB00dF1d663eeE58123946A30AB2138bF9eb2A",
       "name": "csMATIC Clay Stack Tunnel Rate Provider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": [
-        "legacy"
-      ],
+      "warnings": ["legacy"],
       "factory": "",
       "upgradeableComponents": [],
-      "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible."
+      "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible.",
+      "isAllowed": "true"
     },
     "0x737b6ea575AD54e0c4F45c7A36Ad8c0e730aAD74": {
       "asset": "0xAF0D9D65fC54de245cdA37af3d18cbEc860A4D4b",
       "name": "wUSDR Rate Provider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": [
-        "legacy"
-      ],
+      "warnings": ["legacy"],
       "factory": "",
       "upgradeableComponents": [],
-      "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible."
+      "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible.",
+      "isAllowed": "true"
     },
     "0x1373A61449C26CC3F48C1B4c547322eDAa36eB12": {
       "asset": "0x4186BFC76E2E237523CBC30FD220FE055156b41F",
@@ -1863,7 +1841,8 @@
           "implementationReviewed": "0x1373A61449C26CC3F48C1B4c547322eDAa36eB12"
         }
       ],
-      "conclusion": "This rate Provider can be considered fit for pool operations under the assumption that the stETH/ETH peg holds at 1:1. This should be made clear to users in the Balancer Pool."
+      "conclusion": "This rate Provider can be considered fit for pool operations under the assumption that the stETH/ETH peg holds at 1:1. This should be made clear to users in the Balancer Pool.",
+      "isAllowed": "true"
     }
   },
   "zkevm": {
@@ -1884,16 +1863,15 @@
           "implementationReviewed": "0xd00b967296B6d8Ec266E4BA64594f892D03A4d0a"
         }
       ],
-      "conclusion": "Assuming a reasonable set of 3/5 multisig signers, the behavior of this Rate Provider can be deemed safe. Reasonable protections are placed upon all other actors in the system."
+      "conclusion": "Assuming a reasonable set of 3/5 multisig signers, the behavior of this Rate Provider can be deemed safe. Reasonable protections are placed upon all other actors in the system.",
+      "isAllowed": "true"
     },
     "0x4186BFC76E2E237523CBC30FD220FE055156b41F": {
       "asset": "0x8C7D118B5c47a5BCBD47cc51789558B98dAD17c5",
       "name": "RSETHRateReceiver",
       "summary": "safe",
       "review": "./rsEthRateProviderPolygonZKEVM.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -1901,43 +1879,41 @@
           "implementationReviewed": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
         }
       ],
-      "conclusion": "This rate Provider can be considered fit for pool operations under the assumption that the stETH/ETH peg holds at 1:1. This should be made clear to users in the Balancer Pool."
+      "conclusion": "This rate Provider can be considered fit for pool operations under the assumption that the stETH/ETH peg holds at 1:1. This should be made clear to users in the Balancer Pool.",
+      "isAllowed": "true"
     },
     "0x60b39BEC6AF8206d1E6E8DFC63ceA214A506D6c3": {
       "asset": "0xb23C20EFcE6e24Acca0Cef9B7B7aA196b84EC942",
       "name": "rETH Rate Receiver",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": [
-        "legacy"
-      ],
+      "warnings": ["legacy"],
       "factory": "",
       "upgradeableComponents": [],
-      "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible."
+      "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible.",
+      "isAllowed": "true"
     },
     "0x00346D2Fd4B2Dc3468fA38B857409BC99f832ef8": {
       "asset": "0x5D8cfF95D7A57c0BF50B30b43c7CC0D52825D4a9",
       "name": "wstETH Rate Receiver",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": [
-        "legacy"
-      ],
+      "warnings": ["legacy"],
       "factory": "",
       "upgradeableComponents": [],
-      "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible."
+      "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible.",
+      "isAllowed": "true"
     },
     "0x8c76aa5b78357e1fa104ea2bc4a219f0870251f1": {
       "asset": "0xb23C20EFcE6e24Acca0Cef9B7B7aA196b84EC942",
       "name": "rETH Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": [
-        "chainlink"
-      ],
+      "warnings": ["chainlink"],
       "factory": "0x4132f7AcC9dB7A6cF7BE2Dd3A9DC8b30C7E6E6c8",
       "upgradeableComponents": [],
-      "conclusion": "Chainlink Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible as this review is applicable to all Chainlink Rate Providers."
+      "conclusion": "Chainlink Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible as this review is applicable to all Chainlink Rate Providers.",
+      "isAllowed": "true"
     }
   }
 }
