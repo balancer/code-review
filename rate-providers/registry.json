@@ -1411,6 +1411,24 @@
     }
   },
   "optimism": {
+    "0x210ABdFD989f3eE5C08614a8f4e096Cf8408f5DF": {
+      "asset": "0x5A7a183B6B44Dc4EC2E3d2eF43F98C5152b1d76d",
+      "name": "inETH Rate Provider",
+      "summary": "safe",
+      "review": "./ChainLinkRateProvider.md",
+      "warnings": ["chainlink"],
+      "factory": "0x83E443EF4f9963C77bd860f94500075556668cb8",
+      "upgradeableComponents": []
+    },
+    "0xC092E0a4f5a2AdF3CF91E27cf4B7d7917D12CA2B": {
+      "asset": "0xd08C3F25862077056cb1b710937576Af899a4959",
+      "name": "instETH Rate Provider",
+      "summary": "safe",
+      "review": "./ChainLinkRateProvider.md",
+      "warnings": ["chainlink"],
+      "factory": "0x83E443EF4f9963C77bd860f94500075556668cb8",
+      "upgradeableComponents": []
+    },
     "0xe561451322a5efC51E6f8ffa558C7482c892Bc1A": {
       "asset": "0xA348700745D249c3b49D2c2AcAC9A5AE8155F826",
       "name": "WrappedUsdPlusRateProvider",
