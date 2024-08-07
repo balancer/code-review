@@ -30,6 +30,10 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
     - upgradeable component: `LiquidETHV1` ([ethereum:0xfe18aE03741a5b84e39C295Ac9C856eD7991C38e](https://etherscan.io/address/0xfe18ae03741a5b84e39c295ac9c856ed7991c38e#readProxyContract))
     - admin address: [ethereum:0x328a6715c5C0b4bc2b35FA2320b45605aB7b18bc](https://etherscan.io/address/0x328a6715c5c0b4bc2b35fa2320b45605ab7b18bc)
     - admin type: EOA
+    - comment: 
+        - Q: Could they confirm if this EOA is allowed to upgrade cdcETH? https://etherscan.io/address/0x328a6715c5c0b4bc2b35fa2320b45605ab7b18bc
+        - A: Yes, this EOA can upgrade the contract.
+        EOA is using MPC hence externally it can't be seen as controlled by multiple parties. We use institutional grade MPC wallet solution and we view this as more secure than multisig
 
 ### Oracles
 - [x] Price data is provided by an off-chain source (e.g., a Chainlink oracle, a multisig, or a network of nodes).
@@ -49,6 +53,9 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
         emit ExchangeRateUpdated(msg.sender, newExchangeRate);
     }
     ```
+    - comment: 
+        - Q: What checks they do on the exchangeRate they push to storage of cdcETH? This is an EOA https://etherscan.io/address/0x59B0189D1e5556c97637c505919518Bf25DF0Fc8 that is pushing data and I cannot see any checks on the data they push?
+        - A: The checks are built off-chain on our backend. We have set up %thresholds to check ETH reward distributed/accrued to CDCETH for the upcoming reward distribution cycle vs. the average of the previous 4. We get alerts and reward distribution requires an extra manual check if it exceeds the %threshold. This would prevent us from publishing the wrong exchangeRate on-chain.
 
 - [ ] Price data is expected to be volatile (e.g., because it represents an open market price instead of a (mostly) monotonically increasing price).
 
@@ -59,6 +66,6 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 To save time, we do not bother pointing out low-severity/informational issues or gas optimizations (unless the gas usage is particularly egregious). Instead, we focus only on high- and medium-severity findings which materially impact the contract's functionality and could harm users.
 
 ## Conclusion
-**Summary judgment: UNSAFE**
+**Summary judgment: SAFE**
 
-This rate provider currently bears risk of private key loss for upgradeability as well as data the oracle pushes. In the current form this rate provider is not suggested to be used.
+This rate provider should work well with Balancer pools. Special note should be taken for the upgradeability of the `LiquidETHV1` as the proclaimed security of the EOA cannot be verified onchain as well as the checks for the rate being pushed by the oracle. Read the section on upgradeability & oracles for more information.

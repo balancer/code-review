@@ -1111,9 +1111,9 @@
     "0x3f032432f239d86D36ccF01Fb0c86399a33BD004": {
       "asset": "0xfe18aE03741a5b84e39C295Ac9C856eD7991C38e",
       "name": "CDCETHBalancerRateProvider",
-      "summary": "unsafe",
+      "summary": "safe",
       "review": "./cdcEthRateProvider.md",
-      "warnings": [],
+      "warnings": ["eoaUpgradeable"],
       "factory": "",
       "upgradeableComponents": []
     },
