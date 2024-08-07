@@ -18,7 +18,18 @@ const schema = {
             summary: { type: "string", enum: ["safe", "unsafe"] },
             isAllowed: { type: "string", enum: ["true", "false"] },
             review: { type: "string", minLength: 1, pattern: "^\\./"},
-            warnings: { type: "array", items: { type: "string" } },
+            warnings: {
+              type: "object",
+              properties: {
+                legacy: { type: "string" },
+                donation: { type: "string" },
+                only18decimals: { type: "string" },
+                eoaUpgradeable: { type: "string" },
+                chainlink: { type: "string" },
+              },
+              additionalProperties: false,
+              minProperties: 0
+            },
             factory: { type: "string" },
             upgradeableComponents: {
               type: "array",

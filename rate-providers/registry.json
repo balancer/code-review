@@ -5,7 +5,7 @@
       "name": "AnkrETHRateProvider",
       "summary": "safe",
       "review": "./AnkrETHRateProvider.md",
-      "warnings": [],
+      "warnings": {},
       "factory": "",
       "upgradeableComponents": [
         {
@@ -25,7 +25,7 @@
       "name": "BalancerRateProvider",
       "summary": "safe",
       "review": "./BalancerRateProvider_USDF.md",
-      "warnings": [],
+      "warnings": {},
       "factory": "",
       "upgradeableComponents": [
         {
@@ -41,7 +41,7 @@
       "name": "WrappedUsdPlusRateProvider",
       "summary": "safe",
       "review": "./WrappedUsdPlusRateProvider.md",
-      "warnings": [],
+      "warnings": {},
       "factory": "",
       "upgradeableComponents": [
         {
@@ -69,7 +69,9 @@
       "name": "PlsRdntTokenV2",
       "summary": "safe",
       "review": "./PlsRdntTokenV2.md",
-      "warnings": ["donation"],
+      "warnings": {
+        "donation": "a token donation can change the rate"
+      },
       "factory": "",
       "upgradeableComponents": [
         {
@@ -85,7 +87,9 @@
       "name": "RocketBalancerRateProvider",
       "summary": "safe",
       "review": "./rETHRateProvider.md",
-      "warnings": ["donation"],
+      "warnings": {
+        "donation": "a token donation can change the rate"
+      },
       "factory": "",
       "upgradeableComponents": [
         {
@@ -101,7 +105,9 @@
       "name": "RocketBalancerRateProvider OLD",
       "summary": "unsafe",
       "review": "./rETHRateProvider.md",
-      "warnings": ["donation"],
+      "warnings": {
+        "donation": "a token donation can change the rate"
+      },
       "factory": "",
       "upgradeableComponents": [],
       "conclusion": "Rocket Pool protocol has been operational for many years and it's protocol operations have been sound. The calculated rate gets bridged to Arbitrum via the suggested methods by Arbitrum (see: https://docs.arbitrum.io/arbos/l1-to-l2-messaging). The core check that determines who is allowed to update the rate on Arbitrum is implemented. This rate Provider should work well with Balancer pools. ",
@@ -112,7 +118,7 @@
       "name": "BalancerAMM",
       "summary": "safe",
       "review": "./sweepRateProvider.md",
-      "warnings": [],
+      "warnings": {},
       "factory": "",
       "upgradeableComponents": [
         {
@@ -128,7 +134,7 @@
       "name": "ChainlinkRateProvider",
       "summary": "safe",
       "review": "./wstethRateProvider.md",
-      "warnings": [],
+      "warnings": {},
       "factory": "",
       "upgradeableComponents": [],
       "conclusion": "This rateProvider has been operational since Aug-12-2021 (mainnet) & Aug-23-2022 (Arbitrum) and has passed the test of time. It is being added to this repo without a review being included.",
@@ -139,7 +145,7 @@
       "name": "xRenzoDeposit",
       "summary": "safe",
       "review": "./ezETHRateProviderArbitrum.md",
-      "warnings": [],
+      "warnings": {},
       "factory": "",
       "upgradeableComponents": [
         {
@@ -163,7 +169,7 @@
       "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./statATokenLMRateProvider.md",
-      "warnings": [],
+      "warnings": {},
       "factory": "",
       "upgradeableComponents": [
         {
@@ -183,7 +189,7 @@
       "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./statATokenLMRateProvider.md",
-      "warnings": [],
+      "warnings": {},
       "factory": "",
       "upgradeableComponents": [
         {
@@ -203,7 +209,7 @@
       "name": "MergedAdapterWithoutRoundsSusdeRateProviderV1",
       "summary": "safe",
       "review": "./sUSDERateProvider.md",
-      "warnings": [],
+      "warnings": {},
       "factory": "",
       "upgradeableComponents": [
         {
@@ -219,7 +225,7 @@
       "name": "StakePoolRate",
       "summary": "safe",
       "review": "./jitoSOLRateProvider.md",
-      "warnings": [],
+      "warnings": {},
       "factory": "",
       "upgradeableComponents": [
         {
@@ -235,7 +241,9 @@
       "name": "cbETH Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": ["chainlink"],
+      "warnings": {
+        "chainlink": "added without explicit review"
+      },
       "factory": "0x5DbAd78818D4c8958EfF2d5b95b28385A22113Cd",
       "upgradeableComponents": [],
       "conclusion": "Chainlink Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible as this review is applicable to all Chainlink Rate Providers.",
@@ -246,7 +254,9 @@
       "name": "sfrxETH Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": ["chainlink"],
+      "warnings": {
+        "chainlink": "added without explicit review"
+      },
       "factory": "0x5DbAd78818D4c8958EfF2d5b95b28385A22113Cd",
       "upgradeableComponents": [],
       "conclusion": "Chainlink Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible as this review is applicable to all Chainlink Rate Providers.",
@@ -257,7 +267,9 @@
       "name": "sFRAX Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": ["chainlink"],
+      "warnings": {
+        "chainlink": "added without explicit review"
+      },
       "factory": "0x5DbAd78818D4c8958EfF2d5b95b28385A22113Cd",
       "upgradeableComponents": [],
       "conclusion": "Chainlink Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible as this review is applicable to all Chainlink Rate Providers.",
@@ -268,7 +280,9 @@
       "name": "sFRAX Rate Provider Duplicate",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": ["chainlink"],
+      "warnings": {
+        "chainlink": "added without explicit review"
+      },
       "factory": "0x5DbAd78818D4c8958EfF2d5b95b28385A22113Cd",
       "upgradeableComponents": [],
       "conclusion": "Chainlink Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible as this review is applicable to all Chainlink Rate Providers.",
@@ -279,7 +293,9 @@
       "name": "ETHx Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": ["chainlink"],
+      "warnings": {
+        "chainlink": "added without explicit review"
+      },
       "factory": "0x5DbAd78818D4c8958EfF2d5b95b28385A22113Cd",
       "upgradeableComponents": [],
       "conclusion": "Chainlink Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible as this review is applicable to all Chainlink Rate Providers.",
@@ -290,7 +306,9 @@
       "name": "woETH Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": ["chainlink"],
+      "warnings": {
+        "chainlink": "added without explicit review"
+      },
       "factory": "0x5DbAd78818D4c8958EfF2d5b95b28385A22113Cd",
       "upgradeableComponents": [],
       "conclusion": "Chainlink Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible as this review is applicable to all Chainlink Rate Providers.",
@@ -301,7 +319,9 @@
       "name": "weETH Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": ["chainlink"],
+      "warnings": {
+        "chainlink": "added without explicit review"
+      },
       "factory": "0x5DbAd78818D4c8958EfF2d5b95b28385A22113Cd",
       "upgradeableComponents": [],
       "conclusion": "Chainlink Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible as this review is applicable to all Chainlink Rate Providers.",
@@ -312,7 +332,7 @@
       "name": "PriceFeed",
       "summary": "safe",
       "review": "./StakewiseRateProviderArbitrum.md",
-      "warnings": [],
+      "warnings": {},
       "factory": "",
       "upgradeableComponents": [
         {
@@ -328,7 +348,9 @@
       "name": "RsETHRateProvider",
       "summary": "safe",
       "review": "./rsETHRateProviderArbitrum.md",
-      "warnings": ["donation"],
+      "warnings": {
+        "donation": "a token donation can change the rate"
+      },
       "factory": "",
       "upgradeableComponents": [
         {
@@ -360,7 +382,7 @@
       "name": "InceptionRatioFeed",
       "summary": "safe",
       "review": "./InceptionLRTArbitrum.md",
-      "warnings": [],
+      "warnings": {},
       "factory": "",
       "upgradeableComponents": [
         {
@@ -376,7 +398,7 @@
       "name": "InceptionRatioFeed",
       "summary": "safe",
       "review": "./InceptionLRTArbitrum.md",
-      "warnings": [],
+      "warnings": {},
       "factory": "",
       "upgradeableComponents": [
         {
@@ -392,7 +414,7 @@
       "name": "wUSDM",
       "summary": "safe",
       "review": "./wUSDMRateProvider.md",
-      "warnings": [],
+      "warnings": {},
       "factory": "",
       "upgradeableComponents": [
         {
@@ -408,7 +430,7 @@
       "name": "GTokenRateProvider",
       "summary": "safe",
       "review": "./GTokenRateProvider.md",
-      "warnings": [],
+      "warnings": {},
       "factory": "",
       "upgradeableComponents": [
         {
@@ -426,7 +448,7 @@
       "name": "AnkrETHRateProvider",
       "summary": "safe",
       "review": "./AnkrETHRateProvider.md",
-      "warnings": [],
+      "warnings": {},
       "factory": "",
       "upgradeableComponents": [
         {
@@ -446,7 +468,9 @@
       "name": "GGAVAXRateProvider",
       "summary": "safe",
       "review": "./GGAVAXRateProvider.md",
-      "warnings": ["donation"],
+      "warnings": {
+        "donation": "a token donation can change the rate"
+      },
       "factory": "",
       "upgradeableComponents": [
         {
@@ -462,7 +486,7 @@
       "name": "YyAvaxRateProvider",
       "summary": "safe",
       "review": "./YyAvaxRateProvider.md",
-      "warnings": [],
+      "warnings": {},
       "factory": "",
       "upgradeableComponents": [
         {
@@ -478,7 +502,7 @@
       "name": "BalancerAMM",
       "summary": "safe",
       "review": "./sweepRateProvider.md",
-      "warnings": [],
+      "warnings": {},
       "factory": "",
       "upgradeableComponents": [
         {
@@ -494,7 +518,9 @@
       "name": "sAVAX Rate Provider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": ["legacy"],
+      "warnings": {
+        "legacy": "added before structured review process"
+      },
       "factory": "",
       "upgradeableComponents": [],
       "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible.",
@@ -505,7 +531,9 @@
       "name": "ankrAVAX Rate Provider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": ["legacy"],
+      "warnings": {
+        "legacy": "added before structured review process"
+      },
       "factory": "",
       "upgradeableComponents": [],
       "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible.",
@@ -518,7 +546,9 @@
       "name": "wUSD+ Overnight Rate Provider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": ["legacy"],
+      "warnings": {
+        "legacy": "added before structured review process"
+      },
       "factory": "",
       "upgradeableComponents": [],
       "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible.",
@@ -529,7 +559,7 @@
       "name": "DSRBalancerRateProviderAdapter",
       "summary": "safe",
       "review": "./DSRRateProvider.md",
-      "warnings": [],
+      "warnings": {},
       "factory": "",
       "upgradeableComponents": [],
       "conclusion": "The Rate Providers are expected to integrate well with Balancer pools. The non-upgradeability of the pricing pipeline serves as an additional feature that helps minimize potential risks associated with supplying inaccurate data. To maintain data accuracy on L2, the `refresh` function on the L1  forwarder contracts [DSROracleForwarderBase](https://etherscan.io/address/0x8Ed551D485701fe489c215E13E42F6fc59563e0e#code) & [DSROracleForwarderOptimism](https://etherscan.io/address/0x4042127DecC0cF7cc0966791abebf7F76294DeF3#writeContract) should be invoked regularly.",
@@ -540,7 +570,7 @@
       "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./statATokenLMRateProvider.md",
-      "warnings": [],
+      "warnings": {},
       "factory": "",
       "upgradeableComponents": [
         {
@@ -560,7 +590,9 @@
       "name": "cbETH Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": ["chainlink"],
+      "warnings": {
+        "chainlink": "added without explicit review"
+      },
       "factory": "0x0A973B6DB16C2ded41dC91691Cc347BEb0e2442B",
       "upgradeableComponents": [],
       "conclusion": "Chainlink Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible as this review is applicable to all Chainlink Rate Providers.",
@@ -571,7 +603,9 @@
       "name": "weETH Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": ["chainlink"],
+      "warnings": {
+        "chainlink": "added without explicit review"
+      },
       "factory": "0x0A973B6DB16C2ded41dC91691Cc347BEb0e2442B",
       "upgradeableComponents": [],
       "conclusion": "Chainlink Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible as this review is applicable to all Chainlink Rate Providers.",
@@ -582,7 +616,9 @@
       "name": "rETH RocketPool Rate Provider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": ["legacy"],
+      "warnings": {
+        "legacy": "added before structured review process"
+      },
       "factory": "",
       "upgradeableComponents": [],
       "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible.",
@@ -595,7 +631,9 @@
       "name": "asETHRateProvider",
       "summary": "safe",
       "review": "./asETHRateProvider.md",
-      "warnings": ["donation"],
+      "warnings": {
+        "donation": "a token donation can change the rate"
+      },
       "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
       "upgradeableComponents": [
         {
@@ -615,7 +653,9 @@
       "name": "BalancerRateProxy",
       "summary": "safe",
       "review": "./BalancerRateProxy_uniETH.md",
-      "warnings": ["donation"],
+      "warnings": {
+        "donation": "a token donation can change the rate"
+      },
       "factory": "",
       "upgradeableComponents": [
         {
@@ -631,7 +671,7 @@
       "name": "ETHxRateProvider",
       "summary": "safe",
       "review": "./ETHxRateProvider.md",
-      "warnings": [],
+      "warnings": {},
       "factory": "",
       "upgradeableComponents": [
         {
@@ -647,7 +687,9 @@
       "name": "QueenRateProvider",
       "summary": "safe",
       "review": "./QueenRateProvider.md",
-      "warnings": ["donation"],
+      "warnings": {
+        "donation": "a token donation can change the rate"
+      },
       "factory": "",
       "upgradeableComponents": [],
       "conclusion": "The `QueenRateProvider` is confirmed to be safe for use in Balancer Pools. It implements the required bare minimum requirments, does not contain any oracles, and is not upgradeable.There is a potential risk of donation attacks, but these only impact downstream integrations (not Balancer directly). Integrators should be wary of the underlying token's manipulability via donations, which will propagate into the BPT price itself, and assess the unique risk this poses to their respective protocols.This review also makes no determination as to the security of the Queen token itself or the Tranchess protocol, as it is laser-focused on Balancer integration with the `QueenRateProvider`. Before investing your funds in any DeFi protocol, please consult its source code, documentation, and historical audits.",
@@ -658,7 +700,7 @@
       "name": "TBYRateProvider",
       "summary": "safe",
       "review": "./TBYRateProvider.md",
-      "warnings": [],
+      "warnings": {},
       "factory": "0x97390050B63eb56C0e39bB0D8d364333Eb3AFD12",
       "upgradeableComponents": [],
       "conclusion": "The `TBYRateProvider` has been confirmed to be safe given some fundamental trust assumptions. The rateProvider satisfies the minimum requirements and there are reasonable protections in place on rate updates, but due to interest rate calculations occuring off-chain, the user must assume that the Bloom team's multisig correctly calculates this average rate off-chain, using Chainlink's price feed, and accurately updates the rate.",
@@ -669,7 +711,7 @@
       "name": "TBYRateProvider",
       "summary": "safe",
       "review": "./TBYRateProvider.md",
-      "warnings": [],
+      "warnings": {},
       "factory": "0x97390050B63eb56C0e39bB0D8d364333Eb3AFD12",
       "upgradeableComponents": [],
       "conclusion": "The `TBYRateProvider` has been confirmed to be safe given some fundamental trust assumptions. The rateProvider satisfies the minimum requirements and there are reasonable protections in place on rate updates, but due to interest rate calculations occuring off-chain, the user must assume that the Bloom team's multisig correctly calculates this average rate off-chain, using Chainlink's price feed, and accurately updates the rate.",
@@ -680,7 +722,7 @@
       "name": "SavingsDAIRateProvider",
       "summary": "safe",
       "review": "./SavingsDAIRateProvider.md",
-      "warnings": [],
+      "warnings": {},
       "factory": "",
       "upgradeableComponents": [],
       "conclusion": "This is a highly minimal Rate Provider that queries the exchange rate directly from the `sDAI` token, which computes/queries it directly from the DAI Savings Rate (DSR) module. There are no privileges, upgradeability, or oracles anywhere in the system, and prices are fetched from verifiable on-chain data. The largest \"threat\" lies in MakerDAO's ability to set the Savings Rate, but this is hardly a threat at all. MakerDAO is one of the largest and longest-standing DAOs in DeFi, and the Savings Rate is fundamental in governing the `DAI` token.This Rate Provider sets the standard to which others should be measured.",
@@ -691,7 +733,9 @@
       "name": "wUSDKRateProvider",
       "summary": "safe",
       "review": "./wUSDKRateProvider.md",
-      "warnings": ["donation"],
+      "warnings": {
+        "donation": "a token donation can change the rate"
+      },
       "factory": "",
       "upgradeableComponents": [],
       "conclusion": "`RateProvider` by Kuma Protocol is safe to use in Balancer Pools. All minimum requirements are met. All contracts involved in pricing are non-upgradeable and don't rely on oracles or other external sources of data. However, users should be aware that this rate provider is susceptible to donation attacks. This will not impact Balancer Pool's, but could have negative affects on downstream integrations. Users must assess the unique risk this poses to their respective protocols.This review also makes no determination as to the security of the wUSK token itself or the Kuma protocol, as it is laser-focused on Balancer integration with the `RateProvider` of wUSK. Before investing your funds in any DeFi protocol, please consult its source code, documentation, and historical audits.",
@@ -702,7 +746,9 @@
       "name": "TruMaticRateProvider",
       "summary": "safe",
       "review": "./TruMaticRateProvider.md",
-      "warnings": ["donation"],
+      "warnings": {
+        "donation": "a token donation can change the rate"
+      },
       "factory": "",
       "upgradeableComponents": [
         {
@@ -730,7 +776,9 @@
       "name": "MevEthRateProvider",
       "summary": "safe",
       "review": "./MevEthRateProvider.md",
-      "warnings": ["donation"],
+      "warnings": {
+        "donation": "a token donation can change the rate"
+      },
       "factory": "",
       "upgradeableComponents": [],
       "conclusion": "This is a minimal Rate Provider that computes the exchange rate using a ratio of protocol-owned assets to minted shares. The system is not upgradeable and does not utilize oracles; all price updates are accompanied by actual asset inflows. There are some privileged operators in the system who have the power to rehypothecate deposited ETH for staking purposes, but this is to be expected from an ETH staking system.There is a potential risk of donation attacks, but these are privileged and only impact downstream integrations (not Balancer directly). Integrators should be wary of the underlying token's manipulability via donations, which will propagate into the BPT price itself, and assess the unique risk this poses to their respective protocols.",
@@ -741,7 +789,7 @@
       "name": "WeETH",
       "summary": "safe",
       "review": "./WeETH.md",
-      "warnings": [],
+      "warnings": {},
       "factory": "",
       "upgradeableComponents": [
         {
@@ -777,7 +825,7 @@
       "name": "PriceFeed",
       "summary": "safe",
       "review": "./osEthRateProvider.md",
-      "warnings": [],
+      "warnings": {},
       "factory": "",
       "upgradeableComponents": [],
       "conclusion": "This is a solid rateProvider that reports the osETH <> ETH exchange rate. While part of the price data is based on off-chain components, the off-chain component is guarded behind solid validity checks. The rate Provider should work well with pool operations. ",
@@ -788,7 +836,9 @@
       "name": "BalancerRateProvider",
       "summary": "safe",
       "review": "./ezETHRateProvider.md",
-      "warnings": ["donation"],
+      "warnings": {
+        "donation": "a token donation can change the rate"
+      },
       "factory": "",
       "upgradeableComponents": [
         {
@@ -828,7 +878,9 @@
       "name": "RsETHRateProvider",
       "summary": "safe",
       "review": "./rsETHRateProvider.md",
-      "warnings": ["donation"],
+      "warnings": {
+        "donation": "a token donation can change the rate"
+      },
       "factory": "",
       "upgradeableComponents": [
         {
@@ -860,7 +912,9 @@
       "name": "svETHRateProvider",
       "summary": "safe",
       "review": "./sveth.md",
-      "warnings": ["donation"],
+      "warnings": {
+        "donation": "a token donation can change the rate"
+      },
       "factory": "",
       "upgradeableComponents": [
         {
@@ -876,7 +930,8 @@
       "name": "RswETH",
       "summary": "safe",
       "review": "./rswethRateProvider.md",
-      "warnings": [""],
+      "warnings": {
+      },
       "factory": "",
       "upgradeableComponents": [
         {
@@ -900,7 +955,9 @@
       "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./sDOLARateProvider.md",
-      "warnings": ["donation"],
+      "warnings": {
+        "donation": "a token donation can change the rate"
+      },
       "factory": "",
       "upgradeableComponents": [],
       "conclusion": "This Rate Provider should work well with Balancer pools. The Rate Provider and downstream contracts not being upgradeable decrease the potential attack surface and make the Rate Provider immutable. ",
@@ -911,7 +968,7 @@
       "name": "BalancerAMM",
       "summary": "safe",
       "review": "./sweepRateProvider.md",
-      "warnings": [],
+      "warnings": {},
       "factory": "",
       "upgradeableComponents": [
         {
@@ -927,7 +984,9 @@
       "name": "InstETHRateProvider",
       "summary": "safe",
       "review": "./InceptionLRTRateProvider.md",
-      "warnings": ["donation"],
+      "warnings": {
+        "donation": "a token donation can change the rate"
+      },
       "factory": "",
       "upgradeableComponents": [
         {
@@ -947,7 +1006,9 @@
       "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./statATokenLMRateProvider.md",
-      "warnings": [""],
+      "warnings": {
+
+      },
       "factory": "",
       "upgradeableComponents": [
         {
@@ -967,7 +1028,7 @@
       "name": "GenEthRateProvider",
       "summary": "safe",
       "review": "./genETHRateProvider.md",
-      "warnings": [],
+      "warnings": {},
       "factory": "",
       "upgradeableComponents": [
         {
@@ -991,7 +1052,7 @@
       "name": "WstETHRateProvider",
       "summary": "safe",
       "review": "./wstethRateProvider.md",
-      "warnings": [],
+      "warnings": {},
       "factory": "",
       "upgradeableComponents": [],
       "conclusion": "This rateProvider has been operational since Aug-12-2021 (mainnet) & Aug-23-2022 (Arbitrum) and has passed the test of time. It is being added to this repo without a review being included.",
@@ -1002,7 +1063,9 @@
       "name": "pufETHRateProvider",
       "summary": "safe",
       "review": "./PufEthRateProvider.md",
-      "warnings": ["donation"],
+      "warnings": {
+        "donation": "a token donation can change the rate"
+      },
       "factory": "",
       "upgradeableComponents": [
         {
@@ -1022,7 +1085,7 @@
       "name": "MswETHRateProvider",
       "summary": "safe",
       "review": "./MagpieMswETHRateProvider.md",
-      "warnings": [],
+      "warnings": {},
       "factory": "",
       "upgradeableComponents": [
         {
@@ -1046,7 +1109,7 @@
       "name": "./MagpieMstETHRateProvider.md",
       "summary": "safe",
       "review": "./MagpieMstETHRateProvider.md",
-      "warnings": [],
+      "warnings": {},
       "factory": "",
       "upgradeableComponents": [
         {
@@ -1070,7 +1133,9 @@
       "name": "EthenaBalancerRateProvider",
       "summary": "safe",
       "review": "./sUSDERateProviderMainnet.md",
-      "warnings": ["donation"],
+      "warnings": {
+        "donation": "a token donation can change the rate"
+      },
       "factory": "",
       "upgradeableComponents": [],
       "conclusion": "This Rate Provider should work well with Balancer pools. It's approach towards handling protocol internal donations for rate increases has a smoothing effect. ",
@@ -1081,7 +1146,9 @@
       "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./sFRAXRateProvider.md",
-      "warnings": ["donation"],
+      "warnings": {
+        "donation": "a token donation can change the rate"
+      },
       "factory": "",
       "upgradeableComponents": [],
       "conclusion": "This rate provider should work well with Balancer pools. No part of the pricing pipeline is upgradeable, reducing the surface for inaccurate rate data being supplied. Also a spiking rate due to reward donations does not happen as it scales with time passed as can be seen in `calculateRewardsToDistribute`. ",
@@ -1092,7 +1159,9 @@
       "name": "InankrETHRateProvider",
       "summary": "safe",
       "review": "./InceptionLRTRateProvider.md",
-      "warnings": ["donation"],
+      "warnings": {
+        "donation": "a token donation can change the rate"
+      },
       "factory": "",
       "upgradeableComponents": [
         {
@@ -1112,7 +1181,9 @@
       "name": "RocketBalancerRETHRateProvider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": ["legacy"],
+      "warnings": {
+        "legacy": "added before structured review process"
+      },
       "factory": "",
       "upgradeableComponents": [],
       "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible.",
@@ -1123,7 +1194,9 @@
       "name": "sfrxETH ERC4626RateProvider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": ["legacy"],
+      "warnings": {
+        "legacy": "added before structured review process"
+      },
       "factory": "",
       "upgradeableComponents": [],
       "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible.",
@@ -1134,7 +1207,9 @@
       "name": "AnkrETHRateProvider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": ["legacy"],
+      "warnings": {
+        "legacy": "added before structured review process"
+      },
       "factory": "",
       "upgradeableComponents": [],
       "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible.",
@@ -1145,7 +1220,9 @@
       "name": "CbEthRateProvider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": ["legacy"],
+      "warnings": {
+        "legacy": "added before structured review process"
+      },
       "factory": "",
       "upgradeableComponents": [],
       "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible.",
@@ -1156,7 +1233,9 @@
       "name": "Stafi RETHRateProvider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": ["legacy"],
+      "warnings": {
+        "legacy": "added before structured review process"
+      },
       "factory": "",
       "upgradeableComponents": [],
       "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible.",
@@ -1167,7 +1246,9 @@
       "name": "wjAuraRateProvider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": ["legacy"],
+      "warnings": {
+        "legacy": "added before structured review process"
+      },
       "factory": "",
       "upgradeableComponents": [],
       "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible.",
@@ -1178,7 +1259,9 @@
       "name": "swETH Rate Provider TransparentUpgradeableProxy",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": ["legacy"],
+      "warnings": {
+        "legacy": "added before structured review process"
+      },
       "factory": "",
       "upgradeableComponents": [],
       "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible.",
@@ -1189,7 +1272,9 @@
       "name": "wBETH BinanceBeaconEthRateProvider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": ["legacy"],
+      "warnings": {
+        "legacy": "added before structured review process"
+      },
       "factory": "",
       "upgradeableComponents": [],
       "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible.",
@@ -1200,7 +1285,9 @@
       "name": "Bitfrost vETHRateProvider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": ["legacy"],
+      "warnings": {
+        "legacy": "added before structured review process"
+      },
       "factory": "",
       "upgradeableComponents": [],
       "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible.",
@@ -1211,7 +1298,9 @@
       "name": "unshETHRateProvider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": ["legacy"],
+      "warnings": {
+        "legacy": "added before structured review process"
+      },
       "factory": "",
       "upgradeableComponents": [],
       "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible.",
@@ -1222,7 +1311,9 @@
       "name": "SyrupRateProvider",
       "summary": "safe",
       "review": "./SyrupRateProvider.md",
-      "warnings": ["donation"],
+      "warnings": {
+        "donation": "a token donation can change the rate"
+      },
       "factory": "",
       "upgradeableComponents": [
         {
@@ -1250,7 +1341,7 @@
       "name": "VaultRateOracle",
       "summary": "safe",
       "review": "./MellowRateProviders.md",
-      "warnings": [],
+      "warnings": {},
       "factory": "",
       "upgradeableComponents": [
         {
@@ -1266,7 +1357,7 @@
       "name": "VaultRateOracle",
       "summary": "safe",
       "review": "./MellowRateProviders.md",
-      "warnings": [],
+      "warnings": {},
       "factory": "",
       "upgradeableComponents": [
         {
@@ -1282,7 +1373,7 @@
       "name": "VaultRateOracle",
       "summary": "safe",
       "review": "./MellowRateProviders.md",
-      "warnings": [],
+      "warnings": {},
       "factory": "",
       "upgradeableComponents": [
         {
@@ -1298,7 +1389,7 @@
       "name": "VaultRateOracle",
       "summary": "safe",
       "review": "./MellowRateProviders.md",
-      "warnings": [],
+      "warnings": {},
       "factory": "",
       "upgradeableComponents": [
         {
@@ -1316,7 +1407,9 @@
       "name": "sFTMx Rateprovider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": ["legacy"],
+      "warnings": {
+        "legacy": "added before structured review process"
+      },
       "factory": "",
       "upgradeableComponents": [],
       "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible.",
@@ -1329,7 +1422,7 @@
       "name": "ChainlinkRateProvider",
       "summary": "safe",
       "review": "./FraxtalPriceFeedProvider.md",
-      "warnings": [],
+      "warnings": {},
       "factory": "0x3f170631ed9821Ca51A59D996aB095162438DC10",
       "upgradeableComponents": [
         {
@@ -1345,7 +1438,7 @@
       "name": "ChainlinkRateProvider",
       "summary": "safe",
       "review": "./FraxtalPriceFeedProvider.md",
-      "warnings": [],
+      "warnings": {},
       "factory": "0x3f170631ed9821Ca51A59D996aB095162438DC10",
       "upgradeableComponents": [
         {
@@ -1361,7 +1454,7 @@
       "name": "ChainlinkRateProvider",
       "summary": "safe",
       "review": "./FraxtalPriceFeedProvider.md",
-      "warnings": [],
+      "warnings": {},
       "factory": "0x3f170631ed9821Ca51A59D996aB095162438DC10",
       "upgradeableComponents": [
         {
@@ -1377,7 +1470,7 @@
       "name": "ChainlinkRateProvider",
       "summary": "safe",
       "review": "./FraxtalPriceFeedProvider.md",
-      "warnings": [],
+      "warnings": {},
       "factory": "0x3f170631ed9821Ca51A59D996aB095162438DC10",
       "upgradeableComponents": [
         {
@@ -1395,7 +1488,10 @@
       "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./SavingsDAIRateProviderGnosis.md",
-      "warnings": ["donation", "only18decimals"],
+      "warnings": {
+        "donation": "a token donation can change the rate",
+        "only18decimals": "only supports 18 decimals"
+      },
       "factory": "",
       "upgradeableComponents": [],
       "conclusion": "This is a minimal ERC-4626 Rate Provider that computes the exchange rate using a ratio of deposited assets to minted shares. There are no privileges, upgradeability, or oracles anywhere in the system.There is a potential risk of donation attacks, but these only impact downstream integrations (not Balancer directly). Integrators should be wary of the underlying token's manipulability via donations, which will propagate into the BPT price itself, and assess the unique risk this poses to their respective protocols.WARNING: This Rate Provider targets an ERC-4626 Vault whose underlying `asset` has 18 decimals. It will not work with any ERC-4626 Vault whose underlying `asset` has more or fewer than 18 decimals.",
@@ -1406,7 +1502,10 @@
       "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./stAgEurRateProvider.md",
-      "warnings": ["donation", "only18decimals"],
+      "warnings": {
+        "donation": "a token donation can change the rate",
+        "only18decimals": "only supports 18 decimals"
+      },
       "factory": "",
       "upgradeableComponents": [
         {
@@ -1426,7 +1525,9 @@
       "name": "wstETH Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": ["chainlink"],
+      "warnings": {
+        "chainlink": "added without explicit review"
+      },
       "factory": "",
       "upgradeableComponents": [],
       "conclusion": "Chainlink Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible as this review is applicable to all Chainlink Rate Providers.",
@@ -1437,7 +1538,9 @@
       "name": "EURe Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": ["chainlink"],
+      "warnings": {
+        "chainlink": "added without explicit review"
+      },
       "factory": "",
       "upgradeableComponents": [],
       "conclusion": "Chainlink Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible as this review is applicable to all Chainlink Rate Providers.",
@@ -1448,7 +1551,7 @@
       "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./statATokenLMRateProvider.md",
-      "warnings": [],
+      "warnings": {},
       "factory": "",
       "upgradeableComponents": [
         {
@@ -1468,7 +1571,7 @@
       "name": "TollgateChronicleRateProvider",
       "summary": "safe",
       "review": "./TollgateChronicleRateProvider.md",
-      "warnings": [],
+      "warnings": {},
       "factory": "",
       "upgradeableComponents": [],
       "conclusion": "This rate provider should work well with Balancer pools. The oracle providing the rate data has various guardrails in place ensuring the integrity of the rate being provided. The `owner` of the rate provider has the capability to revert the call to `getRate`. However this potential revert scenario is guarded behind a Multisig of [2/6] for reth and [2/6] for GBP.",
@@ -1479,7 +1582,7 @@
       "name": "TollgateChronicleRateProvider",
       "summary": "safe",
       "review": "./TollgateChronicleRateProvider.md",
-      "warnings": [],
+      "warnings": {},
       "factory": "",
       "upgradeableComponents": [],
       "conclusion": "This rate provider should work well with Balancer pools. The oracle providing the rate data has various guardrails in place ensuring the integrity of the rate being provided. The `owner` of the rate provider has the capability to revert the call to `getRate`. However this potential revert scenario is guarded behind a Multisig of [2/6] for reth and [2/6] for GBP.",
@@ -1492,7 +1595,7 @@
       "name": "Api3AggregatorAdaptor",
       "summary": "safe",
       "review": "./ezETHRateProviderMode.md",
-      "warnings": [],
+      "warnings": {},
       "factory": "",
       "upgradeableComponents": [],
       "conclusion": "This rate provider should work well with Balancer pools. API3 updates the rate on mode regularly and has various protections in place to ensure the correct values are bridged accurately. ",
@@ -1505,7 +1608,7 @@
       "name": "WrappedUsdPlusRateProvider",
       "summary": "safe",
       "review": "./WrappedUsdPlusRateProvider.md",
-      "warnings": [],
+      "warnings": {},
       "factory": "",
       "upgradeableComponents": [
         {
@@ -1533,7 +1636,9 @@
       "name": "StErnRateProvider",
       "summary": "safe",
       "review": "./stERNRateProvider.md",
-      "warnings": ["donation"],
+      "warnings": {
+        "donation": "a token donation can change the rate"
+      },
       "factory": "",
       "upgradeableComponents": [
         {
@@ -1553,7 +1658,7 @@
       "name": "BalancerAMM",
       "summary": "safe",
       "review": "./sweepRateProvider.md",
-      "warnings": [],
+      "warnings": {},
       "factory": "",
       "upgradeableComponents": [
         {
@@ -1569,7 +1674,7 @@
       "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./statATokenLMRateProvider.md",
-      "warnings": [],
+      "warnings": {},
       "factory": "",
       "upgradeableComponents": [
         {
@@ -1589,7 +1694,7 @@
       "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./statATokenLMRateProvider.md",
-      "warnings": [],
+      "warnings": {},
       "factory": "",
       "upgradeableComponents": [
         {
@@ -1609,7 +1714,7 @@
       "name": "DSRBalancerRateProviderAdapter",
       "summary": "safe",
       "review": "./DSRRateProvider.md",
-      "warnings": [],
+      "warnings": {},
       "factory": "",
       "upgradeableComponents": [],
       "conclusion": "The Rate Providers are expected to integrate well with Balancer pools. The non-upgradeability of the pricing pipeline serves as an additional feature that helps minimize potential risks associated with supplying inaccurate data. To maintain data accuracy on L2, the `refresh` function on the L1  forwarder contracts [DSROracleForwarderBase](https://etherscan.io/address/0x8Ed551D485701fe489c215E13E42F6fc59563e0e#code) & [DSROracleForwarderOptimism](https://etherscan.io/address/0x4042127DecC0cF7cc0966791abebf7F76294DeF3#writeContract) should be invoked regularly.",
@@ -1620,7 +1725,9 @@
       "name": "wstETH Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": ["chainlink"],
+      "warnings": {
+        "chainlink": "added without explicit review"
+      },
       "factory": "0x83E443EF4f9963C77bd860f94500075556668cb8",
       "upgradeableComponents": [],
       "conclusion": "Chainlink Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible as this review is applicable to all Chainlink Rate Providers.",
@@ -1631,7 +1738,9 @@
       "name": "sfrxETH Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": ["chainlink"],
+      "warnings": {
+        "chainlink": "added without explicit review"
+      },
       "factory": "0x83E443EF4f9963C77bd860f94500075556668cb8",
       "upgradeableComponents": [],
       "conclusion": "Chainlink Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible as this review is applicable to all Chainlink Rate Providers.",
@@ -1642,7 +1751,9 @@
       "name": "sFRAX Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": ["chainlink"],
+      "warnings": {
+        "chainlink": "added without explicit review"
+      },
       "factory": "0x83E443EF4f9963C77bd860f94500075556668cb8",
       "upgradeableComponents": [],
       "conclusion": "Chainlink Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible as this review is applicable to all Chainlink Rate Providers.",
@@ -1653,7 +1764,9 @@
       "name": "sFRAX Rate Provider Duplicate",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": ["chainlink"],
+      "warnings": {
+        "chainlink": "added without explicit review"
+      },
       "factory": "0x83E443EF4f9963C77bd860f94500075556668cb8",
       "upgradeableComponents": [],
       "conclusion": "Chainlink Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible as this review is applicable to all Chainlink Rate Providers.",
@@ -1664,7 +1777,9 @@
       "name": "rETH RocketPool Rate Provider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": ["legacy"],
+      "warnings": {
+        "legacy": "added before structured review process"
+      },
       "factory": "",
       "upgradeableComponents": [],
       "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible.",
@@ -1675,7 +1790,9 @@
       "name": "ankrETH Staking Rate Provider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": ["legacy"],
+      "warnings": {
+        "legacy": "added before structured review process"
+      },
       "factory": "",
       "upgradeableComponents": [],
       "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible.",
@@ -1686,7 +1803,9 @@
       "name": "weETH Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": ["chainlink"],
+      "warnings": {
+        "chainlink": "added without explicit review"
+      },
       "factory": "0x83E443EF4f9963C77bd860f94500075556668cb8",
       "upgradeableComponents": [],
       "conclusion": "Chainlink Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible as this review is applicable to all Chainlink Rate Providers.",
@@ -1699,7 +1818,9 @@
       "name": "RateProvider",
       "summary": "safe",
       "review": "./RateProvider_wFRK.md",
-      "warnings": ["donation"],
+      "warnings": {
+        "donation": "a token donation can change the rate"
+      },
       "factory": "",
       "upgradeableComponents": [
         {
@@ -1727,7 +1848,9 @@
       "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./statATokenLMRateProvider.md",
-      "warnings": [""],
+      "warnings": {
+
+      },
       "factory": "",
       "upgradeableComponents": [
         {
@@ -1747,7 +1870,9 @@
       "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./statATokenLMRateProvider.md",
-      "warnings": [""],
+      "warnings": {
+
+      },
       "factory": "",
       "upgradeableComponents": [
         {
@@ -1767,7 +1892,9 @@
       "name": "wstETH / ETH Rate Provider",
       "summary": "unsafe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": ["chainlink"],
+      "warnings": {
+        "chainlink": "added without explicit review"
+      },
       "factory": "0xa3b370092aeb56770B23315252aB5E16DAcBF62B",
       "upgradeableComponents": [],
       "conclusion": "Chainlink Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible as this review is applicable to all Chainlink Rate Providers.",
@@ -1778,7 +1905,9 @@
       "name": "wstETH Rate Provider Duplicate",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": ["chainlink"],
+      "warnings": {
+        "chainlink": "added without explicit review"
+      },
       "factory": "0xa3b370092aeb56770B23315252aB5E16DAcBF62B",
       "upgradeableComponents": [],
       "conclusion": "Chainlink Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible as this review is applicable to all Chainlink Rate Providers.",
@@ -1789,7 +1918,9 @@
       "name": "MaticX Rate Provider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": ["legacy"],
+      "warnings": {
+        "legacy": "added before structured review process"
+      },
       "factory": "",
       "upgradeableComponents": [],
       "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible.",
@@ -1800,7 +1931,9 @@
       "name": "stMATIC Rate Provider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": ["legacy"],
+      "warnings": {
+        "legacy": "added before structured review process"
+      },
       "factory": "",
       "upgradeableComponents": [],
       "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible.",
@@ -1811,7 +1944,9 @@
       "name": "csMATIC Clay Stack Tunnel Rate Provider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": ["legacy"],
+      "warnings": {
+        "legacy": "added before structured review process"
+      },
       "factory": "",
       "upgradeableComponents": [],
       "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible.",
@@ -1822,7 +1957,9 @@
       "name": "wUSDR Rate Provider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": ["legacy"],
+      "warnings": {
+        "legacy": "added before structured review process"
+      },
       "factory": "",
       "upgradeableComponents": [],
       "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible.",
@@ -1833,7 +1970,7 @@
       "name": "RSETHRateReceiver",
       "summary": "safe",
       "review": "./rsETHRateProviderOptimism.md",
-      "warnings": [],
+      "warnings": {},
       "factory": "",
       "upgradeableComponents": [
         {
@@ -1851,7 +1988,7 @@
       "name": "AnkrETHRateProvider",
       "summary": "safe",
       "review": "./AnkrETHRateProvider.md",
-      "warnings": [],
+      "warnings": {},
       "factory": "",
       "upgradeableComponents": [
         {
@@ -1871,7 +2008,9 @@
       "name": "RSETHRateReceiver",
       "summary": "safe",
       "review": "./rsEthRateProviderPolygonZKEVM.md",
-      "warnings": ["donation"],
+      "warnings": {
+        "donation": "a token donation can change the rate"
+      },
       "factory": "",
       "upgradeableComponents": [
         {
@@ -1887,7 +2026,9 @@
       "name": "rETH Rate Receiver",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": ["legacy"],
+      "warnings": {
+        "legacy": "added before structured review process"
+      },
       "factory": "",
       "upgradeableComponents": [],
       "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible.",
@@ -1898,7 +2039,9 @@
       "name": "wstETH Rate Receiver",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": ["legacy"],
+      "warnings": {
+        "legacy": "added before structured review process"
+      },
       "factory": "",
       "upgradeableComponents": [],
       "conclusion": "Legacy Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible.",
@@ -1909,7 +2052,9 @@
       "name": "rETH Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": ["chainlink"],
+      "warnings": {
+        "chainlink": "added without explicit review"
+      },
       "factory": "0x4132f7AcC9dB7A6cF7BE2Dd3A9DC8b30C7E6E6c8",
       "upgradeableComponents": [],
       "conclusion": "Chainlink Rate Providers have been working well with Balancer pools for an extended amount of time. A specific review for the involved Rate Provider is not accessible as this review is applicable to all Chainlink Rate Providers.",
