@@ -380,6 +380,32 @@
           "implementationReviewed": "0x339B34965bD3A61025eEA3D5FDcADf75756cc0Db"
         }
       ]
+    },
+    "0xeA70471806667232f176eD5EeCCc7D606A3d2C39": {
+      "asset": "",
+      "name": "SolvBTCYieldTokenBalancerRateProvider",
+      "summary": "",
+      "review": "./SolvBTCRateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x346c574C56e1A4aAa8dc88Cda8F7EB12b39947aB",
+          "implementationReviewed": "0xa6F5cf9259E4ba72b195b5F3caBe2577ce205dF2"
+        },
+        {
+          "entrypoint": "0x6ec1fEC6c6AF53624733F671B490B8250Ff251eD",
+          "implementationReviewed": "0x8c29858319614380024093DBEE553F9337665756"
+        },
+        {
+          "entrypoint": "0xc2f69541e3dC306777D260dC66bfD54fcb897100",
+          "implementationReviewed": "0xE0331CcF831703d30C0EeA134444104e94246B15"
+        },
+        {
+          "entrypoint": "0x629aD7Bc14726e9cEA4FCb3A7b363D237bB5dBE8",
+          "implementationReviewed": "0x976fA12d7f3381B4d94181A10bE2ED206B72e6B3"
+        }
+      ]
     }
   },
   "avalanche": {
@@ -1303,6 +1329,32 @@
         {
           "entrypoint": "0xd295936C8Bb465ADd1eC756a51698127CB4F4910",
           "implementationReviewed": "0xd295936C8Bb465ADd1eC756a51698127CB4F4910"
+        }
+      ]
+    },
+    "0x99A77a36C9066b1e37cA87E9328eFB87FcFF7E2b": {
+      "asset": "",
+      "name": "SolvBTCYieldTokenBalancerRateProvider",
+      "summary": "",
+      "review": "./SolvBTCRateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xd9D920AA40f578ab794426F5C90F6C731D159DEf",
+          "implementationReviewed": "0xb2B9DE3D047183d36769CDeb8dA3882c88AF75D9"
+        },
+        {
+          "entrypoint": "0x8c29858319614380024093DBEE553F9337665756",
+          "implementationReviewed": "0x491199168de68d4dcFBa072F06b5ea0Fadc21c70"
+        },
+        {
+          "entrypoint": "0x57bB6a8563a8e8478391C79F3F433C6BA077c567",
+          "implementationReviewed": "0x1a7D5f3497F722843597C344F0d5bd08Fb043e1f"
+        },
+        {
+          "entrypoint": "0xc2f69541e3dC306777D260dC66bfD54fcb897100",
+          "implementationReviewed": "0xE0331CcF831703d30C0EeA134444104e94246B15"
         }
       ]
     }
