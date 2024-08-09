@@ -380,6 +380,24 @@
           "implementationReviewed": "0x339B34965bD3A61025eEA3D5FDcADf75756cc0Db"
         }
       ]
+    },
+    "0x177862A0242acD8b5F9cc757a963c1C8883da45E": {
+      "asset": "0xD9FBA68D89178e3538e708939332c79efC540179",
+      "name": "ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./statATokenLMRateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xD9FBA68D89178e3538e708939332c79efC540179",
+          "implementationReviewed": "0x9Bf9df78b1f7c76a473588c41321B5059b62981e"
+        },
+        {
+          "entrypoint": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+          "implementationReviewed": "0x6C6c6857e2F32fcCBDb2791597350Aa034a3ce47"
+        }
+      ]
     }
   },
   "avalanche": {
