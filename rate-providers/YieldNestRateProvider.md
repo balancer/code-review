@@ -1,4 +1,4 @@
-# Rate Provider: `\<Name of Reviewed Contract\>`
+# Rate Provider: `ynViewer`
 
 ## Details
 - Reviewed by: @mkflow27
@@ -10,7 +10,6 @@
 
 ## Context
 ynETH is an nLRT that exposes users to a dynamically curated Basket comprising AVSs across multiple industry verticals. The YieldNest DAO carefully selects and fully vets all of the operators and AVS within ynETH’s Basket to deliver an nLRT with the highest possible risk-adjusted yield.
-
 Restakers deposit ETH into YieldNest’s restaking pool and receive ynETH back as a tradable and liquid “receipt” token representing the underlying yield-generating restaked ETH.
 
 ## Review Checklist: Bare Minimum Compatibility
@@ -45,7 +44,7 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
     - admin address: [ethereum:0xfcad670592a3b24869C0b51a6c6FDED4F95D6975](https://etherscan.io/address/0xfcad670592a3b24869C0b51a6c6FDED4F95D6975)
     - admin type: multisig
         - multisig threshold/signers: 3/5
-    - comment: The rate calculations are based on iterating over a set of staking nodes. Each staking node is a Beacon based proxy contract. 
+        - comment: The rate calculations are based on iterating over a set of staking nodes. Each staking node is a Beacon based proxy contract. 
     
         
 ### Oracles
