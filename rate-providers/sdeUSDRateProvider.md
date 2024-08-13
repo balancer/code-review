@@ -25,7 +25,7 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 ### Administrative Privileges
 - [ ] The Rate Provider is upgradeable (e.g., via a proxy architecture or an `onlyOwner` function that updates the price source address).
 
-- [x] Some other portion of the price pipeline is upgradeable (e.g., the token itself, an oracle, or some piece of a larger system that tracks the price). \<Delete this hint: If unchecked, delete all of the bullets below.\>
+- [x] Some other portion of the price pipeline is upgradeable (e.g., the token itself, an oracle, or some piece of a larger system that tracks the price).
     - upgradeable component: `stdeUSD` ([ethereum:0x5C5b196aBE0d54485975D1Ec29617D42D9198326](https://etherscan.io/address/0x5C5b196aBE0d54485975D1Ec29617D42D9198326#code))
     - admin address: [ethereum:0xD7CDBde6C9DA34fcB2917390B491193b54C24f24](https://etherscan.io/address/0xD7CDBde6C9DA34fcB2917390B491193b54C24f24)
     - admin type: multisig
