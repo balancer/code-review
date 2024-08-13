@@ -1281,6 +1281,20 @@
           "implementationReviewed": "0xC80aD49191113d31fe52427c01A197106ef5EB5b"
         }
       ]
+    },
+    "0x414aB7081D3C2d0BA75703A465744DF99c9f9B22": {
+      "asset": "0x5C5b196aBE0d54485975D1Ec29617D42D9198326",
+      "name": "ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./sdeUSDRateProvider.md",
+      "warnings": ["donation"],
+      "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x5C5b196aBE0d54485975D1Ec29617D42D9198326",
+          "implementationReviewed": "0x2DA7E2D2C22338874A421BFbb76278f0a64Df746"
+        }
+      ]
     }
   },
   "fantom": {
