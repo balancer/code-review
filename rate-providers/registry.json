@@ -1281,6 +1281,32 @@
           "implementationReviewed": "0xC80aD49191113d31fe52427c01A197106ef5EB5b"
         }
       ]
+    },
+    "0xF0207Ffa0b793E009DF9Df62fEE95B8FC6c93EcF": {
+      "asset": "0x09db87A538BD693E9d08544577d5cCfAA6373A48",
+      "name": "ynViewer",
+      "summary": "safe",
+      "review": "./YieldNestRateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xF0207Ffa0b793E009DF9Df62fEE95B8FC6c93EcF",
+          "implementationReviewed": "0x0365a6eF790e05EEe386B57326e5Ceaf5B10899e"
+        },
+        {
+          "entrypoint": "0x09db87A538BD693E9d08544577d5cCfAA6373A48",
+          "implementationReviewed": "0x14dc3d915107dca9ed39e29e14fbdfe4358a1346"
+        },
+        {
+          "entrypoint": "0x8C33A1d6d062dB7b51f79702355771d44359cD7d",
+          "implementationReviewed": "0xabd3a755e4eef24f862c268d21fd5235904cc811"
+        },
+        {
+          "entrypoint": "0x144dA5E59228E9C558B8F692Dde6c48f890D0d96",
+          "implementationReviewed": "0xF8A37F34a427611C4c54F82bF43230FA041d237B"
+        }
+      ]
     }
   },
   "fantom": {
