@@ -1321,7 +1321,15 @@
           "implementationReviewed": "0x2DA7E2D2C22338874A421BFbb76278f0a64Df746"
         }
       ]
-    }
+    },
+    "0x748d749c6Cd0cCA8f53F66A3A0D75a91E2978d65": {
+      "asset": "0x583019fF0f430721aDa9cfb4fac8F06cA104d0B4",
+      "name": "styETHRateProvider",
+      "summary": "safe",
+      "review": "./st-yETHRateProvider.md",
+      "warnings": ["donation"],
+      "factory": "",
+      "upgradeableComponents": []
   },
   "fantom": {
     "0x629d4c27057915e59dd94bca8d48c6d80735b521": {
