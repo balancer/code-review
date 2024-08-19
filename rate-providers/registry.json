@@ -1321,6 +1321,24 @@
           "implementationReviewed": "0x2DA7E2D2C22338874A421BFbb76278f0a64Df746"
         }
       ]
+    },
+    "0xc276db339e551ecbe0ac323a7c4a5c6ca61813fe": {
+      "asset": "0xe1B4d34E8754600962Cd944B535180Bd758E6c2e",
+      "name": "AgEthRateProvider",
+      "summary": "",
+      "review": "./agETHRateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xe1B4d34E8754600962Cd944B535180Bd758E6c2e",
+          "implementationReviewed": "0x01630191978B6aDE4e959054DCD4863a503eCCE9"
+        },
+        {
+          "entrypoint": "0x349A73444b1a310BAe67ef67973022020d70020d",
+          "implementationReviewed": "0xA33FA2c9dC8971eb8c8D45085C5dd7eb47209012"
+        }
+      ]
     }
   },
   "fantom": {
