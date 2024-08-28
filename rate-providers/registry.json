@@ -1909,6 +1909,15 @@
       "warnings": ["chainlink"],
       "factory": "0x4132f7AcC9dB7A6cF7BE2Dd3A9DC8b30C7E6E6c8",
       "upgradeableComponents": []
+    },
+    "0x8dd590ebb702c21a41289A0a69b0C6F74bdece75": {
+      "asset": "0x5D8cfF95D7A57c0BF50B30b43c7CC0D52825D4a9",
+      "name": "wstETH Rate Provider",
+      "summary": "safe",
+      "review": "./ChainLinkRateProvider.md",
+      "warnings": ["chainlink"],
+      "factory": "0x4132f7AcC9dB7A6cF7BE2Dd3A9DC8b30C7E6E6c8",
+      "upgradeableComponents": []
     }
   }
 }
