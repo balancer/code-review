@@ -1532,7 +1532,7 @@
       "upgradeableComponents": []
     },
     "0x97e0E416dA48a0592E6ea8ac0dfD26D410Ba5C22": {
-      "asset": "",
+      "asset": "0x3f51c6c5927b88cdec4b61e2787f9bd0f5249138",
       "name": "Api3AggregatorAdaptor",
       "summary": "safe",
       "review": "./API3RateProvider.md",
