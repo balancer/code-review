@@ -416,6 +416,15 @@
           "implementationReviewed": "0x6C6c6857e2F32fcCBDb2791597350Aa034a3ce47"
         }
       ]
+    },
+    "0x3a216B01db971Bf28D171C9dA44Cc8C89867697F": {
+      "asset": "0xCA5d8F8a8d49439357d3CF46Ca2e720702F132b8",
+      "name": "ConstantRateProvider",
+      "summary": "safe",
+      "review": "./GYDConstantRateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   },
   "avalanche": {
