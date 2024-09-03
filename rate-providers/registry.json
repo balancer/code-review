@@ -416,6 +416,15 @@
           "implementationReviewed": "0x6C6c6857e2F32fcCBDb2791597350Aa034a3ce47"
         }
       ]
+    },
+    "0x3a216B01db971Bf28D171C9dA44Cc8C89867697F": {
+      "asset": "0xCA5d8F8a8d49439357d3CF46Ca2e720702F132b8",
+      "name": "ConstantRateProvider",
+      "summary": "safe",
+      "review": "./GYDConstantRateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   },
   "avalanche": {
@@ -1530,6 +1539,15 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0x97e0E416dA48a0592E6ea8ac0dfD26D410Ba5C22": {
+      "asset": "0x3f51c6c5927b88cdec4b61e2787f9bd0f5249138",
+      "name": "Api3AggregatorAdaptor",
+      "summary": "safe",
+      "review": "./API3RateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   },
   "optimism": {
@@ -1913,6 +1931,15 @@
     "0x8c76aa5b78357e1fa104ea2bc4a219f0870251f1": {
       "asset": "0xb23C20EFcE6e24Acca0Cef9B7B7aA196b84EC942",
       "name": "rETH Rate Provider",
+      "summary": "safe",
+      "review": "./ChainLinkRateProvider.md",
+      "warnings": ["chainlink"],
+      "factory": "0x4132f7AcC9dB7A6cF7BE2Dd3A9DC8b30C7E6E6c8",
+      "upgradeableComponents": []
+    },
+    "0x8dd590ebb702c21a41289A0a69b0C6F74bdece75": {
+      "asset": "0x5D8cfF95D7A57c0BF50B30b43c7CC0D52825D4a9",
+      "name": "wstETH Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
       "warnings": ["chainlink"],
