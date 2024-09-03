@@ -344,7 +344,7 @@
       "name": "wUSDM",
       "summary": "safe",
       "review": "./wUSDMRateProvider.md",
-      "warnings": [],
+      "warnings": ["eoaUpgradeable"],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -1730,6 +1730,15 @@
           "implementationReviewed": "0x1373A61449C26CC3F48C1B4c547322eDAa36eB12"
         }
       ]
+    },
+    "0x52cdf016439Cf36b1c7655740BAa8216977F6487": {
+      "asset": "0x57F5E098CaD7A3D1Eed53991D4d66C45C9AF7812",
+      "name": "ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./wUSDMRateProvider.md",
+      "warnings": ["eoaUpgradeable"],
+      "factory": "0x02a569eea6f85736E2D63C59E60d27d075E75c33",
+      "upgradeableComponents": []
     }
   },
   "polygon": {
