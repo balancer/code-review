@@ -1367,6 +1367,20 @@
           "implementationReviewed": "0x0b75F2B048CA8517f6476316F872903920DCC8ef"
         }
       ]
+    },
+    "0x1a9DBa2dC3E82F53d040701F97DC0438d26A4320": {
+      "asset": "0x5E362eb2c0706Bd1d134689eC75176018385430B",
+      "name": "VaultRateOracle",
+      "summary": "safe",
+      "review": "./MellowRateProviders.md",
+      "warnings": ["donation"],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x5E362eb2c0706Bd1d134689eC75176018385430B",
+          "implementationReviewed": "0xe2D2E90122cb203CF1565a37ef90a256843A825A"
+        }
+      ]
     }
   },
   "fantom": {
