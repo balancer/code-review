@@ -2,7 +2,7 @@
 
 ## Details
 - Reviewed by: @mkflow27
-- Checked by: @\<GitHub handle of secondary reviewer\>
+- Checked by: @danielmkm
 - Deployed at:
     - [arbitrum:0x7F55E509006C9Df7594C4819Ba7ebfE6EfE4854b](https://arbiscan.io/address/0x7F55E509006C9Df7594C4819Ba7ebfE6EfE4854b#code)
     - [optimism:0x52cdf016439Cf36b1c7655740BAa8216977F6487](https://optimistic.etherscan.io/address/0x52cdf016439Cf36b1c7655740BAa8216977F6487#readContract)
