@@ -1358,6 +1358,15 @@
           "implementationReviewed": "0x0b75F2B048CA8517f6476316F872903920DCC8ef"
         }
       ]
+    },
+    "0x81Be3526A71D9013A1a5bD38758e0f248231b523": {
+      "asset": "0x657e8C867D8B37dCC18fA4Caead9C45EB088C642",
+      "name": "eBtcRateProvider",
+      "summary": "",
+      "review": "./eBTCRateProvider.md",
+      "warnings": [""],
+      "factory": "",
+      "upgradeableComponents": []
     }
   },
   "fantom": {
