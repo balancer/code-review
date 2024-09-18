@@ -5,6 +5,8 @@
 - Checked by: @danielmkm
 - Deployed at:
     - [arbitrum:0x3a216B01db971Bf28D171C9dA44Cc8C89867697F](https://arbiscan.io/address/0x3a216B01db971Bf28D171C9dA44Cc8C89867697F#code)
+    - [arbitrum:0x72F6Da3b4bd0Ab7028F52339Ee3B1f94fffe2dD0](https://arbiscan.io/address/0x72F6Da3b4bd0Ab7028F52339Ee3B1f94fffe2dD0#code) 
+    - [ethereum:0xD43F5a722e8e7355D790adda4642f392Dfb820a1](https://etherscan.io/address/0xD43F5a722e8e7355D790adda4642f392Dfb820a1#code)
 - Audit report(s):
     - [Gyro audits](https://docs.gyro.finance/gyroscope-protocol/audit-reports)
 
