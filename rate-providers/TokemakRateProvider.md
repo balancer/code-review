@@ -25,6 +25,7 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 
 ### Administrative Privileges
 - [ ] The Rate Provider is upgradeable (e.g., via a proxy architecture or an `onlyOwner` function that updates the price source address).
+    - comment: The system uses a minimal proxy architecture, which simply forwards all calls. While the vault is not upgradeable by the usual upgradeable-proxy pattern it needs to be noted that additional downstream components may be upgradeable but were not part of the first review.
 
 - [ ] Some other portion of the price pipeline is upgradeable (e.g., the token itself, an oracle, or some piece of a larger system that tracks the price).
 
