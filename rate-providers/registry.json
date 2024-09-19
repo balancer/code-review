@@ -425,6 +425,15 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0x72F6Da3b4bd0Ab7028F52339Ee3B1f94fffe2dD0": {
+      "asset": "0xCA5d8F8a8d49439357d3CF46Ca2e720702F132b8",
+      "name": "ConstantRateProvider",
+      "summary": "safe",
+      "review": "./GYDConstantRateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   },
   "avalanche": {
@@ -1399,6 +1408,15 @@
           "implementationReviewed": "0xd7097af27b14e204564c057c636022fae346fe60"
         }
       ]
+    },
+    "0xD43F5a722e8e7355D790adda4642f392Dfb820a1": {
+      "asset": "0xe07f9d810a48ab5c3c914ba3ca53af14e4491e8a",
+      "name": "ConstantRateProvider",
+      "summary": "safe",
+      "review": "./GYDConstantRateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     },
     "0xd4580a56e715F14Ed9d340Ff30147d66230d44Ba": {
       "asset": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
