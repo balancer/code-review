@@ -1417,6 +1417,15 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0xd4580a56e715F14Ed9d340Ff30147d66230d44Ba": {
+      "asset": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+      "name": "ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./TokemakRateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   },
   "fantom": {
@@ -1579,6 +1588,7 @@
       "factory": "",
       "upgradeableComponents": []
     },
+    
     "0x5F62fd24941B585b91EB059E0ea1a7e729357511": {
       "asset": "0xf0E7eC247b918311afa054E0AEdb99d74c31b809",
       "name": "ERC4626RateProvider",
