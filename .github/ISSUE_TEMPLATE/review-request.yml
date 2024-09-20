@@ -31,15 +31,23 @@ body:
     id: contract
     attributes:
       label: Contract Source Code
-      description: Please link to the verified contract deployment on etherscan. If not yet deployed, please link to the contract source on GitHub.
-      placeholder: https://etherscan.io/address/0xBA12222222228d8Ba445958a75a0704d566BF2C8#code
+      description: Please link to the verified contract deployment on the block explorer. If not yet deployed, please link to the contract source on GitHub.
+      placeholder: https://etherscan.io/address/0x1a8f81c256aee9c640e14bb0453ce247ea0dfe6f#code
     validations:
       required: true
+  - type: input
+    id: contract
+    attributes:
+      label: Asset Contract Source Code
+      description: Please link to the verified contract deployment of the underlying asset this rate provider corresponds to on the block explorer.
+      placeholder: https://etherscan.io/address/0xae78736cd615f374d3085123a210448e74fc6393#code
+    validations:
+      required: false
   - type: textarea
     id: more-links
     attributes:
       label: Additional Links
-      description: If this contract has multiple instances or is deployed to multiple networks, please provide the remaining links here.
+      description: If this contract has multiple instances or is deployed to multiple networks, please provide the remaining links for both the contract and the corresponding assets here.
       placeholder: https://etherscan.io/address/0xBA12222222228d8Ba445958a75a0704d566BF2C8#code
     validations:
       required: false
@@ -73,3 +81,11 @@ body:
           required: true
         - label: If upgradeable, the contract's administrator is not an EOA.
           required: true
+  - type: textarea
+    id: comments
+    attributes:
+      label: Additional Comments & Clarifications
+      description: If the submitted contract(s) or their dependencies require additional comments or clarifications, please provide them here.
+      placeholder: This contract currently appears to be upgradeable by an EOA, but will be transferred to a 3/5 safe before pool deployment.
+    validations:
+      required: false
