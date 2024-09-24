@@ -9,10 +9,13 @@
     - [polygon:0x9977a61a6aa950044d4dcD8aA0cAb76F84ea5aCd](https://polygonscan.com/address/0x9977a61a6aa950044d4dcD8aA0cAb76F84ea5aCd)
     - [arbitrum:0x87cD462A781c0ca843EAB131Bf368328848bB6fD](https://arbiscan.io/address/0x87cd462a781c0ca843eab131bf368328848bb6fd)
     - [arbitrum:0x48942B49B5bB6f3E1d43c204a3F40a4c5F696ef6](https://arbiscan.io/address/0x48942B49B5bB6f3E1d43c204a3F40a4c5F696ef6)
+    - [arbitrum:0x177862A0242acD8b5F9cc757a963c1C8883da45E](https://arbiscan.io/address/0x177862A0242acD8b5F9cc757a963c1C8883da45E#code)
+    - [arbitrum:0x183Ac1bCC538aa9729350f8a9C6357a268e1Bd03](https://arbiscan.io/address/0x183Ac1bCC538aa9729350f8a9C6357a268e1Bd03#code)
     - [optimism:0xdFa8d2b3c146b8a10B5d63CA0306AEa84B602cfb](https://optimistic.etherscan.io/address/0xdFa8d2b3c146b8a10B5d63CA0306AEa84B602cfb#code)
     - [optimism:0x3f921Ebabab0703BC06d1828D09a245e8390c263](https://optimistic.etherscan.io/address/0x3f921Ebabab0703BC06d1828D09a245e8390c263#code)
     - [base:0x4467Ab7BC794bb3929d77e826328BD378bf5392F](https://basescan.org/address/0x4467Ab7BC794bb3929d77e826328BD378bf5392F)
     - [gnosis:0x821aFE819450A359E29a5209C48f2Fa3321C8AD2](https://gnosisscan.io/address/0x821aFE819450A359E29a5209C48f2Fa3321C8AD2#readContract)
+    - [gnosis:0x5F62fd24941B585b91EB059E0ea1a7e729357511](https://gnosisscan.io/address/0x5F62fd24941B585b91EB059E0ea1a7e729357511#code)
 
 - Audit report(s):
     - [Formal Verification Report For StaticAToken](https://github.com/bgd-labs/static-a-token-v3/blob/main/audits/Formal_Verification_Report_staticAToken.pdf)
@@ -87,6 +90,26 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
         - admin type: Aave governance system.
             - multisig timelock? YES: 24 hours
 
+    - [arbitrum:0x177862A0242acD8b5F9cc757a963c1C8883da45E](https://arbiscan.io/address/0x177862A0242acD8b5F9cc757a963c1C8883da45E#code)
+        - upgradeable component: `StaticATokenLM` ([arbitrum:0xD9FBA68D89178e3538e708939332c79efC540179](https://arbiscan.io/address/0xD9FBA68D89178e3538e708939332c79efC540179#readProxyContract))
+        - admin address: [arbitrum:0xFF1137243698CaA18EE364Cc966CF0e02A4e6327](https://arbiscan.io/address/0xFF1137243698CaA18EE364Cc966CF0e02A4e6327)
+        - admin type: Aave governance system.
+            - multisig timelock? YES:  24 hours.
+        - upgradeable component: `Pool` ([arbitrum:0x794a61358D6845594F94dc1DB02A252b5b4814aD](https://arbiscan.io/address/0x794a61358D6845594F94dc1DB02A252b5b4814aD))
+        - admin address: [arbitrum:0xFF1137243698CaA18EE364Cc966CF0e02A4e6327](https://arbiscan.io/address/0xFF1137243698CaA18EE364Cc966CF0e02A4e6327)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours
+
+    - [arbitrum:0x183Ac1bCC538aa9729350f8a9C6357a268e1Bd03](https://arbiscan.io/address/0x183Ac1bCC538aa9729350f8a9C6357a268e1Bd03#code)
+        - upgradeable component: `StaticATokenLM` ([arbitrum:0x89AEc2023f89E26Dbb7eaa7a98fe3996f9d112A8](https://arbiscan.io/address/0x89AEc2023f89E26Dbb7eaa7a98fe3996f9d112A8))
+        - admin address: [arbitrum:0xFF1137243698CaA18EE364Cc966CF0e02A4e6327](https://arbiscan.io/address/0xFF1137243698CaA18EE364Cc966CF0e02A4e6327)
+        - admin type: Aave governance system.
+            - multisig timelock? YES:  24 hours.
+        - upgradeable component: `Pool` ([arbitrum:0x794a61358D6845594F94dc1DB02A252b5b4814aD](https://arbiscan.io/address/0x794a61358D6845594F94dc1DB02A252b5b4814aD))
+        - admin address: [arbitrum:0xFF1137243698CaA18EE364Cc966CF0e02A4e6327](https://arbiscan.io/address/0xFF1137243698CaA18EE364Cc966CF0e02A4e6327)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours
+
 
     - [optimism:0xdFa8d2b3c146b8a10B5d63CA0306AEa84B602cfb](https://optimistic.etherscan.io/address/0xdFa8d2b3c146b8a10B5d63CA0306AEa84B602cfb#code)
         - upgradeable component: `StaticATokenLM` ([optimism:0x4DD03dfD36548C840B563745e3FBeC320F37BA7e](https://optimistic.etherscan.io/address/0x4DD03dfD36548C840B563745e3FBeC320F37BA7e))
@@ -127,6 +150,17 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
         - admin address: [gnosis:0x1dF462e2712496373A347f8ad10802a5E95f053D](https://gnosisscan.io/address/0x1dF462e2712496373A347f8ad10802a5E95f053D#code)
         - admin type: Aave governance system.
             - multisig timelock? YES: 24 hours
+    
+    - [gnosis:0x5F62fd24941B585b91EB059E0ea1a7e729357511](https://gnosisscan.io/address/0x5F62fd24941B585b91EB059E0ea1a7e729357511#code)
+        - upgradeable component: `StaticATokenLM` ([gnosis:0xf0E7eC247b918311afa054E0AEdb99d74c31b809](https://gnosisscan.io/address/0xf0E7eC247b918311afa054E0AEdb99d74c31b809#readProxyContract))
+        - admin address: [gnosis:0x1dF462e2712496373A347f8ad10802a5E95f053D](https://gnosisscan.io/address/0x1dF462e2712496373A347f8ad10802a5E95f053D)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours.
+        -upgradeable component: `PoolInstanceWithCustomInitialize` ([gnosis:0xb50201558B00496A145fE76f7424749556E326D8](https://gnosisscan.io/address/0xb50201558B00496A145fE76f7424749556E326D8#readProxyContract))
+        - admin address: [gnosis:0x1dF462e2712496373A347f8ad10802a5E95f053D](https://gnosisscan.io/address/0x1dF462e2712496373A347f8ad10802a5E95f053D#code)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours
+
     
 
 ### Oracles
