@@ -1736,6 +1736,19 @@
       "upgradeableComponents": [],
       "isAllowed": "true",
       "conclusion": "This rate provider should work with Balancer pools. However due to the time-boxed nature of this review and the high complexity of the underlying Tokemak Autopool product, this review could not cover the total path of how the rate is computed. The approach used to rate calculation is the common totalAssets / totalSupply approach usually used by yield-bearing vault type products. One thing to mention is that for a user, there are essentially two ways to exit an Autopool. Either, by withdrawing the ERC4626 vault's `asset` or selling balETH into the the pool where this rate provider is used. Depending on withdraw size, the rate the pool uses can differ between the rate used on `withdraw` (hint:slippage) from the Vault. For more information also see the developer comments in `AutopoolDebt.sol:withdraw()`.Additionally During initial Autopool deployment rates are expected to be more dynamic. For more context see the developers comments> Right now the the balETH Autopool has done two rebalances and there is value loss associated with that... slippage and fee's swapping from WETH to wstETH/ETHx/rsETH.  Since its so early in the deployment, it also hasn't performed any reward claiming and auto-compounds so it hasn't had a chance to make up lost value yet. We'd expect this on every Autopool for the first few days after the first rebalances.The suggestions is to revisit this rate provider review once the pool has gained traction and conduct a more thorough review of the underlying Tokemak system. "
+    },
+    "0x5A2295f0b8A1f2b9bF26b9549Ce808c68e1a3F5f": {
+      "asset": "0x5bBe36152d3CD3eB7183A82470b39b29EedF068B",
+      "name": "HETHRateProvider",
+      "summary": "unsafe",
+      "review": "./HordeEthRateProvider.md",
+      "warnings": {
+        "verification": "This rate provider does not have all relevant contracts to the rate provider verified on the respective chain explorer sites. Without contract verification, it is not possible to know the underlying mechanics which can control or manipulate the provided rate. Therefore no formal risk assessment can be completed on this contract related to the typical review process. Trust assumptions are ultimately the responsibility of the user."
+      },
+      "factory": "",
+      "upgradeableComponents": [],
+      "isAllowed": "true",
+      "conclusion": "It is impossible to verify the functionality of this rate provider as an essential rate calculation component is unverified on Etherscan."
     }
   },
   "fantom": {
