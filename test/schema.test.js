@@ -26,6 +26,7 @@ const schema = {
                 only18decimals: { type: "string" },
                 eoaUpgradeable: { type: "string" },
                 chainlink: { type: "string" },
+                verification: { type: "string" },
               },
               additionalProperties: false,
               minProperties: 0
