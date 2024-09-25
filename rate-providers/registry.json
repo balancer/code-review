@@ -1495,6 +1495,15 @@
           "implementationReviewed": "0xd295936C8Bb465ADd1eC756a51698127CB4F4910"
         }
       ]
+    },
+    "0x08e12d1a6d0F47518f05b009Bb4A24113D82f33d": {
+      "asset": "",
+      "name": "",
+      "summary": "safe",
+      "review": "./API3RateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   },
   "gnosis": {
@@ -1611,6 +1620,15 @@
     },
     "0x97e0E416dA48a0592E6ea8ac0dfD26D410Ba5C22": {
       "asset": "0x3f51c6c5927b88cdec4b61e2787f9bd0f5249138",
+      "name": "Api3AggregatorAdaptor",
+      "summary": "safe",
+      "review": "./API3RateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
+    },
+    "0xE91237236Bab7b39CA5CEE86F339a18C6C91F25c": {
+      "asset": "",
       "name": "Api3AggregatorAdaptor",
       "summary": "safe",
       "review": "./API3RateProvider.md",
