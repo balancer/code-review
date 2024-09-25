@@ -1749,6 +1749,28 @@
       "upgradeableComponents": [],
       "isAllowed": "true",
       "conclusion": "It is impossible to verify the functionality of this rate provider as an essential rate calculation component is unverified on Etherscan."
+    },
+    "0xC276db339E551eCbe0ac323a7c4A5c6ca61813Fe": {
+      "asset": "0xe1B4d34E8754600962Cd944B535180Bd758E6c2e",
+      "name": "AgEthRateProvider",
+      "summary": "unsafe",
+      "review": "./AgEthRateProvider.md",
+      "warnings": {
+        "verification": "This rate provider does not have all relevant contracts to the rate provider verified on the respective chain explorer sites. Without contract verification, it is not possible to know the underlying mechanics which can control or manipulate the provided rate. Therefore no formal risk assessment can be completed on this contract related to the typical review process. Trust assumptions are ultimately the responsibility of the user."
+      },
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xe1B4d34E8754600962Cd944B535180Bd758E6c2e",
+          "implementationReviewed": "0x1e367a83699119165cc748BD0714D8C2726973ce"
+        },
+        {
+          "entrypoint": "0x349A73444b1a310BAe67ef67973022020d70020d",
+          "implementationReviewed": "0xbABc1810DD38323bd63a68F562A9D031A6A7956C"
+        }
+      ],
+      "isAllowed": "true",
+      "conclusion": "It is impossible to verify the functionality of this rate provider as an essential rate calculation component is unverified on Etherscan."
     }
   },
   "fantom": {
