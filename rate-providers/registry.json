@@ -1497,8 +1497,8 @@
       ]
     },
     "0x08e12d1a6d0F47518f05b009Bb4A24113D82f33d": {
-      "asset": "",
-      "name": "",
+      "asset": "0x748e54072189Ec8540cD58A078404ebFDc2aACeA",
+      "name": "Api3AggregatorAdaptor",
       "summary": "safe",
       "review": "./API3RateProvider.md",
       "warnings": [],
@@ -1628,7 +1628,7 @@
       "upgradeableComponents": []
     },
     "0xE91237236Bab7b39CA5CEE86F339a18C6C91F25c": {
-      "asset": "",
+      "asset": "0x98f96A4B34D03a2E6f225B28b8f8Cb1279562d81",
       "name": "Api3AggregatorAdaptor",
       "summary": "safe",
       "review": "./API3RateProvider.md",
