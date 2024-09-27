@@ -937,7 +937,7 @@
       "summary": "safe",
       "review": "./statATokenLMRateProvider.md",
       "warnings": [""],
-      "factory": "",
+      "factory": "https://etherscan.io/address/0xfc541f8d8c5e907e236c8931f0df9f58e0c259ec",
       "upgradeableComponents": [
         {
           "entrypoint": "0x848107491E029AFDe0AC543779c7790382f15929",
@@ -955,7 +955,7 @@
       "summary": "safe",
       "review": "./statATokenLMRateProvider.md",
       "warnings": [""],
-      "factory": "",
+      "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
       "upgradeableComponents": [
         {
           "entrypoint": "0xDBf5E36569798D1E39eE9d7B1c61A7409a74F23A",
