@@ -1430,9 +1430,9 @@
     "0x4E4C0ea425bacc68cD2Acbf1cdaa234bE9Dd8742": {
       "asset": "0xF0a949B935e367A94cDFe0F2A54892C2BC7b2131",
       "name": "PriceFeed",
-      "summary": "unsafe",
+      "summary": "safe",
       "review": "./AffineLiquidRestakingRateProviders.md",
-      "warnings": ["eoaUpgradeable"],
+      "warnings": [],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -1448,9 +1448,9 @@
     "0x3e47F17725628Fde5330C2310B799545ef40C93e": {
       "asset": "0xcbC632833687DacDcc7DfaC96F6c5989381f4B47",
       "name": "PriceFeed",
-      "summary": "unsafe",
+      "summary": "safe",
       "review": "./AffineLiquidRestakingRateProviders.md",
-      "warnings": ["eoaUpgradeable"],
+      "warnings": [],
       "factory": "",
       "upgradeableComponents": [
         {

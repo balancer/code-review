@@ -27,17 +27,17 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 
 #### UltraEthS
 - [x] The Rate Provider is upgradeable (e.g., via a proxy architecture or an `onlyOwner` function that updates the price source address). 
-    - admin address: [ethereum:0x551B8c62F961640278506b408a751CC29A3f4471](https://etherscan.io/address/0x551B8c62F961640278506b408a751CC29A3f4471)
-    - admin type: EOA
-        - multisig threshold/signers: N.A
+    - admin address: [ethereum:0x67Ec3Bb25a5DB6eB7Ba74f6C0b2bA193A3983FB8](https://etherscan.io/address/0x67Ec3Bb25a5DB6eB7Ba74f6C0b2bA193A3983FB8#code)
+    - admin type: Multisig
+        - multisig threshold/signers: 2/4
         - multisig timelock? YES: 24 hours minDelay. 
         - timelock address: [ethereum:0x4B21438ffff0f0B938aD64cD44B8c6ebB78ba56e](https://etherscan.io/address/0x4B21438ffff0f0B938aD64cD44B8c6ebB78ba56e)
        
 - [x] Some other portion of the price pipeline is upgradeable (e.g., the token itself, an oracle, or some piece of a larger system that tracks the price).
     - upgradeable component: `UltraLRT` ([ethereum:0xF0a949B935e367A94cDFe0F2A54892C2BC7b2131](https://etherscan.io/address/0xF0a949B935e367A94cDFe0F2A54892C2BC7b2131))
-    - admin address: [ethereum:0x551B8c62F961640278506b408a751CC29A3f4471](https://etherscan.io/address/0x551B8c62F961640278506b408a751CC29A3f4471)
-    - admin type: EOA
-        - multisig threshold/signers: N.A
+    - admin address: [ethereum:0x67Ec3Bb25a5DB6eB7Ba74f6C0b2bA193A3983FB8](https://etherscan.io/address/0x67Ec3Bb25a5DB6eB7Ba74f6C0b2bA193A3983FB8#code)
+    - admin type: Multisig
+        - multisig threshold/signers: 2/4
         - multisig timelock? YES: 24 hours minDelay. 
         - timelock address: [ethereum:0x4B21438ffff0f0B938aD64cD44B8c6ebB78ba56e](https://etherscan.io/address/0x4B21438ffff0f0B938aD64cD44B8c6ebB78ba56e)
 
@@ -88,10 +88,6 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 
 ## Additional Findings
 To save time, we do not bother pointing out low-severity/informational issues or gas optimizations (unless the gas usage is particularly egregious). Instead, we focus only on high- and medium-severity findings which materially impact the contract's functionality and could harm users.
-
-### M-01: EOA upgradeability
-Even though the systems upgradeability is behind a timelock with 1 day delay, the Timelock controller both has as the proposer and executor an EOA. It would be more secure if for example the proposer was moved to a multisig.
-
 
 ## Conclusion
 **Summary judgment: SAFE**
