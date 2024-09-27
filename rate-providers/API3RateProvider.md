@@ -5,6 +5,8 @@
 - Checked by: @danielmkm
 - Deployed at:
     - [mode:0x97e0E416dA48a0592E6ea8ac0dfD26D410Ba5C22](https://modescan.io/address/0x97e0E416dA48a0592E6ea8ac0dfD26D410Ba5C22/contract/34443/code)
+    - [mode:0xE91237236Bab7b39CA5CEE86F339a18C6C91F25c](https://explorer.mode.network/address/0xE91237236Bab7b39CA5CEE86F339a18C6C91F25c?tab=contract)
+    - [fraxtal:0x08e12d1a6d0F47518f05b009Bb4A24113D82f33d](https://fraxscan.com/address/0x08e12d1a6d0F47518f05b009Bb4A24113D82f33d#readContract)
 - Audit report(s):
     - [API3 audits](https://dapi-docs.api3.org/reference/dapis/understand/security.html)
 
@@ -90,4 +92,4 @@ To save time, we do not bother pointing out low-severity/informational issues or
 ## Conclusion
 **Summary judgment: SAFE**
 
-This rate provider should work well with Balancer pools. API3 updates the rate on mode regularly and has various protections in place to ensure appropriate values are forwarded.
+These rate providers should work well with Balancer pools. API3 updates the rate on mode & fraxtal regularly and has various protections in place to ensure appropriate values are forwarded.
