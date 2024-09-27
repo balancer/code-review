@@ -931,6 +931,42 @@
         }
       ]
     },
+    "0x3fc2eada4FE8ecc835E74D295b9447B4A4475bAE": {
+      "asset": "0x848107491E029AFDe0AC543779c7790382f15929",
+      "name": "ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./statATokenLMRateProvider.md",
+      "warnings": [""],
+      "factory": "https://etherscan.io/address/0xfc541f8d8c5e907e236c8931f0df9f58e0c259ec",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x848107491E029AFDe0AC543779c7790382f15929",
+          "implementationReviewed": "0xc026f5dd7869e0ddc44a759ea3dec6d5cd8d996b"
+        },
+        {
+          "entrypoint": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+          "implementationReviewed": "0x5faab9e1adbddad0a08734be8a52185fd6558e14"
+        }
+      ]
+    },
+    "0x159aa33322918C12a08d8b83a215836781C2682F": {
+      "asset": "0xDBf5E36569798D1E39eE9d7B1c61A7409a74F23A",
+      "name": "ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./statATokenLMRateProvider.md",
+      "warnings": [""],
+      "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xDBf5E36569798D1E39eE9d7B1c61A7409a74F23A",
+          "implementationReviewed": "0xc026f5dd7869e0ddc44a759ea3dec6d5cd8d996b"
+        },
+        {
+          "entrypoint": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+          "implementationReviewed": "0x5faab9e1adbddad0a08734be8a52185fd6558e14"
+        }
+      ]
+    },
     "0xC29783738A475112Cafe58433Dd9D19F3a406619": {
       "asset": "0xf073bAC22DAb7FaF4a3Dd6c6189a70D54110525C",
       "name": "GenEthRateProvider",

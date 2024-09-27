@@ -5,6 +5,8 @@
 - Checked by: @danielmkm
 - Deployed at:
     - [ethereum:0xda3E8CD08753a05Ed4103aF28c69C47e35d6D8Da](https://etherscan.io/address/0xda3E8CD08753a05Ed4103aF28c69C47e35d6D8Da#code)
+    - [ethereum:0x3fc2eada4FE8ecc835E74D295b9447B4A4475bAE](https://etherscan.io/address/0x3fc2eada4FE8ecc835E74D295b9447B4A4475bAE#code)
+    - [ethereum:0x159aa33322918C12a08d8b83a215836781C2682F](https://etherscan.io/address/0x159aa33322918C12a08d8b83a215836781C2682F#code)
     - [polygon:0x7d10050F608c8EFFf118eDd1416D82a0EF2d7531](https://polygonscan.com/address/0x7d10050F608c8EFFf118eDd1416D82a0EF2d7531)
     - [polygon:0x9977a61a6aa950044d4dcD8aA0cAb76F84ea5aCd](https://polygonscan.com/address/0x9977a61a6aa950044d4dcD8aA0cAb76F84ea5aCd)
     - [arbitrum:0x87cD462A781c0ca843EAB131Bf368328848bB6fD](https://arbiscan.io/address/0x87cd462a781c0ca843eab131bf368328848bb6fd)
@@ -40,6 +42,26 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 - [x] Some other portion of the price pipeline is upgradeable (e.g., the token itself, an oracle, or some piece of a larger system that tracks the price).
     - [ethereum:0xda3E8CD08753a05Ed4103aF28c69C47e35d6D8Da](https://etherscan.io/address/0xda3E8CD08753a05Ed4103aF28c69C47e35d6D8Da#code)
         - upgradeable component: `StaticATokenLM` ([ethereum:0x862c57d48becB45583AEbA3f489696D22466Ca1b](https://etherscan.io/address/0x862c57d48becB45583AEbA3f489696D22466Ca1b#readProxyContract))
+        - admin address: [ethereum:0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A](https://etherscan.io/address/0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A#code)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours.
+        - upgradeable component: `Pool` ([ethereum:0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2](https://etherscan.io/address/0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2#readProxyContract))
+        - admin address: [ethereum:0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A](https://etherscan.io/address/0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A#code)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours
+
+    - [ethereum:0x3fc2eada4FE8ecc835E74D295b9447B4A4475bAE](https://etherscan.io/address/0x3fc2eada4FE8ecc835E74D295b9447B4A4475bAE#code)
+        - upgradeable component: `StaticATokenLM` ([ethereum:0x848107491E029AFDe0AC543779c7790382f15929](https://etherscan.io/address/0x848107491E029AFDe0AC543779c7790382f15929#readProxyContract))
+        - admin address: [ethereum:0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A](https://etherscan.io/address/0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A#code)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours.
+        - upgradeable component: `Pool` ([ethereum:0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2](https://etherscan.io/address/0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2#readProxyContract))
+        - admin address: [ethereum:0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A](https://etherscan.io/address/0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A#code)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours
+
+    - [ethereum:0x159aa33322918C12a08d8b83a215836781C2682F](https://etherscan.io/address/0x159aa33322918C12a08d8b83a215836781C2682F#code)
+        - upgradeable component: `StaticATokenLM` ([ethereum:0xDBf5E36569798D1E39eE9d7B1c61A7409a74F23A](https://etherscan.io/address/0xDBf5E36569798D1E39eE9d7B1c61A7409a74F23A#readProxyContract))
         - admin address: [ethereum:0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A](https://etherscan.io/address/0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A#code)
         - admin type: Aave governance system.
             - multisig timelock? YES: 24 hours.
