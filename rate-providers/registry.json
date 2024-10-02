@@ -1707,6 +1707,19 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0xac8fae65008cbb22a27103160452418aa3c84128": {
+      "asset": "0x0022228a2cc5E7eF0274A7Baa600d44da5aB5776",
+      "name": "ERC4626RateProvider",
+      "summary": "",
+      "review": "./AngleStakedUSDARateProvider.md",
+      "warnings": [],
+      "factory": "0x0767bECE12a327A1eD896c48E843AE53a0c313E9",
+      "upgradeableComponents": [
+        {
+        "entrypoint": "0xA61BeB4A3d02decb01039e378237032B351125B4",
+        "implementationReviewed": "0x5adDc89785D75C86aB939E9e15bfBBb7Fc086A87"
+        }]
     }
   },
   "optimism": {
