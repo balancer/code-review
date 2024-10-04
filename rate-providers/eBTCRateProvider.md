@@ -3,6 +3,8 @@
 ## Details
 - Reviewed by: @mkflow27
 - Checked by: @\<GitHub handle of secondary reviewer\>
+- Adapter contract:
+    - [ethereum:0xA517584dec22d71797Ca9a6FdA6F947D7AeaFE8B](https://etherscan.io/address/0xA517584dec22d71797Ca9a6FdA6F947D7AeaFE8B#code)
 - Deployed at:
     - [ethereum:0x81Be3526A71D9013A1a5bD38758e0f248231b523](https://etherscan.io/address/0x81be3526a71d9013a1a5bd38758e0f248231b523#code)
 - Audit report(s):
