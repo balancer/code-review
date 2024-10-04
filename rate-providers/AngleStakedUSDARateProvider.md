@@ -25,7 +25,7 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 ### Administrative Privileges
 - [ ] The Rate Provider is upgradeable (e.g., via a proxy architecture or an `onlyOwner` function that updates the price source address).
 
-- [ ] Some other portion of the price pipeline is upgradeable (e.g., the token itself, an oracle, or some piece of a larger system that tracks the price).
+- [x] Some other portion of the price pipeline is upgradeable (e.g., the token itself, an oracle, or some piece of a larger system that tracks the price).
     - upgradeable component: `CoreBorrow` (Access control manager) ([mode:0xA61BeB4A3d02decb01039e378237032B351125B4](https://explorer.mode.network/address/0xA61BeB4A3d02decb01039e378237032B351125B4))
     - admin address: [mode:0x0a393fd662C17cDC08882Ab02D0Db777AF9b5805](https://explorer.mode.network/address/0x0a393fd662C17cDC08882Ab02D0Db777AF9b5805?tab=contract)
     - admin type: multisig
@@ -66,7 +66,7 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
     - source address: 
         - 2/3 Multisig [mode:0x7DE8289038DF0b89FFEC71Ee48a2BaD572549027](https://explorer.mode.network/address/0x7DE8289038DF0b89FFEC71Ee48a2BaD572549027)
         - 4/6 Multisig [mode:0x0a393fd662C17cDC08882Ab02D0Db777AF9b5805](https://explorer.mode.network/address/0x0a393fd662C17cDC08882Ab02D0Db777AF9b5805)
-        - Timelock minDelay 86400 [mode:0x9a5b060Bd7b8f86c4C0D720a17367729670AfB19](https://explorer.mode.network/address/0x9a5b060Bd7b8f86c4C0D720a17367729670AfB19) which receives proposals via LayerZero from Mainnet. 
+        - Timelock minDelay 86400 [mode:0x9a5b060Bd7b8f86c4C0D720a17367729670AfB19](https://explorer.mode.network/address/0x9a5b060Bd7b8f86c4C0D720a17367729670AfB19) which receives proposals via LayerZero from Mainnet. The remote sender for this process is the Angle governance system at [ethereum:0x748bA9Cd5a5DDba5ABA70a4aC861b2413dCa4436](https://etherscan.io/address/0x748bA9Cd5a5DDba5ABA70a4aC861b2413dCa4436#code). More information about the Angle onchain governance system can be found in the [docs](https://docs.angle.money/governance/angle-dao#angle-onchain-governance-system).
     - any protections? YES: the max rate is set by admins
     ```solidity
     /// @notice Updates the maximum rate settable

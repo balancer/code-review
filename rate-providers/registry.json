@@ -1711,7 +1711,7 @@
     "0xac8fae65008cbb22a27103160452418aa3c84128": {
       "asset": "0x0022228a2cc5E7eF0274A7Baa600d44da5aB5776",
       "name": "ERC4626RateProvider",
-      "summary": "",
+      "summary": "safe",
       "review": "./AngleStakedUSDARateProvider.md",
       "warnings": [],
       "factory": "0x0767bECE12a327A1eD896c48E843AE53a0c313E9",
