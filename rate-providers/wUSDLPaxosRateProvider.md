@@ -29,14 +29,12 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
     - upgradeable component: `wYBSV1` ([arbitrum:0x7751E2F4b8ae93EF6B79d86419d42FE3295A4559](https://arbiscan.io/address/0x7751E2F4b8ae93EF6B79d86419d42FE3295A4559#readProxyContract))
     - admin address: [arbitrum:0x501aDc5DfBf329175F9C8f036B523cc720d0F9e5](https://arbiscan.io/address/0x501aDc5DfBf329175F9C8f036B523cc720d0F9e5#code)
     - admin type: multisig
-        - multisig threshold/signers: \<X/Y\>
-        - multisig timelock? \<YES: minimum duration/NO\>
+        - multisig threshold/signers: 3/20
 
     - upgradeable component: `YBSV1` ([arbitrum:0x7F850b0aB1988Dd17B69aC564c1E2857949e4dEe](https://arbiscan.io/address/0x7F850b0aB1988Dd17B69aC564c1E2857949e4dEe#code))
     - admin address: [arbitrum:0x0E5087e19EB58e28DDF9F341b550BE6797547BF7](https://arbiscan.io/address/0x0E5087e19EB58e28DDF9F341b550BE6797547BF7#code)
     - admin type: multisig
-        - multisig threshold/signers: \<X/Y\>
-        - multisig timelock? \<YES: minimum duration/NO\>
+        - multisig threshold/signers: 3/17
         
 
 ### Oracles
