@@ -4,6 +4,8 @@
 - Reviewed by: @mkflow27
 - Checked by: @\<GitHub handle of secondary reviewer\>
 - Deployed at:
+    - [ethereum:0x64c04442c4bc85c49782525abe92c8a6fb714b50](https://etherscan.io/address/0x64c04442c4bc85c49782525abe92c8a6fb714b50#code)
+- Adaptor to:
     - [ethereum:0xbe16605B22a7faCEf247363312121670DFe5afBE](https://etherscan.io/address/0xbe16605B22a7faCEf247363312121670DFe5afBE#code)
 - Audit report(s):
     - [Symbiotic](https://docs.symbiotic.fi/security)
