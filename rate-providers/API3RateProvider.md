@@ -7,6 +7,7 @@
     - [mode:0x97e0E416dA48a0592E6ea8ac0dfD26D410Ba5C22](https://modescan.io/address/0x97e0E416dA48a0592E6ea8ac0dfD26D410Ba5C22/contract/34443/code)
     - [mode:0xE91237236Bab7b39CA5CEE86F339a18C6C91F25c](https://explorer.mode.network/address/0xE91237236Bab7b39CA5CEE86F339a18C6C91F25c?tab=contract)
     - [fraxtal:0x08e12d1a6d0F47518f05b009Bb4A24113D82f33d](https://fraxscan.com/address/0x08e12d1a6d0F47518f05b009Bb4A24113D82f33d#readContract)
+    - [mode:0x6Ad582604472DAdB4Af7B955388cAc6aDD6D511B](https://explorer.mode.network/address/0x6Ad582604472DAdB4Af7B955388cAc6aDD6D511B?tab=read_contract)
 - Audit report(s):
     - [API3 audits](https://dapi-docs.api3.org/reference/dapis/understand/security.html)
 

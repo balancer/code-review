@@ -1725,6 +1725,15 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0x6Ad582604472DAdB4Af7B955388cAc6aDD6D511B": {
+      "asset": "0x5A7a183B6B44Dc4EC2E3d2eF43F98C5152b1d76d",
+      "name": "Api3AggregatorAdaptor",
+      "summary": "safe",
+      "review": "./API3RateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   },
   "optimism": {
