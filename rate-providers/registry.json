@@ -434,6 +434,24 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0x4d494eF5CB1143991F7F767567aD7f55bCfDc279": {
+      "asset": "0x7751E2F4b8ae93EF6B79d86419d42FE3295A4559",
+      "name": "ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./wUSDLPaxosRateProvider.md",
+      "warnings": [],
+      "factory": "0xe548a29631f9e49830be8edc22d407b2d2915f31",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x7751E2F4b8ae93EF6B79d86419d42FE3295A4559",
+          "implementationReviewed": "0x2954C85E7e2B841d0e9A9fdcC09Dac1274057D71"
+        },
+        {
+          "entrypoint": "0x7F850b0aB1988Dd17B69aC564c1E2857949e4dEe",
+          "implementationReviewed": "0xF393cf22308C3B0dE868ec125834A9F065C11CeC"
+        }
+      ]
     }
   },
   "avalanche": {
@@ -1701,6 +1719,15 @@
     },
     "0xE91237236Bab7b39CA5CEE86F339a18C6C91F25c": {
       "asset": "0x98f96A4B34D03a2E6f225B28b8f8Cb1279562d81",
+      "name": "Api3AggregatorAdaptor",
+      "summary": "safe",
+      "review": "./API3RateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
+    },
+    "0x6Ad582604472DAdB4Af7B955388cAc6aDD6D511B": {
+      "asset": "0x5A7a183B6B44Dc4EC2E3d2eF43F98C5152b1d76d",
       "name": "Api3AggregatorAdaptor",
       "summary": "safe",
       "review": "./API3RateProvider.md",
