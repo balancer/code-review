@@ -2,7 +2,7 @@
 
 ## Details
 - Reviewed by: @mkflow27
-- Checked by: @\<GitHub handle of secondary reviewer\>
+- Checked by: @danielmkm
 - Deployed at:
     - [mode:0xac8fae65008cbb22a27103160452418aa3c84128](https://explorer.mode.network/address/0xac8fae65008cbb22a27103160452418aa3c84128?tab=read_contract)
 - Audit report(s):
