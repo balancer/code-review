@@ -90,6 +90,6 @@ To save time, we do not bother pointing out low-severity/informational issues or
 
 
 ## Conclusion
-**Summary judgment: SAFE/UNSAFE**
+**Summary judgment: SAFE**
 
-This rate provider while price data being sent from a multisig still allows for very high or low exchangeRates being stored and the pool accessing this exchange rate to trade with. This is risky as a potentially not verified exchangeRate could be sent such as a hiccup on the exchangeRate decimals. The suggestion would be to for example have `getRate` also check if the rate provider is paused due to a bad exchange rate being sent. 
+This rate provider should work well with Balancer pools. The rate Provider calls `getRateSafe` of the underlying rate Provider and now ensures that if the system gets paused the call to `getRate` reverts. 
