@@ -18,6 +18,7 @@
     - [base:0x4467Ab7BC794bb3929d77e826328BD378bf5392F](https://basescan.org/address/0x4467Ab7BC794bb3929d77e826328BD378bf5392F)
     - [gnosis:0x821aFE819450A359E29a5209C48f2Fa3321C8AD2](https://gnosisscan.io/address/0x821aFE819450A359E29a5209C48f2Fa3321C8AD2#readContract)
     - [gnosis:0x5F62fd24941B585b91EB059E0ea1a7e729357511](https://gnosisscan.io/address/0x5F62fd24941B585b91EB059E0ea1a7e729357511#code)
+    - [avalanche:0x484ebac26a05e1feb7909243f293a4f79eef837a](https://snowtrace.io/address/0x484ebac26a05e1feb7909243f293a4f79eef837a/contract/43114/code)
 
 - Audit report(s):
     - [Formal Verification Report For StaticAToken](https://github.com/bgd-labs/static-a-token-v3/blob/main/audits/Formal_Verification_Report_staticAToken.pdf)
@@ -180,6 +181,16 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
             - multisig timelock? YES: 24 hours.
         -upgradeable component: `PoolInstanceWithCustomInitialize` ([gnosis:0xb50201558B00496A145fE76f7424749556E326D8](https://gnosisscan.io/address/0xb50201558B00496A145fE76f7424749556E326D8#readProxyContract))
         - admin address: [gnosis:0x1dF462e2712496373A347f8ad10802a5E95f053D](https://gnosisscan.io/address/0x1dF462e2712496373A347f8ad10802a5E95f053D#code)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours
+
+    - [avalanche:0x484ebac26a05e1feb7909243f293a4f79eef837a](https://snowtrace.io/address/0x484ebac26a05e1feb7909243f293a4f79eef837a/contract/43114/code)
+        - upgradeable component: `StaticATokenLM` ([avalanche:0x6A02C7a974F1F13A67980C80F774eC1d2eD8f98d](https://snowtrace.io/address/0x6A02C7a974F1F13A67980C80F774eC1d2eD8f98d/contract/43114/readProxyContract?chainid=43114))
+        - admin address: [[avalanche:0x3C06dce358add17aAf230f2234bCCC4afd50d090](https://snowtrace.io/address/0x3C06dce358add17aAf230f2234bCCC4afd50d090/contract/43114/code)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours.
+        -upgradeable component: `PoolInstanceWithCustomInitialize` ([avalanche:0x794a61358D6845594F94dc1DB02A252b5b4814aD](https://snowtrace.io/address/0x794a61358D6845594F94dc1DB02A252b5b4814aD/contract/43114/readProxyContract?chainid=43114))
+        - admin address: [avalanche:0x3C06dce358add17aAf230f2234bCCC4afd50d090](https://snowtrace.io/address/0x3C06dce358add17aAf230f2234bCCC4afd50d090/contract/43114/code)
         - admin type: Aave governance system.
             - multisig timelock? YES: 24 hours
 
