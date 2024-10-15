@@ -1516,6 +1516,28 @@
           "implementationReviewed": "0xcee23c4724d70ad9f327cc86947f690494c15d48"
         }
       ]
+    },
+    "0xd4fcde9bb1d746Dd7e5463b01Dd819EE06aF25db": {
+      "asset": "0xd4fcde9bb1d746Dd7e5463b01Dd819EE06aF25db",
+      "name": "EzRVault",
+      "summary": "",
+      "review": "./ezEigenRateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xD1e6626310fD54Eceb5b9a51dA2eC329D6D4B68A",
+          "implementationReviewed": "0xd9Db270c1B5E3Bd161E8c8503c55cEABeE709552"
+        },
+        {
+          "entrypoint": "0xaCB55C530Acdb2849e6d4f36992Cd8c9D50ED8F7",
+          "implementationReviewed": "0x27e7a3A81741B9fcc5Ad7edCBf9F8a72a5c00428"
+        },
+        {
+          "entrypoint": "0x858646372CC42E1A627fcE94aa7A7033e7CF075A",
+          "implementationReviewed": "0x70f44C13944d49a236E3cD7a94f48f5daB6C619b"
+        }
+      ]
     }
   },
   "fantom": {
