@@ -60,6 +60,6 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 To save time, we do not bother pointing out low-severity/informational issues or gas optimizations (unless the gas usage is particularly egregious). Instead, we focus only on high- and medium-severity findings which materially impact the contract's functionality and could harm users.
 
 ## Conclusion
-**Summary judgment: SAFE/UNSAFE**
+**Summary judgment: SAFE**
 
-This rate provider should work well with Balancer pools. 
+This rate provider should work well with Balancer pools. The upgradeability of the contracts in Renzo protocol's domain are guarded behind a multisig and a Timelock. However the callchain of the rate provider has downstream dependencies on Eigenlayer contracts which are upgradeable by a 1/2 Multisig. 

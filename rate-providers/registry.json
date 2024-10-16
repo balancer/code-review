@@ -1520,9 +1520,9 @@
     "0xd4fcde9bb1d746Dd7e5463b01Dd819EE06aF25db": {
       "asset": "0xd4fcde9bb1d746Dd7e5463b01Dd819EE06aF25db",
       "name": "EzRVault",
-      "summary": "",
+      "summary": "safe",
       "review": "./ezEigenRateProvider.md",
-      "warnings": [],
+      "warnings": ["eoaUpgradeable"],
       "factory": "",
       "upgradeableComponents": [
         {
