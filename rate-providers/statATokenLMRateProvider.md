@@ -186,7 +186,7 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 
     - [avalanche:0x484ebac26a05e1feb7909243f293a4f79eef837a](https://snowtrace.io/address/0x484ebac26a05e1feb7909243f293a4f79eef837a/contract/43114/code)
         - upgradeable component: `StaticATokenLM` ([avalanche:0x6A02C7a974F1F13A67980C80F774eC1d2eD8f98d](https://snowtrace.io/address/0x6A02C7a974F1F13A67980C80F774eC1d2eD8f98d/contract/43114/readProxyContract?chainid=43114))
-        - admin address: [[avalanche:0x3C06dce358add17aAf230f2234bCCC4afd50d090](https://snowtrace.io/address/0x3C06dce358add17aAf230f2234bCCC4afd50d090/contract/43114/code)
+        - admin address: [avalanche:0x3C06dce358add17aAf230f2234bCCC4afd50d090](https://snowtrace.io/address/0x3C06dce358add17aAf230f2234bCCC4afd50d090/contract/43114/code)
         - admin type: Aave governance system.
             - multisig timelock? YES: 24 hours.
         -upgradeable component: `PoolInstanceWithCustomInitialize` ([avalanche:0x794a61358D6845594F94dc1DB02A252b5b4814aD](https://snowtrace.io/address/0x794a61358D6845594F94dc1DB02A252b5b4814aD/contract/43114/readProxyContract?chainid=43114))
