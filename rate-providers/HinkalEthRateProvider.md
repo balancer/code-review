@@ -29,10 +29,7 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
     - upgradeable component: `hToken` ([ethereum:0x270B7748CdF8243bFe68FaCE7230ef0fCE695389](https://etherscan.io/address/0x270B7748CdF8243bFe68FaCE7230ef0fCE695389#code))
     - admin address: [ethereum:0x53a1EEB0c182144B27Ca0a2010939DA33ebc207d](https://etherscan.io/address/0x53a1EEB0c182144B27Ca0a2010939DA33ebc207d)
     - admin type: EOA
-        - multisig threshold/signers: \<X/Y\>
-        - multisig timelock? \<YES: minimum duration/NO\>
-        - trustworthy signers? \<YES: whom/NO\> \<Delete this hint: Are the signers known entities such as Vitalik, Hudson, samczsun, or Fernando? Or are they random addresses?\>
-        - comment: Marked as upgradeable as the address which get's sent Ether from the `hToken` can be changed, thus potentially adding a unknown callback function that get's called from the `hToken` contract during the `addReward` execution. 
+        - comment: Marked as upgradeable as the address which get's sent Ether from the `hToken` can be changed, thus potentially adding a unknown fallback function that get's called from the `hToken` contract during the `addReward` execution. 
 ### Oracles
 - [ ] Price data is provided by an off-chain source (e.g., a Chainlink oracle, a multisig, or a network of nodes).
 
