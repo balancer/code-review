@@ -1556,6 +1556,20 @@
           "implementationReviewed": "0x70f44C13944d49a236E3cD7a94f48f5daB6C619b"
         }
       ]
+    },
+    "0x388BeD0F17Ad5752EBC5b4034226D4c5D33bAA9e": {
+      "asset": "0x270B7748CdF8243bFe68FaCE7230ef0fCE695389",
+      "name": "hTokenOracleBalancerAdaptor",
+      "summary": "safe",
+      "review": "./HinkalEthRateProvider.md",
+      "warnings": [""],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x270B7748CdF8243bFe68FaCE7230ef0fCE695389",
+          "implementationReviewed": "0x270B7748CdF8243bFe68FaCE7230ef0fCE695389"
+        }
+      ]
     }
   },
   "fantom": {
