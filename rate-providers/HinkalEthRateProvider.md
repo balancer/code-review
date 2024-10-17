@@ -2,7 +2,7 @@
 
 ## Details
 - Reviewed by: @mkflow27
-- Checked by: @\<GitHub handle of secondary reviewer\>
+- Checked by: @danielmkm
 - Deployed at:
     - [ethereum:0x388BeD0F17Ad5752EBC5b4034226D4c5D33bAA9e](https://etherscan.io/address/0x388BeD0F17Ad5752EBC5b4034226D4c5D33bAA9e#code)
 - Audit report(s):
@@ -42,6 +42,6 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 To save time, we do not bother pointing out low-severity/informational issues or gas optimizations (unless the gas usage is particularly egregious). Instead, we focus only on high- and medium-severity findings which materially impact the contract's functionality and could harm users.
 
 ## Conclusion
-**Summary judgment: SAFE
+**Summary judgment: SAFE**
 
 This rate provider should work well with Balancer pools. The rate will increase whenever `addReward` get's called leading to potentially spiking rates (as no reward smoothing is implemented). Depending on the amount of rewards added it could be worthwhile to try to frontrun this with a deposit -> addReward -> withdraw approach. However depositing into the ERC4626 Vault is permissioned. 
