@@ -2,7 +2,7 @@
 
 ## Details
 - Reviewed by: @mkflow27
-- Checked by: @\<GitHub handle of secondary reviewer\>
+- Checked by: @danielmkm
 - Deployed at:
     - [ethereum:0xd4fcde9bb1d746Dd7e5463b01Dd819EE06aF25db](https://etherscan.io/token/0xd4fcde9bb1d746dd7e5463b01dd819ee06af25db#readProxyContract)
 - Audit report(s):
