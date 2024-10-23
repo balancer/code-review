@@ -1572,7 +1572,7 @@
       ]
     },
     "0x7C53f86d9a6B01821F916802A7606E9255DfE4e2": {
-      "asset": "0x1B6238E95bBCABEE58997c99BaDD4154ad68BA92",
+      "asset": "0xD11c452fc99cF405034ee446803b6F6c1F6d5ED8",
       "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./TreehouseRateProvider.md",
