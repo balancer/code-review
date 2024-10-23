@@ -1556,6 +1556,20 @@
           "implementationReviewed": "0x70f44C13944d49a236E3cD7a94f48f5daB6C619b"
         }
       ]
+    },
+    "0x7C53f86d9a6B01821F916802A7606E9255DfE4e2": {
+      "asset": "0x1B6238E95bBCABEE58997c99BaDD4154ad68BA92",
+      "name": "ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./TreehouseRateProvider.md",
+      "warnings": [""],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xD11c452fc99cF405034ee446803b6F6c1F6d5ED8",
+          "implementationReviewed": "0xD1A622566F277AA76c3C47A30469432AAec95E38"
+        }
+      ]
     }
   },
   "fantom": {
