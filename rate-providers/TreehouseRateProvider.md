@@ -48,4 +48,4 @@ To save time, we do not bother pointing out low-severity/informational issues or
 ## Conclusion
 **Summary judgment: SAFE**
 
-This rate provider should work well with Balancer pools. Upgradeability mechanisms are secured by a multisig. It is important to note that technically the `asset` of this ERC4626 Vault is not wsteth, but a internal accounting contract which can report different assets held compared to wsteth in the Vault. 
+This rate provider should work well with Balancer pools. Upgradeability mechanisms are secured by a multisig. It is important to note that technically the `asset` of this ERC4626 Vault is not wsteth, but a internal accounting contract which can report different assets held compared to wsteth in the Vault. Technically, the pool asset will be displayed as tETH [ethereum:0xD11c452fc99cF405034ee446803b6F6c1F6d5ED8](https://etherscan.io/address/0xD11c452fc99cF405034ee446803b6F6c1F6d5ED8#readProxyContract) in any respective pool, however it is notable that the actual asset is the underlying internal accounting unit [ethereum:0x1B6238E95bBCABEE58997c99BaDD4154ad68BA92](https://etherscan.io/address/0x1B6238E95bBCABEE58997c99BaDD4154ad68BA92).
