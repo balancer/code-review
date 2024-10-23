@@ -1557,6 +1557,20 @@
         }
       ]
     },
+    "0x388BeD0F17Ad5752EBC5b4034226D4c5D33bAA9e": {
+      "asset": "0x270B7748CdF8243bFe68FaCE7230ef0fCE695389",
+      "name": "hTokenOracleBalancerAdaptor",
+      "summary": "safe",
+      "review": "./HinkalEthRateProvider.md",
+      "warnings": [""],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x270B7748CdF8243bFe68FaCE7230ef0fCE695389",
+          "implementationReviewed": "0x270B7748CdF8243bFe68FaCE7230ef0fCE695389"
+        }
+      ]
+    },
     "0x7C53f86d9a6B01821F916802A7606E9255DfE4e2": {
       "asset": "0x1B6238E95bBCABEE58997c99BaDD4154ad68BA92",
       "name": "ERC4626RateProvider",
