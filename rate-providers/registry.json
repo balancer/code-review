@@ -1584,6 +1584,34 @@
           "implementationReviewed": "0xD1A622566F277AA76c3C47A30469432AAec95E38"
         }
       ]
+    },
+    "0xEE246a8a09a055e60b4EF38DEF201e10bcf82644": {
+      "asset": "0xf02C96DbbB92DC0325AD52B3f9F2b951f972bf00",
+      "name": "krETHRateProvider",
+      "summary": "safe",
+      "review": "./KernelRateProviders.md",
+      "warnings": [""],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xf02C96DbbB92DC0325AD52B3f9F2b951f972bf00",
+          "implementationReviewed": "0xf02C96DbbB92DC0325AD52B3f9F2b951f972bf00"
+        }
+      ]
+    },
+    "0x094C9b71ad7b6C09fe592F2aE10dFb1dc2B73623": {
+      "asset": "0x513D27c94C0D81eeD9DC2a88b4531a69993187cF",
+      "name": "ksETHRateProvider",
+      "summary": "safe",
+      "review": "./KernelRateProviders.md",
+      "warnings": [""],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x513D27c94C0D81eeD9DC2a88b4531a69993187cF",
+          "implementationReviewed": "0x513D27c94C0D81eeD9DC2a88b4531a69993187cF"
+        }
+      ]
     }
   },
   "fantom": {
@@ -1594,7 +1622,12 @@
       "review": "./LegacyReview.md",
       "warnings": ["legacy"],
       "factory": "",
-      "upgradeableComponents": []
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x513D27c94C0D81eeD9DC2a88b4531a69993187cF",
+          "implementationReviewed": "0x513D27c94C0D81eeD9DC2a88b4531a69993187cF"
+        }
+      ]
     }
   },
   "fraxtal": {
