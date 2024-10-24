@@ -1571,6 +1571,20 @@
         }
       ]
     },
+    "0x7C53f86d9a6B01821F916802A7606E9255DfE4e2": {
+      "asset": "0xD11c452fc99cF405034ee446803b6F6c1F6d5ED8",
+      "name": "ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./TreehouseRateProvider.md",
+      "warnings": [""],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xD11c452fc99cF405034ee446803b6F6c1F6d5ED8",
+          "implementationReviewed": "0xD1A622566F277AA76c3C47A30469432AAec95E38"
+        }
+      ]
+    },
     "0xEE246a8a09a055e60b4EF38DEF201e10bcf82644": {
       "asset": "0xf02C96DbbB92DC0325AD52B3f9F2b951f972bf00",
       "name": "krETHRateProvider",
