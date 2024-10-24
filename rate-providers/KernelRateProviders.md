@@ -2,7 +2,7 @@
 
 ## Details
 - Reviewed by: @mkflow27
-- Checked by: @\<GitHub handle of secondary reviewer\>
+- Checked by: @danielmkm
 - Deployed at:
     - [ethereum:0xEE246a8a09a055e60b4EF38DEF201e10bcf82644](https://etherscan.io/address/0xEE246a8a09a055e60b4EF38DEF201e10bcf82644#code)
     - [ethereum:0x094C9b71ad7b6C09fe592F2aE10dFb1dc2B73623](https://etherscan.io/address/0x094C9b71ad7b6C09fe592F2aE10dFb1dc2B73623#readContract)
