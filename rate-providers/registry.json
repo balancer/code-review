@@ -532,6 +532,24 @@
       "warnings": ["legacy"],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0x484ebac26a05e1feb7909243f293a4f79eef837a": {
+      "asset": "0x6A02C7a974F1F13A67980C80F774eC1d2eD8f98d",
+      "name": "ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./statATokenLMRateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x6A02C7a974F1F13A67980C80F774eC1d2eD8f98d",
+          "implementationReviewed": "0xB67347196F551d1f85B7a07e64e0E47E6c9c254a"
+        },
+        {
+          "entrypoint": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+          "implementationReviewed": "0x1f69d4700B34A1D9F92E55235df414FcC02A8306"
+        }
+      ]
     }
   },
   "base": {
@@ -1517,6 +1535,84 @@
         }
       ]
     },
+    "0xd4fcde9bb1d746Dd7e5463b01Dd819EE06aF25db": {
+      "asset": "0xd4fcde9bb1d746Dd7e5463b01Dd819EE06aF25db",
+      "name": "EzRVault",
+      "summary": "safe",
+      "review": "./ezEigenRateProvider.md",
+      "warnings": ["eoaUpgradeable"],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xD1e6626310fD54Eceb5b9a51dA2eC329D6D4B68A",
+          "implementationReviewed": "0xd9Db270c1B5E3Bd161E8c8503c55cEABeE709552"
+        },
+        {
+          "entrypoint": "0xaCB55C530Acdb2849e6d4f36992Cd8c9D50ED8F7",
+          "implementationReviewed": "0x27e7a3A81741B9fcc5Ad7edCBf9F8a72a5c00428"
+        },
+        {
+          "entrypoint": "0x858646372CC42E1A627fcE94aa7A7033e7CF075A",
+          "implementationReviewed": "0x70f44C13944d49a236E3cD7a94f48f5daB6C619b"
+        }
+      ]
+    },
+    "0x388BeD0F17Ad5752EBC5b4034226D4c5D33bAA9e": {
+      "asset": "0x270B7748CdF8243bFe68FaCE7230ef0fCE695389",
+      "name": "hTokenOracleBalancerAdaptor",
+      "summary": "safe",
+      "review": "./HinkalEthRateProvider.md",
+      "warnings": [""],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x270B7748CdF8243bFe68FaCE7230ef0fCE695389",
+          "implementationReviewed": "0x270B7748CdF8243bFe68FaCE7230ef0fCE695389"
+        }
+      ]
+    },
+    "0x7C53f86d9a6B01821F916802A7606E9255DfE4e2": {
+      "asset": "0xD11c452fc99cF405034ee446803b6F6c1F6d5ED8",
+      "name": "ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./TreehouseRateProvider.md",
+      "warnings": [""],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xD11c452fc99cF405034ee446803b6F6c1F6d5ED8",
+          "implementationReviewed": "0xD1A622566F277AA76c3C47A30469432AAec95E38"
+        }
+      ]
+    },
+    "0xEE246a8a09a055e60b4EF38DEF201e10bcf82644": {
+      "asset": "0xf02C96DbbB92DC0325AD52B3f9F2b951f972bf00",
+      "name": "krETHRateProvider",
+      "summary": "safe",
+      "review": "./KernelRateProviders.md",
+      "warnings": [""],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xf02C96DbbB92DC0325AD52B3f9F2b951f972bf00",
+          "implementationReviewed": "0xf02C96DbbB92DC0325AD52B3f9F2b951f972bf00"
+        }
+      ]
+    },
+    "0x094C9b71ad7b6C09fe592F2aE10dFb1dc2B73623": {
+      "asset": "0x513D27c94C0D81eeD9DC2a88b4531a69993187cF",
+      "name": "ksETHRateProvider",
+      "summary": "safe",
+      "review": "./KernelRateProviders.md",
+      "warnings": [""],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x513D27c94C0D81eeD9DC2a88b4531a69993187cF",
+          "implementationReviewed": "0x513D27c94C0D81eeD9DC2a88b4531a69993187cF"
+        }
+      ]
+    },
     "0x64C04442C4Bc85C49782525AbE92c8a6fB714b50": {
       "asset": "0x917ceE801a67f933F2e6b33fC0cD1ED2d5909D88",
       "name": "AccountantWithRateProviders",
@@ -1535,7 +1631,12 @@
       "review": "./LegacyReview.md",
       "warnings": ["legacy"],
       "factory": "",
-      "upgradeableComponents": []
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x513D27c94C0D81eeD9DC2a88b4531a69993187cF",
+          "implementationReviewed": "0x513D27c94C0D81eeD9DC2a88b4531a69993187cF"
+        }
+      ]
     }
   },
   "fraxtal": {
