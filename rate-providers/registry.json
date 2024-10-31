@@ -677,6 +677,15 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0x3b3dd5f913443bb5E70389F29c83F7DCA460CAe1": {
+      "asset": "0xc1cba3fcea344f92d9239c08c0568f6f2f0ee452",
+      "name": "wstETH Rate Provider",
+      "summary": "safe",
+      "review": "./ChainLinkRateProvider.md",
+      "warnings": ["chainlink"],
+      "factory": "0x0A973B6DB16C2ded41dC91691Cc347BEb0e2442B",
+      "upgradeableComponents": []
     }
   },
   "ethereum": {
