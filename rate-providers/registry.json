@@ -1857,6 +1857,19 @@
         "entrypoint": "0xA61BeB4A3d02decb01039e378237032B351125B4",
         "implementationReviewed": "0x5adDc89785D75C86aB939E9e15bfBBb7Fc086A87"
         }]
+    },
+    "0xFE1862BdCAf17ADf2D83eEb0Da98dAE04492F4f7": {
+      "asset": "0x90993Ac1734b023dEEc548b87B11F5d2dcD3818E",
+      "name": "ChainlinkRateProvider",
+      "summary": "safe",
+      "review": "./wUSDMRateProviderPyth.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+        "entrypoint": "0xA2aa501b19aff244D90cc15a4Cf739D2725B5729",
+        "implementationReviewed": "0xEbe57e8045F2F230872523bbff7374986E45C486"
+        }]
     }
   },
   "optimism": {
