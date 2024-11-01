@@ -11,7 +11,7 @@
     - [Gyro audits](https://docs.gyro.finance/gyroscope-protocol/audit-reports)
 
 ## Context
-This rate provider reports a constant rate which upscales the gyd price to a specific area of the ellipsis pricing function.
+This rate provider reports a constant rate which upscales the usdc price to a specific area of the ellipsis pricing function.
 > reason for the constant rate provider is to scale the prices that the pool does its math at to the part of the ellipse that is near 1:1 (as opposed to 2500:1 for ETH pricing). Reason there is because this region is better tested (although in principle, the rounding analysis should apply to a much wider range of parameters and pool prices -- but feels slightly safer to use the scaling)
 
 ## Review Checklist: Bare Minimum Compatibility
