@@ -650,6 +650,42 @@
       "warnings": ["legacy"],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0x5E10C2a55fB6E4C14c50C7f6B82bb28A813a4748": {
+      "asset": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "name": "ConstantRateProvider",
+      "summary": "safe",
+      "review": "./USDCConstantRateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
+    },
+    "0x3e89cc86307aF44A77EB29d0c4163d515D348313": {
+      "asset": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "name": "ConstantRateProvider",
+      "summary": "safe",
+      "review": "./USDCConstantRateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
+    },
+    "0x3fA516CEB5d068b60FDC0c68a3B793Fc43B88f15": {
+      "asset": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "name": "ConstantRateProvider",
+      "summary": "safe",
+      "review": "./USDCConstantRateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
+    },
+    "0x3b3dd5f913443bb5E70389F29c83F7DCA460CAe1": {
+      "asset": "0xc1cba3fcea344f92d9239c08c0568f6f2f0ee452",
+      "name": "wstETH Rate Provider",
+      "summary": "safe",
+      "review": "./ChainLinkRateProvider.md",
+      "warnings": ["chainlink"],
+      "factory": "0x0A973B6DB16C2ded41dC91691Cc347BEb0e2442B",
+      "upgradeableComponents": []
     }
   },
   "ethereum": {
