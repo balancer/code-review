@@ -1675,6 +1675,24 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0xE9F053b4e37D6C5C402bfa6995D364249E3944Fc": {
+      "asset": "0x84347374A9E1559BE3dC87BEd9FDFe6fE5236d95",
+      "name": "ERC4626RateProvider",
+      "summary": "unsafe",
+      "review": "./TainetRateProvider.md",
+      "warnings": ["eoaUpgradeable"],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x84347374A9E1559BE3dC87BEd9FDFe6fE5236d95",
+          "implementationReviewed": "0xc0087659a9b8c02c740ede024729a8d9d3b6839f"
+        },
+        {
+          "entrypoint": "0x595FB90b23660556c62400E893747d9662C16a35",
+          "implementationReviewed": "0x8e565F796154fA542cCf0A4Bbf8c0D574245e8e9"
+        }
+      ]
     }
   },
   "fantom": {
