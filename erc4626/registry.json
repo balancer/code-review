@@ -6,7 +6,7 @@
             "source": "aave",
             "icon": "https://url.to/theBoostedByLogo.png",
             "summary": "safe",
-            "review": "./AaveV3Boosted.md",
+            "review": "./AaveV3.md",
             "warnings": []
         },
         "0x94a9d9ac8a22534e3faca9f4e7f2e2cf85d5e4c8":{
@@ -15,7 +15,7 @@
             "source": "aave",
             "icon": "https://url.to/theBoostedByLogo.png",
             "summary": "safe",
-            "review": "./AaveV3Boosted.md",
+            "review": "./AaveV3.md",
             "warnings": []
         },
         "0x978206fAe13faF5a8d293FB614326B237684B750":{
@@ -24,7 +24,7 @@
             "source": "aave",
             "icon": "https://url.to/theBoostedByLogo.png",
             "summary": "safe",
-            "review": "./AaveV3Boosted.md",
+            "review": "./AaveV3.md",
             "warnings": []
         }
     }
