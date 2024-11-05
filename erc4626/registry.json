@@ -4,7 +4,7 @@
             "underlying":"0xff34b3d4aee8ddcd6f9afffb6fe49bd371b8a357",
             "name": "Static Aave Ethereum DAI",
             "source": "aave",
-            "icon": "https://url.to/theBoostedByLogo.png",
+            "iconUrl": "https://url.to/theBoostedByLogo.png",
             "summary": "safe",
             "review": "./AaveV3.md",
             "warnings": []
@@ -13,7 +13,7 @@
             "underlying":"0xff34b3d4aee8ddcd6f9afffb6fe49bd371b8a357",
             "name": "Static Aave Ethereum USDT",
             "source": "aave",
-            "icon": "https://url.to/theBoostedByLogo.png",
+            "iconUrl": "https://url.to/theBoostedByLogo.png",
             "summary": "safe",
             "review": "./AaveV3.md",
             "warnings": []
@@ -22,7 +22,7 @@
             "underlying":"0xaa8e23fb1079ea71e0a56f48a2aa51851d8433d0",
             "name": "Static Aave Ethereum USDC",
             "source": "aave",
-            "icon": "https://url.to/theBoostedByLogo.png",
+            "iconUrl": "https://url.to/theBoostedByLogo.png",
             "summary": "safe",
             "review": "./AaveV3.md",
             "warnings": []
