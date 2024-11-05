@@ -1,28 +1,22 @@
 {
     "sepolia":{
         "0xDE46e43F46ff74A23a65EBb0580cbe3dFE684a17":{
-            "underlying":"0xff34b3d4aee8ddcd6f9afffb6fe49bd371b8a357",
+            "asset":"0xff34b3d4aee8ddcd6f9afffb6fe49bd371b8a357",
             "name": "Static Aave Ethereum DAI",
-            "source": "aave",
-            "iconUrl": "https://url.to/theBoostedByLogo.png",
             "summary": "safe",
             "review": "./AaveV3.md",
             "warnings": []
         },
         "0x94a9d9ac8a22534e3faca9f4e7f2e2cf85d5e4c8":{
-            "underlying":"0xff34b3d4aee8ddcd6f9afffb6fe49bd371b8a357",
+            "asset":"0xff34b3d4aee8ddcd6f9afffb6fe49bd371b8a357",
             "name": "Static Aave Ethereum USDT",
-            "source": "aave",
-            "iconUrl": "https://url.to/theBoostedByLogo.png",
             "summary": "safe",
             "review": "./AaveV3.md",
             "warnings": []
         },
         "0x978206fAe13faF5a8d293FB614326B237684B750":{
-            "underlying":"0xaa8e23fb1079ea71e0a56f48a2aa51851d8433d0",
+            "asset":"0xaa8e23fb1079ea71e0a56f48a2aa51851d8433d0",
             "name": "Static Aave Ethereum USDC",
-            "source": "aave",
-            "iconUrl": "https://url.to/theBoostedByLogo.png",
             "summary": "safe",
             "review": "./AaveV3.md",
             "warnings": []
