@@ -2,28 +2,24 @@
     "sepolia":{
         "0x5c7FB0734d327ECeE2cA5cF2F5fE0f5Ff32dbf0b":{
             "name": "FeeTakingHookExample",
-            "description": "This is a description of the hook.",
             "summary": "safe",
             "review": "./FeeTakingHook.md",
             "warnings": []
         },
         "0x307d96183f133c738Af11D1971BF0A5ee15312be":{
             "name": "ExitFeeHookExample",
-            "description": "This is a description of the hook.",
             "summary": "safe",
             "review": "./ExitFeeHook.md",
             "warnings": []
         },
         "0xcdF93FaB48405bb9df9c321b6306e701be6F9859":{
             "name": "DirectionalFeeHookExample",
-            "description": "This is a description of the hook.",
             "summary": "safe",
             "review": "./DirectionalFeeHook.md",
             "warnings": []
         },
         "0xb4b339a93B7E3D9B8266d52C96608F0615326B98":{
             "name": "LotteryHookExample",
-            "description": "This is a description of the hook.",
             "summary": "safe",
             "review": "./LotteryHook.md",
             "warnings": []
