@@ -1,0 +1,25 @@
+{
+    "sepolia":{
+        "0xDE46e43F46ff74A23a65EBb0580cbe3dFE684a17":{
+            "asset":"0xff34b3d4aee8ddcd6f9afffb6fe49bd371b8a357",
+            "name": "Static Aave Ethereum DAI",
+            "summary": "safe",
+            "review": "./AaveV3.md",
+            "warnings": []
+        },
+        "0x94a9d9ac8a22534e3faca9f4e7f2e2cf85d5e4c8":{
+            "asset":"0xff34b3d4aee8ddcd6f9afffb6fe49bd371b8a357",
+            "name": "Static Aave Ethereum USDT",
+            "summary": "safe",
+            "review": "./AaveV3.md",
+            "warnings": []
+        },
+        "0x978206fAe13faF5a8d293FB614326B237684B750":{
+            "asset":"0xaa8e23fb1079ea71e0a56f48a2aa51851d8433d0",
+            "name": "Static Aave Ethereum USDC",
+            "summary": "safe",
+            "review": "./AaveV3.md",
+            "warnings": []
+        }
+    }
+}
