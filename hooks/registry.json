@@ -23,6 +23,12 @@
             "summary": "safe",
             "review": "./LotteryHook.md",
             "warnings": []
+        },
+        "0x1adc55adb4caae71abb4c33f606493f4114d2091":{
+            "name": "StableSurgeHook",
+            "summary": "safe",
+            "review": "./StableSurge.md",
+            "warnings": []
         }
     }
 }
