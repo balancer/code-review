@@ -7,6 +7,12 @@
     - [ethereum:0xda3E8CD08753a05Ed4103aF28c69C47e35d6D8Da](https://etherscan.io/address/0xda3E8CD08753a05Ed4103aF28c69C47e35d6D8Da#code)
     - [ethereum:0x3fc2eada4FE8ecc835E74D295b9447B4A4475bAE](https://etherscan.io/address/0x3fc2eada4FE8ecc835E74D295b9447B4A4475bAE#code)
     - [ethereum:0x159aa33322918C12a08d8b83a215836781C2682F](https://etherscan.io/address/0x159aa33322918C12a08d8b83a215836781C2682F#code)
+    - [ethereum:0x84DC1c08c184de4164764c5a4d627339567702F2](https://etherscan.io/address/0x84DC1c08c184de4164764c5a4d627339567702F2#code)
+    - [ethereum:0x72EaE42E2A70C2A9b5eFe2B7DF686B16b198e933](https://etherscan.io/address/0x72EaE42E2A70C2A9b5eFe2B7DF686B16b198e933#code)
+    - [ethereum:0xdf546c8669682d5C197787A747dd45C9F4e0589E](https://etherscan.io/address/0xdf546c8669682d5C197787A747dd45C9F4e0589E#code)
+    - [ethereum:0xe3c401FFADb925ffE361A202E7e7B373d72aFB3B](https://etherscan.io/address/0xe3c401FFADb925ffE361A202E7e7B373d72aFB3B#code)
+    - [ethereum:0x98449Aa73Fb2c67D1AA78A1d4C9B9df5193d7fe1](https://etherscan.io/address/0x98449Aa73Fb2c67D1AA78A1d4C9B9df5193d7fe1#code)
+    - [ethereum:0x0d0668aFb616Edc3559C6aF9939deCd0fCB5B514](https://etherscan.io/address/0x0d0668aFb616Edc3559C6aF9939deCd0fCB5B514#code)    
     - [polygon:0x7d10050F608c8EFFf118eDd1416D82a0EF2d7531](https://polygonscan.com/address/0x7d10050F608c8EFFf118eDd1416D82a0EF2d7531)
     - [polygon:0x9977a61a6aa950044d4dcD8aA0cAb76F84ea5aCd](https://polygonscan.com/address/0x9977a61a6aa950044d4dcD8aA0cAb76F84ea5aCd)
     - [arbitrum:0x87cD462A781c0ca843EAB131Bf368328848bB6fD](https://arbiscan.io/address/0x87cd462a781c0ca843eab131bf368328848bb6fd)
@@ -64,6 +70,66 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 
     - [ethereum:0x159aa33322918C12a08d8b83a215836781C2682F](https://etherscan.io/address/0x159aa33322918C12a08d8b83a215836781C2682F#code)
         - upgradeable component: `StaticATokenLM` ([ethereum:0xDBf5E36569798D1E39eE9d7B1c61A7409a74F23A](https://etherscan.io/address/0xDBf5E36569798D1E39eE9d7B1c61A7409a74F23A#readProxyContract))
+        - admin address: [ethereum:0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A](https://etherscan.io/address/0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A#code)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours.
+        - upgradeable component: `Pool` ([ethereum:0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2](https://etherscan.io/address/0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2#readProxyContract))
+        - admin address: [ethereum:0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A](https://etherscan.io/address/0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A#code)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours
+
+    - [ethereum:0x84DC1c08c184de4164764c5a4d627339567702F2](https://etherscan.io/address/0x84DC1c08c184de4164764c5a4d627339567702F2#code)
+        - upgradeable component: `StaticATokenLM` ([ethereum:0x73edDFa87C71ADdC275c2b9890f5c3a8480bC9E6](https://etherscan.io/address/0x73edDFa87C71ADdC275c2b9890f5c3a8480bC9E6#readProxyContract))
+        - admin address: [ethereum:0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A](https://etherscan.io/address/0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A#code)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours.
+        - upgradeable component: `Pool` ([ethereum:0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2](https://etherscan.io/address/0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2#readProxyContract))
+        - admin address: [ethereum:0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A](https://etherscan.io/address/0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A#code)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours
+
+    - [ethereum:0x72EaE42E2A70C2A9b5eFe2B7DF686B16b198e933](https://etherscan.io/address/0x72EaE42E2A70C2A9b5eFe2B7DF686B16b198e933#code)
+        - upgradeable component: `StaticATokenLM` ([ethereum:0xaf270C38fF895EA3f95Ed488CEACe2386F038249](https://etherscan.io/address/0xaf270C38fF895EA3f95Ed488CEACe2386F038249#readProxyContract))
+        - admin address: [ethereum:0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A](https://etherscan.io/address/0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A#code)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours.
+        - upgradeable component: `Pool` ([ethereum:0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2](https://etherscan.io/address/0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2#readProxyContract))
+        - admin address: [ethereum:0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A](https://etherscan.io/address/0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A#code)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours
+
+    - [ethereum:0xdf546c8669682d5C197787A747dd45C9F4e0589E](https://etherscan.io/address/0xdf546c8669682d5C197787A747dd45C9F4e0589E#code)
+        - upgradeable component: `StaticATokenLM` ([ethereum:0x252231882FB38481497f3C767469106297c8d93b](https://etherscan.io/address/0x252231882FB38481497f3C767469106297c8d93b#readProxyContract))
+        - admin address: [ethereum:0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A](https://etherscan.io/address/0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A#code)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours.
+        - upgradeable component: `Pool` ([ethereum:0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2](https://etherscan.io/address/0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2#readProxyContract))
+        - admin address: [ethereum:0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A](https://etherscan.io/address/0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A#code)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours
+
+    - [ethereum:0xe3c401FFADb925ffE361A202E7e7B373d72aFB3B](https://etherscan.io/address/0xe3c401FFADb925ffE361A202E7e7B373d72aFB3B#code)
+        - upgradeable component: `StaticATokenLM` ([ethereum:0x46e5d6A33C8Bd8eD38F3c95991C78C9B2FF3bC99](https://etherscan.io/address/0x46e5d6A33C8Bd8eD38F3c95991C78C9B2FF3bC99#readProxyContract))
+        - admin address: [ethereum:0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A](https://etherscan.io/address/0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A#code)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours.
+        - upgradeable component: `Pool` ([ethereum:0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2](https://etherscan.io/address/0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2#readProxyContract))
+        - admin address: [ethereum:0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A](https://etherscan.io/address/0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A#code)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours
+
+    - [ethereum:0x98449Aa73Fb2c67D1AA78A1d4C9B9df5193d7fe1](https://etherscan.io/address/0x98449Aa73Fb2c67D1AA78A1d4C9B9df5193d7fe1#code)
+        - upgradeable component: `StaticATokenLM` ([ethereum:0x00F2a835758B33f3aC53516Ebd69f3dc77B0D152](https://etherscan.io/address/0x00F2a835758B33f3aC53516Ebd69f3dc77B0D152#readProxyContract))
+        - admin address: [ethereum:0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A](https://etherscan.io/address/0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A#code)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours.
+        - upgradeable component: `Pool` ([ethereum:0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2](https://etherscan.io/address/0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2#readProxyContract))
+        - admin address: [ethereum:0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A](https://etherscan.io/address/0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A#code)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours
+
+    - [ethereum:0x0d0668aFb616Edc3559C6aF9939deCd0fCB5B514](https://etherscan.io/address/0x0d0668aFb616Edc3559C6aF9939deCd0fCB5B514#code)
+        - upgradeable component: `StaticATokenLM` ([ethereum:0xEE66abD4D0f9908A48E08AE354B0f425De3e237E](https://etherscan.io/address/0xEE66abD4D0f9908A48E08AE354B0f425De3e237E#readProxyContract))
         - admin address: [ethereum:0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A](https://etherscan.io/address/0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A#code)
         - admin type: Aave governance system.
             - multisig timelock? YES: 24 hours.

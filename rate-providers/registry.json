@@ -1675,6 +1675,114 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0x84DC1c08c184de4164764c5a4d627339567702F2": {
+      "asset": "0x73edDFa87C71ADdC275c2b9890f5c3a8480bC9E6",
+      "name": "ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./statATokenLMRateProvider.md",
+      "warnings": [""],
+      "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x73edDFa87C71ADdC275c2b9890f5c3a8480bC9E6",
+          "implementationReviewed": "0xc026f5dd7869e0ddc44a759ea3dec6d5cd8d996b"
+        },
+        {
+          "entrypoint": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+          "implementationReviewed": "0x5faab9e1adbddad0a08734be8a52185fd6558e14"
+        }
+      ]
+    },
+    "0x72EaE42E2A70C2A9b5eFe2B7DF686B16b198e933": {
+      "asset": "0xaf270C38fF895EA3f95Ed488CEACe2386F038249",
+      "name": "ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./statATokenLMRateProvider.md",
+      "warnings": [""],
+      "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xaf270C38fF895EA3f95Ed488CEACe2386F038249",
+          "implementationReviewed": "0xc026f5dd7869e0ddc44a759ea3dec6d5cd8d996b"
+        },
+        {
+          "entrypoint": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+          "implementationReviewed": "0x5faab9e1adbddad0a08734be8a52185fd6558e14"
+        }
+      ]
+    },
+    "0xdf546c8669682d5C197787A747dd45C9F4e0589E": {
+      "asset": "0x252231882FB38481497f3C767469106297c8d93b",
+      "name": "ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./statATokenLMRateProvider.md",
+      "warnings": [""],
+      "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x252231882FB38481497f3C767469106297c8d93b",
+          "implementationReviewed": "0xc026f5dd7869e0ddc44a759ea3dec6d5cd8d996b"
+        },
+        {
+          "entrypoint": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+          "implementationReviewed": "0x5faab9e1adbddad0a08734be8a52185fd6558e14"
+        }
+      ]
+    },
+    "0xe3c401FFADb925ffE361A202E7e7B373d72aFB3B": {
+      "asset": "0x46e5d6A33C8Bd8eD38F3c95991C78C9B2FF3bC99",
+      "name": "ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./statATokenLMRateProvider.md",
+      "warnings": [""],
+      "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x46e5d6A33C8Bd8eD38F3c95991C78C9B2FF3bC99",
+          "implementationReviewed": "0xc026f5dd7869e0ddc44a759ea3dec6d5cd8d996b"
+        },
+        {
+          "entrypoint": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+          "implementationReviewed": "0x5faab9e1adbddad0a08734be8a52185fd6558e14"
+        }
+      ]
+    },
+    "0x98449Aa73Fb2c67D1AA78A1d4C9B9df5193d7fe1": {
+      "asset": "0x00F2a835758B33f3aC53516Ebd69f3dc77B0D152",
+      "name": "ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./statATokenLMRateProvider.md",
+      "warnings": [""],
+      "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x00F2a835758B33f3aC53516Ebd69f3dc77B0D152",
+          "implementationReviewed": "0xc026f5dd7869e0ddc44a759ea3dec6d5cd8d996b"
+        },
+        {
+          "entrypoint": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+          "implementationReviewed": "0x5faab9e1adbddad0a08734be8a52185fd6558e14"
+        }
+      ]
+    },
+    "0x0d0668aFb616Edc3559C6aF9939deCd0fCB5B514": {
+      "asset": "0xEE66abD4D0f9908A48E08AE354B0f425De3e237E",
+      "name": "ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./statATokenLMRateProvider.md",
+      "warnings": [""],
+      "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xEE66abD4D0f9908A48E08AE354B0f425De3e237E",
+          "implementationReviewed": "0xc026f5dd7869e0ddc44a759ea3dec6d5cd8d996b"
+        },
+        {
+          "entrypoint": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+          "implementationReviewed": "0x5faab9e1adbddad0a08734be8a52185fd6558e14"
+        }
+      ]
     }
   },
   "fantom": {
