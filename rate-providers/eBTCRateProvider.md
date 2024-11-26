@@ -3,10 +3,8 @@
 ## Details
 - Reviewed by: @mkflow27
 - Checked by: @\<GitHub handle of secondary reviewer\>
-- Adapter contract:
-    - [ethereum:0xA517584dec22d71797Ca9a6FdA6F947D7AeaFE8B](https://etherscan.io/address/0xA517584dec22d71797Ca9a6FdA6F947D7AeaFE8B#code)
 - Deployed at:
-    - [ethereum:0x81Be3526A71D9013A1a5bD38758e0f248231b523](https://etherscan.io/address/0x81be3526a71d9013a1a5bd38758e0f248231b523#code)
+    - [ethereum:0xdDDF909076B641C51f22ACD4b134C54adad51e68](https://etherscan.io/address/0xdDDF909076B641C51f22ACD4b134C54adad51e68#readContract)
 - Audit report(s):
     - [Protocol audits](https://github.com/Se7en-Seas/boring-vault/tree/main/audit)
 
@@ -47,6 +45,6 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 To save time, we do not bother pointing out low-severity/informational issues or gas optimizations (unless the gas usage is particularly egregious). Instead, we focus only on high- and medium-severity findings which materially impact the contract's functionality and could harm users.
 
 ## Conclusion
-**Summary judgment: \<SAFE/UNSAFE\>**
+**Summary judgment: SAFE**
 
-This rate provider should work well with Balancer pools assuming that no wrong rates get pushed. The preferred option would be for the rate Provider to use `getRateSafe` of the `AccountantWithRateProviders` to ensure the transaction on Balancer reverts if the underlying system has been paused due to a above threshold price being pushed as part of a oracle price update transaction.
+This rate provider should work well with Balancer pools assuming that no wrong rates get pushed. The rate Provider to uses `getRateSafe` of the `AccountantWithRateProviders` to ensure the transaction on Balancer reverts if the underlying system has been paused due to a above threshold price being pushed as part of a oracle price update transaction.
