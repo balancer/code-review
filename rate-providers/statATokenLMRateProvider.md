@@ -5,6 +5,8 @@
 - Checked by: @danielmkm
 - Deployed at:
     - [ethereum:0xda3E8CD08753a05Ed4103aF28c69C47e35d6D8Da](https://etherscan.io/address/0xda3E8CD08753a05Ed4103aF28c69C47e35d6D8Da#code)
+    - [ethereum:0x3fc2eada4FE8ecc835E74D295b9447B4A4475bAE](https://etherscan.io/address/0x3fc2eada4FE8ecc835E74D295b9447B4A4475bAE#code)
+    - [ethereum:0x159aa33322918C12a08d8b83a215836781C2682F](https://etherscan.io/address/0x159aa33322918C12a08d8b83a215836781C2682F#code)
     - [polygon:0x7d10050F608c8EFFf118eDd1416D82a0EF2d7531](https://polygonscan.com/address/0x7d10050F608c8EFFf118eDd1416D82a0EF2d7531)
     - [polygon:0x9977a61a6aa950044d4dcD8aA0cAb76F84ea5aCd](https://polygonscan.com/address/0x9977a61a6aa950044d4dcD8aA0cAb76F84ea5aCd)
     - [arbitrum:0x87cD462A781c0ca843EAB131Bf368328848bB6fD](https://arbiscan.io/address/0x87cd462a781c0ca843eab131bf368328848bb6fd)
@@ -15,6 +17,9 @@
     - [optimism:0x3f921Ebabab0703BC06d1828D09a245e8390c263](https://optimistic.etherscan.io/address/0x3f921Ebabab0703BC06d1828D09a245e8390c263#code)
     - [base:0x4467Ab7BC794bb3929d77e826328BD378bf5392F](https://basescan.org/address/0x4467Ab7BC794bb3929d77e826328BD378bf5392F)
     - [gnosis:0x821aFE819450A359E29a5209C48f2Fa3321C8AD2](https://gnosisscan.io/address/0x821aFE819450A359E29a5209C48f2Fa3321C8AD2#readContract)
+    - [gnosis:0x5F62fd24941B585b91EB059E0ea1a7e729357511](https://gnosisscan.io/address/0x5F62fd24941B585b91EB059E0ea1a7e729357511#code)
+    - [avalanche:0x484ebac26a05e1feb7909243f293a4f79eef837a](https://snowtrace.io/address/0x484ebac26a05e1feb7909243f293a4f79eef837a/contract/43114/code)
+    - [avalanche:0x7E98951ae90fd1Fd7aF3cfe0ACA2A8a8D0FC5767](https://snowtrace.io/address/0x7E98951ae90fd1Fd7aF3cfe0ACA2A8a8D0FC5767/contract/43114/readContract?chainid=43114)    
 
 - Audit report(s):
     - [Formal Verification Report For StaticAToken](https://github.com/bgd-labs/static-a-token-v3/blob/main/audits/Formal_Verification_Report_staticAToken.pdf)
@@ -39,6 +44,26 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 - [x] Some other portion of the price pipeline is upgradeable (e.g., the token itself, an oracle, or some piece of a larger system that tracks the price).
     - [ethereum:0xda3E8CD08753a05Ed4103aF28c69C47e35d6D8Da](https://etherscan.io/address/0xda3E8CD08753a05Ed4103aF28c69C47e35d6D8Da#code)
         - upgradeable component: `StaticATokenLM` ([ethereum:0x862c57d48becB45583AEbA3f489696D22466Ca1b](https://etherscan.io/address/0x862c57d48becB45583AEbA3f489696D22466Ca1b#readProxyContract))
+        - admin address: [ethereum:0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A](https://etherscan.io/address/0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A#code)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours.
+        - upgradeable component: `Pool` ([ethereum:0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2](https://etherscan.io/address/0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2#readProxyContract))
+        - admin address: [ethereum:0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A](https://etherscan.io/address/0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A#code)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours
+
+    - [ethereum:0x3fc2eada4FE8ecc835E74D295b9447B4A4475bAE](https://etherscan.io/address/0x3fc2eada4FE8ecc835E74D295b9447B4A4475bAE#code)
+        - upgradeable component: `StaticATokenLM` ([ethereum:0x848107491E029AFDe0AC543779c7790382f15929](https://etherscan.io/address/0x848107491E029AFDe0AC543779c7790382f15929#readProxyContract))
+        - admin address: [ethereum:0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A](https://etherscan.io/address/0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A#code)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours.
+        - upgradeable component: `Pool` ([ethereum:0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2](https://etherscan.io/address/0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2#readProxyContract))
+        - admin address: [ethereum:0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A](https://etherscan.io/address/0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A#code)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours
+
+    - [ethereum:0x159aa33322918C12a08d8b83a215836781C2682F](https://etherscan.io/address/0x159aa33322918C12a08d8b83a215836781C2682F#code)
+        - upgradeable component: `StaticATokenLM` ([ethereum:0xDBf5E36569798D1E39eE9d7B1c61A7409a74F23A](https://etherscan.io/address/0xDBf5E36569798D1E39eE9d7B1c61A7409a74F23A#readProxyContract))
         - admin address: [ethereum:0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A](https://etherscan.io/address/0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A#code)
         - admin type: Aave governance system.
             - multisig timelock? YES: 24 hours.
@@ -149,6 +174,37 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
         - admin address: [gnosis:0x1dF462e2712496373A347f8ad10802a5E95f053D](https://gnosisscan.io/address/0x1dF462e2712496373A347f8ad10802a5E95f053D#code)
         - admin type: Aave governance system.
             - multisig timelock? YES: 24 hours
+    
+    - [gnosis:0x5F62fd24941B585b91EB059E0ea1a7e729357511](https://gnosisscan.io/address/0x5F62fd24941B585b91EB059E0ea1a7e729357511#code)
+        - upgradeable component: `StaticATokenLM` ([gnosis:0xf0E7eC247b918311afa054E0AEdb99d74c31b809](https://gnosisscan.io/address/0xf0E7eC247b918311afa054E0AEdb99d74c31b809#readProxyContract))
+        - admin address: [gnosis:0x1dF462e2712496373A347f8ad10802a5E95f053D](https://gnosisscan.io/address/0x1dF462e2712496373A347f8ad10802a5E95f053D)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours.
+        -upgradeable component: `PoolInstanceWithCustomInitialize` ([gnosis:0xb50201558B00496A145fE76f7424749556E326D8](https://gnosisscan.io/address/0xb50201558B00496A145fE76f7424749556E326D8#readProxyContract))
+        - admin address: [gnosis:0x1dF462e2712496373A347f8ad10802a5E95f053D](https://gnosisscan.io/address/0x1dF462e2712496373A347f8ad10802a5E95f053D#code)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours
+
+    - [avalanche:0x484ebac26a05e1feb7909243f293a4f79eef837a](https://snowtrace.io/address/0x484ebac26a05e1feb7909243f293a4f79eef837a/contract/43114/code)
+        - upgradeable component: `StaticATokenLM` ([avalanche:0x6A02C7a974F1F13A67980C80F774eC1d2eD8f98d](https://snowtrace.io/address/0x6A02C7a974F1F13A67980C80F774eC1d2eD8f98d/contract/43114/readProxyContract?chainid=43114))
+        - admin address: [avalanche:0x3C06dce358add17aAf230f2234bCCC4afd50d090](https://snowtrace.io/address/0x3C06dce358add17aAf230f2234bCCC4afd50d090/contract/43114/code)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours.
+        -upgradeable component: `PoolInstanceWithCustomInitialize` ([avalanche:0x794a61358D6845594F94dc1DB02A252b5b4814aD](https://snowtrace.io/address/0x794a61358D6845594F94dc1DB02A252b5b4814aD/contract/43114/readProxyContract?chainid=43114))
+        - admin address: [avalanche:0x3C06dce358add17aAf230f2234bCCC4afd50d090](https://snowtrace.io/address/0x3C06dce358add17aAf230f2234bCCC4afd50d090/contract/43114/code)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours
+
+    - [avalanche:0x484ebac26a05e1feb7909243f293a4f79eef837a](https://snowtrace.io/address/0x484ebac26a05e1feb7909243f293a4f79eef837a/contract/43114/code)
+        - upgradeable component: `StaticATokenLM` ([avalanche:0xC509aB7bB4eDbF193b82264D499a7Fc526Cd01F4](https://snowtrace.io/address/0xC509aB7bB4eDbF193b82264D499a7Fc526Cd01F4/contract/43114/readProxyContract?chainid=43114))
+        - admin address: [avalanche:0x3C06dce358add17aAf230f2234bCCC4afd50d090](https://snowtrace.io/address/0x3C06dce358add17aAf230f2234bCCC4afd50d090/contract/43114/code)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours.
+        -upgradeable component: `PoolInstance` ([avalanche:0x794a61358D6845594F94dc1DB02A252b5b4814aD](https://snowtrace.io/address/0x794a61358D6845594F94dc1DB02A252b5b4814aD))
+        - admin address: [avalanche:0x3C06dce358add17aAf230f2234bCCC4afd50d090](https://snowtrace.io/address/0x3C06dce358add17aAf230f2234bCCC4afd50d090/contract/43114/code)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours
+
     
 
 ### Oracles

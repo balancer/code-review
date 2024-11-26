@@ -2,9 +2,10 @@
 
 ## Details
 - Reviewed by: @mkflow27
-- Checked by: @\<GitHub handle of secondary reviewer\>
+- Checked by: @danielmkm
 - Deployed at:
     - [arbitrum:0x7F55E509006C9Df7594C4819Ba7ebfE6EfE4854b](https://arbiscan.io/address/0x7F55E509006C9Df7594C4819Ba7ebfE6EfE4854b#code)
+    - [optimism:0x52cdf016439Cf36b1c7655740BAa8216977F6487](https://optimistic.etherscan.io/address/0x52cdf016439Cf36b1c7655740BAa8216977F6487#readContract)
 - Audit report(s):
     - [Mountain protocol audits](https://docs.mountainprotocol.com/reference/security-resources)
 
@@ -26,10 +27,15 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 - [ ] The Rate Provider is upgradeable (e.g., via a proxy architecture or an `onlyOwner` function that updates the price source address).
 
 - [x] Some other portion of the price pipeline is upgradeable (e.g., the token itself, an oracle, or some piece of a larger system that tracks the price).
+    #### wUSDM Optimism
+    - upgradeable component: `wUSDM` ([optimism:0x57F5E098CaD7A3D1Eed53991D4d66C45C9AF7812](https://optimistic.etherscan.io/address/0x57F5E098CaD7A3D1Eed53991D4d66C45C9AF7812#code))
+    - admin address: [optimism:0xed5e9caefa28cb31c8e011B4405a39b36DA35898](https://optimistic.etherscan.io/address/0xed5e9caefa28cb31c8e011B4405a39b36DA35898)
+    - admin type: EOA
+
+    #### wUSDM Arbitrum
     - upgradeable component: `wUSDM` ([arbitrum:0x57F5E098CaD7A3D1Eed53991D4d66C45C9AF7812](https://arbiscan.io/address/0x57F5E098CaD7A3D1Eed53991D4d66C45C9AF7812#readProxyContract))
     - admin address: [arbitrum:0xfD0C148Dd9bfb196D70981b96e27a294e51bd50F](https://arbiscan.io/address/0xfD0C148Dd9bfb196D70981b96e27a294e51bd50F)
     - admin type: EOA
-
 
 ### Oracles
 - [ ] Price data is provided by an off-chain source (e.g., a Chainlink oracle, a multisig, or a network of nodes).
@@ -51,7 +57,7 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 To save time, we do not bother pointing out low-severity/informational issues or gas optimizations (unless the gas usage is particularly egregious). Instead, we focus only on high- and medium-severity findings which materially impact the contract's functionality and could harm users.
 
 ### M-01: Opaque upgradeability mechanism
-The account allowed to upgrade is an EOA (which according to mountain protocol is an openzeppelin relayer). It is not possibly to verify this onchain. A LP in pools which use this rate provider should be aware of it and verify if possible. For more information see: https://docs.openzeppelin.com/defender/v2/manage/relayers#security-considerations
+The account allowed to upgrade the Arbitrum & optimism instances is an EOA (which according to mountain protocol is an openzeppelin relayer). It is not possibly to verify this onchain. A LP in pools which use this rate provider should be aware of it and verify if possible. For more information see: https://docs.openzeppelin.com/defender/v2/manage/relayers#security-considerations
 
 
 
