@@ -1,24 +1,24 @@
 {
     "sepolia":{
-        "0x5c7FB0734d327ECeE2cA5cF2F5fE0f5Ff32dbf0b":{
+        "0x790ae803b6c0467C6A4cbDc6d6d712DE34CfdB76":{
             "name": "FeeTakingHookExample",
             "summary": "safe",
             "review": "./FeeTakingHook.md",
             "warnings": []
         },
-        "0x307d96183f133c738Af11D1971BF0A5ee15312be":{
+        "0x2Aa9D4066DAe16ef001765efF2cA8F41Bde0b019":{
             "name": "ExitFeeHookExample",
             "summary": "safe",
             "review": "./ExitFeeHook.md",
             "warnings": []
         },
-        "0xcdF93FaB48405bb9df9c321b6306e701be6F9859":{
+        "0xD9e535a65eb38F962B84f7BBD2bf60293bA54058":{
             "name": "DirectionalFeeHookExample",
             "summary": "safe",
             "review": "./DirectionalFeeHook.md",
             "warnings": []
         },
-        "0xb4b339a93B7E3D9B8266d52C96608F0615326B98":{
+        "0x0E85194F9eD75F0EFf2b89B73b6AD3053be03853":{
             "name": "LotteryHookExample",
             "summary": "safe",
             "review": "./LotteryHook.md",
