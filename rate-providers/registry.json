@@ -1676,111 +1676,75 @@
       "factory": "",
       "upgradeableComponents": []
     },
-    "0x84DC1c08c184de4164764c5a4d627339567702F2": {
-      "asset": "0x73edDFa87C71ADdC275c2b9890f5c3a8480bC9E6",
+    "0xBe7bE04807762Bc433911dD927fD54a385Fa91d6": {
+      "asset": "0x0bfc9d54Fc184518A81162F8fB99c2eACa081202",
       "name": "ERC4626RateProvider",
       "summary": "safe",
-      "review": "./statATokenLMRateProvider.md",
+      "review": "./statATokenv2RateProvider.md",
       "warnings": [""],
       "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
       "upgradeableComponents": [
         {
-          "entrypoint": "0x73edDFa87C71ADdC275c2b9890f5c3a8480bC9E6",
-          "implementationReviewed": "0xc026f5dd7869e0ddc44a759ea3dec6d5cd8d996b"
+          "entrypoint": "0x0bfc9d54Fc184518A81162F8fB99c2eACa081202",
+          "implementationReviewed": "0x487c2C53c0866F0A73ae317bD1A28F63ADcD9aD1"
         },
         {
           "entrypoint": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
-          "implementationReviewed": "0x5faab9e1adbddad0a08734be8a52185fd6558e14"
+          "implementationReviewed": "0xeF434E4573b90b6ECd4a00f4888381e4D0CC5Ccd"
         }
       ]
     },
-    "0x72EaE42E2A70C2A9b5eFe2B7DF686B16b198e933": {
-      "asset": "0xaf270C38fF895EA3f95Ed488CEACe2386F038249",
+    "0x8f4E8439b970363648421C692dd897Fb9c0Bd1D9": {
+      "asset": "0xD4fa2D31b7968E448877f69A96DE69f5de8cD23E",
       "name": "ERC4626RateProvider",
       "summary": "safe",
-      "review": "./statATokenLMRateProvider.md",
+      "review": "./statATokenv2RateProvider.md",
       "warnings": [""],
       "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
       "upgradeableComponents": [
         {
-          "entrypoint": "0xaf270C38fF895EA3f95Ed488CEACe2386F038249",
-          "implementationReviewed": "0xc026f5dd7869e0ddc44a759ea3dec6d5cd8d996b"
+          "entrypoint": "0xD4fa2D31b7968E448877f69A96DE69f5de8cD23E",
+          "implementationReviewed": "0x487c2C53c0866F0A73ae317bD1A28F63ADcD9aD1"
         },
         {
           "entrypoint": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
-          "implementationReviewed": "0x5faab9e1adbddad0a08734be8a52185fd6558e14"
+          "implementationReviewed": "0xeF434E4573b90b6ECd4a00f4888381e4D0CC5Ccd"
         }
       ]
     },
-    "0xdf546c8669682d5C197787A747dd45C9F4e0589E": {
-      "asset": "0x252231882FB38481497f3C767469106297c8d93b",
+    "0xEdf63cce4bA70cbE74064b7687882E71ebB0e988": {
+      "asset": "0x7Bc3485026Ac48b6cf9BaF0A377477Fff5703Af8",
       "name": "ERC4626RateProvider",
       "summary": "safe",
-      "review": "./statATokenLMRateProvider.md",
+      "review": "./statATokenv2RateProvider.md",
       "warnings": [""],
       "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
       "upgradeableComponents": [
         {
-          "entrypoint": "0x252231882FB38481497f3C767469106297c8d93b",
-          "implementationReviewed": "0xc026f5dd7869e0ddc44a759ea3dec6d5cd8d996b"
+          "entrypoint": "0x7Bc3485026Ac48b6cf9BaF0A377477Fff5703Af8",
+          "implementationReviewed": "0x487c2C53c0866F0A73ae317bD1A28F63ADcD9aD1"
         },
         {
           "entrypoint": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
-          "implementationReviewed": "0x5faab9e1adbddad0a08734be8a52185fd6558e14"
+          "implementationReviewed": "0xeF434E4573b90b6ECd4a00f4888381e4D0CC5Ccd"
         }
       ]
     },
-    "0xe3c401FFADb925ffE361A202E7e7B373d72aFB3B": {
-      "asset": "0x46e5d6A33C8Bd8eD38F3c95991C78C9B2FF3bC99",
+    "0xf4b5D1C22F35a460b91edD7F33Cefe619E2fAaF4": {
+      "asset": "0x0FE906e030a44eF24CA8c7dC7B7c53A6C4F00ce9",
       "name": "ERC4626RateProvider",
       "summary": "safe",
-      "review": "./statATokenLMRateProvider.md",
+      "review": "./statATokenv2RateProvider.md",
       "warnings": [""],
       "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
       "upgradeableComponents": [
         {
-          "entrypoint": "0x46e5d6A33C8Bd8eD38F3c95991C78C9B2FF3bC99",
-          "implementationReviewed": "0xc026f5dd7869e0ddc44a759ea3dec6d5cd8d996b"
+          "entrypoint": "0x0FE906e030a44eF24CA8c7dC7B7c53A6C4F00ce9",
+          "implementationReviewed": "0x487c2C53c0866F0A73ae317bD1A28F63ADcD9aD1"
         },
         {
           "entrypoint": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
-          "implementationReviewed": "0x5faab9e1adbddad0a08734be8a52185fd6558e14"
-        }
-      ]
-    },
-    "0x98449Aa73Fb2c67D1AA78A1d4C9B9df5193d7fe1": {
-      "asset": "0x00F2a835758B33f3aC53516Ebd69f3dc77B0D152",
-      "name": "ERC4626RateProvider",
-      "summary": "safe",
-      "review": "./statATokenLMRateProvider.md",
-      "warnings": [""],
-      "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
-      "upgradeableComponents": [
-        {
-          "entrypoint": "0x00F2a835758B33f3aC53516Ebd69f3dc77B0D152",
-          "implementationReviewed": "0xc026f5dd7869e0ddc44a759ea3dec6d5cd8d996b"
-        },
-        {
-          "entrypoint": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
-          "implementationReviewed": "0x5faab9e1adbddad0a08734be8a52185fd6558e14"
-        }
-      ]
-    },
-    "0x0d0668aFb616Edc3559C6aF9939deCd0fCB5B514": {
-      "asset": "0xEE66abD4D0f9908A48E08AE354B0f425De3e237E",
-      "name": "ERC4626RateProvider",
-      "summary": "safe",
-      "review": "./statATokenLMRateProvider.md",
-      "warnings": [""],
-      "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
-      "upgradeableComponents": [
-        {
-          "entrypoint": "0xEE66abD4D0f9908A48E08AE354B0f425De3e237E",
-          "implementationReviewed": "0xc026f5dd7869e0ddc44a759ea3dec6d5cd8d996b"
-        },
-        {
-          "entrypoint": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
-          "implementationReviewed": "0x5faab9e1adbddad0a08734be8a52185fd6558e14"
+          "implementationReviewed": "0xeF434E4573b90b6ECd4a00f4888381e4D0CC5Ccd"
         }
       ]
     }
@@ -1968,6 +1932,60 @@
       "warnings": [],
       "factory": "0x15e86be6084c6a5a8c17732d398dfbc2ec574cec",
       "upgradeableComponents": []
+    },
+    "0x0008A59C1d2E5922790C929ea432ed02D4D3323A": {
+      "asset": "0x57f664882F762FA37903FC864e2B633D384B411A",
+      "name": "ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./statATokenv2RateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x57f664882F762FA37903FC864e2B633D384B411A",
+          "implementationReviewed": "0x7CB7fdeEB5E71f322F8E39Be67959C32a6A3aAA3"
+        },
+        {
+          "entrypoint": "0xb50201558B00496A145fE76f7424749556E326D8",
+          "implementationReviewed": "0xF2C312BfAF4CF0429DB4DA15a0cf5F770Ea3E770"
+        }
+      ]
+    },
+    "0xbbb4966335677Ea24F7B86DC19a423412390e1fb": {
+      "asset": "0x7c16F0185A26Db0AE7a9377f23BC18ea7ce5d644",
+      "name": "ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./statATokenv2RateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x7c16F0185A26Db0AE7a9377f23BC18ea7ce5d644",
+          "implementationReviewed": "0x7CB7fdeEB5E71f322F8E39Be67959C32a6A3aAA3"
+        },
+        {
+          "entrypoint": "0xb50201558B00496A145fE76f7424749556E326D8",
+          "implementationReviewed": "0xF2C312BfAF4CF0429DB4DA15a0cf5F770Ea3E770"
+        }
+      ]
+    },
+    "0x1529f6Af353E180867F257820843425B49B1b478": {
+      "asset": "0x51350d88c1bd32Cc6A79368c9Fb70373Fb71F375",
+      "name": "ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./statATokenv2RateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x51350d88c1bd32Cc6A79368c9Fb70373Fb71F375",
+          "implementationReviewed": "0x7CB7fdeEB5E71f322F8E39Be67959C32a6A3aAA3"
+        },
+        {
+          "entrypoint": "0xb50201558B00496A145fE76f7424749556E326D8",
+          "implementationReviewed": "0xF2C312BfAF4CF0429DB4DA15a0cf5F770Ea3E770"
+        }
+      ]
     }
   },
   "mode": {
