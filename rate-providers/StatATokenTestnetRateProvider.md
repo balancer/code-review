@@ -11,7 +11,7 @@
     - [Scaffold Audits](https://github.com/balancer/scaffold-balancer-v3)
 
 ## Context
-Testnet rate providers for the static AAVE tokens balancer is using to test boosted pools feature of v3 contracts. @mendesfabio deployed these contracts and @MattPereira wants to include them so that API can offer the data for pool creation UI development purposes.
+Testnet rate providers for the static AAVE tokens balancer is using to test boosted pools feature of v3 contracts
 
 ## Review Checklist: Bare Minimum Compatibility
 Each of the items below represents an absolute requirement for the Rate Provider. If any of these is unchecked, the Rate Provider is unfit to use. @mendesfabio deployed these contracts
