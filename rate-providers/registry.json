@@ -2344,5 +2344,34 @@
       "factory": "0x4132f7AcC9dB7A6cF7BE2Dd3A9DC8b30C7E6E6c8",
       "upgradeableComponents": []
     }
+  },
+  "sepolia": {
+    "0xB1B171A07463654cc1fE3df4eC05f754E41f0A65": {
+      "asset": "0xaA8E23Fb1079EA71e0a56F48a2aA51851D8433D0",
+      "name": "waUSDT Rate Provider",
+      "summary": "safe",
+      "review": "./StatATokenTestnetRateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
+    },
+    "0x22db61f3a8d81d3d427a157fdae8c7eb5b5fd373": {
+      "asset": "0xFF34B3d4Aee8ddCd6F9AFFFB6Fe49bD371b8a357",
+      "name": "waDAI Rate Provider",
+      "summary": "safe",
+      "review": "./StatATokenTestnetRateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
+    },
+    "0x34101091673238545De8a846621823D9993c3085": {
+      "asset": "0x94a9D9AC8a22534E3FaCa9F4e7F2E2cf85d5E4C8",
+      "name": "waUSDC Rate Provider",
+      "summary": "safe",
+      "review": "./StatATokenTestnetRateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
+    }
   }
 }
