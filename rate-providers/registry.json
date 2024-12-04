@@ -1684,6 +1684,28 @@
       "warnings": [""],
       "factory": "0x467665D4ae90e7A99c9C9AF785791058426d6eA0",
       "upgradeableComponents": []
+    },
+    "0xf47c506C293319B3bC517Acc371F86B87B03DD5D": {
+      "asset": "0xc824A08dB624942c5E5F330d56530cD1598859fD",
+      "name": "ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./HighGrowthEthRateProvider.md",
+      "warnings": ["donation"],
+      "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xB185D98056419029daE7120EcBeFa0DbC12c283A",
+          "implementationReviewed": "0x3151293F241bd7391f4ecAeF206607b59f424417"
+        },
+        {
+          "entrypoint": "0xc824A08dB624942c5E5F330d56530cD1598859fD",
+          "implementationReviewed": "0xed5c8c80a29e541b8781e0e729d9af597a368589"
+        },
+        {
+          "entrypoint": "0x3D08ccb47ccCde84755924ED6B0642F9aB30dFd2",
+          "implementationReviewed": "0x3f258821a5ad28391e9Bb0B69A705fdf545BCab0"
+        }
+      ]
     }
   },
   "fantom": {
