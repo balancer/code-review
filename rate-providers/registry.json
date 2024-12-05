@@ -1690,7 +1690,7 @@
       "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./HighGrowthEthRateProvider.md",
-      "warnings": ["donation"],
+      "warnings": ["donation", "unverified-contracts"],
       "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
       "upgradeableComponents": [
         {
