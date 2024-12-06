@@ -1,7 +1,7 @@
 # Rate Provider: `ERC4626RateProvider`
 
 ## Details
-- Reviewed by: 
+- Reviewed by: @mkflow27
 - Checked by: 
 - Deployed at:
     - Steakhouse USDC [ethereum:0xc81D60E39e065146c6dE186fFC5B39e4CA2189Cf](https://etherscan.io/address/0xc81D60E39e065146c6dE186fFC5B39e4CA2189Cf#code)
@@ -30,10 +30,30 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 ### Administrative Privileges
 - [ ] The Rate Provider is upgradeable (e.g., via a proxy architecture or an `onlyOwner` function that updates the price source address).
 
-- [x] Some other portion of the price pipeline is upgradeable (e.g., the token itself, an oracle, or some piece of a larger system that tracks the price).
+- [x] Some other portion of the price pipeline is upgradeable (e.g., the token itself, an oracle, or some piece of a larger system that tracks the price). 
+    Part of the rate computation relies of `totalAssets` being calculated. This function iterates over a list of Ids. This list of Ids can be changed by the Allocator role. The potential impact has not been thoroughly investigated. There are however protections in place to protect against invalid changes such as
+    - `revert ErrorsLib.DuplicateMarket(id);`
+    - `revert ErrorsLib.InvalidMarketRemovalNonZeroCap(id);`
+    - `revert ErrorsLib.PendingCap(id);`
+    - `ErrorsLib.InvalidMarketRemovalNonZeroSupply(id);`
+    - `ErrorsLib.InvalidMarketRemovalTimelockNotElapsed(id);`
 
-
-
+    #### Steakhouse USDC 
+    For [Steakhouse USDC](https://etherscan.io/address/0xBEEF01735c132Ada46AA9aA4c54623cAA92A64CB) some allocators are eoas.
+    - 0x0D61C8b6CA9669A36F351De3AE335e9689dd9C5b
+    - 0xcC771952fdE840E30C6802734e5ad20479c2959f
+    - 0xfd32fA2ca22c76dD6E550706Ad913FC6CE91c75D
+    - 0xfeed46c11F57B7126a773EeC6ae9cA7aE1C03C9a
+    #### Steakhouse USDT
+    For [Steakhouse USDT](https://etherscan.io/address/0xbEef047a543E45807105E51A8BBEFCc5950fcfBa) some allocators are eoas.
+    - 0xfeed46c11F57B7126a773EeC6ae9cA7aE1C03C9a
+    - 0xfd32fA2ca22c76dD6E550706Ad913FC6CE91c75D
+    - 0x29d4CDFee8F533af8529A9e1517b580E022874f7
+    #### Gauntlet Prime wETH
+    For [Gauntlet Prime wETH](https://etherscan.io/address/0x2371e134e3455e0593363cBF89d3b6cf53740618) some allocators are eoas.
+    - 0xfd32fA2ca22c76dD6E550706Ad913FC6CE91c75D
+    - 0x959d73CB5a1C1ad7EbCE3eC93FAD3b2f9a25432E
+    
 ### Oracles
 - [ ] Price data is provided by an off-chain source (e.g., a Chainlink oracle, a multisig, or a network of nodes).
 
@@ -43,6 +63,6 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 - [ ] The Rate Provider is susceptible to donation attacks.
 
 ## Conclusion
-**Summary judgment: **
+**Summary judgment: USABLE**
 
-The Rate Providers should work well with Balancer pools. The underlying contracts have been audited and been in production for an extended period of time. 
+The Rate Providers should work well with Balancer pools. The underlying contracts have been audited and been in production for an extended period of time.
