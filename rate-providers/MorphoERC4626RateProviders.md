@@ -2,7 +2,7 @@
 
 ## Details
 - Reviewed by: @mkflow27
-- Checked by: 
+- Checked by: @danielmkm
 - Deployed at:
     - Steakhouse USDC [ethereum:0xc81D60E39e065146c6dE186fFC5B39e4CA2189Cf](https://etherscan.io/address/0xc81D60E39e065146c6dE186fFC5B39e4CA2189Cf#code)
     - Steakhouse USDT [ethereum:0x50A72232c5370321aa78036BaDe8e9d5eB89cbAF](https://etherscan.io/address/0x50A72232c5370321aa78036BaDe8e9d5eB89cbAF#code)
