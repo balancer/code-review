@@ -1545,7 +1545,7 @@
       "upgradeableComponents": []
     },
     "0xd4580a56e715F14Ed9d340Ff30147d66230d44Ba": {
-      "asset": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+      "asset": "0x6dC3ce9C57b20131347FDc9089D740DAf6eB34c5",
       "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./TokemakRateProvider.md",
