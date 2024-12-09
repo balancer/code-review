@@ -1757,6 +1757,28 @@
       "factory": "0x467665D4ae90e7A99c9C9AF785791058426d6eA0",
       "upgradeableComponents": []
     },
+    "0xf47c506C293319B3bC517Acc371F86B87B03DD5D": {
+      "asset": "0xc824A08dB624942c5E5F330d56530cD1598859fD",
+      "name": "ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./HighGrowthEthRateProvider.md",
+      "warnings": ["donation", "unverified-contracts"],
+      "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xB185D98056419029daE7120EcBeFa0DbC12c283A",
+          "implementationReviewed": "0x3151293F241bd7391f4ecAeF206607b59f424417"
+        },
+        {
+          "entrypoint": "0xc824A08dB624942c5E5F330d56530cD1598859fD",
+          "implementationReviewed": "0xed5c8c80a29e541b8781e0e729d9af597a368589"
+        },
+        {
+          "entrypoint": "0x3D08ccb47ccCde84755924ED6B0642F9aB30dFd2",
+          "implementationReviewed": "0x3f258821a5ad28391e9Bb0B69A705fdf545BCab0"
+        }
+      ]
+    },
     "0xc81D60E39e065146c6dE186fFC5B39e4CA2189Cf": {
       "asset": "0xBEEF01735c132Ada46AA9aA4c54623cAA92A64CB",
       "name": "ERC4626RateProvider",
@@ -1974,7 +1996,6 @@
       "factory": "",
       "upgradeableComponents": []
     },
-    
     "0x5F62fd24941B585b91EB059E0ea1a7e729357511": {
       "asset": "0xf0E7eC247b918311afa054E0AEdb99d74c31b809",
       "name": "ERC4626RateProvider",
@@ -1982,6 +2003,15 @@
       "review": "./statATokenLMRateProvider.md",
       "warnings": [],
       "factory": "0x15e86be6084c6a5a8c17732d398dfbc2ec574cec",
+      "upgradeableComponents": []
+    },
+    "0xCCfE43E5853C87225948317379ffD910039f6A14": {
+      "asset": "0xFECB3F7c54E2CAAE9dC6Ac9060A822D47E053760",
+      "name": "BlraSdaiRateProvider",
+      "summary": "safe",
+      "review": "./BlraSdaiRateProvider.md",
+      "warnings": ["donation"],
+      "factory": "",
       "upgradeableComponents": []
     },
     "0x0008A59C1d2E5922790C929ea432ed02D4D3323A": {
@@ -2510,6 +2540,35 @@
       "review": "./ChainLinkRateProvider.md",
       "warnings": ["chainlink"],
       "factory": "0x4132f7AcC9dB7A6cF7BE2Dd3A9DC8b30C7E6E6c8",
+      "upgradeableComponents": []
+    }
+  },
+  "sepolia": {
+    "0xB1B171A07463654cc1fE3df4eC05f754E41f0A65": {
+      "asset": "0x978206fAe13faF5a8d293FB614326B237684B750",
+      "name": "waUSDT Rate Provider",
+      "summary": "safe",
+      "review": "./StatATokenTestnetRateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
+    },
+    "0x22db61f3a8d81d3d427a157fdae8c7eb5b5fd373": {
+      "asset": "0xDE46e43F46ff74A23a65EBb0580cbe3dFE684a17",
+      "name": "waDAI Rate Provider",
+      "summary": "safe",
+      "review": "./StatATokenTestnetRateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
+    },
+    "0x34101091673238545De8a846621823D9993c3085": {
+      "asset": "0x8A88124522dbBF1E56352ba3DE1d9F78C143751e",
+      "name": "waUSDC Rate Provider",
+      "summary": "safe",
+      "review": "./StatATokenTestnetRateProvider.md",
+      "warnings": [],
+      "factory": "",
       "upgradeableComponents": []
     }
   }
