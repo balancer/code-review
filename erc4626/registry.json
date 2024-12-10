@@ -21,5 +21,35 @@
             "review": "./AaveV3.md",
             "warnings": []
         }
+    },
+    "gnosis":{
+        "0x773cda0cade2a3d86e6d4e30699d40bb95174ff2":{
+            "asset":"0x6C76971f98945AE98dD7d4DFcA8711ebea946eA6",
+            "name": "Aave Gnosis wstETH",
+            "summary": "safe",
+            "review": "../rate-providers/statATokenv2RateProvider.md",
+            "warnings": []
+        },
+        "0x7c16f0185a26db0ae7a9377f23bc18ea7ce5d644":{
+            "asset":"0x9C58BAcC331c9aa871AFD802DB6379a98e80CEdb",
+            "name": "Aave Gnosis GNO",
+            "summary": "safe",
+            "review": "../rate-providers/statATokenv2RateProvider.md",
+            "warnings": []
+        },
+        "0xaf204776c7245bf4147c2612bf6e5972ee483701":{
+            "asset":"0xe91D153E0b41518A2Ce8Dd3D7944Fa863463a97d",
+            "name": "sDAI",
+            "summary": "safe",
+            "review": "../rate-providers/statATokenv2RateProvider.md",
+            "warnings": []
+        },
+        "0x51350d88c1bd32cc6a79368c9fb70373fb71f375":{
+            "asset":"0x2a22f9c3b484c3629090FeED35F17Ff8F88f76F0",
+            "name": "Aave Gnosis USDCe",
+            "summary": "safe",
+            "review": "../rate-providers/statATokenv2RateProvider.md",
+            "warnings": []
+        }
     }
 }
