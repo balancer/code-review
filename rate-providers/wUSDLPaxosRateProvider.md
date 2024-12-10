@@ -5,6 +5,7 @@
 - Checked by: @danielmkm
 - Deployed at:
     - [arbitrum:0x4d494eF5CB1143991F7F767567aD7f55bCfDc279](https://arbiscan.io/address/0x4d494eF5CB1143991F7F767567aD7f55bCfDc279#code)
+    - [ethereum:0x51b7F50044a2a1A9A846575Be33c00A68e0172DF](https://etherscan.io/address/0x51b7F50044a2a1A9A846575Be33c00A68e0172DF#code)
 - Audit report(s):
     - [USDL audits](https://github.com/paxosglobal/ybs-contract/blob/master/audits/REP-final-20240301T145234Z.pdf)
 
@@ -33,6 +34,16 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 
     - upgradeable component: `YBSV1` ([arbitrum:0x7F850b0aB1988Dd17B69aC564c1E2857949e4dEe](https://arbiscan.io/address/0x7F850b0aB1988Dd17B69aC564c1E2857949e4dEe#code))
     - admin address: [arbitrum:0x0E5087e19EB58e28DDF9F341b550BE6797547BF7](https://arbiscan.io/address/0x0E5087e19EB58e28DDF9F341b550BE6797547BF7#code)
+    - admin type: multisig
+        - multisig threshold/signers: 3/17
+
+Ethereum:
+    - upgradeable component: `wYBSV1` ([ethereum:0x7751E2F4b8ae93EF6B79d86419d42FE3295A4559](https://etherscan.io/address/0x7751E2F4b8ae93EF6B79d86419d42FE3295A4559#readProxyContract))
+    - admin address: [ethereum:0x60Be07b68214d49aF3Ec8fa89c7fc0970De0A94E](https://etherscan.io/address/0x60Be07b68214d49aF3Ec8fa89c7fc0970De0A94E#code)
+    - admin type: multisig
+        - multisig threshold/signers: 3/20
+    - upgradeable component: `YBSV1` ([ethereum:0xbdC7c08592Ee4aa51D06C27Ee23D5087D65aDbcD](https://etherscan.io/address/0xbdC7c08592Ee4aa51D06C27Ee23D5087D65aDbcD#code))
+    - admin address: [ethereum:0x65bcf790Cb8ADf60D5f54eC2E10DE8C83886E0AE](https://etherscan.io/address/0x65bcf790Cb8ADf60D5f54eC2E10DE8C83886E0AE#code)
     - admin type: multisig
         - multisig threshold/signers: 3/17
         
