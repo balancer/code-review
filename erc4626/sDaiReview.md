@@ -1,4 +1,4 @@
-# ERC4626 Vault: `StataTokenV2`
+# ERC4626 Vault: `SavingsXDai`
 
 ## Details
 - Reviewed by: @mkflow27
