@@ -1,5 +1,33 @@
 {
-  "mainnet": {
+  "ethereum": {
+    "0x2371e134e3455e0593363cBF89d3b6cf53740618": {
+      "asset": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+      "name": "MetaMorpho Gauntlet wETH Prime",
+      "summary": "safe",
+      "review": "./MorphoVaults/Gauntlet.md",
+      "warnings": []
+    },
+    "0xBEEF01735c132Ada46AA9aA4c54623cAA92A64CB": {
+      "asset": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      "name": "MetaMorpho Steakhouse SteakUSDC",
+      "summary": "safe",
+      "review": "./MorphoVaults/Steakhouse.md",
+      "warnings": []
+    },
+    "0xbEef047a543E45807105E51A8BBEFCc5950fcfBa": {
+      "asset": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "name": "MetaMorpho Steakhouse SteakUSDT",
+      "summary": "safe",
+      "review": "./MorphoVaults/Steakhouse.md",
+      "warnings": []
+    },
+    "0xbEEFC01767ed5086f35deCb6C00e6C12bc7476C1": {
+      "asset": "0x7751E2F4b8ae93EF6B79d86419d42FE3295A4559",
+      "name": "MetaMorpho Coinshift-Steakhouse csUSDL",
+      "summary": "safe",
+      "review": "./MorphoVaults/Steakhouse.md",
+      "warnings": []
+    },
     "0xD4fa2D31b7968E448877f69A96DE69f5de8cD23E": {
       "asset": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
       "name": "Aave Ethereum USDC",
