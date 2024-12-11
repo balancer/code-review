@@ -1820,6 +1820,60 @@
           "implementationReviewed": "0x2371e134e3455e0593363cBF89d3b6cf53740618"
         }
       ]
+    },
+    "0x51b7F50044a2a1A9A846575Be33c00A68e0172DF": {
+      "asset": "0x7751E2F4b8ae93EF6B79d86419d42FE3295A4559",
+      "name": "ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./wUSDLPaxosRateProvider.md",
+      "warnings": [],
+      "factory": "0xe548a29631f9e49830be8edc22d407b2d2915f31",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x7751E2F4b8ae93EF6B79d86419d42FE3295A4559",
+          "implementationReviewed": "0x2954c85e7e2b841d0e9a9fdcc09dac1274057d71"
+        },
+        {
+          "entrypoint": "0xbdC7c08592Ee4aa51D06C27Ee23D5087D65aDbcD",
+          "implementationReviewed": "0x752d55d62a94658eac08eae42deda902b69b0e76"
+        }
+      ]
+    },
+    "0xcdAa68ce322728FE4185a60f103C194F1E2c47BC": {
+      "asset": "0x775F661b0bD1739349b9A2A3EF60be277c5d2D29",
+      "name": "ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./MarketRateTransformerRateProviders.md",
+      "warnings": [""],
+      "factory": "0xeC2C6184761ab7fE061130B4A7e3Da89c72F8395",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x775F661b0bD1739349b9A2A3EF60be277c5d2D29",
+          "implementationReviewed": "0x23db508559ca053eee7f21b94dac803353560b4f"
+        },
+        {
+          "entrypoint": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+          "implementationReviewed": "0xeF434E4573b90b6ECd4a00f4888381e4D0CC5Ccd"
+        }
+      ]
+    },
+    "0x9CC54cb63E61c7D5231c506e4206Eb459250D2A7": {
+      "asset": "0xbEEFC01767ed5086f35deCb6C00e6C12bc7476C1",
+      "name": "ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./MarketRateTransformerRateProviders.md",
+      "warnings": [""],
+      "factory": "0xeC2C6184761ab7fE061130B4A7e3Da89c72F8395",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x7751E2F4b8ae93EF6B79d86419d42FE3295A4559",
+          "implementationReviewed": "0x2954c85e7e2b841d0e9a9fdcc09dac1274057d71"
+        },
+        {
+          "entrypoint": "0xbdC7c08592Ee4aa51D06C27Ee23D5087D65aDbcD",
+          "implementationReviewed": "0x752d55d62a94658eac08eae42deda902b69b0e76"
+        }
+      ]
     }
   },
   "fantom": {
@@ -2067,6 +2121,24 @@
           "implementationReviewed": "0xF2C312BfAF4CF0429DB4DA15a0cf5F770Ea3E770"
         }
       ]
+    },
+    "0x30EAcEC6BD250589043De026e45dc9A158C65a1F": {
+      "asset": "0x773CDA0CADe2A3d86E6D4e30699d40bB95174ff2",
+      "name": "ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./MarketRateTransformerRateProviders.md",
+      "warnings": [""],
+      "factory": "0x03362f847b4fabc12e1ce98b6b59f94401e4588e",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x773CDA0CADe2A3d86E6D4e30699d40bB95174ff2",
+          "implementationReviewed": "0x7CB7fdeEB5E71f322F8E39Be67959C32a6A3aAA3"
+        },
+        {
+          "entrypoint": "0xb50201558B00496A145fE76f7424749556E326D8",
+          "implementationReviewed": "0xF2C312BfAF4CF0429DB4DA15a0cf5F770Ea3E770"
+        }
+      ]
     }
   },
   "mode": {
@@ -2115,9 +2187,10 @@
       "factory": "0x0767bECE12a327A1eD896c48E843AE53a0c313E9",
       "upgradeableComponents": [
         {
-        "entrypoint": "0xA61BeB4A3d02decb01039e378237032B351125B4",
-        "implementationReviewed": "0x5adDc89785D75C86aB939E9e15bfBBb7Fc086A87"
-        }]
+          "entrypoint": "0xA61BeB4A3d02decb01039e378237032B351125B4",
+          "implementationReviewed": "0x5adDc89785D75C86aB939E9e15bfBBb7Fc086A87"
+        }
+      ]
     },
     "0xFE1862BdCAf17ADf2D83eEb0Da98dAE04492F4f7": {
       "asset": "0x90993Ac1734b023dEEc548b87B11F5d2dcD3818E",
@@ -2128,9 +2201,10 @@
       "factory": "",
       "upgradeableComponents": [
         {
-        "entrypoint": "0xA2aa501b19aff244D90cc15a4Cf739D2725B5729",
-        "implementationReviewed": "0xEbe57e8045F2F230872523bbff7374986E45C486"
-        }]
+          "entrypoint": "0xA2aa501b19aff244D90cc15a4Cf739D2725B5729",
+          "implementationReviewed": "0xEbe57e8045F2F230872523bbff7374986E45C486"
+        }
+      ]
     },
     "0xFAD2f1b6B24d475BAA79DfA625073981bCD82A0e": {
       "asset": "0x80137510979822322193FC997d400D5A6C747bf7",
@@ -2141,9 +2215,10 @@
       "factory": "",
       "upgradeableComponents": [
         {
-        "entrypoint": "0xA2aa501b19aff244D90cc15a4Cf739D2725B5729",
-        "implementationReviewed": "0xEbe57e8045F2F230872523bbff7374986E45C486"
-        }]
+          "entrypoint": "0xA2aa501b19aff244D90cc15a4Cf739D2725B5729",
+          "implementationReviewed": "0xEbe57e8045F2F230872523bbff7374986E45C486"
+        }
+      ]
     }
   },
   "optimism": {
