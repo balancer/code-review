@@ -37,4 +37,5 @@ To save time, we do not bother pointing out low-severity/informational issues or
 ## Conclusion
 **Summary judgment: USABLE**
 
-The outlined ERC4626 Vaults should work well with Balancer pools. Upgradeability is guarded by Aave governance and the Vaults implement the required interfaces with fork tests passing as can be seen [here](https://github.com/balancer/balancer-v3-erc4626-tests/blob/main/test/mainnet/ERC4626MainnetMorphoGauntletWeth.t.sol).
+The outlined ERC4626 Vaults should work well with Balancer pools. The Vaults implement the required interfaces with fork tests passing as can be seen at:
+    - [Morpho's Gauntlet Weth](https://github.com/balancer/balancer-v3-erc4626-tests/blob/f6245bfe043759ea17d7282ada58871dc12f8fcc/test/mainnet/ERC4626MainnetMorphoGauntletWeth.t.sol#L20)
