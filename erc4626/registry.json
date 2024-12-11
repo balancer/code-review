@@ -1,25 +1,64 @@
 {
-    "sepolia":{
-        "0xDE46e43F46ff74A23a65EBb0580cbe3dFE684a17":{
-            "asset":"0xff34b3d4aee8ddcd6f9afffb6fe49bd371b8a357",
-            "name": "Static Aave Ethereum DAI",
-            "summary": "safe",
-            "review": "./AaveV3.md",
-            "warnings": []
-        },
-        "0x94a9d9ac8a22534e3faca9f4e7f2e2cf85d5e4c8":{
-            "asset":"0xff34b3d4aee8ddcd6f9afffb6fe49bd371b8a357",
-            "name": "Static Aave Ethereum USDT",
-            "summary": "safe",
-            "review": "./AaveV3.md",
-            "warnings": []
-        },
-        "0x978206fAe13faF5a8d293FB614326B237684B750":{
-            "asset":"0xaa8e23fb1079ea71e0a56f48a2aa51851d8433d0",
-            "name": "Static Aave Ethereum USDC",
-            "summary": "safe",
-            "review": "./AaveV3.md",
-            "warnings": []
-        }
+  "mainnet": {
+    "0xD4fa2D31b7968E448877f69A96DE69f5de8cD23E": {
+      "asset": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      "name": "Aave Ethereum USDC",
+      "summary": "safe",
+      "review": "../rate-providers/MarketRateTransformerRateProviders.md",
+      "warnings": []
     }
+  },
+  "gnosis": {
+    "0x773cda0cade2a3d86e6d4e30699d40bb95174ff2": {
+      "asset": "0x6C76971f98945AE98dD7d4DFcA8711ebea946eA6",
+      "name": "Aave Gnosis wstETH",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": []
+    },
+    "0x7c16f0185a26db0ae7a9377f23bc18ea7ce5d644": {
+      "asset": "0x9C58BAcC331c9aa871AFD802DB6379a98e80CEdb",
+      "name": "Aave Gnosis GNO",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": []
+    },
+    "0xaf204776c7245bf4147c2612bf6e5972ee483701": {
+      "asset": "0xe91D153E0b41518A2Ce8Dd3D7944Fa863463a97d",
+      "name": "sDAI",
+      "summary": "safe",
+      "review": "./SavingsDAIRateProviderGnosis.md",
+      "warnings": ["buffer"]
+    },
+    "0x51350d88c1bd32cc6a79368c9fb70373fb71f375": {
+      "asset": "0x2a22f9c3b484c3629090FeED35F17Ff8F88f76F0",
+      "name": "Aave Gnosis USDCe",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": []
+    }
+  },
+  "sepolia": {
+    "0xDE46e43F46ff74A23a65EBb0580cbe3dFE684a17": {
+      "asset": "0xff34b3d4aee8ddcd6f9afffb6fe49bd371b8a357",
+      "name": "Static Aave Ethereum DAI",
+      "summary": "safe",
+      "review": "./AaveV3.md",
+      "warnings": []
+    },
+    "0x94a9d9ac8a22534e3faca9f4e7f2e2cf85d5e4c8": {
+      "asset": "0xff34b3d4aee8ddcd6f9afffb6fe49bd371b8a357",
+      "name": "Static Aave Ethereum USDT",
+      "summary": "safe",
+      "review": "./AaveV3.md",
+      "warnings": []
+    },
+    "0x978206fAe13faF5a8d293FB614326B237684B750": {
+      "asset": "0xaa8e23fb1079ea71e0a56f48a2aa51851d8433d0",
+      "name": "Static Aave Ethereum USDC",
+      "summary": "safe",
+      "review": "./AaveV3.md",
+      "warnings": []
+    }
+  }
 }
