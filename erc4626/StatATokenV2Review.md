@@ -10,6 +10,7 @@
     - [ethereum:0x487c2C53c0866F0A73ae317bD1A28F63ADcD9aD1](https://etherscan.io/address/0x487c2c53c0866f0a73ae317bd1a28f63adcd9ad1#code)
     - [gnosis:0x57f664882F762FA37903FC864e2B633D384B411A](https://gnosisscan.io/token/0x57f664882f762fa37903fc864e2b633d384b411a)
     - [ethereum:0xD4fa2D31b7968E448877f69A96DE69f5de8cD23E](https://etherscan.io/address/0xD4fa2D31b7968E448877f69A96DE69f5de8cD23E)
+    - [ethereum:0x0bfc9d54Fc184518A81162F8fB99c2eACa081202](https://etherscan.io/address/0x487c2c53c0866f0a73ae317bd1a28f63adcd9ad1#code)
 - Audit report(s):
     - [StatATokenV2 audits](https://github.com/aave-dao/aave-v3-origin/blob/067d29eb75115179501edc4316d125d9773f7928/audits/11-09-2024_Certora_StataTokenV2.pdf)
 
@@ -56,6 +57,12 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 
     #### Wrapped Aave Ethereum USDC - 0xD4fa2D31b7968E448877f69A96DE69f5de8cD23E
     - upgradeable component: `StataTokenV2` ([ethereum:0xD4fa2D31b7968E448877f69A96DE69f5de8cD23E](https://etherscan.io/address/0xD4fa2D31b7968E448877f69A96DE69f5de8cD23E#readProxyContract))
+    - admin address: [ethereum:0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A](https://etherscan.io/address/0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A#code)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours.
+
+    #### Wrapped Aave Ethereum WETH - 0x0bfc9d54Fc184518A81162F8fB99c2eACa081202
+    - upgradeable component: `StataTokenV2` ([ethereum:0x0bfc9d54Fc184518A81162F8fB99c2eACa081202](https://etherscan.io/address/0x0bfc9d54fc184518a81162f8fb99c2eaca081202#readProxyContract))
     - admin address: [ethereum:0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A](https://etherscan.io/address/0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A#code)
         - admin type: Aave governance system.
             - multisig timelock? YES: 24 hours.
