@@ -52,5 +52,5 @@ To save time, we do not bother pointing out low-severity/informational issues or
 ## Conclusion
 **Summary judgment: USABLE**
 
-The outlined ERC4626 Vaults should work well with Balancer pools.The Vault implements the required interfaces. Fork tests passing as can be seen [here](https://github.com/balancer/balancer-v3-monorepo/pull/1171). Users should take into account the developers comments as part of the test-pr which state
+The outlined ERC4626 Vaults should work well with Balancer pools.The Vault implements the required interfaces. Fork tests passing as can be seen [here](https://github.com/balancer/balancer-v3-erc4626-tests/blob/main/test/gnosis/ERC4626GnosisSDai.t.sol). Users should take into account the developers comments as part of the test-pr which state
 > sDAI requires a special ERC4626 test, due to the token unusual behavior: every deposit devalues a bit the wrapped tokens, so a user may not be able to withdraw the amount that it deposited, only part of it. When interacting with boosted pools, this behavior is ok, but it's a warning when initializing a buffer or adding liquidity to a buffer: that buffer may leak value.
