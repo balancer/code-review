@@ -1,7 +1,7 @@
 # ERC4626 Vault: `MetaMorpho`
 
 ## Details
-- Reviewed by: 
+- Reviewed by: @mkflow27
 - Checked by: @\<GitHub handle of secondary reviewer\>
 - Deployed at:
     - [ethereum:https://etherscan.io/address/0x2371e134e3455e0593363cBF89d3b6cf53740618](https://etherscan.io/address/0x2371e134e3455e0593363cBF89d3b6cf53740618)
@@ -25,22 +25,8 @@ Each of the items below represents a common red flag found in Rate Provider cont
 If none of these is checked, then this might be a pretty great Rate Provider! If any of these is checked, we must thoroughly elaborate on the conditions that lead to the potential issue. Decision points are not binary; a Rate Provider can be safe despite these boxes being checked. A check simply indicates that thorough vetting is required in a specific area, and this vetting should be used to inform a holistic analysis of the Rate Provider.
 
 ### Administrative Privileges
-- [x] The ERC4626 Vault is upgradeable. 
-
-- [ ] The Rate Provider is upgradeable (e.g., via a proxy architecture or an `onlyOwner` function that updates the price source address).
-
-- [x] Some other portion of the price pipeline is upgradeable (e.g., the token itself, an oracle, or some piece of a larger system that tracks the price). 
-    Part of the rate computation relies of `totalAssets` being calculated. This function iterates over a list of Ids. This list of Ids can be changed by the Allocator role. The potential impact has not been thoroughly investigated. There are however protections in place to protect against invalid changes such as
-    - `revert ErrorsLib.DuplicateMarket(id);`
-    - `revert ErrorsLib.InvalidMarketRemovalNonZeroCap(id);`
-    - `revert ErrorsLib.PendingCap(id);`
-    - `ErrorsLib.InvalidMarketRemovalNonZeroSupply(id);`
-    - `ErrorsLib.InvalidMarketRemovalTimelockNotElapsed(id);`
-
-    #### Gauntlet Prime wETH
-    For [Gauntlet Prime wETH](https://etherscan.io/address/0x2371e134e3455e0593363cBF89d3b6cf53740618) some allocators are eoas.
-    - 0xfd32fA2ca22c76dD6E550706Ad913FC6CE91c75D
-    - 0x959d73CB5a1C1ad7EbCE3eC93FAD3b2f9a25432E
+- [] The ERC4626 Vault is upgradeable.
+    - note: Upgradeability remarks for rate relevant aspects can be found in the corresponding rate provider review.
   
 ### Common Manipulation Vectors
 - [ ] The ERC4626 Vault is susceptible to donation attacks.
@@ -51,4 +37,4 @@ To save time, we do not bother pointing out low-severity/informational issues or
 ## Conclusion
 **Summary judgment: USABLE**
 
-The outlined ERC4626 Vaults should work well with Balancer pools. Upgradeability is guarded by Aave governance and the Vaults implement the required interfaces with fork tests passing as can be seen [here]().
+The outlined ERC4626 Vaults should work well with Balancer pools. Upgradeability is guarded by Aave governance and the Vaults implement the required interfaces with fork tests passing as can be seen [here](https://github.com/balancer/balancer-v3-erc4626-tests/blob/main/test/mainnet/ERC4626MainnetMorphoGauntletWeth.t.sol).
