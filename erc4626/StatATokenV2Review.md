@@ -16,7 +16,7 @@ A 4626 Vault which wrapps aTokens in order to translate the rebasing nature of y
 ## Review Checklist: Bare Minimum Compatibility
 Each of the items below represents an absolute requirement for the Rate Provider. If any of these is unchecked, the Rate Provider is unfit to use.
 
-- [x] Tests based on the [balancer-v3-monorepo](https://github.com/balancer/balancer-v3-monorepo/tree/main/pkg/vault/test/foundry/fork) pass for the given ERC4626 vaults, which can be found [here](https://github.com/balancer/balancer-v3-monorepo/pull/1171).
+- [x] Tests based on the [balancer-v3-monorepo](https://github.com/balancer/balancer-v3-monorepo/tree/main/pkg/vault/test/foundry/fork) pass for the given ERC4626 vaults, which can be found [here](https://github.com/balancer/balancer-v3-erc4626-tests/tree/main/test).
 - [x] The required Vault implements the required operational ERC4626 Interface
 
 ## Review Checklist: Common Findings
