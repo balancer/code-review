@@ -55,7 +55,7 @@
       "asset": "0xe91D153E0b41518A2Ce8Dd3D7944Fa863463a97d",
       "name": "sDAI",
       "summary": "safe",
-      "review": "./SavingsDAIRateProviderGnosis.md",
+      "review": "./sDaiReview.md",
       "warnings": ["buffer"]
     },
     "0x51350d88c1bd32cc6a79368c9fb70373fb71f375": {
