@@ -2,7 +2,7 @@
 
 ## Details
 - Reviewed by: @mkflow27
-- Checked by: @\<GitHub handle of secondary reviewer\>
+- Checked by: @danielmkm
 - Deployed at:
     - [gnosis:0x773cda0cade2a3d86e6d4e30699d40bb95174ff2](https://gnosisscan.io/address/0x773cda0cade2a3d86e6d4e30699d40bb95174ff2#code)
     - [gnosis:0x7c16f0185a26db0ae7a9377f23bc18ea7ce5d644](https://gnosisscan.io/address/0x7c16f0185a26db0ae7a9377f23bc18ea7ce5d644)
@@ -11,7 +11,7 @@
     - [StatATokenV2 audits](https://github.com/aave-dao/aave-v3-origin/blob/067d29eb75115179501edc4316d125d9773f7928/audits/11-09-2024_Certora_StataTokenV2.pdf)
 
 ## Context
-A 4626 Vault which wrapps aTokens in order to translate the rebasing nature of yield accrual into a non-rebasing value accrual.
+A 4626 Vault which wraps aTokens in order to translate the rebasing nature of yield accrual into a non-rebasing value accrual.
 
 ## Review Checklist: Bare Minimum Compatibility
 Each of the items below represents an absolute requirement for the Rate Provider. If any of these is unchecked, the Rate Provider is unfit to use.
