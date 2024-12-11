@@ -68,7 +68,7 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
         - admin type: Aave governance system.
             - multisig timelock? YES: 24 hours.
 
-    #### Wrapped Aave Ethereum USDT string - 0x7Bc3485026Ac48b6cf9BaF0A377477Fff5703Af8
+    #### Wrapped Aave Ethereum USDT - 0x7Bc3485026Ac48b6cf9BaF0A377477Fff5703Af8
     - upgradeable component: `StataTokenV2` ([ethereum:0x7Bc3485026Ac48b6cf9BaF0A377477Fff5703Af8](https://etherscan.io/address/0x7bc3485026ac48b6cf9baf0a377477fff5703af8#readProxyContract))
     - admin address: [ethereum:0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A](https://etherscan.io/address/0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A#code)
         - admin type: Aave governance system.
