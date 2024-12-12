@@ -32,7 +32,35 @@
       "asset": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
       "name": "Aave Ethereum USDC",
       "summary": "safe",
-      "review": "../rate-providers/MarketRateTransformerRateProviders.md",
+      "review": "./StatATokenV2Review.md",
+      "warnings": []
+    },
+    "0x0bfc9d54Fc184518A81162F8fB99c2eACa081202": {
+      "asset": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+      "name": "Wrapped Aave Ethereum WETH",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": []
+    },
+    "0x7Bc3485026Ac48b6cf9BaF0A377477Fff5703Af8": {
+      "asset": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "name": "Wrapped Aave Ethereum USDT",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": []
+    },
+    "0x0FE906e030a44eF24CA8c7dC7B7c53A6C4F00ce9": {
+      "asset": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+      "name": "Wrapped Aave Ethereum Lido WETH",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": []
+    },
+    "0x775F661b0bD1739349b9A2A3EF60be277c5d2D29": {
+      "asset": "0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0",
+      "name": "Wrapped Aave Ethereum Lido wstETH",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
       "warnings": []
     }
   },
@@ -61,6 +89,13 @@
     "0x51350d88c1bd32cc6a79368c9fb70373fb71f375": {
       "asset": "0x2a22f9c3b484c3629090FeED35F17Ff8F88f76F0",
       "name": "Aave Gnosis USDCe",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": []
+    },
+    "0x57f664882F762FA37903FC864e2B633D384B411A": {
+      "asset": "0x6A023CCd1ff6F2045C3309768eAd9E68F978f6e1",
+      "name": "Wrapped Aave Gnosis WETH",
       "summary": "safe",
       "review": "./StatATokenV2Review.md",
       "warnings": []
