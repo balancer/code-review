@@ -98,7 +98,14 @@ To save time, we do not bother pointing out low-severity/informational issues or
 **Summary judgment: USABLE**
 
 The outlined ERC4626 Vaults should work well with Balancer pools. Upgradeability is guarded by Aave governance and the Vaults implement the required interfaces with fork tests passing as can be seen here:
-- [Aave's GNO](https://github.com/balancer/balancer-v3-erc4626-tests/blob/main/test/gnosis/ERC4626GnosisAaveGno.t.sol)
-- [Aave's WstEth](https://github.com/balancer/balancer-v3-erc4626-tests/blob/main/test/gnosis/ERC4626GnosisAaveWstEth.t.sol)
-- [Aave's USDC.e](https://github.com/balancer/balancer-v3-erc4626-tests/blob/main/test/gnosis/ERC4626GnosisAaveUsdce.t.sol)
-- [Aave's aUsdc](https://github.com/balancer/balancer-v3-erc4626-tests/pull/1/files)
+- [0x773cda0cade2a3d86e6d4e30699d40bb95174ff2](https://github.com/balancer/balancer-v3-erc4626-tests/blob/main/test/gnosis/ERC4626GnosisAaveGno.t.sol)
+- [0x7c16F0185A26Db0AE7a9377f23BC18ea7ce5d644](https://github.com/balancer/balancer-v3-erc4626-tests/blob/365ee17e8904f4654990434cc3bbc273478d95ef/test/gnosis/ERC4626GnosisAaveGno.t.sol#L20)
+- [0x51350d88c1bd32cc6a79368c9fb70373fb71f375](https://github.com/balancer/balancer-v3-erc4626-tests/blob/365ee17e8904f4654990434cc3bbc273478d95ef/test/gnosis/ERC4626GnosisAaveUsdce.t.sol#L20)
+- [0x57f664882F762FA37903FC864e2B633D384B411A](https://github.com/balancer/balancer-v3-erc4626-tests/blob/365ee17e8904f4654990434cc3bbc273478d95ef/test/gnosis/ERC4626GnosisAaveWeth.t.sol#L17)
+- [0xD4fa2D31b7968E448877f69A96DE69f5de8cD23E](https://github.com/balancer/balancer-v3-erc4626-tests/blob/365ee17e8904f4654990434cc3bbc273478d95ef/test/mainnet/ERC4626MainnetAaveUsdcV2.t.sol#L20)
+- [0x0bfc9d54Fc184518A81162F8fB99c2eACa081202](https://github.com/balancer/balancer-v3-erc4626-tests/blob/365ee17e8904f4654990434cc3bbc273478d95ef/test/mainnet/ERC4626MainnetAaveWeth.t.sol#L20)
+- [0x7Bc3485026Ac48b6cf9BaF0A377477Fff5703Af8](https://github.com/balancer/balancer-v3-erc4626-tests/blob/365ee17e8904f4654990434cc3bbc273478d95ef/test/mainnet/ERC4626MainnetAaveUsdt2.t.sol#L20)
+- [0x0FE906e030a44eF24CA8c7dC7B7c53A6C4F00ce9](https://github.com/balancer/balancer-v3-erc4626-tests/blob/365ee17e8904f4654990434cc3bbc273478d95ef/test/mainnet/ERC4626MainnetAaveLidoWeth.t.sol#L20)
+- [0x775F661b0bD1739349b9A2A3EF60be277c5d2D29](https://github.com/balancer/balancer-v3-erc4626-tests/blob/365ee17e8904f4654990434cc3bbc273478d95ef/test/mainnet/ERC4626MainnetAaveLidoWstEth.t.sol#L20)
+
+
