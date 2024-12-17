@@ -7,9 +7,12 @@
     - [gnosis:0x773cda0cade2a3d86e6d4e30699d40bb95174ff2](https://gnosisscan.io/address/0x773cda0cade2a3d86e6d4e30699d40bb95174ff2#code)
     - [gnosis:0x7c16f0185a26db0ae7a9377f23bc18ea7ce5d644](https://gnosisscan.io/address/0x7c16f0185a26db0ae7a9377f23bc18ea7ce5d644)
     - [gnosis:0x51350d88c1bd32cc6a79368c9fb70373fb71f375](https://gnosisscan.io/address/0x51350d88c1bd32cc6a79368c9fb70373fb71f375)
-    - [ethereum:0x487c2C53c0866F0A73ae317bD1A28F63ADcD9aD1](https://etherscan.io/address/0x487c2c53c0866f0a73ae317bd1a28f63adcd9ad1#code)
     - [gnosis:0x57f664882F762FA37903FC864e2B633D384B411A](https://gnosisscan.io/token/0x57f664882f762fa37903fc864e2b633d384b411a)
     - [ethereum:0xD4fa2D31b7968E448877f69A96DE69f5de8cD23E](https://etherscan.io/address/0xD4fa2D31b7968E448877f69A96DE69f5de8cD23E)
+    - [ethereum:0x0bfc9d54Fc184518A81162F8fB99c2eACa081202](https://etherscan.io/address/0x0bfc9d54Fc184518A81162F8fB99c2eACa081202)
+    - [ethereum:0x7Bc3485026Ac48b6cf9BaF0A377477Fff5703Af8](https://etherscan.io/address/0x7bc3485026ac48b6cf9baf0a377477fff5703af8#readProxyContract)
+    - [ethereum:0x0FE906e030a44eF24CA8c7dC7B7c53A6C4F00ce9](https://etherscan.io/token/0x0fe906e030a44ef24ca8c7dc7b7c53a6c4f00ce9#readProxyContract)
+    - [ethereum:0x775F661b0bD1739349b9A2A3EF60be277c5d2D29](https://etherscan.io/token/0x775f661b0bd1739349b9a2a3ef60be277c5d2d29#readProxyContract)
 - Audit report(s):
     - [StatATokenV2 audits](https://github.com/aave-dao/aave-v3-origin/blob/067d29eb75115179501edc4316d125d9773f7928/audits/11-09-2024_Certora_StataTokenV2.pdf)
 
@@ -60,6 +63,31 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
         - admin type: Aave governance system.
             - multisig timelock? YES: 24 hours.
 
+    #### Wrapped Aave Ethereum WETH - 0x0bfc9d54Fc184518A81162F8fB99c2eACa081202
+    - upgradeable component: `StataTokenV2` ([ethereum:0x0bfc9d54Fc184518A81162F8fB99c2eACa081202](https://etherscan.io/address/0x0bfc9d54fc184518a81162f8fb99c2eaca081202#readProxyContract))
+    - admin address: [ethereum:0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A](https://etherscan.io/address/0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A#code)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours.
+
+    #### Wrapped Aave Ethereum USDT - 0x7Bc3485026Ac48b6cf9BaF0A377477Fff5703Af8
+    - upgradeable component: `StataTokenV2` ([ethereum:0x7Bc3485026Ac48b6cf9BaF0A377477Fff5703Af8](https://etherscan.io/address/0x7bc3485026ac48b6cf9baf0a377477fff5703af8#readProxyContract))
+    - admin address: [ethereum:0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A](https://etherscan.io/address/0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A#code)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours.
+
+    #### Wrapped Aave Ethereum Lido WETH - 0x0FE906e030a44eF24CA8c7dC7B7c53A6C4F00ce9
+    - upgradeable component: `StataTokenV2` ([ethereum:0x0FE906e030a44eF24CA8c7dC7B7c53A6C4F00ce9](https://etherscan.io/address/0x0FE906e030a44eF24CA8c7dC7B7c53A6C4F00ce9))
+    - admin address: [ethereum:0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A](https://etherscan.io/address/0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A#code)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours.
+
+    #### Wrapped Aave Ethereum Lido wstETH - 0x775F661b0bD1739349b9A2A3EF60be277c5d2D29
+    - upgradeable component: `StataTokenV2` ([ethereum:0x775F661b0bD1739349b9A2A3EF60be277c5d2D29](https://etherscan.io/address/0x775F661b0bD1739349b9A2A3EF60be277c5d2D29#code))
+    - admin address: [ethereum:0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A](https://etherscan.io/address/0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A#code)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours.
+    
+
 ### Common Manipulation Vectors
 - [ ] The ERC4626 Vault is susceptible to donation attacks.
 
@@ -70,7 +98,14 @@ To save time, we do not bother pointing out low-severity/informational issues or
 **Summary judgment: USABLE**
 
 The outlined ERC4626 Vaults should work well with Balancer pools. Upgradeability is guarded by Aave governance and the Vaults implement the required interfaces with fork tests passing as can be seen here:
-- [Aave's GNO](https://github.com/balancer/balancer-v3-erc4626-tests/blob/main/test/gnosis/ERC4626GnosisAaveGno.t.sol)
-- [Aave's WstEth](https://github.com/balancer/balancer-v3-erc4626-tests/blob/main/test/gnosis/ERC4626GnosisAaveWstEth.t.sol)
-- [Aave's USDC.e](https://github.com/balancer/balancer-v3-erc4626-tests/blob/main/test/gnosis/ERC4626GnosisAaveUsdce.t.sol)
-- [Aave's aUsdc](https://github.com/balancer/balancer-v3-erc4626-tests/pull/1/files)
+- [0x773cda0cade2a3d86e6d4e30699d40bb95174ff2](https://github.com/balancer/balancer-v3-erc4626-tests/blob/main/test/gnosis/ERC4626GnosisAaveGno.t.sol)
+- [0x7c16F0185A26Db0AE7a9377f23BC18ea7ce5d644](https://github.com/balancer/balancer-v3-erc4626-tests/blob/365ee17e8904f4654990434cc3bbc273478d95ef/test/gnosis/ERC4626GnosisAaveGno.t.sol#L20)
+- [0x51350d88c1bd32cc6a79368c9fb70373fb71f375](https://github.com/balancer/balancer-v3-erc4626-tests/blob/365ee17e8904f4654990434cc3bbc273478d95ef/test/gnosis/ERC4626GnosisAaveUsdce.t.sol#L20)
+- [0x57f664882F762FA37903FC864e2B633D384B411A](https://github.com/balancer/balancer-v3-erc4626-tests/blob/365ee17e8904f4654990434cc3bbc273478d95ef/test/gnosis/ERC4626GnosisAaveWeth.t.sol#L17)
+- [0xD4fa2D31b7968E448877f69A96DE69f5de8cD23E](https://github.com/balancer/balancer-v3-erc4626-tests/blob/365ee17e8904f4654990434cc3bbc273478d95ef/test/mainnet/ERC4626MainnetAaveUsdcV2.t.sol#L20)
+- [0x0bfc9d54Fc184518A81162F8fB99c2eACa081202](https://github.com/balancer/balancer-v3-erc4626-tests/blob/365ee17e8904f4654990434cc3bbc273478d95ef/test/mainnet/ERC4626MainnetAaveWeth.t.sol#L20)
+- [0x7Bc3485026Ac48b6cf9BaF0A377477Fff5703Af8](https://github.com/balancer/balancer-v3-erc4626-tests/blob/365ee17e8904f4654990434cc3bbc273478d95ef/test/mainnet/ERC4626MainnetAaveUsdt2.t.sol#L20)
+- [0x0FE906e030a44eF24CA8c7dC7B7c53A6C4F00ce9](https://github.com/balancer/balancer-v3-erc4626-tests/blob/365ee17e8904f4654990434cc3bbc273478d95ef/test/mainnet/ERC4626MainnetAaveLidoWeth.t.sol#L20)
+- [0x775F661b0bD1739349b9A2A3EF60be277c5d2D29](https://github.com/balancer/balancer-v3-erc4626-tests/blob/365ee17e8904f4654990434cc3bbc273478d95ef/test/mainnet/ERC4626MainnetAaveLidoWstEth.t.sol#L20)
+
+

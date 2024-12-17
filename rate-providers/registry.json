@@ -452,6 +452,15 @@
           "implementationReviewed": "0xF393cf22308C3B0dE868ec125834A9F065C11CeC"
         }
       ]
+    },
+    "0xDA967592898c584966AAf765C1acfd09F6e1aEAA": {
+      "asset": "0x7788A3538C5fc7F9c7C8A74EAC4c898fC8d87d92",
+      "name": "ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./sUSDXRateProviderReview.md",
+      "warnings": [],
+      "factory": "0xe548a29631f9E49830bE8edc22d407b2D2915F31",
+      "upgradeableComponents": []
     }
   },
   "avalanche": {
