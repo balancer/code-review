@@ -62,6 +62,13 @@
       "summary": "safe",
       "review": "./StatATokenV2Review.md",
       "warnings": []
+    },
+    "0xc824A08dB624942c5E5F330d56530cD1598859fD": {
+      "asset": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7",
+      "name": "hgETH",
+      "summary": "safe",
+      "review": "./hgEth.md",
+      "warnings": []
     }
   },
   "gnosis": {
