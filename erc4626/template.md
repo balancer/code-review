@@ -33,9 +33,8 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
         - multisig timelock? \<YES: minimum duration/NO\>
         - trustworthy signers? \<YES/NO\> \<Delete this hint: Are the signers known entities such as Vitalik, Hudson, samczsun, or Fernando? Or are they random addresses?\>
 
-### Deposit & Withdraw workflow
-- [ ] 
-
+### Buffer blocklist
+- [ ] The reviewed ERC4626 Vault should be added to the blocked buffers metadata list. 
 
 ### Common Manipulation Vectors
 - [ ] The ERC4626 Vault is susceptible to donation attacks.
@@ -51,6 +50,6 @@ To save time, we do not bother pointing out low-severity/informational issues or
 ### \<M-02: Example Medium-severity Finding\>
 
 ## Conclusion
-**Summary judgment: \<SAFE/UNSAFE\>**
+**Summary judgment: \<ALLOWED/NOT_ALLOWED\>**
 
 \<Delete this hint: Formulate a nuanced conclusion here. Remember, it's okay if some of the boxes above are checked as long as reasonable protections are in place. If the ERC4626 Vault is very obviously safe, say so. If it's very obviously not, say so: what specifically needs to change before it can be considered safe? If the conclusion is hazy, explain why, and leave the final determination up to the reader. \>
