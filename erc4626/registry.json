@@ -62,6 +62,13 @@
       "summary": "safe",
       "review": "./StatATokenV2Review.md",
       "warnings": []
+    },
+    "0x5F9D59db355b4A60501544637b00e94082cA575b": {
+      "asset": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3",
+      "name": "Wrapped Aave Ethereum USDT",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": []
     }
   },
   "gnosis": {
