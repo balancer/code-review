@@ -65,7 +65,14 @@
     },
     "0x5F9D59db355b4A60501544637b00e94082cA575b": {
       "asset": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3",
-      "name": "Wrapped Aave Ethereum USDT",
+      "name": "Wrapped Aave Ethereum USDe",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": []
+    },
+    "0xC71Ea051a5F82c67ADcF634c36FFE6334793D24C": {
+      "asset": "0x40D16FC0246aD3160Ccc09B8D0D3A2cD28aE6C2f",
+      "name": "Wrapped Aave Lido Ethereum GHO",
       "summary": "safe",
       "review": "./StatATokenV2Review.md",
       "warnings": []

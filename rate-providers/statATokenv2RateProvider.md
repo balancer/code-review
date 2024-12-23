@@ -9,6 +9,7 @@
     - USDT [ethereum:0xEdf63cce4bA70cbE74064b7687882E71ebB0e988](https://etherscan.io/address/0xEdf63cce4bA70cbE74064b7687882E71ebB0e988#code)
     - Lido wETH [ethereum:0xf4b5D1C22F35a460b91edD7F33Cefe619E2fAaF4](https://etherscan.io/address/0xf4b5D1C22F35a460b91edD7F33Cefe619E2fAaF4#code)
     - USDe [ethereum:0xdB44A0223604ABAD704C4bCDDAAd88b101953246](https://etherscan.io/address/0xdB44A0223604ABAD704C4bCDDAAd88b101953246#code)
+    - Lido GHO [ethereum:0x851b73c4BFd5275D47FFf082F9e8B4997dCCB253](https://etherscan.io/address/0x851b73c4BFd5275D47FFf082F9e8B4997dCCB253#code)    
 
     - wETH [gnosis:0x0008A59C1d2E5922790C929ea432ed02D4D3323A](https://gnosisscan.io/address/0x0008A59C1d2E5922790C929ea432ed02D4D3323A#readContract)
     - GNO [gnosis:0xbbb4966335677Ea24F7B86DC19a423412390e1fb](https://gnosisscan.io/address/0xbbb4966335677Ea24F7B86DC19a423412390e1fb#code)
@@ -77,6 +78,16 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 
    - [ethereum:0xdB44A0223604ABAD704C4bCDDAAd88b101953246](https://etherscan.io/address/0xdB44A0223604ABAD704C4bCDDAAd88b101953246#code)
         - upgradeable component: `StataTokenV2` ([ethereum:0x5F9D59db355b4A60501544637b00e94082cA575b](https://etherscan.io/address/0x5F9D59db355b4A60501544637b00e94082cA575b#readProxyContract))
+        - admin address: [ethereum:0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A](https://etherscan.io/address/0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A#code)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours.
+        - upgradeable component: `Pool` ([ethereum:0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2](https://etherscan.io/address/0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2#readProxyContract))
+        - admin address: [ethereum:0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A](https://etherscan.io/address/0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A#code)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours
+
+    - [ethereum:0x851b73c4BFd5275D47FFf082F9e8B4997dCCB253](https://etherscan.io/address/0x851b73c4BFd5275D47FFf082F9e8B4997dCCB253#code)
+        - upgradeable component: `StataTokenV2` ([ethereum:0xC71Ea051a5F82c67ADcF634c36FFE6334793D24C](https://etherscan.io/address/0xC71Ea051a5F82c67ADcF634c36FFE6334793D24C#readProxyContract))
         - admin address: [ethereum:0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A](https://etherscan.io/address/0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A#code)
         - admin type: Aave governance system.
             - multisig timelock? YES: 24 hours.
