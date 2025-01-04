@@ -1791,7 +1791,7 @@
     "0xc81D60E39e065146c6dE186fFC5B39e4CA2189Cf": {
       "asset": "0xBEEF01735c132Ada46AA9aA4c54623cAA92A64CB",
       "name": "ERC4626RateProvider",
-      "summary": "safe",
+      "summary": "unsafe",
       "review": "./MorphoERC4626RateProviders.md",
       "warnings": ["eoaUpgradeable"],
       "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
@@ -1805,7 +1805,7 @@
     "0x50A72232c5370321aa78036BaDe8e9d5eB89cbAF": {
       "asset": "0xbEef047a543E45807105E51A8BBEFCc5950fcfBa",
       "name": "ERC4626RateProvider",
-      "summary": "safe",
+      "summary": "unsafe",
       "review": "./MorphoERC4626RateProviders.md",
       "warnings": ["eoaUpgradeable"],
       "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
@@ -1819,7 +1819,7 @@
     "0x0A25a2C62e3bA90F1e6F08666862df50cdAAB1F5": {
       "asset": "0x2371e134e3455e0593363cBF89d3b6cf53740618",
       "name": "ERC4626RateProvider",
-      "summary": "safe",
+      "summary": "unsafe",
       "review": "./MorphoERC4626RateProviders.md",
       "warnings": ["eoaUpgradeable"],
       "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
@@ -1827,6 +1827,20 @@
         {
           "entrypoint": "0x2371e134e3455e0593363cBF89d3b6cf53740618",
           "implementationReviewed": "0x2371e134e3455e0593363cBF89d3b6cf53740618"
+        }
+      ]
+    },
+    "0xB0926Cfc3aC047035b11d9afB85DC782E6D9d76A": {
+      "asset": "0x7204B7Dbf9412567835633B6F00C3Edc3a8D6330",
+      "name": "ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./MorphoV1.1ERC4626RateProviders.md",
+      "warnings": ["eoaUpgradeable"],
+      "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x7204B7Dbf9412567835633B6F00C3Edc3a8D6330",
+          "implementationReviewed": "0x7204B7Dbf9412567835633B6F00C3Edc3a8D6330"
         }
       ]
     },
@@ -1869,6 +1883,24 @@
     "0x9CC54cb63E61c7D5231c506e4206Eb459250D2A7": {
       "asset": "0xbEEFC01767ed5086f35deCb6C00e6C12bc7476C1",
       "name": "ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./MarketRateTransformerRateProviders.md",
+      "warnings": [""],
+      "factory": "0xeC2C6184761ab7fE061130B4A7e3Da89c72F8395",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x7751E2F4b8ae93EF6B79d86419d42FE3295A4559",
+          "implementationReviewed": "0x2954c85e7e2b841d0e9a9fdcc09dac1274057d71"
+        },
+        {
+          "entrypoint": "0xbdC7c08592Ee4aa51D06C27Ee23D5087D65aDbcD",
+          "implementationReviewed": "0x752d55d62a94658eac08eae42deda902b69b0e76"
+        }
+      ]
+    },
+    "0x9062a576D3e6Cf6999e99e405608063033c4CFF6": {
+      "asset": "0xbEeFc011e94f43b8B7b455eBaB290C7Ab4E216f1",
+      "name": "csUSDL-MORPHOv1.1",
       "summary": "safe",
       "review": "./MarketRateTransformerRateProviders.md",
       "warnings": [""],
