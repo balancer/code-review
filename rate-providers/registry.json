@@ -1834,7 +1834,7 @@
       "asset": "0x7204B7Dbf9412567835633B6F00C3Edc3a8D6330",
       "name": "ERC4626RateProvider",
       "summary": "safe",
-      "review": "./MorphoV1.1ERC4626RateProviders.md",
+      "review": "./MorphoERC4626RateProviders.md",
       "warnings": ["eoaUpgradeable"],
       "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
       "upgradeableComponents": [
