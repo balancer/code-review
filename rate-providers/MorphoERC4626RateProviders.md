@@ -55,7 +55,7 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
     - 0xfd32fA2ca22c76dD6E550706Ad913FC6CE91c75D
     - 0x959d73CB5a1C1ad7EbCE3eC93FAD3b2f9a25432E
     #### v1.1 Steakhouse Coinshift USDC 
-    For [Steakhouse USDT](https://etherscan.io/address/0xB0926Cfc3aC047035b11d9afB85DC782E6D9d76A) some allocators are eoas.
+    For [Steakhouse csUSDC](https://etherscan.io/address/0xB0926Cfc3aC047035b11d9afB85DC782E6D9d76A) some allocators are eoas.
     - 0xfeed46c11F57B7126a773EeC6ae9cA7aE1C03C9a
     - 0xfd32fA2ca22c76dD6E550706Ad913FC6CE91c75D
     - 0x29d4CDFee8F533af8529A9e1517b580E022874f7
