@@ -8,7 +8,7 @@ Rate Provider Factories for reference
 
 | Network    | ChainlinkRateProviderFactory               | ERC4626RateProviderFactory                 |
 | ---------- | ------------------------------------------ | ------------------------------------------ |
-| Arbitrum   | 0x1311Fbc9F60359639174c1e7cC2032DbDb5Cc4d1 | 0xe548a29631f9E49830bE8edc22d407b2D2915F31 |
+| Arbitrum   | 0x5DbAd78818D4c8958EfF2d5b95b28385A22113Cd | 0xe548a29631f9E49830bE8edc22d407b2D2915F31 |
 | Avalanche  | 0x76578ecf9a141296Ec657847fb45B0585bCDa3a6 | 0xfCe81cafe4b3F7e2263EFc2d907f488EBF2B238E |
 | Base       | 0x0A973B6DB16C2ded41dC91691Cc347BEb0e2442B | 0xEfD3aF73d3359014f3B864d37AC672A6d3D7ff1A |
 | Fraxtal    | 0x3f170631ed9821Ca51A59D996aB095162438DC10 | N/A                                        |

@@ -461,6 +461,15 @@
       "warnings": [],
       "factory": "0xe548a29631f9E49830bE8edc22d407b2D2915F31",
       "upgradeableComponents": []
+    },
+    "0x4FEFC8A9104464671E909c6470f3A08B71130659": {
+      "asset": "",
+      "name": "tETH / wstETH Rate Provider",
+      "summary": "safe",
+      "review": "./ChainLinkRateProvider.md",
+      "warnings": ["chainlink"],
+      "factory": "0x5DbAd78818D4c8958EfF2d5b95b28385A22113Cd",
+      "upgradeableComponents": []
     }
   },
   "avalanche": {
