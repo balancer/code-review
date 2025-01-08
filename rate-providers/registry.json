@@ -1913,7 +1913,7 @@
     "0xBB22d59B73D7a6F3A8a83A214BECc67Eb3b511fE": {
       "asset": "0xBB22d59B73D7a6F3A8a83A214BECc67Eb3b511fE",
       "name": "WETHVault",
-      "summary": "",
+      "summary": "safe",
       "review": "./GravitaRateProviders.md",
       "warnings": ["donation", "eoaUpgradeable"],
       "factory": "",

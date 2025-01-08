@@ -164,6 +164,9 @@ To save time, we do not bother pointing out low-severity/informational issues or
 
 
 ## Conclusion
-**Summary judgment: \<SAFE/UNSAFE\>**
+**Summary judgment: USABLE**
 
-The upgradeability of the contracts is guarded behind multisigs and a timelock contract. The involved oracle price data is signed data of an eoa. 
+The upgradeability of the contracts is guarded behind multisigs and a timelock contract. The involved oracle price data is signed data of an eoa. For more information on the oracle see comments from Gravita
+> Response from Gravita: That key is used by the oracle service which reads the validator balances to know how many assets back the token. We can't go into security of this service too much but only one person generated this key (me, the doxxed CTO of the dev team) and no one else has access to it. And of course the admin multisig can change which address has this oracle permission if that oracle signing key is lost for some reason.
+
+
