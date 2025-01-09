@@ -6,9 +6,9 @@
 - Deployed at:
     - Steakhouse USDC [ethereum:0xc81D60E39e065146c6dE186fFC5B39e4CA2189Cf](https://etherscan.io/address/0xc81D60E39e065146c6dE186fFC5B39e4CA2189Cf#code)
     - Steakhouse USDT [ethereum:0x50A72232c5370321aa78036BaDe8e9d5eB89cbAF](https://etherscan.io/address/0x50A72232c5370321aa78036BaDe8e9d5eB89cbAF#code)
-     - Steakhouse wUSDL - csUSDL [ethereum:0xbEc8a14233e68C02e803B999DbA3D0f9C5076394](https://etherscan.io/address/0xbEc8a14233e68C02e803B999DbA3D0f9C5076394#code)
+    - Steakhouse wUSDL - csUSDL [ethereum:0xbEc8a14233e68C02e803B999DbA3D0f9C5076394](https://etherscan.io/address/0xbEc8a14233e68C02e803B999DbA3D0f9C5076394#code)
     - Gauntlet Prime wETH [ethereum:0x0A25a2C62e3bA90F1e6F08666862df50cdAAB1F5](https://etherscan.io/address/0x0A25a2C62e3bA90F1e6F08666862df50cdAAB1F5#code)
-
+    - Steakhouse v1.1 USDC - csUSDC [ethereum:0xB0926Cfc3aC047035b11d9afB85DC782E6D9d76A](https://etherscan.io/address/0xB0926Cfc3aC047035b11d9afB85DC782E6D9d76A#code)
 
 - Audit report(s):
     - [Security Reviews & Formal Verifications](https://docs.morpho.org/security-reviews/)
@@ -54,6 +54,11 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
     For [Gauntlet Prime wETH](https://etherscan.io/address/0x2371e134e3455e0593363cBF89d3b6cf53740618) some allocators are eoas.
     - 0xfd32fA2ca22c76dD6E550706Ad913FC6CE91c75D
     - 0x959d73CB5a1C1ad7EbCE3eC93FAD3b2f9a25432E
+    #### v1.1 Steakhouse Coinshift USDC 
+    For [Steakhouse csUSDC](https://etherscan.io/address/0xB0926Cfc3aC047035b11d9afB85DC782E6D9d76A) some allocators are eoas.
+    - 0xfeed46c11F57B7126a773EeC6ae9cA7aE1C03C9a
+    - 0xfd32fA2ca22c76dD6E550706Ad913FC6CE91c75D
+    - 0x29d4CDFee8F533af8529A9e1517b580E022874f7
     
 ### Oracles
 - [ ] Price data is provided by an off-chain source (e.g., a Chainlink oracle, a multisig, or a network of nodes).
@@ -64,6 +69,6 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 - [ ] The Rate Provider is susceptible to donation attacks.
 
 ## Conclusion
-**Summary judgment: USABLE**
+**Summary judgment: v1.1 is USABLE**
 
 The Rate Providers should work well with Balancer pools. The underlying contracts have been audited and been in production for an extended period of time.
