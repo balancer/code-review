@@ -63,6 +63,20 @@
       "review": "./StatATokenV2Review.md",
       "warnings": []
     },
+    "0x5F9D59db355b4A60501544637b00e94082cA575b": {
+      "asset": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3",
+      "name": "Wrapped Aave Ethereum USDe",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": []
+    },
+    "0xC71Ea051a5F82c67ADcF634c36FFE6334793D24C": {
+      "asset": "0x40D16FC0246aD3160Ccc09B8D0D3A2cD28aE6C2f",
+      "name": "Wrapped Aave Lido Ethereum GHO",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": []
+    },
     "0xbEeFc011e94f43b8B7b455eBaB290C7Ab4E216f1": {
       "asset": "0x7751E2F4b8ae93EF6B79d86419d42FE3295A4559",
       "name": "MetaMorpho v1.1 Coinshift-Steakhouse csUSDL",
