@@ -36,10 +36,9 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 To save time, we do not bother pointing out low-severity/informational issues or gas optimizations (unless the gas usage is particularly egregious). Instead, we focus only on high- and medium-severity findings which materially impact the contract's functionality and could harm users.
 
 ## Conclusion
-**Summary judgment: USABLE**
+**Summary judgment: UNUSABLE**
 
-The outlined ERC4626 Vaults should work well with Balancer pools. The Vaults implement the required interfaces with fork tests passing as can be seen at:
-- [Morpho's Steakhouse USDC](https://github.com/balancer/balancer-v3-erc4626-tests/blob/main/test/mainnet/ERC4626MainnetMorphoSteakhouseUSDC.t.sol)
+The outlined ERC4626 Vaults will not work well with Balancer pools due to a flash loan incompatibility on Morpho Vaults . The Vaults implement the required interfaces with fork tests passing as can be seen at:- [Morpho's Steakhouse USDC](https://github.com/balancer/balancer-v3-erc4626-tests/blob/main/test/mainnet/ERC4626MainnetMorphoSteakhouseUSDC.t.sol)
 - [Morpho's Steakhouse USDT](https://github.com/balancer/balancer-v3-erc4626-tests/blob/main/test/mainnet/ERC4626MainnetMorphoSteakhouseUSDT.t.sol)
 - [Morpho's Steakhouse wUSDL](https://github.com/balancer/balancer-v3-erc4626-tests/blob/main/test/mainnet/ERC4626MainnetMorphoSteakhouseWUSDL.t.sol)
 
