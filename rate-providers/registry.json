@@ -1883,6 +1883,62 @@
           "implementationReviewed": "0x752d55d62a94658eac08eae42deda902b69b0e76"
         }
       ]
+    },
+    "0x1DB1Afd9552eeB28e2e36597082440598B7F1320": {
+      "asset": "0x1DB1Afd9552eeB28e2e36597082440598B7F1320",
+      "name": "RPLVault",
+      "summary": "safe",
+      "review": "./GravitaRateProviders.md",
+      "warnings": ["donation"],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xBB22d59B73D7a6F3A8a83A214BECc67Eb3b511fE",
+          "implementationReviewed": "0x767b901B7Eb64133e82F6531614b66cb235E4c71"
+        },
+        {
+          "entrypoint": "0x4343743dBc46F67D3340b45286D8cdC13c8575DE",
+          "implementationReviewed": "0x9c9001E0ff0D8C5c535252E883B7D0Ca2BE68Eef"
+        },
+        {
+          "entrypoint": "0x102809fE582ecaa527bB316DCc4E99fc35FBAbb9",
+          "implementationReviewed": "0x1044958261F0a3DFf363313FC94f7eA69aC935A1"
+        },
+        {
+          "entrypoint": "0x312717E67b9a12402fB8d2DB031aC9C84665a04e",
+          "implementationReviewed": "0x4A878c581C9542ebC467d1Ce5CB86C3Cf25603ab"
+        }
+      ]
+    },
+    "0xBB22d59B73D7a6F3A8a83A214BECc67Eb3b511fE": {
+      "asset": "0xBB22d59B73D7a6F3A8a83A214BECc67Eb3b511fE",
+      "name": "WETHVault",
+      "summary": "safe",
+      "review": "./GravitaRateProviders.md",
+      "warnings": ["donation", "eoaUpgradeable"],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xBB22d59B73D7a6F3A8a83A214BECc67Eb3b511fE",
+          "implementationReviewed": "0x767b901B7Eb64133e82F6531614b66cb235E4c71"
+        },
+        {
+          "entrypoint": "0x4343743dBc46F67D3340b45286D8cdC13c8575DE",
+          "implementationReviewed": "0x9c9001E0ff0D8C5c535252E883B7D0Ca2BE68Eef"
+        },
+        {
+          "entrypoint": "0x102809fE582ecaa527bB316DCc4E99fc35FBAbb9",
+          "implementationReviewed": "0x1044958261F0a3DFf363313FC94f7eA69aC935A1"
+        },
+        {
+          "entrypoint": "0x81C1001e1621d05bE250814123CC81BBb244Cb07",
+          "implementationReviewed": "0x9c778410221841A35e0EEa0e82E27ccE78Ee3C27"
+        },
+        {
+          "entrypoint": "0x312717E67b9a12402fB8d2DB031aC9C84665a04e",
+          "implementationReviewed": "0x4A878c581C9542ebC467d1Ce5CB86C3Cf25603ab"
+        }
+      ]
     }
   },
   "fantom": {
