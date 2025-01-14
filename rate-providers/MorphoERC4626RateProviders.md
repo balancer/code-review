@@ -9,6 +9,10 @@
     - Steakhouse wUSDL - csUSDL [ethereum:0xbEc8a14233e68C02e803B999DbA3D0f9C5076394](https://etherscan.io/address/0xbEc8a14233e68C02e803B999DbA3D0f9C5076394#code)
     - Gauntlet Prime wETH [ethereum:0x0A25a2C62e3bA90F1e6F08666862df50cdAAB1F5](https://etherscan.io/address/0x0A25a2C62e3bA90F1e6F08666862df50cdAAB1F5#code)
     - Steakhouse v1.1 USDC - csUSDC [ethereum:0xB0926Cfc3aC047035b11d9afB85DC782E6D9d76A](https://etherscan.io/address/0xB0926Cfc3aC047035b11d9afB85DC782E6D9d76A#code)
+    - Gauntlet wETH Ecosystem v1.1[ethereum:0xD231564648C94542C01e9a528c9cAa033bbf274C](https://etherscan.io/address/0xD231564648C94542C01e9a528c9cAa033bbf274C#code)
+    - IndexCoop mhyETH v1.1[ethereum:0x3BD4B2174498b3Aa01be0acFa0F775472b2dC30b](https://etherscan.io/address/0x3BD4B2174498b3Aa01be0acFa0F775472b2dC30b#code)
+
+
 
 - Audit report(s):
     - [Security Reviews & Formal Verifications](https://docs.morpho.org/security-reviews/)
@@ -59,7 +63,13 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
     - 0xfeed46c11F57B7126a773EeC6ae9cA7aE1C03C9a
     - 0xfd32fA2ca22c76dD6E550706Ad913FC6CE91c75D
     - 0x29d4CDFee8F533af8529A9e1517b580E022874f7
-    
+    #### Gauntlet wETH Ecosystem v1.1
+    For [Gauntlet wETH Ecosystem](https://etherscan.io/address/0x1e6ffa4e9F63d10B8820A3ab52566Af881Dab53c) some allocators are eoas.
+    #### IndexCoop mhyETH (wETH) v1.1
+    For [IndexCoop mhyETH](https://etherscan.io/address/0x701907283a57FF77E255C3f1aAD790466B8CE4ef) some allocators are eoas.
+    - 0x622271CEC64F6106020F31773Ec5293F4677cb95
+
+
 ### Oracles
 - [ ] Price data is provided by an off-chain source (e.g., a Chainlink oracle, a multisig, or a network of nodes).
 
