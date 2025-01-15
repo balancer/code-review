@@ -2016,6 +2016,20 @@
           "implementationReviewed": "0x752d55d62a94658eac08eae42deda902b69b0e76"
         }
       ]
+    },
+    "0x09000d689fb2b210c65d9f8adc620f6f2d7d6836": {
+      "asset": "0x7a4EffD87C2f3C55CA251080b1343b605f327E3a",
+      "name": "VaultRateOracle",
+      "summary": "safe",
+      "review": "./MellowRateProviders.md",
+      "warnings": ["donation"],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x7a4EffD87C2f3C55CA251080b1343b605f327E3a",
+          "implementationReviewed": "0xaf108ae0AD8700ac41346aCb620e828c03BB8848"
+        }
+      ]
     }
   },
   "fantom": {
