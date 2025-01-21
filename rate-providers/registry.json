@@ -2817,6 +2817,32 @@
           "implementationReviewed": "0xd5f7fc8ba92756a34693baa386edcc8dd5b3f141"
         }
       ]
+    },
+    "0x00de97829d01815346e58372be55aefd84ca2457": {
+      "asset": "0xa28d4dbcc90c849e3249d642f356d85296a12954",
+      "name": "Avalon waSolvBTC.bbn Rateprovider",
+      "summary": "safe",
+      "review": "./statATokenLMRateProvider.md",
+      "warnings": [""],
+      "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xA28d4dbcC90C849e3249D642f356D85296a12954",
+          "implementationReviewed": "0x29c26d85ba819659d084a592b97607a5337de030"
+        }]
+    },
+    "0xa6c292d06251da638be3b58f1473e03d99c26ff0": {
+      "asset": "0xd31e89ffb929b38ba60d1c7dbeb68c7712eaab0a",
+      "name": "Avalon waSolvBTC Rateprovider",
+      "summary": "safe",
+      "review": "./statATokenLMRateProvider.md",
+      "warnings": [""],
+      "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xD31E89Ffb929b38bA60D1c7dBeB68c7712EAAb0a",
+          "implementationReviewed": "0xb9fa01cbd690dfd5be3d8d667c54bbdd9e41e57d"
+        }]
     }
   }
 }
