@@ -2822,7 +2822,7 @@
       "asset": "0xa28d4dbcc90c849e3249d642f356d85296a12954",
       "name": "Avalon waSolvBTC.bbn Rateprovider",
       "summary": "safe",
-      "review": "./statATokenLMRateProvider.md",
+      "review": "./statATokenLMRateProviderAvalon.md",
       "warnings": [""],
       "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
       "upgradeableComponents": [
@@ -2835,7 +2835,7 @@
       "asset": "0xd31e89ffb929b38ba60d1c7dbeb68c7712eaab0a",
       "name": "Avalon waSolvBTC Rateprovider",
       "summary": "safe",
-      "review": "./statATokenLMRateProvider.md",
+      "review": "./statATokenLMRateProviderAvalon.md",
       "warnings": [""],
       "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
       "upgradeableComponents": [
