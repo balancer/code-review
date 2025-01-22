@@ -461,6 +461,15 @@
       "warnings": [],
       "factory": "0xe548a29631f9E49830bE8edc22d407b2D2915F31",
       "upgradeableComponents": []
+    },
+    "0x4FEFC8A9104464671E909c6470f3A08B71130659": {
+      "asset": "0xd09ACb80C1E8f2291862c4978A008791c9167003",
+      "name": "tETH / wstETH Rate Provider",
+      "summary": "safe",
+      "review": "./ChainLinkRateProvider.md",
+      "warnings": ["chainlink"],
+      "factory": "0x5DbAd78818D4c8958EfF2d5b95b28385A22113Cd",
+      "upgradeableComponents": []
     }
   },
   "avalanche": {
@@ -2033,6 +2042,20 @@
         {
           "entrypoint": "0x701907283a57FF77E255C3f1aAD790466B8CE4ef",
           "implementationReviewed": "0x701907283a57FF77E255C3f1aAD790466B8CE4ef"
+        }
+      ]
+    },
+    "0x09000d689fb2b210c65d9f8adc620f6f2d7d6836": {
+      "asset": "0x7a4EffD87C2f3C55CA251080b1343b605f327E3a",
+      "name": "VaultRateOracle",
+      "summary": "safe",
+      "review": "./MellowRateProviders.md",
+      "warnings": ["donation"],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x7a4EffD87C2f3C55CA251080b1343b605f327E3a",
+          "implementationReviewed": "0xaf108ae0AD8700ac41346aCb620e828c03BB8848"
         }
       ]
     }
