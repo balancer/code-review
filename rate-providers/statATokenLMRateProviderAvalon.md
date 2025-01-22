@@ -29,24 +29,24 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
         - upgradeable component: `StaticATokenLM` ([sonic:0xA28d4dbcC90C849e3249D642f356D85296a12954](https://sonicscan.org/address/0xA28d4dbcC90C849e3249D642f356D85296a12954#code))
         - admin address: [sonic:0x0c7b588864db1d80365c579205e8618807c6ff01](https://sonicscan.org/address/0x0c7b588864db1d80365c579205e8618807c6ff01)
         - admin owner: [sonic:0x8E23A55B0275a57d6C7ac2922664a9BDbdbCb8D8](https://sonicscan.org/address/0x8E23A55B0275a57d6C7ac2922664a9BDbdbCb8D8)
-        - admin type: Multisig.
+        - admin type: Multisig 3/4
             - multisig timelock? No.
         - upgradeable component: `Pool` ([sonic:0x974E2B16ddbF0ae6F78b4534353c2871213f2Dc9](https://sonicscan.org/address/0x974E2B16ddbF0ae6F78b4534353c2871213f2Dc9))
         - admin address: [sonic:0x0E2C096dE8b15A0A7E9504D49351f54b2F8C314e](https://sonicscan.org/address/0x0E2C096dE8b15A0A7E9504D49351f54b2F8C314e)
         - admin owner: [sonic:0x8E23A55B0275a57d6C7ac2922664a9BDbdbCb8D8](https://sonicscan.org/address/0x8E23A55B0275a57d6C7ac2922664a9BDbdbCb8D8)
-        - admin type: Multisig.
+        - admin type: Multisig 3/4
             - multisig timelock? No.
 
     - [sonic:0xa6c292d06251da638be3b58f1473e03d99c26ff0](https://sonicscan.org/address/0xa6c292d06251da638be3b58f1473e03d99c26ff0#code)
         - upgradeable component: `StaticATokenLM` ([sonic:0xD31E89Ffb929b38bA60D1c7dBeB68c7712EAAb0a](https://sonicscan.org/address/0xD31E89Ffb929b38bA60D1c7dBeB68c7712EAAb0a#code))
         - admin address: [sonic:0xa47f40961b7ffeb68014c8119dbda827939fec1b](https://sonicscan.org/address/0xa47f40961b7ffeb68014c8119dbda827939fec1b#code
         - admin owner: [sonic:0x8E23A55B0275a57d6C7ac2922664a9BDbdbCb8D8](https://sonicscan.org/address/0x8E23A55B0275a57d6C7ac2922664a9BDbdbCb8D8#code)
-        - admin type: Multisig.
+        - admin type: Multisig 3/4
             - multisig timelock? No.
         - upgradeable component: `Pool` ([sonic:0x974E2B16ddbF0ae6F78b4534353c2871213f2Dc9](https://sonicscan.org/address/0x974E2B16ddbF0ae6F78b4534353c2871213f2Dc9))
         - admin address: [sonic:0x0E2C096dE8b15A0A7E9504D49351f54b2F8C314e](https://sonicscan.org/address/0x0E2C096dE8b15A0A7E9504D49351f54b2F8C314e)
         - admin owner: [sonic:0x8E23A55B0275a57d6C7ac2922664a9BDbdbCb8D8](https://sonicscan.org/address/0x8E23A55B0275a57d6C7ac2922664a9BDbdbCb8D8)
-        - admin type: Multisig.
+        - admin type: Multisig 3/4
             - multisig timelock? No.
 
     
