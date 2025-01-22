@@ -129,6 +129,22 @@
       "warnings": []
     }
   },
+  "sonic":{
+    "0xA28d4dbcC90C849e3249D642f356D85296a12954": {
+      "asset": "0xCC0966D8418d412c599A6421b760a847eB169A8c",
+      "name": "Static Avalon Sonic SolvBTC.bbn",
+      "summary": "safe",
+      "review": "./StaticATokenLMAvalonReview.md",
+      "warnings": []
+    },    
+    "0xD31E89Ffb929b38bA60D1c7dBeB68c7712EAAb0a": {
+      "asset": "0x541FD749419CA806a8bc7da8ac23D346f2dF8B77",
+      "name": "Static Avalon Sonic SolvBTC",
+      "summary": "safe",
+      "review": "./StaticATokenLMAvalonReview.md",
+      "warnings": []
+    }
+  },
   "sepolia": {
     "0xDE46e43F46ff74A23a65EBb0580cbe3dFE684a17": {
       "asset": "0xff34b3d4aee8ddcd6f9afffb6fe49bd371b8a357",
