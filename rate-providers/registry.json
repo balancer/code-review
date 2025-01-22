@@ -2017,6 +2017,34 @@
         }
       ]
     },
+    "0xD231564648C94542C01e9a528c9cAa033bbf274C": {
+      "asset": "0x1e6ffa4e9F63d10B8820A3ab52566Af881Dab53c",
+      "name": "Gauntlet wETH Ecosystem v1.1",
+      "summary": "safe",
+      "review": "./MorphoERC4626RateProviders.md",
+      "warnings": ["eoaUpgradeable"],
+      "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x1e6ffa4e9F63d10B8820A3ab52566Af881Dab53c",
+          "implementationReviewed": "0x1e6ffa4e9F63d10B8820A3ab52566Af881Dab53c"
+        }
+      ]
+    },
+    "0x3BD4B2174498b3Aa01be0acFa0F775472b2dC30b": {
+      "asset": "0x701907283a57FF77E255C3f1aAD790466B8CE4ef",
+      "name": "IndexCoop mhyETH v1.1",
+      "summary": "safe",
+      "review": "./MorphoERC4626RateProviders.md",
+      "warnings": ["eoaUpgradeable"],
+      "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x701907283a57FF77E255C3f1aAD790466B8CE4ef",
+          "implementationReviewed": "0x701907283a57FF77E255C3f1aAD790466B8CE4ef"
+        }
+      ]
+    },
     "0x09000d689fb2b210c65d9f8adc620f6f2d7d6836": {
       "asset": "0x7a4EffD87C2f3C55CA251080b1343b605f327E3a",
       "name": "VaultRateOracle",

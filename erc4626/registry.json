@@ -90,6 +90,20 @@
       "summary": "safe",
       "review": "./MorphoVaults/V1.1-Steakhouse.md",
       "warnings": []
+    },
+    "0x1e6ffa4e9F63d10B8820A3ab52566Af881Dab53c": {
+      "asset": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+      "name": "MetaMorpho v1.1 Gauntlet wETH Ecosystem",
+      "summary": "safe",
+      "review": "./MorphoVaults/V1.1 Gauntlet.md",
+      "warnings": []
+    },
+    "0x701907283a57FF77E255C3f1aAD790466B8CE4ef": {
+      "asset": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+      "name": "MetaMorpho v1.1 IndexCoop hyETH",
+      "summary": "safe",
+      "review": "./MorphoVaults/V1.1 Gauntlet.md",
+      "warnings": []
     }
   },
   "gnosis": {
