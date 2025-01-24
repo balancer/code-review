@@ -2,7 +2,7 @@
 
 ## Details
 - Reviewed by: @franzns
-- Checked by: 
+- Checked by: @danielmkm
 - Deployed at:
     - [sonic:0x7870ddFd5ACA4E977B2287e9A212bcbe8FC4135a](https://sonicscan.org/address/0x7870ddFd5ACA4E977B2287e9A212bcbe8FC4135a#code)
 - Audits:
@@ -57,8 +57,6 @@ If none of these is checked, then this might be a pretty great ERC4626! If any o
 
 ## Additional Findings
 To save time, we do not bother pointing out low-severity/informational issues or gas optimizations (unless the gas usage is particularly egregious). Instead, we focus only on high- and medium-severity findings which materially impact the contract's functionality and could harm users.
-
-The Wrapper is a minimal proxy which means that it has a hardcoded implementation address so by definition nothing can be upgraded.
 
 ## Conclusion
 **Summary judgment: USABLE**
