@@ -2871,6 +2871,24 @@
           "entrypoint": "0xD31E89Ffb929b38bA60D1c7dBeB68c7712EAAb0a",
           "implementationReviewed": "0xb9fa01cbd690dfd5be3d8d667c54bbdd9e41e57d"
         }]
+    },
+    "0x78557d8a83fe7c6d9f9983d00e5c0e08cc3335e6": {
+      "asset": "0x52Fc9E0a68b6a4C9b57b9D1d99fB71449A99DCd8",
+      "name": "Silo bSolvBTC.bbn Rateprovider",
+      "summary": "safe",
+      "review": "./SiloWrappedRateprovider.md",
+      "warnings": [""],
+      "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
+      "upgradeableComponents": []
+    },    
+    "0x9d2d4351c1b3718d7a65ef21f54c86c665964670": {
+      "asset": "0x87178fe8698C7eDa8aA207083C3d66aEa569aB98",
+      "name": "Silo bSolvBTC Rateprovider",
+      "summary": "safe",
+      "review": "./SiloWrappedRateprovider.md",
+      "warnings": [""],
+      "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
+      "upgradeableComponents": []
     }
   }
 }
