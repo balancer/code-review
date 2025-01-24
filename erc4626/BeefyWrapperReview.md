@@ -2,7 +2,7 @@
 
 ## Details
 - Reviewed by: @franzns
-- Checked by: @danielmkm
+- Checked by: 
 - Deployed at:
     - [sonic:0x7870ddFd5ACA4E977B2287e9A212bcbe8FC4135a](https://sonicscan.org/address/0x7870ddFd5ACA4E977B2287e9A212bcbe8FC4135a#code)
 - Audits:
