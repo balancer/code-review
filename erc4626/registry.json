@@ -159,7 +159,7 @@
       "warnings": []
     },    
     "0x7870ddFd5ACA4E977B2287e9A212bcbe8FC4135a": {
-      "asset": "0x541FD749419CA806a8bc7da8ac23D346f2dF8B77",
+      "asset": "0x29219dd400f2Bf60E5a23d13Be72B486D4038894",
       "name": "Beefy USDC Wrapper for SiloV2",
       "summary": "safe",
       "review": "./BeefyWrapperReview.md",
