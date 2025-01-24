@@ -157,6 +157,13 @@
       "summary": "safe",
       "review": "./StaticATokenLMAvalonReview.md",
       "warnings": []
+    },    
+    "0x7870ddFd5ACA4E977B2287e9A212bcbe8FC4135a": {
+      "asset": "0x29219dd400f2Bf60E5a23d13Be72B486D4038894",
+      "name": "Beefy USDC Wrapper for SiloV2",
+      "summary": "safe",
+      "review": "./BeefyWrapperReview.md",
+      "warnings": []
     }
   },
   "sepolia": {

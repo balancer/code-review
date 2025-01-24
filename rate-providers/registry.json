@@ -2871,6 +2871,15 @@
           "entrypoint": "0xD31E89Ffb929b38bA60D1c7dBeB68c7712EAAb0a",
           "implementationReviewed": "0xb9fa01cbd690dfd5be3d8d667c54bbdd9e41e57d"
         }]
+    },
+    "0x5fded3206608d3f33175a8865576431906cdb43b": {
+      "asset": "0x7870ddFd5ACA4E977B2287e9A212bcbe8FC4135a",
+      "name": "Beefy USDC SiloV2 Rateprovider",
+      "summary": "safe",
+      "review": "./BeefyUsdcSiloRateprovider.md",
+      "warnings": [""],
+      "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
+      "upgradeableComponents": []
     }
   }
 }
