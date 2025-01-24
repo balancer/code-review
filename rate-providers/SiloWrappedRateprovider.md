@@ -2,10 +2,10 @@
 
 ## Details
 - Reviewed by: @franzns
-- Checked by: @danielmkm
+- Checked by: 
 - Deployed at:
     - [sonic:0x78557d8a83fe7c6d9f9983d00e5c0e08cc3335e6](https://sonicscan.org/address/0x78557d8a83fe7c6d9f9983d00e5c0e08cc3335e6#code)
-    - [sonic:0x9d2d4351c1b3718d7a65ef21f54c86c665964670 ](https://sonicscan.org/address/0x9d2d4351c1b3718d7a65ef21f54c86c665964670 #code)
+    - [sonic:0x9d2d4351c1b3718d7a65ef21f54c86c665964670](https://sonicscan.org/address/0x9d2d4351c1b3718d7a65ef21f54c86c665964670#code)
 
 ## Context
 The ERC4626 RateProvider fetches the rate of Silo Borrow Deposit tokens. The exchange rate is provided by the Aave V3 `POOL` and fetched via `getReserveNormalizedIncome` from the pool and wrapped as part of the `convertToAsset` call to the `StaticATokenLM`. 
