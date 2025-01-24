@@ -47,7 +47,7 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 
 ### Common Manipulation Vectors
 - [x] The Rate Provider is susceptible to donation attacks.
-    - comment: The ERC4626 wrapper calls the vaults balance for totalAssets() which is part of the `totalAssets` used in the `getRate` calculation.
+    - comment: The ERC4626 wrapper calls the vaults balance for totalAssets() which is part of the `totalAssets` used in the `converToAsset` call and therefore in the `getRate` calculation.
 
     ```solidity
     /**
