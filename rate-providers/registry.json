@@ -704,6 +704,15 @@
       "warnings": ["chainlink"],
       "factory": "0x0A973B6DB16C2ded41dC91691Cc347BEb0e2442B",
       "upgradeableComponents": []
+    },
+    "0x6ac3b3BeCE5AA61C6AB5d50ecd2D47b1f18ACe49": {
+      "asset": "0x2416092f143378750bb29b79ed961ab195cceea5",
+      "name": "ezETH Rate Provider",
+      "summary": "safe",
+      "review": "./ChainLinkRateProvider.md",
+      "warnings": ["chainlink"],
+      "factory": "0x0A973B6DB16C2ded41dC91691Cc347BEb0e2442B",
+      "upgradeableComponents": []
     }
   },
   "ethereum": {
