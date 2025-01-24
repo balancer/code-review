@@ -47,32 +47,14 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 
 ### Common Manipulation Vectors
 - [x] The Rate Provider is susceptible to donation attacks.
-    - comment: The ERC4626 wrapper calls the vaults balance for totalAssets() which is part of the `totalAssets` used in the `converToAsset` call and therefore in the `getRate` calculation.
-
+    - comment: The rate can be influenced by donating to the vault as the vault's total assets are measured via
     ```solidity
-    /**
-     * @notice Fetches the total assets held by the vault
-     * @dev Returns the total assets held by the vault, not only the wrapper
-     * @return totalAssets the total balance of assets held by the vault
-     */
-    function totalAssets() public view virtual override returns (uint256) {
-        return IVault(vault).balance();
+    // 
+    function vaultAssets() public view returns (uint256) {
+        return IERC20MetadataUpgradeable(asset()).balanceOf(address(this));
     }
     ```
-    The vault calculates it based on underlying balance inside the vault plus the balance inside the strategy.
-    ```solidity
-    /**
-     * @dev It calculates the total underlying value of {token} held by the system.
-     * It takes into account the vault contract balance, the strategy contract balance
-     *  and the balance deployed in other contracts as part of the strategy.
-     */
-    function balance() public view returns (uint) {
-        return want().balanceOf(address(this)) + IStrategyV7(strategy).balanceOf();
-    }
-    ```
-
-    The underlying balance can be inflated by donating underlying assets to the vault.
-    
+    which is part of the `totalAssets` used in the `getRate` calculation.
 
 ## Additional Findings
 To save time, we do not bother pointing out low-severity/informational issues or gas optimizations (unless the gas usage is particularly egregious). Instead, we focus only on high- and medium-severity findings which materially impact the contract's functionality and could harm users.
