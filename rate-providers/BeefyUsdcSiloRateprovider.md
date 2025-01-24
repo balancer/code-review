@@ -5,6 +5,8 @@
 - Checked by: @danielmkm
 - Deployed at:
     - [sonic:0x5fded3206608d3f33175a8865576431906cdb43b](https://sonicscan.org/address/0x5fded3206608d3f33175a8865576431906cdb43b#code)
+- Audits:
+    - [4626 wrapper audit](https://github.com/beefyfinance/beefy-audits/blob/master/2023-08-03-Beefy-Zellic-4626-Wrapper-Audit.pdf)
 
 
 ## Context
