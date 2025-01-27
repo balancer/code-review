@@ -704,6 +704,15 @@
       "warnings": ["chainlink"],
       "factory": "0x0A973B6DB16C2ded41dC91691Cc347BEb0e2442B",
       "upgradeableComponents": []
+    },
+    "0x14BD1e9b30007510c2aFE3a7a8053A6DE5605d35": {
+      "asset": "0xe298b938631f750DD409fB18227C4a23dCdaab9b",
+      "name": "ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./statATokenLMRateProvider.md",
+      "warnings": [""],
+      "factory": "0xEfD3aF73d3359014f3B864d37AC672A6d3D7ff1A",
+      "upgradeableComponents": []
     }
   },
   "ethereum": {
@@ -2857,7 +2866,8 @@
         {
           "entrypoint": "0xA28d4dbcC90C849e3249D642f356D85296a12954",
           "implementationReviewed": "0x29c26d85ba819659d084a592b97607a5337de030"
-        }]
+        }
+      ]
     },
     "0xa6c292d06251da638be3b58f1473e03d99c26ff0": {
       "asset": "0xd31e89ffb929b38ba60d1c7dbeb68c7712eaab0a",
@@ -2870,7 +2880,8 @@
         {
           "entrypoint": "0xD31E89Ffb929b38bA60D1c7dBeB68c7712EAAb0a",
           "implementationReviewed": "0xb9fa01cbd690dfd5be3d8d667c54bbdd9e41e57d"
-        }]
+        }
+      ]
     },
     "0x5fded3206608d3f33175a8865576431906cdb43b": {
       "asset": "0x7870ddFd5ACA4E977B2287e9A212bcbe8FC4135a",
