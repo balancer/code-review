@@ -7,8 +7,6 @@
     - [ethereum:0x1f037c849CF2448d67A120543EA4ec3CE5A95FcA](https://etherscan.io/address/0x1f037c849CF2448d67A120543EA4ec3CE5A95FcA)
     - [\<audit title\>](\<link to audit\>)
 
-TODO: I found some audits on their site, but related to a different contract - seems like it would make more sense for them to fill out these links instead of us trying to find them?
-
 ## Context
 \<Write a brief description of the intended functionality here.\>
 
@@ -17,8 +15,6 @@ Each of the items below represents an absolute requirement for the Rate Provider
 
 - [x] Implements the [`IRateProvider`](https://github.com/balancer/balancer-v2-monorepo/blob/bc3b3fee6e13e01d2efe610ed8118fdb74dfc1f2/pkg/interfaces/contracts/pool-utils/IRateProvider.sol) interface.
 - [x] `getRate` returns an 18-decimal fixed point number (i.e., 1 == 1e18) regardless of underlying token decimals.
-
-TODO: getRate does return 18 decimals because the erc4626 provided is 18 decimals - if erc4626 was 6 decimals, getRate would return 6 decimals - is that a problem?
 
 ## Review Checklist: Common Findings
 Each of the items below represents a common red flag found in Rate Provider contracts.
@@ -54,4 +50,4 @@ To save time, we do not bother pointing out low-severity/informational issues or
 ## Conclusion
 **Summary judgment: \<SAFE/UNSAFE\>**
 
-TODO: should we mention anything about the behavior of the token? e.g. it has a cooldown period that makes it non-conforming with erc4626 standards
+
