@@ -16,7 +16,7 @@ All Silo V2 markets are ERC4626 vaults be default.
 ## Review Checklist: Bare Minimum Compatibility
 Each of the items below represents an absolute requirement for the ERC4626. If any of these is unchecked, the the ERC4626 is unfit to use.
 
-- [x] Tests based on the [balancer-v3-monorepo](https://github.com/balancer/balancer-v3-monorepo/tree/main/pkg/vault/test/foundry/fork) pass for the given ERC4626 vaults, which can be found [here](https://github.com/balancer/balancer-v3-erc4626-tests/blob/main/test/sonic/ERC4626SonicSiloSolvBtc.t.sol).
+- [x] Tests based on the [balancer-v3-monorepo](https://github.com/balancer/balancer-v3-monorepo/tree/main/pkg/vault/test/foundry/fork) pass for the given ERC4626 vaults, which can be found [here](https://github.com/balancer/balancer-v3-erc4626-tests/blob/main/test/sonic/).
 - [x] The required Vault implements the required operational ERC4626 Interface
 
 ## Review Checklist: Common Findings
