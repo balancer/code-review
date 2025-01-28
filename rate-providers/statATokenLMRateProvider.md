@@ -216,6 +216,16 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
         - admin type: Aave governance system.
             - multisig timelock? YES: 24 hours
 
+    - [base:0x0368b79b6A173a5aD589594E3227153D8cC7Cecc](https://basescan.org/address/0x0368b79b6A173a5aD589594E3227153D8cC7Cecc#readContract)
+        - upgradeable component: `StataTokenV2` ([base:0xC768c589647798a6EE01A91FdE98EF2ed046DBD6](https://basescan.org/address/0xC768c589647798a6EE01A91FdE98EF2ed046DBD6#readProxyContract))
+        - admin address: [base:0x9390B1735def18560c509E2d0bc090E9d6BA257a](https://basescan.org/address/0x9390B1735def18560c509E2d0bc090E9d6BA257a)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours.
+        -upgradeable component: `L2PoolInstance` ([base:0xA238Dd80C259a72e81d7e4664a9801593F98d1c5](https://basescan.org/address/0xA238Dd80C259a72e81d7e4664a9801593F98d1c5#readProxyContract))
+        - admin address: [base:0x9390B1735def18560c509E2d0bc090E9d6BA257a](https://basescan.org/address/0x9390B1735def18560c509E2d0bc090E9d6BA257a)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours.
+
     
 
     

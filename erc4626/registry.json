@@ -13,6 +13,13 @@
       "summary": "safe",
       "review": "./StatATokenV2Review.md",
       "warnings": []
+    },
+    "0xC768c589647798a6EE01A91FdE98EF2ed046DBD6": {
+      "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "name": "Wrapped Aave Base USDC",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": []
     }
   },
   "ethereum": {

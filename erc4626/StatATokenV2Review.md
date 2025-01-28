@@ -113,6 +113,12 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
         - admin type: Aave governance system.
             - multisig timelock? YES: 24 hours.
 
+    #### Wrapped Aave Base USDC - 0xC768c589647798a6EE01A91FdE98EF2ed046DBD6
+    - upgradeable component: `StataTokenV2` ([base:0x6acD0a165fD70A84b6b50d955ff3628700bAAf4b](https://basescan.org/address/0x6acD0a165fD70A84b6b50d955ff3628700bAAf4b#readProxyContract))
+        - admin address: [base:0x9390B1735def18560c509E2d0bc090E9d6BA257a](https://basescan.org/address/0x9390B1735def18560c509E2d0bc090E9d6BA257a)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours.
+
 ### Common Manipulation Vectors
 - [ ] The ERC4626 Vault is susceptible to donation attacks.
 
