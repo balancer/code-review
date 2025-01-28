@@ -2067,6 +2067,15 @@
           "implementationReviewed": "0xaf108ae0AD8700ac41346aCb620e828c03BB8848"
         }
       ]
+    },
+    "0x14BD1e9b30007510c2aFE3a7a8053A6DE5605d35": {
+      "asset": "0x6acD0a165fD70A84b6b50d955ff3628700bAAf4b",
+      "name": "AaveMarketRateTransformer",
+      "summary": "safe",
+      "review": "./MarketRateTransformerRateProviders.md",
+      "warnings": [""],
+      "factory": "0x4E185b1502Fea7a06B63fDdA6de38F92C9528566",
+      "upgradeableComponents": []
     }
   },
   "fantom": {

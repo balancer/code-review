@@ -20,6 +20,10 @@
         - ERC4626RateProvider: MetaMorphoV1_1
         - ERC4626Vault's `asset` rate provider: Wrapped USDL (wUSDL) ERC4626 Rate Provider
 
+    - WeETH [base:0x4FE32815684C54bB779359A99ff3a7Ef424079E3](https://basescan.org/address/0x4FE32815684C54bB779359A99ff3a7Ef424079E3)
+        - ERC4626RateProvider: Wrapped Aave Base weETH
+        - ERC4626Vault's `asset` rate provider: ChainlinkRateProvider
+
 - Audit report(s):
     - [Formal Verification Report For StaticAToken](https://github.com/aave-dao/aave-v3-origin/blob/067d29eb75115179501edc4316d125d9773f7928/audits/11-09-2024_Certora_StataTokenV2.pdf)
     - [Security Reviews & Formal Verifications](https://docs.morpho.org/security-reviews/)
@@ -104,9 +108,24 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
     - admin type: multisig
         - multisig threshold/signers: 3/17
 
+    #### Wrapped Aave Base weETH 
+    - [base:0x4FE32815684C54bB779359A99ff3a7Ef424079E3](https://basescan.org/address/0x4FE32815684C54bB779359A99ff3a7Ef424079E3#readContract)
+        - upgradeable component: `StataTokenV2` ([base:0x6acD0a165fD70A84b6b50d955ff3628700bAAf4b](https://basescan.org/address/0x6acD0a165fD70A84b6b50d955ff3628700bAAf4b#readProxyContract))
+        - admin address: [base:0x9390B1735def18560c509E2d0bc090E9d6BA257a](https://basescan.org/address/0x9390B1735def18560c509E2d0bc090E9d6BA257a)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours.
+        - upgradeable component: `L2PoolInstance` ([base:0xA238Dd80C259a72e81d7e4664a9801593F98d1c5](https://basescan.org/address/0xA238Dd80C259a72e81d7e4664a9801593F98d1c5#readProxyContract))
+        - admin address: [base:0x9390B1735def18560c509E2d0bc090E9d6BA257a](https://basescan.org/address/0x9390B1735def18560c509E2d0bc090E9d6BA257a)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours.
+
 
 ### Oracles
-- [ ] Price data is provided by an off-chain source (e.g., a Chainlink oracle, a multisig, or a network of nodes).
+- [x] Price data is provided by an off-chain source (e.g., a Chainlink oracle, a multisig, or a network of nodes).
+
+    #### Wrapped Aave Base weETH
+    - The ERC4626 Vault utilises a Chainlink Rate Provider at [base:0x5a7A419C59eAAdec8Dc00bc93ac95612e6e154Cf](https://basescan.org/address/0x5a7A419C59eAAdec8Dc00bc93ac95612e6e154Cf#code)
+    #### Wrapped Aave Base weETH
 
 - [ ] Price data is expected to be volatile (e.g., because it represents an open market price instead of a (mostly) monotonically increasing price).
 
