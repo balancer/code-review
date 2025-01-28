@@ -36,4 +36,4 @@ To save time, we do not bother pointing out low-severity/informational issues or
 ## Conclusion
 **Summary judgment: USABLE**
 
-The outlined ERC4626 Vaults should work well with Balancer pools.
+The outlined ERC4626 Vaults should work well with Balancer pools. The underlying contracts have been audited. Computation of totalAssets do not rely on `balanceOf()` calls and also their audits do not indicate any risk of a donation attack vector.
