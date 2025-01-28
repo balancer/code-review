@@ -55,6 +55,13 @@
       "summary": "safe",
       "review": "./StatATokenV2Review.md",
       "warnings": []
+    },
+    "0xbB8A61425DFE172AA3a6f882aAFaBA00B32b7d59": {
+      "asset": "0xEC70Dcb4A1EFa46b8F2D97C310C9c4790ba5ffA8",
+      "name": "Wrapped Aave Arbitrum rETH",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": []
     }
   },
   "base": {

@@ -542,6 +542,15 @@
       "warnings": [""],
       "factory": "0xe548a29631f9E49830bE8edc22d407b2D2915F31",
       "upgradeableComponents": []
+    },
+    "0xbB8A61425DFE172AA3a6f882aAFaBA00B32b7d59": {
+      "asset": "0xbB8A61425DFE172AA3a6f882aAFaBA00B32b7d59",
+      "name": "Wrapped Aave Arbitrum ARB",
+      "summary": "safe",
+      "review": "./MarketRateTransformerRateProviders.md",
+      "warnings": [""],
+      "factory": "0xeC2C6184761ab7fE061130B4A7e3Da89c72F8395",
+      "upgradeableComponents": []
     }
   },
   "avalanche": {
