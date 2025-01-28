@@ -729,6 +729,13 @@
       "summary": "safe",
       "review": "./statATokenLMRateProvider.md",
       "warnings": []
+    },
+    "0xcb1f29103F710A0A562de7f0e9DDE223D0860674": {
+      "asset": "0x0830820D1A9aa1554364752d6D8F55C836871B74",
+      "name": "AaveMarketRateTransformer",
+      "summary": "safe",
+      "review": "./MarketRateTransformerRateProviders.md",
+      "warnings": []
     }
   },
   "ethereum": {

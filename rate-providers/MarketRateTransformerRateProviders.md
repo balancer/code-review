@@ -119,13 +119,25 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
         - admin type: Aave governance system.
             - multisig timelock? YES: 24 hours.
 
+    #### Wrapped Aave Base wstETH
+    - [base:0xcb1f29103F710A0A562de7f0e9DDE223D0860674](https://basescan.org/address/0xcb1f29103F710A0A562de7f0e9DDE223D0860674#readContract)
+        - upgradeable component: `StataTokenV2` ([base:0x0830820D1A9aa1554364752d6D8F55C836871B74](https://basescan.org/address/0x0830820D1A9aa1554364752d6D8F55C836871B74))
+        - admin address: [base:0x9390B1735def18560c509E2d0bc090E9d6BA257a](https://basescan.org/address/0x9390B1735def18560c509E2d0bc090E9d6BA257a)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours.
+        - upgradeable component: `L2PoolInstance` ([base:0xA238Dd80C259a72e81d7e4664a9801593F98d1c5](https://basescan.org/address/0xA238Dd80C259a72e81d7e4664a9801593F98d1c5#readProxyContract))
+        - admin address: [base:0x9390B1735def18560c509E2d0bc090E9d6BA257a](https://basescan.org/address/0x9390B1735def18560c509E2d0bc090E9d6BA257a)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours.
+
 
 ### Oracles
 - [x] Price data is provided by an off-chain source (e.g., a Chainlink oracle, a multisig, or a network of nodes).
 
     #### Wrapped Aave Base weETH
     - The ERC4626 Vault utilises a Chainlink Rate Provider at [base:0x5a7A419C59eAAdec8Dc00bc93ac95612e6e154Cf](https://basescan.org/address/0x5a7A419C59eAAdec8Dc00bc93ac95612e6e154Cf#code)
-    #### Wrapped Aave Base weETH
+    #### Wrapped Aave Base wstETH
+    - The ERC4626 Vault utilises a Chainlink Rate Provider at [base:0x3b3dd5f913443bb5E70389F29c83F7DCA460CAe1](https://basescan.org/address/0x3b3dd5f913443bb5E70389F29c83F7DCA460CAe1)
 
 - [ ] Price data is expected to be volatile (e.g., because it represents an open market price instead of a (mostly) monotonically increasing price).
 
