@@ -268,5 +268,14 @@ The outlined ERC4626 Vaults should work well with Balancer pools. Upgradeability
 - cbETH [base:0x5e8B674127B321DC344c078e58BBACc3f3008962](https://github.com/balancer/balancer-v3-erc4626-tests/blob/208e800c185f59d3e57f4f228932af59d0458b29/test/base/ERC4626BaseAaveCbETH.t.sol#L20)
 - USDbC [base:0x74D4D1D440c9679b1013999Bd91507eAa2fff651](https://github.com/balancer/balancer-v3-erc4626-tests/blob/208e800c185f59d3e57f4f228932af59d0458b29/test/base/ERC4626BaseAaveUSDbC.t.sol#L20)
 - ezETH [base:0xF8F10f39116716e89498c1c5E94137ADa11b2BC7](https://github.com/balancer/balancer-v3-erc4626-tests/blob/208e800c185f59d3e57f4f228932af59d0458b29/test/base/ERC4626BaseAaveEzETH.t.sol#L20)
-
-
+- ARB: [arbitrum:0xf09EDbF2655B2A56753bD60D22CeAB2AC5D04188](https://github.com/balancer/balancer-v3-erc4626-tests/blob/aave-arbitrum/test/arbitrum/ERC4626ArbitrumAaveARB.t.sol)
+- DAI: [arbitrum:0xf253BD61aEd0E9D62523eA76CD6F38B4a51dA145](https://github.com/balancer/balancer-v3-erc4626-tests/blob/aave-arbitrum/test/arbitrum/ERC4626ArbitrumAaveDAI.t.sol)
+- GHO: [arbitrum:0xD089B4cb88Dacf4e27be869A00e9f7e2E3C18193](https://github.com/balancer/balancer-v3-erc4626-tests/blob/aave-arbitrum/test/arbitrum/ERC4626ArbitrumAaveGHO.t.sol)
+- LINK: [arbitrum:0xEAB84053B99f2ec4433F5121A1CB1524c8c998F8](https://github.com/balancer/balancer-v3-erc4626-tests/blob/aave-arbitrum/test/arbitrum/ERC4626ArbitrumAaveLINK.t.sol)
+- RETH: [arbitrum:0xbB8A61425DFE172AA3a6f882aAFaBA00B32b7d59](https://github.com/balancer/balancer-v3-erc4626-tests/blob/aave-arbitrum/test/arbitrum/ERC4626ArbitrumAaveRETH.t.sol)
+- USDC.e [arbitrum:0xE6D5923281c89DC989D00817387292387552d5C1](https://github.com/balancer/balancer-v3-erc4626-tests/blob/aave-arbitrum/test/arbitrum/ERC4626ArbitrumAaveUSDCe.t.sol)
+- USDC.n [arbitrum:0x7F6501d3B98eE91f9b9535E4b0ac710Fb0f9e0bc](https://github.com/balancer/balancer-v3-erc4626-tests/blob/aave-arbitrum/test/arbitrum/ERC4626ArbitrumAaveUSDCn.t.sol)
+- USDT: [arbitrum:0xa6D12574eFB239FC1D2099732bd8b5dC6306897F](https://github.com/balancer/balancer-v3-erc4626-tests/blob/aave-arbitrum/test/arbitrum/ERC4626ArbitrumAaveUSDT.t.sol)
+- aWBTC: [arbitrum:0x52Dc1FEeFA4f9a99221F93D79da46Ae89b8c0967](https://github.com/balancer/balancer-v3-erc4626-tests/blob/aave-arbitrum/test/arbitrum/ERC4626ArbitrumAaveWBTC.t.sol)
+- aWeETH: [arbitrum:0xD9E3Ef2c12de90E3b03F7b7E3964956a71920d40](https://github.com/balancer/balancer-v3-erc4626-tests/blob/aave-arbitrum/test/arbitrum/ERC4626ArbitrumAaveWeETH.t.sol)
+- awstETH: [arbitrum:0xe98fc055c99DECD8Da0c111B090885d5d15C774E](https://github.com/balancer/balancer-v3-erc4626-tests/blob/aave-arbitrum/test/arbitrum/ERC4626ArbitrumAaveWstETH.t.sol)
