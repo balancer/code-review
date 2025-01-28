@@ -48,6 +48,13 @@
       "summary": "safe",
       "review": "./StatATokenV2Review.md",
       "warnings": []
+    },
+    "0xf09EDbF2655B2A56753bD60D22CeAB2AC5D04188": {
+      "asset": "0x912CE59144191C1204E64559FE8253a0e49E6548",
+      "name": "WWrapped Aave Arbitrum ARB",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": []
     }
   },
   "base": {
