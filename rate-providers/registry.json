@@ -740,6 +740,69 @@
       "warnings": [],
       "factory": "0xEfD3aF73d3359014f3B864d37AC672A6d3D7ff1A",
       "upgradeableComponents": []
+    },
+    "0x14BD1e9b30007510c2aFE3a7a8053A6DE5605d35": {
+      "asset": "0xe298b938631f750DD409fB18227C4a23dCdaab9b",
+      "name": "ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./statATokenLMRateProvider.md",
+      "warnings": [""],
+      "factory": "0xEfD3aF73d3359014f3B864d37AC672A6d3D7ff1A",
+      "upgradeableComponents": []
+    },
+    "0x0368b79b6A173a5aD589594E3227153D8cC7Cecc": {
+      "asset": "0xC768c589647798a6EE01A91FdE98EF2ed046DBD6",
+      "name": "ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./statATokenLMRateProvider.md",
+      "warnings": [""],
+      "factory": "0xEfD3aF73d3359014f3B864d37AC672A6d3D7ff1A",
+      "upgradeableComponents": []
+    },
+    "0xbF21251c74208771e25De5C08971cE586236EE89": {
+      "asset": "0xFA2A03b6f4A65fB1Af64f7d935fDBf78693df9aF",
+      "name": "ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./statATokenLMRateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
+    },
+    "0xcb1f29103F710A0A562de7f0e9DDE223D0860674": {
+      "asset": "0x0830820D1A9aa1554364752d6D8F55C836871B74",
+      "name": "AaveMarketRateTransformer",
+      "summary": "safe",
+      "review": "./MarketRateTransformerRateProviders.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
+    },
+    "0x940748d30315276362f594ECcCb648A4f9aB7629": {
+      "asset": "0x5e8B674127B321DC344c078e58BBACc3f3008962",
+      "name": "AaveMarketRateTransformer",
+      "summary": "safe",
+      "review": "./MarketRateTransformerRateProviders.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
+    },
+    "0xBa0Fd0f3B019e8aBA61FEA2ac4Eb56b29F6808c0": {
+      "asset": "0x74D4D1D440c9679b1013999Bd91507eAa2fff651",
+      "name": "ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./statATokenLMRateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
+    },
+    "0xFF4B2CE4131E0Fb6b8A40447B4dF96Bdc83f759a": {
+      "asset": "0xF8F10f39116716e89498c1c5E94137ADa11b2BC7",
+      "name": "AaveMarketRateTransformer",
+      "summary": "safe",
+      "review": "./MarketRateTransformerRateProviders.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   },
   "ethereum": {
@@ -2094,6 +2157,15 @@
           "implementationReviewed": "0xaf108ae0AD8700ac41346aCb620e828c03BB8848"
         }
       ]
+    },
+    "0x14BD1e9b30007510c2aFE3a7a8053A6DE5605d35": {
+      "asset": "0x6acD0a165fD70A84b6b50d955ff3628700bAAf4b",
+      "name": "AaveMarketRateTransformer",
+      "summary": "safe",
+      "review": "./MarketRateTransformerRateProviders.md",
+      "warnings": [""],
+      "factory": "0x4E185b1502Fea7a06B63fDdA6de38F92C9528566",
+      "upgradeableComponents": []
     }
   },
   "fantom": {
@@ -2893,7 +2965,8 @@
         {
           "entrypoint": "0xA28d4dbcC90C849e3249D642f356D85296a12954",
           "implementationReviewed": "0x29c26d85ba819659d084a592b97607a5337de030"
-        }]
+        }
+      ]
     },
     "0xa6c292d06251da638be3b58f1473e03d99c26ff0": {
       "asset": "0xd31e89ffb929b38ba60d1c7dbeb68c7712eaab0a",
@@ -2906,7 +2979,35 @@
         {
           "entrypoint": "0xD31E89Ffb929b38bA60D1c7dBeB68c7712EAAb0a",
           "implementationReviewed": "0xb9fa01cbd690dfd5be3d8d667c54bbdd9e41e57d"
-        }]
+        }
+      ]
+    },
+    "0x5fded3206608d3f33175a8865576431906cdb43b": {
+      "asset": "0x7870ddFd5ACA4E977B2287e9A212bcbe8FC4135a",
+      "name": "Beefy USDC SiloV2 Rateprovider",
+      "summary": "safe",
+      "review": "./BeefyUsdcSiloRateprovider.md",
+      "warnings": [""],
+      "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
+      "upgradeableComponents": []
+    },
+    "0x78557d8a83fe7c6d9f9983d00e5c0e08cc3335e6": {
+      "asset": "0x52Fc9E0a68b6a4C9b57b9D1d99fB71449A99DCd8",
+      "name": "Silo bSolvBTC.bbn Rateprovider",
+      "summary": "safe",
+      "review": "./SiloWrappedRateprovider.md",
+      "warnings": [""],
+      "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
+      "upgradeableComponents": []
+    },    
+    "0x9d2d4351c1b3718d7a65ef21f54c86c665964670": {
+      "asset": "0x87178fe8698C7eDa8aA207083C3d66aEa569aB98",
+      "name": "Silo bSolvBTC Rateprovider",
+      "summary": "safe",
+      "review": "./SiloWrappedRateprovider.md",
+      "warnings": [""],
+      "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
+      "upgradeableComponents": []
     }
   }
 }
