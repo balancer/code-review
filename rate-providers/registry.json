@@ -524,6 +524,15 @@
       "warnings": [""],
       "factory": "0xe548a29631f9E49830bE8edc22d407b2D2915F31",
       "upgradeableComponents": []
+    },
+    "0x957914d31912194911365D644F008E537C0150eb": {
+      "asset": "0xEAB84053B99f2ec4433F5121A1CB1524c8c998F8",
+      "name": "Wrapped Aave Arbitrum LINK",
+      "summary": "safe",
+      "review": "./statATokenv2RateProvider.md",
+      "warnings": [""],
+      "factory": "0xe548a29631f9E49830bE8edc22d407b2D2915F31",
+      "upgradeableComponents": []
     }
   },
   "avalanche": {
