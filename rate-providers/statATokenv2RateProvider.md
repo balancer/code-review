@@ -15,6 +15,14 @@
     - GNO [gnosis:0xbbb4966335677Ea24F7B86DC19a423412390e1fb](https://gnosisscan.io/address/0xbbb4966335677Ea24F7B86DC19a423412390e1fb#code)
     - USDC.e [gnosis:0x1529f6Af353E180867F257820843425B49B1b478](https://gnosisscan.io/address/0x1529f6Af353E180867F257820843425B49B1b478#code)
 
+    - weETH [base:0x4FE32815684C54bB779359A99ff3a7Ef424079E3](https://basescan.org/address/0x4FE32815684C54bB779359A99ff3a7Ef424079E3)
+    - USDC [base:0x0368b79b6A173a5aD589594E3227153D8cC7Cecc](https://basescan.org/address/0x0368b79b6A173a5aD589594E3227153D8cC7Cecc)
+    - cbBTC [base:0xbF21251c74208771e25De5C08971cE586236EE89](https://basescan.org/address/0xbF21251c74208771e25De5C08971cE586236EE89)
+    - wstETH [base:0xcb1f29103F710A0A562de7f0e9DDE223D0860674](https://basescan.org/address/0xcb1f29103F710A0A562de7f0e9DDE223D0860674)
+    - cbETH [base:0x940748d30315276362f594ECcCb648A4f9aB7629](https://basescan.org/address/0x940748d30315276362f594ECcCb648A4f9aB7629)
+    - USDbC [base:0xBa0Fd0f3B019e8aBA61FEA2ac4Eb56b29F6808c0](https://basescan.org/address/0xBa0Fd0f3B019e8aBA61FEA2ac4Eb56b29F6808c0)
+    - ezETH [base:0xFF4B2CE4131E0Fb6b8A40447B4dF96Bdc83f759a](https://basescan.org/address/0xFF4B2CE4131E0Fb6b8A40447B4dF96Bdc83f759a)
+
 - Audit report(s):
     - [Formal Verification Report For StaticAToken](https://github.com/aave-dao/aave-v3-origin/blob/067d29eb75115179501edc4316d125d9773f7928/audits/11-09-2024_Certora_StataTokenV2.pdf)
 
@@ -117,7 +125,7 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
             - multisig timelock? YES: 24 hours
 
     - [gnosis:0x1529f6Af353E180867F257820843425B49B1b478](https://gnosisscan.io/address/0x1529f6Af353E180867F257820843425B49B1b478#readProxyContract)
-        - upgradeable component: `StataTokenV2` ([gnosis:0x51350d88c1bd32Cc6A79368c9Fb70373Fb71F375](https://gnosisscan.io/address/0x51350d88c1bd32Cc6A79368c9Fb70373Fb71F375.#readProxyContract))
+        - upgradeable component: `StataTokenV2` ([gnosis:0x51350d88c1bd32Cc6A79368c9Fb70373Fb71F375](https://gnosisscan.io/address/0x51350d88c1bd32Cc6A79368c9Fb70373Fb71F375#readProxyContract))
         - admin address: [gnosis:0x1dF462e2712496373A347f8ad10802a5E95f053D](https://gnosisscan.io/address/0x1dF462e2712496373A347f8ad10802a5E95f053D)
         - admin type: Aave governance system.
             - multisig timelock? YES: 24 hours.
@@ -125,8 +133,77 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
         - admin address: [gnosis:0x1dF462e2712496373A347f8ad10802a5E95f053D](https://gnosisscan.io/address/0x1dF462e2712496373A347f8ad10802a5E95f053D#code)
         - admin type: Aave governance system.
             - multisig timelock? YES: 24 hours
-    
 
+    - weETH [base:0x4FE32815684C54bB779359A99ff3a7Ef424079E3](https://basescan.org/address/0x4FE32815684C54bB779359A99ff3a7Ef424079E3)
+        - upgradeable component: `StataTokenV2` ([base:0x6acD0a165fD70A84b6b50d955ff3628700bAAf4b](https://basescan.org/address/0x6acD0a165fD70A84b6b50d955ff3628700bAAf4b#readProxyContract))
+        - admin address: [base:0x9390B1735def18560c509E2d0bc090E9d6BA257a](https://basescan.org/address/0x9390B1735def18560c509E2d0bc090E9d6BA257a#code)
+            - admin type: Aave governance system.
+                - multisig timelock? YES: 24 hours.
+        - upgradeable component: `L2Pool` ([base:0xA238Dd80C259a72e81d7e4664a9801593F98d1c5](https://basescan.org/address/0xA238Dd80C259a72e81d7e4664a9801593F98d1c5#code))
+        - admin address: [base:0x9390B1735def18560c509E2d0bc090E9d6BA257a](https://basescan.org/address/0x9390B1735def18560c509E2d0bc090E9d6BA257a#code)
+            - admin type: Aave governance system.
+                - multisig timelock? YES: 24 hours.
+
+    - USDC [base:0x0368b79b6A173a5aD589594E3227153D8cC7Cecc](https://basescan.org/address/0x0368b79b6A173a5aD589594E3227153D8cC7Cecc)
+        - upgradeable component: `StataTokenV2` ([base:0xC768c589647798a6EE01A91FdE98EF2ed046DBD6](https://basescan.org/address/0xC768c589647798a6EE01A91FdE98EF2ed046DBD6#code))
+        - admin address: [base:0x9390B1735def18560c509E2d0bc090E9d6BA257a](https://basescan.org/address/0x9390B1735def18560c509E2d0bc090E9d6BA257a#code)
+            - admin type: Aave governance system.
+                - multisig timelock? YES: 24 hours.
+        - upgradeable component: `L2Pool` ([base:0xA238Dd80C259a72e81d7e4664a9801593F98d1c5](https://basescan.org/address/0xA238Dd80C259a72e81d7e4664a9801593F98d1c5))
+        - admin address: [base:0x9390B1735def18560c509E2d0bc090E9d6BA257a](https://basescan.org/address/0x9390B1735def18560c509E2d0bc090E9d6BA257a#code)
+            - admin type: Aave governance system.
+                - multisig timelock? YES: 24 hours.
+
+    - cbBTC [base:0xbF21251c74208771e25De5C08971cE586236EE89](https://basescan.org/address/0xbF21251c74208771e25De5C08971cE586236EE89)
+        - upgradeable component: `StataTokenV2` ([base:0xFA2A03b6f4A65fB1Af64f7d935fDBf78693df9aF](https://basescan.org/address/0xFA2A03b6f4A65fB1Af64f7d935fDBf78693df9aF#code))
+        - admin address: [base:0x9390B1735def18560c509E2d0bc090E9d6BA257a](https://basescan.org/address/0x9390B1735def18560c509E2d0bc090E9d6BA257a#code)
+            - admin type: Aave governance system.
+                - multisig timelock? YES: 24 hours.
+        - upgradeable component: `L2Pool` ([base:0xA238Dd80C259a72e81d7e4664a9801593F98d1c5](https://basescan.org/address/0xA238Dd80C259a72e81d7e4664a9801593F98d1c5))
+        - admin address: [base:0x9390B1735def18560c509E2d0bc090E9d6BA257a](https://basescan.org/address/0x9390B1735def18560c509E2d0bc090E9d6BA257a#code)
+            - admin type: Aave governance system.
+                - multisig timelock? YES: 24 hours.
+
+    - wstETH [base:0xcb1f29103F710A0A562de7f0e9DDE223D0860674](https://basescan.org/address/0xcb1f29103F710A0A562de7f0e9DDE223D0860674)
+        - upgradeable component: `StataTokenV2` ([base:0x0830820D1A9aa1554364752d6D8F55C836871B74](https://basescan.org/address/0x0830820D1A9aa1554364752d6D8F55C836871B74))
+        - admin address: [base:0x9390B1735def18560c509E2d0bc090E9d6BA257a](https://basescan.org/address/0x9390B1735def18560c509E2d0bc090E9d6BA257a#code)
+            - admin type: Aave governance system.
+                - multisig timelock? YES: 24 hours.
+        - upgradeable component: `L2Pool` ([base:0xA238Dd80C259a72e81d7e4664a9801593F98d1c5](https://basescan.org/address/0xA238Dd80C259a72e81d7e4664a9801593F98d1c5))
+        - admin address: [base:0x9390B1735def18560c509E2d0bc090E9d6BA257a](https://basescan.org/address/0x9390B1735def18560c509E2d0bc090E9d6BA257a#code)
+            - admin type: Aave governance system.
+                - multisig timelock? YES: 24 hours.
+
+    - cbETH [base:0x940748d30315276362f594ECcCb648A4f9aB7629](https://basescan.org/address/0x940748d30315276362f594ECcCb648A4f9aB7629)
+        - upgradeable component: `StataTokenV2` ([base:0x5e8B674127B321DC344c078e58BBACc3f3008962](https://basescan.org/address/0x5e8B674127B321DC344c078e58BBACc3f3008962))
+        - admin address: [base:0x9390B1735def18560c509E2d0bc090E9d6BA257a](https://basescan.org/address/0x9390B1735def18560c509E2d0bc090E9d6BA257a#code)
+            - admin type: Aave governance system.
+                - multisig timelock? YES: 24 hours.
+        - upgradeable component: `L2Pool` ([base:0xA238Dd80C259a72e81d7e4664a9801593F98d1c5](https://basescan.org/address/0xA238Dd80C259a72e81d7e4664a9801593F98d1c5))
+        - admin address: [base:0x9390B1735def18560c509E2d0bc090E9d6BA257a](https://basescan.org/address/0x9390B1735def18560c509E2d0bc090E9d6BA257a#code)
+            - admin type: Aave governance system.
+                - multisig timelock? YES: 24 hours.
+
+    - USDbC [base:0xBa0Fd0f3B019e8aBA61FEA2ac4Eb56b29F6808c0](https://basescan.org/address/0xBa0Fd0f3B019e8aBA61FEA2ac4Eb56b29F6808c0)
+        - upgradeable component: `StataTokenV2` ([base:0x74D4D1D440c9679b1013999Bd91507eAa2fff651](https://basescan.org/address/0x74D4D1D440c9679b1013999Bd91507eAa2fff651))
+        - admin address: [base:0x9390B1735def18560c509E2d0bc090E9d6BA257a](https://basescan.org/address/0x9390B1735def18560c509E2d0bc090E9d6BA257a#code)
+            - admin type: Aave governance system.
+                - multisig timelock? YES: 24 hours.
+        - upgradeable component: `L2Pool` ([base:0xA238Dd80C259a72e81d7e4664a9801593F98d1c5](https://basescan.org/address/0xA238Dd80C259a72e81d7e4664a9801593F98d1c5))
+        - admin address: [base:0x9390B1735def18560c509E2d0bc090E9d6BA257a](https://basescan.org/address/0x9390B1735def18560c509E2d0bc090E9d6BA257a#code)
+            - admin type: Aave governance system.
+                - multisig timelock? YES: 24 hours.
+
+    - ezETH [base:0xFF4B2CE4131E0Fb6b8A40447B4dF96Bdc83f759a](https://basescan.org/address/0xFF4B2CE4131E0Fb6b8A40447B4dF96Bdc83f759a)
+        - upgradeable component: `StataTokenV2` ([base:0xF8F10f39116716e89498c1c5E94137ADa11b2BC7](https://basescan.org/address/0xF8F10f39116716e89498c1c5E94137ADa11b2BC7))
+        - admin address: [base:0x9390B1735def18560c509E2d0bc090E9d6BA257a](https://basescan.org/address/0x9390B1735def18560c509E2d0bc090E9d6BA257a#code)
+            - admin type: Aave governance system.
+                - multisig timelock? YES: 24 hours.
+        - upgradeable component: `L2Pool` ([base:0xA238Dd80C259a72e81d7e4664a9801593F98d1c5](https://basescan.org/address/0xA238Dd80C259a72e81d7e4664a9801593F98d1c5))
+        - admin address: [base:0x9390B1735def18560c509E2d0bc090E9d6BA257a](https://basescan.org/address/0x9390B1735def18560c509E2d0bc090E9d6BA257a#code)
+            - admin type: Aave governance system.
+                - multisig timelock? YES: 24 hours.
+    
 ### Oracles
 - [ ] Price data is provided by an off-chain source (e.g., a Chainlink oracle, a multisig, or a network of nodes).
 
