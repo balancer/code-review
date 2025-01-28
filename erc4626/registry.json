@@ -222,6 +222,20 @@
       "summary": "safe",
       "review": "./BeefyWrapperReview.md",
       "warnings": []
+    },
+    "0x52Fc9E0a68b6a4C9b57b9D1d99fB71449A99DCd8": {
+      "asset": "0xCC0966D8418d412c599A6421b760a847eB169A8c",
+      "name": "SiloV2 solvBTC.bbn ID 13",
+      "summary": "safe",
+      "review": "./SiloV2Review.md",
+      "warnings": []
+    },
+    "0x87178fe8698C7eDa8aA207083C3d66aEa569aB98": {
+      "asset": "0x541FD749419CA806a8bc7da8ac23D346f2dF8B77",
+      "name": "SiloV2 solvBTC ID 13",
+      "summary": "safe",
+      "review": "./SiloV2Review.md",
+      "warnings": []
     }
   },
   "sepolia": {
