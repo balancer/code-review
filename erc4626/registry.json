@@ -13,6 +13,13 @@
       "summary": "safe",
       "review": "./StatATokenV2Review.md",
       "warnings": []
+    },
+    "0x52Dc1FEeFA4f9a99221F93D79da46Ae89b8c0967": {
+      "asset": "0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f",
+      "name": "Wrapped Aave Arbitrum WBTC",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": []
     }
   },
   "base": {

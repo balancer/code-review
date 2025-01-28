@@ -488,6 +488,15 @@
       "warnings": [""],
       "factory": "0xeC2C6184761ab7fE061130B4A7e3Da89c72F8395",
       "upgradeableComponents": []
+    },
+    "0xDEA44786E61fd5475B35869586737D99B5e6dB59": {
+      "asset": "0x52Dc1FEeFA4f9a99221F93D79da46Ae89b8c0967",
+      "name": "Wrapped Aave Arbitrum WBTC",
+      "summary": "safe",
+      "review": "./statATokenv2RateProvider.md",
+      "warnings": [""],
+      "factory": "0xe548a29631f9E49830bE8edc22d407b2D2915F31",
+      "upgradeableComponents": []
     }
   },
   "avalanche": {
