@@ -551,6 +551,15 @@
       "warnings": [""],
       "factory": "0xeC2C6184761ab7fE061130B4A7e3Da89c72F8395",
       "upgradeableComponents": []
+    },
+    "0x788dab521C4607C99F879f327894cC6fAcd217E3": {
+      "asset": "0xf253BD61aEd0E9D62523eA76CD6F38B4a51dA145",
+      "name": "Wrapped Aave Arbitrum DAI",
+      "summary": "safe",
+      "review": "./statATokenv2RateProvider.md",
+      "warnings": [""],
+      "factory": "0xe548a29631f9E49830bE8edc22d407b2D2915F31",
+      "upgradeableComponents": []
     }
   },
   "avalanche": {

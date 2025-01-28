@@ -62,6 +62,13 @@
       "summary": "safe",
       "review": "./StatATokenV2Review.md",
       "warnings": []
+    },
+    "0xf253BD61aEd0E9D62523eA76CD6F38B4a51dA145": {
+      "asset": "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
+      "name": "Wrapped Aave Arbitrum DAI",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": []
     }
   },
   "base": {

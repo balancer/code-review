@@ -20,6 +20,7 @@
     - Wrapped Aave Arbitrum USDT [arbitrum:0xc6B25ba4c028Cb238AB7CaC7a2ee59Ed4F1E96d4](https://arbiscan.io/address/0xc6B25ba4c028Cb238AB7CaC7a2ee59Ed4F1E96d4)
     - Wrapped Aave Arbitrum LINK [arbitrum:0x957914d31912194911365D644F008E537C0150eb](https://arbiscan.io/address/0x957914d31912194911365D644F008E537C0150eb)
     - Wrapped Aave Arbitrum ARB [arbitrum:0xc7c5820E210dAc087faCD1692A7E66b5fEdA1C75](https://arbiscan.io/address/0xc7c5820E210dAc087faCD1692A7E66b5fEdA1C75)
+    - Wrapped Aave Arbitrum DAI [arbitrum:0x788dab521C4607C99F879f327894cC6fAcd217E3](https://arbiscan.io/address/0x788dab521C4607C99F879f327894cC6fAcd217E3#readContract)
 
 - Audit report(s):
     - [Formal Verification Report For StaticAToken](https://github.com/aave-dao/aave-v3-origin/blob/067d29eb75115179501edc4316d125d9773f7928/audits/11-09-2024_Certora_StataTokenV2.pdf)
@@ -184,6 +185,16 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 
     - [arbitrum:0xc7c5820E210dAc087faCD1692A7E66b5fEdA1C75](https://arbiscan.io/address/0xc7c5820E210dAc087faCD1692A7E66b5fEdA1C75)
         - upgradeable component: `StataTokenV2` ([arbitrum:0xf09EDbF2655B2A56753bD60D22CeAB2AC5D04188](https://arbiscan.io/address/0xf09EDbF2655B2A56753bD60D22CeAB2AC5D04188#readProxyContract))
+        - admin address: [arbitrum:0xFF1137243698CaA18EE364Cc966CF0e02A4e6327](https://arbiscan.io/address/0xFF1137243698CaA18EE364Cc966CF0e02A4e6327#code)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours.
+        - upgradeable component: `L2PoolInstance` ([arbitrum:0x794a61358D6845594F94dc1DB02A252b5b4814aD](https://arbiscan.io/address/0x794a61358D6845594F94dc1DB02A252b5b4814aD))
+        - admin address: [arbitrum:0xFF1137243698CaA18EE364Cc966CF0e02A4e6327](https://arbiscan.io/address/0xFF1137243698CaA18EE364Cc966CF0e02A4e6327#code)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours.
+
+    - [arbitrum:0x788dab521C4607C99F879f327894cC6fAcd217E3](https://arbiscan.io/address/0x788dab521C4607C99F879f327894cC6fAcd217E3#readContract)
+        - upgradeable component: `StataTokenV2` ([arbitrum:0xf253BD61aEd0E9D62523eA76CD6F38B4a51dA145](https://arbiscan.io/address/0xf253BD61aEd0E9D62523eA76CD6F38B4a51dA145))
         - admin address: [arbitrum:0xFF1137243698CaA18EE364Cc966CF0e02A4e6327](https://arbiscan.io/address/0xFF1137243698CaA18EE364Cc966CF0e02A4e6327#code)
         - admin type: Aave governance system.
             - multisig timelock? YES: 24 hours.
