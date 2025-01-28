@@ -1,4 +1,62 @@
 {
+  "base": {
+    "0xe298b938631f750DD409fB18227C4a23dCdaab9b": {
+      "asset": "0x4200000000000000000000000000000000000006",
+      "name": "Wrapped Aave Base WETH",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": []
+    },
+    "0x6acD0a165fD70A84b6b50d955ff3628700bAAf4b": {
+      "asset": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A",
+      "name": "Wrapped Aave Base weETH",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": []
+    },
+    "0xC768c589647798a6EE01A91FdE98EF2ed046DBD6": {
+      "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "name": "Wrapped Aave Base USDC",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": []
+    },
+    "0xFA2A03b6f4A65fB1Af64f7d935fDBf78693df9aF": {
+      "asset": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "name": "Wrapped Aave Base cbBTC",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": []
+    },
+    "0x0830820D1A9aa1554364752d6D8F55C836871B74": {
+      "asset": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+      "name": "Wrapped Aave Base wstETH",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": []
+    },
+    "0x5e8B674127B321DC344c078e58BBACc3f3008962": {
+      "asset": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+      "name": "Wrapped Aave Base cbETH",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": []
+    },
+    "0x74D4D1D440c9679b1013999Bd91507eAa2fff651": {
+      "asset": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+      "name": "Wrapped Aave Base USDbC",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": []
+    },
+    "0xF8F10f39116716e89498c1c5E94137ADa11b2BC7": {
+      "asset": "0x2416092f143378750bb29b79eD961ab195CcEea5",
+      "name": "Wrapped Aave Base ezETH",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": []
+    }
+  },
   "ethereum": {
     "0x2371e134e3455e0593363cBF89d3b6cf53740618": {
       "asset": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
@@ -143,21 +201,21 @@
       "warnings": []
     }
   },
-  "sonic":{
+  "sonic": {
     "0xA28d4dbcC90C849e3249D642f356D85296a12954": {
       "asset": "0xCC0966D8418d412c599A6421b760a847eB169A8c",
       "name": "Static Avalon Sonic SolvBTC.bbn",
       "summary": "safe",
       "review": "./StaticATokenLMAvalonReview.md",
       "warnings": []
-    },    
+    },
     "0xD31E89Ffb929b38bA60D1c7dBeB68c7712EAAb0a": {
       "asset": "0x541FD749419CA806a8bc7da8ac23D346f2dF8B77",
       "name": "Static Avalon Sonic SolvBTC",
       "summary": "safe",
       "review": "./StaticATokenLMAvalonReview.md",
       "warnings": []
-    },    
+    },
     "0x7870ddFd5ACA4E977B2287e9A212bcbe8FC4135a": {
       "asset": "0x29219dd400f2Bf60E5a23d13Be72B486D4038894",
       "name": "Beefy USDC Wrapper for SiloV2",

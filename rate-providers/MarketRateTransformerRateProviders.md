@@ -20,6 +20,10 @@
         - ERC4626RateProvider: MetaMorphoV1_1
         - ERC4626Vault's `asset` rate provider: Wrapped USDL (wUSDL) ERC4626 Rate Provider
 
+    - WeETH [base:0x4FE32815684C54bB779359A99ff3a7Ef424079E3](https://basescan.org/address/0x4FE32815684C54bB779359A99ff3a7Ef424079E3)
+        - ERC4626RateProvider: Wrapped Aave Base weETH
+        - ERC4626Vault's `asset` rate provider: ChainlinkRateProvider
+
 - Audit report(s):
     - [Formal Verification Report For StaticAToken](https://github.com/aave-dao/aave-v3-origin/blob/067d29eb75115179501edc4316d125d9773f7928/audits/11-09-2024_Certora_StataTokenV2.pdf)
     - [Security Reviews & Formal Verifications](https://docs.morpho.org/security-reviews/)
@@ -104,9 +108,63 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
     - admin type: multisig
         - multisig threshold/signers: 3/17
 
+    #### Wrapped Aave Base weETH 
+    - [base:0x4FE32815684C54bB779359A99ff3a7Ef424079E3](https://basescan.org/address/0x4FE32815684C54bB779359A99ff3a7Ef424079E3#readContract)
+        - upgradeable component: `StataTokenV2` ([base:0x6acD0a165fD70A84b6b50d955ff3628700bAAf4b](https://basescan.org/address/0x6acD0a165fD70A84b6b50d955ff3628700bAAf4b#readProxyContract))
+        - admin address: [base:0x9390B1735def18560c509E2d0bc090E9d6BA257a](https://basescan.org/address/0x9390B1735def18560c509E2d0bc090E9d6BA257a)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours.
+        - upgradeable component: `L2PoolInstance` ([base:0xA238Dd80C259a72e81d7e4664a9801593F98d1c5](https://basescan.org/address/0xA238Dd80C259a72e81d7e4664a9801593F98d1c5#readProxyContract))
+        - admin address: [base:0x9390B1735def18560c509E2d0bc090E9d6BA257a](https://basescan.org/address/0x9390B1735def18560c509E2d0bc090E9d6BA257a)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours.
+
+    #### Wrapped Aave Base wstETH
+    - [base:0xcb1f29103F710A0A562de7f0e9DDE223D0860674](https://basescan.org/address/0xcb1f29103F710A0A562de7f0e9DDE223D0860674#readContract)
+        - upgradeable component: `StataTokenV2` ([base:0x0830820D1A9aa1554364752d6D8F55C836871B74](https://basescan.org/address/0x0830820D1A9aa1554364752d6D8F55C836871B74))
+        - admin address: [base:0x9390B1735def18560c509E2d0bc090E9d6BA257a](https://basescan.org/address/0x9390B1735def18560c509E2d0bc090E9d6BA257a)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours.
+        - upgradeable component: `L2PoolInstance` ([base:0xA238Dd80C259a72e81d7e4664a9801593F98d1c5](https://basescan.org/address/0xA238Dd80C259a72e81d7e4664a9801593F98d1c5#readProxyContract))
+        - admin address: [base:0x9390B1735def18560c509E2d0bc090E9d6BA257a](https://basescan.org/address/0x9390B1735def18560c509E2d0bc090E9d6BA257a)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours.
+
+    #### Wrapped Aave Base cbETH
+    - [base:0x940748d30315276362f594ECcCb648A4f9aB7629](https://basescan.org/address/0x940748d30315276362f594ECcCb648A4f9aB7629#readContract)
+        - upgradeable component: `StataTokenV2` ([base:0x5e8B674127B321DC344c078e58BBACc3f3008962](https://basescan.org/address/0x5e8B674127B321DC344c078e58BBACc3f3008962#readProxyContract))
+        - admin address: [base:0x9390B1735def18560c509E2d0bc090E9d6BA257a](https://basescan.org/address/0x9390B1735def18560c509E2d0bc090E9d6BA257a)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours.
+        - upgradeable component: `L2PoolInstance` ([base:0xA238Dd80C259a72e81d7e4664a9801593F98d1c5](https://basescan.org/address/0xA238Dd80C259a72e81d7e4664a9801593F98d1c5))
+        - admin address: [base:0x9390B1735def18560c509E2d0bc090E9d6BA257a](https://basescan.org/address/0x9390B1735def18560c509E2d0bc090E9d6BA257a)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours.
+
+    #### Wrapped Aave Base ezETH
+    - [base:0xFF4B2CE4131E0Fb6b8A40447B4dF96Bdc83f759a](https://basescan.org/address/0xFF4B2CE4131E0Fb6b8A40447B4dF96Bdc83f759a#readContract)
+        - upgradeable component: `StataTokenV2` ([base:0xF8F10f39116716e89498c1c5E94137ADa11b2BC7](https://basescan.org/address/0xF8F10f39116716e89498c1c5E94137ADa11b2BC7#readProxyContract))
+        - admin address: [base:0x9390B1735def18560c509E2d0bc090E9d6BA257a](https://basescan.org/address/0x9390B1735def18560c509E2d0bc090E9d6BA257a)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours.
+        - upgradeable component: `L2PoolInstance` ([base:0xA238Dd80C259a72e81d7e4664a9801593F98d1c5](https://basescan.org/address/0xA238Dd80C259a72e81d7e4664a9801593F98d1c5))
+        - admin address: [base:0x9390B1735def18560c509E2d0bc090E9d6BA257a](https://basescan.org/address/0x9390B1735def18560c509E2d0bc090E9d6BA257a)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours.
+
 
 ### Oracles
-- [ ] Price data is provided by an off-chain source (e.g., a Chainlink oracle, a multisig, or a network of nodes).
+- [x] Price data is provided by an off-chain source (e.g., a Chainlink oracle, a multisig, or a network of nodes).
+
+    #### Wrapped Aave Base weETH
+    - The ERC4626 Vault utilises a Chainlink Rate Provider at [base:0x5a7A419C59eAAdec8Dc00bc93ac95612e6e154Cf](https://basescan.org/address/0x5a7A419C59eAAdec8Dc00bc93ac95612e6e154Cf#code)
+    #### Wrapped Aave Base wstETH
+    - The ERC4626 Vault utilises a Chainlink Rate Provider at [base:0x3b3dd5f913443bb5E70389F29c83F7DCA460CAe1](https://basescan.org/address/0x3b3dd5f913443bb5E70389F29c83F7DCA460CAe1)
+    #### Wrapped Aave Base cbETH
+    - The ERC4626 Vault utilises a Chainlink Rate Provider at [base:0x3786a6CAAB433f5dfE56503207DF31DF87C5b5C1](https://basescan.org/address/0x3786a6CAAB433f5dfE56503207DF31DF87C5b5C1)
+    #### Wrapped Aave Base ezETH
+    - The ERC4626 Vault utilises a Chainlink Rate Provider at [base:0x6ac3b3BeCE5AA61C6AB5d50ecd2D47b1f18ACe49](https://basescan.org/address/0x6ac3b3BeCE5AA61C6AB5d50ecd2D47b1f18ACe49)
+
 
 - [ ] Price data is expected to be volatile (e.g., because it represents an open market price instead of a (mostly) monotonically increasing price).
 
