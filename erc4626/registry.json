@@ -69,6 +69,13 @@
       "summary": "safe",
       "review": "./StatATokenV2Review.md",
       "warnings": []
+    },
+    "0xE6D5923281c89DC989D00817387292387552d5C1": {
+      "asset": "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8",
+      "name": "Wrapped Aave Arbitrum USDC",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": []
     }
   },
   "base": {
