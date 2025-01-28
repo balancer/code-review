@@ -28,6 +28,10 @@
         - ERC4626RateProvider: Wrapped Aave Arbitrum weETH
         - ERC4626Vault's `asset` rate provider: ChainlinkRateProvider
 
+    - Wrapped Aave Arbitrum wstETH [arbitrum:0xcdAa68ce322728FE4185a60f103C194F1E2c47BC](https://arbiscan.io/address/0x9CC54cb63E61c7D5231c506e4206Eb459250D2A7)
+        - ERC4626RateProvider: Wrapped Aave Arbitrum wstETH
+        - ERC4626Vault's `asset` rate provider: ChainlinkRateProvider
+
 - Audit report(s):
     - [Formal Verification Report For StaticAToken](https://github.com/aave-dao/aave-v3-origin/blob/067d29eb75115179501edc4316d125d9773f7928/audits/11-09-2024_Certora_StataTokenV2.pdf)
     - [Security Reviews & Formal Verifications](https://docs.morpho.org/security-reviews/)
@@ -167,6 +171,17 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
         - admin type: Aave governance system.
             - multisig timelock? YES: 24 hours.
 
+    #### Wrapped Aave Arbitrum wstETH
+    - [arbitrum:0x9CC54cb63E61c7D5231c506e4206Eb459250D2A7](https://arbiscan.io/address/0x9CC54cb63E61c7D5231c506e4206Eb459250D2A7)
+        - upgradeable component: `StataTokenV2` ([arbitrum:0xe98fc055c99DECD8Da0c111B090885d5d15C774E](https://arbiscan.io/address/0xe98fc055c99DECD8Da0c111B090885d5d15C774E))
+        - admin address: [arbitrum:0xFF1137243698CaA18EE364Cc966CF0e02A4e6327](https://arbiscan.io/address/0xFF1137243698CaA18EE364Cc966CF0e02A4e6327)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours.
+        - upgradeable component: `L2PoolInstance` ([arbitrum:0x794a61358D6845594F94dc1DB02A252b5b4814aD](https://arbiscan.io/address/0x794a61358D6845594F94dc1DB02A252b5b4814aD))
+        - admin address: [arbitrum:0xFF1137243698CaA18EE364Cc966CF0e02A4e6327](https://arbiscan.io/address/0xFF1137243698CaA18EE364Cc966CF0e02A4e6327)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours.
+
 
 ### Oracles
 - [x] Price data is provided by an off-chain source (e.g., a Chainlink oracle, a multisig, or a network of nodes).
@@ -181,6 +196,8 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
     - The ERC4626 Vault utilises a Chainlink Rate Provider at [base:0x6ac3b3BeCE5AA61C6AB5d50ecd2D47b1f18ACe49](https://basescan.org/address/0x6ac3b3BeCE5AA61C6AB5d50ecd2D47b1f18ACe49)
     #### Wrapped Aave Arbitrum weETH
     - The ERC4626 Vault utilises a Chainlink Rate Provider at [base:0xCd9e3fb32c8F258555b8292531112bBb5B87E2F4](https://arbiscan.io/address/0xCd9e3fb32c8F258555b8292531112bBb5B87E2F4#code)
+    #### Wrapped Aave Arbitrum wstETH 
+    - The ERC4626 Vault utilises a Chainlink Rate Provider at [base:0xf7c5c26B574063e7b098ed74fAd6779e65E3F836](https://arbiscan.io/address/0xf7c5c26B574063e7b098ed74fAd6779e65E3F836)
 
 
 - [ ] Price data is expected to be volatile (e.g., because it represents an open market price instead of a (mostly) monotonically increasing price).

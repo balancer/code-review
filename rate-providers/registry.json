@@ -506,6 +506,15 @@
       "warnings": [""],
       "factory": "0xe548a29631f9E49830bE8edc22d407b2D2915F31",
       "upgradeableComponents": []
+    },
+    "0x9CC54cb63E61c7D5231c506e4206Eb459250D2A7": {
+      "asset": "0xe98fc055c99DECD8Da0c111B090885d5d15C774E",
+      "name": "Wrapped Aave Arbitrum wstETH",
+      "summary": "safe",
+      "review": "./MarketRateTransformerRateProviders.md",
+      "warnings": [""],
+      "factory": "0xeC2C6184761ab7fE061130B4A7e3Da89c72F8395",
+      "upgradeableComponents": []
     }
   },
   "avalanche": {
