@@ -515,6 +515,15 @@
       "warnings": [""],
       "factory": "0xeC2C6184761ab7fE061130B4A7e3Da89c72F8395",
       "upgradeableComponents": []
+    },
+    "0xc6B25ba4c028Cb238AB7CaC7a2ee59Ed4F1E96d4": {
+      "asset": "0xa6D12574eFB239FC1D2099732bd8b5dC6306897F",
+      "name": "Wrapped Aave Arbitrum USDT",
+      "summary": "safe",
+      "review": "./statATokenv2RateProvider.md",
+      "warnings": [""],
+      "factory": "0xe548a29631f9E49830bE8edc22d407b2D2915F31",
+      "upgradeableComponents": []
     }
   },
   "avalanche": {

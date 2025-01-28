@@ -26,6 +26,7 @@
     - [arbitrum:0x52Dc1FEeFA4f9a99221F93D79da46Ae89b8c0967](https://arbiscan.io/address/0x52Dc1FEeFA4f9a99221F93D79da46Ae89b8c0967)
     - [arbitrum:0x7F6501d3B98eE91f9b9535E4b0ac710Fb0f9e0bc](https://arbiscan.io/address/0x7F6501d3B98eE91f9b9535E4b0ac710Fb0f9e0bc)
     - [arbitrum:0xe98fc055c99DECD8Da0c111B090885d5d15C774E](https://arbiscan.io/address/0xe98fc055c99DECD8Da0c111B090885d5d15C774E)
+    - [arbitrum:0xa6D12574eFB239FC1D2099732bd8b5dC6306897F](https://arbiscan.io/address/0xa6D12574eFB239FC1D2099732bd8b5dC6306897F)
 
 - Audit report(s):
     - [StatATokenV2 audits](https://github.com/aave-dao/aave-v3-origin/blob/067d29eb75115179501edc4316d125d9773f7928/audits/11-09-2024_Certora_StataTokenV2.pdf)
@@ -187,6 +188,12 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 
     #### Wrapped Aave Arbitrum wstETH - 0xe98fc055c99DECD8Da0c111B090885d5d15C774E
     - upgradeable component: `StataTokenV2` ([arbitrum:0xe98fc055c99DECD8Da0c111B090885d5d15C774E](https://arbiscan.io/address/0xe98fc055c99DECD8Da0c111B090885d5d15C774E#readProxyContract))
+        - admin address: [arbitrum:0xFF1137243698CaA18EE364Cc966CF0e02A4e6327](https://arbiscan.io/address/0xFF1137243698CaA18EE364Cc966CF0e02A4e6327)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours.
+
+    #### Wrapped Aave Arbitrum USDT - 0xa6D12574eFB239FC1D2099732bd8b5dC6306897F
+    - upgradeable component: `StataTokenV2` ([arbitrum:0xa6D12574eFB239FC1D2099732bd8b5dC6306897F](https://arbiscan.io/address/0xa6D12574eFB239FC1D2099732bd8b5dC6306897F#readProxyContract))
         - admin address: [arbitrum:0xFF1137243698CaA18EE364Cc966CF0e02A4e6327](https://arbiscan.io/address/0xFF1137243698CaA18EE364Cc966CF0e02A4e6327)
         - admin type: Aave governance system.
             - multisig timelock? YES: 24 hours.
