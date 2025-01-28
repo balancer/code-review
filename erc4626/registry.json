@@ -1,4 +1,13 @@
 {
+  "arbitrum": {
+    "0x4cE13a79f45C1Be00BdABD38B764aC28C082704E": {
+      "asset": "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
+      "name": "Wrapped Aave Arbitrum WETH",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": []
+    }
+  },
   "base": {
     "0xe298b938631f750DD409fB18227C4a23dCdaab9b": {
       "asset": "0x4200000000000000000000000000000000000006",
