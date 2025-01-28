@@ -48,6 +48,13 @@
       "summary": "safe",
       "review": "./StatATokenV2Review.md",
       "warnings": []
+    },
+    "0xF8F10f39116716e89498c1c5E94137ADa11b2BC7": {
+      "asset": "0x2416092f143378750bb29b79eD961ab195CcEea5",
+      "name": "Wrapped Aave Base ezETH",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": []
     }
   },
   "ethereum": {
