@@ -497,6 +497,15 @@
       "warnings": [""],
       "factory": "0xe548a29631f9E49830bE8edc22d407b2D2915F31",
       "upgradeableComponents": []
+    },
+    "0xDAff80737b23A6E40F77Aa28957a10c9Af5dff45": {
+      "asset": "0x7F6501d3B98eE91f9b9535E4b0ac710Fb0f9e0bc",
+      "name": "USDCn",
+      "summary": "safe",
+      "review": "./statATokenv2RateProvider.md",
+      "warnings": [""],
+      "factory": "0xe548a29631f9E49830bE8edc22d407b2D2915F31",
+      "upgradeableComponents": []
     }
   },
   "avalanche": {
