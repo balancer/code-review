@@ -41,6 +41,13 @@
       "summary": "safe",
       "review": "./StatATokenV2Review.md",
       "warnings": []
+    },
+    "0x74D4D1D440c9679b1013999Bd91507eAa2fff651": {
+      "asset": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+      "name": "Wrapped Aave Base USDbC",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": []
     }
   },
   "ethereum": {

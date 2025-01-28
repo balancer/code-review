@@ -743,6 +743,13 @@
       "summary": "safe",
       "review": "./MarketRateTransformerRateProviders.md",
       "warnings": []
+    },
+    "0xBa0Fd0f3B019e8aBA61FEA2ac4Eb56b29F6808c0": {
+      "asset": "0x74D4D1D440c9679b1013999Bd91507eAa2fff651",
+      "name": "ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./statATokenLMRateProvider.md",
+      "warnings": []
     }
   },
   "ethereum": {
