@@ -130,6 +130,17 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
         - admin type: Aave governance system.
             - multisig timelock? YES: 24 hours.
 
+    #### Wrapped Aave Base cbETH
+    - [base:0x940748d30315276362f594ECcCb648A4f9aB7629](https://basescan.org/address/0x940748d30315276362f594ECcCb648A4f9aB7629#readContract)
+        - upgradeable component: `StataTokenV2` ([base:0x5e8B674127B321DC344c078e58BBACc3f3008962](https://basescan.org/address/0x5e8B674127B321DC344c078e58BBACc3f3008962#readProxyContract))
+        - admin address: [base:0x9390B1735def18560c509E2d0bc090E9d6BA257a](https://basescan.org/address/0x9390B1735def18560c509E2d0bc090E9d6BA257a)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours.
+        - upgradeable component: `L2PoolInstance` ([base:0xA238Dd80C259a72e81d7e4664a9801593F98d1c5](https://basescan.org/address/0xA238Dd80C259a72e81d7e4664a9801593F98d1c5))
+        - admin address: [base:0x9390B1735def18560c509E2d0bc090E9d6BA257a](https://basescan.org/address/0x9390B1735def18560c509E2d0bc090E9d6BA257a)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours.
+
 
 ### Oracles
 - [x] Price data is provided by an off-chain source (e.g., a Chainlink oracle, a multisig, or a network of nodes).
@@ -138,6 +149,8 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
     - The ERC4626 Vault utilises a Chainlink Rate Provider at [base:0x5a7A419C59eAAdec8Dc00bc93ac95612e6e154Cf](https://basescan.org/address/0x5a7A419C59eAAdec8Dc00bc93ac95612e6e154Cf#code)
     #### Wrapped Aave Base wstETH
     - The ERC4626 Vault utilises a Chainlink Rate Provider at [base:0x3b3dd5f913443bb5E70389F29c83F7DCA460CAe1](https://basescan.org/address/0x3b3dd5f913443bb5E70389F29c83F7DCA460CAe1)
+    #### Wrapped Aave Base cbETH
+    - The ERC4626 Vault utilises a Chainlink Rate Provider at [base:0x3786a6CAAB433f5dfE56503207DF31DF87C5b5C1](https://basescan.org/address/0x3786a6CAAB433f5dfE56503207DF31DF87C5b5C1)
 
 - [ ] Price data is expected to be volatile (e.g., because it represents an open market price instead of a (mostly) monotonically increasing price).
 

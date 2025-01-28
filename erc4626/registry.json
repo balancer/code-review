@@ -34,6 +34,13 @@
       "summary": "safe",
       "review": "./StatATokenV2Review.md",
       "warnings": []
+    },
+    "0x5e8B674127B321DC344c078e58BBACc3f3008962": {
+      "asset": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+      "name": "Wrapped Aave Base cbETH",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": []
     }
   },
   "ethereum": {
