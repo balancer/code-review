@@ -31,7 +31,8 @@
     - [arbitrum:0xf09EDbF2655B2A56753bD60D22CeAB2AC5D04188](https://arbiscan.io/address/0xf09EDbF2655B2A56753bD60D22CeAB2AC5D04188#readProxyContract)
     - [arbitrum:0xbB8A61425DFE172AA3a6f882aAFaBA00B32b7d59](https://arbiscan.io/address/0xbB8A61425DFE172AA3a6f882aAFaBA00B32b7d59)
     - [arbitrum:0xf253BD61aEd0E9D62523eA76CD6F38B4a51dA145](https://arbiscan.io/address/0xf253BD61aEd0E9D62523eA76CD6F38B4a51dA145)
-    - [arbitrum:](https://arbiscan.io/address/0xE6D5923281c89DC989D00817387292387552d5C1#readProxyContract)
+    - [arbitrum:0xE6D5923281c89DC989D00817387292387552d5C1](https://arbiscan.io/address/0xE6D5923281c89DC989D00817387292387552d5C1#readProxyContract)
+    - [arbitrum:0xD089B4cb88Dacf4e27be869A00e9f7e2E3C18193](https://arbiscan.io/address/0xD089B4cb88Dacf4e27be869A00e9f7e2E3C18193#readProxyContract)
 
 
 - Audit report(s):
@@ -230,6 +231,12 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 
     #### Wrapped Aave Arbitrum USDC - 0xE6D5923281c89DC989D00817387292387552d5C1
     - upgradeable component: `StataTokenV2` ([arbitrum:0xE6D5923281c89DC989D00817387292387552d5C1](https://arbiscan.io/address/0xE6D5923281c89DC989D00817387292387552d5C1#readProxyContract))
+        - admin address: [arbitrum:0xFF1137243698CaA18EE364Cc966CF0e02A4e6327](https://arbiscan.io/address/0xFF1137243698CaA18EE364Cc966CF0e02A4e6327)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours.
+
+    #### Wrapped Aave Arbitrum GHO - 0xD089B4cb88Dacf4e27be869A00e9f7e2E3C18193
+    - upgradeable component: `StataTokenV2` ([arbitrum:0xD089B4cb88Dacf4e27be869A00e9f7e2E3C18193](https://arbiscan.io/address/0xD089B4cb88Dacf4e27be869A00e9f7e2E3C18193#readProxyContract))
         - admin address: [arbitrum:0xFF1137243698CaA18EE364Cc966CF0e02A4e6327](https://arbiscan.io/address/0xFF1137243698CaA18EE364Cc966CF0e02A4e6327)
         - admin type: Aave governance system.
             - multisig timelock? YES: 24 hours.

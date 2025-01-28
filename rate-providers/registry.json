@@ -569,6 +569,15 @@
       "warnings": [""],
       "factory": "0xe548a29631f9E49830bE8edc22d407b2D2915F31",
       "upgradeableComponents": []
+    },
+    "0xb866b055D0F970FD48DEA5dB28FdEa5BcAE3EA67": {
+      "asset": "0xD089B4cb88Dacf4e27be869A00e9f7e2E3C18193",
+      "name": "Wrapped Aave Arbitrum GHO",
+      "summary": "safe",
+      "review": "./statATokenv2RateProvider.md",
+      "warnings": [""],
+      "factory": "0xe548a29631f9E49830bE8edc22d407b2D2915F31",
+      "upgradeableComponents": []
     }
   },
   "avalanche": {

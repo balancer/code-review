@@ -76,6 +76,13 @@
       "summary": "safe",
       "review": "./StatATokenV2Review.md",
       "warnings": []
+    },
+    "0xD089B4cb88Dacf4e27be869A00e9f7e2E3C18193": {
+      "asset": "0x7dfF72693f6A4149b17e7C6314655f6A9F7c8B33",
+      "name": "Wrapped Aave Arbitrum GHO",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": []
     }
   },
   "base": {
