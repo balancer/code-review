@@ -5,7 +5,7 @@
 - Checked by: @\<GitHub handle of secondary reviewer\>
 - Deployed at:
     - [ethereum:0x1f037c849CF2448d67A120543EA4ec3CE5A95FcA](https://etherscan.io/address/0x1f037c849CF2448d67A120543EA4ec3CE5A95FcA)
-    - [\<audit title\>](\<link to audit\>)
+    - [Protocol Audits](https://docs.loopfi.xyz/extras/security)
 
 ## Context
 \<Write a brief description of the intended functionality here.\>
