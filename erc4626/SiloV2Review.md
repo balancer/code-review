@@ -31,7 +31,6 @@ If none of these is checked, then this might be a pretty great ERC4626! If any o
 - [ ] The ERC4626 Vault is susceptible to donation attacks.
 
 ## Additional Findings
-To save time, we do not bother pointing out low-severity/informational issues or gas optimizations (unless the gas usage is particularly egregious). Instead, we focus only on high- and medium-severity findings which materially impact the contract's functionality and could harm users.
 
 ## Conclusion
 **Summary judgment: USABLE**
