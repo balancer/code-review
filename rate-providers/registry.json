@@ -722,6 +722,13 @@
       "warnings": [""],
       "factory": "0xEfD3aF73d3359014f3B864d37AC672A6d3D7ff1A",
       "upgradeableComponents": []
+    },
+    "0xbF21251c74208771e25De5C08971cE586236EE89": {
+      "asset": "0xFA2A03b6f4A65fB1Af64f7d935fDBf78693df9aF",
+      "name": "ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./statATokenLMRateProvider.md",
+      "warnings": []
     }
   },
   "ethereum": {

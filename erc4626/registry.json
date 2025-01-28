@@ -20,6 +20,13 @@
       "summary": "safe",
       "review": "./StatATokenV2Review.md",
       "warnings": []
+    },
+    "0xFA2A03b6f4A65fB1Af64f7d935fDBf78693df9aF": {
+      "asset": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "name": "Wrapped Aave Base cbBTC",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": []
     }
   },
   "ethereum": {
