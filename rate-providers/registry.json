@@ -728,35 +728,45 @@
       "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./statATokenLMRateProvider.md",
-      "warnings": []
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     },
     "0xcb1f29103F710A0A562de7f0e9DDE223D0860674": {
       "asset": "0x0830820D1A9aa1554364752d6D8F55C836871B74",
       "name": "AaveMarketRateTransformer",
       "summary": "safe",
       "review": "./MarketRateTransformerRateProviders.md",
-      "warnings": []
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     },
     "0x940748d30315276362f594ECcCb648A4f9aB7629": {
       "asset": "0x5e8B674127B321DC344c078e58BBACc3f3008962",
       "name": "AaveMarketRateTransformer",
       "summary": "safe",
       "review": "./MarketRateTransformerRateProviders.md",
-      "warnings": []
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     },
     "0xBa0Fd0f3B019e8aBA61FEA2ac4Eb56b29F6808c0": {
       "asset": "0x74D4D1D440c9679b1013999Bd91507eAa2fff651",
       "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./statATokenLMRateProvider.md",
-      "warnings": []
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     },
     "0xFF4B2CE4131E0Fb6b8A40447B4dF96Bdc83f759a": {
       "asset": "0xF8F10f39116716e89498c1c5E94137ADa11b2BC7",
       "name": "AaveMarketRateTransformer",
       "summary": "safe",
       "review": "./MarketRateTransformerRateProviders.md",
-      "warnings": []
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   },
   "ethereum": {
