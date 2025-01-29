@@ -813,6 +813,42 @@
       "factory": "0x0A973B6DB16C2ded41dC91691Cc347BEb0e2442B",
       "upgradeableComponents": []
     },
+    "0xc11082BbDBB8AaB12d0947EEAD2c8bc28E1b3B34": {
+      "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "name": "ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./MorphoERC4626RateProviders.md",
+      "warnings": [],
+      "factory": "0xEfD3aF73d3359014f3B864d37AC672A6d3D7ff1A",
+      "upgradeableComponents": []
+    },
+    "0x9e0926C3c5D2F42845Bf4F980F926b60323872d7": {
+      "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "name": "ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./MorphoERC4626RateProviders.md",
+      "warnings": [],
+      "factory": "0xEfD3aF73d3359014f3B864d37AC672A6d3D7ff1A",
+      "upgradeableComponents": []
+    },
+    "0xdCb03A77bB54E0a05D591e543FA39E9c46E8Febb": {
+      "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "name": "ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./MorphoERC4626RateProviders.md",
+      "warnings": [],
+      "factory": "0xEfD3aF73d3359014f3B864d37AC672A6d3D7ff1A",
+      "upgradeableComponents": []
+    },
+    "0xcc028cF7F8fA7986001fa7063A2E26b3094b42fd": {
+      "asset": "0x4200000000000000000000000000000000000006",
+      "name": "ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./MorphoERC4626RateProviders.md",
+      "warnings": [],
+      "factory": "0xEfD3aF73d3359014f3B864d37AC672A6d3D7ff1A",
+      "upgradeableComponents": []
+    },
     "0x14BD1e9b30007510c2aFE3a7a8053A6DE5605d35": {
       "asset": "0xe298b938631f750DD409fB18227C4a23dCdaab9b",
       "name": "ERC4626RateProvider",
