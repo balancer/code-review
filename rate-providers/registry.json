@@ -2292,6 +2292,15 @@
           "implementationReviewed": "0xeF434E4573b90b6ECd4a00f4888381e4D0CC5Ccd"
         }
       ]
+    },
+    "0x1f037c849CF2448d67A120543EA4ec3CE5A95FcA": {
+      "asset": "0x3976d71e7DdFBaB9bD120Ec281B7d35fa0F28528",
+      "name": "ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./LoopRateProvider.md",
+      "warnings": ["donation"],
+      "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
+      "upgradeableComponents": []
     }
   },
   "fantom": {
