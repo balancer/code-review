@@ -23,7 +23,7 @@
     - Wrapped Aave Arbitrum DAI [arbitrum:0x788dab521C4607C99F879f327894cC6fAcd217E3](https://arbiscan.io/address/0x788dab521C4607C99F879f327894cC6fAcd217E3#readContract)
     - Wrapped Aave Arbitrum USDC [arbitrum:0x30A225b9e9989bEd9C3e473686a29C9106E4393e](https://arbiscan.io/address/0x30A225b9e9989bEd9C3e473686a29C9106E4393e)
     - Wrapped Aave Arbitrum GHO [arbitrum:0xb866b055D0F970FD48DEA5dB28FdEa5BcAE3EA67](https://arbiscan.io/address/0xb866b055D0F970FD48DEA5dB28FdEa5BcAE3EA67#code)
-    - Wrapped Aave Ethereum PYUSD [ethereum:0xb51EDdDD8c47856D81C8681EA71404Cec93E92c6](https://etherscan.io/address/0xb51EDdDD8c47856D81C8681EA71404Cec93E92c6#readProxyContract)
+    - Wrapped Aave Ethereum PYUSD [ethereum:0xdd8AEBC13B3DFaF85e3B512d26681987aD2c43b2](https://etherscan.io/address/0xdd8AEBC13B3DFaF85e3B512d26681987aD2c43b2#readContract)
 
 - Audit report(s):
     - [Formal Verification Report For StaticAToken](https://github.com/aave-dao/aave-v3-origin/blob/067d29eb75115179501edc4316d125d9773f7928/audits/11-09-2024_Certora_StataTokenV2.pdf)
