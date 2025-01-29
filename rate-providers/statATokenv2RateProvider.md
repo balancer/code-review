@@ -23,6 +23,7 @@
     - Wrapped Aave Arbitrum DAI [arbitrum:0x788dab521C4607C99F879f327894cC6fAcd217E3](https://arbiscan.io/address/0x788dab521C4607C99F879f327894cC6fAcd217E3#readContract)
     - Wrapped Aave Arbitrum USDC [arbitrum:0x30A225b9e9989bEd9C3e473686a29C9106E4393e](https://arbiscan.io/address/0x30A225b9e9989bEd9C3e473686a29C9106E4393e)
     - Wrapped Aave Arbitrum GHO [arbitrum:0xb866b055D0F970FD48DEA5dB28FdEa5BcAE3EA67](https://arbiscan.io/address/0xb866b055D0F970FD48DEA5dB28FdEa5BcAE3EA67#code)
+    - Wrapped Aave Ethereum PYUSD [ethereum:0xb51EDdDD8c47856D81C8681EA71404Cec93E92c6](https://etherscan.io/address/0xb51EDdDD8c47856D81C8681EA71404Cec93E92c6#readProxyContract)
 
 - Audit report(s):
     - [Formal Verification Report For StaticAToken](https://github.com/aave-dao/aave-v3-origin/blob/067d29eb75115179501edc4316d125d9773f7928/audits/11-09-2024_Certora_StataTokenV2.pdf)
@@ -222,6 +223,16 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
             - multisig timelock? YES: 24 hours.
         - upgradeable component: `L2PoolInstance` ([arbitrum:0x794a61358D6845594F94dc1DB02A252b5b4814aD](https://arbiscan.io/address/0x794a61358D6845594F94dc1DB02A252b5b4814aD))
         - admin address: [arbitrum:0xFF1137243698CaA18EE364Cc966CF0e02A4e6327](https://arbiscan.io/address/0xFF1137243698CaA18EE364Cc966CF0e02A4e6327#code)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours.
+
+    - [ethereum:0xdd8AEBC13B3DFaF85e3B512d26681987aD2c43b2](https://etherscan.io/address/0xdd8AEBC13B3DFaF85e3B512d26681987aD2c43b2#readContract)
+        - upgradeable component: `StataTokenV2` ([arbitrum:0xb51EDdDD8c47856D81C8681EA71404Cec93E92c6](https://etherscan.io/address/0xb51EDdDD8c47856D81C8681EA71404Cec93E92c6#readProxyContract))
+        - admin address: [ethereum:0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A](https://etherscan.io/address/0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours.
+        - upgradeable component: `PoolInstance` ([ethereum:0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2](https://etherscan.io/address/0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2))
+        - admin address: [ethereum:0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A](https://etherscan.io/address/0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A)
         - admin type: Aave governance system.
             - multisig timelock? YES: 24 hours.
     
