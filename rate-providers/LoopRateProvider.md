@@ -8,7 +8,7 @@
     - [Protocol Audits](https://docs.loopfi.xyz/extras/security)
 
 ## Context
-\<Write a brief description of the intended functionality here.\>
+This rate provider works with a standard approach of `totalAssets/totalSupply`.
 
 ## Review Checklist: Bare Minimum Compatibility
 Each of the items below represents an absolute requirement for the Rate Provider. If any of these is unchecked, the Rate Provider is unfit to use.
@@ -24,10 +24,7 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 ### Administrative Privileges
 - [ ] The Rate Provider is upgradeable (e.g., via a proxy architecture or an `onlyOwner` function that updates the price source address).
 
-- [x] Some other portion of the price pipeline is upgradeable (e.g., the token itself, an oracle, or some piece of a larger system that tracks the price).
-    - upgradeable component: `PoolV3` ([ethereum:0xa684EAf215ad323452e2B2bF6F817d4aa5C116ab](https://etherscan.io/address/0xa684EAf215ad323452e2B2bF6F817d4aa5C116ab))
-    - admin address: [ethereum:0x9613E12A424B4CbaCF561F0ec54b418c76d6B26D](https://etherscan.io/address/0x9613E12A424B4CbaCF561F0ec54b418c76d6B26D)
-    - admin type: EOA
+- [ ] Some other portion of the price pipeline is upgradeable (e.g., the token itself, an oracle, or some piece of a larger system that tracks the price).
 
 ### Oracles
 - [ ] Price data is provided by an off-chain source (e.g., a Chainlink oracle, a multisig, or a network of nodes).
@@ -35,19 +32,22 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 - [ ] Price data is expected to be volatile (e.g., because it represents an open market price instead of a (mostly) monotonically increasing price).
 
 ### Common Manipulation Vectors
-- [ ] The Rate Provider is susceptible to donation attacks.
+- [x] The Rate Provider is susceptible to donation attacks.
 
-\<Delete this hint: If checked, elaborate here: is the donation public and atomic, or is it protected at all (privileged, bounded, distributed over time, etc.)?\>
+Rate is calculated as `totalAssets/totalSupply`. If a user donates a large amount of `PoolV3` tokens to `StakingLPEth` contract, the rate will increase. This could be used to manipulate the rate in a way that benefits the attacker.
+```
+    /** @dev See {IERC4626-totalAssets}. */
+    function totalAssets() public view virtual override returns (uint256) {
+        return _asset.balanceOf(address(this));
+    }
+```
 
 ## Additional Findings
 To save time, we do not bother pointing out low-severity/informational issues or gas optimizations (unless the gas usage is particularly egregious). Instead, we focus only on high- and medium-severity findings which materially impact the contract's functionality and could harm users.
 
-### \<H-01: Example High-severity Finding\>
-### \<H-02: Example High-severity Finding\>
-### \<M-01: Example Medium-severity Finding\>
-### \<M-02: Example Medium-severity Finding\>
+No additional findings.
 
 ## Conclusion
-**Summary judgment: \<SAFE/UNSAFE\>**
+**Summary judgment: SAFE**
 
 
