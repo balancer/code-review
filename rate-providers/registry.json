@@ -2058,6 +2058,15 @@
           "implementationReviewed": "0xaf108ae0AD8700ac41346aCb620e828c03BB8848"
         }
       ]
+    },
+    "0x1f037c849CF2448d67A120543EA4ec3CE5A95FcA": {
+      "asset": "0x3976d71e7DdFBaB9bD120Ec281B7d35fa0F28528",
+      "name": "ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./LoopRateProvider.md",
+      "warnings": ["donation"],
+      "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
+      "upgradeableComponents": []
     }
   },
   "fantom": {
@@ -2857,7 +2866,8 @@
         {
           "entrypoint": "0xA28d4dbcC90C849e3249D642f356D85296a12954",
           "implementationReviewed": "0x29c26d85ba819659d084a592b97607a5337de030"
-        }]
+        }
+      ]
     },
     "0xa6c292d06251da638be3b58f1473e03d99c26ff0": {
       "asset": "0xd31e89ffb929b38ba60d1c7dbeb68c7712eaab0a",
@@ -2870,7 +2880,8 @@
         {
           "entrypoint": "0xD31E89Ffb929b38bA60D1c7dBeB68c7712EAAb0a",
           "implementationReviewed": "0xb9fa01cbd690dfd5be3d8d667c54bbdd9e41e57d"
-        }]
+        }
+      ]
     },
     "0x5fded3206608d3f33175a8865576431906cdb43b": {
       "asset": "0x7870ddFd5ACA4E977B2287e9A212bcbe8FC4135a",
