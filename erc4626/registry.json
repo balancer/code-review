@@ -1,4 +1,90 @@
 {
+  "arbitrum": {
+    "0x4cE13a79f45C1Be00BdABD38B764aC28C082704E": {
+      "asset": "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
+      "name": "Wrapped Aave Arbitrum WETH",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": []
+    },
+    "0xcdAa68ce322728FE4185a60f103C194F1E2c47BC": {
+      "asset": "0x35751007a407ca6FEFfE80b3cB397736D2cf4dbe",
+      "name": "Wrapped Aave Arbitrum weETH",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": []
+    },
+    "0x52Dc1FEeFA4f9a99221F93D79da46Ae89b8c0967": {
+      "asset": "0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f",
+      "name": "Wrapped Aave Arbitrum WBTC",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": []
+    },
+    "0x7F6501d3B98eE91f9b9535E4b0ac710Fb0f9e0bc": {
+      "asset": "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
+      "name": "Wrapped Aave Arbitrum USDCn",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": []
+    },
+    "0xe98fc055c99DECD8Da0c111B090885d5d15C774E": {
+      "asset": "0x5979D7b546E38E414F7E9822514be443A4800529",
+      "name": "Wrapped Aave Arbitrum wstETH",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": []
+    },
+    "0xa6D12574eFB239FC1D2099732bd8b5dC6306897F": {
+      "asset": "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9",
+      "name": "Wrapped Aave Arbitrum USDT",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": []
+    },
+    "0xEAB84053B99f2ec4433F5121A1CB1524c8c998F8": {
+      "asset": "0xf97f4df75117a78c1A5a0DBb814Af92458539FB4",
+      "name": "Wrapped Aave Arbitrum LINK",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": []
+    },
+    "0xf09EDbF2655B2A56753bD60D22CeAB2AC5D04188": {
+      "asset": "0x912CE59144191C1204E64559FE8253a0e49E6548",
+      "name": "WWrapped Aave Arbitrum ARB",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": []
+    },
+    "0xbB8A61425DFE172AA3a6f882aAFaBA00B32b7d59": {
+      "asset": "0xEC70Dcb4A1EFa46b8F2D97C310C9c4790ba5ffA8",
+      "name": "Wrapped Aave Arbitrum rETH",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": []
+    },
+    "0xf253BD61aEd0E9D62523eA76CD6F38B4a51dA145": {
+      "asset": "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
+      "name": "Wrapped Aave Arbitrum DAI",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": []
+    },
+    "0xE6D5923281c89DC989D00817387292387552d5C1": {
+      "asset": "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8",
+      "name": "Wrapped Aave Arbitrum USDC",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": []
+    },
+    "0xD089B4cb88Dacf4e27be869A00e9f7e2E3C18193": {
+      "asset": "0x7dfF72693f6A4149b17e7C6314655f6A9F7c8B33",
+      "name": "Wrapped Aave Arbitrum GHO",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": []
+    }
+  },
   "base": {
     "0xe298b938631f750DD409fB18227C4a23dCdaab9b": {
       "asset": "0x4200000000000000000000000000000000000006",
