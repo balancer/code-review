@@ -2274,6 +2274,24 @@
       "warnings": [""],
       "factory": "0x4E185b1502Fea7a06B63fDdA6de38F92C9528566",
       "upgradeableComponents": []
+    },
+    "0xdd8AEBC13B3DFaF85e3B512d26681987aD2c43b2": {
+      "asset": "0xb51EDdDD8c47856D81C8681EA71404Cec93E92c6",
+      "name": "ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./statATokenv2RateProvider.md",
+      "warnings": [""],
+      "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xb51EDdDD8c47856D81C8681EA71404Cec93E92c6",
+          "implementationReviewed": "0x487c2C53c0866F0A73ae317bD1A28F63ADcD9aD1"
+        },
+        {
+          "entrypoint": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+          "implementationReviewed": "0xeF434E4573b90b6ECd4a00f4888381e4D0CC5Ccd"
+        }
+      ]
     }
   },
   "fantom": {
@@ -3107,7 +3125,7 @@
       "warnings": [""],
       "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
       "upgradeableComponents": []
-    },    
+    },
     "0x9d2d4351c1b3718d7a65ef21f54c86c665964670": {
       "asset": "0x87178fe8698C7eDa8aA207083C3d66aEa569aB98",
       "name": "Silo bSolvBTC Rateprovider",
