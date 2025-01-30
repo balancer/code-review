@@ -3144,6 +3144,20 @@
       "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
       "upgradeableComponents": []
     },
+    "0xfbcee1fcaa2db776b4b575a8da3e8c93ea5eef53": {
+      "asset": "0x9F0dF7799f6FDAd409300080cfF680f5A23df4b1",
+      "name": "Wrapped Origin Sonic Rateprovider",
+      "summary": "safe",
+      "review": "./woSonicRateprovider.md",
+      "warnings": [""],
+      "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x9F0dF7799f6FDAd409300080cfF680f5A23df4b1",
+          "implementationReviewed": "0xb9fa01cbd690dfd5be3d8d667c54bbdd9e41e57d"
+        }
+      ]
+    },
     "0x9CB622FC4757386dc8e79d1cC66FC912dD4bBf57": {
       "asset": "0x5E362eb2c0706Bd1d134689eC75176018385430B",
       "name": "VaultRateOracle",
