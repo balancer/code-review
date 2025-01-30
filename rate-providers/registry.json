@@ -2301,6 +2301,20 @@
       "warnings": ["donation"],
       "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
       "upgradeableComponents": []
+    },
+    "0x9CB622FC4757386dc8e79d1cC66FC912dD4bBf57": {
+      "asset": "0x5E362eb2c0706Bd1d134689eC75176018385430B",
+      "name": "VaultRateOracle",
+      "summary": "safe",
+      "review": "./MellowRateProviders.md",
+      "warnings": ["donation"],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x5E362eb2c0706Bd1d134689eC75176018385430B",
+          "implementationReviewed": "0xe2D2E90122cb203CF1565a37ef90a256843A825A"
+        }
+      ]
     }
   },
   "fantom": {
@@ -3143,20 +3157,6 @@
       "warnings": [""],
       "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
       "upgradeableComponents": []
-    },
-    "0x9CB622FC4757386dc8e79d1cC66FC912dD4bBf57": {
-      "asset": "0x5E362eb2c0706Bd1d134689eC75176018385430B",
-      "name": "VaultRateOracle",
-      "summary": "safe",
-      "review": "./MellowRateProviders.md",
-      "warnings": ["donation"],
-      "factory": "",
-      "upgradeableComponents": [
-        {
-          "entrypoint": "0x5E362eb2c0706Bd1d134689eC75176018385430B",
-          "implementationReviewed": "0xe2D2E90122cb203CF1565a37ef90a256843A825A"
-        }
-      ]
     }
   }
 }
