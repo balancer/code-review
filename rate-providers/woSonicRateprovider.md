@@ -6,7 +6,7 @@
 - Deployed at:
     - [sonic:0xfbcee1fcaa2db776b4b575a8da3e8c93ea5eef53](https://sonicscan.org/address/0xfbcee1fcaa2db776b4b575a8da3e8c93ea5eef53#code)
 - Audits:
-    - [Origin Eth](https://github.com/beefyfinance/beefy-audits/blob/master/2023-08-03-Beefy-Zellic-4626-Wrapper-Audit.pdf)
+    - [Origin Eth](https://docs.originprotocol.com/security-and-risk/audits) (same code as Origin S)
 
 
 ## Context
