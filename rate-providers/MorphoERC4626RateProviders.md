@@ -87,8 +87,12 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
     #### Ionic WETH v1.1
     For [Ionic WETH](https://basescan.org/address/0x5A32099837D89E3a794a44fb131CBbAD41f87a8C) some allocators are eoas.
     - 0x5f0761eed6Cd7F0Bd91d847E955cD78Bb50B0647
-
-
+    #### [Steakhouse USDQ](https://etherscan.io/address/0xA1b60d96e5C50dA627095B9381dc5a46AF1a9a42)
+    - upgradeable component: [Quantoz USDQ](https://etherscan.io/address/0xc83e27f270cce0A3A3A29521173a83F402c1768b#code) ( the asset of the vault )
+    - admin: [MultiSigWallet Contract](https://etherscan.io/address/0xa6724f792002d5677a7bc370986e1b580b8773e7#code) ( with 5 owners )
+    #### [Steakhouse USDR](https://etherscan.io/address/0x30881baa943777f92dc934d53d3bfdf33382cab3)
+    - upgradeable component: [StablR USD](https://etherscan.io/address/0x7B43E3875440B44613DC3bC08E7763e6Da63C8f8#code) ( the asset of the vault )
+    - admin: [MultiSigWallet Contract](https://etherscan.io/address/0xbfff92d76b74cf8f0a56adde7c89aa671a22953c#code) ( with 5 owners )
 
 ### Oracles
 - [ ] Price data is provided by an off-chain source (e.g., a Chainlink oracle, a multisig, or a network of nodes).
