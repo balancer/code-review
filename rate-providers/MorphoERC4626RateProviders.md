@@ -15,6 +15,9 @@
     - Spark USDC v1.1[base:0x9e0926C3c5D2F42845Bf4F980F926b60323872d7](https://basescan.org/address/0x9e0926C3c5D2F42845Bf4F980F926b60323872d7#code)
     - Ionic USDC v1.1[base:0xdCb03A77bB54E0a05D591e543FA39E9c46E8Febb](https://basescan.org/address/0xdCb03A77bB54E0a05D591e543FA39E9c46E8Febb#code)
     - Ionic Ecosystem WETH v1.1[base:0xcc028cF7F8fA7986001fa7063A2E26b3094b42fd](https://basescan.org/address/0xcc028cF7F8fA7986001fa7063A2E26b3094b42fd#code)
+    - Steakhouse USDQ [ethereum:0xb42Ecf39FC9251f2B2F094e02e6cE4557f364436](https://etherscan.io/address/0xb42Ecf39FC9251f2B2F094e02e6cE4557f364436#code)
+    - Steakhouse USDR [ethereum:0xc6465F11D8Db8DAcB5c94729c4F2b3Bd725a2392](https://etherscan.io/address/0xc6465F11D8Db8DAcB5c94729c4F2b3Bd725a2392#code)
+    - Steakhouse USDT Lite [ethereum:0x23B315083e80804A696b26093974c61eBC78CC9a](https://etherscan.io/address/0x23B315083e80804A696b26093974c61eBC78CC9a#code)
 
 
 
