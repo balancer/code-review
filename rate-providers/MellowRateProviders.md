@@ -12,6 +12,7 @@
     - [ethereum:0x2A2f1b8c02Dafc5359B8E0e8BFc138400CB6d3a1](https://etherscan.io/address/0x2A2f1b8c02Dafc5359B8E0e8BFc138400CB6d3a1#readContract)
     - [ethereum:0x1a9DBa2dC3E82F53d040701F97DC0438d26A4320](https://etherscan.io/address/0x1a9DBa2dC3E82F53d040701F97DC0438d26A4320#readContract)
     - [ethereum:0x09000d689fB2b210C65D9F8adc620F6f2D7D6836](https://etherscan.io/address/0x09000d689fb2b210c65d9f8adc620f6f2d7d6836)
+    - [ethereum:0x9CB622FC4757386dc8e79d1cC66FC912dD4bBf57](https://etherscan.io/address/0x9CB622FC4757386dc8e79d1cC66FC912dD4bBf57)
 - Audit report(s):
     - [Mellow LRT audits](https://docs.mellow.finance/mellow-lrt-primitive/audits)
 
@@ -75,6 +76,9 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
     - admin type: multisig
         - multisig threshold/signers: 5/8
     - comment: The `ADMIN_ROLE`has the capability to add new Tvl modules, which are target of an external call. An rogue `ADMIN_ROLE`could add malicious modules potentially inflating the the price. This functionality currently resides within: [ethereum:0x9437B2a8cF3b69D782a61f9814baAbc172f72003](https://etherscan.io/address/0x9437B2a8cF3b69D782a61f9814baAbc172f72003)
+    - comment: This vault is used by two different rate providers:
+        - [ethereum:0x1a9DBa2dC3E82F53d040701F97DC0438d26A4320](https://etherscan.io/address/0x1a9DBa2dC3E82F53d040701F97DC0438d26A4320#readContract)
+        - [ethereum:0x9CB622FC4757386dc8e79d1cC66FC912dD4bBf57](https://etherscan.io/address/0x9CB622FC4757386dc8e79d1cC66FC912dD4bBf57)
     #### Restaking Vault ETH (rstETH)
     - upgradeable component: `Vault`([ethereum:0x7a4EffD87C2f3C55CA251080b1343b605f327E3a](https://eth.blockscout.com/address/0x7a4EffD87C2f3C55CA251080b1343b605f327E3a))
     - admin address: [ethereum:0x81698f87C6482bF1ce9bFcfC0F103C4A0Adf0Af0](https://eth.blockscout.com/address/0x81698f87C6482bF1ce9bFcfC0F103C4A0Adf0Af0)
