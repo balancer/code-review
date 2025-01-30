@@ -2308,8 +2308,13 @@
       "summary": "safe",
       "review": "./MorphoERC4626RateProviders.md",
       "warnings": [],
-      "factory": "",
-      "upgradeableComponents": []
+      "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xc83e27f270cce0A3A3A29521173a83F402c1768b",
+          "implementationReviewed": "0xbae166f5e8b4b6735341446b1405fa779a92d7c7"
+        }
+      ]
     },
     "0xc6465F11D8Db8DAcB5c94729c4F2b3Bd725a2392": {
       "asset": "0x30881Baa943777f92DC934d53D3bFdF33382cab3",
@@ -2317,8 +2322,13 @@
       "summary": "safe",
       "review": "./MorphoERC4626RateProviders.md",
       "warnings": [],
-      "factory": "",
-      "upgradeableComponents": []
+      "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
+      "upgradeableComponents": [
+          {
+          "entrypoint": "0x7B43E3875440B44613DC3bC08E7763e6Da63C8f8",
+          "implementationReviewed": "0x8b98bcd9b1f8ae112fb2b58b45c3bc9a75cc4d0e"
+          }
+      ]
     },
     "0x23B315083e80804A696b26093974c61eBC78CC9a": {
       "asset": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
@@ -2326,7 +2336,7 @@
       "summary": "safe",
       "review": "./MorphoERC4626RateProviders.md",
       "warnings": [],
-      "factory": "",
+      "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
       "upgradeableComponents": []
     },
     "0x9CB622FC4757386dc8e79d1cC66FC912dD4bBf57": {
