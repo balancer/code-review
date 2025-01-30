@@ -10,7 +10,7 @@
 
 
 ## Context
-The ERC4626 Rate Provider fetches the rate of wrapped OS via the deposited into Silo v2. The rate provider was created using the ERC4626 Rateprovider factory which calls convertToAssets on the ERC4626 to expose the rate. The rate of the ERC4626 is calculated by `shares.mulDiv(totalAssets() + 1, totalSupply() + 10 ** _decimalsOffset(), rounding)`.
+ The rate provider was created using the ERC4626 Rateprovider factory which calls convertToAssets on the wOS ERC4626 contract to expose the rate. The rate of the ERC4626 is calculated by `(supply == 0) ? (shares * 10**_asset.decimals()) / 10**decimals() : (shares * totalAssets()) / supply`.
 
 ## Review Checklist: Bare Minimum Compatibility
 Each of the items below represents an absolute requirement for the Rate Provider. If any of these is unchecked, the Rate Provider is unfit to use.
@@ -26,9 +26,11 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 ### Administrative Privileges
 - [ ] The Rate Provider is upgradeable (e.g., via a proxy architecture or an `onlyOwner` function that updates the price source address).
 
-
-- [x] Some other portion of the price pipeline is upgradeable (e.g., the token itself, an oracle, or some piece of a larger system that tracks the price). 
-   
+- [x] Some other portion of the price pipeline is upgradeable (e.g., the token itself, an oracle, or some piece of a larger system that tracks the price).
+    - Both [woS](https://sonicscan.org/address/0x9F0dF7799f6FDAd409300080cfF680f5A23df4b1) and [oS](https://sonicscan.org/address/0xb1e25689D55734FD3ffFc939c4C3Eb52DFf8A794) are upgradable:
+        - admin address: [sonic:0x31a91336414d3B955E494E7d485a6B06b55FC8fB](https://sonicscan.org/address/0x31a91336414d3B955E494E7d485a6B06b55FC8fB)
+        - admin type: Timelock (24 hrs) / 0xaddea7933db7d83855786eb43a238111c69b00b6
+        - Timelock proposer/executor: 5/8 Multisig [sonic:0xaddea7933db7d83855786eb43a238111c69b00b6](https://sonicscan.org/address/0xaddea7933db7d83855786eb43a238111c69b00b6)
 
 
 ### Oracles
@@ -41,31 +43,15 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
     - comment: The ERC4626 wrapper calls the vaults balance for totalAssets() which is part of the `totalAssets` used in the `converToAssets` call and therefore in the `getRate` calculation.
 
     ```solidity
-    /**
-     * @notice Fetches the total assets held by the vault
-     * @dev Returns the total assets held by the vault, not only the wrapper
-     * @return totalAssets the total balance of assets held by the vault
-     */
+    /** @dev See {IERC4262-totalAssets} */
     function totalAssets() public view virtual override returns (uint256) {
-        return IVault(vault).balance();
-    }
-    ```
-    The vault calculates it based on underlying balance inside the vault plus the balance inside the strategy.
-    ```solidity
-    /**
-     * @dev It calculates the total underlying value of {token} held by the system.
-     * It takes into account the vault contract balance, the strategy contract balance
-     *  and the balance deployed in other contracts as part of the strategy.
-     */
-    function balance() public view returns (uint) {
-        return want().balanceOf(address(this)) + IStrategyV7(strategy).balanceOf();
+        return _asset.balanceOf(address(this));
     }
     ```
 
     The underlying balance can be inflated by donating underlying assets to the vault.
 
-## Additional Findings
-To save time, we do not bother pointing out low-severity/informational issues or gas optimizations (unless the gas usage is particularly egregious). Instead, we focus only on high- and medium-severity findings which materially impact the contract's functionality and could harm users.
+## Additional Finding
 
 
 ## Conclusion
