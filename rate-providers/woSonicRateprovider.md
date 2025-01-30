@@ -40,16 +40,16 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 
 ### Common Manipulation Vectors
 - [x] The Rate Provider is susceptible to donation attacks.
-    - comment: The ERC4626 wrapper calls the vaults balance for totalAssets() which is part of the `totalAssets` used in the `converToAssets` call and therefore in the `getRate` calculation.
+    - comment: The ERC4626 uses `balancerOf(address(this))` to calculate `totalAssets()` which is used in the `converToAssets` call and therefore in the `getRate` calculation.
 
     ```solidity
-    /** @dev See {IERC4262-totalAssets} */
+    /** @dev See {IERC4626-totalAssets}. */
     function totalAssets() public view virtual override returns (uint256) {
         return _asset.balanceOf(address(this));
     }
     ```
 
-    The underlying balance can be inflated by donating underlying assets to the vault.
+    The underlying balance can be inflated by donating underlying assets to the wrapped asset.
 
 ## Additional Finding
 

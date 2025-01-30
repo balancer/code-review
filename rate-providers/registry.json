@@ -3071,7 +3071,7 @@
       "warnings": [""],
       "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
       "upgradeableComponents": []
-    },    
+    },
     "0x9d2d4351c1b3718d7a65ef21f54c86c665964670": {
       "asset": "0x87178fe8698C7eDa8aA207083C3d66aEa569aB98",
       "name": "Silo bSolvBTC Rateprovider",
@@ -3080,6 +3080,20 @@
       "warnings": [""],
       "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
       "upgradeableComponents": []
+    },
+    "0xfbcee1fcaa2db776b4b575a8da3e8c93ea5eef53": {
+      "asset": "0x9F0dF7799f6FDAd409300080cfF680f5A23df4b1",
+      "name": "Wrapped Origin Sonic Rateprovider",
+      "summary": "safe",
+      "review": "./woSonicRateprovider.md",
+      "warnings": [""],
+      "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x9F0dF7799f6FDAd409300080cfF680f5A23df4b1",
+          "implementationReviewed": "0xb9fa01cbd690dfd5be3d8d667c54bbdd9e41e57d"
+        }
+      ]
     },
     "0x9CB622FC4757386dc8e79d1cC66FC912dD4bBf57": {
       "asset": "0x5E362eb2c0706Bd1d134689eC75176018385430B",
