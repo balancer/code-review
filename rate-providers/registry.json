@@ -820,6 +820,7 @@
       "review": "./ChainLinkRateProvider.md",
       "warnings": ["chainlink"],
       "factory": "0x0A973B6DB16C2ded41dC91691Cc347BEb0e2442B",
+      "upgradeableComponents": []
     },
     "0xc11082BbDBB8AaB12d0947EEAD2c8bc28E1b3B34": {
       "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
