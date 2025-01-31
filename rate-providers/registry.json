@@ -2311,6 +2311,43 @@
       "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
       "upgradeableComponents": []
     },
+    "0xb42Ecf39FC9251f2B2F094e02e6cE4557f364436": {
+      "asset": "0xA1b60d96e5C50dA627095B9381dc5a46AF1a9a42",
+      "name": "Steakhouse USDQ Rate Provider",
+      "summary": "safe",
+      "review": "./MorphoERC4626RateProviders.md",
+      "warnings": [],
+      "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xc83e27f270cce0A3A3A29521173a83F402c1768b",
+          "implementationReviewed": "0xbae166f5e8b4b6735341446b1405fa779a92d7c7"
+        }
+      ]
+    },
+    "0xc6465F11D8Db8DAcB5c94729c4F2b3Bd725a2392": {
+      "asset": "0x30881Baa943777f92DC934d53D3bFdF33382cab3",
+      "name": "Steakhouse USDR Rate Provider",
+      "summary": "safe",
+      "review": "./MorphoERC4626RateProviders.md",
+      "warnings": [],
+      "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
+      "upgradeableComponents": [
+          {
+          "entrypoint": "0x7B43E3875440B44613DC3bC08E7763e6Da63C8f8",
+          "implementationReviewed": "0x8b98bcd9b1f8ae112fb2b58b45c3bc9a75cc4d0e"
+          }
+      ]
+    },
+    "0x23B315083e80804A696b26093974c61eBC78CC9a": {
+      "asset": "0x097FFEDb80d4b2Ca6105a07a4D90eB739C45A666",
+      "name": "Steakhouse USDT-Lite Rate Provider",
+      "summary": "safe",
+      "review": "./MorphoERC4626RateProviders.md",
+      "warnings": [],
+      "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
+      "upgradeableComponents": []
+    },
     "0x9CB622FC4757386dc8e79d1cC66FC912dD4bBf57": {
       "asset": "0x5E362eb2c0706Bd1d134689eC75176018385430B",
       "name": "VaultRateOracle",
