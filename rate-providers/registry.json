@@ -2303,8 +2303,8 @@
       "upgradeableComponents": []
     },
     "0xb42Ecf39FC9251f2B2F094e02e6cE4557f364436": {
-      "asset": "0xc83e27f270cce0A3A3A29521173a83F402c1768b",
-      "name": "ERC4626RateProvider",
+      "asset": "0xA1b60d96e5C50dA627095B9381dc5a46AF1a9a42",
+      "name": "Steakhouse USDQ Rate Provider",
       "summary": "safe",
       "review": "./MorphoERC4626RateProviders.md",
       "warnings": [],
@@ -2318,7 +2318,7 @@
     },
     "0xc6465F11D8Db8DAcB5c94729c4F2b3Bd725a2392": {
       "asset": "0x30881Baa943777f92DC934d53D3bFdF33382cab3",
-      "name": "ERC4626RateProvider",
+      "name": "Steakhouse USDR Rate Provider",
       "summary": "safe",
       "review": "./MorphoERC4626RateProviders.md",
       "warnings": [],
@@ -2331,8 +2331,8 @@
       ]
     },
     "0x23B315083e80804A696b26093974c61eBC78CC9a": {
-      "asset": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
-      "name": "ERC4626RateProvider",
+      "asset": "0x097FFEDb80d4b2Ca6105a07a4D90eB739C45A666",
+      "name": "Steakhouse USDT-Lite Rate Provider",
       "summary": "safe",
       "review": "./MorphoERC4626RateProviders.md",
       "warnings": [],
