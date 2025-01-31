@@ -2315,6 +2315,20 @@
           "implementationReviewed": "0xe2D2E90122cb203CF1565a37ef90a256843A825A"
         }
       ]
+    },
+    "0xae48b92cbc0882a7d70d878e42cc121a62ceb632": {
+      "asset": "0x8E0789d39db454DBE9f4a77aCEF6dc7c69f6D552",
+      "name": "InwstETHsRateProvider",
+      "summary": "",
+      "review": "./InceptionLRTRateProvider_2.md",
+      "warnings": [""],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xFd73Be536503B5Aa80Bf99D1Fd65b1306c69B191",
+          "implementationReviewed": "0x2356d46D89e056F222185ef101165e88073941Bd"
+        }
+      ]
     }
   },
   "fantom": {
