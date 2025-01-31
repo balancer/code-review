@@ -920,6 +920,20 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0x84394fa6a39bdff63b255622da362b113c690267": {
+      "asset": "0x5875eEE11Cf8398102FdAd704C9E96607675467a",
+      "name": "SavingsUSDSRateProvider",
+      "summary": "safe",
+      "review": "./sUSDSBaseRateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xa3931d71877C0E7a3148CB7Eb4463524FEc27fbD",
+          "implementationReviewed": "0x4e7991e5C547ce825BdEb665EE14a3274f9F61e0"
+        }
+      ]
     }
   },
   "ethereum": {
