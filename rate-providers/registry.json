@@ -581,7 +581,7 @@
     },
     "0xb1D5c23DbfCb36864f32bc704AE4205BB9720C33": {
       "asset": "0x895e15020C3f52ddD4D8e9514eB83C39F53B1579",
-      "name": "ChainlinkRateProvider",
+      "name": "YieldFi yUSD Rate Provider",
       "summary": "safe",
       "review": "./yUSDRateProviderArbitrum.md",
       "warnings": [""],
@@ -928,7 +928,7 @@
     },
     "0xb1D5c23DbfCb36864f32bc704AE4205BB9720C33": {
       "asset": "0x895e15020C3f52ddD4D8e9514eB83C39F53B1579",
-      "name": "ChainlinkRateProvider",
+      "name": "YieldFi yUSD Rate Provider",
       "summary": "safe",
       "review": "./yUSDRateProviderBase.md",
       "warnings": [""],
@@ -2346,7 +2346,7 @@
     },
     "0xa65ffBa1CD05414df3fD24Bf5dc319B47450Fbf4": {
       "asset": "0x1CE7D9942ff78c328A4181b9F3826fEE6D845A97",
-      "name": "ERC4626RateProvider",
+      "name": "YieldFi yUSD Rate Provider",
       "summary": "unsafe",
       "review": "./yUSDRateProvider.md",
       "warnings": [""],
