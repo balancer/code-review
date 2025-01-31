@@ -4,7 +4,7 @@
 - Reviewed by: @brunoguerios
 - Checked by: @\<GitHub handle of secondary reviewer\>
 - Deployed at:
-    - [\<ethereum:0xa65ffBa1CD05414df3fD24Bf5dc319B47450Fbf4\>](https://etherscan.io/address/0xa65ffBa1CD05414df3fD24Bf5dc319B47450Fbf4)
+    - [ethereum:0xa65ffBa1CD05414df3fD24Bf5dc319B47450Fbf4](https://etherscan.io/address/0xa65ffBa1CD05414df3fD24Bf5dc319B47450Fbf4)
 - Audit report(s):
     - [Protocol Audits](https://docs.yield.fi/resources/audits)
 
