@@ -15,11 +15,22 @@ body:
       description: Please describe the nature of the smart contract you'd like reviewed.
       options:
         - Rate Provider
-        - Token Wrapper
         - Other
       default: 0
     validations:
       required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Additional Contract Information
+      description: In the case of a Rate Provider review, additional points clarify the intended usage of the related asset.
+      options:
+        - label: Does this rate provider pertain to an ERC4626 contract?
+          required: true
+        - label: Is the intention for this rate provider and ERC4626 asset to be utilized as in a buffer for a boosted pool?
+          required: true
+        - label: If the asset uses an ERC4626 interface, are there any known withdraw timelocks or fees related to entry or exit to the underlying asset?
+          required: true
   - type: input
     id: type-extended
     attributes:
