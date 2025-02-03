@@ -103,7 +103,7 @@
       "name": "Superform USDC",
       "summary": "safe",
       "review": "./SuperformSuperVaultReview.md",
-      "warnings": []
+      "warnings": ["buffer"]
     },
     "0x616a4E1db48e22028f6bbf20444Cd3b8e3273738": {
       "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
@@ -208,7 +208,7 @@
       "name": "Superform USDC",
       "summary": "safe",
       "review": "./SuperformSuperVaultReview.md",
-      "warnings": []
+      "warnings": ["buffer"]
     },
     "0x2371e134e3455e0593363cBF89d3b6cf53740618": {
       "asset": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
