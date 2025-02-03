@@ -8,7 +8,7 @@
       "warnings": [],
       "isCompatible": "true"
     },
-    "0xcdAa68ce322728FE4185a60f103C194F1E2c47BC": {
+    "0xD9E3Ef2c12de90E3b03F7b7E3964956a71920d40": {
       "asset": "0x35751007a407ca6FEFfE80b3cB397736D2cf4dbe",
       "name": "Wrapped Aave Arbitrum weETH",
       "summary": "safe",
@@ -398,7 +398,7 @@
       "summary": "safe",
       "review": "./StaticATokenLMAvalonReview.md",
       "warnings": [],
-      "isCompatible": "true"
+      "isCompatible": "false"
     },
     "0xD31E89Ffb929b38bA60D1c7dBeB68c7712EAAb0a": {
       "asset": "0x541FD749419CA806a8bc7da8ac23D346f2dF8B77",
