@@ -21,7 +21,7 @@ Each of the items below represents an absolute requirement for the Rate Provider
 - [x] `getRate` returns an 18-decimal fixed point number (i.e., 1 == 1e18) regardless of underlying token decimals.
 
 ## Review Checklist: Common Findings
-The ERC4626 RateProvider fetches the rate of SuperVault tokens in terms of the underlying asset. The exchange rate is provided via the conversion between totalAssets and totalSupply. The SuperVault contract leverages Yearn v3's `TokenizedStrategy` as a proxy implementation that handles core ERC4626 vault logic. It extends this foundation by adding specialized functionality for managing multiple Superform positions through weight-based allocation, rebalancing capabilities, and whitelist controls.
+Each of the items below represents a common red flag found in Rate Provider contracts.
 
 If none of these is checked, then this might be a pretty great Rate Provider! If any of these is checked, we must thoroughly elaborate on the conditions that lead to the potential issue. Decision points are not binary; a Rate Provider can be safe despite these boxes being checked. A check simply indicates that thorough vetting is required in a specific area, and this vetting should be used to inform a holistic analysis of the Rate Provider.
 
