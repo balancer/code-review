@@ -20,7 +20,7 @@ body:
     validations:
       required: true
   - type: checkboxes
-    id: terms
+    id: erc4626
     attributes:
       label: Additional Contract Information
       description: In the case of a Rate Provider review, additional points clarify the intended usage of the related asset.
