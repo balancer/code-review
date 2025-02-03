@@ -15,6 +15,9 @@
     - Spark USDC v1.1[base:0x9e0926C3c5D2F42845Bf4F980F926b60323872d7](https://basescan.org/address/0x9e0926C3c5D2F42845Bf4F980F926b60323872d7#code)
     - Ionic USDC v1.1[base:0xdCb03A77bB54E0a05D591e543FA39E9c46E8Febb](https://basescan.org/address/0xdCb03A77bB54E0a05D591e543FA39E9c46E8Febb#code)
     - Ionic Ecosystem WETH v1.1[base:0xcc028cF7F8fA7986001fa7063A2E26b3094b42fd](https://basescan.org/address/0xcc028cF7F8fA7986001fa7063A2E26b3094b42fd#code)
+    - Steakhouse USDQ [ethereum:0xb42Ecf39FC9251f2B2F094e02e6cE4557f364436](https://etherscan.io/address/0xb42Ecf39FC9251f2B2F094e02e6cE4557f364436#code)
+    - Steakhouse USDR [ethereum:0xc6465F11D8Db8DAcB5c94729c4F2b3Bd725a2392](https://etherscan.io/address/0xc6465F11D8Db8DAcB5c94729c4F2b3Bd725a2392#code)
+    - Steakhouse USDT Lite [ethereum:0x23B315083e80804A696b26093974c61eBC78CC9a](https://etherscan.io/address/0x23B315083e80804A696b26093974c61eBC78CC9a#code)
 
 
 
@@ -84,8 +87,14 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
     #### Ionic WETH v1.1
     For [Ionic WETH](https://basescan.org/address/0x5A32099837D89E3a794a44fb131CBbAD41f87a8C) some allocators are eoas.
     - 0x5f0761eed6Cd7F0Bd91d847E955cD78Bb50B0647
-
-
+    #### [Steakhouse USDQ](https://etherscan.io/address/0xA1b60d96e5C50dA627095B9381dc5a46AF1a9a42)
+    - upgradeable component: [Quantoz USDQ](https://etherscan.io/address/0xc83e27f270cce0A3A3A29521173a83F402c1768b#code) ( the asset of the vault )
+    - admin: [MultiSigWallet Contract](https://etherscan.io/address/0xa6724f792002d5677a7bc370986e1b580b8773e7#code) ( with 5 owners )
+    - implementation: [HadronToken](https://etherscan.io/address/0xbae166f5e8b4b6735341446b1405fa779a92d7c7#code)
+    #### [Steakhouse USDR](https://etherscan.io/address/0x30881baa943777f92dc934d53d3bfdf33382cab3)
+    - upgradeable component: [StablR USD](https://etherscan.io/address/0x7B43E3875440B44613DC3bC08E7763e6Da63C8f8#code) ( the asset of the vault )
+    - admin: [MultiSigWallet Contract](https://etherscan.io/address/0xbfff92d76b74cf8f0a56adde7c89aa671a22953c#code) ( with 5 owners )
+    - implementation: [HadronToken](https://etherscan.io/address/0x8b98bcd9b1f8ae112fb2b58b45c3bc9a75cc4d0e#code)
 
 ### Oracles
 - [ ] Price data is provided by an off-chain source (e.g., a Chainlink oracle, a multisig, or a network of nodes).
