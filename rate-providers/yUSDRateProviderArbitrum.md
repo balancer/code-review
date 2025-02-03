@@ -20,7 +20,7 @@ Each of the items below represents an absolute requirement for the Rate Provider
 ## Review Checklist: Common Findings
 Each of the items below represents a common red flag found in Rate Provider contracts.
 
-If none of these is checked, then this might be a pretty great Rate Provider! If any of these is checked, we must thoroughly elaborate on the conditions that lead to the potential issue. Decision points are not binary; a Rate Provider can be safe despite these boxes being checked. A check simply indicates that thorough vetting is required in a specific area, and this vetting should be used to inform a holistic analysis of the Rate Provider.
+If none of these is checked, then this might be a pretty great Rate Provider! If any of these is checked, we must thoroughly elaborate on the conditions that lead to the potential issue. Decision points are not binary; a Rate Provider can be usable despite these boxes being checked. A check simply indicates that thorough vetting is required in a specific area, and this vetting should be used to inform a holistic analysis of the Rate Provider.
 
 ### Administrative Privileges
 - [ ] The Rate Provider is upgradeable (e.g., via a proxy architecture or an `onlyOwner` function that updates the price source address).
@@ -48,6 +48,6 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 To save time, we do not bother pointing out low-severity/informational issues or gas optimizations (unless the gas usage is particularly egregious). Instead, we focus only on high- and medium-severity findings which materially impact the contract's functionality and could harm users.
 
 ## Conclusion
-**Summary judgment: SAFE**
+**Summary judgment: USABLE**
 
 This rate provider should work well with Balancer pools. API3 updates the rate on arbitrum regularly and has various protections in place to ensure the correct values are bridged accurately. 

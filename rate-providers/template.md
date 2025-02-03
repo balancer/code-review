@@ -23,7 +23,7 @@ Each of the items below represents an absolute requirement for the Rate Provider
 ## Review Checklist: Common Findings
 Each of the items below represents a common red flag found in Rate Provider contracts.
 
-If none of these is checked, then this might be a pretty great Rate Provider! If any of these is checked, we must thoroughly elaborate on the conditions that lead to the potential issue. Decision points are not binary; a Rate Provider can be safe despite these boxes being checked. A check simply indicates that thorough vetting is required in a specific area, and this vetting should be used to inform a holistic analysis of the Rate Provider.
+If none of these is checked, then this might be a pretty great Rate Provider! If any of these is checked, we must thoroughly elaborate on the conditions that lead to the potential issue. Decision points are not binary; a Rate Provider can be usable despite these boxes being checked. A check simply indicates that thorough vetting is required in a specific area, and this vetting should be used to inform a holistic analysis of the Rate Provider.
 
 ### Administrative Privileges
 - [ ] The Rate Provider is upgradeable (e.g., via a proxy architecture or an `onlyOwner` function that updates the price source address). \<Delete this hint: If unchecked, delete all of the bullets below.\>
@@ -65,6 +65,6 @@ To save time, we do not bother pointing out low-severity/informational issues or
 ### \<M-02: Example Medium-severity Finding\>
 
 ## Conclusion
-**Summary judgment: \<SAFE/UNSAFE\>**
+**Summary judgment: \<USABLE/UNUSABLE\>**
 
-\<Delete this hint: Formulate a nuanced conclusion here. Remember, it's okay if some of the boxes above are checked as long as reasonable protections are in place. If the Rate Provider is very obviously safe, say so. If it's very obviously not, say so: what specifically needs to change before it can be considered safe? If the conclusion is hazy, explain why, and leave the final determination up to the reader. Examples of completely unacceptable conditions include, but are not limited to: EOA admins, EOA price sources, market prices (instead of deposit/redemption prices).\>
+\<Delete this hint: Formulate a nuanced conclusion here. Remember, it's okay if some of the boxes above are checked as long as reasonable protections are in place. If the Rate Provider is very obviously usable, say so. If it's very obviously not, say so: what specifically needs to change before it can be considered usable? If the conclusion is hazy, explain why, and leave the final determination up to the reader. Examples of completely unacceptable conditions include, but are not limited to: EOA admins, EOA price sources, market prices (instead of deposit/redemption prices).\>

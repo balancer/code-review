@@ -20,7 +20,7 @@ Each of the items below represents an absolute requirement for the Rate Provider
 ## Review Checklist: Common Findings
 Each of the items below represents a common red flag found in Rate Provider contracts.
 
-If none of these is checked, then this might be a pretty great Rate Provider! If any of these is checked, we must thoroughly elaborate on the conditions that lead to the potential issue. Decision points are not binary; a Rate Provider can be safe despite these boxes being checked. A check simply indicates that thorough vetting is required in a specific area, and this vetting should be used to inform a holistic analysis of the Rate Provider.
+If none of these is checked, then this might be a pretty great Rate Provider! If any of these is checked, we must thoroughly elaborate on the conditions that lead to the potential issue. Decision points are not binary; a Rate Provider can be usable despite these boxes being checked. A check simply indicates that thorough vetting is required in a specific area, and this vetting should be used to inform a holistic analysis of the Rate Provider.
 
 ### Administrative Privileges
 - [ ] The Rate Provider is upgradeable (e.g., via a proxy architecture or an `onlyOwner` function that updates the price source address).
@@ -54,6 +54,6 @@ To save time, we do not bother pointing out low-severity/informational issues or
 No additional findings.
 
 ## Conclusion
-**Summary judgment: UNSAFE**
+**Summary judgment: UNUSABLE**
 
 Rate provider is a standard ERC4626RateProvider that relies on totalAssets/totalSupply, but all other contracts in the pipeline are upgradeable and managed by an EOA, such as, the erc4626 asset `yUSD` and the `yield` contract that can directly influence the rate by updating `totalAssets`.
