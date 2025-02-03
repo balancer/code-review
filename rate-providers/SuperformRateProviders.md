@@ -12,7 +12,7 @@
     - [yAudit Superform Router Plus and Super Vaults Review](https://github.com/superform-xyz/SuperVaults/blob/main/audits/yAudit_report.pdf)
 
 ## Context
-\<Write a brief description of the intended functionality here.\>
+The ERC4626 RateProvider fetches the rate of SuperVault tokens in terms of the underlying asset. The exchange rate is provided via the conversion between totalAssets and totalSupply.
 
 ## Review Checklist: Bare Minimum Compatibility
 Each of the items below represents an absolute requirement for the Rate Provider. If any of these is unchecked, the Rate Provider is unfit to use.
@@ -42,4 +42,4 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 ## Conclusion
 **Summary judgment: USABLE**
 
-The Rate Providers should work well with Balancer pools.
+The Rate Providers should work as expected with Balancer pools. No portion of the price pipeline is upgradeable, and common manipulation vectors are mitigated by SuperVaults deleagating most of their core ERC-4626 vault functionality to the Yearn V3 TokenizedStrategy contract.

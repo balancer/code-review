@@ -7,10 +7,10 @@
     - [ethereum:0xF7DE3c70F2db39a188A81052d2f3C8e3e217822a](https://etherscan.io/address/0xF7DE3c70F2db39a188A81052d2f3C8e3e217822a#code)
     - [base:0xe9F2a5F9f3c846f29066d7fB3564F8E6B6b2D65b](https://basescan.org/address/0xe9F2a5F9f3c846f29066d7fB3564F8E6B6b2D65b#code)
 - Audit report(s):
-    - [yAudit Report](https://github.com/superform-xyz/SuperVaults/tree/main/audits)
+    - [SuperVaults Audits](https://github.com/superform-xyz/SuperVaults/tree/main/audits)
 
 ## Context
-\<Write a brief description of the intended functionality here.\>
+A SuperVault manages multiple Superforms (Superform positions linked to vaults) and incorporates mechanisms for rebalancing, whitelisting, and deposit limits. SuperVault contracts delegate most of their core ERC-4626 vault functionality to the Yearn V3 TokenizedStrategy contract.
 
 ## Review Checklist: Bare Minimum Compatibility
 Each of the items below represents an absolute requirement for the Rate Provider. If any of these is unchecked, the Rate Provider is unfit to use.
@@ -27,7 +27,7 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 - [ ] The ERC4626 Vault is upgradeable (e.g., via a proxy architecture or an `onlyOwner` function that updates the price source address).
 
 ### Buffer blocklist
-- [ ] The reviewed ERC4626 Vault should be added to the blocked buffers metadata list. 
+- [x] The reviewed ERC4626 Vault should be added to the blocked buffers metadata list. 
 
 ### Common Manipulation Vectors
 - [ ] The ERC4626 Vault is susceptible to donation attacks.
@@ -36,6 +36,5 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 To save time, we do not bother pointing out low-severity/informational issues or gas optimizations (unless the gas usage is particularly egregious). Instead, we focus only on high- and medium-severity findings which materially impact the contract's functionality and could harm users.
 
 ## Conclusion
-**Summary judgment: \<USABLE/UNUSABLE\>**
-
-\<Delete this hint: Formulate a nuanced conclusion here. Remember, it's okay if some of the boxes above are checked as long as reasonable protections are in place. If the ERC4626 Vault is very obviously safe, say so. If it's very obviously not, say so: what specifically needs to change before it can be considered safe? If the conclusion is hazy, explain why, and leave the final determination up to the reader. \>
+**Summary judgment: USABLE**
+The outlined ERC4626 Vaults should work with Balancer pools, but are not compatible with buffers since `testWithdraw` reverts with "too much loss", perhaps because SuperVaults leverage Yearn v3 `TokenizedStrategy` contract, which requires profits to be gradually unlocked over time, making it difficult to guarantee immediate withdrawals at the expected share price. Fork tests can be seen [here](https://github.com/balancer/balancer-v3-erc4626-tests/pull/24)
