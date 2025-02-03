@@ -470,6 +470,114 @@
       "warnings": ["chainlink"],
       "factory": "0x5DbAd78818D4c8958EfF2d5b95b28385A22113Cd",
       "upgradeableComponents": []
+    },
+    "0xE3dF105DB16282E5ce5cDa2d15391b04A408BcCf": {
+      "asset": "0x4cE13a79f45C1Be00BdABD38B764aC28C082704E",
+      "name": "Wrapped Aave Arbitrum WETH",
+      "summary": "safe",
+      "review": "./statATokenv2RateProvider.md",
+      "warnings": [""],
+      "factory": "0xe548a29631f9E49830bE8edc22d407b2D2915F31",
+      "upgradeableComponents": []
+    },
+    "0xcdAa68ce322728FE4185a60f103C194F1E2c47BC": {
+      "asset": "0xD9E3Ef2c12de90E3b03F7b7E3964956a71920d40",
+      "name": "Wrapped Aave Arbitrum weETH",
+      "summary": "safe",
+      "review": "./MarketRateTransformerRateProviders.md",
+      "warnings": [""],
+      "factory": "0xeC2C6184761ab7fE061130B4A7e3Da89c72F8395",
+      "upgradeableComponents": []
+    },
+    "0xDEA44786E61fd5475B35869586737D99B5e6dB59": {
+      "asset": "0x52Dc1FEeFA4f9a99221F93D79da46Ae89b8c0967",
+      "name": "Wrapped Aave Arbitrum WBTC",
+      "summary": "safe",
+      "review": "./statATokenv2RateProvider.md",
+      "warnings": [""],
+      "factory": "0xe548a29631f9E49830bE8edc22d407b2D2915F31",
+      "upgradeableComponents": []
+    },
+    "0xDAff80737b23A6E40F77Aa28957a10c9Af5dff45": {
+      "asset": "0x7F6501d3B98eE91f9b9535E4b0ac710Fb0f9e0bc",
+      "name": "USDCn",
+      "summary": "safe",
+      "review": "./statATokenv2RateProvider.md",
+      "warnings": [""],
+      "factory": "0xe548a29631f9E49830bE8edc22d407b2D2915F31",
+      "upgradeableComponents": []
+    },
+    "0x9CC54cb63E61c7D5231c506e4206Eb459250D2A7": {
+      "asset": "0xe98fc055c99DECD8Da0c111B090885d5d15C774E",
+      "name": "Wrapped Aave Arbitrum wstETH",
+      "summary": "safe",
+      "review": "./MarketRateTransformerRateProviders.md",
+      "warnings": [""],
+      "factory": "0xeC2C6184761ab7fE061130B4A7e3Da89c72F8395",
+      "upgradeableComponents": []
+    },
+    "0xc6B25ba4c028Cb238AB7CaC7a2ee59Ed4F1E96d4": {
+      "asset": "0xa6D12574eFB239FC1D2099732bd8b5dC6306897F",
+      "name": "Wrapped Aave Arbitrum USDT",
+      "summary": "safe",
+      "review": "./statATokenv2RateProvider.md",
+      "warnings": [""],
+      "factory": "0xe548a29631f9E49830bE8edc22d407b2D2915F31",
+      "upgradeableComponents": []
+    },
+    "0x957914d31912194911365D644F008E537C0150eb": {
+      "asset": "0xEAB84053B99f2ec4433F5121A1CB1524c8c998F8",
+      "name": "Wrapped Aave Arbitrum LINK",
+      "summary": "safe",
+      "review": "./statATokenv2RateProvider.md",
+      "warnings": [""],
+      "factory": "0xe548a29631f9E49830bE8edc22d407b2D2915F31",
+      "upgradeableComponents": []
+    },
+    "0xc7c5820E210dAc087faCD1692A7E66b5fEdA1C75": {
+      "asset": "0xf09EDbF2655B2A56753bD60D22CeAB2AC5D04188",
+      "name": "Wrapped Aave Arbitrum ARB",
+      "summary": "safe",
+      "review": "./statATokenv2RateProvider.md",
+      "warnings": [""],
+      "factory": "0xe548a29631f9E49830bE8edc22d407b2D2915F31",
+      "upgradeableComponents": []
+    },
+    "0xbB8A61425DFE172AA3a6f882aAFaBA00B32b7d59": {
+      "asset": "0xbB8A61425DFE172AA3a6f882aAFaBA00B32b7d59",
+      "name": "Wrapped Aave Arbitrum ARB",
+      "summary": "safe",
+      "review": "./MarketRateTransformerRateProviders.md",
+      "warnings": [""],
+      "factory": "0xeC2C6184761ab7fE061130B4A7e3Da89c72F8395",
+      "upgradeableComponents": []
+    },
+    "0x788dab521C4607C99F879f327894cC6fAcd217E3": {
+      "asset": "0xf253BD61aEd0E9D62523eA76CD6F38B4a51dA145",
+      "name": "Wrapped Aave Arbitrum DAI",
+      "summary": "safe",
+      "review": "./statATokenv2RateProvider.md",
+      "warnings": [""],
+      "factory": "0xe548a29631f9E49830bE8edc22d407b2D2915F31",
+      "upgradeableComponents": []
+    },
+    "0x30A225b9e9989bEd9C3e473686a29C9106E4393e": {
+      "asset": "0xE6D5923281c89DC989D00817387292387552d5C1",
+      "name": "Wrapped Aave Arbitrum USDC",
+      "summary": "safe",
+      "review": "./statATokenv2RateProvider.md",
+      "warnings": [""],
+      "factory": "0xe548a29631f9E49830bE8edc22d407b2D2915F31",
+      "upgradeableComponents": []
+    },
+    "0xb866b055D0F970FD48DEA5dB28FdEa5BcAE3EA67": {
+      "asset": "0xD089B4cb88Dacf4e27be869A00e9f7e2E3C18193",
+      "name": "Wrapped Aave Arbitrum GHO",
+      "summary": "safe",
+      "review": "./statATokenv2RateProvider.md",
+      "warnings": [""],
+      "factory": "0xe548a29631f9E49830bE8edc22d407b2D2915F31",
+      "upgradeableComponents": []
     }
   },
   "avalanche": {
@@ -703,6 +811,114 @@
       "review": "./ChainLinkRateProvider.md",
       "warnings": ["chainlink"],
       "factory": "0x0A973B6DB16C2ded41dC91691Cc347BEb0e2442B",
+      "upgradeableComponents": []
+    },
+    "0x6ac3b3BeCE5AA61C6AB5d50ecd2D47b1f18ACe49": {
+      "asset": "0x2416092f143378750bb29b79ed961ab195cceea5",
+      "name": "ezETH Rate Provider",
+      "summary": "safe",
+      "review": "./ChainLinkRateProvider.md",
+      "warnings": ["chainlink"],
+      "factory": "0x0A973B6DB16C2ded41dC91691Cc347BEb0e2442B",
+      "upgradeableComponents": []
+    },
+    "0xc11082BbDBB8AaB12d0947EEAD2c8bc28E1b3B34": {
+      "asset": "0x616a4E1db48e22028f6bbf20444Cd3b8e3273738",
+      "name": "Seamless USDC Rate Provider",
+      "summary": "safe",
+      "review": "./MorphoERC4626RateProviders.md",
+      "warnings": [],
+      "factory": "0xEfD3aF73d3359014f3B864d37AC672A6d3D7ff1A",
+      "upgradeableComponents": []
+    },
+    "0x9e0926C3c5D2F42845Bf4F980F926b60323872d7": {
+      "asset": "0x7BfA7C4f149E7415b73bdeDfe609237e29CBF34A",
+      "name": "Spark USDC Rate Provider",
+      "summary": "safe",
+      "review": "./MorphoERC4626RateProviders.md",
+      "warnings": [],
+      "factory": "0xEfD3aF73d3359014f3B864d37AC672A6d3D7ff1A",
+      "upgradeableComponents": []
+    },
+    "0xdCb03A77bB54E0a05D591e543FA39E9c46E8Febb": {
+      "asset": "0x23479229e52Ab6aaD312D0B03DF9F33B46753B5e",
+      "name": "Ionic Ecosystem USDC Rate Provider",
+      "summary": "safe",
+      "review": "./MorphoERC4626RateProviders.md",
+      "warnings": [],
+      "factory": "0xEfD3aF73d3359014f3B864d37AC672A6d3D7ff1A",
+      "upgradeableComponents": []
+    },
+    "0xcc028cF7F8fA7986001fa7063A2E26b3094b42fd": {
+      "asset": "0x5A32099837D89E3a794a44fb131CBbAD41f87a8C",
+      "name": "Ionic Ecosystem WETH Rate Provider",
+      "summary": "safe",
+      "review": "./MorphoERC4626RateProviders.md",
+      "warnings": [],
+      "factory": "0xEfD3aF73d3359014f3B864d37AC672A6d3D7ff1A",
+      "upgradeableComponents": []
+    },
+    "0x14BD1e9b30007510c2aFE3a7a8053A6DE5605d35": {
+      "asset": "0xe298b938631f750DD409fB18227C4a23dCdaab9b",
+      "name": "ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./statATokenLMRateProvider.md",
+      "warnings": [""],
+      "factory": "0xEfD3aF73d3359014f3B864d37AC672A6d3D7ff1A",
+      "upgradeableComponents": []
+    },
+    "0x0368b79b6A173a5aD589594E3227153D8cC7Cecc": {
+      "asset": "0xC768c589647798a6EE01A91FdE98EF2ed046DBD6",
+      "name": "ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./statATokenLMRateProvider.md",
+      "warnings": [""],
+      "factory": "0xEfD3aF73d3359014f3B864d37AC672A6d3D7ff1A",
+      "upgradeableComponents": []
+    },
+    "0xbF21251c74208771e25De5C08971cE586236EE89": {
+      "asset": "0xFA2A03b6f4A65fB1Af64f7d935fDBf78693df9aF",
+      "name": "ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./statATokenLMRateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
+    },
+    "0xcb1f29103F710A0A562de7f0e9DDE223D0860674": {
+      "asset": "0x0830820D1A9aa1554364752d6D8F55C836871B74",
+      "name": "AaveMarketRateTransformer",
+      "summary": "safe",
+      "review": "./MarketRateTransformerRateProviders.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
+    },
+    "0x940748d30315276362f594ECcCb648A4f9aB7629": {
+      "asset": "0x5e8B674127B321DC344c078e58BBACc3f3008962",
+      "name": "AaveMarketRateTransformer",
+      "summary": "safe",
+      "review": "./MarketRateTransformerRateProviders.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
+    },
+    "0xBa0Fd0f3B019e8aBA61FEA2ac4Eb56b29F6808c0": {
+      "asset": "0x74D4D1D440c9679b1013999Bd91507eAa2fff651",
+      "name": "ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./statATokenLMRateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
+    },
+    "0xFF4B2CE4131E0Fb6b8A40447B4dF96Bdc83f759a": {
+      "asset": "0xF8F10f39116716e89498c1c5E94137ADa11b2BC7",
+      "name": "AaveMarketRateTransformer",
+      "summary": "safe",
+      "review": "./MarketRateTransformerRateProviders.md",
+      "warnings": [],
+      "factory": "",
       "upgradeableComponents": []
     }
   },
@@ -2017,6 +2233,34 @@
         }
       ]
     },
+    "0xD231564648C94542C01e9a528c9cAa033bbf274C": {
+      "asset": "0x1e6ffa4e9F63d10B8820A3ab52566Af881Dab53c",
+      "name": "Gauntlet wETH Ecosystem v1.1",
+      "summary": "safe",
+      "review": "./MorphoERC4626RateProviders.md",
+      "warnings": ["eoaUpgradeable"],
+      "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x1e6ffa4e9F63d10B8820A3ab52566Af881Dab53c",
+          "implementationReviewed": "0x1e6ffa4e9F63d10B8820A3ab52566Af881Dab53c"
+        }
+      ]
+    },
+    "0x3BD4B2174498b3Aa01be0acFa0F775472b2dC30b": {
+      "asset": "0x701907283a57FF77E255C3f1aAD790466B8CE4ef",
+      "name": "IndexCoop mhyETH v1.1",
+      "summary": "safe",
+      "review": "./MorphoERC4626RateProviders.md",
+      "warnings": ["eoaUpgradeable"],
+      "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x701907283a57FF77E255C3f1aAD790466B8CE4ef",
+          "implementationReviewed": "0x701907283a57FF77E255C3f1aAD790466B8CE4ef"
+        }
+      ]
+    },
     "0x09000d689fb2b210c65d9f8adc620f6f2d7d6836": {
       "asset": "0x7a4EffD87C2f3C55CA251080b1343b605f327E3a",
       "name": "VaultRateOracle",
@@ -2028,6 +2272,56 @@
         {
           "entrypoint": "0x7a4EffD87C2f3C55CA251080b1343b605f327E3a",
           "implementationReviewed": "0xaf108ae0AD8700ac41346aCb620e828c03BB8848"
+        }
+      ]
+    },
+    "0x14BD1e9b30007510c2aFE3a7a8053A6DE5605d35": {
+      "asset": "0x6acD0a165fD70A84b6b50d955ff3628700bAAf4b",
+      "name": "AaveMarketRateTransformer",
+      "summary": "safe",
+      "review": "./MarketRateTransformerRateProviders.md",
+      "warnings": [""],
+      "factory": "0x4E185b1502Fea7a06B63fDdA6de38F92C9528566",
+      "upgradeableComponents": []
+    },
+    "0xdd8AEBC13B3DFaF85e3B512d26681987aD2c43b2": {
+      "asset": "0xb51EDdDD8c47856D81C8681EA71404Cec93E92c6",
+      "name": "ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./statATokenv2RateProvider.md",
+      "warnings": [""],
+      "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xb51EDdDD8c47856D81C8681EA71404Cec93E92c6",
+          "implementationReviewed": "0x487c2C53c0866F0A73ae317bD1A28F63ADcD9aD1"
+        },
+        {
+          "entrypoint": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+          "implementationReviewed": "0xeF434E4573b90b6ECd4a00f4888381e4D0CC5Ccd"
+        }
+      ]
+    },
+    "0x1f037c849CF2448d67A120543EA4ec3CE5A95FcA": {
+      "asset": "0x3976d71e7DdFBaB9bD120Ec281B7d35fa0F28528",
+      "name": "ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./LoopRateProvider.md",
+      "warnings": ["donation"],
+      "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
+      "upgradeableComponents": []
+    },
+    "0x9CB622FC4757386dc8e79d1cC66FC912dD4bBf57": {
+      "asset": "0x5E362eb2c0706Bd1d134689eC75176018385430B",
+      "name": "VaultRateOracle",
+      "summary": "safe",
+      "review": "./MellowRateProviders.md",
+      "warnings": ["donation"],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x5E362eb2c0706Bd1d134689eC75176018385430B",
+          "implementationReviewed": "0xe2D2E90122cb203CF1565a37ef90a256843A825A"
         }
       ]
     }
@@ -2817,6 +3111,61 @@
           "implementationReviewed": "0xd5f7fc8ba92756a34693baa386edcc8dd5b3f141"
         }
       ]
+    },
+    "0x00de97829d01815346e58372be55aefd84ca2457": {
+      "asset": "0xa28d4dbcc90c849e3249d642f356d85296a12954",
+      "name": "Avalon waSolvBTC.bbn Rateprovider",
+      "summary": "safe",
+      "review": "./statATokenLMRateProviderAvalon.md",
+      "warnings": [""],
+      "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xA28d4dbcC90C849e3249D642f356D85296a12954",
+          "implementationReviewed": "0x29c26d85ba819659d084a592b97607a5337de030"
+        }
+      ]
+    },
+    "0xa6c292d06251da638be3b58f1473e03d99c26ff0": {
+      "asset": "0xd31e89ffb929b38ba60d1c7dbeb68c7712eaab0a",
+      "name": "Avalon waSolvBTC Rateprovider",
+      "summary": "safe",
+      "review": "./statATokenLMRateProviderAvalon.md",
+      "warnings": [""],
+      "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xD31E89Ffb929b38bA60D1c7dBeB68c7712EAAb0a",
+          "implementationReviewed": "0xb9fa01cbd690dfd5be3d8d667c54bbdd9e41e57d"
+        }
+      ]
+    },
+    "0x5fded3206608d3f33175a8865576431906cdb43b": {
+      "asset": "0x7870ddFd5ACA4E977B2287e9A212bcbe8FC4135a",
+      "name": "Beefy USDC SiloV2 Rateprovider",
+      "summary": "safe",
+      "review": "./BeefyUsdcSiloRateprovider.md",
+      "warnings": [""],
+      "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
+      "upgradeableComponents": []
+    },
+    "0x78557d8a83fe7c6d9f9983d00e5c0e08cc3335e6": {
+      "asset": "0x52Fc9E0a68b6a4C9b57b9D1d99fB71449A99DCd8",
+      "name": "Silo bSolvBTC.bbn Rateprovider",
+      "summary": "safe",
+      "review": "./SiloWrappedRateprovider.md",
+      "warnings": [""],
+      "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
+      "upgradeableComponents": []
+    },
+    "0x9d2d4351c1b3718d7a65ef21f54c86c665964670": {
+      "asset": "0x87178fe8698C7eDa8aA207083C3d66aEa569aB98",
+      "name": "Silo bSolvBTC Rateprovider",
+      "summary": "safe",
+      "review": "./SiloWrappedRateprovider.md",
+      "warnings": [""],
+      "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
+      "upgradeableComponents": []
     }
   }
 }

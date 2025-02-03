@@ -65,6 +65,6 @@ To save time, we do not bother pointing out low-severity/informational issues or
 ### \<M-02: Example Medium-severity Finding\>
 
 ## Conclusion
-**Summary judgment: \<SAFE/UNSAFE\>**
+**Summary judgment: \<USABLE/UNUSABLE\>**
 
 \<Delete this hint: Formulate a nuanced conclusion here. Remember, it's okay if some of the boxes above are checked as long as reasonable protections are in place. If the Rate Provider is very obviously safe, say so. If it's very obviously not, say so: what specifically needs to change before it can be considered safe? If the conclusion is hazy, explain why, and leave the final determination up to the reader. Examples of completely unacceptable conditions include, but are not limited to: EOA admins, EOA price sources, market prices (instead of deposit/redemption prices).\>
