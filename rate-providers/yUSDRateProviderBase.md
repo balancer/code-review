@@ -31,7 +31,6 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
     - admin type: multisig
         - multisig threshold/signers: 4/8
         - multisig timelock? NO
-        - trustworthy signers? NO
 
 ### Oracles
 - [x] Price data is provided by an off-chain source (e.g., a Chainlink oracle, a multisig, or a network of nodes).
