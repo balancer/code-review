@@ -585,7 +585,7 @@
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
       "warnings": [],
-      "factory": "",
+      "factory": "0x26dEc0e6a4249F28e0f16A1a79808bF9ba308310",
       "upgradeableComponents": []
     }
   },
