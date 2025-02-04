@@ -12,7 +12,7 @@
     - [yAudit Superform Router Plus and Super Vaults Review](https://github.com/superform-xyz/SuperVaults/blob/main/audits/yAudit_report.pdf)
 
 ## Context
-The ERC4626 RateProvider fetches the rate of SuperVault tokens in terms of the underlying asset. The exchange rate is provided via the conversion between totalAssets and totalSupply.
+The ERC4626 RateProvider fetches the rate of SuperVault tokens in terms of the underlying asset. The exchange rate is provided via the conversion between totalAssets and totalSupply. Each SuperVault manages multiple "Superforms", which are positions linked to other vaults. A `SuperVaultManager` role controls a whitelist of vaults where funds can be allocated. A `SuperVaultStrategist` role is allowed to rebalance the allocation of assets amongst whitelisted vaults.
 
 ## Review Checklist: Bare Minimum Compatibility
 Each of the items below represents an absolute requirement for the Rate Provider. If any of these is unchecked, the Rate Provider is unfit to use.
