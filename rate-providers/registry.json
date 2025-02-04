@@ -578,6 +578,15 @@
       "warnings": [""],
       "factory": "0xe548a29631f9E49830bE8edc22d407b2D2915F31",
       "upgradeableComponents": []
+    },
+    "0x998DE64cB90EdF3d205CFDB864E199fDA4d55710": {
+      "asset": "0xd09ACb80C1E8f2291862c4978A008791c9167003",
+      "name": "TreeHouseRateProvider",
+      "summary": "safe",
+      "review": "./ChainLinkRateProvider.md",
+      "warnings": [],
+      "factory": "0x26dEc0e6a4249F28e0f16A1a79808bF9ba308310",
+      "upgradeableComponents": []
     }
   },
   "avalanche": {
