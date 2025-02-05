@@ -106,6 +106,14 @@
     }
   },
   "base": {
+    "0xe9F2a5F9f3c846f29066d7fB3564F8E6B6b2D65b": {
+      "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "name": "Superform USDC",
+      "summary": "safe",
+      "review": "./SuperformSuperVaultReview.md",
+      "warnings": ["buffer"],
+      "isCompatible": "false"
+    },
     "0x616a4E1db48e22028f6bbf20444Cd3b8e3273738": {
       "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
       "name": "MetaMorpho v1.1 Seamless USDC",
@@ -204,6 +212,14 @@
     }
   },
   "ethereum": {
+    "0xF7DE3c70F2db39a188A81052d2f3C8e3e217822a": {
+      "asset": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      "name": "Superform USDC",
+      "summary": "safe",
+      "review": "./SuperformSuperVaultReview.md",
+      "warnings": ["buffer"],
+      "isCompatible": "false"
+    },
     "0x2371e134e3455e0593363cBF89d3b6cf53740618": {
       "asset": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
       "name": "MetaMorpho Gauntlet wETH Prime",
