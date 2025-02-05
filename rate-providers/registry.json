@@ -3240,6 +3240,15 @@
           "implementationReviewed": "0xb9fa01cbd690dfd5be3d8d667c54bbdd9e41e57d"
         }
       ]
+    },
+    "0xECDfaa456a01c9804Fc8D11955CF4B54E0eA2Bd7": {
+      "asset": "0x50c42deacd8fc9773493ed674b675be577f2634b",
+      "name": "ConstantRateProvider",
+      "summary": "safe",
+      "review": "./WETHConstantRateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   }
 }
