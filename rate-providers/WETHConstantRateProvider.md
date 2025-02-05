@@ -1,17 +1,16 @@
-# Rate Provider: `ERC4626RateProvider`
+# Rate Provider: `ConstantRateProvider`
 
 ## Details
 - Reviewed by: @franzns
 - Checked by: @mkflow27
 - Deployed at:
-    - [sonic:0x78557d8a83fe7c6d9f9983d00e5c0e08cc3335e6](https://sonicscan.org/address/0x78557d8a83fe7c6d9f9983d00e5c0e08cc3335e6#code)
-    - [sonic:0x9d2d4351c1b3718d7a65ef21f54c86c665964670](https://sonicscan.org/address/0x9d2d4351c1b3718d7a65ef21f54c86c665964670#code)
-    - [sonic:0xb86e2517caab8e7aecc7472f29c0cbdaaf28e5e5](https://sonicscan.org/address/0xb86e2517caab8e7aecc7472f29c0cbdaaf28e5e5#code)
-- Audits:
-    - [Silo V2 audits](https://docs.silo.finance/audits-and-tests)
+    - [sonic:0xECDfaa456a01c9804Fc8D11955CF4B54E0eA2Bd7](https://sonicscan.org/address/0xECDfaa456a01c9804Fc8D11955CF4B54E0eA2Bd7)
+- Audit report(s):
+    - [Gyro audits](https://docs.gyro.finance/gyroscope-protocol/audit-reports)
 
 ## Context
-The ERC4626 Rate Provider fetches the rate of the Silo V2 Market. The rate provider was created using the ERC4626 Rateprovider factory which calls convertToAssets on the ERC4626 to expose the rate. 
+This rate provider reports a constant rate which downscales the weth price to a specific area of the ellipsis pricing function.
+> reason for the constant rate provider is to scale the prices that the pool does its math at to the part of the ellipse that is near 1:1 (as opposed to 2500:1 for ETH pricing). Reason there is because this region is better tested (although in principle, the rounding analysis should apply to a much wider range of parameters and pool prices -- but feels slightly safer to use the scaling)
 
 ## Review Checklist: Bare Minimum Compatibility
 Each of the items below represents an absolute requirement for the Rate Provider. If any of these is unchecked, the Rate Provider is unfit to use.
@@ -25,10 +24,9 @@ Each of the items below represents a common red flag found in Rate Provider cont
 If none of these is checked, then this might be a pretty great Rate Provider! If any of these is checked, we must thoroughly elaborate on the conditions that lead to the potential issue. Decision points are not binary; a Rate Provider can be safe despite these boxes being checked. A check simply indicates that thorough vetting is required in a specific area, and this vetting should be used to inform a holistic analysis of the Rate Provider.
 
 ### Administrative Privileges
-- [ ] The Rate Provider is upgradeable (e.g., via a proxy architecture or an `onlyOwner` function that updates the price source address).
+- [ ] The Rate Provider is upgradeable (e.g., via a proxy architecture or an `onlyOwner` function that updates the price source address). 
 
 - [ ] Some other portion of the price pipeline is upgradeable (e.g., the token itself, an oracle, or some piece of a larger system that tracks the price).
-    
 
 ### Oracles
 - [ ] Price data is provided by an off-chain source (e.g., a Chainlink oracle, a multisig, or a network of nodes).
@@ -38,7 +36,11 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 ### Common Manipulation Vectors
 - [ ] The Rate Provider is susceptible to donation attacks.
 
+
+## Additional Findings
+To save time, we do not bother pointing out low-severity/informational issues or gas optimizations (unless the gas usage is particularly egregious). Instead, we focus only on high- and medium-severity findings which materially impact the contract's functionality and could harm users.
+
 ## Conclusion
 **Summary judgment: SAFE**
 
-The Rate Providers should work well with Balancer pools. The underlying contracts have been audited. Computation of totalAssets do not rely on `balanceOf()` calls and also their audits do not indicate any risk of a donation attack vector.
+The required `getRate` value for this particular case scales the balances to the required pricing point on the gyro pricing curve. For more information see also the [gauge proposal](https://forum.balancer.fi/t/bip-731-enable-several-e-clp-gauges-base/6148). Note: This rateProvider should not be used for other pools to provide rate data for WETH or similar stablecoins. 

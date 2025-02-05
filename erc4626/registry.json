@@ -439,6 +439,14 @@
       "review": "./SiloV2Review.md",
       "warnings": [],
       "isCompatible": "true"
+    },
+    "0x016C306e103FbF48EC24810D078C65aD13c5f11B": {
+      "asset": "0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38",
+      "name": "SiloV2 wS ID 25",
+      "summary": "safe",
+      "review": "./SiloV2Review.md",
+      "warnings": [],
+      "isCompatible": "true"
     }
   },
   "sepolia": {
@@ -466,5 +474,5 @@
       "warnings": [],
       "isCompatible": "true"
     }
-  }  
+  }
 }

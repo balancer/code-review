@@ -587,6 +587,15 @@
       "warnings": [""],
       "factory": "0xe548a29631f9E49830bE8edc22d407b2D2915F31",
       "upgradeableComponents": []
+    },
+    "0x998DE64cB90EdF3d205CFDB864E199fDA4d55710": {
+      "asset": "0xd09ACb80C1E8f2291862c4978A008791c9167003",
+      "name": "TreeHouseRateProvider",
+      "summary": "safe",
+      "review": "./ChainLinkRateProvider.md",
+      "warnings": [],
+      "factory": "0x26dEc0e6a4249F28e0f16A1a79808bF9ba308310",
+      "upgradeableComponents": []
     }
   },
   "avalanche": {
@@ -929,6 +938,20 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0x84394fa6a39bdff63b255622da362b113c690267": {
+      "asset": "0x5875eEE11Cf8398102FdAd704C9E96607675467a",
+      "name": "SavingsUSDSRateProvider",
+      "summary": "safe",
+      "review": "./sUSDSBaseRateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xa3931d71877C0E7a3148CB7Eb4463524FEc27fbD",
+          "implementationReviewed": "0x4e7991e5C547ce825BdEb665EE14a3274f9F61e0"
+        }
+      ]
     }
   },
   "ethereum": {
@@ -2342,10 +2365,10 @@
       "warnings": [],
       "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
       "upgradeableComponents": [
-          {
+        {
           "entrypoint": "0x7B43E3875440B44613DC3bC08E7763e6Da63C8f8",
           "implementationReviewed": "0x8b98bcd9b1f8ae112fb2b58b45c3bc9a75cc4d0e"
-          }
+        }
       ]
     },
     "0x23B315083e80804A696b26093974c61eBC78CC9a": {
@@ -3207,6 +3230,38 @@
     "0x9d2d4351c1b3718d7a65ef21f54c86c665964670": {
       "asset": "0x87178fe8698C7eDa8aA207083C3d66aEa569aB98",
       "name": "Silo bSolvBTC Rateprovider",
+      "summary": "safe",
+      "review": "./SiloWrappedRateprovider.md",
+      "warnings": [""],
+      "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
+      "upgradeableComponents": []
+    },
+    "0xfbcee1fcaa2db776b4b575a8da3e8c93ea5eef53": {
+      "asset": "0x9F0dF7799f6FDAd409300080cfF680f5A23df4b1",
+      "name": "Wrapped Origin Sonic Rateprovider",
+      "summary": "safe",
+      "review": "./woSonicRateprovider.md",
+      "warnings": [""],
+      "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x9F0dF7799f6FDAd409300080cfF680f5A23df4b1",
+          "implementationReviewed": "0xb9fa01cbd690dfd5be3d8d667c54bbdd9e41e57d"
+        }
+      ]
+    },
+    "0xECDfaa456a01c9804Fc8D11955CF4B54E0eA2Bd7": {
+      "asset": "0x50c42deacd8fc9773493ed674b675be577f2634b",
+      "name": "ConstantRateProvider",
+      "summary": "safe",
+      "review": "./WETHConstantRateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
+    },
+    "0xb86e2517caab8e7aecc7472f29c0cbdaaf28e5e5": {
+      "asset": "0x016C306e103FbF48EC24810D078C65aD13c5f11B",
+      "name": "Silo bwS Rateprovider",
       "summary": "safe",
       "review": "./SiloWrappedRateprovider.md",
       "warnings": [""],
