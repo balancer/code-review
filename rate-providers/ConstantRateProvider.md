@@ -2,7 +2,7 @@
 
 ## Details
 - Reviewed by: @franzns
-- Checked by: 
+- Checked by: @Zen-Maxi
 - Deployed at:
     - [sonic:0xECDfaa456a01c9804Fc8D11955CF4B54E0eA2Bd7](https://sonicscan.org/address/0xECDfaa456a01c9804Fc8D11955CF4B54E0eA2Bd7)
     - [arbitrum:0x3a216B01db971Bf28D171C9dA44Cc8C89867697F](https://arbiscan.io/address/0x3a216B01db971Bf28D171C9dA44Cc8C89867697F#code)
@@ -52,4 +52,4 @@ To save time, we do not bother pointing out low-severity/informational issues or
 ## Conclusion
 **Summary judgment: SAFE**
 
-The required `getRate` value for this particular case scales the balances to the required pricing point on the gyro pricing curve. For more information see also the [gauge proposal](https://forum.balancer.fi/t/bip-731-enable-several-e-clp-gauges-base/6148). Note: This rateProvider should not be used for other pools to provide rate data for WETH or similar stablecoins. 
+The required `getRate` value for this particular case scales the balances to the required pricing point on the gyro pricing curve. For more information see also the [gauge proposal](https://forum.balancer.fi/t/bip-731-enable-several-e-clp-gauges-base/6148). Note: This rateProvider should not be used for other pools to provide rate data for WETH or any other assets. 
