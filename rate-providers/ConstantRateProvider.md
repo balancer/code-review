@@ -2,15 +2,24 @@
 
 ## Details
 - Reviewed by: @franzns
-- Checked by: @mkflow27
+- Checked by: 
 - Deployed at:
     - [sonic:0xECDfaa456a01c9804Fc8D11955CF4B54E0eA2Bd7](https://sonicscan.org/address/0xECDfaa456a01c9804Fc8D11955CF4B54E0eA2Bd7)
+    - [arbitrum:0x3a216B01db971Bf28D171C9dA44Cc8C89867697F](https://arbiscan.io/address/0x3a216B01db971Bf28D171C9dA44Cc8C89867697F#code)
+    - [arbitrum:0x72F6Da3b4bd0Ab7028F52339Ee3B1f94fffe2dD0](https://arbiscan.io/address/0x72F6Da3b4bd0Ab7028F52339Ee3B1f94fffe2dD0#code) 
+    - [arbitrum:0xdcd8db2a23e21a4b9fa3d984d5a31fb554c70832](https://arbiscan.io/address/0xdcd8db2a23e21a4b9fa3d984d5a31fb554c70832#code) 
+    - [ethereum:0xD43F5a722e8e7355D790adda4642f392Dfb820a1](https://etherscan.io/address/0xD43F5a722e8e7355D790adda4642f392Dfb820a1#code)
+    - [base:0x5E10C2a55fB6E4C14c50C7f6B82bb28A813a4748](https://basescan.org/address/0x5E10C2a55fB6E4C14c50C7f6B82bb28A813a4748)
+    - [base:0x3e89cc86307aF44A77EB29d0c4163d515D348313](https://basescan.org/address/0x3e89cc86307aF44A77EB29d0c4163d515D348313) 
+    - [base:0x3fA516CEB5d068b60FDC0c68a3B793Fc43B88f15](https://basescan.org/address/0x3fA516CEB5d068b60FDC0c68a3B793Fc43B88f15)    
+    - [base:0xd58338f102e8de2e3d9d54cc043c6d606826a790](https://basescan.org/address/0xd58338f102e8de2e3d9d54cc043c6d606826a790)    
+    - [base:0x4a0f0012004bc22d4fdb818b9c539e78adc0c69d](https://basescan.org/address/0x4a0f0012004bc22d4fdb818b9c539e78adc0c69d)
 - Audit report(s):
     - [Gyro audits](https://docs.gyro.finance/gyroscope-protocol/audit-reports)
 
 ## Context
-This rate provider reports a constant rate which downscales the weth price to a specific area of the ellipsis pricing function.
-> reason for the constant rate provider is to scale the prices that the pool does its math at to the part of the ellipse that is near 1:1 (as opposed to 2500:1 for ETH pricing). Reason there is because this region is better tested (although in principle, the rounding analysis should apply to a much wider range of parameters and pool prices -- but feels slightly safer to use the scaling)
+This rate provider reports a constant rate which scales the price of the asset to a specific area of the ellipsis pricing function.
+> reason for the constant rate provider is to scale the prices that the pool does its math at to the part of the ellipse that is near 1:1. The reason is that this region is better tested (although in principle, the rounding analysis should apply to a much wider range of parameters and pool prices -- but feels slightly safer to use the scaling)
 
 ## Review Checklist: Bare Minimum Compatibility
 Each of the items below represents an absolute requirement for the Rate Provider. If any of these is unchecked, the Rate Provider is unfit to use.
