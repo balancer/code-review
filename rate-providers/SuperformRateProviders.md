@@ -4,7 +4,7 @@
 
 ## Details
 - Reviewed by: @mattpereira
-- Checked by: @\<GitHub handle of secondary reviewer\>
+- Checked by: @mkflow27
 - Deployed at:
     - [ethereum:0x9fA39387D479fd456367190c82739eD6dC86491D](https://etherscan.io/address/0x9fA39387D479fd456367190c82739eD6dC86491D#code)
     - [base:0x829Be222f36C6B7D48a7e1270b3c070BA2Ee98C4](https://basescan.org/address/0x829Be222f36C6B7D48a7e1270b3c070BA2Ee98C4#code)
@@ -28,7 +28,18 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 ### Administrative Privileges
 - [ ] The Rate Provider is upgradeable (e.g., via a proxy architecture or an `onlyOwner` function that updates the price source address). 
 
-- [ ] Some other portion of the price pipeline is upgradeable (e.g., the token itself, an oracle, or some piece of a larger system that tracks the price). 
+- [x] Some other portion of the price pipeline is upgradeable (e.g., the token itself, an oracle, or some piece of a larger system that tracks the price).
+  Part of the rate computation relies on how `totalAssets` is calculated, and `totalAssets` can be changed by the `SuperVaultStrategist` calling `rebalance` to shift assets into any of the whitelisted vaults. The whitelist is controlled by the `SuperVaultManager`.
+  
+  #### [ethereum:0x9fA39387D479fd456367190c82739eD6dC86491D](https://etherscan.io/address/0x9fA39387D479fd456367190c82739eD6dC86491D#code)
+  The relevant [vault](https://etherscan.io/address/0xF7DE3c70F2db39a188A81052d2f3C8e3e217822a#readContract) roles are both EoAs
+  - `SuperVaultManager` : [0x701aE9c540ba2144b669F22e650882e7e07cB11F](https://etherscan.io/address/0x701aE9c540ba2144b669F22e650882e7e07cB11F)
+  - `SuperVaultStrategist` : [0xFa476C5ec7A43a68e081fD5a33f668f0BD09e126](https://etherscan.io/address/0xFa476C5ec7A43a68e081fD5a33f668f0BD09e126)
+  
+  #### [base:0x829Be222f36C6B7D48a7e1270b3c070BA2Ee98C4](https://basescan.org/address/0x829Be222f36C6B7D48a7e1270b3c070BA2Ee98C4#code)
+  The relevant vault roles are both EoAs
+  - `SuperVaultManager` : [0x701aE9c540ba2144b669F22e650882e7e07cB11F](https://basescan.org/address/0x701aE9c540ba2144b669F22e650882e7e07cB11F)
+  - `SuperVaultStrategist` : [0xFa476C5ec7A43a68e081fD5a33f668f0BD09e126](https://basescan.org/address/0xFa476C5ec7A43a68e081fD5a33f668f0BD09e126)
 
 ### Oracles
 - [ ] Price data is provided by an off-chain source (e.g., a Chainlink oracle, a multisig, or a network of nodes). 
