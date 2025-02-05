@@ -1,5 +1,4 @@
 # Rate Provider: `ConstantRateProvider`
-
 ## Details
 - Reviewed by: @franzns
 - Checked by: @Zen-Maxi
@@ -14,6 +13,7 @@
     - [base:0x3fA516CEB5d068b60FDC0c68a3B793Fc43B88f15](https://basescan.org/address/0x3fA516CEB5d068b60FDC0c68a3B793Fc43B88f15)    
     - [base:0xd58338f102e8de2e3d9d54cc043c6d606826a790](https://basescan.org/address/0xd58338f102e8de2e3d9d54cc043c6d606826a790)    
     - [base:0x4a0f0012004bc22d4fdb818b9c539e78adc0c69d](https://basescan.org/address/0x4a0f0012004bc22d4fdb818b9c539e78adc0c69d)
+    - [avalanche:0xd0C13867BeA969398370B2A2B9124e3b2E48743C](https://snowtrace.io/address/0xd0C13867BeA969398370B2A2B9124e3b2E48743C/contract/43114/code)
 - Audit report(s):
     - [Gyro audits](https://docs.gyro.finance/gyroscope-protocol/audit-reports)
 

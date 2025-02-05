@@ -712,6 +712,15 @@
           "implementationReviewed": "0x5DFb8c777C19d3cEdcDc7398d2EeF1FB0b9b05c9"
         }
       ]
+    },
+    "0xd0C13867BeA969398370B2A2B9124e3b2E48743C": {
+      "asset": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "ConstantRateProvider",
+      "summary": "safe",
+      "review": "./ConstantRateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   },
   "base": {
