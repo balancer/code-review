@@ -51,5 +51,5 @@ To save time, we do not bother pointing out low-severity/informational issues or
 **Summary judgment: USABLE**
 
 The outlined ERC4626 Vaults should work well with Balancer pools. Upgradeability is guarded by a multisig and the Vaults implement the required interfaces with fork tests passing as can be seen here:
-- [0xD31E89Ffb929b38bA60D1c7dBeB68c7712EAAb0a](https://github.com/balancer/balancer-v3-erc4626-tests/blob/main/test/sonic/ERC4626Avalon.t.sol)
-- Avalon solvBTC.bbn [0xA28d4dbcC90C849e3249D642f356D85296a12954](https://github.com/balancer/balancer-v3-erc4626-tests/pull/25/files#diff-77d07c698393cc3bb90b5d89a4c6fafc475e2eaf7af1f91cd2fadfb3ff2128f3)
+- Avalon solvBTC [0xD31E89Ffb929b38bA60D1c7dBeB68c7712EAAb0a](https://github.com/balancer/balancer-v3-erc4626-tests/blob/main/test/sonic/ERC4626AvalonSolvBTC.t.sol)
+- Avalon solvBTC.bbn [0xA28d4dbcC90C849e3249D642f356D85296a12954](https://github.com/balancer/balancer-v3-erc4626-tests/blob/main/test/sonic/ERC4626AvalonSolvBTCbbn.t.sol)
