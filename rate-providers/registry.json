@@ -3249,6 +3249,15 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0xb86e2517caab8e7aecc7472f29c0cbdaaf28e5e5": {
+      "asset": "0x016C306e103FbF48EC24810D078C65aD13c5f11B",
+      "name": "Silo bwS Rateprovider",
+      "summary": "safe",
+      "review": "./SiloWrappedRateprovider.md",
+      "warnings": [""],
+      "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
+      "upgradeableComponents": []
     }
   }
 }
