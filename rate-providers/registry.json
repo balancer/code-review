@@ -2356,10 +2356,10 @@
       "warnings": [],
       "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
       "upgradeableComponents": [
-          {
+        {
           "entrypoint": "0x7B43E3875440B44613DC3bC08E7763e6Da63C8f8",
           "implementationReviewed": "0x8b98bcd9b1f8ae112fb2b58b45c3bc9a75cc4d0e"
-          }
+        }
       ]
     },
     "0x23B315083e80804A696b26093974c61eBC78CC9a": {
@@ -3226,6 +3226,20 @@
       "warnings": [""],
       "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
       "upgradeableComponents": []
+    },
+    "0xfbcee1fcaa2db776b4b575a8da3e8c93ea5eef53": {
+      "asset": "0x9F0dF7799f6FDAd409300080cfF680f5A23df4b1",
+      "name": "Wrapped Origin Sonic Rateprovider",
+      "summary": "safe",
+      "review": "./woSonicRateprovider.md",
+      "warnings": [""],
+      "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x9F0dF7799f6FDAd409300080cfF680f5A23df4b1",
+          "implementationReviewed": "0xb9fa01cbd690dfd5be3d8d667c54bbdd9e41e57d"
+        }
+      ]
     }
   }
 }
