@@ -29,7 +29,11 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 - [ ] The Rate Provider is upgradeable (e.g., via a proxy architecture or an `onlyOwner` function that updates the price source address). 
 
 - [x] Some other portion of the price pipeline is upgradeable (e.g., the token itself, an oracle, or some piece of a larger system that tracks the price).
-  Part of the rate computation relies on how `totalAssets` is calculated, and `totalAssets` can be changed by the `SuperVaultStrategist` calling `rebalance` to shift assets into any of the whitelisted vaults. The whitelist is controlled by the `SuperVaultManager`.
+  Part of the rate computation relies on how `totalAssets` is calculated, and `totalAssets` can be changed by the `SuperVaultStrategist` calling `rebalance` to shift assets into any of the whitelisted vaults. The whitelist is controlled by the `SuperVaultManager`. The SuperVault validates data accuracy during `rebalance` operations by performing:
+  - Duplicate checks
+  - Whitelist checks
+  - Is superform from factory check
+  - Superform existence check
   
   #### [ethereum:0x9fA39387D479fd456367190c82739eD6dC86491D](https://etherscan.io/address/0x9fA39387D479fd456367190c82739eD6dC86491D#code)
   The relevant [vault](https://etherscan.io/address/0xF7DE3c70F2db39a188A81052d2f3C8e3e217822a#readContract) roles are both EoAs
