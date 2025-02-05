@@ -3241,6 +3241,15 @@
         }
       ]
     },
+    "0xECDfaa456a01c9804Fc8D11955CF4B54E0eA2Bd7": {
+      "asset": "0x50c42deacd8fc9773493ed674b675be577f2634b",
+      "name": "ConstantRateProvider",
+      "summary": "safe",
+      "review": "./WETHConstantRateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
+    },
     "0xb86e2517caab8e7aecc7472f29c0cbdaaf28e5e5": {
       "asset": "0x016C306e103FbF48EC24810D078C65aD13c5f11B",
       "name": "Silo bwS Rateprovider",
