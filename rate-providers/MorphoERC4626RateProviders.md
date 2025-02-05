@@ -11,12 +11,20 @@
     - Steakhouse v1.1 USDC - csUSDC [ethereum:0xB0926Cfc3aC047035b11d9afB85DC782E6D9d76A](https://etherscan.io/address/0xB0926Cfc3aC047035b11d9afB85DC782E6D9d76A#code)
     - Gauntlet wETH Ecosystem v1.1[ethereum:0xD231564648C94542C01e9a528c9cAa033bbf274C](https://etherscan.io/address/0xD231564648C94542C01e9a528c9cAa033bbf274C#code)
     - IndexCoop mhyETH v1.1[ethereum:0x3BD4B2174498b3Aa01be0acFa0F775472b2dC30b](https://etherscan.io/address/0x3BD4B2174498b3Aa01be0acFa0F775472b2dC30b#code)
+    - Seamless USDC v1.1[base:0xc11082BbDBB8AaB12d0947EEAD2c8bc28E1b3B34](https://basescan.org/address/0xc11082BbDBB8AaB12d0947EEAD2c8bc28E1b3B34#code)
+    - Spark USDC v1.1[base:0x9e0926C3c5D2F42845Bf4F980F926b60323872d7](https://basescan.org/address/0x9e0926C3c5D2F42845Bf4F980F926b60323872d7#code)
+    - Ionic USDC v1.1[base:0xdCb03A77bB54E0a05D591e543FA39E9c46E8Febb](https://basescan.org/address/0xdCb03A77bB54E0a05D591e543FA39E9c46E8Febb#code)
+    - Ionic Ecosystem WETH v1.1[base:0xcc028cF7F8fA7986001fa7063A2E26b3094b42fd](https://basescan.org/address/0xcc028cF7F8fA7986001fa7063A2E26b3094b42fd#code)
+    - Steakhouse USDQ [ethereum:0xb42Ecf39FC9251f2B2F094e02e6cE4557f364436](https://etherscan.io/address/0xb42Ecf39FC9251f2B2F094e02e6cE4557f364436#code)
+    - Steakhouse USDR [ethereum:0xc6465F11D8Db8DAcB5c94729c4F2b3Bd725a2392](https://etherscan.io/address/0xc6465F11D8Db8DAcB5c94729c4F2b3Bd725a2392#code)
+    - Steakhouse USDT Lite [ethereum:0x23B315083e80804A696b26093974c61eBC78CC9a](https://etherscan.io/address/0x23B315083e80804A696b26093974c61eBC78CC9a#code)
 
 
 
 - Audit report(s):
     - [Security Reviews & Formal Verifications](https://docs.morpho.org/security-reviews/)
     - [MetaMorpho Spearbit Audit](https://github.com/morpho-org/metamorpho/blob/main/audits/2023-11-14-metamorpho-cantina-managed-review.pdf)
+    - [MetaMorpho v1.1 Audits](https://github.com/morpho-org/metamorpho-v1.1/tree/main/audits)
 
 ## Context
 The ERC4626 RateProvider fetches the rate of MetaMorpho Vault tokens in terms of the underlying asset. The exchange rate is provided via the conversion between totalAssets and totalSupply. The Morpho contract only determines the potential market parameters, assets, collaterals, beneficiary, owner, fee, and cooldown periods related to the vault curator. There are no entry or exit fees, and no time locks for users to deposit and withdraw from this vault. 
@@ -68,7 +76,25 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
     #### IndexCoop mhyETH (wETH) v1.1
     For [IndexCoop mhyETH](https://etherscan.io/address/0x701907283a57FF77E255C3f1aAD790466B8CE4ef) some allocators are eoas.
     - 0x622271CEC64F6106020F31773Ec5293F4677cb95
-
+    #### Seamless USDC v1.1
+    For [Seamless USDC](https://basescan.org/address/0x616a4e1db48e22028f6bbf20444cd3b8e3273738) some allocators are eoas.
+    - 0x8a438a7fb092E5D074a7aDe03E7eD25015817c58
+    #### Spark USDC v1.1
+    For [Spark USDC](https://basescan.org/address/0x7BfA7C4f149E7415b73bdeDfe609237e29CBF34A) no allocators are eoas. Only one allocator exists, which is a multi-sig.
+    #### Ionic USDC v1.1
+    For [Ionic USDC](https://basescan.org/address/0x23479229e52Ab6aaD312D0B03DF9F33B46753B5e#events) some allocators are eoas.
+    - 0x1f9A8c72327242b64bd21945E9750F5C5F50Eee1 
+    #### Ionic WETH v1.1
+    For [Ionic WETH](https://basescan.org/address/0x5A32099837D89E3a794a44fb131CBbAD41f87a8C) some allocators are eoas.
+    - 0x5f0761eed6Cd7F0Bd91d847E955cD78Bb50B0647
+    #### [Steakhouse USDQ](https://etherscan.io/address/0xA1b60d96e5C50dA627095B9381dc5a46AF1a9a42)
+    - upgradeable component: [Quantoz USDQ](https://etherscan.io/address/0xc83e27f270cce0A3A3A29521173a83F402c1768b#code) ( the asset of the vault )
+    - admin: [MultiSigWallet Contract](https://etherscan.io/address/0xa6724f792002d5677a7bc370986e1b580b8773e7#code) ( with 5 owners )
+    - implementation: [HadronToken](https://etherscan.io/address/0xbae166f5e8b4b6735341446b1405fa779a92d7c7#code)
+    #### [Steakhouse USDR](https://etherscan.io/address/0x30881baa943777f92dc934d53d3bfdf33382cab3)
+    - upgradeable component: [StablR USD](https://etherscan.io/address/0x7B43E3875440B44613DC3bC08E7763e6Da63C8f8#code) ( the asset of the vault )
+    - admin: [MultiSigWallet Contract](https://etherscan.io/address/0xbfff92d76b74cf8f0a56adde7c89aa671a22953c#code) ( with 5 owners )
+    - implementation: [HadronToken](https://etherscan.io/address/0x8b98bcd9b1f8ae112fb2b58b45c3bc9a75cc4d0e#code)
 
 ### Oracles
 - [ ] Price data is provided by an off-chain source (e.g., a Chainlink oracle, a multisig, or a network of nodes).

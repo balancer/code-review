@@ -578,6 +578,15 @@
       "warnings": [""],
       "factory": "0xe548a29631f9E49830bE8edc22d407b2D2915F31",
       "upgradeableComponents": []
+    },
+    "0x998DE64cB90EdF3d205CFDB864E199fDA4d55710": {
+      "asset": "0xd09ACb80C1E8f2291862c4978A008791c9167003",
+      "name": "TreeHouseRateProvider",
+      "summary": "safe",
+      "review": "./ChainLinkRateProvider.md",
+      "warnings": [],
+      "factory": "0x26dEc0e6a4249F28e0f16A1a79808bF9ba308310",
+      "upgradeableComponents": []
     }
   },
   "avalanche": {
@@ -813,6 +822,51 @@
       "factory": "0x0A973B6DB16C2ded41dC91691Cc347BEb0e2442B",
       "upgradeableComponents": []
     },
+    "0x6ac3b3BeCE5AA61C6AB5d50ecd2D47b1f18ACe49": {
+      "asset": "0x2416092f143378750bb29b79ed961ab195cceea5",
+      "name": "ezETH Rate Provider",
+      "summary": "safe",
+      "review": "./ChainLinkRateProvider.md",
+      "warnings": ["chainlink"],
+      "factory": "0x0A973B6DB16C2ded41dC91691Cc347BEb0e2442B",
+      "upgradeableComponents": []
+    },
+    "0xc11082BbDBB8AaB12d0947EEAD2c8bc28E1b3B34": {
+      "asset": "0x616a4E1db48e22028f6bbf20444Cd3b8e3273738",
+      "name": "Seamless USDC Rate Provider",
+      "summary": "safe",
+      "review": "./MorphoERC4626RateProviders.md",
+      "warnings": [],
+      "factory": "0xEfD3aF73d3359014f3B864d37AC672A6d3D7ff1A",
+      "upgradeableComponents": []
+    },
+    "0x9e0926C3c5D2F42845Bf4F980F926b60323872d7": {
+      "asset": "0x7BfA7C4f149E7415b73bdeDfe609237e29CBF34A",
+      "name": "Spark USDC Rate Provider",
+      "summary": "safe",
+      "review": "./MorphoERC4626RateProviders.md",
+      "warnings": [],
+      "factory": "0xEfD3aF73d3359014f3B864d37AC672A6d3D7ff1A",
+      "upgradeableComponents": []
+    },
+    "0xdCb03A77bB54E0a05D591e543FA39E9c46E8Febb": {
+      "asset": "0x23479229e52Ab6aaD312D0B03DF9F33B46753B5e",
+      "name": "Ionic Ecosystem USDC Rate Provider",
+      "summary": "safe",
+      "review": "./MorphoERC4626RateProviders.md",
+      "warnings": [],
+      "factory": "0xEfD3aF73d3359014f3B864d37AC672A6d3D7ff1A",
+      "upgradeableComponents": []
+    },
+    "0xcc028cF7F8fA7986001fa7063A2E26b3094b42fd": {
+      "asset": "0x5A32099837D89E3a794a44fb131CBbAD41f87a8C",
+      "name": "Ionic Ecosystem WETH Rate Provider",
+      "summary": "safe",
+      "review": "./MorphoERC4626RateProviders.md",
+      "warnings": [],
+      "factory": "0xEfD3aF73d3359014f3B864d37AC672A6d3D7ff1A",
+      "upgradeableComponents": []
+    },
     "0x14BD1e9b30007510c2aFE3a7a8053A6DE5605d35": {
       "asset": "0xe298b938631f750DD409fB18227C4a23dCdaab9b",
       "name": "ERC4626RateProvider",
@@ -875,6 +929,20 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0x84394fa6a39bdff63b255622da362b113c690267": {
+      "asset": "0x5875eEE11Cf8398102FdAd704C9E96607675467a",
+      "name": "SavingsUSDSRateProvider",
+      "summary": "safe",
+      "review": "./sUSDSBaseRateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xa3931d71877C0E7a3148CB7Eb4463524FEc27fbD",
+          "implementationReviewed": "0x4e7991e5C547ce825BdEb665EE14a3274f9F61e0"
+        }
+      ]
     }
   },
   "ethereum": {
@@ -2238,6 +2306,84 @@
       "warnings": [""],
       "factory": "0x4E185b1502Fea7a06B63fDdA6de38F92C9528566",
       "upgradeableComponents": []
+    },
+    "0xdd8AEBC13B3DFaF85e3B512d26681987aD2c43b2": {
+      "asset": "0xb51EDdDD8c47856D81C8681EA71404Cec93E92c6",
+      "name": "ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./statATokenv2RateProvider.md",
+      "warnings": [""],
+      "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xb51EDdDD8c47856D81C8681EA71404Cec93E92c6",
+          "implementationReviewed": "0x487c2C53c0866F0A73ae317bD1A28F63ADcD9aD1"
+        },
+        {
+          "entrypoint": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+          "implementationReviewed": "0xeF434E4573b90b6ECd4a00f4888381e4D0CC5Ccd"
+        }
+      ]
+    },
+    "0x1f037c849CF2448d67A120543EA4ec3CE5A95FcA": {
+      "asset": "0x3976d71e7DdFBaB9bD120Ec281B7d35fa0F28528",
+      "name": "ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./LoopRateProvider.md",
+      "warnings": ["donation"],
+      "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
+      "upgradeableComponents": []
+    },
+    "0xb42Ecf39FC9251f2B2F094e02e6cE4557f364436": {
+      "asset": "0xA1b60d96e5C50dA627095B9381dc5a46AF1a9a42",
+      "name": "Steakhouse USDQ Rate Provider",
+      "summary": "safe",
+      "review": "./MorphoERC4626RateProviders.md",
+      "warnings": [],
+      "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xc83e27f270cce0A3A3A29521173a83F402c1768b",
+          "implementationReviewed": "0xbae166f5e8b4b6735341446b1405fa779a92d7c7"
+        }
+      ]
+    },
+    "0xc6465F11D8Db8DAcB5c94729c4F2b3Bd725a2392": {
+      "asset": "0x30881Baa943777f92DC934d53D3bFdF33382cab3",
+      "name": "Steakhouse USDR Rate Provider",
+      "summary": "safe",
+      "review": "./MorphoERC4626RateProviders.md",
+      "warnings": [],
+      "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x7B43E3875440B44613DC3bC08E7763e6Da63C8f8",
+          "implementationReviewed": "0x8b98bcd9b1f8ae112fb2b58b45c3bc9a75cc4d0e"
+        }
+      ]
+    },
+    "0x23B315083e80804A696b26093974c61eBC78CC9a": {
+      "asset": "0x097FFEDb80d4b2Ca6105a07a4D90eB739C45A666",
+      "name": "Steakhouse USDT-Lite Rate Provider",
+      "summary": "safe",
+      "review": "./MorphoERC4626RateProviders.md",
+      "warnings": [],
+      "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
+      "upgradeableComponents": []
+    },
+    "0x9CB622FC4757386dc8e79d1cC66FC912dD4bBf57": {
+      "asset": "0x5E362eb2c0706Bd1d134689eC75176018385430B",
+      "name": "VaultRateOracle",
+      "summary": "safe",
+      "review": "./MellowRateProviders.md",
+      "warnings": ["donation"],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x5E362eb2c0706Bd1d134689eC75176018385430B",
+          "implementationReviewed": "0xe2D2E90122cb203CF1565a37ef90a256843A825A"
+        }
+      ]
     }
   },
   "fantom": {
@@ -3092,20 +3238,6 @@
         {
           "entrypoint": "0x9F0dF7799f6FDAd409300080cfF680f5A23df4b1",
           "implementationReviewed": "0xb9fa01cbd690dfd5be3d8d667c54bbdd9e41e57d"
-        }
-      ]
-    },
-    "0x9CB622FC4757386dc8e79d1cC66FC912dD4bBf57": {
-      "asset": "0x5E362eb2c0706Bd1d134689eC75176018385430B",
-      "name": "VaultRateOracle",
-      "summary": "safe",
-      "review": "./MellowRateProviders.md",
-      "warnings": ["donation"],
-      "factory": "",
-      "upgradeableComponents": [
-        {
-          "entrypoint": "0x5E362eb2c0706Bd1d134689eC75176018385430B",
-          "implementationReviewed": "0xe2D2E90122cb203CF1565a37ef90a256843A825A"
         }
       ]
     }
