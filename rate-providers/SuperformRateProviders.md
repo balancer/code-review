@@ -1,5 +1,3 @@
-\<Template: Copy this file and replace all elements inside \<\> brackets. Delete this particular block.\>
-
 # Rate Provider: `ERC4626RateProvider`
 
 ## Details
