@@ -2,7 +2,7 @@
 
 ## Details
 - Reviewed by: @franzns
-- Checked by: 
+- Checked by: @mkflow27
 - Deployed at:
     - [sonic:0xECDfaa456a01c9804Fc8D11955CF4B54E0eA2Bd7](https://sonicscan.org/address/0xECDfaa456a01c9804Fc8D11955CF4B54E0eA2Bd7)
 - Audit report(s):
@@ -43,4 +43,4 @@ To save time, we do not bother pointing out low-severity/informational issues or
 ## Conclusion
 **Summary judgment: SAFE**
 
-The required `getRate` value for this particular case scales the balances to the required pricing point on the gyro pricing curve. For more information see also the [gauge proposal](https://forum.balancer.fi/t/bip-731-enable-several-e-clp-gauges-base/6148). Note: This rateProvider should not be used for other pools to provide rate data for USDC or similar stablecoins. 
+The required `getRate` value for this particular case scales the balances to the required pricing point on the gyro pricing curve. For more information see also the [gauge proposal](https://forum.balancer.fi/t/bip-731-enable-several-e-clp-gauges-base/6148). Note: This rateProvider should not be used for other pools to provide rate data for WETH or similar stablecoins. 
