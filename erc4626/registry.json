@@ -422,7 +422,7 @@
       "summary": "safe",
       "review": "./StaticATokenLMAvalonReview.md",
       "warnings": [],
-      "isCompatible": "false"
+      "isCompatible": "true"
     },
     "0xD31E89Ffb929b38bA60D1c7dBeB68c7712EAAb0a": {
       "asset": "0x541FD749419CA806a8bc7da8ac23D346f2dF8B77",
