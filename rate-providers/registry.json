@@ -588,6 +588,15 @@
       "factory": "0xe548a29631f9E49830bE8edc22d407b2D2915F31",
       "upgradeableComponents": []
     },
+    "0xfa5D15F15bC1BeBf3B413d9373E27586ac799dB6": {
+      "asset": "0x4ff50C17df0D1b788d021ACd85039810a1aA68A1",
+      "name": "Wrapped Aave Arbitrum ezETH",
+      "summary": "safe",
+      "review": "./MarketRateTransformerRateProviders.md",
+      "warnings": [""],
+      "factory": "0xe548a29631f9E49830bE8edc22d407b2D2915F31",
+      "upgradeableComponents": []
+    },
     "0x998DE64cB90EdF3d205CFDB864E199fDA4d55710": {
       "asset": "0xd09ACb80C1E8f2291862c4978A008791c9167003",
       "name": "TreeHouseRateProvider",
@@ -724,6 +733,15 @@
     }
   },
   "base": {
+    "0x829Be222f36C6B7D48a7e1270b3c070BA2Ee98C4": {
+      "asset": "0xe9F2a5F9f3c846f29066d7fB3564F8E6B6b2D65b",
+      "name": "Superform USDC Rate Provider",
+      "summary": "safe",
+      "review": "./SuperformRateProviders.md",
+      "warnings": [],
+      "factory": "0xEfD3aF73d3359014f3B864d37AC672A6d3D7ff1A",
+      "upgradeableComponents": []
+    },
     "0xe1b1e024f4Bc01Bdde23e891E081b76a1A914ddd": {
       "asset": "0xd95ca61CE9aAF2143E81Ef5462C0c2325172E028",
       "name": "WrappedUsdPlusRateProvider",
@@ -982,6 +1000,15 @@
     }
   },
   "ethereum": {
+    "0x9fA39387D479fd456367190c82739eD6dC86491D": {
+      "asset": "0xF7DE3c70F2db39a188A81052d2f3C8e3e217822a",
+      "name": "Superform USDC Rate Provider",
+      "summary": "safe",
+      "review": "./SuperformRateProviders.md",
+      "warnings": [],
+      "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
+      "upgradeableComponents": []
+    },
     "0x1aCB59d7c5D23C0310451bcd7bA5AE46d18c108C": {
       "asset": "0xF1617882A71467534D14EEe865922de1395c9E89",
       "name": "asETHRateProvider",
