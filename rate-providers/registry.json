@@ -605,6 +605,20 @@
       "warnings": [],
       "factory": "0x26dEc0e6a4249F28e0f16A1a79808bF9ba308310",
       "upgradeableComponents": []
+    },
+    "0xb1D5c23DbfCb36864f32bc704AE4205BB9720C33": {
+      "asset": "0x895e15020C3f52ddD4D8e9514eB83C39F53B1579",
+      "name": "YieldFi yUSD Rate Provider",
+      "summary": "safe",
+      "review": "./yUSDRateProviderArbitrum.md",
+      "warnings": [""],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xE88DA976479461080072D6461128fd401B6D4Dcb",
+          "implementationReviewed": "0xfeae389573e64b4ada95a494090f2399415c8b20"
+        }
+      ]
     }
   },
   "avalanche": {
@@ -995,6 +1009,20 @@
         {
           "entrypoint": "0xa3931d71877C0E7a3148CB7Eb4463524FEc27fbD",
           "implementationReviewed": "0x4e7991e5C547ce825BdEb665EE14a3274f9F61e0"
+        }
+      ]
+    },
+    "0xD47c15CDD7c734db321F07CB9AB1f852aE9A0b83": {
+      "asset": "0x895e15020C3f52ddD4D8e9514eB83C39F53B1579",
+      "name": "YieldFi yUSD Rate Provider",
+      "summary": "safe",
+      "review": "./yUSDRateProviderBase.md",
+      "warnings": [""],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xE88DA976479461080072D6461128fd401B6D4Dcb",
+          "implementationReviewed": "0xfeae389573e64b4ada95a494090f2399415c8b20"
         }
       ]
     }
@@ -2445,6 +2473,28 @@
         {
           "entrypoint": "0x5E362eb2c0706Bd1d134689eC75176018385430B",
           "implementationReviewed": "0xe2D2E90122cb203CF1565a37ef90a256843A825A"
+        }
+      ]
+    },
+    "0xa65ffBa1CD05414df3fD24Bf5dc319B47450Fbf4": {
+      "asset": "0x1CE7D9942ff78c328A4181b9F3826fEE6D845A97",
+      "name": "YieldFi yUSD Rate Provider",
+      "summary": "safe",
+      "review": "./yUSDRateProvider.md",
+      "warnings": [""],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x1CE7D9942ff78c328A4181b9F3826fEE6D845A97",
+          "implementationReviewed": "0x79E243f6504615497c1374Ea0B6365Dd1Ef82C8d"
+        },
+        {
+          "entrypoint": "0x9305a0cc13293b69deE0B9d281D21144b029BdFf",
+          "implementationReviewed": "0xf2De8048f002b70202D05249810E72914651Aa26"
+        },
+        {
+          "entrypoint": "0xf4eF3ba63593dfD0967577B2bb3C9ba51D78427b",
+          "implementationReviewed": "0xa52BC229C750b35C10d54F23aD3cb6E8155df01a"
         }
       ]
     }
