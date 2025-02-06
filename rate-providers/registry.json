@@ -2347,7 +2347,7 @@
     "0xa65ffBa1CD05414df3fD24Bf5dc319B47450Fbf4": {
       "asset": "0x1CE7D9942ff78c328A4181b9F3826fEE6D845A97",
       "name": "YieldFi yUSD Rate Provider",
-      "summary": "unsafe",
+      "summary": "safe",
       "review": "./yUSDRateProvider.md",
       "warnings": [""],
       "factory": "",

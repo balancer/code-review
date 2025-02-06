@@ -29,15 +29,15 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
     
     - upgradeable component: `YToken` ([ethereum:0x1CE7D9942ff78c328A4181b9F3826fEE6D845A97](https://etherscan.io/address/0x1CE7D9942ff78c328A4181b9F3826fEE6D845A97#code))
     - admin address: [ethereum:0x7CF37712eb0b50644e70828d5F5c3CE5B054c479](https://etherscan.io/address/0x7CF37712eb0b50644e70828d5F5c3CE5B054c479)
-    - admin type: EOA
+    - multisig threshold/signers: 2/4
     ---
     - upgradeable component: `Administrator` ([ethereum:0x9305a0cc13293b69deE0B9d281D21144b029BdFf](https://etherscan.io/address/0x9305a0cc13293b69deE0B9d281D21144b029BdFf#code))
     - admin address: [ethereum:0x7CF37712eb0b50644e70828d5F5c3CE5B054c479](https://etherscan.io/address/0x7CF37712eb0b50644e70828d5F5c3CE5B054c479)
-    - admin type: EOA
+    - multisig threshold/signers: 2/4
     ---
     - upgradeable component: `Yield` ([ethereum:0xf4eF3ba63593dfD0967577B2bb3C9ba51D78427b](https://etherscan.io/address/0xf4eF3ba63593dfD0967577B2bb3C9ba51D78427b#code))
     - admin address: [ethereum:0x7CF37712eb0b50644e70828d5F5c3CE5B054c479](https://etherscan.io/address/0x7CF37712eb0b50644e70828d5F5c3CE5B054c479)
-    - admin type: EOA
+    - multisig threshold/signers: 2/4
 
 
 ### Oracles
@@ -54,6 +54,6 @@ To save time, we do not bother pointing out low-severity/informational issues or
 No additional findings.
 
 ## Conclusion
-**Summary judgment: UNUSABLE**
+**Summary judgment: USABLE**
 
-Rate provider is a standard ERC4626RateProvider that relies on totalAssets/totalSupply, but all other contracts in the pipeline are upgradeable and managed by an EOA, such as, the erc4626 asset `yUSD` and the `yield` contract that can directly influence the rate by updating `totalAssets`.
+Rate provider is a standard ERC4626RateProvider that relies on totalAssets/totalSupply. All other contracts in the pipeline that are upgradeable and can directly influence the rate are managed by multisigs.
