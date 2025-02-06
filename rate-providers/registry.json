@@ -926,7 +926,7 @@
       "factory": "",
       "upgradeableComponents": []
     },
-    "0xb1D5c23DbfCb36864f32bc704AE4205BB9720C33": {
+    "0xD47c15CDD7c734db321F07CB9AB1f852aE9A0b83": {
       "asset": "0x895e15020C3f52ddD4D8e9514eB83C39F53B1579",
       "name": "YieldFi yUSD Rate Provider",
       "summary": "safe",
