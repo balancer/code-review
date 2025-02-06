@@ -2,7 +2,7 @@
 
 ## Details
 - Reviewed by: @brunoguerios
-- Checked by: @\<GitHub handle of secondary reviewer\>
+- Checked by: @mkflow27
 - Deployed at:
     - [base:0xD47c15CDD7c734db321F07CB9AB1f852aE9A0b83](https://basescan.org/address/0xD47c15CDD7c734db321F07CB9AB1f852aE9A0b83)
 - Audit report(s):
@@ -25,7 +25,7 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 ### Administrative Privileges
 - [ ] The Rate Provider is upgradeable (e.g., via a proxy architecture or an `onlyOwner` function that updates the price source address).
 
-- [x] Some other portion of the price pipeline is upgradeable (e.g., the token itself, an oracle, or some piece of a larger system that tracks the price). \<Delete this hint: If unchecked, delete all of the bullets below.\>
+- [x] Some other portion of the price pipeline is upgradeable (e.g., the token itself, an oracle, or some piece of a larger system that tracks the price).
     - upgradeable component: `Api3ReaderProxyV1` ([base:0xE88DA976479461080072D6461128fd401B6D4Dcb](https://basescan.org/address/0xE88DA976479461080072D6461128fd401B6D4Dcb#code))
     - admin address: [base:0x2AAE699ed04BBbD068f67a5b3C813eBB35f2c9E8](https://basescan.org/address/0x2AAE699ed04BBbD068f67a5b3C813eBB35f2c9E8)
     - admin type: multisig
