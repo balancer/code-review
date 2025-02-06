@@ -2,10 +2,11 @@
 
 ## Details
 - Reviewed by: @franzns
-- Checked by: 
+- Checked by: @mkflow27
 - Deployed at:
     - [sonic:0x78557d8a83fe7c6d9f9983d00e5c0e08cc3335e6](https://sonicscan.org/address/0x78557d8a83fe7c6d9f9983d00e5c0e08cc3335e6#code)
     - [sonic:0x9d2d4351c1b3718d7a65ef21f54c86c665964670](https://sonicscan.org/address/0x9d2d4351c1b3718d7a65ef21f54c86c665964670#code)
+    - [sonic:0xb86e2517caab8e7aecc7472f29c0cbdaaf28e5e5](https://sonicscan.org/address/0xb86e2517caab8e7aecc7472f29c0cbdaaf28e5e5#code)
 - Audits:
     - [Silo V2 audits](https://docs.silo.finance/audits-and-tests)
 
