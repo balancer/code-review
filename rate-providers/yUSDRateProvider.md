@@ -2,7 +2,7 @@
 
 ## Details
 - Reviewed by: @brunoguerios
-- Checked by: @\<GitHub handle of secondary reviewer\>
+- Checked by: @mkflow27
 - Deployed at:
     - [ethereum:0xa65ffBa1CD05414df3fD24Bf5dc319B47450Fbf4](https://etherscan.io/address/0xa65ffBa1CD05414df3fD24Bf5dc319B47450Fbf4)
 - Audit report(s):
@@ -28,15 +28,15 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 - [x] Some other portion of the price pipeline is upgradeable (e.g., the token itself, an oracle, or some piece of a larger system that tracks the price).
     
     - upgradeable component: `YToken` ([ethereum:0x1CE7D9942ff78c328A4181b9F3826fEE6D845A97](https://etherscan.io/address/0x1CE7D9942ff78c328A4181b9F3826fEE6D845A97#code))
-    - admin address: [ethereum:0x7CF37712eb0b50644e70828d5F5c3CE5B054c479](https://etherscan.io/address/0x7CF37712eb0b50644e70828d5F5c3CE5B054c479)
+    - admin address: [ethereum:0x7c2c44a988E0B74bcaE644fC8cD1200fcF727001](https://etherscan.io/address/0x7c2c44a988E0B74bcaE644fC8cD1200fcF727001)
     - multisig threshold/signers: 2/4
     ---
     - upgradeable component: `Administrator` ([ethereum:0x9305a0cc13293b69deE0B9d281D21144b029BdFf](https://etherscan.io/address/0x9305a0cc13293b69deE0B9d281D21144b029BdFf#code))
-    - admin address: [ethereum:0x7CF37712eb0b50644e70828d5F5c3CE5B054c479](https://etherscan.io/address/0x7CF37712eb0b50644e70828d5F5c3CE5B054c479)
+    - admin address: [ethereum:0x7c2c44a988E0B74bcaE644fC8cD1200fcF727001](https://etherscan.io/address/0x7c2c44a988E0B74bcaE644fC8cD1200fcF727001)
     - multisig threshold/signers: 2/4
     ---
     - upgradeable component: `Yield` ([ethereum:0xf4eF3ba63593dfD0967577B2bb3C9ba51D78427b](https://etherscan.io/address/0xf4eF3ba63593dfD0967577B2bb3C9ba51D78427b#code))
-    - admin address: [ethereum:0x7CF37712eb0b50644e70828d5F5c3CE5B054c479](https://etherscan.io/address/0x7CF37712eb0b50644e70828d5F5c3CE5B054c479)
+    - admin address: [ethereum:0x7c2c44a988E0B74bcaE644fC8cD1200fcF727001](https://etherscan.io/address/0x7c2c44a988E0B74bcaE644fC8cD1200fcF727001)
     - multisig threshold/signers: 2/4
 
 
