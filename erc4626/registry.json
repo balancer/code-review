@@ -463,6 +463,14 @@
       "review": "./SiloV2Review.md",
       "warnings": [],
       "isCompatible": "true"
+    },
+    "0x219656F33c58488D09d518BaDF50AA8CdCAcA2Aa": {
+      "asset": "0x50c42dEAcD8Fc9773493ED674b675bE577f2634b",
+      "name": "SiloV2 wETH ID 26",
+      "summary": "safe",
+      "review": "./SiloV2Review.md",
+      "warnings": [],
+      "isCompatible": "true"
     }
   },
   "sepolia": {
