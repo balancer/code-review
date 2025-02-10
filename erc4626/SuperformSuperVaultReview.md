@@ -26,8 +26,10 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 ### Administrative Privileges
 - [ ] The ERC4626 Vault is upgradeable (e.g., via a proxy architecture or an `onlyOwner` function that updates the price source address).
 
-### Buffer blocklist
-- [x] The reviewed ERC4626 Vault should be added to the blocked buffers metadata list. 
+### Compatibility 
+- [x] The reviewed ERC4626 Vault shall be used for swaps. 
+- [x] The reviewed ERC4626 Vault shall be used to add and remove liquidity to pools using wrapped tokens. 
+- [ ] The reviewed ERC4626 Vault shall be used to add and remove liquidity to pools using underlying tokens.
 
 ### Common Manipulation Vectors
 - [ ] The ERC4626 Vault is susceptible to donation attacks.

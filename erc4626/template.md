@@ -33,8 +33,10 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
         - multisig timelock? \<YES: minimum duration/NO\>
         - trustworthy signers? \<YES/NO\> \<Delete this hint: Are the signers known entities such as Vitalik, Hudson, samczsun, or Fernando? Or are they random addresses?\>
 
-### Buffer blocklist
-- [ ] The reviewed ERC4626 Vault should be added to the blocked buffers metadata list. 
+### Compatibility 
+- [ ] The reviewed ERC4626 Vault shall be used for swaps. <Delete this hint: Does the ERC4626 pass the fork tests and we can use the buffer for swapping underlying to wrapped and vice versa?>
+- [ ] The reviewed ERC4626 Vault shall be used to add and remove liquidity to pools using wrapped tokens. <Delete this hint: Do we want to be able to add liquidity to the pool using wrapped tokens? This is based on the original issue request, default should be true.>
+- [ ] The reviewed ERC4626 Vault shall be used to add and remove liquidity to pools using underlying tokens. <Delete this hint: Does the ERC4626 pass the fork tests and we can (and want based on the initital issue request) to use underlying tokens to add or remove liquidity to pools?>
 
 ### Common Manipulation Vectors
 - [ ] The ERC4626 Vault is susceptible to donation attacks.
