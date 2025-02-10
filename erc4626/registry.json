@@ -270,7 +270,9 @@
       "summary": "safe",
       "review": "./SuperformSuperVaultReview.md",
       "warnings": ["buffer"],
-      "useBufferForSwaps": "false"
+      "useBufferForSwaps": "false",
+      "useUnderlyingForAddRemove": "false",
+      "useWrappedForAddRemove": "true"
     },
     "0x2371e134e3455e0593363cBF89d3b6cf53740618": {
       "asset": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
