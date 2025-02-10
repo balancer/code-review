@@ -18,7 +18,7 @@ const schema = {
             summary: { type: "string", enum: ["safe", "unsafe"] },
             review: { type: "string", minLength: 1 },
             warnings: { type: "array", items: { type: "string" } },
-            useBufferForSwaps: { type: "string", enum: ["true", "false"] },
+            canUseBufferForSwaps: { type: "string", enum: ["true", "false"] },
             useUnderlyingForAddRemove: {
               type: "string",
               enum: ["true", "false"],
