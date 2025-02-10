@@ -27,9 +27,9 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 
 - [x] Some other portion of the price pipeline is upgradeable (e.g., the token itself, an oracle, or some piece of a larger system that tracks the price).
     - upgradeable component: `RatioFeed` ([ethereum:0xFd73Be536503B5Aa80Bf99D1Fd65b1306c69B191](https://etherscan.io/address/0xFd73Be536503B5Aa80Bf99D1Fd65b1306c69B191#code))
-    - admin address: [ethereum:0xa83b095cd14A89717e52718c7244885255e83223](https://etherscan.io/address/0xa83b095cd14A89717e52718c7244885255e83223)
-    - admin type: EOA
-        - comment: It appears the authorised entity is the `owner` of a ProxyAdmin 
+    - admin address: [ethereum:0x8e6C8799B542E507bfDDCA1a424867e885D96e79](https://etherscan.io/address/0x8e6C8799B542E507bfDDCA1a424867e885D96e79#readProxyContract3)
+    - admin type: Multisig (3/5) - Executor role of the timelock
+    - timelock: Yes, with minDelay being 300 seconds. 
 
 ### Oracles
 - [x] Price data is provided by an off-chain source (e.g., a Chainlink oracle, a multisig, or a network of nodes).
@@ -74,6 +74,6 @@ To save time, we do not bother pointing out low-severity/informational issues or
 
 
 ## Conclusion
-**Summary judgment: \<SAFE/UNSAFE\>**
+**Summary judgment: Usable**
 
-\<Delete this hint: Formulate a nuanced conclusion here. Remember, it's okay if some of the boxes above are checked as long as reasonable protections are in place. If the Rate Provider is very obviously safe, say so. If it's very obviously not, say so: what specifically needs to change before it can be considered safe? If the conclusion is hazy, explain why, and leave the final determination up to the reader. Examples of completely unacceptable conditions include, but are not limited to: EOA admins, EOA price sources, market prices (instead of deposit/redemption prices).\>
+This rate provider should work with Balancer pools. Upgradeability is guarded behind multisigs and the updating of the rate is guarded by some sanity checks. The possibility of `repairRatioFor` updating the rate with a improper value exists and the Multisig signers need to validate the data.
