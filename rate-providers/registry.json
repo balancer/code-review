@@ -2497,6 +2497,20 @@
           "implementationReviewed": "0xa52BC229C750b35C10d54F23aD3cb6E8155df01a"
         }
       ]
+    },
+    "0x3ba1a97D96F53611C4b2A788A5aa65c840d94c54": {
+      "asset": "0x8E0789d39db454DBE9f4a77aCEF6dc7c69f6D552",
+      "name": "CombinedRateProvider",
+      "summary": "safe",
+      "review": "./InceptionLRTRateProvider_2.md",
+      "warnings": [""],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xFd73Be536503B5Aa80Bf99D1Fd65b1306c69B191",
+          "implementationReviewed": "0x2356d46D89e056F222185ef101165e88073941Bd"
+        }
+      ]
     }
   },
   "fantom": {
