@@ -31,7 +31,7 @@ const schema = {
             "summary",
             "review",
             "warnings",
-            "useBufferForSwaps",
+            "canUseBufferForSwaps",
             "useUnderlyingForAddRemove",
             "useWrappedForAddRemove",
           ],
