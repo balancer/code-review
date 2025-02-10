@@ -1,18 +1,15 @@
-# Rate Provider: `ConstantRateProvider`
+# Rate Provider: `SavingsUSDSRateProvider`
 
 ## Details
 - Reviewed by: @mkflow27
-- Checked by: @danielmkm
+- Checked by: @\<GitHub handle of secondary reviewer\>
 - Deployed at:
-    - [arbitrum:0x3a216B01db971Bf28D171C9dA44Cc8C89867697F](https://arbiscan.io/address/0x3a216B01db971Bf28D171C9dA44Cc8C89867697F#code)
-    - [arbitrum:0x72F6Da3b4bd0Ab7028F52339Ee3B1f94fffe2dD0](https://arbiscan.io/address/0x72F6Da3b4bd0Ab7028F52339Ee3B1f94fffe2dD0#code) 
-    - [ethereum:0xD43F5a722e8e7355D790adda4642f392Dfb820a1](https://etherscan.io/address/0xD43F5a722e8e7355D790adda4642f392Dfb820a1#code)
+    - [base:0x84394fa6a39bdff63b255622da362b113c690267](https://basescan.org/address/0x84394fa6a39bdff63b255622da362b113c690267#code)
 - Audit report(s):
-    - [Gyro audits](https://docs.gyro.finance/gyroscope-protocol/audit-reports)
+    - [Chainsecurity audit](https://docs.spark.fi/assets/Chainsecurity-sUSDS.pdf)
 
 ## Context
-This rate provider reports a constant rate which upscales the gyd price to a specific area of the ellipsis pricing function.
-> reason for the constant rate provider is to scale the prices that the pool does its math at to the part of the ellipse that is near 1:1 (as opposed to 2500:1 for ETH pricing). Reason there is because this region is better tested (although in principle, the rounding analysis should apply to a much wider range of parameters and pool prices -- but feels slightly safer to use the scaling)
+This rate Provider is providing a bridged rate from the L1 sUSDS contract. It briges the rate (`chi`) via the Base message bridge. 
 
 ## Review Checklist: Bare Minimum Compatibility
 Each of the items below represents an absolute requirement for the Rate Provider. If any of these is unchecked, the Rate Provider is unfit to use.
@@ -28,7 +25,11 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 ### Administrative Privileges
 - [ ] The Rate Provider is upgradeable (e.g., via a proxy architecture or an `onlyOwner` function that updates the price source address). 
 
-- [ ] Some other portion of the price pipeline is upgradeable (e.g., the token itself, an oracle, or some piece of a larger system that tracks the price).
+- [x] Some other portion of the price pipeline is upgradeable (e.g., the token itself, an oracle, or some piece of a larger system that tracks the price).
+    - upgradeable component: `SUsds` ([ethereum:0xa3931d71877C0E7a3148CB7Eb4463524FEc27fbD](https://etherscan.io/address/0xa3931d71877C0E7a3148CB7Eb4463524FEc27fbD#readProxyContract))
+    - admin address: [ethereum:0xbe8e3e3618f7474f8cb1d074a26affef007e98fb](https://etherscan.io/address/0xbe8e3e3618f7474f8cb1d074a26affef007e98fb#code)
+    - admin type: Spark governance
+
 
 ### Oracles
 - [ ] Price data is provided by an off-chain source (e.g., a Chainlink oracle, a multisig, or a network of nodes).
@@ -38,11 +39,11 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 ### Common Manipulation Vectors
 - [ ] The Rate Provider is susceptible to donation attacks.
 
-
 ## Additional Findings
 To save time, we do not bother pointing out low-severity/informational issues or gas optimizations (unless the gas usage is particularly egregious). Instead, we focus only on high- and medium-severity findings which materially impact the contract's functionality and could harm users.
 
-## Conclusion
-**Summary judgment: SAFE**
 
-The required `getRate` value for this particular case scales the balances to the required pricing point on the gyro pricing curve. For more information see also the [gauge proposal](https://forum.balancer.fi/t/bip-xxx-enable-gauge-for-gyd-wsteth-e-clp-arbitrum/5956). Note: This rateProvider should not be used for other pools to provide rate data for GYD. 
+## Conclusion
+**Summary judgment: USABLE**
+
+The reviewed rate provider should work well with Balancer pools. It works based on a bridged rate from the L1 sUSDS contract. 

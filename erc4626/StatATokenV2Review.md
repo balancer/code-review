@@ -33,6 +33,7 @@
     - [arbitrum:0xf253BD61aEd0E9D62523eA76CD6F38B4a51dA145](https://arbiscan.io/address/0xf253BD61aEd0E9D62523eA76CD6F38B4a51dA145)
     - [arbitrum:0xE6D5923281c89DC989D00817387292387552d5C1](https://arbiscan.io/address/0xE6D5923281c89DC989D00817387292387552d5C1#readProxyContract)
     - [arbitrum:0xD089B4cb88Dacf4e27be869A00e9f7e2E3C18193](https://arbiscan.io/address/0xD089B4cb88Dacf4e27be869A00e9f7e2E3C18193#readProxyContract)
+    - [arbitrum:0x4ff50C17df0D1b788d021ACd85039810a1aA68A1](https://arbiscan.io/address/0x4ff50C17df0D1b788d021ACd85039810a1aA68A1#readProxyContract)    
     - [ethereum:0xb51EDdDD8c47856D81C8681EA71404Cec93E92c6](https://etherscan.io/address/0xb51EDdDD8c47856D81C8681EA71404Cec93E92c6#readProxyContract)
 
 
@@ -286,4 +287,5 @@ The outlined ERC4626 Vaults should work well with Balancer pools. Upgradeability
 - aWBTC: [arbitrum:0x52Dc1FEeFA4f9a99221F93D79da46Ae89b8c0967](https://github.com/balancer/balancer-v3-erc4626-tests/blob/aave-arbitrum/test/arbitrum/ERC4626ArbitrumAaveWBTC.t.sol)
 - aWeETH: [arbitrum:0xD9E3Ef2c12de90E3b03F7b7E3964956a71920d40](https://github.com/balancer/balancer-v3-erc4626-tests/blob/aave-arbitrum/test/arbitrum/ERC4626ArbitrumAaveWeETH.t.sol)
 - awstETH: [arbitrum:0xe98fc055c99DECD8Da0c111B090885d5d15C774E](https://github.com/balancer/balancer-v3-erc4626-tests/blob/aave-arbitrum/test/arbitrum/ERC4626ArbitrumAaveWstETH.t.sol)
+- aezETH: [arbitrum:0x4ff50C17df0D1b788d021ACd85039810a1aA68A1](https://github.com/balancer/balancer-v3-erc4626-tests/blob/aave-arbitrum/test/arbitrum/ERC4626ArbitrumAaveEzETH.t.sol)
 - wapyusd [ethereum:0xb51EDdDD8c47856D81C8681EA71404Cec93E92c6](https://github.com/balancer/balancer-v3-erc4626-tests/pull/21)
