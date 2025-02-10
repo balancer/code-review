@@ -2498,10 +2498,10 @@
         }
       ]
     },
-    "0xae48b92cbc0882a7d70d878e42cc121a62ceb632": {
+    "0x3ba1a97D96F53611C4b2A788A5aa65c840d94c54": {
       "asset": "0x8E0789d39db454DBE9f4a77aCEF6dc7c69f6D552",
-      "name": "InwstETHsRateProvider",
-      "summary": "",
+      "name": "CombinedRateProvider",
+      "summary": "safe",
       "review": "./InceptionLRTRateProvider_2.md",
       "warnings": [""],
       "factory": "",
