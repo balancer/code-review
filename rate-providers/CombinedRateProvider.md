@@ -1,8 +1,8 @@
 # Rate Provider: `BlraSdaiRateProvider`
 
 ## Details
-- Reviewed by: @mkflow27
-- Checked by: @danielmkm
+- Reviewed by: @Zen-Maxi
+- Checked by: @mkflow27
 - Deployed at:
     - tETH [ethereum:0x7Aee5f039da2891BF02414bc6ADA1B53c0C3902a](https://etherscan.io/address/0x7Aee5f039da2891BF02414bc6ADA1B53c0C3902a#code)
 - Audit report(s):
