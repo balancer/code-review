@@ -21,6 +21,9 @@
     - [avalanche:0x484ebac26a05e1feb7909243f293a4f79eef837a](https://snowtrace.io/address/0x484ebac26a05e1feb7909243f293a4f79eef837a/contract/43114/code)
     - [avalanche:0x7E98951ae90fd1Fd7aF3cfe0ACA2A8a8D0FC5767](https://snowtrace.io/address/0x7E98951ae90fd1Fd7aF3cfe0ACA2A8a8D0FC5767/contract/43114/readContract?chainid=43114)
     - [base:0x14BD1e9b30007510c2aFE3a7a8053A6DE5605d35](https://basescan.org/address/0x14BD1e9b30007510c2aFE3a7a8053A6DE5605d35)
+    - [base:0x14BD1e9b30007510c2aFE3a7a8053A6DE5605d35](https://basescan.org/address/0x14BD1e9b30007510c2aFE3a7a8053A6DE5605d35)
+    - [base:0xBa0Fd0f3B019e8aBA61FEA2ac4Eb56b29F6808c0](https://basescan.org/address/0xBa0Fd0f3B019e8aBA61FEA2ac4Eb56b29F6808c0)
+    - [base:0xf8CDA16566a06f3C848258DE4Ec5fc3401cbB214](https://basescan.org/address/0xf8CDA16566a06f3C848258DE4Ec5fc3401cbB214)
 
 - Audit report(s):
     - [Formal Verification Report For StaticAToken](https://github.com/bgd-labs/static-a-token-v3/blob/main/audits/Formal_Verification_Report_staticAToken.pdf)
@@ -246,7 +249,15 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
         - admin type: Aave governance system.
             - multisig timelock? YES: 24 hours.
 
-    
+    - [base:0xf8CDA16566a06f3C848258DE4Ec5fc3401cbB214](https://basescan.org/address/0xf8CDA16566a06f3C848258DE4Ec5fc3401cbB214)
+        - upgradeable component: `StataTokenV2` ([base:0x88b1Cd4b430D95b406E382C3cDBaE54697a0286E](https://basescan.org/address/0x74D4D1D440c9679b1013999Bd91507eAa2fff651#code))
+        - admin address: [base:0x9390B1735def18560c509E2d0bc090E9d6BA257a](https://basescan.org/address/0x9390B1735def18560c509E2d0bc090E9d6BA257a)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours.
+        -upgradeable component: `L2PoolInstance` ([base:0xA238Dd80C259a72e81d7e4664a9801593F98d1c5](https://basescan.org/address/0xA238Dd80C259a72e81d7e4664a9801593F98d1c5#readProxyContract))
+        - admin address: [base:0x9390B1735def18560c509E2d0bc090E9d6BA257a](https://basescan.org/address/0x9390B1735def18560c509E2d0bc090E9d6BA257a)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours.    
 
     
 

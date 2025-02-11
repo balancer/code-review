@@ -1025,6 +1025,15 @@
           "implementationReviewed": "0xfeae389573e64b4ada95a494090f2399415c8b20"
         }
       ]
+    },
+    "0xf8CDA16566a06f3C848258DE4Ec5fc3401cbB214": {
+      "asset": "0x88b1Cd4b430D95b406E382C3cDBaE54697a0286E",
+      "name": "Aave GHO StataV2",
+      "summary": "safe",
+      "review": "./statATokenLMRateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   },
   "ethereum": {
