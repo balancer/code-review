@@ -12,15 +12,9 @@
 
 ## Review Checklist: Bare Minimum Compatibility
 
-## Review Checklist: Common Findings
+- [x] The returned `HookFlags` match the implemented hook functions
 
 ### Administrative Privileges
 
-### Oracles
-
-### Common Manipulation Vectors
-
-## Additional Findings
-
 ## Conclusion
-**Summary judgment: SAFE**
+**Summary judgment: USABLE**
