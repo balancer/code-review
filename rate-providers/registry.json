@@ -3354,6 +3354,15 @@
       "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
       "upgradeableComponents": []
     },
+    "0x4f9ca3eb1f6ff09d3cc947d9020a9ba7bef55523": {
+      "asset": "0x219656F33c58488D09d518BaDF50AA8CdCAcA2Aa",
+      "name": "Silo bwETH Rateprovider",
+      "summary": "safe",
+      "review": "./SiloWrappedRateprovider.md",
+      "warnings": [""],
+      "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
+      "upgradeableComponents": []
+    },
     "0xfbcee1fcaa2db776b4b575a8da3e8c93ea5eef53": {
       "asset": "0x9F0dF7799f6FDAd409300080cfF680f5A23df4b1",
       "name": "Wrapped Origin Sonic Rateprovider",
