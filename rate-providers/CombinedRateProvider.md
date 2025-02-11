@@ -1,4 +1,4 @@
-# Rate Provider: `BlraSdaiRateProvider`
+# Rate Provider: `tETH CombinedRateProvider`
 
 ## Details
 - Reviewed by: @Zen-Maxi
@@ -39,7 +39,7 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
     - [rateProvider2 wsteth](https://etherscan.io/address/0x72D07D7DcA67b8A406aD1Ec34ce969c90bFEE768): [wstETHRateProvider](https://github.com/balancer/code-review/blob/main/rate-providers/wstethRateProvider.md) review deemed SAFE.
 
 ### Common Manipulation Vectors
-- [ ] The Rate Provider is susceptible to donation attacks. For details see the [review]("./SavingsDAIRateProviderGnosis.md").
+- [ ] The Rate Provider is susceptible to donation attacks.
 
 ## Additional Findings
 To save time, we do not bother pointing out low-severity/informational issues or gas optimizations (unless the gas usage is particularly egregious). Instead, we focus only on high- and medium-severity findings which materially impact the contract's functionality and could harm users.
