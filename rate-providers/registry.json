@@ -2497,6 +2497,20 @@
           "implementationReviewed": "0xa52BC229C750b35C10d54F23aD3cb6E8155df01a"
         }
       ]
+    },
+    "0x3ba1a97D96F53611C4b2A788A5aa65c840d94c54": {
+      "asset": "0x8E0789d39db454DBE9f4a77aCEF6dc7c69f6D552",
+      "name": "CombinedRateProvider",
+      "summary": "safe",
+      "review": "./InceptionLRTRateProvider_2.md",
+      "warnings": [""],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xFd73Be536503B5Aa80Bf99D1Fd65b1306c69B191",
+          "implementationReviewed": "0x2356d46D89e056F222185ef101165e88073941Bd"
+        }
+      ]
     }
   },
   "fantom": {
@@ -3334,6 +3348,15 @@
     "0x9d2d4351c1b3718d7a65ef21f54c86c665964670": {
       "asset": "0x87178fe8698C7eDa8aA207083C3d66aEa569aB98",
       "name": "Silo bSolvBTC Rateprovider",
+      "summary": "safe",
+      "review": "./SiloWrappedRateprovider.md",
+      "warnings": [""],
+      "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
+      "upgradeableComponents": []
+    },
+    "0x4f9ca3eb1f6ff09d3cc947d9020a9ba7bef55523": {
+      "asset": "0x219656F33c58488D09d518BaDF50AA8CdCAcA2Aa",
+      "name": "Silo bwETH Rateprovider",
       "summary": "safe",
       "review": "./SiloWrappedRateprovider.md",
       "warnings": [""],
