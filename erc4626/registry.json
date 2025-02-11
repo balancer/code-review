@@ -586,7 +586,7 @@
       "warnings": [],
       "canUseBufferForSwaps": "true",
       "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": 
+      "useWrappedForAddRemove": "true"
     }
   },
   "sepolia": {
