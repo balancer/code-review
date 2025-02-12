@@ -2511,6 +2511,20 @@
           "implementationReviewed": "0x2356d46D89e056F222185ef101165e88073941Bd"
         }
       ]
+    },
+    "0x7Aee5f039da2891BF02414bc6ADA1B53c0C3902a": {
+      "asset": "0xD11c452fc99cF405034ee446803b6F6c1F6d5ED8",
+      "name": "tETH / ETH CombinedRateProvider",
+      "summary": "safe",
+      "review": "./CombinedRateProvider.md",
+      "warnings": [""],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xD11c452fc99cF405034ee446803b6F6c1F6d5ED8",
+          "implementationReviewed": "0xD1A622566F277AA76c3C47A30469432AAec95E38"
+        }
+      ]
     }
   },
   "fantom": {
