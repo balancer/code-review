@@ -2,7 +2,7 @@
 
 ## Details
 - Reviewed by: @mkflow27
-- Checked by: @\<GitHub handle of secondary reviewer\>
+- Checked by: @brunoguerios
 - Deployed at:
     - [ethereum:0x829de46686cd24edfcd28763a70034b3b9b4d7cd](https://etherscan.io/address/0x829de46686cd24edfcd28763a70034b3b9b4d7cd#code)
 - Audit report(s):
@@ -37,18 +37,19 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
     - source: Smardex Protocol implementation
     - source address: [ethereum:0x656cB8C6d154Aad29d8771384089be5B5141f01a](https://etherscan.io/address/0x656cB8C6d154Aad29d8771384089be5B5141f01a#readProxyContract)
     The rate is dependant on a state variable called `_divisor`.
-    ```solidity
-    /// @inheritdoc IUsdn
-    function convertToTokens(uint256 amountShares) external view returns (uint256 tokens_) {
-        tokens_ = _convertToTokens(amountShares, Rounding.Closest, _divisor);
-    }
-    ``` which is set as part of the `rebase` function
-    ```solidity
-    function rebase(uint256 newDivisor)
-    external
-    onlyRole(REBASER_ROLE)
-    returns (bool rebased_, uint256 oldDivisor_, bytes memory callbackResult_) {...}
-    ```
+        ```solidity
+        /// @inheritdoc IUsdn
+        function convertToTokens(uint256 amountShares) external view returns (uint256 tokens_) {
+            tokens_ = _convertToTokens(amountShares, Rounding.Closest, _divisor);
+        }
+        ```
+        which is set as part of the `rebase` function
+        ```solidity
+        function rebase(uint256 newDivisor)
+        external
+        onlyRole(REBASER_ROLE)
+        returns (bool rebased_, uint256 oldDivisor_, bytes memory callbackResult_) {...}
+        ```
     - comment: The `REBASER_ROLE` is the Smardex Protocol implementation where a review is out of scope of this review.
 
 - [ ] Price data is expected to be volatile (e.g., because it represents an open market price instead of a (mostly) monotonically increasing price).
