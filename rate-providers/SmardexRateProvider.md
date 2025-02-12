@@ -49,6 +49,7 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
     onlyRole(REBASER_ROLE)
     returns (bool rebased_, uint256 oldDivisor_, bytes memory callbackResult_) {...}
     ```
+    - comment: The `REBASER_ROLE` is the Smardex Protocol implementation where a review is out of scope of this review.
 
 - [ ] Price data is expected to be volatile (e.g., because it represents an open market price instead of a (mostly) monotonically increasing price).
 
@@ -61,4 +62,4 @@ To save time, we do not bother pointing out low-severity/informational issues or
 ## Conclusion
 **Summary judgment: USABLE**
 
-This rate provider should work well with Balancer pools. 
+This rate provider should work well with Balancer pools. Upgradeability is guarded behind a multisig.
