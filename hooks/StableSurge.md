@@ -10,7 +10,7 @@
     - [gnosis:0xe4f1878eC9710846E2B529C1b5037F8bA94583b1](https://gnosisscan.io/address/0xe4f1878eC9710846E2B529C1b5037F8bA94583b1#code)
     - [mainnet:0xb18fA0cb5DE8cecB8899AAE6e38b1B7ed77885dA](https://etherscan.io/address/0xb18fA0cb5DE8cecB8899AAE6e38b1B7ed77885dA#code)
 - Audit report(s):
-    - 
+    - will be added soon
 
 ## Context
 
