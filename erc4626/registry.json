@@ -261,6 +261,16 @@
       "canUseBufferForSwaps": "true",
       "useUnderlyingForAddRemove": "true",
       "useWrappedForAddRemove": "true"
+    },
+    "0x88b1Cd4b430D95b406E382C3cDBaE54697a0286E": {
+      "asset": "0x6Bb7a212910682DCFdbd5BCBb3e28FB4E8da10Ee",
+      "name": "Wrapped Aave Base GHO",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": [],
+      "canUseBufferForSwaps": "true",
+      "useUnderlyingForAddRemove": "true",
+      "useWrappedForAddRemove": "true"
     }
   },
   "ethereum": {

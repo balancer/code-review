@@ -35,7 +35,7 @@
     - [arbitrum:0xD089B4cb88Dacf4e27be869A00e9f7e2E3C18193](https://arbiscan.io/address/0xD089B4cb88Dacf4e27be869A00e9f7e2E3C18193#readProxyContract)
     - [arbitrum:0x4ff50C17df0D1b788d021ACd85039810a1aA68A1](https://arbiscan.io/address/0x4ff50C17df0D1b788d021ACd85039810a1aA68A1#readProxyContract)    
     - [ethereum:0xb51EDdDD8c47856D81C8681EA71404Cec93E92c6](https://etherscan.io/address/0xb51EDdDD8c47856D81C8681EA71404Cec93E92c6#readProxyContract)
-
+    - [base:0x88b1Cd4b430D95b406E382C3cDBaE54697a0286E](https://basescan.org/address/0x88b1Cd4b430D95b406E382C3cDBaE54697a0286E#readProxyContract)
 
 - Audit report(s):
     - [StatATokenV2 audits](https://github.com/aave-dao/aave-v3-origin/blob/067d29eb75115179501edc4316d125d9773f7928/audits/11-09-2024_Certora_StataTokenV2.pdf)
@@ -249,6 +249,12 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
         - admin type: Aave governance system.
             - multisig timelock? YES: 24 hours.
 
+    #### Wrapped Aave Base GHO - 0x88b1cd4b430d95b406e382c3cdbae54697a0286e
+    - upgradeable component: `StataTokenV2` ([base:0x88b1cd4b430d95b406e382c3cdbae54697a0286e](https://basescan.org/address/0x88b1cd4b430d95b406e382c3cdbae54697a0286e))
+        - admin address: [base:0x9390B1735def18560c509E2d0bc090E9d6BA257a](https://basescan.org/address/0x9390B1735def18560c509E2d0bc090E9d6BA257a)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours.
+
 ### Common Manipulation Vectors
 - [ ] The ERC4626 Vault is susceptible to donation attacks.
 
@@ -289,3 +295,4 @@ The outlined ERC4626 Vaults should work well with Balancer pools. Upgradeability
 - awstETH: [arbitrum:0xe98fc055c99DECD8Da0c111B090885d5d15C774E](https://github.com/balancer/balancer-v3-erc4626-tests/blob/aave-arbitrum/test/arbitrum/ERC4626ArbitrumAaveWstETH.t.sol)
 - aezETH: [arbitrum:0x4ff50C17df0D1b788d021ACd85039810a1aA68A1](https://github.com/balancer/balancer-v3-erc4626-tests/blob/aave-arbitrum/test/arbitrum/ERC4626ArbitrumAaveEzETH.t.sol)
 - wapyusd [ethereum:0xb51EDdDD8c47856D81C8681EA71404Cec93E92c6](https://github.com/balancer/balancer-v3-erc4626-tests/pull/21)
+- GHO [base:0x88b1cd4b430d95b406e382c3cdbae54697a0286e](https://github.com/balancer/balancer-v3-erc4626-tests/blob/208e800c185f59d3e57f4f228932af59d0458b29/test/base/test/base/ERC4626BaseAaveGho.t.sol)
