@@ -7,6 +7,7 @@
     - [sonic:0x52Fc9E0a68b6a4C9b57b9D1d99fB71449A99DCd8](https://sonicscan.org/address/0x52Fc9E0a68b6a4C9b57b9D1d99fB71449A99DCd8#code)
     - [sonic:0x87178fe8698C7eDa8aA207083C3d66aEa569aB98](https://sonicscan.org/address/0x87178fe8698C7eDa8aA207083C3d66aEa569aB98#code)
     - [sonic:0x016C306e103FbF48EC24810D078C65aD13c5f11B](https://sonicscan.org/address/0x016C306e103FbF48EC24810D078C65aD13c5f11B#code)
+    - [sonic:0x219656F33c58488D09d518BaDF50AA8CdCAcA2Aa](https://sonicscan.org/address/0x219656F33c58488D09d518BaDF50AA8CdCAcA2Aa#code)
 - Audits:
     - [Silo V2 audits](https://docs.silo.finance/audits-and-tests)
 

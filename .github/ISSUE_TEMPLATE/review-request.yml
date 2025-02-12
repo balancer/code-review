@@ -23,11 +23,12 @@ body:
     id: erc4626
     attributes:
       label: Additional Contract Information
-      description: In the case of a Rate Provider review, additional points clarify the intended usage of the related asset.
+      description: Additional points clarify the intended usage of the related asset.
       options:
         - label: Does this rate provider pertain to an ERC4626 contract?
-        - label: Is the intention for this rate provider and ERC4626 asset to be utilized as in a buffer for a boosted pool?
-        - label: If the asset uses an ERC4626 interface, are there any known withdraw timelocks or fees related to entry or exit to the underlying asset?
+        - label: If so, is the intention for this ERC4626 asset to be [boosted](https://docs.balancer.fi/concepts/explore-available-balancer-pools/boosted-pool.html#advantages-of-boosted-pools)?
+        - label: If so, shall the underlying asset be used to add/remove liquidity in a pool if possible? (i.e. add USDC for waUSDC)
+        - label: If so, shall the wrapped asset also be used to add/remove liquidity in a pool? (i.e. add waUSDC directly)
   - type: input
     id: type-extended
     attributes:

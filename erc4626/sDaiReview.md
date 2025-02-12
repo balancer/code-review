@@ -24,6 +24,11 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 ### Administrative Privileges
 - [] The ERC4626 Vault is upgradeable. 
 
+### Compatibility 
+- [x] The reviewed ERC4626 Vault shall be used for swaps. 
+- [x] The reviewed ERC4626 Vault shall be used to add and remove liquidity to pools using wrapped tokens. 
+- [ ] The reviewed ERC4626 Vault shall be used to add and remove liquidity to pools using underlying tokens.
+
 ### Common Manipulation Vectors
 - [x] The ERC4626 Vault is susceptible to donation attacks.
 
