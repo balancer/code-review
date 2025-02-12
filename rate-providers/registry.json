@@ -2521,6 +2521,20 @@
         }
       ]
     },
+    "0x829de46686cd24edfcd28763a70034b3b9b4d7cd": {
+      "asset": "0x99999999999999Cc837C997B882957daFdCb1Af9",
+      "name": "WusdnBalancerAdaptor",
+      "summary": "safe",
+      "review": "./SmardexRateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x656cB8C6d154Aad29d8771384089be5B5141f01a",
+          "implementationReviewed": "0x271df5517a4DaacB7caB988Aa64D23dEbda4c498"
+        }
+      ]
+    },
     "0x7Aee5f039da2891BF02414bc6ADA1B53c0C3902a": {
       "asset": "0xD11c452fc99cF405034ee446803b6F6c1F6d5ED8",
       "name": "tETH / ETH CombinedRateProvider",
