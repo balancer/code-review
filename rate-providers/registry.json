@@ -3441,7 +3441,7 @@
       "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
       "upgradeableComponents": []
     },
-    "0xc9A0E686C02AfFB176E06F0b344cab182250e487": {
+    "0x71453d205b1437f7f3057ce480cdb7a02c1568a0": {
       "asset": "0x5954ce6671d97D24B782920ddCdBB4b1E63aB2De",
       "name": "Silo bUSDC Rateprovider",
       "summary": "safe",
