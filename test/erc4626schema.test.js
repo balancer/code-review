@@ -18,12 +18,11 @@ const schema = {
             summary: { type: "string", enum: ["safe", "unsafe"] },
             review: { type: "string", minLength: 1 },
             warnings: { type: "array", items: { type: "string" } },
-            canUseBufferForSwaps: { type: "string", enum: ["true", "false"] },
+            canUseBufferForSwaps: { type: "boolean" },
             useUnderlyingForAddRemove: {
-              type: "string",
-              enum: ["true", "false"],
+              type: "boolean",
             },
-            useWrappedForAddRemove: { type: "string", enum: ["true", "false"] },
+            useWrappedForAddRemove: { type: "boolean" },
           },
           required: [
             "asset",
