@@ -3431,6 +3431,24 @@
       "warnings": [""],
       "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
       "upgradeableComponents": []
+    },
+    "0x59c9262da57918557780e6010d15c01b59971c42": {
+      "asset": "0x6c49B18333A1135e9A376560c07E6D1Fd0350EaF",
+      "name": "Silo bwS Rateprovider",
+      "summary": "safe",
+      "review": "./SiloWrappedRateprovider.md",
+      "warnings": [""],
+      "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
+      "upgradeableComponents": []
+    },
+    "0x71453d205b1437f7f3057ce480cdb7a02c1568a0": {
+      "asset": "0x5954ce6671d97D24B782920ddCdBB4b1E63aB2De",
+      "name": "Silo bUSDC Rateprovider",
+      "summary": "safe",
+      "review": "./SiloWrappedRateprovider.md",
+      "warnings": [""],
+      "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
+      "upgradeableComponents": []
     }
   }
 }
