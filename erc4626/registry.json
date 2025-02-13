@@ -6,9 +6,9 @@
       "summary": "safe",
       "review": "./StatATokenV2Review.md",
       "warnings": [],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0xD9E3Ef2c12de90E3b03F7b7E3964956a71920d40": {
       "asset": "0x35751007a407ca6FEFfE80b3cB397736D2cf4dbe",
@@ -16,9 +16,9 @@
       "summary": "safe",
       "review": "./StatATokenV2Review.md",
       "warnings": [],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0x52Dc1FEeFA4f9a99221F93D79da46Ae89b8c0967": {
       "asset": "0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f",
@@ -26,9 +26,9 @@
       "summary": "safe",
       "review": "./StatATokenV2Review.md",
       "warnings": [],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0x7F6501d3B98eE91f9b9535E4b0ac710Fb0f9e0bc": {
       "asset": "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
@@ -36,9 +36,9 @@
       "summary": "safe",
       "review": "./StatATokenV2Review.md",
       "warnings": [],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0xe98fc055c99DECD8Da0c111B090885d5d15C774E": {
       "asset": "0x5979D7b546E38E414F7E9822514be443A4800529",
@@ -46,9 +46,9 @@
       "summary": "safe",
       "review": "./StatATokenV2Review.md",
       "warnings": [],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0xa6D12574eFB239FC1D2099732bd8b5dC6306897F": {
       "asset": "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9",
@@ -56,9 +56,9 @@
       "summary": "safe",
       "review": "./StatATokenV2Review.md",
       "warnings": [],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0xEAB84053B99f2ec4433F5121A1CB1524c8c998F8": {
       "asset": "0xf97f4df75117a78c1A5a0DBb814Af92458539FB4",
@@ -66,9 +66,9 @@
       "summary": "safe",
       "review": "./StatATokenV2Review.md",
       "warnings": [],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0xf09EDbF2655B2A56753bD60D22CeAB2AC5D04188": {
       "asset": "0x912CE59144191C1204E64559FE8253a0e49E6548",
@@ -76,9 +76,9 @@
       "summary": "safe",
       "review": "./StatATokenV2Review.md",
       "warnings": [],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0xbB8A61425DFE172AA3a6f882aAFaBA00B32b7d59": {
       "asset": "0xEC70Dcb4A1EFa46b8F2D97C310C9c4790ba5ffA8",
@@ -86,9 +86,9 @@
       "summary": "safe",
       "review": "./StatATokenV2Review.md",
       "warnings": [],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0xf253BD61aEd0E9D62523eA76CD6F38B4a51dA145": {
       "asset": "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
@@ -96,9 +96,9 @@
       "summary": "safe",
       "review": "./StatATokenV2Review.md",
       "warnings": [],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0xE6D5923281c89DC989D00817387292387552d5C1": {
       "asset": "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8",
@@ -106,9 +106,9 @@
       "summary": "safe",
       "review": "./StatATokenV2Review.md",
       "warnings": [],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0xD089B4cb88Dacf4e27be869A00e9f7e2E3C18193": {
       "asset": "0x7dfF72693f6A4149b17e7C6314655f6A9F7c8B33",
@@ -116,9 +116,9 @@
       "summary": "safe",
       "review": "./StatATokenV2Review.md",
       "warnings": [],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0x4ff50C17df0D1b788d021ACd85039810a1aA68A1": {
       "asset": "0x2416092f143378750bb29b79eD961ab195CcEea5",
@@ -126,9 +126,9 @@
       "summary": "safe",
       "review": "./StatATokenV2Review.md",
       "warnings": [],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   },
   "base": {
@@ -138,9 +138,9 @@
       "summary": "safe",
       "review": "./SuperformSuperVaultReview.md",
       "warnings": ["buffer"],
-      "canUseBufferForSwaps": "false",
-      "useUnderlyingForAddRemove": "false",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": false,
+      "useUnderlyingForAddRemove": false,
+      "useWrappedForAddRemove": true
     },
     "0x616a4E1db48e22028f6bbf20444Cd3b8e3273738": {
       "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
@@ -148,9 +148,9 @@
       "summary": "safe",
       "review": "./MorphoVaults/V1.1-Seamless.md",
       "warnings": [],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0x7BfA7C4f149E7415b73bdeDfe609237e29CBF34A": {
       "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
@@ -158,9 +158,9 @@
       "summary": "safe",
       "review": "./MorphoVaults/V1.1-Spark.md",
       "warnings": [],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0x23479229e52Ab6aaD312D0B03DF9F33B46753B5e": {
       "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
@@ -168,9 +168,9 @@
       "summary": "safe",
       "review": "./MorphoVaults/V1.1-Ionic.md",
       "warnings": [],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0x5A32099837D89E3a794a44fb131CBbAD41f87a8C": {
       "asset": "0x4200000000000000000000000000000000000006",
@@ -178,9 +178,9 @@
       "summary": "safe",
       "review": "./MorphoVaults/V1.1-Ionic.md",
       "warnings": [],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0xe298b938631f750DD409fB18227C4a23dCdaab9b": {
       "asset": "0x4200000000000000000000000000000000000006",
@@ -188,9 +188,9 @@
       "summary": "safe",
       "review": "./StatATokenV2Review.md",
       "warnings": [],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0x6acD0a165fD70A84b6b50d955ff3628700bAAf4b": {
       "asset": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A",
@@ -198,9 +198,9 @@
       "summary": "safe",
       "review": "./StatATokenV2Review.md",
       "warnings": [],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0xC768c589647798a6EE01A91FdE98EF2ed046DBD6": {
       "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
@@ -208,9 +208,9 @@
       "summary": "safe",
       "review": "./StatATokenV2Review.md",
       "warnings": [],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0xFA2A03b6f4A65fB1Af64f7d935fDBf78693df9aF": {
       "asset": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
@@ -218,9 +218,9 @@
       "summary": "safe",
       "review": "./StatATokenV2Review.md",
       "warnings": [],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0x0830820D1A9aa1554364752d6D8F55C836871B74": {
       "asset": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
@@ -228,9 +228,9 @@
       "summary": "safe",
       "review": "./StatATokenV2Review.md",
       "warnings": [],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0x5e8B674127B321DC344c078e58BBACc3f3008962": {
       "asset": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
@@ -238,9 +238,9 @@
       "summary": "safe",
       "review": "./StatATokenV2Review.md",
       "warnings": [],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0x74D4D1D440c9679b1013999Bd91507eAa2fff651": {
       "asset": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
@@ -248,9 +248,9 @@
       "summary": "safe",
       "review": "./StatATokenV2Review.md",
       "warnings": [],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0xF8F10f39116716e89498c1c5E94137ADa11b2BC7": {
       "asset": "0x2416092f143378750bb29b79eD961ab195CcEea5",
@@ -258,9 +258,9 @@
       "summary": "safe",
       "review": "./StatATokenV2Review.md",
       "warnings": [],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0x88b1Cd4b430D95b406E382C3cDBaE54697a0286E": {
       "asset": "0x6Bb7a212910682DCFdbd5BCBb3e28FB4E8da10Ee",
@@ -268,9 +268,9 @@
       "summary": "safe",
       "review": "./StatATokenV2Review.md",
       "warnings": [],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   },
   "ethereum": {
@@ -280,9 +280,9 @@
       "summary": "safe",
       "review": "./SuperformSuperVaultReview.md",
       "warnings": ["buffer"],
-      "canUseBufferForSwaps": "false",
-      "useUnderlyingForAddRemove": "false",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": false,
+      "useUnderlyingForAddRemove": false,
+      "useWrappedForAddRemove": true
     },
     "0x2371e134e3455e0593363cBF89d3b6cf53740618": {
       "asset": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
@@ -290,9 +290,9 @@
       "summary": "unsafe",
       "review": "./MorphoVaults/V1-Incompatible-Gauntlet.md",
       "warnings": [],
-      "canUseBufferForSwaps": "false",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": false,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0xBEEF01735c132Ada46AA9aA4c54623cAA92A64CB": {
       "asset": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
@@ -300,9 +300,9 @@
       "summary": "unsafe",
       "review": "./MorphoVaults/V1-incompatible-Steakhouse.md",
       "warnings": [],
-      "canUseBufferForSwaps": "false",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": false,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0xbEef047a543E45807105E51A8BBEFCc5950fcfBa": {
       "asset": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
@@ -310,9 +310,9 @@
       "summary": "unsafe",
       "review": "./MorphoVaults/V1-incompatible-Steakhouse.md",
       "warnings": [],
-      "canUseBufferForSwaps": "false",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": false,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0xbEEFC01767ed5086f35deCb6C00e6C12bc7476C1": {
       "asset": "0x7751E2F4b8ae93EF6B79d86419d42FE3295A4559",
@@ -320,9 +320,9 @@
       "summary": "unsafe",
       "review": "./MorphoVaults/V1-incompatible-Steakhouse.md",
       "warnings": [],
-      "canUseBufferForSwaps": "false",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": false,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0xD4fa2D31b7968E448877f69A96DE69f5de8cD23E": {
       "asset": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
@@ -330,9 +330,9 @@
       "summary": "safe",
       "review": "./StatATokenV2Review.md",
       "warnings": [],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0x0bfc9d54Fc184518A81162F8fB99c2eACa081202": {
       "asset": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
@@ -340,9 +340,9 @@
       "summary": "safe",
       "review": "./StatATokenV2Review.md",
       "warnings": [],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0x7Bc3485026Ac48b6cf9BaF0A377477Fff5703Af8": {
       "asset": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
@@ -350,9 +350,9 @@
       "summary": "safe",
       "review": "./StatATokenV2Review.md",
       "warnings": [],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0x0FE906e030a44eF24CA8c7dC7B7c53A6C4F00ce9": {
       "asset": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
@@ -360,9 +360,9 @@
       "summary": "safe",
       "review": "./StatATokenV2Review.md",
       "warnings": [],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0x775F661b0bD1739349b9A2A3EF60be277c5d2D29": {
       "asset": "0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0",
@@ -370,9 +370,9 @@
       "summary": "safe",
       "review": "./StatATokenV2Review.md",
       "warnings": [],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0x5F9D59db355b4A60501544637b00e94082cA575b": {
       "asset": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3",
@@ -380,9 +380,9 @@
       "summary": "safe",
       "review": "./StatATokenV2Review.md",
       "warnings": [],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0xC71Ea051a5F82c67ADcF634c36FFE6334793D24C": {
       "asset": "0x40D16FC0246aD3160Ccc09B8D0D3A2cD28aE6C2f",
@@ -390,9 +390,9 @@
       "summary": "safe",
       "review": "./StatATokenV2Review.md",
       "warnings": [],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0xbEeFc011e94f43b8B7b455eBaB290C7Ab4E216f1": {
       "asset": "0x7751E2F4b8ae93EF6B79d86419d42FE3295A4559",
@@ -400,9 +400,9 @@
       "summary": "safe",
       "review": "./MorphoVaults/V1.1-Steakhouse.md",
       "warnings": [],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0x7204B7Dbf9412567835633B6F00C3Edc3a8D6330": {
       "asset": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
@@ -410,9 +410,9 @@
       "summary": "safe",
       "review": "./MorphoVaults/V1.1-Steakhouse.md",
       "warnings": [],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0x1e6ffa4e9F63d10B8820A3ab52566Af881Dab53c": {
       "asset": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
@@ -420,9 +420,9 @@
       "summary": "safe",
       "review": "./MorphoVaults/V1.1 Gauntlet.md",
       "warnings": [],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0x701907283a57FF77E255C3f1aAD790466B8CE4ef": {
       "asset": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
@@ -430,9 +430,9 @@
       "summary": "safe",
       "review": "./MorphoVaults/V1.1 Gauntlet.md",
       "warnings": [],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0xb51EDdDD8c47856D81C8681EA71404Cec93E92c6": {
       "asset": "0x6c3ea9036406852006290770BEdFcAbA0e23A0e8",
@@ -440,9 +440,9 @@
       "summary": "safe",
       "review": "./StatATokenV2Review.md",
       "warnings": [],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0xA1b60d96e5C50dA627095B9381dc5a46AF1a9a42": {
       "asset": "0xc83e27f270cce0A3A3A29521173a83F402c1768b",
@@ -450,9 +450,9 @@
       "summary": "safe",
       "review": "./MorphoVaults/V1.1-Steakhouse.md",
       "warnings": [],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0x30881Baa943777f92DC934d53D3bFdF33382cab3": {
       "asset": "0x7B43E3875440B44613DC3bC08E7763e6Da63C8f8",
@@ -460,9 +460,9 @@
       "summary": "safe",
       "review": "./MorphoVaults/V1.1-Steakhouse.md",
       "warnings": [],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0x097FFEDb80d4b2Ca6105a07a4D90eB739C45A666": {
       "asset": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
@@ -470,9 +470,9 @@
       "summary": "safe",
       "review": "./MorphoVaults/V1.1-Steakhouse.md",
       "warnings": [],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   },
   "gnosis": {
@@ -482,9 +482,9 @@
       "summary": "safe",
       "review": "./StatATokenV2Review.md",
       "warnings": [],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0x7c16f0185a26db0ae7a9377f23bc18ea7ce5d644": {
       "asset": "0x9C58BAcC331c9aa871AFD802DB6379a98e80CEdb",
@@ -492,9 +492,9 @@
       "summary": "safe",
       "review": "./StatATokenV2Review.md",
       "warnings": [],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0xaf204776c7245bf4147c2612bf6e5972ee483701": {
       "asset": "0xe91D153E0b41518A2Ce8Dd3D7944Fa863463a97d",
@@ -502,9 +502,9 @@
       "summary": "safe",
       "review": "./sDaiReview.md",
       "warnings": ["buffer"],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "false",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": false,
+      "useWrappedForAddRemove": true
     },
     "0x51350d88c1bd32cc6a79368c9fb70373fb71f375": {
       "asset": "0x2a22f9c3b484c3629090FeED35F17Ff8F88f76F0",
@@ -512,9 +512,9 @@
       "summary": "safe",
       "review": "./StatATokenV2Review.md",
       "warnings": [],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0x57f664882F762FA37903FC864e2B633D384B411A": {
       "asset": "0x6A023CCd1ff6F2045C3309768eAd9E68F978f6e1",
@@ -522,9 +522,9 @@
       "summary": "safe",
       "review": "./StatATokenV2Review.md",
       "warnings": [],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   },
   "sonic": {
@@ -534,9 +534,9 @@
       "summary": "safe",
       "review": "./StaticATokenLMAvalonReview.md",
       "warnings": [],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0xD31E89Ffb929b38bA60D1c7dBeB68c7712EAAb0a": {
       "asset": "0x541FD749419CA806a8bc7da8ac23D346f2dF8B77",
@@ -544,9 +544,9 @@
       "summary": "safe",
       "review": "./StaticATokenLMAvalonReview.md",
       "warnings": [],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0x7870ddFd5ACA4E977B2287e9A212bcbe8FC4135a": {
       "asset": "0x29219dd400f2Bf60E5a23d13Be72B486D4038894",
@@ -554,9 +554,9 @@
       "summary": "safe",
       "review": "./BeefyWrapperReview.md",
       "warnings": [],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0x52Fc9E0a68b6a4C9b57b9D1d99fB71449A99DCd8": {
       "asset": "0xCC0966D8418d412c599A6421b760a847eB169A8c",
@@ -564,9 +564,9 @@
       "summary": "safe",
       "review": "./SiloV2Review.md",
       "warnings": [],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0x87178fe8698C7eDa8aA207083C3d66aEa569aB98": {
       "asset": "0x541FD749419CA806a8bc7da8ac23D346f2dF8B77",
@@ -574,9 +574,9 @@
       "summary": "safe",
       "review": "./SiloV2Review.md",
       "warnings": [],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0x016C306e103FbF48EC24810D078C65aD13c5f11B": {
       "asset": "0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38",
@@ -584,9 +584,9 @@
       "summary": "safe",
       "review": "./SiloV2Review.md",
       "warnings": [],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0x219656F33c58488D09d518BaDF50AA8CdCAcA2Aa": {
       "asset": "0x50c42dEAcD8Fc9773493ED674b675bE577f2634b",
@@ -594,9 +594,9 @@
       "summary": "safe",
       "review": "./SiloV2Review.md",
       "warnings": [],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0x5954ce6671d97D24B782920ddCdBB4b1E63aB2De": {
       "asset": "0x29219dd400f2Bf60E5a23d13Be72B486D4038894",
@@ -604,9 +604,9 @@
       "summary": "safe",
       "review": "./SiloV2Review.md",
       "warnings": [],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0x6c49B18333A1135e9A376560c07E6D1Fd0350EaF": {
       "asset": "0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38",
@@ -614,9 +614,9 @@
       "summary": "safe",
       "review": "./SiloV2Review.md",
       "warnings": [],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   },
   "sepolia": {
@@ -626,9 +626,9 @@
       "summary": "safe",
       "review": "./AaveV3.md",
       "warnings": [],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0x94a9d9ac8a22534e3faca9f4e7f2e2cf85d5e4c8": {
       "asset": "0xff34b3d4aee8ddcd6f9afffb6fe49bd371b8a357",
@@ -636,9 +636,9 @@
       "summary": "safe",
       "review": "./AaveV3.md",
       "warnings": [],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0x978206fAe13faF5a8d293FB614326B237684B750": {
       "asset": "0xaa8e23fb1079ea71e0a56f48a2aa51851d8433d0",
@@ -646,9 +646,9 @@
       "summary": "safe",
       "review": "./AaveV3.md",
       "warnings": [],
-      "canUseBufferForSwaps": "true",
-      "useUnderlyingForAddRemove": "true",
-      "useWrappedForAddRemove": "true"
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   }
 }
