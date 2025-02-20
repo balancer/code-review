@@ -4,6 +4,8 @@
 - Checked by: @Zen-Maxi
 - Deployed at:
     - [sonic:0xECDfaa456a01c9804Fc8D11955CF4B54E0eA2Bd7](https://sonicscan.org/address/0xECDfaa456a01c9804Fc8D11955CF4B54E0eA2Bd7)
+    - [sonic:0xEc722f8e430273EaC92017A0D7d7B272D043f747](https://sonicscan.org/address/0xEc722f8e430273EaC92017A0D7d7B272D043f747)
+    - [sonic:0x635d8b3870ade127eb7ffc21753883f8f30e1051](https://sonicscan.org/address/0x635d8b3870ade127eb7ffc21753883f8f30e1051)
     - [arbitrum:0x3a216B01db971Bf28D171C9dA44Cc8C89867697F](https://arbiscan.io/address/0x3a216B01db971Bf28D171C9dA44Cc8C89867697F#code)
     - [arbitrum:0x72F6Da3b4bd0Ab7028F52339Ee3B1f94fffe2dD0](https://arbiscan.io/address/0x72F6Da3b4bd0Ab7028F52339Ee3B1f94fffe2dD0#code) 
     - [arbitrum:0xdcd8db2a23e21a4b9fa3d984d5a31fb554c70832](https://arbiscan.io/address/0xdcd8db2a23e21a4b9fa3d984d5a31fb554c70832#code) 
