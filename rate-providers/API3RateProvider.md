@@ -8,6 +8,7 @@
     - [mode:0xE91237236Bab7b39CA5CEE86F339a18C6C91F25c](https://explorer.mode.network/address/0xE91237236Bab7b39CA5CEE86F339a18C6C91F25c?tab=contract)
     - [fraxtal:0x08e12d1a6d0F47518f05b009Bb4A24113D82f33d](https://fraxscan.com/address/0x08e12d1a6d0F47518f05b009Bb4A24113D82f33d#readContract)
     - [mode:0x6Ad582604472DAdB4Af7B955388cAc6aDD6D511B](https://explorer.mode.network/address/0x6Ad582604472DAdB4Af7B955388cAc6aDD6D511B?tab=read_contract)
+    - [base:0x80016277F5d8c5607D12f74a5bED31038dB2ca8c](https://basescan.org/address/0x80016277F5d8c5607D12f74a5bED31038dB2ca8c#readContract)
 - Audit report(s):
     - [API3 audits](https://dapi-docs.api3.org/reference/dapis/understand/security.html)
 
@@ -31,6 +32,12 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 - [ ] Some other portion of the price pipeline is upgradeable (e.g., the token itself, an oracle, or some piece of a larger system that tracks the price). 
 
 ### Oracles
+
+#### Base
+- [x] Price data is provided by an off-chain source (e.g., a Chainlink oracle, a multisig, or a network of nodes).
+    - comment: More information on this particular oracle can be found [here](https://market.api3.org/base/ysusdc-usdc-exchange-rate).
+
+#### Mode
 - [x] Price data is provided by an off-chain source (e.g., a Chainlink oracle, a multisig, or a network of nodes).
     - source: API3.
     - source address: The data is sourced from multiple "beacon" which are a set of airnodes which provide the data. These individual datapoints are aggregated and form the oracle value. [mode:https://modescan.io/address/0x709944a48cAf83535e43471680fDA4905FB3920a](https://modescan.io/address/0x709944a48cAf83535e43471680fDA4905FB3920a)
@@ -91,6 +98,6 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 To save time, we do not bother pointing out low-severity/informational issues or gas optimizations (unless the gas usage is particularly egregious). Instead, we focus only on high- and medium-severity findings which materially impact the contract's functionality and could harm users.
 
 ## Conclusion
-**Summary judgment: SAFE**
+**Summary judgment: USABLE**
 
 These rate providers should work well with Balancer pools. API3 updates the rate on mode & fraxtal regularly and has various protections in place to ensure appropriate values are forwarded.
