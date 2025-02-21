@@ -129,6 +129,16 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0x45Df0656F8aDf017590009d2f1898eeca4F0a205": {
+      "asset": "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
+      "name": "fluid weth",
+      "summary": "safe",
+      "review": "/FluidVaults.md",
+      "warnings": [],
+      "canUseBufferForSwaps": false,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": false
     }
   },
   "base": {
@@ -271,6 +281,16 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0x9272d6153133175175bc276512b2336be3931ce9": {
+      "asset": "0x4200000000000000000000000000000000000006",
+      "name": "fluid weth",
+      "summary": "safe",
+      "review": "/FluidVaults.md",
+      "warnings": [],
+      "canUseBufferForSwaps": false,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": false
     }
   },
   "ethereum": {
@@ -473,6 +493,16 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0x90551c1795392094FE6D29B758EcCD233cFAa260": {
+      "asset": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+      "name": "fluid weth",
+      "summary": "safe",
+      "review": "/FluidVaults.md",
+      "warnings": [],
+      "canUseBufferForSwaps": false,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": false
     }
   },
   "gnosis": {

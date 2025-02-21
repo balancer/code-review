@@ -619,6 +619,15 @@
           "implementationReviewed": "0xfeae389573e64b4ada95a494090f2399415c8b20"
         }
       ]
+    },
+    "0xeAaf42989c294e2280eFbB0B0f368E806AD8cA69": {
+      "asset": "0x45Df0656F8aDf017590009d2f1898eeca4F0a205",
+      "name": "fluid weth rate provider",
+      "summary": "safe",
+      "review": "./FluidRateProviders.md",
+      "warnings": [""],
+      "factory": "0xe548a29631f9E49830bE8edc22d407b2D2915F31",
+      "upgradeableComponents": []
     }
   },
   "avalanche": {
@@ -1042,6 +1051,15 @@
       "review": "./ChainLinkRateProvider.md",
       "warnings": ["chainlink"],
       "factory": "0x0A973B6DB16C2ded41dC91691Cc347BEb0e2442B",
+      "upgradeableComponents": []
+    },
+    "0x0bB7028D24b24424485E769bD44b936B315Cb8FC": {
+      "asset": "0x9272D6153133175175Bc276512B2336BE3931CE9",
+      "name": "fluid weth rate provider",
+      "summary": "safe",
+      "review": "./FluidRateProviders.md",
+      "warnings": [""],
+      "factory": "0xEfD3aF73d3359014f3B864d37AC672A6d3D7ff1A",
       "upgradeableComponents": []
     }
   },
@@ -2557,6 +2575,15 @@
           "implementationReviewed": "0xD1A622566F277AA76c3C47A30469432AAec95E38"
         }
       ]
+    },
+    "0x8fC43e76874CaE40939eDeB90E5683258B63c508": {
+      "asset": "0x90551c1795392094FE6D29B758EcCD233cFAa260",
+      "name": "fluid weth rate provider",
+      "summary": "safe",
+      "review": "./FluidRateProviders.md",
+      "warnings": [""],
+      "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
+      "upgradeableComponents": []
     }
   },
   "fantom": {
