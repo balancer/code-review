@@ -3432,6 +3432,24 @@
       "factory": "",
       "upgradeableComponents": []
     },
+    "0xEc722f8e430273EaC92017A0D7d7B272D043f747": {
+      "asset": "0xbb30e76d9bb2cc9631f7fc5eb8e87b5aff32bfbd",
+      "name": "ConstantRateProvider",
+      "summary": "safe",
+      "review": "./ConstantRateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
+    },
+    "0x635d8b3870ade127eb7ffc21753883f8f30e1051": {
+      "asset": "0xbb30e76d9bb2cc9631f7fc5eb8e87b5aff32bfbd",
+      "name": "ConstantRateProvider",
+      "summary": "safe",
+      "review": "./ConstantRateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
+    },
     "0xb86e2517caab8e7aecc7472f29c0cbdaaf28e5e5": {
       "asset": "0x016C306e103FbF48EC24810D078C65aD13c5f11B",
       "name": "Silo bwS Rateprovider",
