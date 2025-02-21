@@ -16,6 +16,7 @@
     - [base:0xd58338f102e8de2e3d9d54cc043c6d606826a790](https://basescan.org/address/0xd58338f102e8de2e3d9d54cc043c6d606826a790)    
     - [base:0x4a0f0012004bc22d4fdb818b9c539e78adc0c69d](https://basescan.org/address/0x4a0f0012004bc22d4fdb818b9c539e78adc0c69d)
     - [avalanche:0xd0C13867BeA969398370B2A2B9124e3b2E48743C](https://snowtrace.io/address/0xd0C13867BeA969398370B2A2B9124e3b2E48743C/contract/43114/code)
+    - [gnosis:0x1E28a0450865274873bd5485A1E13A90F5f59CbD](https://gnosisscan.io/address/0x1e28a0450865274873bd5485a1e13a90f5f59cbd#code)
 - Audit report(s):
     - [Gyro audits](https://docs.gyro.finance/gyroscope-protocol/audit-reports)
 
