@@ -2561,7 +2561,7 @@
     "0x05E956cb3407b1B22F4ed8568F3C28644Da28B85": {
       "asset": "0xad55aebc9b8c03fc43cd9f62260391c13c23e7c0",
       "name": "cUSDO OpenEden Rate Provider",
-      "summary": "unsafe",
+      "summary": "safe",
       "review": "./cUSDOOpenEdenRateProvider.md",
       "warnings": ["donation", "eoaUpgradeable"],
       "factory": "",

@@ -30,7 +30,7 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 - [x] Some other portion of the price pipeline is upgradeable (e.g., the token itself, an oracle, or some piece of a larger system that tracks the price).
     - upgradeable component: `cUSDO` ([ethereum:0xad55aebc9b8c03fc43cd9f62260391c13c23e7c0](https://etherscan.io/address/0xad55aebc9b8c03fc43cd9f62260391c13c23e7c0/))
     - admin address: [ethereum:0x5eaff7af80488033bc845709806d5fae5291eb88](https://etherscan.io/address/0x5eaff7af80488033bc845709806d5fae5291eb88)
-    - admin type: EOA
+    - admin type: EOA (MPC wallet)
 
 ### Oracles
 - [ ] Price data is provided by an off-chain source (e.g., a Chainlink oracle, a multisig, or a network of nodes).
@@ -45,7 +45,10 @@ This is a standard ERC-4626 implementation which is susceptible to donation atta
 ## Additional Findings
 To save time, we do not bother pointing out low-severity/informational issues or gas optimizations (unless the gas usage is particularly egregious). Instead, we focus only on high- and medium-severity findings which materially impact the contract's functionality and could harm users.
 
-## Conclusion
-**Summary judgment: UNUSABLE**
+ ### M-01: Opaque upgradeability mechanism
+The account allowed to upgrade the asset implemetation is an EOA (which according to OpenEden is an MPC wallet). It is not possibly to verify this onchain. LPs in pools which use this rate provider should be aware of it and verify if possible. For more information see: https://www.coinbase.com/en-br/learn/wallet/what-is-a-multi-party-computation-mpc-wallet
 
-Rate provider is a standard ERC4626RateProvider that relies on totalAssets/totalSupply, but cUSDO is upgradeable and managed by an EOA. We should be able to consider it USABLE in case cUSDO admin is updated to a multisig.
+## Conclusion
+**Summary judgment: USABLE**
+
+Rate provider is a standard ERC4626RateProvider that relies on totalAssets/totalSupply. `cUSDO` is upgradeable and managed by an MPC wallet which can't be validated onchain, so LPs should be aware of this and verify if possible.
