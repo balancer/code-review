@@ -1043,6 +1043,15 @@
       "warnings": ["chainlink"],
       "factory": "0x0A973B6DB16C2ded41dC91691Cc347BEb0e2442B",
       "upgradeableComponents": []
+    },
+    "0x80016277F5d8c5607D12f74a5bED31038dB2ca8c": {
+      "asset": "0xffE8B2295CEf70290819A8193834cc7900bCef5f",
+      "name": "SuperUSDC Bridged Rate",
+      "summary": "safe",
+      "review": "./API3RateProvider.md",
+      "warnings": [""],
+      "factory": "0x0A973B6DB16C2ded41dC91691Cc347BEb0e2442B",
+      "upgradeableComponents": []
     }
   },
   "ethereum": {
