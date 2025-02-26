@@ -136,7 +136,7 @@
       "summary": "safe",
       "review": "/FluidVaults.md",
       "warnings": [],
-      "canUseBufferForSwaps": false,
+      "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": false
     }
@@ -288,7 +288,7 @@
       "summary": "safe",
       "review": "/FluidVaults.md",
       "warnings": [],
-      "canUseBufferForSwaps": false,
+      "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": false
     }
@@ -500,7 +500,7 @@
       "summary": "safe",
       "review": "/FluidVaults.md",
       "warnings": [],
-      "canUseBufferForSwaps": false,
+      "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": false
     }
