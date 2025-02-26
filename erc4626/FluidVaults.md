@@ -29,7 +29,8 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 - [ ] The ERC4626 Vault is upgradeable (e.g., via a proxy architecture or an `onlyOwner` function that updates the price source address).
 
 ### Compatibility 
-- [ ] The reviewed ERC4626 Vault is compatible and wrapping/unwrapping can be used in swap paths. 
+- [x] The reviewed ERC4626 Vault is compatible and wrapping/unwrapping can be used in swap paths.
+    - comment: Buffers were initialized as part of these transactions [mainnet](https://etherscan.io/tx/0x82dd825de471353f314021d035a0af52b41d12d441b8cce29581c598fd6344f4#eventlog), [arbitrum](https://arbiscan.io//tx/0x44de20d83b3b0bf1e128381a3a5e4c7a15aaf21e24c747af221ae27c4d08e0c6) and [base](https://basescan.org/tx/0x00f2b9806528a5fcf15e6cf57c822086a076cf43877846ab04e726adaab296f7)
 
 - [x] The reviewed ERC4626 Vault is compatible and wrapping/unwrapping can be used for add and remove. 
 
