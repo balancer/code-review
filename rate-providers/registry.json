@@ -3535,6 +3535,34 @@
       "warnings": [""],
       "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
       "upgradeableComponents": []
+    },
+    "0x631c46a198d9fc553fd0790ad34972a96667feb9": {
+      "asset": "0x3bcE5CB273F0F148010BbEa2470e7b5df84C7812",
+      "name": "Euler EVK Vault escETH-2 Rateprovider",
+      "summary": "safe",
+      "review": "./SiloWrappedRateprovider.md",
+      "warnings": [""],
+      "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x0806af1762Bdd85B167825ab1a64E31CF9497038",
+          "implementationReviewed": "0x11f95aaa59f1ad89576c61e3c9cd24df1fdcf46f"
+        }
+      ]
+    },
+    "0xb5a7ab4d068a37cbede6097218bd089c39784528": {
+      "asset": "0x50c42dEAcD8Fc9773493ED674b675bE577f2634b",
+      "name": "Euler Vault eWETH-1 Rateprovider",
+      "summary": "safe",
+      "review": "./SiloWrappedRateprovider.md",
+      "warnings": [""],
+      "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xa5cd24d9792F4F131f5976Af935A505D19c8Db2b",
+          "implementationReviewed": "0x11f95aaa59f1ad89576c61e3c9cd24df1fdcf46f"
+        }
+      ]
     }
   }
 }
