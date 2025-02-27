@@ -3394,8 +3394,8 @@
       "asset": "0xE5DA20F15420aD15DE0fa650600aFc998bbE3955",
       "name": "stS Rateprovider",
       "summary": "safe",
-      "review": "./LegacyReview.md",
-      "warnings": ["legacy"],
+      "review": "./StakedSonicRateprovider.md",
+      "warnings": [],
       "factory": "",
       "upgradeableComponents": [
         {
