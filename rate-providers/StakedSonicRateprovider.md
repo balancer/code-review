@@ -2,14 +2,14 @@
 
 ## Details
 - Reviewed by: @franzns
-- Checked by: 
+- Checked by: @danielmkm
 - Deployed at:
     - [sonic:0xe5da20f15420ad15de0fa650600afc998bbe3955](https://sonicscan.org/address/0xe5da20f15420ad15de0fa650600afc998bbe3955#code)
 - Audits:
     - [Beets Staked Sonic Audits](https://github.com/beethovenxfi/sonic-staking/tree/main/audits)
 
 ## Context
-The Staked Sonic Rate Provider fetches the rate of staked Sonic. The rateprovider uses the convertToAssets() function in the stS contract to determine the rate.
+The Staked Sonic contract has the getRate function built in natively. It is a wrapper around a call to converToAssets(1e18). The rate reflects the conversion rate of 1e18 stS to S(onic).
 
 ## Review Checklist: Bare Minimum Compatibility
 Each of the items below represents an absolute requirement for the Rate Provider. If any of these is unchecked, the Rate Provider is unfit to use.
