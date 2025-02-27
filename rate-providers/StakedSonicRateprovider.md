@@ -1,4 +1,4 @@
-# Rate Provider: `ERC4626RateProvider`
+# Rate Provider: `StakedSonicRateProvider`
 
 ## Details
 - Reviewed by: @franzns
@@ -9,7 +9,7 @@
     - [Beets Staked Sonic Audits](https://github.com/beethovenxfi/sonic-staking/tree/main/audits)
 
 ## Context
-The ERC4626 Rate Provider fetches the rate of staked Sonic. The rateprovider uses the convertToAssets() function in the stS contract to determine the rate.
+The Staked Sonic Rate Provider fetches the rate of staked Sonic. The rateprovider uses the convertToAssets() function in the stS contract to determine the rate.
 
 ## Review Checklist: Bare Minimum Compatibility
 Each of the items below represents an absolute requirement for the Rate Provider. If any of these is unchecked, the Rate Provider is unfit to use.
