@@ -7,7 +7,9 @@
     },
     "scripts": {
         "test": "npx jest",
-        "lint": "npx prettier --write 'rate-providers/registry.json'"
+        "lint": "npx prettier --write 'rate-providers/registry.json'",
+        "slither-install": "python3 -m venv slither && bash -c 'source slither/bin/activate && pip3 install https://github.com/crytic/slither/releases/download/0.11.0/0.11.0.zip'",
+        "download-contract": "ethereum-sources-downloader"
     },
     "author": "",
     "license": "MIT",
@@ -15,6 +17,7 @@
         "ajv": "^8.13.0"
     },
     "devDependencies": {
+        "ethereum-sources-downloader": "^0.1.21",
         "jest": "^29.7.0",
         "prettier": "3.2.5"
     }
