@@ -2,7 +2,7 @@
 
 ## Details
 - Reviewed by: @mkflow27
-- Checked by: @\<GitHub handle of secondary reviewer\>
+- Checked by: @mattpereira
 - Deployed at:
     - [arbitrum:0xb0a3f194bf6dad4409e861c48cbba9f41e870be7](https://arbiscan.io/address/0xb0a3f194bf6dad4409e861c48cbba9f41e870be7#code)
 - Audit report(s):
