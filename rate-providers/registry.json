@@ -628,6 +628,24 @@
       "warnings": [""],
       "factory": "0xe548a29631f9E49830bE8edc22d407b2D2915F31",
       "upgradeableComponents": []
+    },
+    "0xb0a3f194bf6dad4409e861c48cbba9f41e870be7": {
+      "asset": "0xcF6C2bb97a8978321C9e207afE8A2037fa9be45C",
+      "name": "OrbETHRateProvider",
+      "summary": "safe",
+      "review": "./OrbEthRateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xcF6C2bb97a8978321C9e207afE8A2037fa9be45C",
+          "implementationReviewed": "0x98f444794A4BBf71F419c761DC20B87D86c001F8"
+        },
+        {
+          "entrypoint": "0x8a6e8E584b415352f7aAef2304945E1772f80378",
+          "implementationReviewed": "0x9Df58696D577b864885dEbBD18625d20B514fb4e"
+        }
+      ]
     }
   },
   "avalanche": {
