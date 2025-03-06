@@ -24,6 +24,9 @@
     - Wrapped Aave Arbitrum USDC [arbitrum:0x30A225b9e9989bEd9C3e473686a29C9106E4393e](https://arbiscan.io/address/0x30A225b9e9989bEd9C3e473686a29C9106E4393e)
     - Wrapped Aave Arbitrum GHO [arbitrum:0xb866b055D0F970FD48DEA5dB28FdEa5BcAE3EA67](https://arbiscan.io/address/0xb866b055D0F970FD48DEA5dB28FdEa5BcAE3EA67#code)
     - Wrapped Aave Ethereum PYUSD [ethereum:0xdd8AEBC13B3DFaF85e3B512d26681987aD2c43b2](https://etherscan.io/address/0xdd8AEBC13B3DFaF85e3B512d26681987aD2c43b2#readContract)
+    - Wrapped Aave Sonic USDC.e [sonic:0x2446b93ec86be9225d07379ee5dba6b0aa632c55](https://sonicscan.org/address/0x2446b93ec86be9225d07379ee5dba6b0aa632c55#readContract)
+    - Wrapped Aave Sonic wS [sonic:0x25b5e53e3dfca480047b6e53f637ebe44abadd59](https://sonicscan.org/address/0x25b5e53e3dfca480047b6e53f637ebe44abadd59#readContract)
+    - Wrapped Aave Sonic WETH [sonic:0xf05afb759f1bc07756329d7080987d5ccc2a26e7](https://sonicscan.org/address/0xf05afb759f1bc07756329d7080987d5ccc2a26e7#readContract)
 
 - Audit report(s):
     - [Formal Verification Report For StaticAToken](https://github.com/aave-dao/aave-v3-origin/blob/067d29eb75115179501edc4316d125d9773f7928/audits/11-09-2024_Certora_StataTokenV2.pdf)
@@ -235,6 +238,36 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
         - admin address: [ethereum:0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A](https://etherscan.io/address/0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A)
         - admin type: Aave governance system.
             - multisig timelock? YES: 24 hours.
+
+    - [sonic:0x2446b93ec86be9225d07379ee5dba6b0aa632c55](https://sonicscan.org/address/0x2446b93ec86be9225d07379ee5dba6b0aa632c55#readContract)
+        - upgradeable component: `StataTokenV2` ([sonic:0x6646248971427B80ce531bdD793e2Eb859347E55](https://sonicscan.org/address/0x6646248971427B80ce531bdD793e2Eb859347E55#readProxyContract))
+            - admin address: [sonic:0x7b62461a3570c6AC8a9f8330421576e417B71EE7](https://sonicscan.org/address/0x7b62461a3570c6AC8a9f8330421576e417B71EE7#readProxyContract)
+            - admin type: Aave governance system.
+                - multisig timelock? YES: 24 hours.
+        - upgradeable component: `PoolInstance` ([sonic:0x5362dBb1e601abF3a4c14c22ffEdA64042E5eAA3]https://sonicscan.org/address/0x5362dBb1e601abF3a4c14c22ffEdA64042E5eAA3#readProxyContract))
+            - admin address: [sonic:0x7b62461a3570c6AC8a9f8330421576e417B71EE7](https://sonicscan.org/address/0x7b62461a3570c6AC8a9f8330421576e417B71EE7#readProxyContract)
+            - admin type: Aave governance system.
+                - multisig timelock? YES: 24 hours.
+    
+    - [sonic:0x25b5e53e3dfca480047b6e53f637ebe44abadd59](https://sonicscan.org/address/0x25b5e53e3dfca480047b6e53f637ebe44abadd59#readContract)
+        - upgradeable component: `StataTokenV2` ([sonic:0x18B7B8695165290f2767BC63c36D3dFEa4C0F9bB](https://sonicscan.org/address/0x18B7B8695165290f2767BC63c36D3dFEa4C0F9bB#readProxyContract))
+            - admin address: [sonic:0x7b62461a3570c6AC8a9f8330421576e417B71EE7](https://sonicscan.org/address/0x7b62461a3570c6AC8a9f8330421576e417B71EE7#readProxyContract)
+            - admin type: Aave governance system.
+                - multisig timelock? YES: 24 hours.
+        - upgradeable component: `PoolInstance` ([sonic:0x5362dBb1e601abF3a4c14c22ffEdA64042E5eAA3]https://sonicscan.org/address/0x5362dBb1e601abF3a4c14c22ffEdA64042E5eAA3#readProxyContract))
+            - admin address: [sonic:0x7b62461a3570c6AC8a9f8330421576e417B71EE7](https://sonicscan.org/address/0x7b62461a3570c6AC8a9f8330421576e417B71EE7#readProxyContract)
+            - admin type: Aave governance system.
+                - multisig timelock? YES: 24 hours.
+
+    - [sonic:0xf05afb759f1bc07756329d7080987d5ccc2a26e7](https://sonicscan.org/address/0xf05afb759f1bc07756329d7080987d5ccc2a26e7#readContract)
+        - upgradeable component: `StataTokenV2` ([sonic:0xeB5e9B0ae5bb60274786C747A1A2A798c11271E0](https://sonicscan.org/address/0xeB5e9B0ae5bb60274786C747A1A2A798c11271E0#readProxyContract))
+            - admin address: [sonic:0x7b62461a3570c6AC8a9f8330421576e417B71EE7](https://sonicscan.org/address/0x7b62461a3570c6AC8a9f8330421576e417B71EE7#readProxyContract)
+            - admin type: Aave governance system.
+                - multisig timelock? YES: 24 hours.
+        - upgradeable component: `PoolInstance` ([sonic:0x5362dBb1e601abF3a4c14c22ffEdA64042E5eAA3]https://sonicscan.org/address/0x5362dBb1e601abF3a4c14c22ffEdA64042E5eAA3#readProxyContract))
+            - admin address: [sonic:0x7b62461a3570c6AC8a9f8330421576e417B71EE7](https://sonicscan.org/address/0x7b62461a3570c6AC8a9f8330421576e417B71EE7#readProxyContract)
+            - admin type: Aave governance system.
+                - multisig timelock? YES: 24 hours.
     
 
 ### Oracles
