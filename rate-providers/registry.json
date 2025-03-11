@@ -646,6 +646,15 @@
           "implementationReviewed": "0x9Df58696D577b864885dEbBD18625d20B514fb4e"
         }
       ]
+    },
+    "0x63e3ceb3aa1bdbd74e8971249da041964322e150": {
+      "asset": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "name": "wETH to USD Rate Provider",
+      "summary": "safe",
+      "review": "./ChainLinkRateProvider.md",
+      "warnings": ["chainlink"],
+      "factory": "0x5dbad78818d4c8958eff2d5b95b28385a22113cd",
+      "upgradeableComponents": []
     }
   },
   "avalanche": {
@@ -1086,6 +1095,15 @@
       "summary": "safe",
       "review": "./API3RateProvider.md",
       "warnings": [""],
+      "factory": "0x0A973B6DB16C2ded41dC91691Cc347BEb0e2442B",
+      "upgradeableComponents": []
+    },
+    "0x9938e1b933148dffe36697ac464a7dd420b4190c": {
+      "asset": "0x4200000000000000000000000000000000000006",
+      "name": "wETH to USD Rate Provider",
+      "summary": "safe",
+      "review": "./ChainLinkRateProvider.md",
+      "warnings": ["chainlink"],
       "factory": "0x0A973B6DB16C2ded41dC91691Cc347BEb0e2442B",
       "upgradeableComponents": []
     }
