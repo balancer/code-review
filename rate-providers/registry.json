@@ -3495,6 +3495,15 @@
       "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
       "upgradeableComponents": []
     },
+    "0x5f26085ad72aa51ed443d84c1f08bbaa7dd5425e": {
+      "asset": "0xdA14A41DbdA731F03A94cb722191639DD22b35b2",
+      "name": "Silo bfrxUSD Rateprovider",
+      "summary": "safe",
+      "review": "./SiloWrappedRateprovider.md",
+      "warnings": [""],
+      "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
+      "upgradeableComponents": []
+    },
     "0x4f9ca3eb1f6ff09d3cc947d9020a9ba7bef55523": {
       "asset": "0x219656F33c58488D09d518BaDF50AA8CdCAcA2Aa",
       "name": "Silo bwETH Rateprovider",

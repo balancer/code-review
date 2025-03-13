@@ -648,6 +648,16 @@
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
     },
+    "0xdA14A41DbdA731F03A94cb722191639DD22b35b2": {
+      "asset": "0x80Eede496655FB9047dd39d9f418d5483ED600df",
+      "name": "SiloV2 frxUSD ID 37",
+      "summary": "safe",
+      "review": "./SiloV2Review.md",
+      "warnings": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
     "0x6646248971427B80ce531bdD793e2Eb859347E55": {
       "asset": "0x29219dd400f2Bf60E5a23d13Be72B486D4038894",
       "name": "Wrapped Aave Sonic USDC.E",
