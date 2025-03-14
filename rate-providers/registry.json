@@ -2917,6 +2917,42 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0x79FE0750bE76913E83a0f0EB60ba1Ab7FA6FdA5D": {
+      "asset": "0x417bc5b940475203A18C2f320a5ba470D6c5E463",
+      "name": "Aave EURE ERC4626RateProviderer",
+      "summary": "safe",
+      "review": "./statATokenv2RateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x417bc5b940475203A18C2f320a5ba470D6c5E463",
+          "implementationReviewed": "0x7CB7fdeEB5E71f322F8E39Be67959C32a6A3aAA3"
+        },
+        {
+          "entrypoint": "0xb50201558B00496A145fE76f7424749556E326D8",
+          "implementationReviewed": "0xF2C312BfAF4CF0429DB4DA15a0cf5F770Ea3E770"
+        }
+      ]
+    },
+    "0xdDDF909076B641C51f22ACD4b134C54adad51e68": {
+      "asset": "0x417bc5b940475203A18C2f320a5ba470D6c5E463",
+      "name": "EURe Chainlink + Aave Rate Proivder",
+      "summary": "safe",
+      "review": "./CombinedRateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x417bc5b940475203A18C2f320a5ba470D6c5E463",
+          "implementationReviewed": "0x7CB7fdeEB5E71f322F8E39Be67959C32a6A3aAA3"
+        },
+        {
+          "entrypoint": "0xb50201558B00496A145fE76f7424749556E326D8",
+          "implementationReviewed": "0xF2C312BfAF4CF0429DB4DA15a0cf5F770Ea3E770"
+        }
+      ]
     }
   },
   "mode": {

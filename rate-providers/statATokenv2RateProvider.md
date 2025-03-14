@@ -14,6 +14,7 @@
     - wETH [gnosis:0x0008A59C1d2E5922790C929ea432ed02D4D3323A](https://gnosisscan.io/address/0x0008A59C1d2E5922790C929ea432ed02D4D3323A#readContract)
     - GNO [gnosis:0xbbb4966335677Ea24F7B86DC19a423412390e1fb](https://gnosisscan.io/address/0xbbb4966335677Ea24F7B86DC19a423412390e1fb#code)
     - USDC.e [gnosis:0x1529f6Af353E180867F257820843425B49B1b478](https://gnosisscan.io/address/0x1529f6Af353E180867F257820843425B49B1b478#code)
+    - EURe [gnosis:0x79FE0750bE76913E83a0f0EB60ba1Ab7FA6FdA5D](https://gnosisscan.io/address/0x79FE0750bE76913E83a0f0EB60ba1Ab7FA6FdA5D#code) 
     - Wrapped Aave Arbitrum WETH [arbitrum:0xE3dF105DB16282E5ce5cDa2d15391b04A408BcCf](https://arbiscan.io/address/0xE3dF105DB16282E5ce5cDa2d15391b04A408BcCf#readContract)
     - Wrapped Aave Arbitrum WBTC [arbitrum:0xDEA44786E61fd5475B35869586737D99B5e6dB59](https://arbiscan.io/address/0xDEA44786E61fd5475B35869586737D99B5e6dB59#readContract)
     - USDCn [arbitrum:0xDAff80737b23A6E40F77Aa28957a10c9Af5dff45](https://arbiscan.io/address/0xDAff80737b23A6E40F77Aa28957a10c9Af5dff45)
@@ -131,6 +132,18 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 
     - [gnosis:0x1529f6Af353E180867F257820843425B49B1b478](https://gnosisscan.io/address/0x1529f6Af353E180867F257820843425B49B1b478#readProxyContract)
         - upgradeable component: `StataTokenV2` ([gnosis:0x51350d88c1bd32Cc6A79368c9Fb70373Fb71F375](https://gnosisscan.io/address/0x51350d88c1bd32Cc6A79368c9Fb70373Fb71F375.#readProxyContract))
+        - admin address: [gnosis:0x1dF462e2712496373A347f8ad10802a5E95f053D](https://gnosisscan.io/address/0x1dF462e2712496373A347f8ad10802a5E95f053D)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours.
+        - upgradeable component: `L2Pool` ([gnosis:0xb50201558B00496A145fE76f7424749556E326D8](https://gnosisscan.io/address/0xb50201558B00496A145fE76f7424749556E326D8#code))
+        - admin address: [gnosis:0x1dF462e2712496373A347f8ad10802a5E95f053D](https://gnosisscan.io/address/0x1dF462e2712496373A347f8ad10802a5E95f053D#code)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours
+
+    - EURe [gnosis:0x79FE0750bE76913E83a0f0EB60ba1Ab7FA6FdA5D](https://gnosisscan.io/address/0x79FE0750bE76913E83a0f0EB60ba1Ab7FA6FdA5D#code) 
+
+    - [gnosis:0x79FE0750bE76913E83a0f0EB60ba1Ab7FA6FdA5D](https://gnosisscan.io/address/0x79FE0750bE76913E83a0f0EB60ba1Ab7FA6FdA5D#readProxyContract)
+        - upgradeable component: `StataTokenV2` ([gnosis:0x417bc5b940475203A18C2f320a5ba470D6c5E463](https://gnosisscan.io/address/0x417bc5b940475203A18C2f320a5ba470D6c5E463.#readProxyContract))
         - admin address: [gnosis:0x1dF462e2712496373A347f8ad10802a5E95f053D](https://gnosisscan.io/address/0x1dF462e2712496373A347f8ad10802a5E95f053D)
         - admin type: Aave governance system.
             - multisig timelock? YES: 24 hours.
