@@ -557,7 +557,7 @@
       "useWrappedForAddRemove": true
     },
     "0x417bc5b940475203A18C2f320a5ba470D6c5E463": {
-      "asset": "0x420CA0f9B9b604cE0fd9C18EF134C705e5Fa3430",
+      "asset": "0xcB444e90D8198415266c6a2724b7900fb12FC56E",
       "name": "Wrapped Aave Gnosis EURe",
       "summary": "safe",
       "review": "./StatATokenV2Review.md",
