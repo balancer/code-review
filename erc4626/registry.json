@@ -555,6 +555,16 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0x417bc5b940475203A18C2f320a5ba470D6c5E463": {
+      "asset": "0x420CA0f9B9b604cE0fd9C18EF134C705e5Fa3430",
+      "name": "Wrapped Aave Gnosis EURe",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   },
   "sonic": {
