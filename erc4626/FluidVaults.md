@@ -9,7 +9,7 @@
         - [arbitrum:0x45Df0656F8aDf017590009d2f1898eeca4F0a205](https://arbiscan.io/address/0x45Df0656F8aDf017590009d2f1898eeca4F0a205)
         - [base:0x9272d6153133175175bc276512b2336be3931ce9](https://basescan.org/address/0x9272d6153133175175bc276512b2336be3931ce9)
     - wstETH:
-        - [ethereum:0x9272d6153133175175bc276512b2336be3931ce9](https://etherscan.io/address/0x2411802D8BEA09be0aF8fD8D08314a63e706b29C)
+        - [ethereum:0x2411802D8BEA09be0aF8fD8D08314a63e706b29C](https://etherscan.io/address/0x2411802D8BEA09be0aF8fD8D08314a63e706b29C)
 - Audit report(s):
     - [Fluid audits](https://docs.fluid.instadapp.io/audits-and-security.html)
 
