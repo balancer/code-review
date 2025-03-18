@@ -49,3 +49,4 @@ Passing fork tests:
 - [fluid weth mainnet](https://github.com/balancer/balancer-v3-erc4626-tests/blob/main/test/mainnet/ERC4626MainnetFluidWeth.t.sol) 
 - [fluid weth base](https://github.com/balancer/balancer-v3-erc4626-tests/pull/32)
 - [fluid weth arbitrum](https://github.com/balancer/balancer-v3-erc4626-tests/pull/32)
+- [fluid wsteth mainnet](https://github.com/balancer/balancer-v3-erc4626-tests/pull/27)
