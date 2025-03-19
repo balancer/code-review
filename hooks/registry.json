@@ -29,6 +29,12 @@
             "summary": "safe",
             "review": "./StableSurge.md",
             "warnings": []
+        },
+        "0xEC9578e79d412537095501584284B092D2F6b9F7":{
+            "name": "MevCaptureHook",
+            "summary": "safe",
+            "review": "./MevTaxHook.md",
+            "warnings": []
         }
     },
     "arbitrum": {
@@ -36,6 +42,12 @@
             "name": "StableSurgeHook",
             "summary": "safe",
             "review": "./StableSurge.md",
+            "warnings": []
+        },
+        "0x5B42eC6D40f7B7965BE5308c70e2603c0281C1E9":{
+            "name": "MevCaptureHook",
+            "summary": "safe",
+            "review": "./MevTaxHook.md",
             "warnings": []
         }
     },
@@ -45,6 +57,12 @@
             "summary": "safe",
             "review": "./StableSurge.md",
             "warnings": []
+        },
+        "0x7a2535f5fb47b8e44c02ef5d9990588313fe8f05":{
+            "name": "MevCaptureHook",
+            "summary": "safe",
+            "review": "./MevTaxHook.md",
+            "warnings": []
         }
     },
     "gnosis": {
@@ -53,6 +71,12 @@
             "summary": "safe",
             "review": "./StableSurge.md",
             "warnings": []
+        },
+        "0xa1D0791a41318c775707C56eAe247AF81a05322C":{
+            "name": "MevCaptureHook",
+            "summary": "safe",
+            "review": "./MevTaxHook.md",
+            "warnings": []
         }
     },
     "mainnet": {
@@ -60,6 +84,12 @@
             "name": "StableSurgeHook",
             "summary": "safe",
             "review": "./StableSurge.md",
+            "warnings": []
+        },
+        "0x1bcA39b01F451b0a05D7030e6e6981a73B716b1C":{
+            "name": "MevCaptureHook",
+            "summary": "safe",
+            "review": "./MevTaxHook.md",
             "warnings": []
         }
     }
