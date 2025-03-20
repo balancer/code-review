@@ -86,6 +86,7 @@ async function writeReviewAndUpdateRegistry(rateProviderAddress: Address, networ
     // Mapping of chain names to registry keys
     const chainNameToRegistryKey: { [key: string]: string } = {
         'Arbitrum One': 'arbitrum',
+        mainnet: 'ethereum',
         'OP Mainnet': 'optimism',
         'Polygon zkEVM': 'zkevm',
         'Mode Mainnet': 'mode',
@@ -115,7 +116,7 @@ async function main() {
             alias: 'n',
             type: 'string',
             description: 'The network the rate provider is deployed on',
-            choices: ['base', 'ethereum', 'arbitrum', 'avalanche'],
+            choices: ['base', 'mainnet', 'arbitrum', 'avalanche'],
             demandOption: true,
         })
         .option('rateProviderAsset', {
