@@ -24,6 +24,7 @@
     - Wrapped Aave Arbitrum DAI [arbitrum:0x788dab521C4607C99F879f327894cC6fAcd217E3](https://arbiscan.io/address/0x788dab521C4607C99F879f327894cC6fAcd217E3#readContract)
     - Wrapped Aave Arbitrum USDC [arbitrum:0x30A225b9e9989bEd9C3e473686a29C9106E4393e](https://arbiscan.io/address/0x30A225b9e9989bEd9C3e473686a29C9106E4393e)
     - Wrapped Aave Arbitrum GHO [arbitrum:0xb866b055D0F970FD48DEA5dB28FdEa5BcAE3EA67](https://arbiscan.io/address/0xb866b055D0F970FD48DEA5dB28FdEa5BcAE3EA67#code)
+    - Wrapped Aave Gnosis EURe [gnosis:0x79FE0750bE76913E83a0f0EB60ba1Ab7FA6FdA5D](https://gnosisscan.io/address/0x79FE0750bE76913E83a0f0EB60ba1Ab7FA6FdA5D#code)
     - Wrapped Aave Ethereum PYUSD [ethereum:0xdd8AEBC13B3DFaF85e3B512d26681987aD2c43b2](https://etherscan.io/address/0xdd8AEBC13B3DFaF85e3B512d26681987aD2c43b2#readContract)
     - Wrapped Aave Sonic USDC.e [sonic:0x2446b93ec86be9225d07379ee5dba6b0aa632c55](https://sonicscan.org/address/0x2446b93ec86be9225d07379ee5dba6b0aa632c55#readContract)
     - Wrapped Aave Sonic wS [sonic:0x25b5e53e3dfca480047b6e53f637ebe44abadd59](https://sonicscan.org/address/0x25b5e53e3dfca480047b6e53f637ebe44abadd59#readContract)
@@ -139,8 +140,6 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
         - admin address: [gnosis:0x1dF462e2712496373A347f8ad10802a5E95f053D](https://gnosisscan.io/address/0x1dF462e2712496373A347f8ad10802a5E95f053D#code)
         - admin type: Aave governance system.
             - multisig timelock? YES: 24 hours
-
-    - EURe [gnosis:0x79FE0750bE76913E83a0f0EB60ba1Ab7FA6FdA5D](https://gnosisscan.io/address/0x79FE0750bE76913E83a0f0EB60ba1Ab7FA6FdA5D#code) 
 
     - [gnosis:0x79FE0750bE76913E83a0f0EB60ba1Ab7FA6FdA5D](https://gnosisscan.io/address/0x79FE0750bE76913E83a0f0EB60ba1Ab7FA6FdA5D#readProxyContract)
         - upgradeable component: `StataTokenV2` ([gnosis:0x417bc5b940475203A18C2f320a5ba470D6c5E463](https://gnosisscan.io/address/0x417bc5b940475203A18C2f320a5ba470D6c5E463.#readProxyContract))
