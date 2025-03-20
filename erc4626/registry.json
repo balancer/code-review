@@ -512,7 +512,7 @@
       "warnings": [],
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
-      "useWrappedForAddRemove": false
+      "useWrappedForAddRemove": true
     }
   },
   "gnosis": {
