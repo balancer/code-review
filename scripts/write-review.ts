@@ -56,7 +56,7 @@ async function writeReviewAndUpdateRegistry(rateProviderAddress: Address, networ
         .replace('{{rateProviderAddress}}', rateProviderAddress)
         .replace(
             '{{chainExplorer}}',
-            `${service.chain.blockExplorers?.default.url}/address${service.rateProvider}` || '',
+            `${service.chain.blockExplorers?.default.url}/address/${service.rateProvider}` || '',
         )
         .replace('{{hasInterface}}', templateData.hasInterface)
         .replace('{{isScale18}}', templateData.isScale18)
