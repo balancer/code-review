@@ -2630,6 +2630,15 @@
       "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
       "upgradeableComponents": []
     },
+    "0x73a9fc5173d211F0D264Af4E816cb44F61E5f4a2": {
+      "asset": "0x2411802D8BEA09be0aF8fD8D08314a63e706b29C",
+      "name": "Fluid wstETH rate provider",
+      "summary": "safe",
+      "review": "./FluidRateProviders.md",
+      "warnings": [""],
+      "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
+      "upgradeableComponents": []
+    },
     "0x05E956cb3407b1B22F4ed8568F3C28644Da28B85": {
       "asset": "0xad55aebc9b8c03fc43cd9f62260391c13c23e7c0",
       "name": "cUSDO OpenEden Rate Provider",

@@ -503,6 +503,16 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": false
+    },
+    "0x2411802D8BEA09be0aF8fD8D08314a63e706b29C": {
+      "asset": "0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0",
+      "name": "fluid wsteth",
+      "summary": "safe",
+      "review": "/FluidVaults.md",
+      "warnings": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   },
   "gnosis": {
