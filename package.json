@@ -1,24 +1,28 @@
 {
-    "name": "code-review",
-    "version": "1.0.0",
-    "description": "A collection of smart contract code reviews performed upon friendly request.",
-    "directories": {
-        "test": "test"
-    },
-    "scripts": {
-        "test": "npx jest",
-        "lint": "npx prettier --write 'rate-providers/registry.json'",
-        "slither-install": "python3 -m venv slither && bash -c 'source slither/bin/activate && pip3 install https://github.com/crytic/slither/releases/download/0.11.0/0.11.0.zip'",
-        "download-contract": "ethereum-sources-downloader"
-    },
-    "author": "",
-    "license": "MIT",
-    "dependencies": {
-        "ajv": "^8.13.0"
-    },
-    "devDependencies": {
-        "ethereum-sources-downloader": "^0.1.21",
-        "jest": "^29.7.0",
-        "prettier": "3.2.5"
-    }
+  "name": "code-review",
+  "version": "1.0.0",
+  "description": "A collection of smart contract code reviews performed upon friendly request.",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "npx jest",
+    "lint": "npx prettier --write 'rate-providers/registry.json'",
+    "get-access-list": "ts-node scripts/get-access-list.ts",
+    "write-review": "ts-node scripts/write-review.ts"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "ajv": "^8.13.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.9",
+    "dotenv": "^16.4.7",
+    "jest": "^29.7.0",
+    "prettier": "3.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2",
+    "viem": "^2.23.7"
+  }
 }
