@@ -73,3 +73,13 @@ The `npm run write-review` script generates a review for a specified rate provid
 ```sh
 npm run write-review -- --rateProviderAddress <address> --network <network> --rateProviderAsset <asset>
 ```
+The supported networks can be seen in the `write-review.ts` file under the network option
+```typescript
+.option('network', {
+            alias: 'n',
+            type: 'string',
+            description: 'The network the rate provider is deployed on',
+            choices: ['base', 'mainnet', 'arbitrum', 'avalanche'],
+            demandOption: true,
+        })
+```
