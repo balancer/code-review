@@ -1,4 +1,11 @@
+import path from 'path'
+import * as dotenv from 'dotenv'
+import yargs from 'yargs'
+import { hideBin } from 'yargs/helpers'
+import { Address } from 'viem'
+
 import RateProviderDataService from '../src/app'
+import { template } from '../src/utils/template'
 import {
     base,
     mainnet,
@@ -14,18 +21,12 @@ import {
     polygonZkEvm,
     mode,
 } from 'viem/chains'
-import path from 'path'
-import * as dotenv from 'dotenv'
-import yargs from 'yargs'
-import { hideBin } from 'yargs/helpers'
-import { Address } from 'viem'
-dotenv.config()
 
-import { template } from '../src/utils/template'
+dotenv.config()
 const fs = require('fs')
 
 // to use this script use the command below
-// for network see the viewm chains
+// for network see the viem chains
 // npm run write-review -- --rateProviderAddress <address> --network <network> --rateProviderAsset <asset>
 
 async function writeReviewAndUpdateRegistry(rateProviderAddress: Address, network: Chain, rateProviderAsset: string) {
@@ -50,7 +51,7 @@ async function writeReviewAndUpdateRegistry(rateProviderAddress: Address, networ
     }
 
     const filledTemplate = template
-        .replace('{{date}}', Date.now().toString())
+        .replace('{{date}}', new Date().toLocaleDateString('en-GB'))
         .replace('{{rateProvider}}', templateData.rateProvider)
         .replace('{{network}}', service.chain.name)
         .replace('{{rateProviderAddress}}', rateProviderAddress)
