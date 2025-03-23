@@ -117,7 +117,7 @@ async function main() {
             alias: 'n',
             type: 'string',
             description: 'The network the rate provider is deployed on',
-            choices: ['base', 'mainnet', 'arbitrum', 'avalanche'],
+            choices: ['base', 'mainnet', 'arbitrum', 'avalanche', 'gnosis'],
             demandOption: true,
         })
         .option('rateProviderAsset', {
