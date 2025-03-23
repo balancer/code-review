@@ -19,11 +19,14 @@ Each of the items below represents an absolute requirement for the Rate Provider
 - [{{isScale18}}] \`getRate\` returns an 18-decimal fixed point number (i.e., 1 == 1e18) regardless of underlying token decimals.
 
 ### Administrative Privileges
-- [{{isUpgradeable}}] The Rate Provider is upgradeable (e.g., via a proxy architecture).
-- [{{hasUpgradeableElements}}] Other contracts which are part of the \`getRate\` callchain are upgradeable. You can find more information
+- [{{isUpgradeable}}] The Rate Provider is upgradeable** (e.g., via a proxy architecture).
+- [{{hasUpgradeableElements}}] Other contracts which are part of the \`getRate\` callchain are upgradeable**. You can find more information
    about the involved contracts in this [tenderly simulation]({{tenderlySimUrl}})
 
 ## Conclusion
 **Summary judgment: {{isUsable}}**
+
+** upgradeable in this context means that:
+- The contract is a proxy contract with an implementation sourced from Etherscan and the proxy emitted an "Upgraded" event.
     
 `
