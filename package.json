@@ -8,7 +8,6 @@
   "scripts": {
     "test": "npx jest",
     "lint": "npx prettier --write 'rate-providers/registry.json'",
-    "get-access-list": "ts-node scripts/get-access-list.ts",
     "write-review": "ts-node scripts/write-review.ts"
   },
   "author": "",
