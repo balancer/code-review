@@ -4,7 +4,7 @@ A collection of smart contract code reviews performed upon friendly request.
 
 NOTHING IN THIS REPOSITORY CONSTITUTES A FORMAL AUDIT, AND CODE SHOULD NEVER BE DEPLOYED TO PRODUCTION WITHOUT A FORMAL AUDIT. REVIEWERS ARE HUMAN; MISTAKES WILL BE MADE AND BUGS MISSED. REVIEWERS ARE NOT LIABLE FOR ANY INCIDENT THAT OCCURS POST-REVIEW. THIS IS MERELY A FRIENDLY PEER-REVIEW SERVICE AND SHOULD NOT BE TREATED AS A STAMP OF APPROVAL. REVIEWED CODE IS NOT NECESSARILY BUG-FREE. ALWAYS TRIPLE-CHECK BEFORE INTERACTING WITH SMART CONTRACTS, AND DO NOT TRUST REVIEWERS ON THE BASIS OF REPUTATION ALONE.
 
-Rate Provider Factories for reference
+## Rate Provider Factories for reference
 
 | Network    | ChainlinkRateProviderFactory               | ERC4626RateProviderFactory                 |
 | ---------- | ------------------------------------------ | ------------------------------------------ |
@@ -20,11 +20,56 @@ Rate Provider Factories for reference
 | Sepolia    | 0xA8920455934Da4D853faac1f94Fe7bEf72943eF1 | N/A                                        |
 | zkEVM      | 0x4132f7AcC9dB7A6cF7BE2Dd3A9DC8b30C7E6E6c8 | N/A                                        |
 
-Rate Transformer Factories 
-Use these factories when an ERC4626 vault contains a yield bearing token to combine their resepctive rates of growth. This denominates the vault asset in the underlying for correlated pairs. For example Aave-wstETH pairing with Aave-wETH by denominating the assets in wETH.
+## Rate Transformer Factories 
+Use these factories when an ERC4626 vault contains a yield bearing token to combine their respective rates of growth. This denominates the vault asset in the underlying for correlated pairs. For example, Aave-wstETH pairing with Aave-wETH by denominating the assets in wETH.
 
 | Network    | AaveRateTransformerFactory                 | 
 | ---------- | -------------------------------------------|
 | Arbitrum   | 0xec2c6184761ab7fe061130b4a7e3da89c72f8395 | 
 | Base       | 0x4e185b1502fea7a06b63fdda6de38f92c9528566 |
 | Ethereum   | 0xec2c6184761ab7fe061130b4a7e3da89c72f8395 | 
+
+## Setup
+
+1. **Clone the repository:**
+    ```sh
+    git clone https://github.com/your-username/code-review.git
+    cd code-review
+    ```
+
+2. **Install dependencies:**
+    ```sh
+    npm install
+    ```
+
+3. **Set up environment variables:**
+    Create a `.env` file in the root directory and add the necessary environment variables. You can use the `.env.example` file as a reference.
+
+    ```sh
+    cp .env.example .env
+    ```
+
+
+
+## Testing
+
+1. **Run tests:**
+    ```sh
+    npm test
+    ```
+
+## Scripts
+
+The following scripts are available in the `package.json` file:
+
+- **`npm run test`**: Runs the test suite.
+- **`npm run lint`**: Lints the registry.
+- **`npm run write-review`**: Generates the rate-provider review.
+
+## Running Scripts
+
+The `npm run write-review` script generates a review for a specified rate provider. It fetches the necessary data, generates a markdown review file, and updates the registry with the new review information.
+
+```sh
+npm run write-review -- --rateProviderAddress <address> --network <network> --rateProviderAsset <asset>
+```
