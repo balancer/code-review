@@ -84,3 +84,13 @@ The supported networks can be seen in the `write-review.ts` file under the netwo
             demandOption: true,
         })
 ```
+
+## Output 
+The script does two things:
+- Updates the registry with rp information
+- genererates a review report
+
+Before the review is finished the user is expected to add the following items to the review post script run:
+- Context on the rate Provider
+- Audit reports
+- Optional Rename the review file and change name & review file in the registry
