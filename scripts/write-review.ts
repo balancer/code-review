@@ -27,6 +27,7 @@ const fs = require('fs')
 
 // to use this script use the command below
 // for network see the viem chains
+// Important: The custom RPC URL in the .env must support createAccessList (or the viem default rpc url)
 // npm run write-review -- --rateProviderAddress <address> --network <network> --rateProviderAsset <asset>
 
 async function writeReviewAndUpdateRegistry(rateProviderAddress: Address, network: Chain, rateProviderAsset: string) {

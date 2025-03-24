@@ -48,6 +48,7 @@ Use these factories when an ERC4626 vault contains a yield bearing token to comb
     ```sh
     cp .env.example .env
     ```
+    - Note: When setting the `CUSTOM_RPC_URL` make sure it supports `eth_createAccessList`.
 
 
 
