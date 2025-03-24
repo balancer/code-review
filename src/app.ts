@@ -69,9 +69,10 @@ class RateProviderDataService {
             functionName: 'getRate',
         })
 
+        // RPC endpoint must support this call
         const publicClient = createPublicClient({
             chain: this.chain,
-            transport: http(this.getRpcUrl(this.chain)),
+            transport: http(this.chain.rpcUrls.default.http[0]),
         })
 
         return await publicClient.createAccessList({
@@ -143,7 +144,7 @@ class RateProviderDataService {
 
         const publicClient = createPublicClient({
             chain: this.chain,
-            transport: http(this.getRpcUrl(this.chain)),
+            transport: http(this.chain.rpcUrls.default.http[0]),
         })
 
         const mergedInfo = proxiesWithRateProviderDeploymentInfo.map((d) => {
@@ -217,7 +218,7 @@ class RateProviderDataService {
     public async isRateScale18(): Promise<{ scale18: boolean; rateScale18: bigint }> {
         const publicClient = createPublicClient({
             chain: this.chain,
-            transport: http(this.getRpcUrl(this.chain)),
+            transport: http(this.chain.rpcUrls.default.http[0]),
         })
 
         const data = (await publicClient.readContract({
@@ -336,7 +337,7 @@ class RateProviderDataService {
                           throw new Error(`Environment variable is not set`)
                       })()
                 break
-            case 'Optimism':
+            case 'OP Mainnet':
                 this.apiKey = process.env.OPTIMISM_SCAN_API_KEY
                     ? process.env.OPTIMISM_SCAN_API_KEY
                     : (() => {
@@ -350,7 +351,7 @@ class RateProviderDataService {
                           throw new Error(`Environment variable is not set`)
                       })()
                 break
-            case 'Frax':
+            case 'Fraxtal':
                 this.apiKey = process.env.FRAXSCAN_API_KEY
                     ? process.env.FRAXSCAN_API_KEY
                     : (() => {
@@ -359,20 +360,6 @@ class RateProviderDataService {
                 break
             default:
                 throw new Error(`Unsupported chain: ${chain.name}`)
-        }
-    }
-
-    /**
-     * Returns the RPC URL based on the chain.
-     * @param chain The chain to get the RPC URL for.
-     * @returns The RPC URL.
-     */
-    private getRpcUrl(chain: Chain): string {
-        switch (chain.name) {
-            case 'Gnosis':
-                return 'https://gnosis-pokt.nodies.app'
-            default:
-                return ''
         }
     }
 }

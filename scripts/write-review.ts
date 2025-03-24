@@ -117,7 +117,7 @@ async function main() {
             alias: 'n',
             type: 'string',
             description: 'The network the rate provider is deployed on',
-            choices: ['base', 'mainnet', 'arbitrum', 'avalanche', 'gnosis'],
+            choices: ['base', 'mainnet', 'arbitrum', 'avalanche', 'gnosis', 'fraxtal', 'optimism'],
             demandOption: true,
         })
         .option('rateProviderAsset', {
@@ -134,20 +134,32 @@ async function main() {
         arbitrum,
         avalanche,
         gnosis,
+        fraxtal,
+        optimism,
         sonic,
         sepolia,
         polygon,
-        fraxtal,
-        optimism,
         polygonZkEvm,
         mode,
     }
 
-    const network = networks[argv.network]
+    let network = networks[argv.network]
 
     if (!network) {
         console.error(`Unsupported network: ${argv.network}`)
         process.exit(1)
+    }
+
+    // Override the default RPC URL
+    // Reason it must be an RPC URL that supports createAccessList
+    network = {
+        ...network,
+        rpcUrls: {
+            ...network.rpcUrls,
+            default: {
+                http: [process.env.CUSTOM_RPC_URL || network.rpcUrls.default.http[0]],
+            },
+        },
     }
 
     const rateProviderAddress = argv.rateProviderAddress.startsWith('0x')
