@@ -82,7 +82,7 @@ async function writeReviewAndUpdateRegistry(rateProviderAddress: Address, networ
         factory: '',
         upgradeableComponents: upgradeData.map((contract) => ({
             address: contract.address,
-            implementation: contract.implementation,
+            implementationReviewed: contract.implementation,
         })),
     }
     // Mapping of chain names to registry keys
