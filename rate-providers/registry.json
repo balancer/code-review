@@ -2626,6 +2626,15 @@
           "implementationReviewed": "0x7a3e55e2c23ab6adc12accf1075b91c174ee0102"
         }
       ]
+    },
+    "0x8Be2e3D4b85d05cac2dBbAC6c42798fb342aef45": {
+      "asset": "0x2411802D8BEA09be0aF8fD8D08314a63e706b29C",
+      "name": "fwstETH / wstETH CombinedRateProvider",
+      "summary": "safe",
+      "review": "./CombinedRateProvider.md",
+      "warnings": [""],
+      "factory": "",
+      "upgradeableComponents": []
     }
   },
   "fantom": {
