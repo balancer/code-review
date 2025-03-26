@@ -2629,7 +2629,7 @@
     },
     "0x8Be2e3D4b85d05cac2dBbAC6c42798fb342aef45": {
       "asset": "0x2411802D8BEA09be0aF8fD8D08314a63e706b29C",
-      "name": "fwstETH / wstETH CombinedRateProvider",
+      "name": "fwstETH / wstETH MarketRateTransformerRateProviders",
       "summary": "safe",
       "review": "./MarketRateTransformerRateProviders.md",
       "warnings": [""],
