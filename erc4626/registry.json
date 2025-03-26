@@ -503,6 +503,16 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": false
+    },
+    "0x2411802D8BEA09be0aF8fD8D08314a63e706b29C": {
+      "asset": "0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0",
+      "name": "fluid wsteth",
+      "summary": "safe",
+      "review": "/FluidVaults.md",
+      "warnings": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   },
   "gnosis": {
@@ -549,6 +559,16 @@
     "0x57f664882F762FA37903FC864e2B633D384B411A": {
       "asset": "0x6A023CCd1ff6F2045C3309768eAd9E68F978f6e1",
       "name": "Wrapped Aave Gnosis WETH",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
+    "0x417bc5b940475203A18C2f320a5ba470D6c5E463": {
+      "asset": "0xcB444e90D8198415266c6a2724b7900fb12FC56E",
+      "name": "Wrapped Aave Gnosis EURe",
       "summary": "safe",
       "review": "./StatATokenV2Review.md",
       "warnings": [],
@@ -647,6 +667,56 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0xdA14A41DbdA731F03A94cb722191639DD22b35b2": {
+      "asset": "0x80Eede496655FB9047dd39d9f418d5483ED600df",
+      "name": "SiloV2 frxUSD ID 37",
+      "summary": "safe",
+      "review": "./SiloV2Review.md",
+      "warnings": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
+    "0x0A94e18bdbCcD048198806d7FF28A1B1D2590724": {
+      "asset": "0xBb30e76d9Bb2CC9631F7fC5Eb8e87B5Aff32bFbd",
+      "name": "SiloV2 scBTC ID 32",
+      "summary": "safe",
+      "review": "./SiloV2Review.md",
+      "warnings": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
+    "0x6646248971427B80ce531bdD793e2Eb859347E55": {
+      "asset": "0x29219dd400f2Bf60E5a23d13Be72B486D4038894",
+      "name": "Wrapped Aave Sonic USDC.E",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
+    "0x18B7B8695165290f2767BC63c36D3dFEa4C0F9bB": {
+      "asset": "0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38",
+      "name": "Wrapped Aave Sonic wS",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
+    "0xeB5e9B0ae5bb60274786C747A1A2A798c11271E0": {
+      "asset": "0x50c42dEAcD8Fc9773493ED674b675bE577f2634b",
+      "name": "Wrapped Aave Sonic WETH",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   },
   "sepolia": {
@@ -673,6 +743,16 @@
     "0x978206fAe13faF5a8d293FB614326B237684B750": {
       "asset": "0xaa8e23fb1079ea71e0a56f48a2aa51851d8433d0",
       "name": "Static Aave Ethereum USDC",
+      "summary": "safe",
+      "review": "./AaveV3.md",
+      "warnings": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
+    "0x8a88124522dbbf1e56352ba3de1d9f78c143751e": {
+      "asset": "0x94a9D9AC8a22534E3FaCa9F4e7F2E2cf85d5E4C8",
+      "name": "Static Aave Ethereum USDC 2",
       "summary": "safe",
       "review": "./AaveV3.md",
       "warnings": [],

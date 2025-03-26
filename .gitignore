@@ -13,3 +13,5 @@ contracts/
 
 # Python 
 python/venv/
+# Environment files
+.env

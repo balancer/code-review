@@ -14,6 +14,7 @@
     - wETH [gnosis:0x0008A59C1d2E5922790C929ea432ed02D4D3323A](https://gnosisscan.io/address/0x0008A59C1d2E5922790C929ea432ed02D4D3323A#readContract)
     - GNO [gnosis:0xbbb4966335677Ea24F7B86DC19a423412390e1fb](https://gnosisscan.io/address/0xbbb4966335677Ea24F7B86DC19a423412390e1fb#code)
     - USDC.e [gnosis:0x1529f6Af353E180867F257820843425B49B1b478](https://gnosisscan.io/address/0x1529f6Af353E180867F257820843425B49B1b478#code)
+    - EURe [gnosis:0x79FE0750bE76913E83a0f0EB60ba1Ab7FA6FdA5D](https://gnosisscan.io/address/0x79FE0750bE76913E83a0f0EB60ba1Ab7FA6FdA5D#code) 
     - Wrapped Aave Arbitrum WETH [arbitrum:0xE3dF105DB16282E5ce5cDa2d15391b04A408BcCf](https://arbiscan.io/address/0xE3dF105DB16282E5ce5cDa2d15391b04A408BcCf#readContract)
     - Wrapped Aave Arbitrum WBTC [arbitrum:0xDEA44786E61fd5475B35869586737D99B5e6dB59](https://arbiscan.io/address/0xDEA44786E61fd5475B35869586737D99B5e6dB59#readContract)
     - USDCn [arbitrum:0xDAff80737b23A6E40F77Aa28957a10c9Af5dff45](https://arbiscan.io/address/0xDAff80737b23A6E40F77Aa28957a10c9Af5dff45)
@@ -23,7 +24,11 @@
     - Wrapped Aave Arbitrum DAI [arbitrum:0x788dab521C4607C99F879f327894cC6fAcd217E3](https://arbiscan.io/address/0x788dab521C4607C99F879f327894cC6fAcd217E3#readContract)
     - Wrapped Aave Arbitrum USDC [arbitrum:0x30A225b9e9989bEd9C3e473686a29C9106E4393e](https://arbiscan.io/address/0x30A225b9e9989bEd9C3e473686a29C9106E4393e)
     - Wrapped Aave Arbitrum GHO [arbitrum:0xb866b055D0F970FD48DEA5dB28FdEa5BcAE3EA67](https://arbiscan.io/address/0xb866b055D0F970FD48DEA5dB28FdEa5BcAE3EA67#code)
+    - Wrapped Aave Gnosis EURe [gnosis:0x79FE0750bE76913E83a0f0EB60ba1Ab7FA6FdA5D](https://gnosisscan.io/address/0x79FE0750bE76913E83a0f0EB60ba1Ab7FA6FdA5D#code)
     - Wrapped Aave Ethereum PYUSD [ethereum:0xdd8AEBC13B3DFaF85e3B512d26681987aD2c43b2](https://etherscan.io/address/0xdd8AEBC13B3DFaF85e3B512d26681987aD2c43b2#readContract)
+    - Wrapped Aave Sonic USDC.e [sonic:0x2446b93ec86be9225d07379ee5dba6b0aa632c55](https://sonicscan.org/address/0x2446b93ec86be9225d07379ee5dba6b0aa632c55#readContract)
+    - Wrapped Aave Sonic wS [sonic:0x25b5e53e3dfca480047b6e53f637ebe44abadd59](https://sonicscan.org/address/0x25b5e53e3dfca480047b6e53f637ebe44abadd59#readContract)
+    - Wrapped Aave Sonic WETH [sonic:0xf05afb759f1bc07756329d7080987d5ccc2a26e7](https://sonicscan.org/address/0xf05afb759f1bc07756329d7080987d5ccc2a26e7#readContract)
 
 - Audit report(s):
     - [Formal Verification Report For StaticAToken](https://github.com/aave-dao/aave-v3-origin/blob/067d29eb75115179501edc4316d125d9773f7928/audits/11-09-2024_Certora_StataTokenV2.pdf)
@@ -136,6 +141,16 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
         - admin type: Aave governance system.
             - multisig timelock? YES: 24 hours
 
+    - [gnosis:0x79FE0750bE76913E83a0f0EB60ba1Ab7FA6FdA5D](https://gnosisscan.io/address/0x79FE0750bE76913E83a0f0EB60ba1Ab7FA6FdA5D#readProxyContract)
+        - upgradeable component: `StataTokenV2` ([gnosis:0x417bc5b940475203A18C2f320a5ba470D6c5E463](https://gnosisscan.io/address/0x417bc5b940475203A18C2f320a5ba470D6c5E463.#readProxyContract))
+        - admin address: [gnosis:0x1dF462e2712496373A347f8ad10802a5E95f053D](https://gnosisscan.io/address/0x1dF462e2712496373A347f8ad10802a5E95f053D)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours.
+        - upgradeable component: `L2Pool` ([gnosis:0xb50201558B00496A145fE76f7424749556E326D8](https://gnosisscan.io/address/0xb50201558B00496A145fE76f7424749556E326D8#code))
+        - admin address: [gnosis:0x1dF462e2712496373A347f8ad10802a5E95f053D](https://gnosisscan.io/address/0x1dF462e2712496373A347f8ad10802a5E95f053D#code)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours
+
     - [arbitrum:0xE3dF105DB16282E5ce5cDa2d15391b04A408BcCf](https://arbiscan.io/address/0xE3dF105DB16282E5ce5cDa2d15391b04A408BcCf#readContract)
         - upgradeable component: `StataTokenV2` ([arbitrum:0x4cE13a79f45C1Be00BdABD38B764aC28C082704E](https://arbiscan.io/address/0x4cE13a79f45C1Be00BdABD38B764aC28C082704E#readProxyContract))
         - admin address: [arbitrum:0xFF1137243698CaA18EE364Cc966CF0e02A4e6327](https://arbiscan.io/address/0xFF1137243698CaA18EE364Cc966CF0e02A4e6327#code)
@@ -235,6 +250,36 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
         - admin address: [ethereum:0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A](https://etherscan.io/address/0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A)
         - admin type: Aave governance system.
             - multisig timelock? YES: 24 hours.
+
+    - [sonic:0x2446b93ec86be9225d07379ee5dba6b0aa632c55](https://sonicscan.org/address/0x2446b93ec86be9225d07379ee5dba6b0aa632c55#readContract)
+        - upgradeable component: `StataTokenV2` ([sonic:0x6646248971427B80ce531bdD793e2Eb859347E55](https://sonicscan.org/address/0x6646248971427B80ce531bdD793e2Eb859347E55#readProxyContract))
+            - admin address: [sonic:0x7b62461a3570c6AC8a9f8330421576e417B71EE7](https://sonicscan.org/address/0x7b62461a3570c6AC8a9f8330421576e417B71EE7#readProxyContract)
+            - admin type: Aave governance system.
+                - multisig timelock? YES: 24 hours.
+        - upgradeable component: `PoolInstance` ([sonic:0x5362dBb1e601abF3a4c14c22ffEdA64042E5eAA3]https://sonicscan.org/address/0x5362dBb1e601abF3a4c14c22ffEdA64042E5eAA3#readProxyContract))
+            - admin address: [sonic:0x7b62461a3570c6AC8a9f8330421576e417B71EE7](https://sonicscan.org/address/0x7b62461a3570c6AC8a9f8330421576e417B71EE7#readProxyContract)
+            - admin type: Aave governance system.
+                - multisig timelock? YES: 24 hours.
+    
+    - [sonic:0x25b5e53e3dfca480047b6e53f637ebe44abadd59](https://sonicscan.org/address/0x25b5e53e3dfca480047b6e53f637ebe44abadd59#readContract)
+        - upgradeable component: `StataTokenV2` ([sonic:0x18B7B8695165290f2767BC63c36D3dFEa4C0F9bB](https://sonicscan.org/address/0x18B7B8695165290f2767BC63c36D3dFEa4C0F9bB#readProxyContract))
+            - admin address: [sonic:0x7b62461a3570c6AC8a9f8330421576e417B71EE7](https://sonicscan.org/address/0x7b62461a3570c6AC8a9f8330421576e417B71EE7#readProxyContract)
+            - admin type: Aave governance system.
+                - multisig timelock? YES: 24 hours.
+        - upgradeable component: `PoolInstance` ([sonic:0x5362dBb1e601abF3a4c14c22ffEdA64042E5eAA3]https://sonicscan.org/address/0x5362dBb1e601abF3a4c14c22ffEdA64042E5eAA3#readProxyContract))
+            - admin address: [sonic:0x7b62461a3570c6AC8a9f8330421576e417B71EE7](https://sonicscan.org/address/0x7b62461a3570c6AC8a9f8330421576e417B71EE7#readProxyContract)
+            - admin type: Aave governance system.
+                - multisig timelock? YES: 24 hours.
+
+    - [sonic:0xf05afb759f1bc07756329d7080987d5ccc2a26e7](https://sonicscan.org/address/0xf05afb759f1bc07756329d7080987d5ccc2a26e7#readContract)
+        - upgradeable component: `StataTokenV2` ([sonic:0xeB5e9B0ae5bb60274786C747A1A2A798c11271E0](https://sonicscan.org/address/0xeB5e9B0ae5bb60274786C747A1A2A798c11271E0#readProxyContract))
+            - admin address: [sonic:0x7b62461a3570c6AC8a9f8330421576e417B71EE7](https://sonicscan.org/address/0x7b62461a3570c6AC8a9f8330421576e417B71EE7#readProxyContract)
+            - admin type: Aave governance system.
+                - multisig timelock? YES: 24 hours.
+        - upgradeable component: `PoolInstance` ([sonic:0x5362dBb1e601abF3a4c14c22ffEdA64042E5eAA3]https://sonicscan.org/address/0x5362dBb1e601abF3a4c14c22ffEdA64042E5eAA3#readProxyContract))
+            - admin address: [sonic:0x7b62461a3570c6AC8a9f8330421576e417B71EE7](https://sonicscan.org/address/0x7b62461a3570c6AC8a9f8330421576e417B71EE7#readProxyContract)
+            - admin type: Aave governance system.
+                - multisig timelock? YES: 24 hours.
     
 
 ### Oracles
