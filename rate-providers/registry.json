@@ -2631,7 +2631,7 @@
       "asset": "0x2411802D8BEA09be0aF8fD8D08314a63e706b29C",
       "name": "fwstETH / wstETH CombinedRateProvider",
       "summary": "safe",
-      "review": "./CombinedRateProvider.md",
+      "review": "./MarketRateTransformerRateProviders.md",
       "warnings": [""],
       "factory": "",
       "upgradeableComponents": []
