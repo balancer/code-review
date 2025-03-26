@@ -39,6 +39,10 @@
     - Wrapped Aave Arbitrum ezETH [arbitrum:0xfa5D15F15bC1BeBf3B413d9373E27586ac799dB6](https://arbiscan.io/address/0xfa5D15F15bC1BeBf3B413d9373E27586ac799dB6)
         - ERC4626RateProvider: Wrapped Aave Arbitrum ezETH 
         - ERC4626Vault's `asset` rate provider: Renzo's custom rate provider
+    
+    - Fluid wstETH [ethereum: 0x8Be2e3D4b85d05cac2dBbAC6c42798fb342aef45](https://etherscan.io/address/0x8be2e3d4b85d05cac2dbbac6c42798fb342aef45)
+        - ERC4626RateProvider: Fluid Wrapped Staked Eth 
+        - ERC4626Vault's `asset` rate provider: Fluid's custom rate provider
 
 - Audit report(s):
     - [Formal Verification Report For StaticAToken](https://github.com/aave-dao/aave-v3-origin/blob/067d29eb75115179501edc4316d125d9773f7928/audits/11-09-2024_Certora_StataTokenV2.pdf)
