@@ -3558,6 +3558,15 @@
       "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
       "upgradeableComponents": []
     },
+    "0xf9fe8c5009b1015363e4452e0ac1d45d3924b986": {
+      "asset": "0x0A94e18bdbCcD048198806d7FF28A1B1D2590724",
+      "name": "Silo scBTC Rateprovider",
+      "summary": "safe",
+      "review": "./SiloWrappedRateprovider.md",
+      "warnings": [""],
+      "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
+      "upgradeableComponents": []
+    },
     "0xfbcee1fcaa2db776b4b575a8da3e8c93ea5eef53": {
       "asset": "0x9F0dF7799f6FDAd409300080cfF680f5A23df4b1",
       "name": "Wrapped Origin Sonic Rateprovider",
