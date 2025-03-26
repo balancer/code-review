@@ -2626,6 +2626,15 @@
           "implementationReviewed": "0x7a3e55e2c23ab6adc12accf1075b91c174ee0102"
         }
       ]
+    },
+    "0xA4c27E4Aa764312fD958345Ed683c6eeC4581A10": {
+      "asset": "0x7788A3538C5fc7F9c7C8A74EAC4c898fC8d87d92",
+      "name": "sUSDXRateProvider",
+      "summary": "safe",
+      "review": "./sUSDXRateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   },
   "fantom": {
