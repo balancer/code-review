@@ -8,7 +8,7 @@
     - [sonic:0x635d8b3870ade127eb7ffc21753883f8f30e1051](https://sonicscan.org/address/0x635d8b3870ade127eb7ffc21753883f8f30e1051)
     - [sonic:0x180eC5fe23a2331b8180775c712EAB5f7a138c46](https://sonicscan.org/address/0x180eC5fe23a2331b8180775c712EAB5f7a138c46)
     - [sonic:0x526C663A66Cd6BC7F371Ce7442D07b058E18A8D2](https://sonicscan.org/address/0x526C663A66Cd6BC7F371Ce7442D07b058E18A8D2)
-    - [sonic:0x180eC5fe23a2331b8180775c712EAB5f7a138c46](https://sonicscan.org/address/0x180eC5fe23a2331b8180775c712EAB5f7a138c46)
+    - [sonic:0x9969cE7E4414f89C69fFB0e3bE739feE36A60a0A](https://sonicscan.org/address/0x9969cE7E4414f89C69fFB0e3bE739feE36A60a0A)
     - [arbitrum:0x3a216B01db971Bf28D171C9dA44Cc8C89867697F](https://arbiscan.io/address/0x3a216B01db971Bf28D171C9dA44Cc8C89867697F#code)
     - [arbitrum:0x72F6Da3b4bd0Ab7028F52339Ee3B1f94fffe2dD0](https://arbiscan.io/address/0x72F6Da3b4bd0Ab7028F52339Ee3B1f94fffe2dD0#code) 
     - [arbitrum:0xdcd8db2a23e21a4b9fa3d984d5a31fb554c70832](https://arbiscan.io/address/0xdcd8db2a23e21a4b9fa3d984d5a31fb554c70832#code) 
