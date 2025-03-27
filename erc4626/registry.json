@@ -707,6 +707,56 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0xdB1E39faC2EeeEdB49198735B12a8e598a84510c": {
+      "asset": "0xE5DA20F15420aD15DE0fa650600aFc998bbE3955",
+      "name": "Wrapped Vicuna stS",
+      "summary": "safe",
+      "review": "./VicunaReview.md",
+      "warnings": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
+    "0x6C2dadFfAB1714485aD87d1926f4c26E29a957b6": {
+      "asset": "0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38",
+      "name": "Wrapped Vicuna wS",
+      "summary": "safe",
+      "review": "./VicunaReview.md",
+      "warnings": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
+    "0x711a93a8bD6803aF0a6122F2dE18c1a6AB7CB29C": {
+      "asset": "0xd3DCe716f3eF535C5Ff8d041c1A41C3bd89b97aE",
+      "name": "Wrapped Vicuna scUSD",
+      "summary": "safe",
+      "review": "./VicunaReview.md",
+      "warnings": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
+    "0xd7c9f62622dB85545731F0E4e5D4556aC8a19832": {
+      "asset": "0x6047828dc181963ba44974801FF68e538dA5eaF9",
+      "name": "Wrapped Vicuna USDT",
+      "summary": "safe",
+      "review": "./VicunaReview.md",
+      "warnings": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
+    "0xef23FdCbd9b36Ed99A6C51CaA83Af549c36601CF": {
+      "asset": "0x29219dd400f2Bf60E5a23d13Be72B486D4038894",
+      "name": "Wrapped Vicuna USDC.e",
+      "summary": "safe",
+      "review": "./VicunaReview.md",
+      "warnings": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   },
   "sepolia": {

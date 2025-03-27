@@ -1,10 +1,14 @@
-# ERC4626 Vault: `BeefyWrapper`
+# ERC4626 Vault: `VicunaWrapper`
 
 ## Details
 - Reviewed by: @franzns
-- Checked by: @danielmkm
+- Checked by: 
 - Deployed at:
-    - [sonic:0x62b12a64020834E6368a776aE874DAD80a069a0C](https://sonicscan.org/address/0x62b12a64020834E6368a776aE874DAD80a069a0C#code)
+    - [sonic:0xdB1E39faC2EeeEdB49198735B12a8e598a84510c](https://sonicscan.org/address/0xdB1E39faC2EeeEdB49198735B12a8e598a84510c#code)
+    - [sonic:0x6C2dadFfAB1714485aD87d1926f4c26E29a957b6](https://sonicscan.org/address/0x6C2dadFfAB1714485aD87d1926f4c26E29a957b6#code)
+    - [sonic:0x711a93a8bD6803aF0a6122F2dE18c1a6AB7CB29C](https://sonicscan.org/address/0x711a93a8bD6803aF0a6122F2dE18c1a6AB7CB29C#code)
+    - [sonic:0xd7c9f62622dB85545731F0E4e5D4556aC8a19832](https://sonicscan.org/address/0xd7c9f62622dB85545731F0E4e5D4556aC8a19832#code)
+    - [sonic:0xef23FdCbd9b36Ed99A6C51CaA83Af549c36601CF](https://sonicscan.org/address/0xef23FdCbd9b36Ed99A6C51CaA83Af549c36601CF#code)
 - Audits:
     - [Vicuna audits](https://github.com/VicunaFinance-com/Audits)
 
@@ -24,7 +28,7 @@ Each of the items below represents a common red flag found in ERC4626 contracts.
 If none of these is checked, then this might be a pretty great ERC4626! If any of these is checked, we must thoroughly elaborate on the conditions that lead to the potential issue. Decision points are not binary; a ERC4626 can be safe despite these boxes being checked. A check simply indicates that thorough vetting is required in a specific area, and this vetting should be used to inform a holistic analysis of the ERC4626.
 
 ### Administrative Privileges
-- [ ] The ERC4626 Beefy Wrapper Vault is upgradeable. 
+- [ ] The ERC4626 Wrapper Vault is upgradeable. 
 
 ### Common Manipulation Vectors
 - [x] The ERC4626 Vault is susceptible to donation attacks.
