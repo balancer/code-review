@@ -131,13 +131,13 @@ async function createCustomAgents(rateProvider: Address, chain: Chain) {
         process.env.HYPERNATIVE_CLIENT_SECRET || '',
     )
 
-    /* await hypernativeApi.createCustomAgentRateDeviation({
+    await hypernativeApi.createCustomAgentRateDeviation({
         chain,
         ruleString: `On ${chain.name}: when ${rateProvider}: getRate().uint256 changed by 10% in less than 10 blocks.\nSample every 5 blocks`,
         contractAddress: rateProvider,
         contractAlias: rateProvider,
         agentName: `${rateProvider.slice(-4)}rate-deviation`,
-    }) */
+    })
 
     for (const component of upgradeableComponents) {
         await hypernativeApi.createCustomAgentUpgrade({
@@ -148,8 +148,6 @@ async function createCustomAgents(rateProvider: Address, chain: Chain) {
             agentName: `${component.slice(-4)}-upgrade`,
         })
     }
-
-    const x = 5
 }
 
 // Parse command-line arguments using yargs
