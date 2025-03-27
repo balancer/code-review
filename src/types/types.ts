@@ -1,4 +1,4 @@
-import { Address, Hex } from 'viem'
+import { Address, Hex, Chain } from 'viem'
 
 export interface GetContractSourceCodeResult {
     SourceCode: string
@@ -27,4 +27,13 @@ export interface TransactionData {
         txHash: Hex
         blockNumber: string
     }>
+}
+
+export interface CustomAgentInput {
+    chain: Chain
+    ruleString: string
+    contractAddress: string
+    contractAlias: string
+    agentName: string
+    operands?: string
 }
