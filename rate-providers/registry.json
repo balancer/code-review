@@ -3581,6 +3581,20 @@
         }
       ]
     },
+    "0x2d087c0999223997b77cc33be5e7e8ec79396cea": {
+      "asset": "0x0C4E186Eae8aCAA7F7de1315D5AD174BE39Ec987",
+      "name": "Wrapped Angles Sonic Rateprovider",
+      "summary": "safe",
+      "review": "./wanSonicRateprovider.md",
+      "warnings": [""],
+      "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xfA85Fe5A8F5560e9039C04f2b0a90dE1415aBD70",
+          "implementationReviewed": "0xba3bb17d19e556900e42e7c1e9e89dc6d3207a64"
+        }
+      ]
+    },
     "0xECDfaa456a01c9804Fc8D11955CF4B54E0eA2Bd7": {
       "asset": "0x50c42deacd8fc9773493ed674b675be577f2634b",
       "name": "ConstantRateProvider",
