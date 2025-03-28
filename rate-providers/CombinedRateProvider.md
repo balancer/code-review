@@ -42,7 +42,7 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 - waEURe Gnosis [gnosis:0xdDDF909076B641C51f22ACD4b134C54adad51e68](https://gnosisscan.io/address/0xdDDF909076B641C51f22ACD4b134C54adad51e68#code)
     - [rateProvider1 EURe](https://gnosisscan.io/address/0xe7511f6e5c593007ea8a7f52af4b066333765e03): [ChainlinkRateProvider](https://github.com/balancer/code-review/blob/main/rate-providers/ChainLinkRateProvider.md) review deemed SAFE
     - [rateProvider2 Aave EURe](https://gnosisscan.io/address/0x79FE0750bE76913E83a0f0EB60ba1Ab7FA6FdA5D#code): [statATokenv2RateProvider](https://github.com/balancer/code-review/blob/main/rate-providers/statATokenv2RateProvider.md) review deemed SAFE.
-
+ 
 ### Common Manipulation Vectors
 - [ ] The Rate Provider is susceptible to donation attacks.
 
