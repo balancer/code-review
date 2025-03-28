@@ -106,11 +106,11 @@ class RateProviderDataService {
     }
 
     /**
-     * Fetches proxy information for the given addresses.
+     * Fetches contract information for the given addresses.
      * @param addresses The addresses to fetch proxy information for.
-     * @returns An array of proxy information.
+     * @returns An array of contract information.
      */
-    public async getProxyInfo(
+    public async getContractInfo(
         addresses: Address[],
     ): Promise<{ address: Address; Proxy: string; ContractName: string; ABI: string; Implementation: Address }[]> {
         const etherscanApi = new EtherscanApi(this.chain, this.apiKey)
@@ -136,7 +136,7 @@ class RateProviderDataService {
             allContractAddresses.push(this.rateProvider)
         }
 
-        const proxiesWithRateProvider = await this.getProxyInfo(allContractAddresses)
+        const proxiesWithRateProvider = await this.getContractInfo(allContractAddresses)
         const filteredProxiesList = proxiesWithRateProvider.filter((p) => p.Proxy === '1')
         const proxiesWithRateProviderDeploymentInfo = await this.getDeploymentBlocks(
             filteredProxiesList.map((p) => p.address),

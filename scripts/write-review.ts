@@ -45,7 +45,7 @@ const chainNameToRegistryKey: { [key: string]: string } = {
 async function writeReviewAndUpdateRegistry(
     rateProviderAddress: Address,
     network: Chain,
-    rateProviderAsset: string,
+    rateProviderAsset: Address,
 ): Promise<{ rateProvider: Address }> {
     const service = new RateProviderDataService(rateProviderAddress, network)
 
@@ -56,6 +56,8 @@ async function writeReviewAndUpdateRegistry(
     const hasInterfaceImplemented = service.hasValidGetRateFunction()
 
     const tenderlysimUrl = await service.getTenderlySimulation()
+
+    const [{ ContractName }] = await service.getContractInfo([rateProviderAsset])
 
     // Write report
     const templateData = {
@@ -69,7 +71,7 @@ async function writeReviewAndUpdateRegistry(
 
     const filledTemplate = template
         .replace('{{date}}', new Date().toLocaleDateString('en-GB'))
-        .replace('{{rateProvider}}', templateData.rateProvider)
+        .replace('{{rateProvider}}', ContractName)
         .replace('{{network}}', service.chain.name)
         .replace('{{rateProviderAddress}}', rateProviderAddress)
         .replace(
@@ -83,7 +85,7 @@ async function writeReviewAndUpdateRegistry(
         .replace('{{isUsable}}', templateData.isUsable)
         .replace('{{tenderlySimUrl}}', tenderlysimUrl)
 
-    fs.writeFileSync(`${service.sourceCode.ContractName}.md`, filledTemplate)
+    fs.writeFileSync(`${ContractName}RateProviderReview.md`, filledTemplate)
 
     // Write to registry
     const registryPath = path.join(__dirname, '../rate-providers/registry.json')
@@ -210,12 +212,20 @@ async function main() {
 
     const rateProviderAddress = argv.rateProviderAddress.startsWith('0x')
         ? (argv.rateProviderAddress as Address)
-        : (`0x${argv.rateProviderAddress}` as Address)
+        : (() => {
+              throw new Error(`Invalid rateProviderAddress: ${argv.rateProviderAddress}. It must start with "0x".`)
+          })()
 
-    await writeReviewAndUpdateRegistry(rateProviderAddress, network, argv.rateProviderAsset)
+    const rateProviderAsset = argv.rateProviderAsset.startsWith('0x')
+        ? (argv.rateProviderAsset as Address)
+        : (() => {
+              throw new Error(`Invalid rateProviderAsset: ${argv.rateProviderAsset}. It must start with "0x".`)
+          })()
+
+    await writeReviewAndUpdateRegistry(rateProviderAddress, network, rateProviderAsset)
 
     // the registry file has been updated. All relevant information can be read from there and don't need to be passed as arguments
-    await createCustomAgents(rateProviderAddress, network)
+    // await createCustomAgents(rateProviderAddress, network)
 }
 
 main().catch((error) => {
