@@ -2627,6 +2627,15 @@
         }
       ]
     },
+    "0xA4c27E4Aa764312fD958345Ed683c6eeC4581A10": {
+      "asset": "0x7788A3538C5fc7F9c7C8A74EAC4c898fC8d87d92",
+      "name": "sUSDXRateProvider",
+      "summary": "safe",
+      "review": "./sUSDXRateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
+    },
     "0x8Be2e3D4b85d05cac2dBbAC6c42798fb342aef45": {
       "asset": "0x2411802D8BEA09be0aF8fD8D08314a63e706b29C",
       "name": "fwstETH / wstETH MarketRateTransformerRateProvider",
