@@ -1,33 +1,15 @@
-# code-review
+Here is the improved content for your README.md file as raw data:
+
+---
+
+# Code Review
 
 A collection of smart contract code reviews performed upon friendly request.
 
+**Disclaimer**:  
 NOTHING IN THIS REPOSITORY CONSTITUTES A FORMAL AUDIT, AND CODE SHOULD NEVER BE DEPLOYED TO PRODUCTION WITHOUT A FORMAL AUDIT. REVIEWERS ARE HUMAN; MISTAKES WILL BE MADE AND BUGS MISSED. REVIEWERS ARE NOT LIABLE FOR ANY INCIDENT THAT OCCURS POST-REVIEW. THIS IS MERELY A FRIENDLY PEER-REVIEW SERVICE AND SHOULD NOT BE TREATED AS A STAMP OF APPROVAL. REVIEWED CODE IS NOT NECESSARILY BUG-FREE. ALWAYS TRIPLE-CHECK BEFORE INTERACTING WITH SMART CONTRACTS, AND DO NOT TRUST REVIEWERS ON THE BASIS OF REPUTATION ALONE.
 
-## Rate Provider Factories for reference
-
-| Network    | ChainlinkRateProviderFactory               | ERC4626RateProviderFactory                 |
-| ---------- | ------------------------------------------ | ------------------------------------------ |
-| Arbitrum   | 0x5DbAd78818D4c8958EfF2d5b95b28385A22113Cd | 0xe548a29631f9E49830bE8edc22d407b2D2915F31 |
-| Avalanche  | 0x76578ecf9a141296Ec657847fb45B0585bCDa3a6 | 0xfCe81cafe4b3F7e2263EFc2d907f488EBF2B238E |
-| Base       | 0x0A973B6DB16C2ded41dC91691Cc347BEb0e2442B | 0xEfD3aF73d3359014f3B864d37AC672A6d3D7ff1A |
-| Fraxtal    | 0x3f170631ed9821Ca51A59D996aB095162438DC10 | N/A                                        |
-| Gnosis     | 0xDB8d758BCb971e482B2C45f7F8a7740283A1bd3A | 0x15e86Be6084C6A5a8c17732D398dFbC2Ec574CEC |
-| Mainnet    | 0x1311Fbc9F60359639174c1e7cC2032DbDb5Cc4d1 | 0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec |
-| Mode       | 0x96484f2aBF5e58b15176dbF1A799627B53F13B6d | 0x0767bECE12a327A1eD896c48E843AE53a0c313E9 |
-| Optimism   | 0x83E443EF4f9963C77bd860f94500075556668cb8 | 0x02a569eea6f85736E2D63C59E60d27d075E75c33 |
-| Polygon    | 0xa3b370092aeb56770B23315252aB5E16DAcBF62B | 0x3e89cc86307aF44A77EB29d0c4163d515D348313 |
-| Sepolia    | 0xA8920455934Da4D853faac1f94Fe7bEf72943eF1 | N/A                                        |
-| zkEVM      | 0x4132f7AcC9dB7A6cF7BE2Dd3A9DC8b30C7E6E6c8 | N/A                                        |
-
-## Rate Transformer Factories 
-Use these factories when an ERC4626 vault contains a yield bearing token to combine their respective rates of growth. This denominates the vault asset in the underlying for correlated pairs. For example, Aave-wstETH pairing with Aave-wETH by denominating the assets in wETH.
-
-| Network    | AaveRateTransformerFactory                 | 
-| ---------- | -------------------------------------------|
-| Arbitrum   | 0xec2c6184761ab7fe061130b4a7e3da89c72f8395 | 
-| Base       | 0x4e185b1502fea7a06b63fdda6de38f92c9528566 |
-| Ethereum   | 0xec2c6184761ab7fe061130b4a7e3da89c72f8395 | 
+---
 
 ## Setup
 
@@ -43,14 +25,23 @@ Use these factories when an ERC4626 vault contains a yield bearing token to comb
     ```
 
 3. **Set up environment variables:**
-    Create a `.env` file in the root directory and add the necessary environment variables. You can use the `.env.example` file as a reference.
+    Create a .env file in the root directory and add the necessary environment variables. You can use the .env.example file as a reference.
 
     ```sh
     cp .env.example .env
     ```
-    - Note: When setting the `CUSTOM_RPC_URL` make sure it supports `eth_createAccessList`.
 
+    ### Essential Environment Variables:
+    - **`CUSTOM_RPC_URL`**: A custom RPC URL that supports `eth_createAccessList`. This is required for interacting with the blockchain.
+    - **`HYPERNATIVE_CLIENT_ID`**: Your Hypernative API client ID.
+    - **`HYPERNATIVE_CLIENT_SECRET`**: Your Hypernative API client secret.
+    - **`TENDERLY_ACCOUNT_SLUG`**: Your Tenderly account slug.
+    - **`TENDERLY_PROJECT_SLUG`**: Your Tenderly project slug.
+    - **`TENDERLY_API_ACCESS_KEY`**: Your Tenderly API access key.
+    - **`ETHERSCAN_API_KEY`**: Your Etherscan API key (for Ethereum).
+    - **Other API keys**: Depending on the chain, you may need additional API keys (e.g., `GNOSISSCAN_API_KEY`, `BASESCAN_API_KEY`, etc.).
 
+---
 
 ## Testing
 
@@ -59,38 +50,61 @@ Use these factories when an ERC4626 vault contains a yield bearing token to comb
     npm test
     ```
 
+---
+
 ## Scripts
 
-The following scripts are available in the `package.json` file:
+The following scripts are available in the package.json file:
 
 - **`npm run test`**: Runs the test suite.
 - **`npm run lint`**: Lints the registry.
 - **`npm run write-review`**: Generates the rate-provider review.
 
+---
+
 ## Running Scripts
 
-The `npm run write-review` script generates a review for a specified rate provider. It fetches the necessary data, generates a markdown review file, and updates the registry with the new review information.
+### `npm run write-review`
 
+This script generates a review for a specified rate provider. It fetches the necessary data, generates a markdown review file, and updates the registry with the new review information. It additionally creates the Hypernative monitoring agents.
+
+#### Usage:
 ```sh
 npm run write-review -- --rateProviderAddress <address> --network <network> --rateProviderAsset <asset>
 ```
-The supported networks can be seen in the `write-review.ts` file under the network option
-```typescript
-.option('network', {
-            alias: 'n',
-            type: 'string',
-            description: 'The network the rate provider is deployed on',
-            choices: ['base', 'mainnet', 'arbitrum', 'avalanche'],
-            demandOption: true,
-        })
+
+#### Example:
+```sh
+npm run write-review -- --rateProviderAddress 0xA4c27E4Aa764312fD958345Ed683c6eeC4581A10 --network mainnet --rateProviderAsset 0x7788A3538C5fc7F9c7C8A74EAC4c898fC8d87d92
 ```
 
-## Output 
-The script does two things:
-- Updates the registry with rp information
-- genererates a review report
+#### Supported Networks:
 
-Before the review is finished the user is expected to add the following items to the review post script run:
-- Context on the rate Provider
-- Audit reports
-- Optional Rename the review file and change name & review file in the registry
+**WIP**: This is work in progress and will be updated once more reviews for new networks come in.
+
+The supported networks can be seen in the `write-review.ts` file under the network option:
+```typescript
+.option('network', {
+    alias: 'n',
+    type: 'string',
+    description: 'The network the rate provider is deployed on',
+    choices: ['base', 'mainnet', 'arbitrum', 'avalanche'],
+    demandOption: true,
+})
+```
+
+
+---
+
+## Output
+
+The `write-review` script does the following:
+1. Updates the `registry.json` file with rate provider information.
+2. Generates a markdown review report.
+3. Generates the monitoring agents on the hpyernative platform.
+
+### Post-Script Actions:
+Before the review is finalized, the user is expected to:
+- Add context about the rate provider in the generated markdown file.
+- Include audit reports (if available).
+- Optionally rename the review file and update the `name` and `review` fields in the registry.
