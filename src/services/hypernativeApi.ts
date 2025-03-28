@@ -18,7 +18,7 @@ class HypernativeApi {
     // Mapping of viem chain names to Hypernative chain strings
     private static chainNameToHypernativeKey: { [key: string]: string } = {
         'Arbitrum One': 'arbitrum',
-        Mainnet: 'ethereum',
+        Ethereum: 'ethereum',
         'OP Mainnet': 'optimism',
         'Polygon zkEVM': 'zkevm',
         'Mode Mainnet': 'mode',
@@ -53,9 +53,6 @@ class HypernativeApi {
             remindersConfigurations: customAgentRule.remindersConfigurations,
         }
 
-        // Log the request body
-        // console.log('Request Body:', JSON.stringify(requestBody, null, 2))
-
         // Make the API call
         const response = await fetch('https://api.hypernative.xyz/custom-agents', {
             method: 'POST',
@@ -68,17 +65,9 @@ class HypernativeApi {
             body: JSON.stringify(requestBody),
         })
 
-        // Log the response
-        const responseBody = await response.text()
-        // console.log('Response Status:', response.status)
-        // console.log('Response Body:', responseBody)
-
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`)
         }
-
-        const data = await response.json()
-        // console.log('Custom agent created successfully:', data)
     }
 
     public async createCustomAgentUpgrade(input: CustomAgentInput): Promise<void> {
