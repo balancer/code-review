@@ -3670,6 +3670,76 @@
       "warnings": [""],
       "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
       "upgradeableComponents": []
+    },
+    "0x6d73714c4b10c7585ba40cd5a92125e7db112eed": {
+      "asset": "0xdB1E39faC2EeeEdB49198735B12a8e598a84510c",
+      "name": "Wrapped Vicuna stS",
+      "summary": "safe",
+      "review": "./VicunaWrapperRateprovider.md",
+      "warnings": [""],
+      "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xFB56Cd34244985222068ae1C384ecE4215528D04",
+          "implementationReviewed": "0x2bc3d3cccafdb70f68e52d5033f955d9cb7e8d97"
+        }
+      ]
+    },
+    "0x39db3b2fa46e0c219d44aa28e2ed15eb7b386f5a": {
+      "asset": "0x6C2dadFfAB1714485aD87d1926f4c26E29a957b6",
+      "name": "Wrapped Vicuna wS",
+      "summary": "safe",
+      "review": "./VicunaWrapperRateprovider.md",
+      "warnings": [""],
+      "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x9e07EF144325DAe02ff92910aDd1FE91581D4798",
+          "implementationReviewed": "0x2bc3d3cccafdb70f68e52d5033f955d9cb7e8d97"
+        }
+      ]
+    },
+    "0x1cede7f2f659e27d5f03e9cf8dcf3acca103b042": {
+      "asset": "0x711a93a8bD6803aF0a6122F2dE18c1a6AB7CB29C",
+      "name": "Wrapped Vicuna scUSD",
+      "summary": "safe",
+      "review": "./VicunaWrapperRateprovider.md",
+      "warnings": [""],
+      "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xfb2e5Fd5de4E0757062363dfA44dF2e3654A35A5",
+          "implementationReviewed": "0xe16b8f78b11a78dbe3863e483808cce6d704d52a"
+        }
+      ]
+    },
+    "0xd63cf9c8432f2347b53a450d724963696af80b0d": {
+      "asset": "0xd7c9f62622dB85545731F0E4e5D4556aC8a19832",
+      "name": "Wrapped Vicuna USDT",
+      "summary": "safe",
+      "review": "./VicunaWrapperRateprovider.md",
+      "warnings": [""],
+      "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x11054544BEbab950B3B2F88fBb73B10550d4FF5c",
+          "implementationReviewed": "0xe16b8f78b11a78dbe3863e483808cce6d704d52a"
+        }
+      ]
+    },
+    "0xc9b913a047285fbb9b7d7a417f68ec0fb45f272a": {
+      "asset": "0xef23FdCbd9b36Ed99A6C51CaA83Af549c36601CF",
+      "name": "Wrapped Vicuna sUSDC.etS",
+      "summary": "safe",
+      "review": "./VicunaWrapperRateprovider.md",
+      "warnings": [""],
+      "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x0127C186D905Ddaf323e76c4f6AB41cDD66619e5",
+          "implementationReviewed": "0xe16b8f78b11a78dbe3863e483808cce6d704d52a"
+        }
+      ]
     }
   }
 }
