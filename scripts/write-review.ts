@@ -212,7 +212,7 @@ async function main() {
         ? (argv.rateProviderAddress as Address)
         : (`0x${argv.rateProviderAddress}` as Address)
 
-    // await writeReviewAndUpdateRegistry(rateProviderAddress, network, argv.rateProviderAsset)
+    await writeReviewAndUpdateRegistry(rateProviderAddress, network, argv.rateProviderAsset)
 
     // the registry file has been updated. All relevant information can be read from there and don't need to be passed as arguments
     await createCustomAgents(rateProviderAddress, network)
