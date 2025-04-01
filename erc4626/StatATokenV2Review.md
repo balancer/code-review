@@ -21,6 +21,7 @@
     - [base:0x5e8B674127B321DC344c078e58BBACc3f3008962](https://basescan.org/address/0x5e8B674127B321DC344c078e58BBACc3f3008962#readProxyContract)
     - [base:0x74D4D1D440c9679b1013999Bd91507eAa2fff651](https://basescan.org/address/0x74D4D1D440c9679b1013999Bd91507eAa2fff651#readProxyContract)
     - [base:0xF8F10f39116716e89498c1c5E94137ADa11b2BC7](https://basescan.org/address/0xF8F10f39116716e89498c1c5E94137ADa11b2BC7#readProxyContract)
+    - [base:0x729F75Aff28c726e32403e80cef2aFb518CFbfa7](https://basescan.org/address/0x729F75Aff28c726e32403e80cef2aFb518CFbfa7#readProxyContract)
     - [arbitrum:0x4cE13a79f45C1Be00BdABD38B764aC28C082704E](https://arbiscan.io/address/0x4cE13a79f45C1Be00BdABD38B764aC28C082704E#readProxyContract)
     - [arbitrum:0xD9E3Ef2c12de90E3b03F7b7E3964956a71920d40](https://arbiscan.io/address/0xD9E3Ef2c12de90E3b03F7b7E3964956a71920d40#readProxyContract)
     - [arbitrum:0x52Dc1FEeFA4f9a99221F93D79da46Ae89b8c0967](https://arbiscan.io/address/0x52Dc1FEeFA4f9a99221F93D79da46Ae89b8c0967)
@@ -170,6 +171,12 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 
     #### Wrapped Aave Base ezETH - 0xF8F10f39116716e89498c1c5E94137ADa11b2BC7
     - upgradeable component: `StataTokenV2` ([base:0xF8F10f39116716e89498c1c5E94137ADa11b2BC7](https://basescan.org/address/0xF8F10f39116716e89498c1c5E94137ADa11b2BC7))
+        - admin address: [base:0x9390B1735def18560c509E2d0bc090E9d6BA257a](https://basescan.org/address/0x9390B1735def18560c509E2d0bc090E9d6BA257a)
+        - admin type: Aave governance system.
+            - multisig timelock? YES: 24 hours.
+         
+    #### Wrapped Aave Base EURC - 0x729F75Aff28c726e32403e80cef2aFb518CFbfa7
+    - upgradeable component: `StataTokenV2` ([base:0x729F75Aff28c726e32403e80cef2aFb518CFbfa7](https://basescan.org/address/0x729F75Aff28c726e32403e80cef2aFb518CFbfa7#readProxyContract))
         - admin address: [base:0x9390B1735def18560c509E2d0bc090E9d6BA257a](https://basescan.org/address/0x9390B1735def18560c509E2d0bc090E9d6BA257a)
         - admin type: Aave governance system.
             - multisig timelock? YES: 24 hours.
