@@ -1106,6 +1106,15 @@
       "warnings": ["chainlink"],
       "factory": "0x0A973B6DB16C2ded41dC91691Cc347BEb0e2442B",
       "upgradeableComponents": []
+    },
+    "0xd9B86d5B91782c86bfBC72d313ADaf1E06aAD79E": {
+      "asset": "0x729F75Aff28c726e32403e80cef2aFb518CFbfa7",
+      "name": "aEURC to USD AaveMarketRateTransformer",
+      "summary": "safe",
+      "review": "./MarketRateTransformerRateProviders.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   },
   "ethereum": {
