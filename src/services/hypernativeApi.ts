@@ -1,6 +1,7 @@
 import { Chain } from 'viem'
 import { rateProviderRateDeviationRule } from '../utils/hypernative/rate-provider-rate-deviation'
 import { rateProviderUpgradeRule } from '../utils/hypernative/rate-provider-upgrade'
+import { rateProviderRateRevertRule } from '../utils/hypernative/rate-provider-rate-revert'
 
 import { CustomAgentInput } from '../types/types'
 
@@ -95,6 +96,56 @@ class HypernativeApi {
             channelsConfigurations: customAgentRule.channelsConfigurations,
             remindersConfigurations: customAgentRule.remindersConfigurations,
         }
+
+        // Log the request body
+        console.log('Request Body:', JSON.stringify(requestBody, null, 2))
+
+        // Make the API call
+        const response = await fetch('https://api.hypernative.xyz/custom-agents', {
+            method: 'POST',
+            headers: {
+                accept: 'application/json',
+                'x-client-id': this.clientId,
+                'x-client-secret': this.clientSecret,
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(requestBody),
+        })
+
+        // Log the response
+        const responseBody = await response.text()
+        console.log('Response Status:', response.status)
+        console.log('Response Body:', responseBody)
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`)
+        }
+
+        const data = await response.json()
+        console.log('Custom agent created successfully:', data)
+    }
+
+    public async createCustomAgentRateRevert(input: CustomAgentInput): Promise<void> {
+        // This custom agent rule is already complete it only needs modification for rate provider address
+        const customAgentRule = { ...rateProviderRateRevertRule }
+
+        // Modify the rule based on input
+        customAgentRule.rule.chain = this.getValidChainNameFromViemChain(input.chain)
+        customAgentRule.rule.ruleString = input.ruleString
+        // TODO: This address has no impact on the rule execution
+        customAgentRule.rule.contractAddress = input.contractAddress
+        customAgentRule.agentName = input.agentName
+
+        customAgentRule.rule.conditions[1].operands[0].variable_extraction[3].contract_address = input.contractAddress
+        customAgentRule.rule.conditions[1].operands[0].eval.custom_description = input.ruleString
+
+        customAgentRule.graphData.nodes[1].data.chain = this.getValidChainNameFromViemChain(input.chain)
+        customAgentRule.graphData.nodes[1].data.contractAddress = input.contractAddress
+        customAgentRule.graphData.nodes[1].data.contractAddressAlias = input.contractAlias
+
+        customAgentRule.graphData.nodes[5].data.message = input.ruleString
+
+        const requestBody = customAgentRule
 
         // Log the request body
         console.log('Request Body:', JSON.stringify(requestBody, null, 2))

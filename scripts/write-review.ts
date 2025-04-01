@@ -150,6 +150,14 @@ async function createCustomAgents(rateProvider: Address, chain: Chain) {
             agentName: `${component.slice(-4)}-upgrade`,
         })
     }
+
+    await hypernativeApi.createCustomAgentRateRevert({
+        chain,
+        ruleString: `On ${chain.name}: when ${rateProvider}: getRate() reverts`,
+        contractAddress: rateProvider,
+        contractAlias: rateProvider,
+        agentName: `${rateProvider.slice(-4)}rate-revert`,
+    })
 }
 
 // Parse command-line arguments using yargs
@@ -222,10 +230,10 @@ async function main() {
               throw new Error(`Invalid rateProviderAsset: ${argv.rateProviderAsset}. It must start with "0x".`)
           })()
 
-    await writeReviewAndUpdateRegistry(rateProviderAddress, network, rateProviderAsset)
+    // await writeReviewAndUpdateRegistry(rateProviderAddress, network, rateProviderAsset)
 
     // the registry file has been updated. All relevant information can be read from there and don't need to be passed as arguments
-    // await createCustomAgents(rateProviderAddress, network)
+    await createCustomAgents(rateProviderAddress, network)
 }
 
 main().catch((error) => {
