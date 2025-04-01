@@ -49,5 +49,5 @@ export const rateProviderUpgradeRule = {
     ],
     remindersConfigurations: [],
     delay: 600,
-    securitySuitIds: [],
+    securitySuitIds: [1373],
 }

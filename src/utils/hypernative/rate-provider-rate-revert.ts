@@ -101,7 +101,7 @@ export const rateProviderRateRevertRule = {
     channelsConfigurations: [],
     remindersConfigurations: [],
     delay: 600,
-    securitySuitIds: [],
+    securitySuitIds: [1373],
     graphData: {
         edges: [
             {
