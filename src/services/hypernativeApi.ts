@@ -54,6 +54,9 @@ class HypernativeApi {
             remindersConfigurations: customAgentRule.remindersConfigurations,
         }
 
+        // Log the request body
+        console.log('Request Body:', JSON.stringify(requestBody, null, 2))
+
         // Make the API call
         const response = await fetch('https://api.hypernative.xyz/custom-agents', {
             method: 'POST',
@@ -65,6 +68,11 @@ class HypernativeApi {
             },
             body: JSON.stringify(requestBody),
         })
+
+        // Log the response
+        const responseBody = await response.text()
+        console.log('Response Status:', response.status)
+        console.log('Response Body:', responseBody)
 
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`)
@@ -80,6 +88,7 @@ class HypernativeApi {
         customAgentRule.rule.contractAddress = input.contractAddress
         customAgentRule.rule.contractAddressAlias = input.contractAlias
         customAgentRule.agentName = input.agentName
+        customAgentRule.rule.transactionParams[0].operands[0] = input.contractAddress
 
         if (input.operands) {
             customAgentRule.rule.transactionParams[0].operands = [input.operands]
@@ -120,9 +129,6 @@ class HypernativeApi {
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`)
         }
-
-        const data = await response.json()
-        console.log('Custom agent created successfully:', data)
     }
 
     public async createCustomAgentRateRevert(input: CustomAgentInput): Promise<void> {
@@ -141,9 +147,9 @@ class HypernativeApi {
 
         customAgentRule.graphData.nodes[1].data.chain = this.getValidChainNameFromViemChain(input.chain)
         customAgentRule.graphData.nodes[1].data.contractAddress = input.contractAddress
-        customAgentRule.graphData.nodes[1].data.contractAddressAlias = input.contractAlias
+        customAgentRule.graphData.nodes[1].data.contractAddressAlias = input.contractAddress
 
-        customAgentRule.graphData.nodes[5].data.message = input.ruleString
+        customAgentRule.graphData.nodes[4].data.message = input.ruleString
 
         const requestBody = customAgentRule
 
@@ -170,9 +176,6 @@ class HypernativeApi {
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`)
         }
-
-        const data = await response.json()
-        console.log('Custom agent created successfully:', data)
     }
 
     // Method to get the valid Hypernative chain name
