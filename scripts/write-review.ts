@@ -85,7 +85,7 @@ async function writeReviewAndUpdateRegistry(
         .replace('{{isUsable}}', templateData.isUsable)
         .replace('{{tenderlySimUrl}}', tenderlysimUrl)
 
-    fs.writeFileSync(`${ContractName}RateProviderReview.md`, filledTemplate)
+    fs.writeFileSync(`./rate-providers/${ContractName}RateProviderReview.md`, filledTemplate)
 
     // Write to registry
     const registryPath = path.join(__dirname, '../rate-providers/registry.json')
@@ -99,7 +99,7 @@ async function writeReviewAndUpdateRegistry(
         warnings: [],
         factory: '',
         upgradeableComponents: upgradeData.map((contract) => ({
-            address: contract.address,
+            entrypoint: contract.address,
             implementationReviewed: contract.implementation,
         })),
     }
@@ -230,7 +230,7 @@ async function main() {
               throw new Error(`Invalid rateProviderAsset: ${argv.rateProviderAsset}. It must start with "0x".`)
           })()
 
-    // await writeReviewAndUpdateRegistry(rateProviderAddress, network, rateProviderAsset)
+    await writeReviewAndUpdateRegistry(rateProviderAddress, network, rateProviderAsset)
 
     // the registry file has been updated. All relevant information can be read from there and don't need to be passed as arguments
     await createCustomAgents(rateProviderAddress, network)
