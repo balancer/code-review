@@ -22,8 +22,8 @@ import {
     mode,
 } from 'viem/chains'
 
-import { CustomAgentInput } from 'types'
 import HypernativeApi from '../src/services/hypernativeApi'
+import { doOnchainCallGetName } from '../src'
 
 dotenv.config()
 const fs = require('fs')
@@ -57,7 +57,8 @@ async function writeReviewAndUpdateRegistry(
 
     const tenderlysimUrl = await service.getTenderlySimulation()
 
-    const [{ ContractName }] = await service.getContractInfo([rateProviderAsset])
+    //const [{ ContractName }] = await service.getContractInfo([rateProviderAsset])
+    const contractName = await doOnchainCallGetName(rateProviderAsset, network)
 
     // Write report
     const templateData = {
@@ -71,7 +72,7 @@ async function writeReviewAndUpdateRegistry(
 
     const filledTemplate = template
         .replace('{{date}}', new Date().toLocaleDateString('en-GB'))
-        .replace('{{rateProvider}}', ContractName)
+        .replace('{{rateProvider}}', contractName)
         .replace('{{network}}', service.chain.name)
         .replace('{{rateProviderAddress}}', rateProviderAddress)
         .replace(
@@ -85,7 +86,10 @@ async function writeReviewAndUpdateRegistry(
         .replace('{{isUsable}}', templateData.isUsable)
         .replace('{{tenderlySimUrl}}', tenderlysimUrl)
 
-    fs.writeFileSync(`./rate-providers/${ContractName}RateProviderReview.md`, filledTemplate)
+    fs.writeFileSync(
+        `./rate-providers/${contractName.charAt(0).toUpperCase() + contractName.slice(1)}RateProviderReview.md`,
+        filledTemplate,
+    )
 
     // Write to registry
     const registryPath = path.join(__dirname, '../rate-providers/registry.json')
@@ -93,9 +97,9 @@ async function writeReviewAndUpdateRegistry(
 
     const newEntry = {
         asset: rateProviderAsset,
-        name: service.sourceCode.ContractName,
+        name: `${contractName.charAt(0).toUpperCase() + contractName.slice(1)}RateProvider.md`,
         summary: templateData.isUsable === 'USABLE' ? 'safe' : 'unsafe',
-        review: `./${service.sourceCode.ContractName}.md`,
+        review: `./${contractName.charAt(0).toUpperCase() + contractName.slice(1)}RateProviderReview.md`,
         warnings: [],
         factory: '',
         upgradeableComponents: upgradeData.map((contract) => ({
