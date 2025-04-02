@@ -19,13 +19,7 @@ const ERC20_ABI = [
  * @param chain - The blockchain network (default is mainnet).
  * @returns The name of the ERC20 contract.
  */
-export async function doOnchainCallGetName(contractAddress: Address, chain: Chain): Promise<string> {
-    // Create a public client using the RPC URL from the environment variables
-    const rpcUrl = process.env.CUSTOM_RPC_URL
-    if (!rpcUrl) {
-        throw new Error('CUSTOM_RPC_URL is not defined in the environment variables.')
-    }
-
+export async function doOnchainCallGetName(contractAddress: Address, chain: Chain, rpcUrl: string): Promise<string> {
     const publicClient = createPublicClient({
         chain,
         transport: http(rpcUrl),

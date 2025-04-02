@@ -3,7 +3,7 @@ import { rateProviderRateDeviationRule } from '../utils/hypernative/rate-provide
 import { rateProviderUpgradeRule } from '../utils/hypernative/rate-provider-upgrade'
 import { rateProviderRateRevertRule } from '../utils/hypernative/rate-provider-rate-revert'
 
-import { CustomAgentInput } from '../types/types'
+import { CustomAgentInput, CustomAgentInputUpgrade } from '../types/types'
 
 class HypernativeApi {
     public chain: Chain
@@ -42,20 +42,8 @@ class HypernativeApi {
         customAgentRule.rule.contractAddressAlias = input.contractAlias
         customAgentRule.agentName = input.agentName
 
-        // Prepare the request body
-        const requestBody = {
-            agentName: customAgentRule.agentName,
-            agentType: customAgentRule.agentType,
-            severity: customAgentRule.severity,
-            muteDuration: customAgentRule.muteDuration,
-            state: customAgentRule.state,
-            rule: customAgentRule.rule,
-            channelsConfigurations: customAgentRule.channelsConfigurations,
-            remindersConfigurations: customAgentRule.remindersConfigurations,
-        }
-
         // Log the request body
-        console.log('Request Body:', JSON.stringify(requestBody, null, 2))
+        console.log('Request Body:', JSON.stringify(customAgentRule, null, 2))
 
         // Make the API call
         const response = await fetch('https://api.hypernative.xyz/custom-agents', {
@@ -66,7 +54,7 @@ class HypernativeApi {
                 'x-client-secret': this.clientSecret,
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify(requestBody),
+            body: JSON.stringify(customAgentRule),
         })
 
         // Log the response
@@ -79,35 +67,19 @@ class HypernativeApi {
         }
     }
 
-    public async createCustomAgentUpgrade(input: CustomAgentInput): Promise<void> {
+    public async createCustomAgentUpgrade(input: CustomAgentInputUpgrade): Promise<void> {
         const customAgentRule = { ...rateProviderUpgradeRule }
 
         // Modify the rule based on input
         customAgentRule.rule.chain = this.getValidChainNameFromViemChain(input.chain)
         customAgentRule.rule.ruleString = input.ruleString
-        customAgentRule.rule.contractAddress = input.contractAddress
-        customAgentRule.rule.contractAddressAlias = input.contractAlias
+        customAgentRule.rule.contractAddress = input.rateProvider
+        customAgentRule.rule.contractAddressAlias = input.rateProvider
         customAgentRule.agentName = input.agentName
-        customAgentRule.rule.transactionParams[0].operands[0] = input.contractAddress
-
-        if (input.operands) {
-            customAgentRule.rule.transactionParams[0].operands = [input.operands]
-        }
-
-        // Prepare the request body
-        const requestBody = {
-            agentName: customAgentRule.agentName,
-            agentType: customAgentRule.agentType,
-            severity: customAgentRule.severity,
-            muteDuration: customAgentRule.muteDuration,
-            state: customAgentRule.state,
-            rule: customAgentRule.rule,
-            channelsConfigurations: customAgentRule.channelsConfigurations,
-            remindersConfigurations: customAgentRule.remindersConfigurations,
-        }
+        customAgentRule.rule.transactionParams[0].operands = input.contractAddress
 
         // Log the request body
-        console.log('Request Body:', JSON.stringify(requestBody, null, 2))
+        console.log('Request Body:', JSON.stringify(customAgentRule, null, 2))
 
         // Make the API call
         const response = await fetch('https://api.hypernative.xyz/custom-agents', {
@@ -118,7 +90,7 @@ class HypernativeApi {
                 'x-client-secret': this.clientSecret,
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify(requestBody),
+            body: JSON.stringify(customAgentRule),
         })
 
         // Log the response

@@ -34,6 +34,17 @@ export interface CustomAgentInput {
     ruleString: string
     contractAddress: string
     contractAlias: string
+    rateProvider: string
+    agentName: string
+    operands?: string
+}
+
+export interface CustomAgentInputUpgrade {
+    chain: Chain
+    ruleString: string
+    contractAddress: string[]
+    contractAlias: string
+    rateProvider: string
     agentName: string
     operands?: string
 }

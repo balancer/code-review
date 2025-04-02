@@ -46,6 +46,7 @@ async function writeReviewAndUpdateRegistry(
     rateProviderAddress: Address,
     network: Chain,
     rateProviderAsset: Address,
+    rpcUrl: string,
 ): Promise<{ rateProvider: Address }> {
     const service = new RateProviderDataService(rateProviderAddress, network)
 
@@ -58,7 +59,7 @@ async function writeReviewAndUpdateRegistry(
     const tenderlysimUrl = await service.getTenderlySimulation()
 
     //const [{ ContractName }] = await service.getContractInfo([rateProviderAsset])
-    const contractName = await doOnchainCallGetName(rateProviderAsset, network)
+    const contractName = await doOnchainCallGetName(rateProviderAsset, network, rpcUrl)
 
     // Write report
     const templateData = {
@@ -143,17 +144,17 @@ async function createCustomAgents(rateProvider: Address, chain: Chain) {
         contractAddress: rateProvider,
         contractAlias: rateProvider,
         agentName: `${rateProvider.slice(-4)}rate-deviation`,
+        rateProvider: rateProvider,
     })
 
-    for (const component of upgradeableComponents) {
-        await hypernativeApi.createCustomAgentUpgrade({
-            chain,
-            ruleString: `On ${chain.name}: when ${component}: Upgraded(indexed address implementation) (based on ABI of ${component}) is emitted\nand address emitting_contract is ${component}`,
-            contractAddress: component,
-            contractAlias: component,
-            agentName: `${component.slice(-4)}-upgrade`,
-        })
-    }
+    await hypernativeApi.createCustomAgentUpgrade({
+        chain,
+        ruleString: `On ${chain.name}: when ${upgradeableComponents.map((component: string) => component).join(' or ')}: Upgraded(indexed address implementation)}`,
+        contractAddress: upgradeableComponents,
+        contractAlias: upgradeableComponents.map((component: string) => component).join(' or '),
+        agentName: `${rateProvider.slice(-4)}-upgrade`,
+        rateProvider: rateProvider,
+    })
 
     await hypernativeApi.createCustomAgentRateRevert({
         chain,
@@ -161,6 +162,7 @@ async function createCustomAgents(rateProvider: Address, chain: Chain) {
         contractAddress: rateProvider,
         contractAlias: rateProvider,
         agentName: `${rateProvider.slice(-4)}rate-revert`,
+        rateProvider: rateProvider,
     })
 }
 
@@ -184,6 +186,12 @@ async function main() {
             alias: 'a',
             type: 'string',
             description: 'The asset the rate provider provides the rate for',
+            demandOption: true,
+        })
+        .option('rpcUrl', {
+            alias: 'u',
+            type: 'string',
+            description: 'The custom RPC URL to use for the network',
             demandOption: true,
         }).argv
 
@@ -217,7 +225,7 @@ async function main() {
         rpcUrls: {
             ...network.rpcUrls,
             default: {
-                http: [process.env.CUSTOM_RPC_URL || network.rpcUrls.default.http[0]],
+                http: [argv.rpcUrl],
             },
         },
     }
@@ -234,7 +242,7 @@ async function main() {
               throw new Error(`Invalid rateProviderAsset: ${argv.rateProviderAsset}. It must start with "0x".`)
           })()
 
-    await writeReviewAndUpdateRegistry(rateProviderAddress, network, rateProviderAsset)
+    await writeReviewAndUpdateRegistry(rateProviderAddress, network, rateProviderAsset, argv.rpcUrl)
 
     // the registry file has been updated. All relevant information can be read from there and don't need to be passed as arguments
     await createCustomAgents(rateProviderAddress, network)
