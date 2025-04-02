@@ -46,7 +46,7 @@ export const rateProviderRateDeviationRule = {
             name: 'rate-provider-alerts',
         },
     ],
+    securitySuitIds: [1373],
     remindersConfigurations: [],
     delay: 600,
-    securitySuitIds: [1373],
 }

@@ -98,7 +98,12 @@ export const rateProviderRateRevertRule = {
     },
     severity: 'Medium',
     muteDuration: 0,
-    channelsConfigurations: [],
+    channelsConfigurations: [
+        {
+            id: 2451,
+            name: 'rate-provider-alerts',
+        },
+    ],
     remindersConfigurations: [],
     delay: 600,
     securitySuitIds: [1373],

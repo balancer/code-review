@@ -17,9 +17,9 @@ export const rateProviderUpgradeRule = {
         transactionParams: [
             {
                 operands: ['0xe995168d9924d72a4fe45af18edc06b498cb8dbb'],
-                operator: 'compare_exact',
+                operator: 'one_of',
                 output_index: 'emitting_contract',
-                operandsExponent: [0],
+                operandsExponent: [],
             },
         ],
         contractAddressAlias: '0xe9..8dbb',
@@ -41,6 +41,7 @@ export const rateProviderUpgradeRule = {
     },
     severity: 'Medium',
     muteDuration: 0,
+    securitySuitIds: [1373],
     channelsConfigurations: [
         {
             id: 2451,
@@ -49,5 +50,4 @@ export const rateProviderUpgradeRule = {
     ],
     remindersConfigurations: [],
     delay: 600,
-    securitySuitIds: [1373],
 }
