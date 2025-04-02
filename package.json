@@ -9,7 +9,8 @@
     "test": "npx jest",
     "lint": "npx prettier --write 'rate-providers/registry.json'",
     "write-review": "ts-node scripts/write-review.ts",
-    "generate-agent": "ts-node scripts/create-agent.ts"
+    "generate-agent": "ts-node scripts/create-agent.ts",
+    "format": "npx prettier --write 'scripts/**/*.ts' 'src/**/*.ts'"
   },
   "author": "",
   "license": "MIT",
