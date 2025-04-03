@@ -358,6 +358,9 @@ class RateProviderDataService {
                           throw new Error(`Environment variable is not set`)
                       })()
                 break
+            case 'Avalanche':
+                this.apiKey = ''
+                break
             default:
                 throw new Error(`Unsupported chain: ${chain.name}`)
         }
