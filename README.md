@@ -108,3 +108,13 @@ Before the review is finalized, the user is expected to:
 - Add context about the rate provider in the generated markdown file.
 - Include audit reports (if available).
 - Optionally rename the review file and update the `name` and `review` fields in the registry.
+
+
+
+Constant Rate Provider Factories
+Use this factories gor Gyro pools. They report a static rate custom tailored to gyro pools.
+
+| Network    | AaveRateTransformerFactory                 | 
+| ---------- | -------------------------------------------|
+| Arbitrum   | 0xF502791715F287989374c452Fa78b475A3194a90 | 
+| Base       | 0xc0555b555857AAf2b5b28601eaAcFba2F8BBFB09 |
