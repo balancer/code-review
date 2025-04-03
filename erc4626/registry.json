@@ -779,6 +779,118 @@
       "useWrappedForAddRemove": true
     }
   },
+  "avalanche": {
+    "0xd7da0de6ef4f51d6206bf2a35fcd2030f54c3f7b": {
+      "asset": "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7",
+      "name": "Wrapped Aave Avalanche WAVAX",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
+    "0x2d324fd1ca86d90f61b0965d2db2f86d22ea4b74": {
+      "asset": "0x152b9d0FdC40C096757F570A51E494bd4b943E50",
+      "name": "Wrapped Aave Avalanche BTC.b",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
+    "0xe1bFC96d95BAdCB10Ff013Cb0C9C6c737ca07009": {
+      "asset": "0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E",
+      "name": "Wrapped Aave Avalanche USDC",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
+    "0x59933c571d200dc6A7Fd1CDa22495dB442082E34": {
+      "asset": "0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7",
+      "name": "Wrapped Aave Avalanche USDT",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
+    "0x7D0394F8898fBA73836Bf12bD606228887705895": {
+      "asset": "0x2b2C81e08f1Af8835a78Bb2A90AE924ACE0eA4bE",
+      "name": "Wrapped Aave Avalanche SAVAX",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
+    "0xdFD2b2437a94108323045C282fF1916de5Ac6Af7": {
+      "asset": "0x49D5c2BdFfac6CE2BFdB6640F4F80f226bc10bAB",
+      "name": "Wrapped Aave Avalanche WETH",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
+    "0x45cf39EeB437FA95Bb9b52c0105254a6BD25D01e": {
+      "asset": "0x00000000eFE302BEAA2b3e6e1b18d08D69a9012a",
+      "name": "Wrapped Aave Avalanche AUSD",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
+    "0xC38aD3527A4B821BF437639cBA8Bf567BFa63A13": {
+      "asset": "0xd586E7F844cEa2F87f50152665BCbc2C279D8d70",
+      "name": "Wrapped Aave Avalanche DAI",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
+    "0x61933AF56431280EE4e5667133D8aF6322D64B32": {
+      "asset": "0x5947BB275c521040051D82396192181b413227A3",
+      "name": "Wrapped Aave Avalanche LINK",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
+    "0x7883978D1F322641a3AaA82Bac3b0a6Dee7A171E": {
+      "asset": "0x63a72806098Bd3D9520cC43356dD78afe5D386D9",
+      "name": "Wrapped Aave Avalanche AAVE",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
+    "0x3929336Afd0BBa6FCAbB67dFB78610379C66B43B": {
+      "asset": "0xD24C2Ad096400B6FBcd2ad8B24E7acBc21A1da64",
+      "name": "Wrapped Aave Avalanche FRAX",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    }
+  },
   "sepolia": {
     "0xDE46e43F46ff74A23a65EBb0580cbe3dFE684a17": {
       "asset": "0xff34b3d4aee8ddcd6f9afffb6fe49bd371b8a357",
