@@ -88,7 +88,7 @@ async function writeReviewAndUpdateRegistry(
         .replace('{{tenderlySimUrl}}', tenderlysimUrl)
 
     fs.writeFileSync(
-        `./rate-providers/${contractName.charAt(0).toUpperCase() + contractName.slice(1)}RateProviderReview.md`,
+        `./rate-providers/${(contractName.charAt(0).toUpperCase() + contractName.slice(1)).replace(' ', '')}RateProviderReview.md`,
         filledTemplate,
     )
 
@@ -98,9 +98,9 @@ async function writeReviewAndUpdateRegistry(
 
     const newEntry = {
         asset: rateProviderAsset,
-        name: `${contractName.charAt(0).toUpperCase() + contractName.slice(1)}RateProvider.md`,
+        name: `${(contractName.charAt(0).toUpperCase() + contractName.slice(1)).replace(' ', '')}RateProvider.md`,
         summary: templateData.isUsable === 'USABLE' ? 'safe' : 'unsafe',
-        review: `./${contractName.charAt(0).toUpperCase() + contractName.slice(1)}RateProviderReview.md`,
+        review: `./${(contractName.charAt(0).toUpperCase() + contractName.slice(1)).replace(' ', '')}RateProviderReview.md`,
         warnings: [],
         factory: '',
         upgradeableComponents: upgradeData.map((contract) => ({
