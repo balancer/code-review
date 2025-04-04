@@ -45,18 +45,25 @@ class EtherscanApi {
         const results = []
 
         for (const address of addresses) {
-            const fetchingUrl = `${apiUrl}?module=contract&action=getsourcecode&address=${address}&apikey=${this.apiKey}`
-            const data: GetContractSourceCodeResponse = await this.fetchFromApi(fetchingUrl)
+            try {
+                const fetchingUrl = `${apiUrl}?module=contract&action=getsourcecode&address=${address}&apikey=${this.apiKey}`
+                const data: GetContractSourceCodeResponse = await this.fetchFromApi(fetchingUrl)
 
-            if (data.status !== '1') {
-                throw new Error(`Error fetching contract info for address ${address}: ${data.message}`)
-            }
-            if (!data.result[0].ABI) {
-                throw new Error(`ABI is missing for address ${address}`)
-            }
+                if (data.status !== '1') {
+                    console.error(`Error fetching contract info for address ${address}: ${data.message}`)
+                    continue // Skip this address
+                }
+                if (!data.result[0].ABI) {
+                    console.error(`ABI is missing for address ${address}`)
+                    continue // Skip this address
+                }
 
-            const { Proxy, ContractName, ABI, Implementation } = data.result[0]
-            results.push({ address, Proxy, ContractName, ABI, Implementation })
+                const { Proxy, ContractName, ABI, Implementation } = data.result[0]
+                results.push({ address, Proxy, ContractName, ABI, Implementation })
+            } catch (error) {
+                console.error(`Error processing address ${address}:`, error)
+                // Skip this address and continue with the next one
+            }
 
             // Add a delay between API calls
             await this.delay(1000)
