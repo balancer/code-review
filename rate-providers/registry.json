@@ -780,6 +780,20 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0x7DB6B5bD0E9EAC1E050544f478961830cc676d30": {
+      "asset": "0x68088C91446c7bEa49ea7Dbd3B96Ce62B272DC96",
+      "name": "StakeddeUSDRateProvider.md",
+      "summary": "safe",
+      "review": "./StakeddeUSDRateProviderReview.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xb57b25851fe2311cc3fe511c8f10e868932e0680",
+          "implementationReviewed": "0x526f100dE665F2598D25e585DbD944E706BB9e3f"
+        }
+      ]
     }
   },
   "base": {
