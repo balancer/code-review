@@ -86,9 +86,7 @@ class RateProviderDataService {
      * @param addresses The addresses to fetch deployment information for.
      * @returns An array of deployment information.
      */
-    public async getDeploymentBlocks(
-        addresses: Address[],
-    ): Promise<{ address: Address; deploymentTxHash: Hex; blockNumber: bigint }[]> {
+    public async getDeploymentBlocks(addresses: Address[]): Promise<{ address: Address; deploymentTxHash: Hex }[]> {
         const etherscanApi = new EtherscanApi(this.chain, this.apiKey)
 
         // The addresses length can be arbitrary but the etherscan API only allows 5 addresses at a time

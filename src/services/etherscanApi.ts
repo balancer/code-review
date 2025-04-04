@@ -21,21 +21,20 @@ class EtherscanApi {
     private async fetchFromApi(url: string): Promise<any> {
         const response = await fetch(url)
         if (!response.ok) {
-            throw new Error(`Error fetching data from API: ${response.statusText}`)
+            throw new Error(`Error fetching data from API: ${response.statusText} for ${url}`)
         }
         return response.json()
     }
 
     public async getDeploymentTxHashAndBlock(
         addresses: Address[],
-    ): Promise<{ address: Address; deploymentTxHash: Hex; blockNumber: bigint }[]> {
+    ): Promise<{ address: Address; deploymentTxHash: Hex }[]> {
         const apiUrl = this.getApiUrl()
         const fetchingUrl = `${apiUrl}?module=contract&action=getcontractcreation&contractaddresses=${addresses.join(',')}&apikey=${this.apiKey}`
         const data: TransactionData = await this.fetchFromApi(fetchingUrl)
         return data.result.map((entry, index) => ({
             address: addresses[index],
             deploymentTxHash: entry.txHash,
-            blockNumber: BigInt(entry.blockNumber),
         }))
     }
 
