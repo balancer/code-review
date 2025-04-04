@@ -780,6 +780,15 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0xEC21c3e82B89EC14d3dDF4beBD50f4B1bd52CFE6": {
+      "asset": "0x06d47F3fb376649c3A9Dafe069B3D6E35572219E",
+      "name": "StakedavUSDRateProvider.md",
+      "summary": "safe",
+      "review": "./StakedavUSDRateProviderReview.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   },
   "base": {
