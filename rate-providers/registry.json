@@ -780,6 +780,24 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0x06fF8A561Eabe71554fa44C727E76fCaa731F5ef": {
+      "asset": "0x3408b22d8895753C9A3e14e4222E981d4E9A599E",
+      "name": "UpshiftAvalancheAUSDRateProvider.md",
+      "summary": "safe",
+      "review": "./UpshiftAvalancheAUSDRateProviderReview.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x3408b22d8895753c9a3e14e4222e981d4e9a599e",
+          "implementationReviewed": "0x237f498C29bb8479a7b7252FCd7Df2042f3bEB4E"
+        },
+        {
+          "entrypoint": "0x00000000efe302beaa2b3e6e1b18d08d69a9012a",
+          "implementationReviewed": "0x0000000000000D1Dd95e299c2aB8Df107Dc83aEd"
+        }
+      ]
     }
   },
   "base": {
