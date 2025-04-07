@@ -3594,6 +3594,15 @@
       "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
       "upgradeableComponents": []
     },
+    "0xe508a70deef702d5cd1df120bf6936540c9a6b2d": {
+      "asset": "0x42CE2234fd5a26bF161477a996961c4d01F466a3",
+      "name": "Silo USDC Rateprovider",
+      "summary": "safe",
+      "review": "./SiloWrappedRateprovider.md",
+      "warnings": [""],
+      "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
+      "upgradeableComponents": []
+    },
     "0xfbcee1fcaa2db776b4b575a8da3e8c93ea5eef53": {
       "asset": "0x9F0dF7799f6FDAd409300080cfF680f5A23df4b1",
       "name": "Wrapped Origin Sonic Rateprovider",
