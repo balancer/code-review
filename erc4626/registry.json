@@ -282,6 +282,16 @@
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
     },
+    "0x729F75Aff28c726e32403e80cef2aFb518CFbfa7": {
+      "asset": "0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42",
+      "name": "Wrapped Aave Base EURC",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
     "0x9272d6153133175175bc276512b2336be3931ce9": {
       "asset": "0x4200000000000000000000000000000000000006",
       "name": "fluid weth",

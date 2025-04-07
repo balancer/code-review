@@ -28,3 +28,12 @@ Use these factories when an ERC4626 vault contains a yield bearing token to comb
 | Arbitrum   | 0xec2c6184761ab7fe061130b4a7e3da89c72f8395 | 
 | Base       | 0x4e185b1502fea7a06b63fdda6de38f92c9528566 |
 | Ethereum   | 0xec2c6184761ab7fe061130b4a7e3da89c72f8395 | 
+
+
+Constant Rate Provider Factories
+Use this factories gor Gyro pools. They report a static rate custom tailored to gyro pools.
+
+| Network    | AaveRateTransformerFactory                 | 
+| ---------- | -------------------------------------------|
+| Arbitrum   | 0xF502791715F287989374c452Fa78b475A3194a90 | 
+| Base       | 0xc0555b555857AAf2b5b28601eaAcFba2F8BBFB09 |

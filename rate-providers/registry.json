@@ -976,6 +976,18 @@
         {
           "entrypoint": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
           "implementationReviewed": "0xB7467b66d86cE80CC258f28D266A18A51DB7FAC8"
+    "0x7DB6B5bD0E9EAC1E050544f478961830cc676d30": {
+      "asset": "0x68088C91446c7bEa49ea7Dbd3B96Ce62B272DC96",
+      "name": "StakeddeUSDRateProvider.md",
+      "summary": "safe",
+      "review": "./StakeddeUSDRateProviderReview.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xb57b25851fe2311cc3fe511c8f10e868932e0680",
+          "implementationReviewed": "0x526f100dE665F2598D25e585DbD944E706BB9e3f"
+
         }
       ]
     }
@@ -1303,6 +1315,15 @@
       "review": "./ChainLinkRateProvider.md",
       "warnings": ["chainlink"],
       "factory": "0x0A973B6DB16C2ded41dC91691Cc347BEb0e2442B",
+      "upgradeableComponents": []
+    },
+    "0xdBB41Da7dE45729857A09baaF98D1e9b0b1A8740": {
+      "asset": "0x729F75Aff28c726e32403e80cef2aFb518CFbfa7",
+      "name": "aEURC to USD AaveMarketRateTransformer",
+      "summary": "safe",
+      "review": "./MarketRateTransformerRateProviders.md",
+      "warnings": [],
+      "factory": "",
       "upgradeableComponents": []
     }
   },
@@ -2840,6 +2861,15 @@
       "summary": "safe",
       "review": "./MarketRateTransformerRateProviders.md",
       "warnings": [""],
+      "factory": "",
+      "upgradeableComponents": []
+    },
+    "0x7C40E25A57BC93ef7Ee3506F111D3E108f7Ae0a8": {
+      "asset": "0xBFB53910C935E837C74e6C4EF584557352d20fDe",
+      "name": "StakingLPUsdcRateProvider.md",
+      "summary": "safe",
+      "review": "./StakingLPUsdcRateProviderReview.md",
+      "warnings": [],
       "factory": "",
       "upgradeableComponents": []
     }
