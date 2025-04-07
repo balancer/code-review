@@ -55,4 +55,4 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 ## Conclusion
 **Summary judgment: SAFE**
 
-The Rate Providers should work well with Balancer pools. The underlying contracts have been audited. Computation of totalAssets do not rely on `balanceOf()` calls and also their audits do not indicate any risk of a donation attack vector.
+The Rate Providers should work well with Balancer pools. The underlying contracts have been audited.
