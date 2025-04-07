@@ -6,6 +6,7 @@
 - Deployed at:
     - [sonic:0x631c46a198d9fc553fd0790ad34972a96667feb9](https://sonicscan.org/address/0x631c46a198d9fc553fd0790ad34972a96667feb9#code)
     - [sonic:0xb5a7ab4d068a37cbede6097218bd089c39784528](https://sonicscan.org/address/0xb5a7ab4d068a37cbede6097218bd089c39784528#code)
+    - [sonic:0x042cbb7aca4470aeaf10195a433a973f76540b50](https://sonicscan.org/address/0x042cbb7aca4470aeaf10195a433a973f76540b50#code)
 - Audit report(s):
     - [EVK Audits](https://docs.euler.finance/security/audits)
 
