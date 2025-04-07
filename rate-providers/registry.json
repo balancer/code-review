@@ -781,6 +781,204 @@
       "factory": "",
       "upgradeableComponents": []
     },
+    "0x358Ea83380F1a66B22A15E5F5965967Db6D75748": {
+      "asset": "0xd7da0de6ef4f51d6206bf2a35fcd2030f54c3f7b",
+      "name": "Aave-wAVAX ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./statATokenv2RateProvider.md",
+      "warnings": [""],
+      "factory": "0xfCe81cafe4b3F7e2263EFc2d907f488EBF2B238E",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xd7da0de6ef4f51d6206bf2a35fcd2030f54c3f7b",
+          "implementationReviewed": "0x88D2FD5B62BBf2038e2246D9B9ad24f823306FCB"
+        },
+        {
+          "entrypoint": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+          "implementationReviewed": "0xB7467b66d86cE80CC258f28D266A18A51DB7FAC8"
+        }
+      ]
+    },
+    "0x3dc85A7d42875E086Ce1717a57c080F8Dddd1A71": {
+      "asset": "0x2d324fd1ca86d90f61b0965d2db2f86d22ea4b74",
+      "name": "Aave-BTC.b ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./statATokenv2RateProvider.md",
+      "warnings": [""],
+      "factory": "0xfCe81cafe4b3F7e2263EFc2d907f488EBF2B238E",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x2d324fd1ca86d90f61b0965d2db2f86d22ea4b74",
+          "implementationReviewed": "0x88D2FD5B62BBf2038e2246D9B9ad24f823306FCB"
+        },
+        {
+          "entrypoint": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+          "implementationReviewed": "0xB7467b66d86cE80CC258f28D266A18A51DB7FAC8"
+        }
+      ]
+    },
+    "0x37C9a6Ca1124D7C6166fbdFa566575D93F398241": {
+      "asset": "0xe1bFC96d95BAdCB10Ff013Cb0C9C6c737ca07009",
+      "name": "Aave-USDC ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./statATokenv2RateProvider.md",
+      "warnings": [""],
+      "factory": "0xfCe81cafe4b3F7e2263EFc2d907f488EBF2B238E",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xe1bFC96d95BAdCB10Ff013Cb0C9C6c737ca07009",
+          "implementationReviewed": "0x88D2FD5B62BBf2038e2246D9B9ad24f823306FCB"
+        },
+        {
+          "entrypoint": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+          "implementationReviewed": "0xB7467b66d86cE80CC258f28D266A18A51DB7FAC8"
+        }
+      ]
+    },
+    "0x3a053D215dA33BE9B24Dd11b2e44B22a97836Dc3": {
+      "asset": "0x59933c571d200dc6A7Fd1CDa22495dB442082E34",
+      "name": "Aave-USDT ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./statATokenv2RateProvider.md",
+      "warnings": [""],
+      "factory": "0xfCe81cafe4b3F7e2263EFc2d907f488EBF2B238E",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x59933c571d200dc6A7Fd1CDa22495dB442082E34",
+          "implementationReviewed": "0x88D2FD5B62BBf2038e2246D9B9ad24f823306FCB"
+        },
+        {
+          "entrypoint": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+          "implementationReviewed": "0xB7467b66d86cE80CC258f28D266A18A51DB7FAC8"
+        }
+      ]
+    },
+    "0xcdAa68ce322728FE4185a60f103C194F1E2c47BC": {
+      "asset": "0x7D0394F8898fBA73836Bf12bD606228887705895",
+      "name": "Aave-sAVAX ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./CombinedRateProvider.md",
+      "warnings": [""],
+      "factory": "0xeC2C6184761ab7fE061130B4A7e3Da89c72F8395",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x7D0394F8898fBA73836Bf12bD606228887705895",
+          "implementationReviewed": "0x88D2FD5B62BBf2038e2246D9B9ad24f823306FCB"
+        },
+        {
+          "entrypoint": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+          "implementationReviewed": "0xB7467b66d86cE80CC258f28D266A18A51DB7FAC8"
+        }
+      ]
+    },
+    "0x64a721E8BAE80983D00F96CCfA8Ed95Ec9352255": {
+      "asset": "0xdFD2b2437a94108323045C282fF1916de5Ac6Af7",
+      "name": "Aave-wETH ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./statATokenv2RateProvider.md",
+      "warnings": [""],
+      "factory": "0xfCe81cafe4b3F7e2263EFc2d907f488EBF2B238E",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xdFD2b2437a94108323045C282fF1916de5Ac6Af7",
+          "implementationReviewed": "0x88D2FD5B62BBf2038e2246D9B9ad24f823306FCB"
+        },
+        {
+          "entrypoint": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+          "implementationReviewed": "0xB7467b66d86cE80CC258f28D266A18A51DB7FAC8"
+        }
+      ]
+    },
+    "0x04936CB19eFA1c0E9091922CF143d3690ED31038": {
+      "asset": "0x45cf39EeB437FA95Bb9b52c0105254a6BD25D01e",
+      "name": "Aave-AUSD ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./statATokenv2RateProvider.md",
+      "warnings": [""],
+      "factory": "0xfCe81cafe4b3F7e2263EFc2d907f488EBF2B238E",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x45cf39EeB437FA95Bb9b52c0105254a6BD25D01e",
+          "implementationReviewed": "0x88D2FD5B62BBf2038e2246D9B9ad24f823306FCB"
+        },
+        {
+          "entrypoint": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+          "implementationReviewed": "0xB7467b66d86cE80CC258f28D266A18A51DB7FAC8"
+        }
+      ]
+    },
+    "0x7C0b810B445a26d6383eB29b283E49bEa0a9CD37": {
+      "asset": "0xC38aD3527A4B821BF437639cBA8Bf567BFa63A13",
+      "name": "Aave-DAI ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./statATokenv2RateProvider.md",
+      "warnings": [""],
+      "factory": "0xfCe81cafe4b3F7e2263EFc2d907f488EBF2B238E",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xC38aD3527A4B821BF437639cBA8Bf567BFa63A13",
+          "implementationReviewed": "0x88D2FD5B62BBf2038e2246D9B9ad24f823306FCB"
+        },
+        {
+          "entrypoint": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+          "implementationReviewed": "0xB7467b66d86cE80CC258f28D266A18A51DB7FAC8"
+        }
+      ]
+    },
+    "0x099961a744446af57f7ea93815a69366d3ed4341": {
+      "asset": "0x61933AF56431280EE4e5667133D8aF6322D64B32",
+      "name": "Aave-LINK ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./statATokenv2RateProvider.md",
+      "warnings": [""],
+      "factory": "0xfCe81cafe4b3F7e2263EFc2d907f488EBF2B238E",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x61933AF56431280EE4e5667133D8aF6322D64B32",
+          "implementationReviewed": "0x88D2FD5B62BBf2038e2246D9B9ad24f823306FCB"
+        },
+        {
+          "entrypoint": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+          "implementationReviewed": "0xB7467b66d86cE80CC258f28D266A18A51DB7FAC8"
+        }
+      ]
+    },
+    "0xe92543e2910c7c60ba56cf282bbc84c7226f97b0": {
+      "asset": "0x7883978D1F322641a3AaA82Bac3b0a6Dee7A171E",
+      "name": "Aave-AAVE ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./statATokenv2RateProvider.md",
+      "warnings": [""],
+      "factory": "0xfCe81cafe4b3F7e2263EFc2d907f488EBF2B238E",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x7883978D1F322641a3AaA82Bac3b0a6Dee7A171E",
+          "implementationReviewed": "0x88D2FD5B62BBf2038e2246D9B9ad24f823306FCB"
+        },
+        {
+          "entrypoint": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+          "implementationReviewed": "0xB7467b66d86cE80CC258f28D266A18A51DB7FAC8"
+        }
+      ]
+    },
+    "0x4a93b8a90c4be95879f240fb8d3fed46ab1a51db": {
+      "asset": "0x3929336Afd0BBa6FCAbB67dFB78610379C66B43B",
+      "name": "Aave-FRAX ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./statATokenv2RateProvider.md",
+      "warnings": [""],
+      "factory": "0xfCe81cafe4b3F7e2263EFc2d907f488EBF2B238E",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x3929336Afd0BBa6FCAbB67dFB78610379C66B43B",
+          "implementationReviewed": "0x88D2FD5B62BBf2038e2246D9B9ad24f823306FCB"
+        },
+        {
+          "entrypoint": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+          "implementationReviewed": "0xB7467b66d86cE80CC258f28D266A18A51DB7FAC8"
+        }
+      ]
+    },
     "0x7DB6B5bD0E9EAC1E050544f478961830cc676d30": {
       "asset": "0x68088C91446c7bEa49ea7Dbd3B96Ce62B272DC96",
       "name": "StakeddeUSDRateProvider.md",
