@@ -2653,6 +2653,15 @@
       "warnings": [""],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0x7C40E25A57BC93ef7Ee3506F111D3E108f7Ae0a8": {
+      "asset": "0xBFB53910C935E837C74e6C4EF584557352d20fDe",
+      "name": "StakingLPUsdcRateProvider.md",
+      "summary": "safe",
+      "review": "./StakingLPUsdcRateProviderReview.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   },
   "fantom": {
