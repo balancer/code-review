@@ -5,6 +5,7 @@
 - Checked by: @mkflow27
 - Deployed at:
     - tETH [ethereum:0x7Aee5f039da2891BF02414bc6ADA1B53c0C3902a](https://etherscan.io/address/0x7Aee5f039da2891BF02414bc6ADA1B53c0C3902a#code)
+    - waEURe [gnosis:0xdDDF909076B641C51f22ACD4b134C54adad51e68](https://gnosisscan.io/address/0xdDDF909076B641C51f22ACD4b134C54adad51e68#code)
 - Audit report(s):
     - [No audits provided]
 
@@ -37,7 +38,11 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 - tETH Mainnet [ethereum:0x7Aee5f039da2891BF02414bc6ADA1B53c0C3902a](https://etherscan.io/address/0x7Aee5f039da2891BF02414bc6ADA1B53c0C3902a#code)
     - [rateProvider1 tETH](https://etherscan.io/address/0x7C53f86d9a6B01821F916802A7606E9255DfE4e2): [TreehouseRateProvider](https://github.com/balancer/code-review/blob/main/rate-providers/TreehouseRateProvider.md) review deemed SAFE
     - [rateProvider2 wsteth](https://etherscan.io/address/0x72D07D7DcA67b8A406aD1Ec34ce969c90bFEE768): [wstETHRateProvider](https://github.com/balancer/code-review/blob/main/rate-providers/wstethRateProvider.md) review deemed SAFE.
-
+    
+- waEURe Gnosis [gnosis:0xdDDF909076B641C51f22ACD4b134C54adad51e68](https://gnosisscan.io/address/0xdDDF909076B641C51f22ACD4b134C54adad51e68#code)
+    - [rateProvider1 EURe](https://gnosisscan.io/address/0xe7511f6e5c593007ea8a7f52af4b066333765e03): [ChainlinkRateProvider](https://github.com/balancer/code-review/blob/main/rate-providers/ChainLinkRateProvider.md) review deemed SAFE
+    - [rateProvider2 Aave EURe](https://gnosisscan.io/address/0x79FE0750bE76913E83a0f0EB60ba1Ab7FA6FdA5D#code): [statATokenv2RateProvider](https://github.com/balancer/code-review/blob/main/rate-providers/statATokenv2RateProvider.md) review deemed SAFE.
+ 
 ### Common Manipulation Vectors
 - [ ] The Rate Provider is susceptible to donation attacks.
 

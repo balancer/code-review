@@ -1,23 +1,15 @@
-# Rate Provider: `ERC4626RateProvider`
+# Rate Provider: `StakedSonicRateProvider`
 
 ## Details
 - Reviewed by: @franzns
-- Checked by: @mkflow27
+- Checked by: @danielmkm
 - Deployed at:
-    - [sonic:0x78557d8a83fe7c6d9f9983d00e5c0e08cc3335e6](https://sonicscan.org/address/0x78557d8a83fe7c6d9f9983d00e5c0e08cc3335e6#code)
-    - [sonic:0x9d2d4351c1b3718d7a65ef21f54c86c665964670](https://sonicscan.org/address/0x9d2d4351c1b3718d7a65ef21f54c86c665964670#code)
-    - [sonic:0xb86e2517caab8e7aecc7472f29c0cbdaaf28e5e5](https://sonicscan.org/address/0xb86e2517caab8e7aecc7472f29c0cbdaaf28e5e5#code)
-    - [sonic:0x4f9ca3eb1f6ff09d3cc947d9020a9ba7bef55523](https://sonicscan.org/address/0x4f9ca3eb1f6ff09d3cc947d9020a9ba7bef55523#code)
-    - [sonic:0xb86e2517caab8e7aecc7472f29c0cbdaaf28e5e5](https://sonicscan.org/address/0xb86e2517caab8e7aecc7472f29c0cbdaaf28e5e5#code)
-    - [sonic:0x59c9262da57918557780e6010d15c01b59971c42](https://sonicscan.org/address/0x59c9262da57918557780e6010d15c01b59971c42#code)
-    - [sonic:0x71453d205b1437f7f3057ce480cdb7a02c1568a0](https://sonicscan.org/address/0x71453d205b1437f7f3057ce480cdb7a02c1568a0#code)
-    - [sonic:0x5f26085ad72aa51ed443d84c1f08bbaa7dd5425e](https://sonicscan.org/address/0x5f26085ad72aa51ed443d84c1f08bbaa7dd5425e#code)
-    - [sonic:0xf9fe8c5009b1015363e4452e0ac1d45d3924b986](https://sonicscan.org/address/0xf9fe8c5009b1015363e4452e0ac1d45d3924b986#code)
+    - [sonic:0xe5da20f15420ad15de0fa650600afc998bbe3955](https://sonicscan.org/address/0xe5da20f15420ad15de0fa650600afc998bbe3955#code)
 - Audits:
-    - [Silo V2 audits](https://docs.silo.finance/audits-and-tests)
+    - [Beets Staked Sonic Audits](https://github.com/beethovenxfi/sonic-staking/tree/main/audits)
 
 ## Context
-The ERC4626 Rate Provider fetches the rate of the Silo V2 Market. The rate provider was created using the ERC4626 Rateprovider factory which calls convertToAssets on the ERC4626 to expose the rate. 
+The Staked Sonic contract has the getRate function built in natively. It is a wrapper around a call to converToAssets(1e18). The rate reflects the conversion rate of 1e18 stS to S(onic).
 
 ## Review Checklist: Bare Minimum Compatibility
 Each of the items below represents an absolute requirement for the Rate Provider. If any of these is unchecked, the Rate Provider is unfit to use.
@@ -33,8 +25,14 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 ### Administrative Privileges
 - [ ] The Rate Provider is upgradeable (e.g., via a proxy architecture or an `onlyOwner` function that updates the price source address).
 
-- [ ] Some other portion of the price pipeline is upgradeable (e.g., the token itself, an oracle, or some piece of a larger system that tracks the price).
-    
+- [x] Some other portion of the price pipeline is upgradeable (e.g., the token itself, an oracle, or some piece of a larger system that tracks the price).
+    - [sonic:0xe5da20f15420ad15de0fa650600afc998bbe3955](https://sonicscan.org/address/0xe5da20f15420ad15de0fa650600afc998bbe3955#code)
+        - upgradeable component: `StakedSonic` ([sonic:0xe5da20f15420ad15de0fa650600afc998bbe3955](https://sonicscan.org/address/0xe5da20f15420ad15de0fa650600afc998bbe3955#code))
+        - owner address: [sonic:0xf750f4E0813898C544A4349526206e1165F0E5d0](https://sonicscan.org/address/0xf750f4E0813898C544A4349526206e1165F0E5d0)
+        - admin owner: [sonic:0x7B782A460Def196149f8369BdeC30e3f2F2356EB](https://sonicscan.org/address/0x7B782A460Def196149f8369BdeC30e3f2F2356EB)
+        - admin type: Multisig 5/7
+            - multisig timelock? Yes, 3 weeks.
+
 
 ### Oracles
 - [ ] Price data is provided by an off-chain source (e.g., a Chainlink oracle, a multisig, or a network of nodes).

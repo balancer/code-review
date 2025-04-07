@@ -4,9 +4,10 @@
 - Reviewed by: @mkflow27
 - Checked by: @mattpereira
 - Deployed at:
-    - [ethereum:0x8fC43e76874CaE40939eDeB90E5683258B63c508](https://etherscan.io/address/0x8fC43e76874CaE40939eDeB90E5683258B63c508#readContract)
-    - [arbitrum:0xeAaf42989c294e2280eFbB0B0f368E806AD8cA69](https://arbiscan.io/address/0xeAaf42989c294e2280eFbB0B0f368E806AD8cA69)
-    - [base:0x0bB7028D24b24424485E769bD44b936B315Cb8FC](https://basescan.org/address/0x0bB7028D24b24424485E769bD44b936B315Cb8FC)
+    - wETH [ethereum:0x8fC43e76874CaE40939eDeB90E5683258B63c508](https://etherscan.io/address/0x8fC43e76874CaE40939eDeB90E5683258B63c508#readContract)
+    - wstETH [ethereum:0x73a9fc5173d211F0D264Af4E816cb44F61E5f4a2](https://etherscan.io/address/0x73a9fc5173d211F0D264Af4E816cb44F61E5f4a2#readContract)
+    - wETH [arbitrum:0xeAaf42989c294e2280eFbB0B0f368E806AD8cA69](https://arbiscan.io/address/0xeAaf42989c294e2280eFbB0B0f368E806AD8cA69)
+    - wETH [base:0x0bB7028D24b24424485E769bD44b936B315Cb8FC](https://basescan.org/address/0x0bB7028D24b24424485E769bD44b936B315Cb8FC)
 
 - Audit report(s):
     - [Fluid audits](https://docs.fluid.instadapp.io/audits-and-security.html)
