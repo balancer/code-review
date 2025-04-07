@@ -836,7 +836,7 @@
       ]
     },
     "0x3a053D215dA33BE9B24Dd11b2e44B22a97836Dc3": {
-      "asset": "0x2d324fd1ca86d90f61b0965d2db2f86d22ea4b74",
+      "asset": "0x59933c571d200dc6A7Fd1CDa22495dB442082E34",
       "name": "Aave-USDT ERC4626RateProvider",
       "summary": "safe",
       "review": "./statATokenv2RateProvider.md",
@@ -844,7 +844,7 @@
       "factory": "0xfCe81cafe4b3F7e2263EFc2d907f488EBF2B238E",
       "upgradeableComponents": [
         {
-          "entrypoint": "0x2d324fd1ca86d90f61b0965d2db2f86d22ea4b74",
+          "entrypoint": "0x59933c571d200dc6A7Fd1CDa22495dB442082E34",
           "implementationReviewed": "0x88D2FD5B62BBf2038e2246D9B9ad24f823306FCB"
         },
         {
@@ -899,24 +899,6 @@
       "upgradeableComponents": [
         {
           "entrypoint": "0x45cf39EeB437FA95Bb9b52c0105254a6BD25D01e",
-          "implementationReviewed": "0x88D2FD5B62BBf2038e2246D9B9ad24f823306FCB"
-        },
-        {
-          "entrypoint": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
-          "implementationReviewed": "0xB7467b66d86cE80CC258f28D266A18A51DB7FAC8"
-        }
-      ]
-    },
-    "0x7C0b810B445a26d6383eB29b283E49bEa0a9CD37": {
-      "asset": "0xC38aD3527A4B821BF437639cBA8Bf567BFa63A13",
-      "name": "Aave-DAI ERC4626RateProvider",
-      "summary": "safe",
-      "review": "./statATokenv2RateProvider.md",
-      "warnings": [""],
-      "factory": "0xfCe81cafe4b3F7e2263EFc2d907f488EBF2B238E",
-      "upgradeableComponents": [
-        {
-          "entrypoint": "0xC38aD3527A4B821BF437639cBA8Bf567BFa63A13",
           "implementationReviewed": "0x88D2FD5B62BBf2038e2246D9B9ad24f823306FCB"
         },
         {
