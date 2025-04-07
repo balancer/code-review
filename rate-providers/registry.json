@@ -976,6 +976,9 @@
         {
           "entrypoint": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
           "implementationReviewed": "0xB7467b66d86cE80CC258f28D266A18A51DB7FAC8"
+        }
+      ]
+    },
     "0x7DB6B5bD0E9EAC1E050544f478961830cc676d30": {
       "asset": "0x68088C91446c7bEa49ea7Dbd3B96Ce62B272DC96",
       "name": "StakeddeUSDRateProvider.md",
@@ -987,7 +990,6 @@
         {
           "entrypoint": "0xb57b25851fe2311cc3fe511c8f10e868932e0680",
           "implementationReviewed": "0x526f100dE665F2598D25e585DbD944E706BB9e3f"
-
         }
       ]
     }
