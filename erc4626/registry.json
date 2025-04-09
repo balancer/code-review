@@ -817,6 +817,36 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0x0806af1762Bdd85B167825ab1a64E31CF9497038": {
+      "asset": "0x3bcE5CB273F0F148010BbEa2470e7b5df84C7812",
+      "name": "EVK Vault escETH-2",
+      "summary": "safe",
+      "review": "./EulerVault.md",
+      "warnings": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
+    "0xa5cd24d9792F4F131f5976Af935A505D19c8Db2b": {
+      "asset": "0x50c42dEAcD8Fc9773493ED674b675bE577f2634b",
+      "name": "EVK Vault eWETH-1",
+      "summary": "safe",
+      "review": "./EulerVault.md",
+      "warnings": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
+    "0x9144C0F0614dD0acE859C61CC37e5386d2Ada43A": {
+      "asset": "0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38",
+      "name": "EVK Vault ewS-2",
+      "summary": "safe",
+      "review": "./EulerVault.md",
+      "warnings": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   },
   "avalanche": {
