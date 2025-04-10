@@ -740,7 +740,7 @@
     },
     "0x11Ba70c0EBAB7946Ac84F0E6d79162b0cBb2693f": {
       "asset": "0x29219dd400f2Bf60E5a23d13Be72B486D4038894",
-      "name": "SiloV2 USDC ID 33",
+      "name": "SiloV2 USDC ID 36",
       "summary": "safe",
       "review": "./SiloV2Review.md",
       "warnings": [],
