@@ -3763,7 +3763,7 @@
     },
     "0x5fded3206608d3f33175a8865576431906cdb43b": {
       "asset": "0x7870ddFd5ACA4E977B2287e9A212bcbe8FC4135a",
-      "name": "Beefy USDC SiloV2 Rateprovider",
+      "name": "Beefy Silo USDC-20 Rateprovider",
       "summary": "safe",
       "review": "./BeefyUsdcSiloRateprovider.md",
       "warnings": [""],
@@ -3772,7 +3772,7 @@
     },
     "0x78557d8a83fe7c6d9f9983d00e5c0e08cc3335e6": {
       "asset": "0x52Fc9E0a68b6a4C9b57b9D1d99fB71449A99DCd8",
-      "name": "Silo bSolvBTC.bbn Rateprovider",
+      "name": "Silo SolvBTC.bbn-13 Rateprovider",
       "summary": "safe",
       "review": "./SiloWrappedRateprovider.md",
       "warnings": [""],
@@ -3781,7 +3781,7 @@
     },
     "0x9d2d4351c1b3718d7a65ef21f54c86c665964670": {
       "asset": "0x87178fe8698C7eDa8aA207083C3d66aEa569aB98",
-      "name": "Silo bSolvBTC Rateprovider",
+      "name": "Silo SolvBTC-13 Rateprovider",
       "summary": "safe",
       "review": "./SiloWrappedRateprovider.md",
       "warnings": [""],
@@ -3790,7 +3790,7 @@
     },
     "0x5f26085ad72aa51ed443d84c1f08bbaa7dd5425e": {
       "asset": "0xdA14A41DbdA731F03A94cb722191639DD22b35b2",
-      "name": "Silo bfrxUSD Rateprovider",
+      "name": "Silo frxUSD-37 Rateprovider",
       "summary": "safe",
       "review": "./SiloWrappedRateprovider.md",
       "warnings": [""],
@@ -3799,7 +3799,7 @@
     },
     "0x4f9ca3eb1f6ff09d3cc947d9020a9ba7bef55523": {
       "asset": "0x219656F33c58488D09d518BaDF50AA8CdCAcA2Aa",
-      "name": "Silo bwETH Rateprovider",
+      "name": "Silo wETH-26 Rateprovider",
       "summary": "safe",
       "review": "./SiloWrappedRateprovider.md",
       "warnings": [""],
@@ -3808,7 +3808,7 @@
     },
     "0xf9fe8c5009b1015363e4452e0ac1d45d3924b986": {
       "asset": "0x0A94e18bdbCcD048198806d7FF28A1B1D2590724",
-      "name": "Silo scBTC Rateprovider",
+      "name": "Silo scBTC-32 Rateprovider",
       "summary": "safe",
       "review": "./SiloWrappedRateprovider.md",
       "warnings": [""],
@@ -3817,7 +3817,7 @@
     },
     "0xe508a70deef702d5cd1df120bf6936540c9a6b2d": {
       "asset": "0x42CE2234fd5a26bF161477a996961c4d01F466a3",
-      "name": "Silo USDC Rateprovider",
+      "name": "Silo USDC-33 Rateprovider",
       "summary": "safe",
       "review": "./SiloWrappedRateprovider.md",
       "warnings": [""],
@@ -3890,7 +3890,7 @@
     },
     "0xb86e2517caab8e7aecc7472f29c0cbdaaf28e5e5": {
       "asset": "0x016C306e103FbF48EC24810D078C65aD13c5f11B",
-      "name": "Silo bwS Rateprovider",
+      "name": "Silo wS-25 Rateprovider",
       "summary": "safe",
       "review": "./SiloWrappedRateprovider.md",
       "warnings": [""],
@@ -3899,7 +3899,7 @@
     },
     "0x59c9262da57918557780e6010d15c01b59971c42": {
       "asset": "0x6c49B18333A1135e9A376560c07E6D1Fd0350EaF",
-      "name": "Silo bwS Rateprovider",
+      "name": "Silo wS-28 Rateprovider",
       "summary": "safe",
       "review": "./SiloWrappedRateprovider.md",
       "warnings": [""],
@@ -3908,7 +3908,7 @@
     },
     "0x71453d205b1437f7f3057ce480cdb7a02c1568a0": {
       "asset": "0x5954ce6671d97D24B782920ddCdBB4b1E63aB2De",
-      "name": "Silo bUSDC Rateprovider",
+      "name": "Silo USDC-23 Rateprovider",
       "summary": "safe",
       "review": "./SiloWrappedRateprovider.md",
       "warnings": [""],
@@ -3917,7 +3917,7 @@
     },
     "0x4A3eA10da3c422d31485585096CD00fB5e9F1019": {
       "asset": "0xe6605932e4a686534D19005BB9dB0FBA1F101272",
-      "name": "Silo scUSD Rateprovider",
+      "name": "Silo scUSD-46 Rateprovider",
       "summary": "safe",
       "review": "./SiloWrappedRateprovider.md",
       "warnings": [""],
@@ -3926,7 +3926,7 @@
     },
     "0x55613bbc6c383f3e73d48aaaa1bac14aae302771": {
       "asset": "0x24c74B30d1a4261608E84Bf5a618693032681DAc",
-      "name": "Silo scETH Rateprovider",
+      "name": "Silo scETH-47 Rateprovider",
       "summary": "safe",
       "review": "./SiloWrappedRateprovider.md",
       "warnings": [""],
@@ -3935,7 +3935,16 @@
     },
     "0xeab98cbe0c92721fd1c38cad0deebaf575a08239": {
       "asset": "0x08C320A84a59c6f533e0DcA655cf497594BCa1F9",
-      "name": "Silo wETH Rateprovider",
+      "name": "Silo wETH-35 Rateprovider",
+      "summary": "safe",
+      "review": "./SiloWrappedRateprovider.md",
+      "warnings": [""],
+      "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
+      "upgradeableComponents": []
+    },
+    "0xe6a932e53d759ff491c3f56c4e63609140d7c044": {
+      "asset": "0x11Ba70c0EBAB7946Ac84F0E6d79162b0cBb2693f",
+      "name": "Silo USDC-36 Rateprovider",
       "summary": "safe",
       "review": "./SiloWrappedRateprovider.md",
       "warnings": [""],
