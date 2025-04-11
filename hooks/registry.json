@@ -1,96 +1,142 @@
 {
-    "sepolia":{
-        "0x790ae803b6c0467C6A4cbDc6d6d712DE34CfdB76":{
-            "name": "FeeTakingHookExample",
-            "summary": "safe",
-            "review": "./FeeTakingHook.md",
-            "warnings": []
-        },
-        "0x2Aa9D4066DAe16ef001765efF2cA8F41Bde0b019":{
-            "name": "ExitFeeHookExample",
-            "summary": "safe",
-            "review": "./ExitFeeHook.md",
-            "warnings": []
-        },
-        "0xD9e535a65eb38F962B84f7BBD2bf60293bA54058":{
-            "name": "DirectionalFeeHookExample",
-            "summary": "safe",
-            "review": "./DirectionalFeeHook.md",
-            "warnings": []
-        },
-        "0x0E85194F9eD75F0EFf2b89B73b6AD3053be03853":{
-            "name": "LotteryHookExample",
-            "summary": "safe",
-            "review": "./LotteryHook.md",
-            "warnings": []
-        },
-        "0x30CE53fA38a1399F0CA158b5c38362c80E423bA9":{
-            "name": "StableSurgeHook",
-            "summary": "safe",
-            "review": "./StableSurge.md",
-            "warnings": []
-        },
-        "0xEC9578e79d412537095501584284B092D2F6b9F7":{
-            "name": "MevCaptureHook",
-            "summary": "safe",
-            "review": "./MevTaxHook.md",
-            "warnings": []
-        }
+  "sepolia": {
+    "0x790ae803b6c0467C6A4cbDc6d6d712DE34CfdB76": {
+      "name": "FeeTakingHookExample",
+      "summary": "safe",
+      "review": "./FeeTakingHook.md",
+      "warnings": []
     },
-    "arbitrum": {
-        "0x0Fa0f9990D7969a7aE6f9961d663E4A201Ed6417":{
-            "name": "StableSurgeHook",
-            "summary": "safe",
-            "review": "./StableSurge.md",
-            "warnings": []
-        },
-        "0x5B42eC6D40f7B7965BE5308c70e2603c0281C1E9":{
-            "name": "MevCaptureHook",
-            "summary": "safe",
-            "review": "./MevTaxHook.md",
-            "warnings": []
-        }
+    "0x2Aa9D4066DAe16ef001765efF2cA8F41Bde0b019": {
+      "name": "ExitFeeHookExample",
+      "summary": "safe",
+      "review": "./ExitFeeHook.md",
+      "warnings": []
     },
-    "base": {
-        "0xb2007B8B7E0260042517f635CFd8E6dD2Dd7f007":{
-            "name": "StableSurgeHook",
-            "summary": "safe",
-            "review": "./StableSurge.md",
-            "warnings": []
-        },
-        "0x7a2535f5fb47b8e44c02ef5d9990588313fe8f05":{
-            "name": "MevCaptureHook",
-            "summary": "safe",
-            "review": "./MevTaxHook.md",
-            "warnings": []
-        }
+    "0xD9e535a65eb38F962B84f7BBD2bf60293bA54058": {
+      "name": "DirectionalFeeHookExample",
+      "summary": "safe",
+      "review": "./DirectionalFeeHook.md",
+      "warnings": []
     },
-    "gnosis": {
-        "0xe4f1878eC9710846E2B529C1b5037F8bA94583b1":{
-            "name": "StableSurgeHook",
-            "summary": "safe",
-            "review": "./StableSurge.md",
-            "warnings": []
-        },
-        "0xa1D0791a41318c775707C56eAe247AF81a05322C":{
-            "name": "MevCaptureHook",
-            "summary": "safe",
-            "review": "./MevTaxHook.md",
-            "warnings": []
-        }
+    "0x0E85194F9eD75F0EFf2b89B73b6AD3053be03853": {
+      "name": "LotteryHookExample",
+      "summary": "safe",
+      "review": "./LotteryHook.md",
+      "warnings": []
     },
-    "mainnet": {
-        "0xb18fA0cb5DE8cecB8899AAE6e38b1B7ed77885dA":{
-            "name": "StableSurgeHook",
-            "summary": "safe",
-            "review": "./StableSurge.md",
-            "warnings": []
-        },
-        "0x1bcA39b01F451b0a05D7030e6e6981a73B716b1C":{
-            "name": "MevCaptureHook",
-            "summary": "safe",
-            "review": "./MevTaxHook.md",
-            "warnings": []
-        }
+    "0x30CE53fA38a1399F0CA158b5c38362c80E423bA9": {
+      "name": "StableSurgeHook",
+      "summary": "safe",
+      "review": "./StableSurge.md",
+      "warnings": []
+    },
+    "0xEC9578e79d412537095501584284B092D2F6b9F7": {
+      "name": "MevCaptureHook",
+      "summary": "safe",
+      "review": "./MevTaxHook.md",
+      "warnings": []
+    },
+    "0x7dfca838fD5fCd70f876431D41CaA3E3E2ea1520": {
+      "name": "StableSurgeHookV2",
+      "summary": "safe",
+      "review": "./StableSurgeHookV2.md",
+      "warnings": []
     }
+  },
+  "arbitrum": {
+    "0x0Fa0f9990D7969a7aE6f9961d663E4A201Ed6417": {
+      "name": "StableSurgeHook",
+      "summary": "safe",
+      "review": "./StableSurge.md",
+      "warnings": []
+    },
+    "0x5B42eC6D40f7B7965BE5308c70e2603c0281C1E9": {
+      "name": "MevCaptureHook",
+      "summary": "safe",
+      "review": "./MevTaxHook.md",
+      "warnings": []
+    },
+    "0x7c1b7A97BfAcD39975dE53e989A16c7BC4C78275": {
+      "name": "StableSurgeHookV2",
+      "summary": "safe",
+      "review": "./StableSurgeHookV2.md",
+      "warnings": []
+    }
+  },
+  "base": {
+    "0xb2007B8B7E0260042517f635CFd8E6dD2Dd7f007": {
+      "name": "StableSurgeHook",
+      "summary": "safe",
+      "review": "./StableSurge.md",
+      "warnings": []
+    },
+    "0x7a2535f5fb47b8e44c02ef5d9990588313fe8f05": {
+      "name": "MevCaptureHook",
+      "summary": "safe",
+      "review": "./MevTaxHook.md",
+      "warnings": []
+    },
+    "0xDB8d758BCb971e482B2C45f7F8a7740283A1bd3A": {
+      "name": "StableSurgeHookV2",
+      "summary": "safe",
+      "review": "./StableSurgeHookV2.md",
+      "warnings": []
+    }
+  },
+  "gnosis": {
+    "0xe4f1878eC9710846E2B529C1b5037F8bA94583b1": {
+      "name": "StableSurgeHook",
+      "summary": "safe",
+      "review": "./StableSurge.md",
+      "warnings": []
+    },
+    "0xa1D0791a41318c775707C56eAe247AF81a05322C": {
+      "name": "MevCaptureHook",
+      "summary": "safe",
+      "review": "./MevTaxHook.md",
+      "warnings": []
+    },
+    "0x90BD26fbb9dB17D75b56E4cA3A4c438FA7C93694": {
+      "name": "StableSurgeHookV2",
+      "summary": "safe",
+      "review": "./StableSurgeHookV2.md",
+      "warnings": []
+    }
+  },
+  "mainnet": {
+    "0xb18fA0cb5DE8cecB8899AAE6e38b1B7ed77885dA": {
+      "name": "StableSurgeHook",
+      "summary": "safe",
+      "review": "./StableSurge.md",
+      "warnings": []
+    },
+    "0x1bcA39b01F451b0a05D7030e6e6981a73B716b1C": {
+      "name": "MevCaptureHook",
+      "summary": "safe",
+      "review": "./MevTaxHook.md",
+      "warnings": []
+    },
+    "0xBDbADc891BB95DEE80eBC491699228EF0f7D6fF1": {
+      "name": "StableSurgeHookV2",
+      "summary": "safe",
+      "review": "./StableSurgeHookV2.md",
+      "warnings": []
+    }
+  },
+  "avalanche": {
+    "0xaD89051bEd8d96f045E8912aE1672c6C0bF8a85E": {
+      "name": "StableSurgeHookV2",
+      "summary": "safe",
+      "review": "./StableSurgeHookV2.md",
+      "warnings": []
+    }
+  },
+  "optimism": {
+    "0xF39CA6ede9BF7820a952b52f3c94af526bAB9015": {
+      "name": "StableSurgeHookV2",
+      "summary": "safe",
+      "review": "./StableSurgeHookV2.md",
+      "warnings": []
+    }
+  }
 }
