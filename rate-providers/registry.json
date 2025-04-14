@@ -4098,6 +4098,20 @@
           "implementationReviewed": "0x11f95aaa59f1ad89576c61e3c9cd24df1fdcf46f"
         }
       ]
+    },
+    "0x871A101Dcf22fE4fE37be7B654098c801CBA1c88": {
+      "asset": "0x871A101Dcf22fE4fE37be7B654098c801CBA1c88",
+      "name": "Beefy-Escrowed Sonic Rateprovider",
+      "summary": "safe",
+      "review": "./BeefyEscrowedSonic.md",
+      "warnings": [""],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x871A101Dcf22fE4fE37be7B654098c801CBA1c88",
+          "implementationReviewed": "0xad997cd8484e15e2b7db8d5ae68dd87a5e47dd6b"
+        }
+      ]
     }
   }
 }
