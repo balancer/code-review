@@ -18,6 +18,7 @@ class RateProviderDataService {
         Proxy: string
         ContractName: string
         ABI: string
+        Implementation: Address
     }
 
     private apiKey!: string
@@ -203,7 +204,7 @@ class RateProviderDataService {
      */
     public async getContractSourceCode(
         address: Address,
-    ): Promise<{ address: Address; Proxy: string; ContractName: string; ABI: string }> {
+    ): Promise<{ address: Address; Proxy: string; ContractName: string; ABI: string; Implementation: Address }> {
         const etherscanApi = new EtherscanApi(this.chain, this.apiKey)
         const sourceCodeArray = await etherscanApi.getSourceCode([address])
         return sourceCodeArray[0]
@@ -295,8 +296,16 @@ class RateProviderDataService {
      * Checks if the ABI has a valid getRate function.
      * @returns True if the ABI has a valid getRate function, false otherwise.
      */
-    public hasValidGetRateFunction(): boolean {
-        const abi: Abi = JSON.parse(this.sourceCode.ABI)
+    public async hasValidGetRateFunction(): Promise<boolean> {
+        let abi: Abi
+        if (this.sourceCode.Proxy === '1') {
+            // Fetch the source code for the Implementation contract
+            const implementationSourceCode = await this.getContractSourceCode(this.sourceCode.Implementation)
+            abi = JSON.parse(implementationSourceCode.ABI)
+        } else {
+            // Use the current source code's ABI
+            abi = JSON.parse(this.sourceCode.ABI)
+        }
         return abi.some((item) => {
             return (
                 item.type === 'function' &&
