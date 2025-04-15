@@ -4129,7 +4129,7 @@
     "0x871A101Dcf22fE4fE37be7B654098c801CBA1c88": {
       "asset": "0x871A101Dcf22fE4fE37be7B654098c801CBA1c88",
       "name": "BeefySonicRateProvider.md",
-      "summary": "unsafe",
+      "summary": "safe",
       "review": "./BeefySonicRateProviderReview.md",
       "warnings": [],
       "factory": "",

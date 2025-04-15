@@ -54,7 +54,7 @@ async function writeReviewAndUpdateRegistry(
     const upgradeData = await service.getUpgradeableContracts()
 
     const rateInfo = await service.isRateScale18()
-    const hasInterfaceImplemented = service.hasValidGetRateFunction()
+    const hasInterfaceImplemented = await service.hasValidGetRateFunction()
 
     const tenderlysimUrl = await service.getTenderlySimulation()
 
