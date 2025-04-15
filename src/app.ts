@@ -359,6 +359,13 @@ class RateProviderDataService {
             case 'Avalanche':
                 this.apiKey = ''
                 break
+            case 'Sonic':
+                this.apiKey = process.env.SONICSCAN_API_KEY
+                    ? process.env.SONICSCAN_API_KEY
+                    : (() => {
+                          throw new Error(`Environment variable is not set`)
+                      })()
+                break
             default:
                 throw new Error(`Unsupported chain: ${chain.name}`)
         }

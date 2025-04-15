@@ -31,7 +31,7 @@ const fs = require('fs')
 // to use this script use the command below
 // for network see the viem chains
 // Important: The custom RPC URL in the .env must support createAccessList (or the viem default rpc url)
-// npm run write-review -- --rateProviderAddress <address> --network <network> --rateProviderAsset <asset>
+// npm run write-review -- --rateProviderAddress <address> --network <network> --rateProviderAsset <asset> --rpcUrl <rpcUrl>
 
 // Mapping of chain names to registry keys
 const chainNameToRegistryKey: { [key: string]: string } = {
@@ -179,7 +179,7 @@ async function main() {
             alias: 'n',
             type: 'string',
             description: 'The network the rate provider is deployed on',
-            choices: ['base', 'mainnet', 'arbitrum', 'avalanche', 'gnosis', 'fraxtal', 'optimism'],
+            choices: ['base', 'mainnet', 'arbitrum', 'avalanche', 'gnosis', 'fraxtal', 'optimism', 'sonic'],
             demandOption: true,
         })
         .option('rateProviderAsset', {
@@ -228,6 +228,22 @@ async function main() {
                 http: [argv.rpcUrl],
             },
         },
+    }
+
+    // some viem chains do not have a block explorer api url set
+    if (argv.network === 'sonic') {
+        network = {
+            ...network,
+            blockExplorers: {
+                ...network.blockExplorers,
+                default: {
+                    ...network.blockExplorers?.default,
+                    apiUrl: 'https://api.sonicscan.org/api',
+                    name: 'SonicScan',
+                    url: network.blockExplorers?.default?.url || 'https://sonicscan.io',
+                },
+            },
+        }
     }
 
     const rateProviderAddress = argv.rateProviderAddress.startsWith('0x')
