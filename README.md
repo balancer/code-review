@@ -37,3 +37,96 @@ Use this factories gor Gyro pools. They report a static rate custom tailored to 
 | ---------- | -------------------------------------------|
 | Arbitrum   | 0xF502791715F287989374c452Fa78b475A3194a90 | 
 | Base       | 0xc0555b555857AAf2b5b28601eaAcFba2F8BBFB09 |
+---
+
+## Setup
+
+1. **Install dependencies:**
+    ```sh
+    npm install
+    ```
+
+2. **Set up environment variables:**
+    Create a .env file in the root directory and add the necessary environment variables. You can use the .env.example file as a reference.
+
+    ```sh
+    cp .env.example .env
+    ```
+
+    ### Essential Environment Variables:
+    - **`HYPERNATIVE_CLIENT_ID`**: Your Hypernative API client ID.
+    - **`HYPERNATIVE_CLIENT_SECRET`**: Your Hypernative API client secret.
+    - **`TENDERLY_ACCOUNT_SLUG`**: Your Tenderly account slug.
+    - **`TENDERLY_PROJECT_SLUG`**: Your Tenderly project slug.
+    - **`TENDERLY_API_ACCESS_KEY`**: Your Tenderly API access key.
+    - **`ETHERSCAN_API_KEY`**: Your Etherscan API key (for Ethereum).
+    - **Other API keys**: Depending on the chain, you may need additional API keys (e.g., `GNOSISSCAN_API_KEY`, `BASESCAN_API_KEY`, etc.).
+
+---
+
+## Testing
+
+1. **Run tests:**
+    ```sh
+    npm test
+    ```
+
+---
+
+## Scripts
+
+The following scripts are available in the package.json file:
+
+- **`npm run test`**: Runs the test suite.
+- **`npm run lint`**: Lints the registry.
+- **`npm run write-review`**: Generates the rate-provider review.
+
+---
+
+## Running Scripts
+
+### `npm run write-review`
+
+This script generates a review for a specified rate provider. It fetches the necessary data, generates a markdown review file, and updates the registry with the new review information. It additionally creates the Hypernative monitoring agents.
+
+#### Usage:
+```sh
+npm run write-review -- --rateProviderAddress <address> --network <network> --rateProviderAsset <asset> --rpcUrl <rpcUrl>
+```
+
+#### Example:
+```sh
+npm run write-review -- --rateProviderAddress 0xA4c27E4Aa764312fD958345Ed683c6eeC4581A10 --network mainnet --rateProviderAsset 0x7788A3538C5fc7F9c7C8A74EAC4c898fC8d87d92 --rpcUrl <yourRpcUrl>
+```
+
+#### Supported Networks:
+
+**WIP**: This is work in progress and will be updated once more reviews for new networks come in.
+
+The supported networks can be seen in the `write-review.ts` file under the network option:
+```typescript
+.option('network', {
+    alias: 'n',
+    type: 'string',
+    description: 'The network the rate provider is deployed on',
+    choices: ['base', 'mainnet', 'arbitrum', 'avalanche', 'gnosis', 'sonic', 'fraxtal', 'optimism'],
+    demandOption: true,
+})
+```
+
+
+---
+
+## Output
+
+The `write-review` script does the following:
+1. Updates the `registry.json` file with rate provider information.
+2. Generates a markdown review report.
+3. Generates the monitoring agents on the hpyernative platform.
+
+### Post-Script Actions:
+Before the review is finalized, the user is expected to:
+- Add context about the rate provider in the generated markdown file.
+- Include audit reports (if available).
+- Optionally rename the review file and update the `name` and `review` fields in the registry.
+
