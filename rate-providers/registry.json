@@ -1354,6 +1354,15 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0x1298d51c51a201614502f90f554549256f1121fe": {
+      "asset": "0x60a3e35cc302bfa44cb288bc5a4f316fdb1adb42",
+      "name": "EURc Rate Provider",
+      "summary": "safe",
+      "review": "./ChainLinkRateProvider.md",
+      "warnings": ["chainlink"],
+      "factory": "0x0A973B6DB16C2ded41dC91691Cc347BEb0e2442B",
+      "upgradeableComponents": []
     }
   },
   "ethereum": {
