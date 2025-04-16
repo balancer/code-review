@@ -138,5 +138,13 @@
       "review": "./StableSurgeHookV2.md",
       "warnings": []
     }
+  },
+  "sonic": {
+    "0x8a83aa9bb7c4cff14ae0aecec0fb9ef234901c0c": {
+      "name": "StableSurgeHook",
+      "summary": "safe",
+      "review": "./StableSurge.md",
+      "warnings": []
+    }
   }
 }
