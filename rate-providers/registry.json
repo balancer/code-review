@@ -3866,7 +3866,7 @@
       ]
     },
     "0x2d087c0999223997b77cc33be5e7e8ec79396cea": {
-      "asset": "0xfA85Fe5A8F5560e9039C04f2b0a90dE1415aBD70",
+      "asset": "0x0C4E186Eae8aCAA7F7de1315D5AD174BE39Ec987",
       "name": "Wrapped Angles Sonic Rateprovider",
       "summary": "safe",
       "review": "./wanSonicRateprovider.md",
@@ -4128,14 +4128,14 @@
     },
     "0x871A101Dcf22fE4fE37be7B654098c801CBA1c88": {
       "asset": "0x871A101Dcf22fE4fE37be7B654098c801CBA1c88",
-      "name": "BeefySonicRateProvider.md",
+      "name": "Beefy-Escrowed Sonic Rateprovider",
       "summary": "safe",
-      "review": "./BeefySonicRateProviderReview.md",
-      "warnings": [],
+      "review": "./BeefyEscrowedSonic.md",
+      "warnings": [""],
       "factory": "",
       "upgradeableComponents": [
         {
-          "entrypoint": "0x871a101dcf22fe4fe37be7b654098c801cba1c88",
+          "entrypoint": "0x871A101Dcf22fE4fE37be7B654098c801CBA1c88",
           "implementationReviewed": "0xad997cd8484e15e2b7db8d5ae68dd87a5e47dd6b"
         }
       ]
