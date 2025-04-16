@@ -41,18 +41,12 @@ Use this factories gor Gyro pools. They report a static rate custom tailored to 
 
 ## Setup
 
-1. **Clone the repository:**
-    ```sh
-    git clone https://github.com/your-username/code-review.git
-    cd code-review
-    ```
-
-2. **Install dependencies:**
+1. **Install dependencies:**
     ```sh
     npm install
     ```
 
-3. **Set up environment variables:**
+2. **Set up environment variables:**
     Create a .env file in the root directory and add the necessary environment variables. You can use the .env.example file as a reference.
 
     ```sh
@@ -60,7 +54,6 @@ Use this factories gor Gyro pools. They report a static rate custom tailored to 
     ```
 
     ### Essential Environment Variables:
-    - **`CUSTOM_RPC_URL`**: A custom RPC URL that supports `eth_createAccessList`. This is required for interacting with the blockchain.
     - **`HYPERNATIVE_CLIENT_ID`**: Your Hypernative API client ID.
     - **`HYPERNATIVE_CLIENT_SECRET`**: Your Hypernative API client secret.
     - **`TENDERLY_ACCOUNT_SLUG`**: Your Tenderly account slug.
@@ -98,12 +91,12 @@ This script generates a review for a specified rate provider. It fetches the nec
 
 #### Usage:
 ```sh
-npm run write-review -- --rateProviderAddress <address> --network <network> --rateProviderAsset <asset>
+npm run write-review -- --rateProviderAddress <address> --network <network> --rateProviderAsset <asset> --rpcUrl <rpcUrl>
 ```
 
 #### Example:
 ```sh
-npm run write-review -- --rateProviderAddress 0xA4c27E4Aa764312fD958345Ed683c6eeC4581A10 --network mainnet --rateProviderAsset 0x7788A3538C5fc7F9c7C8A74EAC4c898fC8d87d92
+npm run write-review -- --rateProviderAddress 0xA4c27E4Aa764312fD958345Ed683c6eeC4581A10 --network mainnet --rateProviderAsset 0x7788A3538C5fc7F9c7C8A74EAC4c898fC8d87d92 --rpcUrl <yourRpcUrl>
 ```
 
 #### Supported Networks:
@@ -116,7 +109,7 @@ The supported networks can be seen in the `write-review.ts` file under the netwo
     alias: 'n',
     type: 'string',
     description: 'The network the rate provider is deployed on',
-    choices: ['base', 'mainnet', 'arbitrum', 'avalanche'],
+    choices: ['base', 'mainnet', 'arbitrum', 'avalanche', 'gnosis', 'sonic', 'fraxtal', 'optimism'],
     demandOption: true,
 })
 ```
