@@ -1019,6 +1019,24 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0xfEFCB3d15100f87911631f0A625bAf87dfFb8a5f": {
+      "asset": "0x39dE0f00189306062D79eDEC6DcA5bb6bFd108f9",
+      "name": "EVKVaulteUSDC-2RateProvider.md",
+      "summary": "safe",
+      "review": "./EVKVaulteUSDC-2RateProviderReview.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x39de0f00189306062d79edec6dca5bb6bfd108f9",
+          "implementationReviewed": "0x29E9b639e165d919FEcf02521F8A9dA0492D4f21"
+        },
+        {
+          "entrypoint": "0xaf4b4c18b17f6a2b32f6c398a3910bdcd7f26181",
+          "implementationReviewed": "0x29E9b639e165d919FEcf02521F8A9dA0492D4f21"
+        }
+      ]
     }
   },
   "base": {
