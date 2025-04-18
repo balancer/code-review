@@ -4,9 +4,7 @@
 - Reviewed by: @franzns
 - Checked by: @danielmkm
 - Deployed at:
-    - [sonic:0x0806af1762Bdd85B167825ab1a64E31CF9497038](https://sonicscan.org/address/0x0806af1762Bdd85B167825ab1a64E31CF9497038#code)
-    - [sonic:0xa5cd24d9792F4F131f5976Af935A505D19c8Db2b](https://sonicscan.org/address/0xa5cd24d9792F4F131f5976Af935A505D19c8Db2b#code)
-    - [sonic:0x9144C0F0614dD0acE859C61CC37e5386d2Ada43A](https://sonicscan.org/address/0x9144C0F0614dD0acE859C61CC37e5386d2Ada43A#code)
+    - [sonic:0x90a804D316A06E00755444D56b9eF52e5C4F4D73](https://sonicscan.org/address/0x90a804D316A06E00755444D56b9eF52e5C4F4D73#code)
 - Audit report(s):
     - [EVK Audits](https://docs.euler.finance/security/audits)
 
