@@ -22,7 +22,6 @@ import {
     mode,
 } from 'viem/chains'
 
-import HypernativeApi from '../src/services/hypernativeApi'
 import { doOnchainCallGetName, doOnchainCallGetAsset } from '../src'
 
 dotenv.config()
@@ -31,7 +30,7 @@ const fs = require('fs')
 // to use this script use the command below
 // for network see the viem chains
 // Important: The custom RPC URL in the .env must support createAccessList (or the viem default rpc url)
-// npm run write-erc4626-review -- --erc4626Address 0x72F92a966f1874f74e1b601BEe7CF57031B53A03 --network avalanche --rpcUrl https://avalanche-mainnet.infura.io/v3/98dcebff65f74258bd05231949efbff2
+// npm run write-erc4626-review -- --erc4626Address <address> --network avalanche --rpcUrl <custom rpc url>
 
 // Mapping of chain names to registry keys
 const chainNameToRegistryKey: { [key: string]: string } = {
@@ -105,7 +104,6 @@ async function writeReviewAndUpdateRegistry(erc4626: Address, network: Chain, rp
     registry[registryKey][erc4626] = newEntry
 
     fs.writeFileSync(registryPath, JSON.stringify(registry, null, 2))
-    //return { rateProvider: erc4626 }
 }
 
 // Parse command-line arguments using yargs
