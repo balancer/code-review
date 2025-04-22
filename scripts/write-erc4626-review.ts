@@ -5,7 +5,7 @@ import { hideBin } from 'yargs/helpers'
 import { Address } from 'viem'
 
 import ERC4626DataService from '../src/erc4626App'
-import { template } from '../src/utils/template'
+import { erc4626Template } from '../src/utils/erc4626Template'
 import {
     base,
     mainnet,
@@ -59,7 +59,7 @@ async function writeReviewAndUpdateRegistry(erc4626: Address, network: Chain, rp
         hasUpgradeableElements: `${upgradeData.filter((contract) => contract.address !== erc4626).length > 0 ? 'x' : ' '}`,
     }
 
-    const filledTemplate = template
+    const filledTemplate = erc4626Template
         .replace('{{date}}', new Date().toLocaleDateString('en-GB'))
         .replace('{{erc4626}}', contractName)
         .replace('{{network}}', service.chain.name)
