@@ -1,3 +1,4 @@
 export * from './abi'
 export * from './template'
-export * from './doOnchainCallGetName'
+export * from './erc4626Template'
+export * from './onchainCallHelpers'
