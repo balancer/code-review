@@ -147,9 +147,7 @@
       "name": "Superform USDC",
       "summary": "safe",
       "review": "./SuperformSuperVaultReview.md",
-      "warnings": [
-        "buffer"
-      ],
+      "warnings": ["buffer"],
       "canUseBufferForSwaps": false,
       "useUnderlyingForAddRemove": false,
       "useWrappedForAddRemove": true
@@ -311,9 +309,7 @@
       "name": "Superform USDC",
       "summary": "safe",
       "review": "./SuperformSuperVaultReview.md",
-      "warnings": [
-        "buffer"
-      ],
+      "warnings": ["buffer"],
       "canUseBufferForSwaps": false,
       "useUnderlyingForAddRemove": false,
       "useWrappedForAddRemove": true
@@ -555,9 +551,7 @@
       "name": "sDAI",
       "summary": "safe",
       "review": "./sDaiReview.md",
-      "warnings": [
-        "buffer"
-      ],
+      "warnings": ["buffer"],
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": false,
       "useWrappedForAddRemove": true
