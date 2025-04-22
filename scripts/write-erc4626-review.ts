@@ -73,7 +73,7 @@ async function writeReviewAndUpdateRegistry(erc4626: Address, network: Chain, rp
         .replace('{{tenderlySimUrl}}', tenderlysimUrl)
 
     fs.writeFileSync(
-        `./rate-providers/${(contractName.charAt(0).toUpperCase() + contractName.slice(1)).replace(' ', '')}RateProviderReview.md`,
+        `./erc4626/${(contractName.charAt(0).toUpperCase() + contractName.slice(1)).replace(' ', '')}Erc4626Review.md`,
         filledTemplate,
     )
 
