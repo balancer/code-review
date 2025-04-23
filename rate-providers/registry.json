@@ -1074,6 +1074,24 @@
         }
       ]
     },
+    "0xfa5D15F15bC1BeBf3B413d9373E27586ac799dB6": {
+      "asset": "0x06d47F3fb376649c3A9Dafe069B3D6E35572219E",
+      "name": "StakedavUSDRateProvider.md",
+      "summary": "safe",
+      "review": "./StakedavUSDRateProviderReviewd696.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x5030183b3dd0105d69d7d45595c120fc4b542ec3",
+          "implementationReviewed": "0x29E9b639e165d919FEcf02521F8A9dA0492D4f21"
+        },
+        {
+          "entrypoint": "0xaf4b4c18b17f6a2b32f6c398a3910bdcd7f26181",
+          "implementationReviewed": "0x29E9b639e165d919FEcf02521F8A9dA0492D4f21"
+        }
+      ]
+    },
     "0x9062a576D3e6Cf6999e99e405608063033c4CFF6": {
       "asset": "0x72F92a966f1874f74e1b601BEe7CF57031B53A03",
       "name": "EVKVaultesavUSD-2RateProvider.md",

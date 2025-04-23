@@ -1032,6 +1032,30 @@
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
     },
+    "0x5030183B3DD0105d69D7d45595C120Fc4b542EC3": {
+      "asset": "0x06d47F3fb376649c3A9Dafe069B3D6E35572219E",
+      "name": "EVKVaultesavUSD-3Erc4626Vault.md",
+      "summary": "safe",
+      "review": "./EVKVaultesavUSD-3Erc4626VaultReview.md",
+      "warnings": [],
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x5030183b3dd0105d69d7d45595c120fc4b542ec3",
+          "implementationReviewed": "0x29E9b639e165d919FEcf02521F8A9dA0492D4f21"
+        },
+        {
+          "entrypoint": "0xaf4b4c18b17f6a2b32f6c398a3910bdcd7f26181",
+          "implementationReviewed": "0x29E9b639e165d919FEcf02521F8A9dA0492D4f21"
+        },
+        {
+          "entrypoint": "0x5030183B3DD0105d69D7d45595C120Fc4b542EC3",
+          "implementationReviewed": "0x29E9b639e165d919FEcf02521F8A9dA0492D4f21"
+        }
+      ],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
     "0x72F92a966f1874f74e1b601BEe7CF57031B53A03": {
       "asset": "0x06d47F3fb376649c3A9Dafe069B3D6E35572219E",
       "name": "EVKVaultesavUSD-2Erc4626Vault.md",
