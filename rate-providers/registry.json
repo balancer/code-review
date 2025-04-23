@@ -1055,6 +1055,24 @@
           "implementationReviewed": "0x29E9b639e165d919FEcf02521F8A9dA0492D4f21"
         }
       ]
+    },
+    "0x392Eb09258cEC61C3f7278A4c855d6686202aF85": {
+      "asset": "0x2137568666f12fc5A026f5430Ae7194F1C1362aB",
+      "name": "EVKVaulteAUSD-2RateProvider.md",
+      "summary": "safe",
+      "review": "./EVKVaulteAUSD-2RateProviderReview.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xaf4b4c18b17f6a2b32f6c398a3910bdcd7f26181",
+          "implementationReviewed": "0x29E9b639e165d919FEcf02521F8A9dA0492D4f21"
+        },
+        {
+          "entrypoint": "0x2137568666f12fc5a026f5430ae7194f1c1362ab",
+          "implementationReviewed": "0x29E9b639e165d919FEcf02521F8A9dA0492D4f21"
+        }
+      ]
     }
   },
   "base": {
