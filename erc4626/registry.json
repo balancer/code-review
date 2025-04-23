@@ -610,7 +610,7 @@
     },
     "0x7870ddFd5ACA4E977B2287e9A212bcbe8FC4135a": {
       "asset": "0x29219dd400f2Bf60E5a23d13Be72B486D4038894",
-      "name": "Beefy USDC Wrapper for SiloV2",
+      "name": "Beefy USDC Wrapper for SiloV2 ID 20",
       "summary": "safe",
       "review": "./BeefyWrapperReview.md",
       "warnings": [],
@@ -731,6 +731,16 @@
     "0x08C320A84a59c6f533e0DcA655cf497594BCa1F9": {
       "asset": "0x50c42dEAcD8Fc9773493ED674b675bE577f2634b",
       "name": "SiloV2 wETH ID 35",
+      "summary": "safe",
+      "review": "./SiloV2Review.md",
+      "warnings": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
+    "0x11Ba70c0EBAB7946Ac84F0E6d79162b0cBb2693f": {
+      "asset": "0x29219dd400f2Bf60E5a23d13Be72B486D4038894",
+      "name": "SiloV2 USDC ID 36",
       "summary": "safe",
       "review": "./SiloV2Review.md",
       "warnings": [],
