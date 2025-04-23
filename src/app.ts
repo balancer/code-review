@@ -22,7 +22,7 @@ class RateProviderDataService {
     }
 
     private apiKey!: string
-    private tenderlySettings!: {
+    public tenderlySettings!: {
         accountSlug: string
         projectSlug: string
         apiKey: string

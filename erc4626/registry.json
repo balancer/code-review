@@ -610,7 +610,7 @@
     },
     "0x7870ddFd5ACA4E977B2287e9A212bcbe8FC4135a": {
       "asset": "0x29219dd400f2Bf60E5a23d13Be72B486D4038894",
-      "name": "Beefy USDC Wrapper for SiloV2",
+      "name": "Beefy USDC Wrapper for SiloV2 ID 20",
       "summary": "safe",
       "review": "./BeefyWrapperReview.md",
       "warnings": [],
@@ -738,6 +738,16 @@
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
     },
+    "0x11Ba70c0EBAB7946Ac84F0E6d79162b0cBb2693f": {
+      "asset": "0x29219dd400f2Bf60E5a23d13Be72B486D4038894",
+      "name": "SiloV2 USDC ID 36",
+      "summary": "safe",
+      "review": "./SiloV2Review.md",
+      "warnings": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
     "0x6646248971427B80ce531bdD793e2Eb859347E55": {
       "asset": "0x29219dd400f2Bf60E5a23d13Be72B486D4038894",
       "name": "Wrapped Aave Sonic USDC.E",
@@ -818,29 +828,19 @@
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
     },
-    "0x0806af1762Bdd85B167825ab1a64E31CF9497038": {
-      "asset": "0x3bcE5CB273F0F148010BbEa2470e7b5df84C7812",
-      "name": "EVK Vault escETH-2",
-      "summary": "safe",
-      "review": "./EulerVault.md",
-      "warnings": [],
-      "canUseBufferForSwaps": true,
-      "useUnderlyingForAddRemove": true,
-      "useWrappedForAddRemove": true
-    },
-    "0xa5cd24d9792F4F131f5976Af935A505D19c8Db2b": {
-      "asset": "0x50c42dEAcD8Fc9773493ED674b675bE577f2634b",
-      "name": "EVK Vault eWETH-1",
-      "summary": "safe",
-      "review": "./EulerVault.md",
-      "warnings": [],
-      "canUseBufferForSwaps": true,
-      "useUnderlyingForAddRemove": true,
-      "useWrappedForAddRemove": true
-    },
-    "0x9144C0F0614dD0acE859C61CC37e5386d2Ada43A": {
+    "0x90a804D316A06E00755444D56b9eF52e5C4F4D73": {
       "asset": "0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38",
-      "name": "EVK Vault ewS-2",
+      "name": "EVK Vault ewS-5",
+      "summary": "safe",
+      "review": "./EulerVault.md",
+      "warnings": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
+    "0x6832F3090867449c058e1e3088E552E12AB18F9E": {
+      "asset": "0xE5DA20F15420aD15DE0fa650600aFc998bbE3955",
+      "name": "EVK Vault estS-5",
       "summary": "safe",
       "review": "./EulerVault.md",
       "warnings": [],
@@ -956,6 +956,54 @@
       "summary": "safe",
       "review": "./StatATokenV2Review.md",
       "warnings": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
+    "0x39dE0f00189306062D79eDEC6DcA5bb6bFd108f9": {
+      "asset": "0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E",
+      "name": "EVKVaulteUSDC-2Erc4626Vault.md",
+      "summary": "safe",
+      "review": "./EVKVaulteUSDC-2Erc4626VaultReview.md",
+      "warnings": [],
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xaf4b4c18b17f6a2b32f6c398a3910bdcd7f26181",
+          "implementationReviewed": "0x29E9b639e165d919FEcf02521F8A9dA0492D4f21"
+        },
+        {
+          "entrypoint": "0x39de0f00189306062d79edec6dca5bb6bfd108f9",
+          "implementationReviewed": "0x29E9b639e165d919FEcf02521F8A9dA0492D4f21"
+        },
+        {
+          "entrypoint": "0x39dE0f00189306062D79eDEC6DcA5bb6bFd108f9",
+          "implementationReviewed": "0x29E9b639e165d919FEcf02521F8A9dA0492D4f21"
+        }
+      ],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
+    "0xa446938b0204Aa4055cdFEd68Ddf0E0d1BAB3E9E": {
+      "asset": "0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7",
+      "name": "EVKVaulteUSDt-3Erc4626Vault.md",
+      "summary": "safe",
+      "review": "./EVKVaulteUSDt-3Erc4626VaultReview.md",
+      "warnings": [],
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xaf4b4c18b17f6a2b32f6c398a3910bdcd7f26181",
+          "implementationReviewed": "0x29E9b639e165d919FEcf02521F8A9dA0492D4f21"
+        },
+        {
+          "entrypoint": "0xa446938b0204aa4055cdfed68ddf0e0d1bab3e9e",
+          "implementationReviewed": "0x29E9b639e165d919FEcf02521F8A9dA0492D4f21"
+        },
+        {
+          "entrypoint": "0xa446938b0204Aa4055cdFEd68Ddf0E0d1BAB3E9E",
+          "implementationReviewed": "0x29E9b639e165d919FEcf02521F8A9dA0492D4f21"
+        }
+      ],
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
