@@ -4233,6 +4233,28 @@
           "implementationReviewed": "0xad997cd8484e15e2b7db8d5ae68dd87a5e47dd6b"
         }
       ]
+    },
+    "0x0ff8189d1f1ab65b63bcd003c036d0fea79004da": {
+      "asset": "0x6832F3090867449c058e1e3088E552E12AB18F9E",
+      "name": "EVKVaultestS-5RateProvider.md",
+      "summary": "safe",
+      "review": "./EVKVaultestS-5RateProviderReview534e.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xe5da20f15420ad15de0fa650600afc998bbe3955",
+          "implementationReviewed": "0xd5f7fc8ba92756a34693baa386edcc8dd5b3f141"
+        },
+        {
+          "entrypoint": "0x6832f3090867449c058e1e3088e552e12ab18f9e",
+          "implementationReviewed": "0x11f95aaa59f1ad89576c61e3c9cd24df1fdcf46f"
+        },
+        {
+          "entrypoint": "0xf075cc8660b51d0b8a4474e3f47edac5fa034cfb",
+          "implementationReviewed": "0x11f95aaa59f1ad89576c61e3c9cd24df1fdcf46f"
+        }
+      ]
     }
   }
 }
