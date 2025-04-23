@@ -4102,44 +4102,30 @@
       "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
       "upgradeableComponents": []
     },
-    "0x631c46a198d9fc553fd0790ad34972a96667feb9": {
-      "asset": "0x0806af1762Bdd85B167825ab1a64E31CF9497038",
-      "name": "Euler EVK Vault escETH-2 Rateprovider",
+    "0xad597fce59dbbd13bcd5bcc1a6fd654acfa92eff": {
+      "asset": "0x90a804D316A06E00755444D56b9eF52e5C4F4D73",
+      "name": "Euler Vault eWS-5 Rateprovider",
       "summary": "safe",
       "review": "./EulerWrappedRateprovider.md",
       "warnings": [""],
       "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
       "upgradeableComponents": [
         {
-          "entrypoint": "0x0806af1762Bdd85B167825ab1a64E31CF9497038",
+          "entrypoint": "0x90a804D316A06E00755444D56b9eF52e5C4F4D73",
           "implementationReviewed": "0x11f95aaa59f1ad89576c61e3c9cd24df1fdcf46f"
         }
       ]
     },
-    "0xb5a7ab4d068a37cbede6097218bd089c39784528": {
-      "asset": "0xa5cd24d9792F4F131f5976Af935A505D19c8Db2b",
-      "name": "Euler Vault eWETH-1 Rateprovider",
+    "0x7a5a8bece4c24c0c903f6adbc866a42c1799926d": {
+      "asset": "0x6832F3090867449c058e1e3088E552E12AB18F9E",
+      "name": "Euler Vault estS-5 Rateprovider",
       "summary": "safe",
       "review": "./EulerWrappedRateprovider.md",
       "warnings": [""],
       "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
       "upgradeableComponents": [
         {
-          "entrypoint": "0xa5cd24d9792F4F131f5976Af935A505D19c8Db2b",
-          "implementationReviewed": "0x11f95aaa59f1ad89576c61e3c9cd24df1fdcf46f"
-        }
-      ]
-    },
-    "0x042cbb7aca4470aeaf10195a433a973f76540b50": {
-      "asset": "0x9144C0F0614dD0acE859C61CC37e5386d2Ada43A",
-      "name": "Euler Vault eWS-2 Rateprovider",
-      "summary": "safe",
-      "review": "./EulerWrappedRateprovider.md",
-      "warnings": [""],
-      "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
-      "upgradeableComponents": [
-        {
-          "entrypoint": "0x9144C0F0614dD0acE859C61CC37e5386d2Ada43A",
+          "entrypoint": "0x6832F3090867449c058e1e3088E552E12AB18F9E",
           "implementationReviewed": "0x11f95aaa59f1ad89576c61e3c9cd24df1fdcf46f"
         }
       ]
