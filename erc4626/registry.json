@@ -963,7 +963,7 @@
     "0x39dE0f00189306062D79eDEC6DcA5bb6bFd108f9": {
       "asset": "0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E",
       "name": "EVKVaulteUSDC-2Erc4626Vault.md",
-      "summary": "",
+      "summary": "safe",
       "review": "./EVKVaulteUSDC-2Erc4626VaultReview.md",
       "warnings": [],
       "upgradeableComponents": [
@@ -980,9 +980,9 @@
           "implementationReviewed": "0x29E9b639e165d919FEcf02521F8A9dA0492D4f21"
         }
       ],
-      "canUseBufferForSwaps": "",
-      "useUnderlyingForAddRemove": "",
-      "useWrappedForAddRemove": ""
+      "canUseBufferForSwaps": "true",
+      "useUnderlyingForAddRemove": "true",
+      "useWrappedForAddRemove": "true"
     }
   },
   "sepolia": {
