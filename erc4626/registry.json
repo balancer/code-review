@@ -147,7 +147,9 @@
       "name": "Superform USDC",
       "summary": "safe",
       "review": "./SuperformSuperVaultReview.md",
-      "warnings": ["buffer"],
+      "warnings": [
+        "buffer"
+      ],
       "canUseBufferForSwaps": false,
       "useUnderlyingForAddRemove": false,
       "useWrappedForAddRemove": true
@@ -309,7 +311,9 @@
       "name": "Superform USDC",
       "summary": "safe",
       "review": "./SuperformSuperVaultReview.md",
-      "warnings": ["buffer"],
+      "warnings": [
+        "buffer"
+      ],
       "canUseBufferForSwaps": false,
       "useUnderlyingForAddRemove": false,
       "useWrappedForAddRemove": true
@@ -551,7 +555,9 @@
       "name": "sDAI",
       "summary": "safe",
       "review": "./sDaiReview.md",
-      "warnings": ["buffer"],
+      "warnings": [
+        "buffer"
+      ],
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": false,
       "useWrappedForAddRemove": true
@@ -1031,6 +1037,17 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0x06d47F3fb376649c3A9Dafe069B3D6E35572219E": {
+      "asset": "0x24dE8771bC5DdB3362Db529Fc3358F2df3A0E346",
+      "name": "StakedavUSDErc4626Vault.md",
+      "summary": "",
+      "review": "./StakedavUSDErc4626VaultReview4c40.md",
+      "warnings": [],
+      "upgradeableComponents": [],
+      "canUseBufferForSwaps": "",
+      "useUnderlyingForAddRemove": "",
+      "useWrappedForAddRemove": ""
     }
   },
   "sepolia": {
