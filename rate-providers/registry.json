@@ -1037,6 +1037,24 @@
           "implementationReviewed": "0x29E9b639e165d919FEcf02521F8A9dA0492D4f21"
         }
       ]
+    },
+    "0x4e7cE59ccBF84fA0C1d012Ae2F86f990d324A038": {
+      "asset": "0xa446938b0204Aa4055cdFEd68Ddf0E0d1BAB3E9E",
+      "name": "EVKVaulteUSDt-3RateProvider.md",
+      "summary": "safe",
+      "review": "./EVKVaulteUSDt-3RateProviderReview.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xa446938b0204aa4055cdfed68ddf0e0d1bab3e9e",
+          "implementationReviewed": "0x29E9b639e165d919FEcf02521F8A9dA0492D4f21"
+        },
+        {
+          "entrypoint": "0xaf4b4c18b17f6a2b32f6c398a3910bdcd7f26181",
+          "implementationReviewed": "0x29E9b639e165d919FEcf02521F8A9dA0492D4f21"
+        }
+      ]
     }
   },
   "base": {
