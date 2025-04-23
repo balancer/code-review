@@ -827,6 +827,16 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0x6832F3090867449c058e1e3088E552E12AB18F9E": {
+      "asset": "0xE5DA20F15420aD15DE0fa650600aFc998bbE3955",
+      "name": "EVK Vault estS-5",
+      "summary": "safe",
+      "review": "./EulerVault.md",
+      "warnings": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   },
   "avalanche": {

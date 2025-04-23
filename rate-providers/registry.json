@@ -4107,6 +4107,20 @@
         }
       ]
     },
+    "0x7a5a8bece4c24c0c903f6adbc866a42c1799926d": {
+      "asset": "0x6832F3090867449c058e1e3088E552E12AB18F9E",
+      "name": "Euler Vault estS-5 Rateprovider",
+      "summary": "safe",
+      "review": "./EulerWrappedRateprovider.md",
+      "warnings": [""],
+      "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x6832F3090867449c058e1e3088E552E12AB18F9E",
+          "implementationReviewed": "0x11f95aaa59f1ad89576c61e3c9cd24df1fdcf46f"
+        }
+      ]
+    },
     "0x871A101Dcf22fE4fE37be7B654098c801CBA1c88": {
       "asset": "0x871A101Dcf22fE4fE37be7B654098c801CBA1c88",
       "name": "Beefy-Escrowed Sonic Rateprovider",

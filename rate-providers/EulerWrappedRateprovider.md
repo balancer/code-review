@@ -5,6 +5,7 @@
 - Checked by: @danielmkm
 - Deployed at:
     - [sonic:0xad597fce59dbbd13bcd5bcc1a6fd654acfa92eff](https://sonicscan.org/address/0xad597fce59dbbd13bcd5bcc1a6fd654acfa92eff#code)
+    - [sonic:0x7a5a8bece4c24c0c903f6adbc866a42c1799926d](https://sonicscan.org/address/0x7a5a8bece4c24c0c903f6adbc866a42c1799926d#code)
 - Audit report(s):
     - [EVK Audits](https://docs.euler.finance/security/audits)
 
