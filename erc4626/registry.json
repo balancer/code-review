@@ -1004,7 +1004,7 @@
           "implementationReviewed": "0x29E9b639e165d919FEcf02521F8A9dA0492D4f21"
         }
       ],
-      "canUseBufferForSwaps": "",
+      "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
     }
