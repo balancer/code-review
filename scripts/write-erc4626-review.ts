@@ -1,6 +1,7 @@
 import path from 'path'
 import * as dotenv from 'dotenv'
 import yargs from 'yargs'
+import crypto from 'crypto'
 import { hideBin } from 'yargs/helpers'
 import { Address } from 'viem'
 
@@ -72,8 +73,10 @@ async function writeReviewAndUpdateRegistry(erc4626: Address, network: Chain, rp
         .replace('{{hasUpgradeableElements}}', templateData.hasUpgradeableElements)
         .replace('{{tenderlySimUrl}}', tenderlysimUrl)
 
+    const shortUuid = crypto.randomBytes(2).toString('hex')
+
     fs.writeFileSync(
-        `./erc4626/${(contractName.charAt(0).toUpperCase() + contractName.slice(1)).replace(' ', '')}Erc4626VaultReview.md`,
+        `./erc4626/${(contractName.charAt(0).toUpperCase() + contractName.slice(1)).replace(' ', '')}Erc4626VaultReview${shortUuid}.md`,
         filledTemplate,
     )
 
@@ -85,7 +88,7 @@ async function writeReviewAndUpdateRegistry(erc4626: Address, network: Chain, rp
         asset: asset,
         name: `${(contractName.charAt(0).toUpperCase() + contractName.slice(1)).replace(' ', '')}Erc4626Vault.md`,
         summary: '',
-        review: `./${(contractName.charAt(0).toUpperCase() + contractName.slice(1)).replace(' ', '')}Erc4626VaultReview.md`,
+        review: `./${(contractName.charAt(0).toUpperCase() + contractName.slice(1)).replace(' ', '')}Erc4626VaultReview${shortUuid}.md`,
         warnings: [],
         upgradeableComponents: upgradeData.map((contract) => ({
             entrypoint: contract.address,
