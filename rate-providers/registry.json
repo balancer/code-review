@@ -1453,6 +1453,56 @@
       "warnings": ["chainlink"],
       "factory": "0x0A973B6DB16C2ded41dC91691Cc347BEb0e2442B",
       "upgradeableComponents": []
+    },
+    "0xB0027C1C870573d5626Df1f049a12E39d3e613e9": {
+      "asset": "0x3A43AEC53490CB9Fa922847385D82fe25d0E9De7",
+      "name": "YoVaultETHRateProvider.md",
+      "summary": "safe",
+      "review": "./YoVaultETHRateProviderReview3d7a.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x3a43aec53490cb9fa922847385d82fe25d0e9de7",
+          "implementationReviewed": "0x657f7aea768feeaa406b271a9561181a83eea017"
+        }
+      ]
+    },
+    "0x47fc979C519fA6c07D4dB6ab7B7573e20d94C5F9": {
+      "asset": "0xbCbc8cb4D1e8ED048a6276a5E94A3e952660BcbC",
+      "name": "YoVaultBTCRateProvider.md",
+      "summary": "safe",
+      "review": "./YoVaultBTCRateProviderReviewfbc3.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xbcbc8cb4d1e8ed048a6276a5e94a3e952660bcbc",
+          "implementationReviewed": "0x586b76704287964f5793b71555d50daa592da037"
+        },
+        {
+          "entrypoint": "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
+          "implementationReviewed": "0x7458bfdc30034eb860b265e6068121d18fa5aa72"
+        }
+      ]
+    },
+    "0x8Cb017261719799f8b5A3762Ebe2b0e214F9a735": {
+      "asset": "0x0000000f2eB9f69274678c76222B35eEc7588a65",
+      "name": "YoVaultUSDRateProvider.md",
+      "summary": "safe",
+      "review": "./YoVaultUSDRateProviderReview53ea.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+          "implementationReviewed": "0x2ce6311ddae708829bc0784c967b7d77d19fd779"
+        },
+        {
+          "entrypoint": "0x0000000f2eb9f69274678c76222b35eec7588a65",
+          "implementationReviewed": "0xf17476acc4c25b2d99852371b44d7ccbe7e8fc89"
+        }
+      ]
     }
   },
   "ethereum": {
