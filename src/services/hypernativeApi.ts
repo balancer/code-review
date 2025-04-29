@@ -46,24 +46,27 @@ class HypernativeApi {
         console.log('Request Body:', JSON.stringify(customAgentRule, null, 2))
 
         // Make the API call
-        const response = await fetch('https://api.hypernative.xyz/custom-agents', {
-            method: 'POST',
-            headers: {
-                accept: 'application/json',
-                'x-client-id': this.clientId,
-                'x-client-secret': this.clientSecret,
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(customAgentRule),
-        })
+        try {
+            const response = await fetch('https://api.hypernative.xyz/custom-agents', {
+                method: 'POST',
+                headers: {
+                    accept: 'application/json',
+                    'x-client-id': this.clientId,
+                    'x-client-secret': this.clientSecret,
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(customAgentRule),
+            })
 
-        // Log the response
-        const responseBody = await response.text()
-        console.log('Response Status:', response.status)
-        console.log('Response Body:', responseBody)
-
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`)
+            if (!response.ok) {
+                const responseBody = await response.text()
+                console.error('Response Status:', response.status)
+                console.error('Response Body:', responseBody)
+                // throw new Error(`HTTP error! status: ${response.status}`)
+            }
+        } catch (error) {
+            console.error('Error during API call:', error)
+            throw error // Re-throw the error to propagate it
         }
     }
 
@@ -82,24 +85,27 @@ class HypernativeApi {
         console.log('Request Body:', JSON.stringify(customAgentRule, null, 2))
 
         // Make the API call
-        const response = await fetch('https://api.hypernative.xyz/custom-agents', {
-            method: 'POST',
-            headers: {
-                accept: 'application/json',
-                'x-client-id': this.clientId,
-                'x-client-secret': this.clientSecret,
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(customAgentRule),
-        })
+        try {
+            const response = await fetch('https://api.hypernative.xyz/custom-agents', {
+                method: 'POST',
+                headers: {
+                    accept: 'application/json',
+                    'x-client-id': this.clientId,
+                    'x-client-secret': this.clientSecret,
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(customAgentRule),
+            })
 
-        // Log the response
-        const responseBody = await response.text()
-        console.log('Response Status:', response.status)
-        console.log('Response Body:', responseBody)
-
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`)
+            if (!response.ok) {
+                const responseBody = await response.text()
+                console.error('Response Status:', response.status)
+                console.error('Response Body:', responseBody)
+                //throw new Error(`HTTP error! status: ${response.status}`)
+            }
+        } catch (error) {
+            console.error('Error during API call:', error)
+            throw error // Re-throw the error to propagate it
         }
     }
 
@@ -129,24 +135,27 @@ class HypernativeApi {
         console.log('Request Body:', JSON.stringify(requestBody, null, 2))
 
         // Make the API call
-        const response = await fetch('https://api.hypernative.xyz/custom-agents', {
-            method: 'POST',
-            headers: {
-                accept: 'application/json',
-                'x-client-id': this.clientId,
-                'x-client-secret': this.clientSecret,
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(requestBody),
-        })
+        try {
+            const response = await fetch('https://api.hypernative.xyz/custom-agents', {
+                method: 'POST',
+                headers: {
+                    accept: 'application/json',
+                    'x-client-id': this.clientId,
+                    'x-client-secret': this.clientSecret,
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(requestBody),
+            })
 
-        // Log the response
-        const responseBody = await response.text()
-        console.log('Response Status:', response.status)
-        console.log('Response Body:', responseBody)
-
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`)
+            if (!response.ok) {
+                const responseBody = await response.text()
+                console.error('Response Status:', response.status)
+                console.error('Response Body:', responseBody)
+                // throw new Error(`HTTP error! status: ${response.status}`)
+            }
+        } catch (error) {
+            console.error('Error during API call:', error)
+            throw error // Re-throw the error to propagate it
         }
     }
 
