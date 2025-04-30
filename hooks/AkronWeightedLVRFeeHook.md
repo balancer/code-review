@@ -9,6 +9,7 @@
     - No audits available.
 
 ## Context
+Fees are calculated based on current balances, weights and direction/size of the swap.
 
 ## Review Checklist: Bare Minimum Compatibility
 
