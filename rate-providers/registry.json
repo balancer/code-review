@@ -655,6 +655,24 @@
       "warnings": ["chainlink"],
       "factory": "0x5dbad78818d4c8958eff2d5b95b28385a22113cd",
       "upgradeableComponents": []
+    },
+    "0x5b988aacf8aD14ce4b50C19676C234410135696E": {
+      "asset": "0x4772D2e014F9fC3a820C444e3313968e9a5C8121",
+      "name": "YieldFiyUSDRateProvider.md",
+      "summary": "safe",
+      "review": "./YieldFiyUSDRateProviderReview43cd.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x4772d2e014f9fc3a820c444e3313968e9a5c8121",
+          "implementationReviewed": "0xaad9fdeca3c4805e1a6cbf93d1f7492e7d9006b4"
+        },
+        {
+          "entrypoint": "0xaf88d065e77c8cc2239327c5edb3a432268e5831",
+          "implementationReviewed": "0x86e721b43d4ecfa71119dd38c0f938a75fdb57b3"
+        }
+      ]
     }
   },
   "avalanche": {
@@ -1501,6 +1519,20 @@
         {
           "entrypoint": "0x0000000f2eb9f69274678c76222b35eec7588a65",
           "implementationReviewed": "0xf17476acc4c25b2d99852371b44d7ccbe7e8fc89"
+        }
+      ]
+    },
+    "0x2fb9fb5eB65c17B405c1B1c02bAE992D625B34c6": {
+      "asset": "0x4772D2e014F9fC3a820C444e3313968e9a5C8121",
+      "name": "YieldFiyUSDRateProvider.md",
+      "summary": "safe",
+      "review": "./YieldFiyUSDRateProviderReview33e7.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+          "implementationReviewed": "0x2ce6311ddae708829bc0784c967b7d77d19fd779"
         }
       ]
     }
