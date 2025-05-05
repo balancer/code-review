@@ -61,6 +61,12 @@
       "summary": "safe",
       "review": "./StableSurgeHookV2.md",
       "warnings": []
+    },
+    "0xD221aFFABdD3C1281ea14C5781DEc6B0fCA8937E": {
+      "name": "AkronWeightedLVRFeeHook",
+      "summary": "safe",
+      "review": "./AkronWeightedLVRFeeHook.md",
+      "warnings": []
     }
   },
   "base": {
