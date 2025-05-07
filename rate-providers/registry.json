@@ -3082,6 +3082,15 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0xe843ba80bd133fc1a8c0ce2e9e2962b9499cbeb4": {
+      "asset": "0x1abaea1f7c830bd89acc67ec4af516284b1bc33c",
+      "name": "EURO Rate Provider",
+      "summary": "safe",
+      "review": "./ChainLinkRateProvider.md",
+      "warnings": ["chainlink"],
+      "factory": "",
+      "upgradeableComponents": []
     }
   },
   "fantom": {
