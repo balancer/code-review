@@ -147,9 +147,7 @@
       "name": "Superform USDC",
       "summary": "safe",
       "review": "./SuperformSuperVaultReview.md",
-      "warnings": [
-        "buffer"
-      ],
+      "warnings": ["buffer"],
       "canUseBufferForSwaps": false,
       "useUnderlyingForAddRemove": false,
       "useWrappedForAddRemove": true
@@ -311,9 +309,7 @@
       "name": "Superform USDC",
       "summary": "safe",
       "review": "./SuperformSuperVaultReview.md",
-      "warnings": [
-        "buffer"
-      ],
+      "warnings": ["buffer"],
       "canUseBufferForSwaps": false,
       "useUnderlyingForAddRemove": false,
       "useWrappedForAddRemove": true
@@ -555,9 +551,7 @@
       "name": "sDAI",
       "summary": "safe",
       "review": "./sDaiReview.md",
-      "warnings": [
-        "buffer"
-      ],
+      "warnings": ["buffer"],
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": false,
       "useWrappedForAddRemove": true
@@ -1133,7 +1127,7 @@
     "0x61b620FAd391b53A2D0973b10a3Ed69558d5c66E": {
       "asset": "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
       "name": "WrappedAaveOptimism DAIErc4626Vault.md",
-      "summary": "",
+      "summary": "safe",
       "review": "./WrappedAaveOptimism DAIErc4626VaultReview6f04.md",
       "warnings": [],
       "upgradeableComponents": [
@@ -1150,14 +1144,14 @@
           "implementationReviewed": "0x7f775bb7af2e7e09d5dc9506c95516159a5ca0d0"
         }
       ],
-      "canUseBufferForSwaps": "",
-      "useUnderlyingForAddRemove": "",
-      "useWrappedForAddRemove": ""
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0x464b808c2C7E04b07e860fDF7a91870620246148": {
       "asset": "0x4200000000000000000000000000000000000006",
       "name": "WrappedAaveOptimism WETHErc4626Vault.md",
-      "summary": "",
+      "summary": "safe",
       "review": "./WrappedAaveOptimism WETHErc4626VaultReview86b0.md",
       "warnings": [],
       "upgradeableComponents": [
@@ -1174,14 +1168,14 @@
           "implementationReviewed": "0xbcb167bdcf14a8f791d6f4a6edd964aed2f8813b"
         }
       ],
-      "canUseBufferForSwaps": "",
-      "useUnderlyingForAddRemove": "",
-      "useWrappedForAddRemove": ""
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0x927CfF131fD5B43FC992D071929b2c095d6E4b70": {
       "asset": "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58",
       "name": "WrappedAaveOptimism USDTErc4626Vault.md",
-      "summary": "",
+      "summary": "safe",
       "review": "./WrappedAaveOptimism USDTErc4626VaultReviewab63.md",
       "warnings": [],
       "upgradeableComponents": [
@@ -1198,14 +1192,14 @@
           "implementationReviewed": "0x88d2fd5b62bbf2038e2246d9b9ad24f823306fcb"
         }
       ],
-      "canUseBufferForSwaps": "",
-      "useUnderlyingForAddRemove": "",
-      "useWrappedForAddRemove": ""
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0xEA9020a9e04C557478daD749A1aaD242b443042C": {
       "asset": "0x68f180fcCe6836688e9084f035309E29Bf0A2095",
       "name": "WrappedAaveOptimism WBTCErc4626Vault.md",
-      "summary": "",
+      "summary": "safe",
       "review": "./WrappedAaveOptimism WBTCErc4626VaultReview13a5.md",
       "warnings": [],
       "upgradeableComponents": [
@@ -1222,14 +1216,14 @@
           "implementationReviewed": "0x7f775bb7af2e7e09d5dc9506c95516159a5ca0d0"
         }
       ],
-      "canUseBufferForSwaps": "",
-      "useUnderlyingForAddRemove": "",
-      "useWrappedForAddRemove": ""
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0x41B334E9F2C0ED1f30fD7c351874a6071C53a78E": {
       "asset": "0x0b2C639c533813f4Aa9D7837CAf62653d097Ff85",
       "name": "WrappedAaveOptimism USDCnErc4626Vault.md",
-      "summary": "",
+      "summary": "safe",
       "review": "./WrappedAaveOptimism USDCnErc4626VaultReview3e4a.md",
       "warnings": [],
       "upgradeableComponents": [
@@ -1250,14 +1244,14 @@
           "implementationReviewed": "0x88d2fd5b62bbf2038e2246d9b9ad24f823306fcb"
         }
       ],
-      "canUseBufferForSwaps": "",
-      "useUnderlyingForAddRemove": "",
-      "useWrappedForAddRemove": ""
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0x712Ef4D78f43ecAfa106ea003704a908C99D7f11": {
       "asset": "0x4200000000000000000000000000000000000042",
       "name": "WrappedAaveOptimism OPErc4626Vault.md",
-      "summary": "",
+      "summary": "safe",
       "review": "./WrappedAaveOptimism OPErc4626VaultReviewa908.md",
       "warnings": [],
       "upgradeableComponents": [
@@ -1274,14 +1268,14 @@
           "implementationReviewed": "0x7f775bb7af2e7e09d5dc9506c95516159a5ca0d0"
         }
       ],
-      "canUseBufferForSwaps": "",
-      "useUnderlyingForAddRemove": "",
-      "useWrappedForAddRemove": ""
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0x8e6a81b9d541A0CeA090818B62C4B2DE7f2A2Cf7": {
       "asset": "0x9Bcef72be871e61ED4fBbc7630889beE758eb81D",
       "name": "WrappedAaveOptimism rETHErc4626Vault.md",
-      "summary": "",
+      "summary": "safe",
       "review": "./WrappedAaveOptimism rETHErc4626VaultReview47b5.md",
       "warnings": [],
       "upgradeableComponents": [
@@ -1298,14 +1292,14 @@
           "implementationReviewed": "0x7f775bb7af2e7e09d5dc9506c95516159a5ca0d0"
         }
       ],
-      "canUseBufferForSwaps": "",
-      "useUnderlyingForAddRemove": "",
-      "useWrappedForAddRemove": ""
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0x0B590eF479c8e03825Ae779839aCb4583aCc15FD": {
       "asset": "0x7F5c764cBc14f9669B88837ca1490cCa17c31607",
       "name": "WrappedAaveOptimism USDCErc4626Vault.md",
-      "summary": "",
+      "summary": "safe",
       "review": "./WrappedAaveOptimism USDCErc4626VaultReview1944.md",
       "warnings": [],
       "upgradeableComponents": [
@@ -1322,14 +1316,14 @@
           "implementationReviewed": "0xbcb167bdcf14a8f791d6f4a6edd964aed2f8813b"
         }
       ],
-      "canUseBufferForSwaps": "",
-      "useUnderlyingForAddRemove": "",
-      "useWrappedForAddRemove": ""
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0xC438643b0eee8a314eEC53eb8A1Ee6467C88fc24": {
       "asset": "0x350a791Bfc2C21F9Ed5d10980Dad2e2638ffa7f6",
       "name": "WrappedAaveOptimism LINKErc4626Vault.md",
-      "summary": "",
+      "summary": "safe",
       "review": "./WrappedAaveOptimism LINKErc4626VaultReview4239.md",
       "warnings": [],
       "upgradeableComponents": [
@@ -1346,14 +1340,14 @@
           "implementationReviewed": "0x7f775bb7af2e7e09d5dc9506c95516159a5ca0d0"
         }
       ],
-      "canUseBufferForSwaps": "",
-      "useUnderlyingForAddRemove": "",
-      "useWrappedForAddRemove": ""
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0x527604E4D87A7562ec653dbe2878D0DCAB7f1972": {
       "asset": "0x76FB31fb4af56892A25e32cFC43De717950c9278",
       "name": "WrappedAaveOptimism AAVEErc4626Vault.md",
-      "summary": "",
+      "summary": "safe",
       "review": "./WrappedAaveOptimism AAVEErc4626VaultReviewe14e.md",
       "warnings": [],
       "upgradeableComponents": [
@@ -1370,14 +1364,14 @@
           "implementationReviewed": "0xbcb167bdcf14a8f791d6f4a6edd964aed2f8813b"
         }
       ],
-      "canUseBufferForSwaps": "",
-      "useUnderlyingForAddRemove": "",
-      "useWrappedForAddRemove": ""
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0x0ec63A55a688E5Ba26afe8d9250114505E8b60a0": {
       "asset": "0x8c6f28f2F1A3C87F0f938b96d27520d9751ec8d9",
       "name": "WrappedAaveOptimism SUSDErc4626Vault.md",
-      "summary": "",
+      "summary": "safe",
       "review": "./WrappedAaveOptimism SUSDErc4626VaultReview6780.md",
       "warnings": [],
       "upgradeableComponents": [
@@ -1394,14 +1388,14 @@
           "implementationReviewed": "0x88d2fd5b62bbf2038e2246d9b9ad24f823306fcb"
         }
       ],
-      "canUseBufferForSwaps": "",
-      "useUnderlyingForAddRemove": "",
-      "useWrappedForAddRemove": ""
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0x413093E03d6aeE4F2F7e48D4b88881bf4932b249": {
       "asset": "0xc40F949F8a4e094D1b49a23ea9241D289B7b2819",
       "name": "WrappedAaveOptimism LUSDErc4626Vault.md",
-      "summary": "",
+      "summary": "safe",
       "review": "./WrappedAaveOptimism LUSDErc4626VaultReviewdb45.md",
       "warnings": [],
       "upgradeableComponents": [
@@ -1418,14 +1412,14 @@
           "implementationReviewed": "0xbcb167bdcf14a8f791d6f4a6edd964aed2f8813b"
         }
       ],
-      "canUseBufferForSwaps": "",
-      "useUnderlyingForAddRemove": "",
-      "useWrappedForAddRemove": ""
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0xbaF95bB30CDab3d5b7a11B67EDeF5631bD62be86": {
       "asset": "0x1F32b1c2345538c0c6f582fCB022739c4A194Ebb",
       "name": "WrappedAaveOptimism wstETHErc4626Vault.md",
-      "summary": "",
+      "summary": "safe",
       "review": "./WrappedAaveOptimism wstETHErc4626VaultReview2b8e.md",
       "warnings": [],
       "upgradeableComponents": [
@@ -1446,9 +1440,9 @@
           "implementationReviewed": "0x88d2fd5b62bbf2038e2246d9b9ad24f823306fcb"
         }
       ],
-      "canUseBufferForSwaps": "",
-      "useUnderlyingForAddRemove": "",
-      "useWrappedForAddRemove": ""
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   }
 }
