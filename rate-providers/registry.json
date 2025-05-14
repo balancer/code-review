@@ -63,9 +63,7 @@
       "name": "PlsRdntTokenV2",
       "summary": "safe",
       "review": "./PlsRdntTokenV2.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -79,9 +77,7 @@
       "name": "RocketBalancerRateProvider",
       "summary": "safe",
       "review": "./rETHRateProvider.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -95,9 +91,7 @@
       "name": "RocketBalancerRateProvider OLD",
       "summary": "unsafe",
       "review": "./rETHRateProvider.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": []
     },
@@ -215,9 +209,7 @@
       "name": "cbETH Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": [
-        "chainlink"
-      ],
+      "warnings": ["chainlink"],
       "factory": "0x5DbAd78818D4c8958EfF2d5b95b28385A22113Cd",
       "upgradeableComponents": []
     },
@@ -226,9 +218,7 @@
       "name": "sfrxETH Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": [
-        "chainlink"
-      ],
+      "warnings": ["chainlink"],
       "factory": "0x5DbAd78818D4c8958EfF2d5b95b28385A22113Cd",
       "upgradeableComponents": []
     },
@@ -237,9 +227,7 @@
       "name": "sFRAX Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": [
-        "chainlink"
-      ],
+      "warnings": ["chainlink"],
       "factory": "0x5DbAd78818D4c8958EfF2d5b95b28385A22113Cd",
       "upgradeableComponents": []
     },
@@ -248,9 +236,7 @@
       "name": "sFRAX Rate Provider Duplicate",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": [
-        "chainlink"
-      ],
+      "warnings": ["chainlink"],
       "factory": "0x5DbAd78818D4c8958EfF2d5b95b28385A22113Cd",
       "upgradeableComponents": []
     },
@@ -259,9 +245,7 @@
       "name": "ETHx Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": [
-        "chainlink"
-      ],
+      "warnings": ["chainlink"],
       "factory": "0x5DbAd78818D4c8958EfF2d5b95b28385A22113Cd",
       "upgradeableComponents": []
     },
@@ -270,9 +254,7 @@
       "name": "woETH Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": [
-        "chainlink"
-      ],
+      "warnings": ["chainlink"],
       "factory": "0x5DbAd78818D4c8958EfF2d5b95b28385A22113Cd",
       "upgradeableComponents": []
     },
@@ -281,9 +263,7 @@
       "name": "weETH Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": [
-        "chainlink"
-      ],
+      "warnings": ["chainlink"],
       "factory": "0x5DbAd78818D4c8958EfF2d5b95b28385A22113Cd",
       "upgradeableComponents": []
     },
@@ -306,9 +286,7 @@
       "name": "RsETHRateProvider",
       "summary": "safe",
       "review": "./rsETHRateProviderArbitrum.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -366,9 +344,7 @@
       "name": "wUSDM",
       "summary": "safe",
       "review": "./wUSDMRateProvider.md",
-      "warnings": [
-        "eoaUpgradeable"
-      ],
+      "warnings": ["eoaUpgradeable"],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -500,9 +476,7 @@
       "name": "tETH / wstETH Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": [
-        "chainlink"
-      ],
+      "warnings": ["chainlink"],
       "factory": "0x5DbAd78818D4c8958EfF2d5b95b28385A22113Cd",
       "upgradeableComponents": []
     },
@@ -511,9 +485,7 @@
       "name": "Wrapped Aave Arbitrum WETH",
       "summary": "safe",
       "review": "./statATokenv2RateProvider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0xe548a29631f9E49830bE8edc22d407b2D2915F31",
       "upgradeableComponents": []
     },
@@ -522,9 +494,7 @@
       "name": "Wrapped Aave Arbitrum weETH",
       "summary": "safe",
       "review": "./MarketRateTransformerRateProviders.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0xeC2C6184761ab7fE061130B4A7e3Da89c72F8395",
       "upgradeableComponents": []
     },
@@ -533,9 +503,7 @@
       "name": "Wrapped Aave Arbitrum WBTC",
       "summary": "safe",
       "review": "./statATokenv2RateProvider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0xe548a29631f9E49830bE8edc22d407b2D2915F31",
       "upgradeableComponents": []
     },
@@ -544,9 +512,7 @@
       "name": "USDCn",
       "summary": "safe",
       "review": "./statATokenv2RateProvider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0xe548a29631f9E49830bE8edc22d407b2D2915F31",
       "upgradeableComponents": []
     },
@@ -555,9 +521,7 @@
       "name": "Wrapped Aave Arbitrum wstETH",
       "summary": "safe",
       "review": "./MarketRateTransformerRateProviders.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0xeC2C6184761ab7fE061130B4A7e3Da89c72F8395",
       "upgradeableComponents": []
     },
@@ -566,9 +530,7 @@
       "name": "Wrapped Aave Arbitrum USDT",
       "summary": "safe",
       "review": "./statATokenv2RateProvider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0xe548a29631f9E49830bE8edc22d407b2D2915F31",
       "upgradeableComponents": []
     },
@@ -577,9 +539,7 @@
       "name": "Wrapped Aave Arbitrum LINK",
       "summary": "safe",
       "review": "./statATokenv2RateProvider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0xe548a29631f9E49830bE8edc22d407b2D2915F31",
       "upgradeableComponents": []
     },
@@ -588,9 +548,7 @@
       "name": "Wrapped Aave Arbitrum ARB",
       "summary": "safe",
       "review": "./statATokenv2RateProvider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0xe548a29631f9E49830bE8edc22d407b2D2915F31",
       "upgradeableComponents": []
     },
@@ -599,9 +557,7 @@
       "name": "Wrapped Aave Arbitrum ARB",
       "summary": "safe",
       "review": "./MarketRateTransformerRateProviders.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0xeC2C6184761ab7fE061130B4A7e3Da89c72F8395",
       "upgradeableComponents": []
     },
@@ -610,9 +566,7 @@
       "name": "Wrapped Aave Arbitrum DAI",
       "summary": "safe",
       "review": "./statATokenv2RateProvider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0xe548a29631f9E49830bE8edc22d407b2D2915F31",
       "upgradeableComponents": []
     },
@@ -621,9 +575,7 @@
       "name": "Wrapped Aave Arbitrum USDC",
       "summary": "safe",
       "review": "./statATokenv2RateProvider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0xe548a29631f9E49830bE8edc22d407b2D2915F31",
       "upgradeableComponents": []
     },
@@ -632,9 +584,7 @@
       "name": "Wrapped Aave Arbitrum GHO",
       "summary": "safe",
       "review": "./statATokenv2RateProvider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0xe548a29631f9E49830bE8edc22d407b2D2915F31",
       "upgradeableComponents": []
     },
@@ -643,9 +593,7 @@
       "name": "Wrapped Aave Arbitrum ezETH",
       "summary": "safe",
       "review": "./MarketRateTransformerRateProviders.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0xe548a29631f9E49830bE8edc22d407b2D2915F31",
       "upgradeableComponents": []
     },
@@ -663,9 +611,7 @@
       "name": "YieldFi yUSD Rate Provider",
       "summary": "safe",
       "review": "./yUSDRateProviderArbitrum.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -679,9 +625,7 @@
       "name": "fluid weth rate provider",
       "summary": "safe",
       "review": "./FluidRateProviders.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0xe548a29631f9E49830bE8edc22d407b2D2915F31",
       "upgradeableComponents": []
     },
@@ -708,9 +652,7 @@
       "name": "wETH to USD Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": [
-        "chainlink"
-      ],
+      "warnings": ["chainlink"],
       "factory": "0x5dbad78818d4c8958eff2d5b95b28385a22113cd",
       "upgradeableComponents": []
     },
@@ -757,9 +699,7 @@
       "name": "GGAVAXRateProvider",
       "summary": "safe",
       "review": "./GGAVAXRateProvider.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -801,9 +741,7 @@
       "name": "sAVAX Rate Provider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": [
-        "legacy"
-      ],
+      "warnings": ["legacy"],
       "factory": "",
       "upgradeableComponents": []
     },
@@ -812,9 +750,7 @@
       "name": "ankrAVAX Rate Provider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": [
-        "legacy"
-      ],
+      "warnings": ["legacy"],
       "factory": "",
       "upgradeableComponents": []
     },
@@ -886,9 +822,7 @@
       "name": "Aave-wAVAX ERC4626RateProvider",
       "summary": "safe",
       "review": "./statATokenv2RateProvider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0xfCe81cafe4b3F7e2263EFc2d907f488EBF2B238E",
       "upgradeableComponents": [
         {
@@ -906,9 +840,7 @@
       "name": "Aave-BTC.b ERC4626RateProvider",
       "summary": "safe",
       "review": "./statATokenv2RateProvider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0xfCe81cafe4b3F7e2263EFc2d907f488EBF2B238E",
       "upgradeableComponents": [
         {
@@ -926,9 +858,7 @@
       "name": "Aave-USDC ERC4626RateProvider",
       "summary": "safe",
       "review": "./statATokenv2RateProvider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0xfCe81cafe4b3F7e2263EFc2d907f488EBF2B238E",
       "upgradeableComponents": [
         {
@@ -946,9 +876,7 @@
       "name": "Aave-USDT ERC4626RateProvider",
       "summary": "safe",
       "review": "./statATokenv2RateProvider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0xfCe81cafe4b3F7e2263EFc2d907f488EBF2B238E",
       "upgradeableComponents": [
         {
@@ -966,9 +894,7 @@
       "name": "Aave-sAVAX ERC4626RateProvider",
       "summary": "safe",
       "review": "./CombinedRateProvider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0xeC2C6184761ab7fE061130B4A7e3Da89c72F8395",
       "upgradeableComponents": [
         {
@@ -986,9 +912,7 @@
       "name": "Aave-wETH ERC4626RateProvider",
       "summary": "safe",
       "review": "./statATokenv2RateProvider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0xfCe81cafe4b3F7e2263EFc2d907f488EBF2B238E",
       "upgradeableComponents": [
         {
@@ -1006,9 +930,7 @@
       "name": "Aave-AUSD ERC4626RateProvider",
       "summary": "safe",
       "review": "./statATokenv2RateProvider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0xfCe81cafe4b3F7e2263EFc2d907f488EBF2B238E",
       "upgradeableComponents": [
         {
@@ -1026,9 +948,7 @@
       "name": "Aave-DAI ERC4626RateProvider",
       "summary": "safe",
       "review": "./statATokenv2RateProvider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0xfCe81cafe4b3F7e2263EFc2d907f488EBF2B238E",
       "upgradeableComponents": [
         {
@@ -1046,9 +966,7 @@
       "name": "Aave-LINK ERC4626RateProvider",
       "summary": "safe",
       "review": "./statATokenv2RateProvider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0xfCe81cafe4b3F7e2263EFc2d907f488EBF2B238E",
       "upgradeableComponents": [
         {
@@ -1066,9 +984,7 @@
       "name": "Aave-AAVE ERC4626RateProvider",
       "summary": "safe",
       "review": "./statATokenv2RateProvider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0xfCe81cafe4b3F7e2263EFc2d907f488EBF2B238E",
       "upgradeableComponents": [
         {
@@ -1086,9 +1002,7 @@
       "name": "Aave-FRAX ERC4626RateProvider",
       "summary": "safe",
       "review": "./statATokenv2RateProvider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0xfCe81cafe4b3F7e2263EFc2d907f488EBF2B238E",
       "upgradeableComponents": [
         {
@@ -1213,6 +1127,28 @@
           "implementationReviewed": "0x29E9b639e165d919FEcf02521F8A9dA0492D4f21"
         }
       ]
+    },
+    "0x41F21f6eE1742e15775efcf52e0ecFD2CE8309C2": {
+      "asset": "0x6C7d727a0432D03351678F91FAA1126a5B871DF5",
+      "name": "SolvBTCAvalancheRateProvider.md",
+      "summary": "safe",
+      "review": "./SolvBTCAvalancheRateProviderReviewdf07.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x540a9dbba1ae6250253ba8793714492ee357ac1d",
+          "implementationReviewed": "0x02a90b43A9179e51eEC59415395437fa8E05dcd9"
+        },
+        {
+          "entrypoint": "0x6c7d727a0432d03351678f91faa1126a5b871df5",
+          "implementationReviewed": "0xa45716a26274D4C5F12CeD534Fb6B1fA9EF7aCf8"
+        },
+        {
+          "entrypoint": "0xd157b70f917fef3a59502b9128feca911debc864",
+          "implementationReviewed": "0xeFD6F956d68ce2A2338D3c0b12cC51Fd0504D233"
+        }
+      ]
     }
   },
   "base": {
@@ -1283,9 +1219,7 @@
       "name": "cbETH Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": [
-        "chainlink"
-      ],
+      "warnings": ["chainlink"],
       "factory": "0x0A973B6DB16C2ded41dC91691Cc347BEb0e2442B",
       "upgradeableComponents": []
     },
@@ -1294,9 +1228,7 @@
       "name": "weETH Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": [
-        "chainlink"
-      ],
+      "warnings": ["chainlink"],
       "factory": "0x0A973B6DB16C2ded41dC91691Cc347BEb0e2442B",
       "upgradeableComponents": []
     },
@@ -1305,9 +1237,7 @@
       "name": "rETH RocketPool Rate Provider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": [
-        "legacy"
-      ],
+      "warnings": ["legacy"],
       "factory": "",
       "upgradeableComponents": []
     },
@@ -1361,9 +1291,7 @@
       "name": "wstETH Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": [
-        "chainlink"
-      ],
+      "warnings": ["chainlink"],
       "factory": "0x0A973B6DB16C2ded41dC91691Cc347BEb0e2442B",
       "upgradeableComponents": []
     },
@@ -1372,9 +1300,7 @@
       "name": "ezETH Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": [
-        "chainlink"
-      ],
+      "warnings": ["chainlink"],
       "factory": "0x0A973B6DB16C2ded41dC91691Cc347BEb0e2442B",
       "upgradeableComponents": []
     },
@@ -1419,9 +1345,7 @@
       "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./statATokenLMRateProvider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0xEfD3aF73d3359014f3B864d37AC672A6d3D7ff1A",
       "upgradeableComponents": []
     },
@@ -1430,9 +1354,7 @@
       "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./statATokenLMRateProvider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0xEfD3aF73d3359014f3B864d37AC672A6d3D7ff1A",
       "upgradeableComponents": []
     },
@@ -1500,9 +1422,7 @@
       "name": "YieldFi yUSD Rate Provider",
       "summary": "safe",
       "review": "./yUSDRateProviderBase.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -1525,9 +1445,7 @@
       "name": "sUSDz Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": [
-        "chainlink"
-      ],
+      "warnings": ["chainlink"],
       "factory": "0x0A973B6DB16C2ded41dC91691Cc347BEb0e2442B",
       "upgradeableComponents": []
     },
@@ -1536,9 +1454,7 @@
       "name": "fluid weth rate provider",
       "summary": "safe",
       "review": "./FluidRateProviders.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0xEfD3aF73d3359014f3B864d37AC672A6d3D7ff1A",
       "upgradeableComponents": []
     },
@@ -1547,9 +1463,7 @@
       "name": "SuperUSDC Bridged Rate",
       "summary": "safe",
       "review": "./API3RateProvider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0x0A973B6DB16C2ded41dC91691Cc347BEb0e2442B",
       "upgradeableComponents": []
     },
@@ -1558,9 +1472,7 @@
       "name": "wETH to USD Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": [
-        "chainlink"
-      ],
+      "warnings": ["chainlink"],
       "factory": "0x0A973B6DB16C2ded41dC91691Cc347BEb0e2442B",
       "upgradeableComponents": []
     },
@@ -1578,9 +1490,7 @@
       "name": "EURc Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": [
-        "chainlink"
-      ],
+      "warnings": ["chainlink"],
       "factory": "0x0A973B6DB16C2ded41dC91691Cc347BEb0e2442B",
       "upgradeableComponents": []
     },
@@ -1664,9 +1574,7 @@
       "name": "asETHRateProvider",
       "summary": "safe",
       "review": "./asETHRateProvider.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
       "upgradeableComponents": [
         {
@@ -1684,9 +1592,7 @@
       "name": "BalancerRateProxy",
       "summary": "safe",
       "review": "./BalancerRateProxy_uniETH.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -1714,9 +1620,7 @@
       "name": "QueenRateProvider",
       "summary": "safe",
       "review": "./QueenRateProvider.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": []
     },
@@ -1752,9 +1656,7 @@
       "name": "wUSDKRateProvider",
       "summary": "safe",
       "review": "./wUSDKRateProvider.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": []
     },
@@ -1763,9 +1665,7 @@
       "name": "MevEthRateProvider",
       "summary": "safe",
       "review": "./MevEthRateProvider.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": []
     },
@@ -1817,9 +1717,7 @@
       "name": "BalancerRateProvider",
       "summary": "safe",
       "review": "ezETHRateProvider.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -1857,9 +1755,7 @@
       "name": "RsETHRateProvider",
       "summary": "safe",
       "review": "rsETHRateProvider.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -1889,9 +1785,7 @@
       "name": "svETHRateProvider",
       "summary": "safe",
       "review": "sveth.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -1905,9 +1799,7 @@
       "name": "RswETH",
       "summary": "safe",
       "review": "./rswethRateProvider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -1929,9 +1821,7 @@
       "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./sDOLARateProvider.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": []
     },
@@ -1954,9 +1844,7 @@
       "name": "InstETHRateProvider",
       "summary": "safe",
       "review": "./InceptionLRTRateProvider.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -1974,9 +1862,7 @@
       "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./statATokenLMRateProvider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -1994,9 +1880,7 @@
       "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./statATokenLMRateProvider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "https://etherscan.io/address/0xfc541f8d8c5e907e236c8931f0df9f58e0c259ec",
       "upgradeableComponents": [
         {
@@ -2014,9 +1898,7 @@
       "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./statATokenLMRateProvider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
       "upgradeableComponents": [
         {
@@ -2065,9 +1947,7 @@
       "name": "pufETHRateProvider",
       "summary": "safe",
       "review": "./PufEthRateProvider.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -2129,9 +2009,7 @@
       "name": "EthenaBalancerRateProvider",
       "summary": "safe",
       "review": "./sUSDERateProviderMainnet.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": []
     },
@@ -2140,9 +2018,7 @@
       "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./sFRAXRateProvider.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": []
     },
@@ -2151,9 +2027,7 @@
       "name": "InankrETHRateProvider",
       "summary": "safe",
       "review": "./InceptionLRTRateProvider.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -2171,9 +2045,7 @@
       "name": "RocketBalancerRETHRateProvider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": [
-        "legacy"
-      ],
+      "warnings": ["legacy"],
       "factory": "",
       "upgradeableComponents": []
     },
@@ -2182,9 +2054,7 @@
       "name": "sfrxETH ERC4626RateProvider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": [
-        "legacy"
-      ],
+      "warnings": ["legacy"],
       "factory": "",
       "upgradeableComponents": []
     },
@@ -2193,9 +2063,7 @@
       "name": "AnkrETHRateProvider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": [
-        "legacy"
-      ],
+      "warnings": ["legacy"],
       "factory": "",
       "upgradeableComponents": []
     },
@@ -2204,9 +2072,7 @@
       "name": "CbEthRateProvider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": [
-        "legacy"
-      ],
+      "warnings": ["legacy"],
       "factory": "",
       "upgradeableComponents": []
     },
@@ -2215,9 +2081,7 @@
       "name": "Stafi RETHRateProvider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": [
-        "legacy"
-      ],
+      "warnings": ["legacy"],
       "factory": "",
       "upgradeableComponents": []
     },
@@ -2226,9 +2090,7 @@
       "name": "wjAuraRateProvider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": [
-        "legacy"
-      ],
+      "warnings": ["legacy"],
       "factory": "",
       "upgradeableComponents": []
     },
@@ -2237,9 +2099,7 @@
       "name": "swETH Rate Provider TransparentUpgradeableProxy",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": [
-        "legacy"
-      ],
+      "warnings": ["legacy"],
       "factory": "",
       "upgradeableComponents": []
     },
@@ -2248,9 +2108,7 @@
       "name": "wBETH BinanceBeaconEthRateProvider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": [
-        "legacy"
-      ],
+      "warnings": ["legacy"],
       "factory": "",
       "upgradeableComponents": []
     },
@@ -2259,9 +2117,7 @@
       "name": "Bitfrost vETHRateProvider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": [
-        "legacy"
-      ],
+      "warnings": ["legacy"],
       "factory": "",
       "upgradeableComponents": []
     },
@@ -2270,9 +2126,7 @@
       "name": "unshETHRateProvider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": [
-        "legacy"
-      ],
+      "warnings": ["legacy"],
       "factory": "",
       "upgradeableComponents": []
     },
@@ -2281,9 +2135,7 @@
       "name": "SyrupRateProvider",
       "summary": "safe",
       "review": "./SyrupRateProvider.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -2309,9 +2161,7 @@
       "name": "CDCETHBalancerRateProvider",
       "summary": "safe",
       "review": "./cdcEthRateProvider.md",
-      "warnings": [
-        "eoaUpgradeable"
-      ],
+      "warnings": ["eoaUpgradeable"],
       "factory": "",
       "upgradeableComponents": []
     },
@@ -2376,9 +2226,7 @@
       "name": "VaultRateOracle",
       "summary": "safe",
       "review": "./MellowRateProviders.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -2396,9 +2244,7 @@
       "name": "VaultRateOracle",
       "summary": "safe",
       "review": "./MellowRateProviders.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -2416,9 +2262,7 @@
       "name": "XAUt Tether Gold Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": [
-        "chainlink"
-      ],
+      "warnings": ["chainlink"],
       "factory": "0x1311Fbc9F60359639174c1e7cC2032DbDb5Cc4d1",
       "upgradeableComponents": []
     },
@@ -2467,9 +2311,7 @@
       "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./sdeUSDRateProvider.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
       "upgradeableComponents": [
         {
@@ -2483,9 +2325,7 @@
       "name": "styETHRateProvider",
       "summary": "safe",
       "review": "./st-yETHRateProvider.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": []
     },
@@ -2494,9 +2334,7 @@
       "name": "UltraLRT",
       "summary": "safe",
       "review": "./AffineLiquidRestakingRateProvider.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -2510,9 +2348,7 @@
       "name": "UltraLRT",
       "summary": "safe",
       "review": "./AffineLiquidRestakingRateProvider.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -2526,9 +2362,7 @@
       "name": "VaultRateOracle",
       "summary": "safe",
       "review": "./MellowRateProviders.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -2542,9 +2376,7 @@
       "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./stBTCRateProvider.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
       "upgradeableComponents": [
         {
@@ -2616,9 +2448,7 @@
       "name": "EzRVault",
       "summary": "safe",
       "review": "./ezEigenRateProvider.md",
-      "warnings": [
-        "eoaUpgradeable"
-      ],
+      "warnings": ["eoaUpgradeable"],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -2640,9 +2470,7 @@
       "name": "hTokenOracleBalancerAdaptor",
       "summary": "safe",
       "review": "./HinkalEthRateProvider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -2656,9 +2484,7 @@
       "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./TreehouseRateProvider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -2672,9 +2498,7 @@
       "name": "krETHRateProvider",
       "summary": "safe",
       "review": "./KernelRateProviders.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -2688,9 +2512,7 @@
       "name": "ksETHRateProvider",
       "summary": "safe",
       "review": "./KernelRateProviders.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -2713,9 +2535,7 @@
       "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./statATokenv2RateProvider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
       "upgradeableComponents": [
         {
@@ -2733,9 +2553,7 @@
       "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./statATokenv2RateProvider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
       "upgradeableComponents": [
         {
@@ -2753,9 +2571,7 @@
       "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./statATokenv2RateProvider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
       "upgradeableComponents": [
         {
@@ -2773,9 +2589,7 @@
       "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./statATokenv2RateProvider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
       "upgradeableComponents": [
         {
@@ -2793,9 +2607,7 @@
       "name": "eBtcRateProvider",
       "summary": "safe",
       "review": "./eBTCRateProvider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0x467665D4ae90e7A99c9C9AF785791058426d6eA0",
       "upgradeableComponents": []
     },
@@ -2804,10 +2616,7 @@
       "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./HighGrowthEthRateProvider.md",
-      "warnings": [
-        "donation",
-        "unverified-contracts"
-      ],
+      "warnings": ["donation", "unverified-contracts"],
       "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
       "upgradeableComponents": [
         {
@@ -2829,9 +2638,7 @@
       "name": "ERC4626RateProvider",
       "summary": "unsafe",
       "review": "./MorphoERC4626RateProviders.md",
-      "warnings": [
-        "eoaUpgradeable"
-      ],
+      "warnings": ["eoaUpgradeable"],
       "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
       "upgradeableComponents": [
         {
@@ -2845,9 +2652,7 @@
       "name": "ERC4626RateProvider",
       "summary": "unsafe",
       "review": "./MorphoERC4626RateProviders.md",
-      "warnings": [
-        "eoaUpgradeable"
-      ],
+      "warnings": ["eoaUpgradeable"],
       "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
       "upgradeableComponents": [
         {
@@ -2861,9 +2666,7 @@
       "name": "ERC4626RateProvider",
       "summary": "unsafe",
       "review": "./MorphoERC4626RateProviders.md",
-      "warnings": [
-        "eoaUpgradeable"
-      ],
+      "warnings": ["eoaUpgradeable"],
       "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
       "upgradeableComponents": [
         {
@@ -2877,9 +2680,7 @@
       "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./MorphoERC4626RateProviders.md",
-      "warnings": [
-        "eoaUpgradeable"
-      ],
+      "warnings": ["eoaUpgradeable"],
       "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
       "upgradeableComponents": [
         {
@@ -2911,9 +2712,7 @@
       "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./MarketRateTransformerRateProviders.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0xeC2C6184761ab7fE061130B4A7e3Da89c72F8395",
       "upgradeableComponents": [
         {
@@ -2931,9 +2730,7 @@
       "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./MarketRateTransformerRateProviders.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0xeC2C6184761ab7fE061130B4A7e3Da89c72F8395",
       "upgradeableComponents": [
         {
@@ -2951,9 +2748,7 @@
       "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./statATokenv2RateProvider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
       "upgradeableComponents": [
         {
@@ -2971,9 +2766,7 @@
       "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./statATokenv2RateProvider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
       "upgradeableComponents": [
         {
@@ -2991,9 +2784,7 @@
       "name": "RPLVault",
       "summary": "safe",
       "review": "./GravitaRateProviders.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -3019,10 +2810,7 @@
       "name": "WETHVault",
       "summary": "safe",
       "review": "./GravitaRateProviders.md",
-      "warnings": [
-        "donation",
-        "eoaUpgradeable"
-      ],
+      "warnings": ["donation", "eoaUpgradeable"],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -3052,9 +2840,7 @@
       "name": "csUSDL-MORPHOv1.1",
       "summary": "safe",
       "review": "./MarketRateTransformerRateProviders.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0xeC2C6184761ab7fE061130B4A7e3Da89c72F8395",
       "upgradeableComponents": [
         {
@@ -3072,9 +2858,7 @@
       "name": "Gauntlet wETH Ecosystem v1.1",
       "summary": "safe",
       "review": "./MorphoERC4626RateProviders.md",
-      "warnings": [
-        "eoaUpgradeable"
-      ],
+      "warnings": ["eoaUpgradeable"],
       "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
       "upgradeableComponents": [
         {
@@ -3088,9 +2872,7 @@
       "name": "IndexCoop mhyETH v1.1",
       "summary": "safe",
       "review": "./MorphoERC4626RateProviders.md",
-      "warnings": [
-        "eoaUpgradeable"
-      ],
+      "warnings": ["eoaUpgradeable"],
       "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
       "upgradeableComponents": [
         {
@@ -3104,9 +2886,7 @@
       "name": "VaultRateOracle",
       "summary": "safe",
       "review": "./MellowRateProviders.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -3120,9 +2900,7 @@
       "name": "AaveMarketRateTransformer",
       "summary": "safe",
       "review": "./MarketRateTransformerRateProviders.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0x4E185b1502Fea7a06B63fDdA6de38F92C9528566",
       "upgradeableComponents": []
     },
@@ -3131,9 +2909,7 @@
       "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./statATokenv2RateProvider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
       "upgradeableComponents": [
         {
@@ -3151,9 +2927,7 @@
       "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./LoopRateProvider.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
       "upgradeableComponents": []
     },
@@ -3199,9 +2973,7 @@
       "name": "VaultRateOracle",
       "summary": "safe",
       "review": "./MellowRateProviders.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -3215,9 +2987,7 @@
       "name": "YieldFi yUSD Rate Provider",
       "summary": "safe",
       "review": "./yUSDRateProvider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -3239,9 +3009,7 @@
       "name": "CombinedRateProvider",
       "summary": "safe",
       "review": "./InceptionLRTRateProvider_2.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -3269,9 +3037,7 @@
       "name": "tETH / ETH CombinedRateProvider",
       "summary": "safe",
       "review": "./CombinedRateProvider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -3285,9 +3051,7 @@
       "name": "fluid weth rate provider",
       "summary": "safe",
       "review": "./FluidRateProviders.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
       "upgradeableComponents": []
     },
@@ -3296,9 +3060,7 @@
       "name": "Fluid wstETH rate provider",
       "summary": "safe",
       "review": "./FluidRateProviders.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
       "upgradeableComponents": []
     },
@@ -3307,10 +3069,7 @@
       "name": "cUSDO OpenEden Rate Provider",
       "summary": "safe",
       "review": "./cUSDOOpenEdenRateProvider.md",
-      "warnings": [
-        "donation",
-        "eoaUpgradeable"
-      ],
+      "warnings": ["donation", "eoaUpgradeable"],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -3333,9 +3092,7 @@
       "name": "fwstETH / wstETH MarketRateTransformerRateProvider",
       "summary": "safe",
       "review": "./MarketRateTransformerRateProviders.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "",
       "upgradeableComponents": []
     },
@@ -3353,9 +3110,7 @@
       "name": "EURO Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": [
-        "chainlink"
-      ],
+      "warnings": ["chainlink"],
       "factory": "",
       "upgradeableComponents": []
     }
@@ -3366,9 +3121,7 @@
       "name": "sFTMx Rateprovider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": [
-        "legacy"
-      ],
+      "warnings": ["legacy"],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -3451,10 +3204,7 @@
       "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./SavingsDAIRateProviderGnosis.md",
-      "warnings": [
-        "donation",
-        "only18decimals"
-      ],
+      "warnings": ["donation", "only18decimals"],
       "factory": "",
       "upgradeableComponents": []
     },
@@ -3463,10 +3213,7 @@
       "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./stAgEurRateProvider.md",
-      "warnings": [
-        "donation",
-        "only18decimals"
-      ],
+      "warnings": ["donation", "only18decimals"],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -3484,9 +3231,7 @@
       "name": "wstETH Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": [
-        "chainlink"
-      ],
+      "warnings": ["chainlink"],
       "factory": "",
       "upgradeableComponents": []
     },
@@ -3495,9 +3240,7 @@
       "name": "EURe Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": [
-        "chainlink"
-      ],
+      "warnings": ["chainlink"],
       "factory": "",
       "upgradeableComponents": []
     },
@@ -3560,9 +3303,7 @@
       "name": "BlraSdaiRateProvider",
       "summary": "safe",
       "review": "./BlraSdaiRateProvider.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": []
     },
@@ -3625,9 +3366,7 @@
       "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./MarketRateTransformerRateProviders.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0x03362f847b4fabc12e1ce98b6b59f94401e4588e",
       "upgradeableComponents": [
         {
@@ -3772,9 +3511,7 @@
       "name": "inETH Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": [
-        "chainlink"
-      ],
+      "warnings": ["chainlink"],
       "factory": "0x83E443EF4f9963C77bd860f94500075556668cb8",
       "upgradeableComponents": []
     },
@@ -3783,9 +3520,7 @@
       "name": "instETH Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": [
-        "chainlink"
-      ],
+      "warnings": ["chainlink"],
       "factory": "0x83E443EF4f9963C77bd860f94500075556668cb8",
       "upgradeableComponents": []
     },
@@ -3820,9 +3555,7 @@
       "name": "StErnRateProvider",
       "summary": "safe",
       "review": "./stERNRateProvider.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -3899,9 +3632,7 @@
       "name": "wstETH Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": [
-        "chainlink"
-      ],
+      "warnings": ["chainlink"],
       "factory": "0x83E443EF4f9963C77bd860f94500075556668cb8",
       "upgradeableComponents": []
     },
@@ -3910,9 +3641,7 @@
       "name": "sfrxETH Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": [
-        "chainlink"
-      ],
+      "warnings": ["chainlink"],
       "factory": "0x83E443EF4f9963C77bd860f94500075556668cb8",
       "upgradeableComponents": []
     },
@@ -3921,9 +3650,7 @@
       "name": "sFRAX Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": [
-        "chainlink"
-      ],
+      "warnings": ["chainlink"],
       "factory": "0x83E443EF4f9963C77bd860f94500075556668cb8",
       "upgradeableComponents": []
     },
@@ -3932,9 +3659,7 @@
       "name": "sFRAX Rate Provider Duplicate",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": [
-        "chainlink"
-      ],
+      "warnings": ["chainlink"],
       "factory": "0x83E443EF4f9963C77bd860f94500075556668cb8",
       "upgradeableComponents": []
     },
@@ -3943,9 +3668,7 @@
       "name": "rETH RocketPool Rate Provider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": [
-        "legacy"
-      ],
+      "warnings": ["legacy"],
       "factory": "",
       "upgradeableComponents": []
     },
@@ -3954,9 +3677,7 @@
       "name": "ankrETH Staking Rate Provider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": [
-        "legacy"
-      ],
+      "warnings": ["legacy"],
       "factory": "",
       "upgradeableComponents": []
     },
@@ -3965,9 +3686,7 @@
       "name": "weETH Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": [
-        "chainlink"
-      ],
+      "warnings": ["chainlink"],
       "factory": "0x83E443EF4f9963C77bd860f94500075556668cb8",
       "upgradeableComponents": []
     },
@@ -3990,9 +3709,7 @@
       "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./wUSDMRateProvider.md",
-      "warnings": [
-        "eoaUpgradeable"
-      ],
+      "warnings": ["eoaUpgradeable"],
       "factory": "0x02a569eea6f85736E2D63C59E60d27d075E75c33",
       "upgradeableComponents": []
     },
@@ -4237,9 +3954,7 @@
       "name": "RateProvider",
       "summary": "safe",
       "review": "./RateProvider_wFRK.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -4265,9 +3980,7 @@
       "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./statATokenLMRateProvider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -4285,9 +3998,7 @@
       "name": "ERC4626RateProvider",
       "summary": "safe",
       "review": "./statATokenLMRateProvider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -4305,9 +4016,7 @@
       "name": "wstETH / ETH Rate Provider",
       "summary": "unsafe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": [
-        "chainlink"
-      ],
+      "warnings": ["chainlink"],
       "factory": "0xa3b370092aeb56770B23315252aB5E16DAcBF62B",
       "upgradeableComponents": []
     },
@@ -4316,9 +4025,7 @@
       "name": "wstETH Rate Provider Duplicate",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": [
-        "chainlink"
-      ],
+      "warnings": ["chainlink"],
       "factory": "0xa3b370092aeb56770B23315252aB5E16DAcBF62B",
       "upgradeableComponents": []
     },
@@ -4327,9 +4034,7 @@
       "name": "MaticX Rate Provider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": [
-        "legacy"
-      ],
+      "warnings": ["legacy"],
       "factory": "",
       "upgradeableComponents": []
     },
@@ -4338,9 +4043,7 @@
       "name": "stMATIC Rate Provider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": [
-        "legacy"
-      ],
+      "warnings": ["legacy"],
       "factory": "",
       "upgradeableComponents": []
     },
@@ -4349,9 +4052,7 @@
       "name": "csMATIC Clay Stack Tunnel Rate Provider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": [
-        "legacy"
-      ],
+      "warnings": ["legacy"],
       "factory": "",
       "upgradeableComponents": []
     },
@@ -4360,9 +4061,7 @@
       "name": "wUSDR Rate Provider",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": [
-        "legacy"
-      ],
+      "warnings": ["legacy"],
       "factory": "",
       "upgradeableComponents": []
     },
@@ -4371,9 +4070,7 @@
       "name": "TruMaticRateProvider",
       "summary": "safe",
       "review": "./TruMaticRateProvider.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -4419,9 +4116,7 @@
       "name": "RSETHRateReceiver",
       "summary": "safe",
       "review": "./rsEthRateProviderPolygonZKEVM.md",
-      "warnings": [
-        "donation"
-      ],
+      "warnings": ["donation"],
       "factory": "",
       "upgradeableComponents": [
         {
@@ -4435,9 +4130,7 @@
       "name": "rETH Rate Receiver",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": [
-        "legacy"
-      ],
+      "warnings": ["legacy"],
       "factory": "",
       "upgradeableComponents": []
     },
@@ -4446,9 +4139,7 @@
       "name": "wstETH Rate Receiver",
       "summary": "safe",
       "review": "./LegacyReview.md",
-      "warnings": [
-        "legacy"
-      ],
+      "warnings": ["legacy"],
       "factory": "",
       "upgradeableComponents": []
     },
@@ -4457,9 +4148,7 @@
       "name": "rETH Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": [
-        "chainlink"
-      ],
+      "warnings": ["chainlink"],
       "factory": "0x4132f7AcC9dB7A6cF7BE2Dd3A9DC8b30C7E6E6c8",
       "upgradeableComponents": []
     },
@@ -4468,9 +4157,7 @@
       "name": "wstETH Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": [
-        "chainlink"
-      ],
+      "warnings": ["chainlink"],
       "factory": "0x4132f7AcC9dB7A6cF7BE2Dd3A9DC8b30C7E6E6c8",
       "upgradeableComponents": []
     }
@@ -4524,9 +4211,7 @@
       "name": "Avalon waSolvBTC.bbn Rateprovider",
       "summary": "safe",
       "review": "./statATokenLMRateProviderAvalon.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
       "upgradeableComponents": [
         {
@@ -4540,9 +4225,7 @@
       "name": "Avalon waSolvBTC Rateprovider",
       "summary": "safe",
       "review": "./statATokenLMRateProviderAvalon.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
       "upgradeableComponents": [
         {
@@ -4556,9 +4239,7 @@
       "name": "Beefy Silo USDC-20 Rateprovider",
       "summary": "safe",
       "review": "./BeefyUsdcSiloRateprovider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
       "upgradeableComponents": []
     },
@@ -4567,9 +4248,7 @@
       "name": "Silo SolvBTC.bbn-13 Rateprovider",
       "summary": "safe",
       "review": "./SiloWrappedRateprovider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
       "upgradeableComponents": []
     },
@@ -4578,9 +4257,7 @@
       "name": "Silo SolvBTC-13 Rateprovider",
       "summary": "safe",
       "review": "./SiloWrappedRateprovider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
       "upgradeableComponents": []
     },
@@ -4589,9 +4266,7 @@
       "name": "Silo frxUSD-37 Rateprovider",
       "summary": "safe",
       "review": "./SiloWrappedRateprovider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
       "upgradeableComponents": []
     },
@@ -4600,9 +4275,7 @@
       "name": "Silo wETH-26 Rateprovider",
       "summary": "safe",
       "review": "./SiloWrappedRateprovider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
       "upgradeableComponents": []
     },
@@ -4611,9 +4284,7 @@
       "name": "Silo scBTC-32 Rateprovider",
       "summary": "safe",
       "review": "./SiloWrappedRateprovider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
       "upgradeableComponents": []
     },
@@ -4622,9 +4293,7 @@
       "name": "Silo USDC-33 Rateprovider",
       "summary": "safe",
       "review": "./SiloWrappedRateprovider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
       "upgradeableComponents": []
     },
@@ -4633,9 +4302,7 @@
       "name": "Wrapped Origin Sonic Rateprovider",
       "summary": "safe",
       "review": "./woSonicRateprovider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
       "upgradeableComponents": [
         {
@@ -4649,9 +4316,7 @@
       "name": "Wrapped Angles Sonic Rateprovider",
       "summary": "safe",
       "review": "./wanSonicRateprovider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
       "upgradeableComponents": [
         {
@@ -4701,9 +4366,7 @@
       "name": "Silo wS-25 Rateprovider",
       "summary": "safe",
       "review": "./SiloWrappedRateprovider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
       "upgradeableComponents": []
     },
@@ -4712,9 +4375,7 @@
       "name": "Silo wS-28 Rateprovider",
       "summary": "safe",
       "review": "./SiloWrappedRateprovider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
       "upgradeableComponents": []
     },
@@ -4723,9 +4384,7 @@
       "name": "Silo USDC-23 Rateprovider",
       "summary": "safe",
       "review": "./SiloWrappedRateprovider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
       "upgradeableComponents": []
     },
@@ -4734,9 +4393,7 @@
       "name": "Silo scUSD-46 Rateprovider",
       "summary": "safe",
       "review": "./SiloWrappedRateprovider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
       "upgradeableComponents": []
     },
@@ -4745,9 +4402,7 @@
       "name": "Silo scETH-47 Rateprovider",
       "summary": "safe",
       "review": "./SiloWrappedRateprovider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
       "upgradeableComponents": []
     },
@@ -4756,9 +4411,7 @@
       "name": "Silo wETH-35 Rateprovider",
       "summary": "safe",
       "review": "./SiloWrappedRateprovider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
       "upgradeableComponents": []
     },
@@ -4767,9 +4420,7 @@
       "name": "Silo USDC-36 Rateprovider",
       "summary": "safe",
       "review": "./SiloWrappedRateprovider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
       "upgradeableComponents": []
     },
@@ -4778,9 +4429,7 @@
       "name": "Wrapped Aave Sonic USDC.e",
       "summary": "safe",
       "review": "./statATokenv2RateProvider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
       "upgradeableComponents": []
     },
@@ -4789,9 +4438,7 @@
       "name": "Wrapped Aave Sonic wS",
       "summary": "safe",
       "review": "./statATokenv2RateProvider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
       "upgradeableComponents": []
     },
@@ -4800,9 +4447,7 @@
       "name": "Wrapped Aave Sonic WETH",
       "summary": "safe",
       "review": "./statATokenv2RateProvider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
       "upgradeableComponents": []
     },
@@ -4811,9 +4456,7 @@
       "name": "Wrapped Vicuna stS",
       "summary": "safe",
       "review": "./VicunaWrapperRateprovider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
       "upgradeableComponents": [
         {
@@ -4827,9 +4470,7 @@
       "name": "Wrapped Vicuna wS",
       "summary": "safe",
       "review": "./VicunaWrapperRateprovider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
       "upgradeableComponents": [
         {
@@ -4843,9 +4484,7 @@
       "name": "Wrapped Vicuna scUSD",
       "summary": "safe",
       "review": "./VicunaWrapperRateprovider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
       "upgradeableComponents": [
         {
@@ -4859,9 +4498,7 @@
       "name": "Wrapped Vicuna USDT",
       "summary": "safe",
       "review": "./VicunaWrapperRateprovider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
       "upgradeableComponents": [
         {
@@ -4875,9 +4512,7 @@
       "name": "Wrapped Vicuna sUSDC.etS",
       "summary": "safe",
       "review": "./VicunaWrapperRateprovider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
       "upgradeableComponents": [
         {
@@ -4891,9 +4526,7 @@
       "name": "Wrapped stkscUSD",
       "summary": "safe",
       "review": "./RingsStakedRateprovider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
       "upgradeableComponents": []
     },
@@ -4902,9 +4535,7 @@
       "name": "Wrapped stkscETH",
       "summary": "safe",
       "review": "./RingsStakedRateprovider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
       "upgradeableComponents": []
     },
@@ -4913,9 +4544,7 @@
       "name": "Euler Vault eWS-5 Rateprovider",
       "summary": "safe",
       "review": "./EulerWrappedRateprovider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0x00de97829d01815346e58372be55aefd84ca2457",
       "upgradeableComponents": [
         {
@@ -4929,9 +4558,7 @@
       "name": "Beefy-Escrowed Sonic Rateprovider",
       "summary": "safe",
       "review": "./BeefyEscrowedSonic.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "",
       "upgradeableComponents": [
         {
