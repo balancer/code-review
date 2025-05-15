@@ -3839,24 +3839,6 @@
         }
       ]
     },
-    "0x0903cf3d4f56315c7f222d820f7a8b92758e80b7": {
-      "asset": "0x8e6a81b9d541A0CeA090818B62C4B2DE7f2A2Cf7",
-      "name": "WrappedAaveOptimism rETHRateProvider.md",
-      "summary": "safe",
-      "review": "./WrappedAaveOptimism rETHRateProviderReviewa5f3.md",
-      "warnings": [],
-      "factory": "",
-      "upgradeableComponents": [
-        {
-          "entrypoint": "0x8e6a81b9d541a0cea090818b62c4b2de7f2a2cf7",
-          "implementationReviewed": "0x88d2fd5b62bbf2038e2246d9b9ad24f823306fcb"
-        },
-        {
-          "entrypoint": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
-          "implementationReviewed": "0x7f775bb7af2e7e09d5dc9506c95516159a5ca0d0"
-        }
-      ]
-    },
     "0x1210697804380213844445f6e8a40593d8775b3d": {
       "asset": "0x0B590eF479c8e03825Ae779839aCb4583aCc15FD",
       "name": "WrappedAaveOptimism USDCRateProvider.md",
@@ -3943,6 +3925,24 @@
         },
         {
           "entrypoint": "0x413093e03d6aee4f2f7e48d4b88881bf4932b249",
+          "implementationReviewed": "0x88d2fd5b62bbf2038e2246d9b9ad24f823306fcb"
+        }
+      ]
+    },
+    "0xdd4cac23a178d221d4ea159b9ce0697cae05081b": {
+      "asset": "0x8e6a81b9d541A0CeA090818B62C4B2DE7f2A2Cf7",
+      "name": "WrappedAaveOptimism rETHRateProvider.md",
+      "summary": "safe",
+      "review": "./WrappedAaveOptimism rETHRateProviderReview0735.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
+          "implementationReviewed": "0x7f775bb7af2e7e09d5dc9506c95516159a5ca0d0"
+        },
+        {
+          "entrypoint": "0x8e6a81b9d541a0cea090818b62c4b2de7f2a2cf7",
           "implementationReviewed": "0x88d2fd5b62bbf2038e2246d9b9ad24f823306fcb"
         }
       ]
