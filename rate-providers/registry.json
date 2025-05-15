@@ -3637,7 +3637,7 @@
       "upgradeableComponents": []
     },
     "0xf752dd899F87a91370C1C8ac1488Aef6be687505": {
-      "asset": "0x484c2D6e3cDd945a8B2DF735e079178C1036578c",
+      "asset": "0x3ec3849c33291a9ef4c5db86de593eb4a37fde45",
       "name": "sfrxETH Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
