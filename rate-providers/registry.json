@@ -656,6 +656,15 @@
       "factory": "0x5dbad78818d4c8958eff2d5b95b28385a22113cd",
       "upgradeableComponents": []
     },
+    "0x76889a37f3E7E56b314c593Df5b749Ce86E9d828": {
+      "asset": "0x0B2b2B2076d95dda7817e785989fE353fe955ef9",
+      "name": "sUSDai Rate Provider",
+      "summary": "safe",
+      "review": "",
+      "warnings": [],
+      "factory": "0xe548a29631f9E49830bE8edc22d407b2D2915F31",
+      "upgradeableComponents": []
+    },
     "0x5b988aacf8aD14ce4b50C19676C234410135696E": {
       "asset": "0x4772D2e014F9fC3a820C444e3313968e9a5C8121",
       "name": "YieldFiyUSDRateProvider.md",
@@ -752,15 +761,6 @@
       "review": "./LegacyReview.md",
       "warnings": ["legacy"],
       "factory": "",
-      "upgradeableComponents": []
-    },
-    "0x76889a37f3E7E56b314c593Df5b749Ce86E9d828": {
-      "asset": "0x0B2b2B2076d95dda7817e785989fE353fe955ef9",
-      "name": "sUSDai Rate Provider",
-      "summary": "safe",
-      "review": "",
-      "warnings": [],
-      "factory": "0xe548a29631f9E49830bE8edc22d407b2D2915F31",
       "upgradeableComponents": []
     },
     "0x484ebac26a05e1feb7909243f293a4f79eef837a": {
