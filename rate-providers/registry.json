@@ -673,6 +673,20 @@
           "implementationReviewed": "0x86e721b43d4ecfa71119dd38c0f938a75fdb57b3"
         }
       ]
+    },
+    "0x76889a37f3E7E56b314c593Df5b749Ce86E9d828": {
+      "asset": "0x0B2b2B2076d95dda7817e785989fE353fe955ef9",
+      "name": "StakedUSDaiRateProvider.md",
+      "summary": "safe",
+      "review": "./StakedUSDaiRateProviderReview7289.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x437cc33344a0b27a429f795ff6b469c72698b291",
+          "implementationReviewed": "0x813b926b1d096e117721bd1eb017fba122302da0"
+        }
+      ]
     }
   },
   "avalanche": {

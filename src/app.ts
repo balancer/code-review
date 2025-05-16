@@ -351,7 +351,7 @@ class RateProviderDataService {
                           throw new Error(`Environment variable is not set`)
                       })()
                 break
-            case 'Arbitrum':
+            case 'Arbitrum One':
                 this.apiKey = process.env.ARBITRUM_SCAN_API_KEY
                     ? process.env.ARBITRUM_SCAN_API_KEY
                     : (() => {
