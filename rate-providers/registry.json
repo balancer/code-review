@@ -754,6 +754,15 @@
       "factory": "",
       "upgradeableComponents": []
     },
+    "0x76889a37f3E7E56b314c593Df5b749Ce86E9d828": {
+      "asset": "0x0B2b2B2076d95dda7817e785989fE353fe955ef9",
+      "name": "sUSDai Rate Provider",
+      "summary": "safe",
+      "review": "",
+      "warnings": [],
+      "factory": "0xe548a29631f9E49830bE8edc22d407b2D2915F31",
+      "upgradeableComponents": []
+    },
     "0x484ebac26a05e1feb7909243f293a4f79eef837a": {
       "asset": "0x6A02C7a974F1F13A67980C80F774eC1d2eD8f98d",
       "name": "ERC4626RateProvider",
