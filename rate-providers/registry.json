@@ -1163,6 +1163,24 @@
           "implementationReviewed": "0xeFD6F956d68ce2A2338D3c0b12cC51Fd0504D233"
         }
       ]
+    },
+    "0x6Be2e71238e2000cBA004a38aceA357d14D7e081": {
+      "asset": "0x580d5E1399157FD0d58218b7A514b60974F2AB01",
+      "name": "StakedUTYRateProvider.md",
+      "summary": "safe",
+      "review": "./StakedUTYRateProviderReview7bf6.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x580d5e1399157fd0d58218b7a514b60974f2ab01",
+          "implementationReviewed": "0x5c1b144D757FC0b24C48914d80FE7137F07dF411"
+        },
+        {
+          "entrypoint": "0xdbc5192a6b6ffee7451301bb4ec312f844f02b4a",
+          "implementationReviewed": "0x639C72EEA35E50F5e2911891389FC4E8422587C4"
+        }
+      ]
     }
   },
   "base": {
