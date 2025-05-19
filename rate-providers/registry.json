@@ -2811,6 +2811,24 @@
         }
       ]
     },
+    "0xAc30cB7Fe8b4E93C62DA046D14f607B0e3ddEA00": {
+      "asset": "0x6A1792a91C08e9f0bFe7a990871B786643237f0F",
+      "name": "ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./statATokenv2RateProvider.md",
+      "warnings": [""],
+      "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x6A1792a91C08e9f0bFe7a990871B786643237f0F",
+          "implementationReviewed": "0x487c2C53c0866F0A73ae317bD1A28F63ADcD9aD1"
+        },
+        {
+          "entrypoint": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+          "implementationReviewed": "0x9aEb8aAA1cA38634Aa8C0c8933E7fB4D61091327"
+        }
+      ]
+    },
     "0x1DB1Afd9552eeB28e2e36597082440598B7F1320": {
       "asset": "0x1DB1Afd9552eeB28e2e36597082440598B7F1320",
       "name": "RPLVault",
