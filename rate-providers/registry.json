@@ -3996,6 +3996,20 @@
           "implementationReviewed": "0x88d2fd5b62bbf2038e2246d9b9ad24f823306fcb"
         }
       ]
+    },
+    "0x91151ba698253e24c23a754d94f94049a17e8084": {
+      "asset": "0x5bff88ca1442c2496f7e475e9e7786383bc070c0",
+      "name": "StakedFraxUSDRateProvider.md",
+      "summary": "safe",
+      "review": "./StakedFraxUSDRateProviderReview280f.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x5ae63168fb60705dae8e726b5715079fc0715b81",
+          "implementationReviewed": "0x263d5be22e9a16e7a9c0da1649e540cf053f7563"
+        }
+      ]
     }
   },
   "polygon": {
