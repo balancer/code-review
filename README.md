@@ -142,7 +142,3 @@ Before the review is finalized, the user is expected to:
 - Add context about the rate provider in the generated markdown file.
 - Include audit reports (if available).
 - Optionally rename the review file and update the `name` and `review` fields in the registry.
-
-```
-npm run write-review -- --rateProviderAddress 0x4017F109CF5583D68A6E213CC65f609Cd12791E6 --network mainnet --rateProviderAsset 0x4956b52aE2fF65D74CA2d61207523288e4528f96 --rpcUrl https://eth-mainnet.g.alchemy.com/v2/bPYRG1o0yOn5nTXetE2kdDzfzGXkK3Qh
-```
