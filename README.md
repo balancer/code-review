@@ -142,4 +142,3 @@ Before the review is finalized, the user is expected to:
 - Add context about the rate provider in the generated markdown file.
 - Include audit reports (if available).
 - Optionally rename the review file and update the `name` and `review` fields in the registry.
-

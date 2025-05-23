@@ -3163,6 +3163,24 @@
       "warnings": ["chainlink"],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0x4017F109CF5583D68A6E213CC65f609Cd12791E6": {
+      "asset": "0x4956b52aE2fF65D74CA2d61207523288e4528f96",
+      "name": "Resolv Liquidity Provider Token Rate Provider",
+      "summary": "safe",
+      "review": "./ResolvLiquidityProviderTokenRateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xadb2c15fde49d1a4294740acb650de94184e66b2",
+          "implementationReviewed": "0x4e35e7b1e03a37e40b0f1a4ee27813fe2d474ecb"
+        },
+        {
+          "entrypoint": "0xae2364579d6cb4bbd6695846c1d595ca9af3574d",
+          "implementationReviewed": "0x5e90b0a657643c08a45cbd6a06337b37c98e1aa1"
+        }
+      ]
     }
   },
   "fantom": {
