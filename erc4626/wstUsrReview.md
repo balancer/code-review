@@ -31,8 +31,8 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 
 
 ### Compatibility 
-- [ ] The reviewed ERC4626 Vault is compatible and wrapping/unwrapping can be used in swap paths. <Delete this hint: Does the ERC4626 pass the fork tests and we can use the buffer for swapping underlying to wrapped and vice versa?>
-- [ ] The reviewed ERC4626 Vault is compatible and wrapping/unwrapping can be used for add and remove. <Delete this hint: Does the ERC4626 pass the fork tests and we can (and want based on the initital issue request) to use underlying tokens to add or remove liquidity to pools?>
+- [ ] The reviewed ERC4626 Vault is compatible and wrapping/unwrapping can be used in swap paths.
+- [ ] The reviewed ERC4626 Vault is compatible and wrapping/unwrapping can be used for add and remove.
 
 ### Common Manipulation Vectors
 - [x] The ERC4626 Vault is susceptible to donation attacks.
@@ -45,4 +45,4 @@ To save time, we do not bother pointing out low-severity/informational issues or
 ## Conclusion
 **Summary judgment: USABLE**
 
-passing fork tests can be found at: https://github.com/balancer/balancer-v3-erc4626-tests/pull/44
+passing fork tests can be found at: https://github.com/balancer/balancer-v3-erc4626-tests/blob/main/test/mainnet/ERC4626MainnetResolvWstUSR.t.sol
