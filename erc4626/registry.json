@@ -147,7 +147,9 @@
       "name": "Superform USDC",
       "summary": "safe",
       "review": "./SuperformSuperVaultReview.md",
-      "warnings": ["buffer"],
+      "warnings": [
+        "buffer"
+      ],
       "canUseBufferForSwaps": false,
       "useUnderlyingForAddRemove": false,
       "useWrappedForAddRemove": true
@@ -309,7 +311,9 @@
       "name": "Superform USDC",
       "summary": "safe",
       "review": "./SuperformSuperVaultReview.md",
-      "warnings": ["buffer"],
+      "warnings": [
+        "buffer"
+      ],
       "canUseBufferForSwaps": false,
       "useUnderlyingForAddRemove": false,
       "useWrappedForAddRemove": true
@@ -561,7 +565,9 @@
       "name": "sDAI",
       "summary": "safe",
       "review": "./sDaiReview.md",
-      "warnings": ["buffer"],
+      "warnings": [
+        "buffer"
+      ],
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": false,
       "useWrappedForAddRemove": true
@@ -857,6 +863,44 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0xF6F87073cF8929C206A77b0694619DC776F89885": {
+      "asset": "0x29219dd400f2Bf60E5a23d13Be72B486D4038894",
+      "name": "VarlamoreUSDCGrowthErc4626Vault.md",
+      "summary": "",
+      "review": "./VarlamoreUSDCGrowthErc4626VaultReview2127.md",
+      "warnings": [],
+      "upgradeableComponents": [],
+      "canUseBufferForSwaps": "",
+      "useUnderlyingForAddRemove": "",
+      "useWrappedForAddRemove": ""
+    },
+    "0xDED4aC8645619334186f28B8798e07ca354CFa0e": {
+      "asset": "0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38",
+      "name": "VarlamoreSErc4626Vault.md",
+      "summary": "",
+      "review": "./VarlamoreSErc4626VaultReview7359.md",
+      "warnings": [],
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xded4ac8645619334186f28b8798e07ca354cfa0e",
+          "implementationReviewed": "0x9ef543f9bd71476de1b225f744907bdc764bf937"
+        }
+      ],
+      "canUseBufferForSwaps": "",
+      "useUnderlyingForAddRemove": "",
+      "useWrappedForAddRemove": ""
+    },
+    "0xb6A23cB29e512Df41876B28D7A848BD831f9c5Ba": {
+      "asset": "0xd3DCe716f3eF535C5Ff8d041c1A41C3bd89b97aE",
+      "name": "VarlamorescUSDErc4626Vault.md",
+      "summary": "",
+      "review": "./VarlamorescUSDErc4626VaultReviewb07d.md",
+      "warnings": [],
+      "upgradeableComponents": [],
+      "canUseBufferForSwaps": "",
+      "useUnderlyingForAddRemove": "",
+      "useWrappedForAddRemove": ""
     }
   },
   "avalanche": {
