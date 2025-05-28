@@ -52,6 +52,7 @@ async function writeReviewAndUpdateRegistry(erc4626: Address, network: Chain, rp
     //const [{ ContractName }] = await service.getContractInfo([rateProviderAsset])
     const contractName = await doOnchainCallGetName(erc4626, network, rpcUrl)
     const asset = await doOnchainCallGetAsset(erc4626, network, rpcUrl)
+    const hasInterfaceImplemented = await service.hasValidERC4626Interface()
 
     // Write report
     const templateData = {
@@ -65,6 +66,7 @@ async function writeReviewAndUpdateRegistry(erc4626: Address, network: Chain, rp
         .replace('{{erc4626}}', contractName)
         .replace('{{network}}', service.chain.name)
         .replace('{{erc4626Address}}', erc4626)
+        .replace('{{hasRequiredFunctionsImplemented}}', hasInterfaceImplemented ? 'x' : ' ')
         .replace(
             '{{chainExplorer}}',
             `${service.chain.blockExplorers?.default.url}/address/${service.rateProvider}` || '',
