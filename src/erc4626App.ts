@@ -102,4 +102,101 @@ export default class ERC4626DataService extends RateProviderDataService {
 
         return `https://www.tdly.co/shared/simulation/${simulationId}`
     }
+    public async hasValidERC4626Interface(): Promise<boolean> {
+        let abi: any[]
+        if (this.sourceCode.Proxy === '1') {
+            const implementationSourceCode = await this.getContractSourceCode(this.sourceCode.Implementation)
+            abi = JSON.parse(implementationSourceCode.ABI)
+        } else {
+            abi = JSON.parse(this.sourceCode.ABI)
+        }
+
+        // Define the required ERC4626 functions with their expected signatures
+        const requiredFunctions = [
+            {
+                name: 'previewRedeem',
+                stateMutability: 'view',
+                inputs: [{ type: 'uint256', name: 'shares' }],
+                outputs: [{ type: 'uint256' }],
+            },
+            {
+                name: 'previewWithdraw',
+                stateMutability: 'view',
+                inputs: [{ type: 'uint256', name: 'assets' }],
+                outputs: [{ type: 'uint256' }],
+            },
+            {
+                name: 'redeem',
+                stateMutability: 'nonpayable',
+                inputs: [
+                    { type: 'uint256', name: 'shares' },
+                    { type: 'address', name: 'receiver' },
+                    { type: 'address', name: 'owner' },
+                ],
+                outputs: [{ type: 'uint256' }],
+            },
+            {
+                name: 'withdraw',
+                stateMutability: 'nonpayable',
+                inputs: [
+                    { type: 'uint256', name: 'assets' },
+                    { type: 'address', name: 'receiver' },
+                    { type: 'address', name: 'owner' },
+                ],
+                outputs: [{ type: 'uint256' }],
+            },
+            {
+                name: 'previewDeposit',
+                stateMutability: 'view',
+                inputs: [{ type: 'uint256', name: 'assets' }],
+                outputs: [{ type: 'uint256' }],
+            },
+            {
+                name: 'previewMint',
+                stateMutability: 'view',
+                inputs: [{ type: 'uint256', name: 'shares' }],
+                outputs: [{ type: 'uint256' }],
+            },
+            {
+                name: 'deposit',
+                stateMutability: 'nonpayable',
+                inputs: [
+                    { type: 'uint256', name: 'assets' },
+                    { type: 'address', name: 'receiver' },
+                ],
+                outputs: [{ type: 'uint256' }],
+            },
+            {
+                name: 'mint',
+                stateMutability: 'nonpayable',
+                inputs: [
+                    { type: 'uint256', name: 'shares' },
+                    { type: 'address', name: 'receiver' },
+                ],
+                outputs: [{ type: 'uint256' }],
+            },
+        ]
+
+        // Helper to compare input/output types (ignoring names for flexibility)
+        function compareParams(abiParams: any[], requiredParams: any[]) {
+            if (abiParams.length !== requiredParams.length) return false
+            for (let i = 0; i < abiParams.length; i++) {
+                if (abiParams[i].type !== requiredParams[i].type) return false
+            }
+            return true
+        }
+
+        // Check all required functions
+        return requiredFunctions.every((reqFn) => {
+            const match = abi.find(
+                (item) =>
+                    item.type === 'function' &&
+                    item.name === reqFn.name &&
+                    item.stateMutability === reqFn.stateMutability &&
+                    compareParams(item.inputs, reqFn.inputs) &&
+                    compareParams(item.outputs, reqFn.outputs),
+            )
+            return !!match
+        })
+    }
 }
