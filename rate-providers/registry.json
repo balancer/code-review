@@ -4674,7 +4674,7 @@
     "0x7481373be81ad9bff00dfb03717cf9854a4ff077": {
       "asset": "0xF6F87073cF8929C206A77b0694619DC776F89885",
       "name": "VarlamoreUSDCGrowthRateProvider.md",
-      "summary": "unsafe",
+      "summary": "safe",
       "review": "./VarlamoreUSDCGrowthRateProviderReviewe757.md",
       "warnings": [],
       "factory": "",
@@ -4683,7 +4683,7 @@
     "0x0e686cf5430a5b67d6a8d28907d8f8f7b2046128": {
       "asset": "0xDED4aC8645619334186f28B8798e07ca354CFa0e",
       "name": "VarlamoreSRateProvider.md",
-      "summary": "unsafe",
+      "summary": "safe",
       "review": "./VarlamoreSRateProviderReviewd14f.md",
       "warnings": [],
       "factory": "",
@@ -4697,7 +4697,7 @@
     "0x9fac714bfdd10090cafb49d002cfa82e83362ef5": {
       "asset": "0xb6A23cB29e512Df41876B28D7A848BD831f9c5Ba",
       "name": "VarlamorescUSDRateProvider.md",
-      "summary": "unsafe",
+      "summary": "safe",
       "review": "./VarlamorescUSDRateProviderReview54f5.md",
       "warnings": [],
       "factory": "",
