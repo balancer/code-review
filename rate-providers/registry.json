@@ -3181,6 +3181,15 @@
           "implementationReviewed": "0x5e90b0a657643c08a45cbd6a06337b37c98e1aa1"
         }
       ]
+    },
+    "0x50a6dBB52D271b68D17b018a5b60f0d0EB711e67": {
+      "asset": "0xDBDC1Ef57537E34680B898E1FEBD3D68c7389bCB",
+      "name": "StakedinfiniFiUSDRateProvider.md",
+      "summary": "safe",
+      "review": "./StakedinfiniFiUSDRateProviderReview1949.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   },
   "fantom": {

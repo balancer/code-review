@@ -533,6 +533,17 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0xDBDC1Ef57537E34680B898E1FEBD3D68c7389bCB": {
+      "asset": "0x48f9e38f3070AD8945DFEae3FA70987722E3D89c",
+      "name": "StakedinfiniFiUSDErc4626Vault.md",
+      "summary": "",
+      "review": "./StakedinfiniFiUSDErc4626VaultReviewc704.md",
+      "warnings": [],
+      "upgradeableComponents": [],
+      "canUseBufferForSwaps": "",
+      "useUnderlyingForAddRemove": "",
+      "useWrappedForAddRemove": ""
     }
   },
   "gnosis": {
