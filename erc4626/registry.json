@@ -301,6 +301,26 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": false
+    },
+    "0x98eFe85735F253a0ed0Be8e2915ff39f9e4AfF0F": {
+      "asset": "0x35E5dB674D8e93a03d814FA0ADa70731efe8a4b9",
+      "name": "WrappedExtraXBase USRErc4626Vault.md",
+      "summary": "safe",
+      "review": "./WrappedExtraXBase USRErc4626VaultReview1483.md",
+      "warnings": [],
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x09b11746dfd1b5a8325e30943f8b3d5000922e03",
+          "implementationReviewed": "0x77b0e1b55915169abe2353e354749dc901ebb086"
+        },
+        {
+          "entrypoint": "0x98efe85735f253a0ed0be8e2915ff39f9e4aff0f",
+          "implementationReviewed": "0x67a30aa0584fe9cc08b4dcee77e8a9bc89bfdf69"
+        }
+      ],
+      "canUseBufferForSwaps": false,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   },
   "ethereum": {
