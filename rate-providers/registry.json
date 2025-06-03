@@ -1607,6 +1607,24 @@
           "implementationReviewed": "0x77b0e1b55915169abe2353e354749dc901ebb086"
         }
       ]
+    },
+    "0x9caC674EADA0cfA8Fd6DD3ab4498E77E421A5a0B": {
+      "asset": "0x98eFe85735F253a0ed0Be8e2915ff39f9e4AfF0F",
+      "name": "WrappedExtraXBase USRRateProvider.md",
+      "summary": "safe",
+      "review": "./WrappedExtraXBase USRRateProviderReview6fec.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x98efe85735f253a0ed0be8e2915ff39f9e4aff0f",
+          "implementationReviewed": "0x67a30aa0584fe9cc08b4dcee77e8a9bc89bfdf69"
+        },
+        {
+          "entrypoint": "0x09b11746dfd1b5a8325e30943f8b3d5000922e03",
+          "implementationReviewed": "0x77b0e1b55915169abe2353e354749dc901ebb086"
+        }
+      ]
     }
   },
   "ethereum": {
