@@ -302,6 +302,26 @@
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": false
     },
+    "0x589A7339C6d0c8777E7429F57f2f95c069c37288": {
+      "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "name": "WrappedExtraFiX Base USDCErc4626Vault.md",
+      "summary": "safe",
+      "review": "./WrappedExtraFiX Base USDCErc4626VaultReview8e16.md",
+      "warnings": [],
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x589a7339c6d0c8777e7429f57f2f95c069c37288",
+          "implementationReviewed": "0x67a30aa0584fe9cc08b4dcee77e8a9bc89bfdf69"
+        },
+        {
+          "entrypoint": "0x09b11746dfd1b5a8325e30943f8b3d5000922e03",
+          "implementationReviewed": "0x77b0e1b55915169abe2353e354749dc901ebb086"
+        }
+      ],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
     "0x98eFe85735F253a0ed0Be8e2915ff39f9e4AfF0F": {
       "asset": "0x35E5dB674D8e93a03d814FA0ADa70731efe8a4b9",
       "name": "WrappedExtraXBase USRErc4626Vault.md",
