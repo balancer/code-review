@@ -318,7 +318,7 @@
           "implementationReviewed": "0x77b0e1b55915169abe2353e354749dc901ebb086"
         }
       ],
-      "canUseBufferForSwaps": false,
+      "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
     }
