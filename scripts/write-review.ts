@@ -1,6 +1,7 @@
 import path from 'path'
 import * as dotenv from 'dotenv'
 import yargs from 'yargs'
+import crypto from 'crypto'
 import { hideBin } from 'yargs/helpers'
 import { Address } from 'viem'
 
@@ -71,6 +72,8 @@ async function writeReviewAndUpdateRegistry(
         isUsable: `${hasInterfaceImplemented && rateInfo.scale18 ? 'USABLE' : 'UNUSABLE'}`,
     }
 
+    const shortUuid = crypto.randomBytes(2).toString('hex')
+
     const filledTemplate = template
         .replace('{{date}}', new Date().toLocaleDateString('en-GB'))
         .replace('{{rateProvider}}', contractName)
@@ -88,7 +91,7 @@ async function writeReviewAndUpdateRegistry(
         .replace('{{tenderlySimUrl}}', tenderlysimUrl)
 
     fs.writeFileSync(
-        `./rate-providers/${(contractName.charAt(0).toUpperCase() + contractName.slice(1)).replace(' ', '')}RateProviderReview.md`,
+        `./rate-providers/${(contractName.charAt(0).toUpperCase() + contractName.slice(1)).replace(' ', '')}RateProviderReview${shortUuid}.md`,
         filledTemplate,
     )
 
@@ -100,7 +103,7 @@ async function writeReviewAndUpdateRegistry(
         asset: rateProviderAsset,
         name: `${(contractName.charAt(0).toUpperCase() + contractName.slice(1)).replace(' ', '')}RateProvider.md`,
         summary: templateData.isUsable === 'USABLE' ? 'safe' : 'unsafe',
-        review: `./${(contractName.charAt(0).toUpperCase() + contractName.slice(1)).replace(' ', '')}RateProviderReview.md`,
+        review: `./${(contractName.charAt(0).toUpperCase() + contractName.slice(1)).replace(' ', '')}RateProviderReview${shortUuid}.md`,
         warnings: [],
         factory: '',
         upgradeableComponents: upgradeData.map((contract) => ({

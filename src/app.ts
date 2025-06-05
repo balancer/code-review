@@ -22,7 +22,7 @@ class RateProviderDataService {
     }
 
     private apiKey!: string
-    private tenderlySettings!: {
+    public tenderlySettings!: {
         accountSlug: string
         projectSlug: string
         apiKey: string
@@ -351,7 +351,7 @@ class RateProviderDataService {
                           throw new Error(`Environment variable is not set`)
                       })()
                 break
-            case 'Arbitrum':
+            case 'Arbitrum One':
                 this.apiKey = process.env.ARBITRUM_SCAN_API_KEY
                     ? process.env.ARBITRUM_SCAN_API_KEY
                     : (() => {
