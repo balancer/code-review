@@ -1,3 +1,5 @@
 # Ignore all Markdown files:
 **/*.md
 
+# Ignore the settings
+tsconfig.json

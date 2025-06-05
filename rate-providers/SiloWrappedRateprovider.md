@@ -13,6 +13,11 @@
     - [sonic:0x71453d205b1437f7f3057ce480cdb7a02c1568a0](https://sonicscan.org/address/0x71453d205b1437f7f3057ce480cdb7a02c1568a0#code)
     - [sonic:0x5f26085ad72aa51ed443d84c1f08bbaa7dd5425e](https://sonicscan.org/address/0x5f26085ad72aa51ed443d84c1f08bbaa7dd5425e#code)
     - [sonic:0xf9fe8c5009b1015363e4452e0ac1d45d3924b986](https://sonicscan.org/address/0xf9fe8c5009b1015363e4452e0ac1d45d3924b986#code)
+    - [sonic:0x4A3eA10da3c422d31485585096CD00fB5e9F1019](https://sonicscan.org/address/0x4A3eA10da3c422d31485585096CD00fB5e9F1019#code)
+    - [sonic:0x55613bbc6c383f3e73d48aaaa1bac14aae302771](https://sonicscan.org/address/0x55613bbc6c383f3e73d48aaaa1bac14aae302771#code)
+    - [sonic:0xeab98cbe0c92721fd1c38cad0deebaf575a08239](https://sonicscan.org/address/0xeab98cbe0c92721fd1c38cad0deebaf575a08239#code)
+    - [sonic:0xe508a70deef702d5cd1df120bf6936540c9a6b2d](https://sonicscan.org/address/0xe508a70deef702d5cd1df120bf6936540c9a6b2d#code)
+    - [sonic:0xe6a932e53d759ff491c3f56c4e63609140d7c044](https://sonicscan.org/address/0xe6a932e53d759ff491c3f56c4e63609140d7c044#code)
 - Audits:
     - [Silo V2 audits](https://docs.silo.finance/audits-and-tests)
 

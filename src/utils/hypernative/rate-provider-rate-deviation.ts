@@ -1,0 +1,52 @@
+export const rateProviderRateDeviationRule = {
+    agentType: 'genericNodeQuery',
+    agentName: 'rate provider rate deviation',
+    state: 'enabled',
+    rule: {
+        chain: 'base',
+        input: [],
+        period: 10,
+        funcSig: 'getRate()',
+        operands: ['10'],
+        operator: 'changed_by',
+        conditions: [],
+        periodUnit: 'blocks',
+        ruleString:
+            'On Base: when 0x98..8282: getRate().uint256 changed by 10% in less than 10 blocks.\nSample every 5 blocks',
+        outputIndex: 0,
+        inputDataType: [],
+        thresholdType: 'relative',
+        outputDataType: ['uint256'],
+        samplingPeriod: 5,
+        contractAddress: '0x98feb82591069e793a5f76a6fe78d97b03418282',
+        operandsExponent: [0],
+        isReminderEnabled: false,
+        samplingPeriodUnit: 'blocks',
+        contractAddressAlias: '0x98..8282',
+        contractFunctionObject: {
+            name: 'getRate',
+            type: 'function',
+            inputs: [],
+            funcSig: 'getRate()',
+            outputs: [
+                {
+                    name: '',
+                    type: 'uint256',
+                    internalType: 'uint256',
+                },
+            ],
+            stateMutability: 'view',
+        },
+    },
+    severity: 'Medium',
+    muteDuration: 0,
+    channelsConfigurations: [
+        {
+            id: 2451,
+            name: 'rate-provider-alerts',
+        },
+    ],
+    securitySuitIds: [1373],
+    remindersConfigurations: [],
+    delay: 600,
+}
