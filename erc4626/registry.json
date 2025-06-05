@@ -520,9 +520,9 @@
       "summary": "safe",
       "review": "/wstUsrReview.md",
       "warnings": [],
-      "canUseBufferForSwaps": false,
-      "useUnderlyingForAddRemove": false,
-      "useWrappedForAddRemove": false
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   },
   "gnosis": {
