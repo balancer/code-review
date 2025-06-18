@@ -564,6 +564,16 @@
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
     },
+    "0x1202F5C7b4B9E47a1A484E8B270be34dbbC75055": {
+      "asset": "0x66a1E37c9b0eAddca17d3662D6c05F4DECf3e110",
+      "name": "wstUSR",
+      "summary": "safe",
+      "review": "/wstUsrReview.md",
+      "warnings": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
     "0x6A1792a91C08e9f0bFe7a990871B786643237f0F": {
       "asset": "0x8292Bb45bf1Ee4d140127049757C2E0fF06317eD",
       "name": "Wrapped Aave Ethereum RLUSD",

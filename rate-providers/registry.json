@@ -3182,6 +3182,28 @@
       "factory": "",
       "upgradeableComponents": []
     },
+    "0x100ab8fb135a76d1014f529041F35a1a9e6c78a2": {
+      "asset": "0x1202F5C7b4B9E47a1A484E8B270be34dbbC75055",
+      "name": "WrappedstUSRRateProvider.md",
+      "summary": "safe",
+      "review": "./WrappedstUSRRateProviderReview.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x6c8984bc7dbbedaf4f6b2fd766f16ebb7d10aab4",
+          "implementationReviewed": "0xba1600735a039e2b3bf1d1d2f1a7f80f45973da7"
+        },
+        {
+          "entrypoint": "0x66a1e37c9b0eaddca17d3662d6c05f4decf3e110",
+          "implementationReviewed": "0xef4c4bcbe105170810b6ef58a286d9ce97a1fabe"
+        },
+        {
+          "entrypoint": "0x1202f5c7b4b9e47a1a484e8b270be34dbbc75055",
+          "implementationReviewed": "0x6ed5485d079d7f0cfa8e395499b3c01a6c359cc0"
+        }
+      ]
+    },
     "0x7C40E25A57BC93ef7Ee3506F111D3E108f7Ae0a8": {
       "asset": "0xBFB53910C935E837C74e6C4EF584557352d20fDe",
       "name": "StakingLPUsdcRateProvider.md",
