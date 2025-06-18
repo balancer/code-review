@@ -147,9 +147,7 @@
       "name": "Superform USDC",
       "summary": "safe",
       "review": "./SuperformSuperVaultReview.md",
-      "warnings": [
-        "buffer"
-      ],
+      "warnings": ["buffer"],
       "canUseBufferForSwaps": false,
       "useUnderlyingForAddRemove": false,
       "useWrappedForAddRemove": true
@@ -351,9 +349,7 @@
       "name": "Superform USDC",
       "summary": "safe",
       "review": "./SuperformSuperVaultReview.md",
-      "warnings": [
-        "buffer"
-      ],
+      "warnings": ["buffer"],
       "canUseBufferForSwaps": false,
       "useUnderlyingForAddRemove": false,
       "useWrappedForAddRemove": true
@@ -616,9 +612,7 @@
       "name": "sDAI",
       "summary": "safe",
       "review": "./sDaiReview.md",
-      "warnings": [
-        "buffer"
-      ],
+      "warnings": ["buffer"],
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": false,
       "useWrappedForAddRemove": true
@@ -956,7 +950,7 @@
     "0xEEEEEEE6d95E55A468D32FeB5d6648754d10A967": {
       "asset": "0x29219dd400f2Bf60E5a23d13Be72B486D4038894",
       "name": "WrappedStabilityUSDCErc4626Vault.md",
-      "summary": "",
+      "summary": "safe",
       "review": "./WrappedStabilityUSDCErc4626VaultReviewaa84.md",
       "warnings": [],
       "upgradeableComponents": [
@@ -1073,14 +1067,14 @@
           "implementationReviewed": "0x893fd046386859db3f1930104685fcbd38afc229"
         }
       ],
-      "canUseBufferForSwaps": "",
-      "useUnderlyingForAddRemove": "",
-      "useWrappedForAddRemove": ""
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0xccccCCcca9FC69a2b32408730011EdB3205A93A1": {
       "asset": "0xd3DCe716f3eF535C5Ff8d041c1A41C3bd89b97aE",
       "name": "WrappedStabilityscUSDErc4626Vault.md",
-      "summary": "",
+      "summary": "safe",
       "review": "./WrappedStabilityscUSDErc4626VaultReviewbbf6.md",
       "warnings": [],
       "upgradeableComponents": [
@@ -1149,9 +1143,9 @@
           "implementationReviewed": "0x893fd046386859db3f1930104685fcbd38afc229"
         }
       ],
-      "canUseBufferForSwaps": "",
-      "useUnderlyingForAddRemove": "",
-      "useWrappedForAddRemove": ""
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   },
   "avalanche": {
