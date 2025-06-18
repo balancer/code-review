@@ -592,7 +592,7 @@
       "warnings": [],
       "upgradeableComponents": [],
       "canUseBufferForSwaps": true,
-      "useUnderlyingForAddRemove": true,
+      "useUnderlyingForAddRemove": false,
       "useWrappedForAddRemove": true
     }
   },
