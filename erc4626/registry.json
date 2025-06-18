@@ -147,7 +147,9 @@
       "name": "Superform USDC",
       "summary": "safe",
       "review": "./SuperformSuperVaultReview.md",
-      "warnings": ["buffer"],
+      "warnings": [
+        "buffer"
+      ],
       "canUseBufferForSwaps": false,
       "useUnderlyingForAddRemove": false,
       "useWrappedForAddRemove": true
@@ -349,7 +351,9 @@
       "name": "Superform USDC",
       "summary": "safe",
       "review": "./SuperformSuperVaultReview.md",
-      "warnings": ["buffer"],
+      "warnings": [
+        "buffer"
+      ],
       "canUseBufferForSwaps": false,
       "useUnderlyingForAddRemove": false,
       "useWrappedForAddRemove": true
@@ -612,7 +616,9 @@
       "name": "sDAI",
       "summary": "safe",
       "review": "./sDaiReview.md",
-      "warnings": ["buffer"],
+      "warnings": [
+        "buffer"
+      ],
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": false,
       "useWrappedForAddRemove": true
@@ -946,6 +952,206 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0xEEEEEEE6d95E55A468D32FeB5d6648754d10A967": {
+      "asset": "0x29219dd400f2Bf60E5a23d13Be72B486D4038894",
+      "name": "WrappedStabilityUSDCErc4626Vault.md",
+      "summary": "",
+      "review": "./WrappedStabilityUSDCErc4626VaultReviewaa84.md",
+      "warnings": [],
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x96a8055090e87bfe18bdf3794e9d676f196efd80",
+          "implementationReviewed": "0xb966706536624f9cee50db67dc31762bfa20cf51"
+        },
+        {
+          "entrypoint": "0x7fc269e8a80d4cfbbcfab99a6bceac06227e2336",
+          "implementationReviewed": "0xb966706536624f9cee50db67dc31762bfa20cf51"
+        },
+        {
+          "entrypoint": "0x29219dd400f2bf60e5a23d13be72b486d4038894",
+          "implementationReviewed": "0x229e64252e2901a424600e22c28a722404d92dcc"
+        },
+        {
+          "entrypoint": "0xd3c586eec1c6c3ec41d276a23944dea080edcf7f",
+          "implementationReviewed": "0xe5b80f6a3fa544de65fe2103b7f63e50bb2f607d"
+        },
+        {
+          "entrypoint": "0x22222222780038f8817b3de825a070225e6d9874",
+          "implementationReviewed": "0x97d6bda927457d22dfbef2cbd0c9e1850b69a2a5"
+        },
+        {
+          "entrypoint": "0x422025182dd83a610bfa8b20550dcccdf94dc549",
+          "implementationReviewed": "0xc1e76ab444b08b1ec7af2a5405490ad1bd1d3b1d"
+        },
+        {
+          "entrypoint": "0xd267a646213e859323d8765cbb3d00befed7036b",
+          "implementationReviewed": "0xbb6a8b4d47efa27d15d4f2d6739a63634f43c401"
+        },
+        {
+          "entrypoint": "0x73b28fcebed28d69b46b84d2c8784ea8ccb3514d",
+          "implementationReviewed": "0x0cda6aab8cda48d0f9b85a8f5a6031adc8987a55"
+        },
+        {
+          "entrypoint": "0x709944a48caf83535e43471680fda4905fb3920a",
+          "implementationReviewed": "0x709944a48caf83535e43471680fda4905fb3920a"
+        },
+        {
+          "entrypoint": "0x38274302e0dd5779b4e0a3e401023cfb48ff5c23",
+          "implementationReviewed": "0xb966706536624f9cee50db67dc31762bfa20cf51"
+        },
+        {
+          "entrypoint": "0x4aca671a420eeb58ecafe83700686a2ad06b20d8",
+          "implementationReviewed": "0x15cfd916b22c6bb5e0bbfa705c87ba14f20d9933"
+        },
+        {
+          "entrypoint": "0x2b233014379923d4ba7b52a6feda5dc910a6c05d",
+          "implementationReviewed": "0x72fcdc97699f53c5a0679bfe24e38c5c99a6471a"
+        },
+        {
+          "entrypoint": "0xd6ac0e3fbaeee2ad32c139eb194612095a1f3a99",
+          "implementationReviewed": "0x0cda6aab8cda48d0f9b85a8f5a6031adc8987a55"
+        },
+        {
+          "entrypoint": "0xb4b88a8a725210bd6220bbc234706bc5b96032a0",
+          "implementationReviewed": "0x045c8a060474874c5918717ecd55f07b62c59a90"
+        },
+        {
+          "entrypoint": "0xab7f5ba1ea7434730a3976a45662833e6a6d0bc0",
+          "implementationReviewed": "0x0cda6aab8cda48d0f9b85a8f5a6031adc8987a55"
+        },
+        {
+          "entrypoint": "0xf6fc4ea6c1e6dcb68c5ffab82f6c0ad2d4c94df9",
+          "implementationReviewed": "0xc24646f2b817e907397d05cff739794808e43753"
+        },
+        {
+          "entrypoint": "0xd248c4b6ec709feed32851a9f883afeac294ad30",
+          "implementationReviewed": "0xb966706536624f9cee50db67dc31762bfa20cf51"
+        },
+        {
+          "entrypoint": "0x4895151c8eb560c0de6bd29a3916610ddfceb094",
+          "implementationReviewed": "0x56081eb97deac008d999120cfc9062e9890989c7"
+        },
+        {
+          "entrypoint": "0x514ebea728f377563f66828300f27d36c81d8be0",
+          "implementationReviewed": "0xe33c7bb866c2e485292fcbb13255ba24e82b111c"
+        },
+        {
+          "entrypoint": "0x7a41df9418509725ab5637f1984f3e6d6e6c899b",
+          "implementationReviewed": "0x3824bc80021b6eb08ca08bd15234829a1ef62805"
+        },
+        {
+          "entrypoint": "0xeeeeeee6d95e55a468d32feb5d6648754d10a967",
+          "implementationReviewed": "0x893fd046386859db3f1930104685fcbd38afc229"
+        },
+        {
+          "entrypoint": "0xa51e7204054464e656b3658e7dbb63d9b0f150f1",
+          "implementationReviewed": "0xb966706536624f9cee50db67dc31762bfa20cf51"
+        },
+        {
+          "entrypoint": "0xa21b35adce4f5d41dce01099c209e735a774891a",
+          "implementationReviewed": "0x0cda6aab8cda48d0f9b85a8f5a6031adc8987a55"
+        },
+        {
+          "entrypoint": "0x2ebb3c7808b86f94df9731ae830ab6ea8cb431d8",
+          "implementationReviewed": "0xb966706536624f9cee50db67dc31762bfa20cf51"
+        },
+        {
+          "entrypoint": "0x5b2e7653c6ada03c76c144b6155340a5c5578fba",
+          "implementationReviewed": "0x72fcdc97699f53c5a0679bfe24e38c5c99a6471a"
+        },
+        {
+          "entrypoint": "0x0c8ce5afc38c94e163f0ddeb2da65df4904734f3",
+          "implementationReviewed": "0xb966706536624f9cee50db67dc31762bfa20cf51"
+        },
+        {
+          "entrypoint": "0x9a9092fd248e9ec45be768c0965c3e0426468f96",
+          "implementationReviewed": "0xffc80a66ddb43fe4c6b3444f00919cf560fe2fb8"
+        },
+        {
+          "entrypoint": "0xEEEEEEE6d95E55A468D32FeB5d6648754d10A967",
+          "implementationReviewed": "0x893fd046386859db3f1930104685fcbd38afc229"
+        }
+      ],
+      "canUseBufferForSwaps": "",
+      "useUnderlyingForAddRemove": "",
+      "useWrappedForAddRemove": ""
+    },
+    "0xccccCCcca9FC69a2b32408730011EdB3205A93A1": {
+      "asset": "0xd3DCe716f3eF535C5Ff8d041c1A41C3bd89b97aE",
+      "name": "WrappedStabilityscUSDErc4626Vault.md",
+      "summary": "",
+      "review": "./WrappedStabilityscUSDErc4626VaultReviewbbf6.md",
+      "warnings": [],
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xb4b88a8a725210bd6220bbc234706bc5b96032a0",
+          "implementationReviewed": "0x045c8a060474874c5918717ecd55f07b62c59a90"
+        },
+        {
+          "entrypoint": "0xc53172db113fbb310a4d53ec3bcfa60f233abb73",
+          "implementationReviewed": "0xde4b4285127e93eb0022069792977afe3ffcc4f0"
+        },
+        {
+          "entrypoint": "0x6ffecd5bac804aaae0bed79596af05841819d471",
+          "implementationReviewed": "0xd0d58f7436e668b2cc5f9196dc3207aff9f377c3"
+        },
+        {
+          "entrypoint": "0x33333333c480194b5b651987b7d00b20ddcbd287",
+          "implementationReviewed": "0x97d6bda927457d22dfbef2cbd0c9e1850b69a2a5"
+        },
+        {
+          "entrypoint": "0x7362bfd5e3efddd99fb22f982b8963decfbe024a",
+          "implementationReviewed": "0xd0d58f7436e668b2cc5f9196dc3207aff9f377c3"
+        },
+        {
+          "entrypoint": "0x422025182dd83a610bfa8b20550dcccdf94dc549",
+          "implementationReviewed": "0xc1e76ab444b08b1ec7af2a5405490ad1bd1d3b1d"
+        },
+        {
+          "entrypoint": "0xeeb1dc1ca7ffc5b54ad1cc4c1088db4e5657cb6c",
+          "implementationReviewed": "0x11f95aaa59f1ad89576c61e3c9cd24df1fdcf46f"
+        },
+        {
+          "entrypoint": "0xf075cc8660b51d0b8a4474e3f47edac5fa034cfb",
+          "implementationReviewed": "0x11f95aaa59f1ad89576c61e3c9cd24df1fdcf46f"
+        },
+        {
+          "entrypoint": "0xb38d431e932fea77d1df0ae0dfe4400c97e597b8",
+          "implementationReviewed": "0x11f95aaa59f1ad89576c61e3c9cd24df1fdcf46f"
+        },
+        {
+          "entrypoint": "0xfbb02d242527f3b56af3f087acddaa25d5e8acc4",
+          "implementationReviewed": "0xb966706536624f9cee50db67dc31762bfa20cf51"
+        },
+        {
+          "entrypoint": "0xb94b31f3dedaadbda6aa1cec4f49749273929972",
+          "implementationReviewed": "0xb966706536624f9cee50db67dc31762bfa20cf51"
+        },
+        {
+          "entrypoint": "0xcccccccca9fc69a2b32408730011edb3205a93a1",
+          "implementationReviewed": "0x893fd046386859db3f1930104685fcbd38afc229"
+        },
+        {
+          "entrypoint": "0x4aca671a420eeb58ecafe83700686a2ad06b20d8",
+          "implementationReviewed": "0x15cfd916b22c6bb5e0bbfa705c87ba14f20d9933"
+        },
+        {
+          "entrypoint": "0x14d17757e88df8f59069ffa573570a50ed652866",
+          "implementationReviewed": "0xb966706536624f9cee50db67dc31762bfa20cf51"
+        },
+        {
+          "entrypoint": "0xd42b93cdd33873eed36ceff6fb1ca78c54943d9d",
+          "implementationReviewed": "0x2ca56b6a9fe5c62a10d54fd6316bbf60799fe95e"
+        },
+        {
+          "entrypoint": "0xccccCCcca9FC69a2b32408730011EdB3205A93A1",
+          "implementationReviewed": "0x893fd046386859db3f1930104685fcbd38afc229"
+        }
+      ],
+      "canUseBufferForSwaps": "",
+      "useUnderlyingForAddRemove": "",
+      "useWrappedForAddRemove": ""
     }
   },
   "avalanche": {
