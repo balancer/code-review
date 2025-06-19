@@ -591,8 +591,8 @@
       "review": "./StakedinfiniFiUSDErc4626VaultReviewc704.md",
       "warnings": [],
       "upgradeableComponents": [],
-      "canUseBufferForSwaps": true,
-      "useUnderlyingForAddRemove": true,
+      "canUseBufferForSwaps": false,
+      "useUnderlyingForAddRemove": false,
       "useWrappedForAddRemove": true
     }
   },
