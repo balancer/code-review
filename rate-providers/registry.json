@@ -1288,7 +1288,7 @@
       "warnings": [
         ""
       ],
-      "factory": "0xeC2C6184761ab7fE061130B4A7e3Da89c72F8395",
+      "factory": "",
       "upgradeableComponents": [
         {
           "entrypoint": "0xA3D68b74bF0528fdD07263c60d6488749044914b",
