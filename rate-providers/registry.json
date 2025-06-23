@@ -1278,24 +1278,24 @@
       ],
       "factory": "0x76578ecf9a141296Ec657847fb45B0585bCDa3a6",
       "upgradeableComponents": []
+    },
+    "0x8Be2e3D4b85d05cac2dBbAC6c42798fb342aef45": {
+        "asset": "0xA3D68b74bF0528fdD07263c60d6488749044914b",
+        "name": "Euler weETH / weETH CombinedRateProvider",
+        "summary": "safe",
+        "review": "./CombinedRateProvider.md",
+        "warnings": [
+          ""
+        ],
+        "factory": "0xeC2C6184761ab7fE061130B4A7e3Da89c72F8395",
+        "upgradeableComponents": [
+          {
+            "entrypoint": "0xA3D68b74bF0528fdD07263c60d6488749044914b",
+            "implementationReviewed": "0x08DB0DB9b5F2dcbBFDc26FF411FB2026e81DA748"
+          }
+        ]
     }
   },
-  "0x8Be2e3D4b85d05cac2dBbAC6c42798fb342aef45": {
-      "asset": "0xA3D68b74bF0528fdD07263c60d6488749044914b",
-      "name": "Euler weETH / weETH CombinedRateProvider",
-      "summary": "safe",
-      "review": "./CombinedRateProvider.md",
-      "warnings": [
-        ""
-      ],
-      "factory": "",
-      "upgradeableComponents": [
-        {
-          "entrypoint": "0xA3D68b74bF0528fdD07263c60d6488749044914b",
-          "implementationReviewed": "0x08DB0DB9b5F2dcbBFDc26FF411FB2026e81DA748"
-        }
-      ]
-    },
   "base": {
     "0x829Be222f36C6B7D48a7e1270b3c070BA2Ee98C4": {
       "asset": "0xe9F2a5F9f3c846f29066d7fB3564F8E6B6b2D65b",
