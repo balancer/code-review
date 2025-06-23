@@ -1267,6 +1267,17 @@
           "implementationReviewed": "0x639C72EEA35E50F5e2911891389FC4E8422587C4"
         }
       ]
+    },
+    "0x332648a03FE7F43f6d835D9547CD0FD1BB420944": {
+      "asset": "0xA3D68b74bF0528fdD07263c60d6488749044914b",
+      "name": "weETH Rate Provider",
+      "summary": "safe",
+      "review": "./ChainLinkRateProvider.md",
+      "warnings": [
+        "chainlink"
+      ],
+      "factory": "0x76578ecf9a141296Ec657847fb45B0585bCDa3a6",
+      "upgradeableComponents": []
     }
   },
   "base": {
