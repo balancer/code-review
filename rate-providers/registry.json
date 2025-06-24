@@ -1205,9 +1205,7 @@
       "name": "weETH Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": [
-        "chainlink"
-      ],
+      "warnings": ["chainlink"],
       "factory": "0x76578ecf9a141296Ec657847fb45B0585bCDa3a6",
       "upgradeableComponents": []
     },
@@ -1216,9 +1214,7 @@
       "name": "Euler weETH / weETH CombinedRateProvider",
       "summary": "safe",
       "review": "./CombinedRateProvider.md",
-      "warnings": [
-        ""
-      ],
+      "warnings": [""],
       "factory": "0xeC2C6184761ab7fE061130B4A7e3Da89c72F8395",
       "upgradeableComponents": [
         {
@@ -5014,6 +5010,20 @@
         {
           "entrypoint": "0xfbb02d242527f3b56af3f087acddaa25d5e8acc4",
           "implementationReviewed": "0xb966706536624f9cee50db67dc31762bfa20cf51"
+        }
+      ]
+    },
+    "0x5be9a3ffa2ef015d038dc6b7739a47ac89889237": {
+      "asset": "0x9A1BF5365edBB99C2c61CA6D9ffAd0B705ACfc6F",
+      "name": "VarlamoredUSDVaultRateProvider.md",
+      "summary": "safe",
+      "review": "./VarlamoredUSDVaultRateProviderReview4978.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x53a6abb52b2f968fa80df6a894e4f1b1020da975",
+          "implementationReviewed": "0xa140c97eff565d50cfd320fe66d27c466cc0d327"
         }
       ]
     }

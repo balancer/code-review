@@ -1156,6 +1156,22 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0x9A1BF5365edBB99C2c61CA6D9ffAd0B705ACfc6F": {
+      "asset": "0x53a6aBb52B2F968fA80dF6A894e4f1b1020DA975",
+      "name": "VarlamoredUSDVaultErc4626Vault.md",
+      "summary": "safe",
+      "review": "./VarlamoredUSDVaultErc4626VaultReview5852.md",
+      "warnings": [],
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x53a6abb52b2f968fa80df6a894e4f1b1020da975",
+          "implementationReviewed": "0xa140c97eff565d50cfd320fe66d27c466cc0d327"
+        }
+      ],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   },
   "avalanche": {
