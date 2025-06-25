@@ -5026,6 +5026,15 @@
           "implementationReviewed": "0xa140c97eff565d50cfd320fe66d27c466cc0d327"
         }
       ]
+    },
+    "0x95008afd2bd9730df545f74885bb816b3a07625a": {
+      "asset": "0x592D1e187729C76EfacC6dfFB9355bd7BF47B2a7",
+      "name": "Re7scUSDRateProvider.md",
+      "summary": "safe",
+      "review": "./Re7scUSDRateProviderReview4fe5.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   }
 }
