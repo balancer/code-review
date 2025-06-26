@@ -1029,6 +1029,24 @@
         }
       ]
     },
+    "0x3f83967f262a1aef68cfc6c884be8b75f06947c3": {
+      "asset": "0x79459f4C9AfC902488109D058C3E76ed0B037c41",
+      "name": "Aave-GHO ERC4626RateProvider",
+      "summary": "safe",
+      "review": "./statATokenv2RateProvider.md",
+      "warnings": [""],
+      "factory": "0xfCe81cafe4b3F7e2263EFc2d907f488EBF2B238E",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x79459f4C9AfC902488109D058C3E76ed0B037c41",
+          "implementationReviewed": "0x88D2FD5B62BBf2038e2246D9B9ad24f823306FCB"
+        },
+        {
+          "entrypoint": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+          "implementationReviewed": "0xB7467b66d86cE80CC258f28D266A18A51DB7FAC8"
+        }
+      ]
+    },
     "0x7DB6B5bD0E9EAC1E050544f478961830cc676d30": {
       "asset": "0x68088C91446c7bEa49ea7Dbd3B96Ce62B272DC96",
       "name": "StakeddeUSDRateProvider.md",
