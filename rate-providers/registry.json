@@ -4136,6 +4136,20 @@
           "implementationReviewed": "0x263d5be22e9a16e7a9c0da1649e540cf053f7563"
         }
       ]
+    },
+    "0x62ce65fe49dccac248806ea7b374900dbe68c734": {
+      "asset": "0xCF9326e24EBfFBEF22ce1050007A43A3c0B6DB55",
+      "name": "SparkUSDCVaultRateProvider.md",
+      "summary": "safe",
+      "review": "./SparkUSDCVaultRateProviderReview53fb.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xcf9326e24ebffbef22ce1050007a43a3c0b6db55",
+          "implementationReviewed": "0x3a1d3a9b0ed182d7b17aa61393d46a4f4ee0cea5"
+        }
+      ]
     }
   },
   "polygon": {
