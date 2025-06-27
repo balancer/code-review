@@ -1029,6 +1029,20 @@
         }
       ]
     },
+    "0x3f83967f262a1aef68cfc6c884be8b75f06947c3": {
+      "asset": "0x79459f4C9AfC902488109D058C3E76ed0B037c41",
+      "name": "WrappedAaveAvalanche GHORateProvider.md",
+      "summary": "safe",
+      "review": "./WrappedAaveAvalanche GHORateProviderReview9261.md",
+      "warnings": [],
+      "factory": "0xfCe81cafe4b3F7e2263EFc2d907f488EBF2B238E",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x79459f4c9afc902488109d058c3e76ed0b037c41",
+          "implementationReviewed": "0x88D2FD5B62BBf2038e2246D9B9ad24f823306FCB"
+        }
+      ]
+    },
     "0x7DB6B5bD0E9EAC1E050544f478961830cc676d30": {
       "asset": "0x68088C91446c7bEa49ea7Dbd3B96Ce62B272DC96",
       "name": "StakeddeUSDRateProvider.md",

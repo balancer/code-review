@@ -1296,6 +1296,26 @@
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
     },
+    "0x79459f4C9AfC902488109D058C3E76ed0B037c41": {
+      "asset": "0xfc421aD3C883Bf9E7C4f42dE845C4e4405799e73",
+      "name": "WrappedAaveAvalanche GHOErc4626Vault.md",
+      "summary": "safe",
+      "review": "./WrappedAaveAvalanche GHOErc4626VaultReviewf836.md",
+      "warnings": [],
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x79459f4c9afc902488109d058c3e76ed0b037c41",
+          "implementationReviewed": "0x88D2FD5B62BBf2038e2246D9B9ad24f823306FCB"
+        },
+        {
+          "entrypoint": "0x79459f4C9AfC902488109D058C3E76ed0B037c41",
+          "implementationReviewed": "0x88D2FD5B62BBf2038e2246D9B9ad24f823306FCB"
+        }
+      ],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
     "0x39dE0f00189306062D79eDEC6DcA5bb6bFd108f9": {
       "asset": "0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E",
       "name": "EVKVaulteUSDC-2Erc4626Vault.md",
