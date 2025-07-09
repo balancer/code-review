@@ -5063,6 +5063,24 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0xf26d3b7f58bedd8539810c4a27be801db3b2c7ec": {
+      "asset": "0x67A298e5B65dB2b4616E05C3b455E017275f53cB",
+      "name": "LiquidStakedRezerve.moneyRateProvider.md",
+      "summary": "safe",
+      "review": "./LiquidStakedRezerve.moneyRateProviderReviewfd62.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x67a298e5b65db2b4616e05c3b455e017275f53cb",
+          "implementationReviewed": "0xed129a05430caa8b05e7ec48e6273a14ea7ef9ec"
+        },
+        {
+          "entrypoint": "0xd060499ddc9cb7deb07f080baeb1add36aa2c650",
+          "implementationReviewed": "0x5813a080792346497366b38d69a6577c7a59b1df"
+        }
+      ]
     }
   }
 }

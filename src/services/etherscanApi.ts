@@ -31,7 +31,9 @@ class EtherscanApi {
     ): Promise<{ address: Address; deploymentTxHash: Hex }[]> {
         const apiUrl = this.getApiUrl()
         const fetchingUrl = `${apiUrl}?module=contract&action=getcontractcreation&contractaddresses=${addresses.join(',')}&apikey=${this.apiKey}`
+        console.log(`Fetching deployment transaction hashes from: ${fetchingUrl}`)
         const data: TransactionData = await this.fetchFromApi(fetchingUrl)
+        await new Promise((f) => setTimeout(f, 5000))
         return data.result.map((entry, index) => ({
             address: addresses[index],
             deploymentTxHash: entry.txHash,
