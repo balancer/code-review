@@ -5081,6 +5081,24 @@
           "implementationReviewed": "0x5813a080792346497366b38d69a6577c7a59b1df"
         }
       ]
+    },
+    "0x594e86dc05adcd806faba336cf9bf7ae988a07fd": {
+      "asset": "0xc7990369DA608C2F4903715E3bD22f2970536C29",
+      "name": "StakedmsUSDRateProvider.md",
+      "summary": "safe",
+      "review": "./StakedmsUSDRateProviderReview7d83.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xc7990369da608c2f4903715e3bd22f2970536c29",
+          "implementationReviewed": "0x688d423add556263fbf64cdf4fa6d301cce0aecd"
+        },
+        {
+          "entrypoint": "0xe5fb2ed6832def99dde57c0b9d9a56537c89121d",
+          "implementationReviewed": "0x9916673dcdcfedf7206583a83d5a2b4388b2b355"
+        }
+      ]
     }
   }
 }
