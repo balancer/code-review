@@ -689,6 +689,15 @@
       ]
     }
   },
+  "0xb5AF5dEfD471990545C7E416868ef054b56EC807": {
+      "asset": "0x0c06cCF38114ddfc35e07427B9424adcca9F44F8",
+      "name": "EURe Rate Provider",
+      "summary": "safe",
+      "review": "./ChainLinkRateProvider.md",
+      "warnings": ["chainlink"],
+      "factory": "0x5dbad78818d4c8958eff2d5b95b28385a22113cd",
+      "upgradeableComponents": []
+    },
   "avalanche": {
     "0xd6Fd021662B83bb1aAbC2006583A62Ad2Efb8d4A": {
       "asset": "0x12d8ce035c5de3ce39b1fdd4c1d5a745eaba3b8c",
