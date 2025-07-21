@@ -19,6 +19,7 @@ Rate Provider Factories for reference
 | Polygon    | 0xa3b370092aeb56770B23315252aB5E16DAcBF62B | 0x3e89cc86307aF44A77EB29d0c4163d515D348313 |
 | Sepolia    | 0xA8920455934Da4D853faac1f94Fe7bEf72943eF1 | N/A                                        |
 | zkEVM      | 0x4132f7AcC9dB7A6cF7BE2Dd3A9DC8b30C7E6E6c8 | N/A                                        |
+| HyperEVM   | 0x03362f847b4fabc12e1ce98b6b59f94401e4588e | 0xec2c6184761ab7fe061130b4a7e3da89c72f8395 |
 
 Rate Transformer Factories 
 Use these factories when an ERC4626 vault contains a yield bearing token to combine their resepctive rates of growth. This denominates the vault asset in the underlying for correlated pairs. For example Aave-wstETH pairing with Aave-wETH by denominating the assets in wETH.
@@ -42,7 +43,7 @@ Use this factories for Gyro pools. They report a static rate custom tailored to 
 Combined Rate Provider Factories
 Use this factories to combine rate providers, similar to AaveRateTransformers. These factories take in two different rate providers, multipliy them, and display the result as getRate. Used for nested rates to denominate the base asset. For example Aave - wstETH has a LST rate and a lending vault rate which must be combined to result in the ETH rate. 
 
-| Network    | ConstantRateProviderFactory                 | 
+| Network    | CombinedRateProviderFactory                 | 
 | ---------- | -------------------------------------------|
 | Arbitrum   | 0x26dec0e6a4249f28e0f16a1a79808bf9ba308310 | 
 | Avalanche  | 0xeC2C6184761ab7fE061130B4A7e3Da89c72F8395 | 
@@ -50,6 +51,7 @@ Use this factories to combine rate providers, similar to AaveRateTransformers. T
 | Ethereum   | 0xd2cd8027f8c4b8ddcd1bfcd4e47587f41f2712f2 | 
 | Gnosis     | 0xec2c6184761ab7fe061130b4a7e3da89c72f8395 | 
 | Optimism   | 0x7d9507014cc564e3b95e4d0972a878d0862af7ae | 
+| HyperEVM   | 0x138d9e0d0cc4906c4cd865b38c9340a5cedd9850 |
 ---
 
 ## Setup
