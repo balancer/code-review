@@ -594,6 +594,17 @@
       "canUseBufferForSwaps": false,
       "useUnderlyingForAddRemove": false,
       "useWrappedForAddRemove": true
+    },
+    "0xBEeF1f5Bd88285E5B239B6AAcb991d38ccA23Ac9": {
+      "asset": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      "name": "SteakhouseinfiniFiUSDCErc4626Vault.md",
+      "summary": "safe",
+      "review": "./SteakhouseinfiniFiUSDCErc4626VaultReview9bbe.md",
+      "warnings": [],
+      "upgradeableComponents": [],
+      "canUseBufferForSwaps": false,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   },
   "gnosis": {

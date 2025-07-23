@@ -3312,6 +3312,15 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0x472fBA0f8bf427dbC8bfdCF6222e3e806E8C275b": {
+      "asset": "0xBEeF1f5Bd88285E5B239B6AAcb991d38ccA23Ac9",
+      "name": "SteakhouseinfiniFiUSDCRateProvider.md",
+      "summary": "safe",
+      "review": "./SteakhouseinfiniFiUSDCRateProviderReview6985.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   },
   "fantom": {
