@@ -1183,6 +1183,17 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0x92ebF5A1fB4061B45222a6d76ACCF4698bdE4b95": {
+      "asset": "0xd3DCe716f3eF535C5Ff8d041c1A41C3bd89b97aE",
+      "name": "GamiCapitalscUSDErc4626Vault.md",
+      "summary": "safe",
+      "review": "./GamiCapitalscUSDErc4626VaultReview6cee.md",
+      "warnings": [],
+      "upgradeableComponents": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   },
   "avalanche": {

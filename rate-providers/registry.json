@@ -5108,6 +5108,15 @@
           "implementationReviewed": "0x9916673dcdcfedf7206583a83d5a2b4388b2b355"
         }
       ]
+    },
+    "0xaca021e5299f68694fe33742bcd3ddfc7e2fef65": {
+      "asset": "0x92ebF5A1fB4061B45222a6d76ACCF4698bdE4b95",
+      "name": "Silo Vault scUSD Gami",
+      "summary": "safe",
+      "review": "./SonicUSDRateProviderReview4a80.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   }
 }
