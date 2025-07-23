@@ -1828,9 +1828,9 @@
   "hyperevm": {
     "0x1C5164A764844356d57654ea83f9f1B72Cd10db5": {
       "asset": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
-      "name": "HyUSD₮0(LoopedHYPE) - 9Erc4626Vault.md",
-      "summary": "",
-      "review": "./HyUSD₮0(LoopedHYPE) - 9Erc4626VaultReviewf4f5.md",
+      "name": "HyUSD₮0(LoopedHYPE).md",
+      "summary": "safe",
+      "review": "./HyUSDT0(LoopedHYPE).md",
       "warnings": [],
       "upgradeableComponents": [],
       "canUseBufferForSwaps": false,
