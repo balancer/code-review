@@ -5128,9 +5128,7 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
-    }
-  },
-  "hyperevm": {
+    },
     "0xfa5D15F15bC1BeBf3B413d9373E27586ac799dB6": {
       "asset": "0x9c59a9389D8f72DE2CdAf1126F36EA4790E2275e",
       "name": "FelixUSDhlRateProvider.md",
