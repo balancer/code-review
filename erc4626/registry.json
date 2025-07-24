@@ -1848,19 +1848,6 @@
     }
   },
   "hyperevm": {
-    "0x1C5164A764844356d57654ea83f9f1B72Cd10db5": {
-      "asset": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
-      "name": "HyUSD₮0(LoopedHYPE).md",
-      "summary": "safe",
-      "review": "./HyUSDT0(LoopedHYPE).md",
-      "warnings": [],
-      "upgradeableComponents": [],
-      "canUseBufferForSwaps": false,
-      "useUnderlyingForAddRemove": true,
-      "useWrappedForAddRemove": true
-    }
-  },
-  "hyperevm": {
     "0x53A333e51E96FE288bC9aDd7cdC4B1EAD2CD2FfA": {
       "asset": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
       "name": "GauntletUSDT0VaultErc4626Vault.md",
@@ -1877,6 +1864,17 @@
       "name": "FelixUSDhlErc4626Vault.md",
       "summary": "safe",
       "review": "./FelixUSDhlErc4626VaultReview8494.md",
+      "warnings": [],
+      "upgradeableComponents": [],
+      "canUseBufferForSwaps": false,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
+    "0x1C5164A764844356d57654ea83f9f1B72Cd10db5": {
+      "asset": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
+      "name": "HyUSD₮0(LoopedHYPE).md",
+      "summary": "safe",
+      "review": "./HyUSDT0(LoopedHYPE).md",
       "warnings": [],
       "upgradeableComponents": [],
       "canUseBufferForSwaps": false,
