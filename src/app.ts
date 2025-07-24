@@ -247,7 +247,7 @@ class RateProviderDataService {
      * @returns The URL of the shared simulation.
      */
     public async getTenderlySimulation(): Promise<string> {
-        const simulationUrl = `https://api.tenderly.co/api/v1/account/${this.tenderlySettings.accountSlug}/${this.tenderlySettings.projectSlug}/project/simulate`
+        const simulationUrl = `https://api.tenderly.co/api/v1/account/${this.tenderlySettings.accountSlug}/project/${this.tenderlySettings.projectSlug}/simulate`
 
         const callData = encodeFunctionData({
             abi: rateProviderAbi,
