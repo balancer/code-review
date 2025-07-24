@@ -29,5 +29,5 @@ Each of the items below represents an absolute requirement for the Rate Provider
 ** upgradeable in this context means that:
 - The contract is a proxy contract with an implementation sourced from Etherscan.
 
-The passing fork tests can be found at: https://github.com/balancer/balancer-v3-erc4626-tests/pull/72
+The passing fork tests can be found at: https://github.com/balancer/balancer-v3-erc4626-tests/blob/main/test/hyperevm/ERC4626hyUSD%E2%82%AE0(Looped%20HYPE).t.sol
     
