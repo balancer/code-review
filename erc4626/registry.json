@@ -1846,5 +1846,29 @@
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
     }
+  },
+  "hyperevm": {
+    "0x53A333e51E96FE288bC9aDd7cdC4B1EAD2CD2FfA": {
+      "asset": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
+      "name": "GauntletUSDT0VaultErc4626Vault.md",
+      "summary": "safe",
+      "review": "./GauntletUSDT0VaultErc4626VaultReview93a6.md",
+      "warnings": [],
+      "upgradeableComponents": [],
+      "canUseBufferForSwaps": false,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
+    "0x9c59a9389D8f72DE2CdAf1126F36EA4790E2275e": {
+      "asset": "0xb50A96253aBDF803D85efcDce07Ad8becBc52BD5",
+      "name": "FelixUSDhlErc4626Vault.md",
+      "summary": "safe",
+      "review": "./FelixUSDhlErc4626VaultReview8494.md",
+      "warnings": [],
+      "upgradeableComponents": [],
+      "canUseBufferForSwaps": false,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    }
   }
 }

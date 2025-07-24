@@ -1230,21 +1230,21 @@
       "review": "./ChainLinkRateProvider.md",
       "warnings": ["chainlink"],
       "factory": "0x76578ecf9a141296Ec657847fb45B0585bCDa3a6",
-      "upgradeableComponents": []
-    },
-    "0x8Be2e3D4b85d05cac2dBbAC6c42798fb342aef45": {
-      "asset": "0xA3D68b74bF0528fdD07263c60d6488749044914b",
-      "name": "Euler weETH / weETH CombinedRateProvider",
-      "summary": "safe",
-      "review": "./CombinedRateProvider.md",
-      "warnings": [""],
-      "factory": "0xeC2C6184761ab7fE061130B4A7e3Da89c72F8395",
       "upgradeableComponents": [
         {
           "entrypoint": "0xA3D68b74bF0528fdD07263c60d6488749044914b",
           "implementationReviewed": "0x08DB0DB9b5F2dcbBFDc26FF411FB2026e81DA748"
         }
       ]
+    },
+    "0x8Be2e3D4b85d05cac2dBbAC6c42798fb342aef45": {
+      "asset": "0x51b47b3013863c52ca28d603de3c2d7a5fef50b9",
+      "name": "Euler weETH / weETH CombinedRateProvider",
+      "summary": "safe",
+      "review": "./CombinedRateProvider.md",
+      "warnings": [""],
+      "factory": "0xeC2C6184761ab7fE061130B4A7e3Da89c72F8395",
+      "upgradeableComponents": []
     }
   },
   "base": {
@@ -5123,6 +5123,26 @@
       "name": "Silo Vault scUSD Gami",
       "summary": "safe",
       "review": "./SonicUSDRateProviderReview4a80.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
+    }
+  },
+  "hyperevm": {
+    "0x8Be2e3D4b85d05cac2dBbAC6c42798fb342aef45": {
+      "asset": "0x53A333e51E96FE288bC9aDd7cdC4B1EAD2CD2FfA",
+      "name": "GauntletUSDT0VaultRateProvider.md",
+      "summary": "safe",
+      "review": "./GauntletUSDT0VaultRateProviderReview8eed.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
+    },
+    "0xfa5D15F15bC1BeBf3B413d9373E27586ac799dB6": {
+      "asset": "0x9c59a9389D8f72DE2CdAf1126F36EA4790E2275e",
+      "name": "FelixUSDhlRateProvider.md",
+      "summary": "safe",
+      "review": "./FelixUSDhlRateProviderReview27b6.md",
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
