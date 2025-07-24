@@ -1230,21 +1230,21 @@
       "review": "./ChainLinkRateProvider.md",
       "warnings": ["chainlink"],
       "factory": "0x76578ecf9a141296Ec657847fb45B0585bCDa3a6",
-      "upgradeableComponents": []
-    },
-    "0x8Be2e3D4b85d05cac2dBbAC6c42798fb342aef45": {
-      "asset": "0xA3D68b74bF0528fdD07263c60d6488749044914b",
-      "name": "Euler weETH / weETH CombinedRateProvider",
-      "summary": "safe",
-      "review": "./CombinedRateProvider.md",
-      "warnings": [""],
-      "factory": "0xeC2C6184761ab7fE061130B4A7e3Da89c72F8395",
       "upgradeableComponents": [
         {
           "entrypoint": "0xA3D68b74bF0528fdD07263c60d6488749044914b",
           "implementationReviewed": "0x08DB0DB9b5F2dcbBFDc26FF411FB2026e81DA748"
         }
       ]
+    },
+    "0x8Be2e3D4b85d05cac2dBbAC6c42798fb342aef45": {
+      "asset": "0x51b47b3013863c52ca28d603de3c2d7a5fef50b9",
+      "name": "Euler weETH / weETH CombinedRateProvider",
+      "summary": "safe",
+      "review": "./CombinedRateProvider.md",
+      "warnings": [""],
+      "factory": "0xeC2C6184761ab7fE061130B4A7e3Da89c72F8395",
+      "upgradeableComponents": []
     }
   },
   "base": {
@@ -3312,6 +3312,15 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0x472fBA0f8bf427dbC8bfdCF6222e3e806E8C275b": {
+      "asset": "0xBEeF1f5Bd88285E5B239B6AAcb991d38ccA23Ac9",
+      "name": "SteakhouseinfiniFiUSDCRateProvider.md",
+      "summary": "safe",
+      "review": "./SteakhouseinfiniFiUSDCRateProviderReview6985.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   },
   "fantom": {
@@ -5108,6 +5117,35 @@
           "implementationReviewed": "0x9916673dcdcfedf7206583a83d5a2b4388b2b355"
         }
       ]
+    },
+    "0xaca021e5299f68694fe33742bcd3ddfc7e2fef65": {
+      "asset": "0x92ebF5A1fB4061B45222a6d76ACCF4698bdE4b95",
+      "name": "Silo Vault scUSD Gami",
+      "summary": "safe",
+      "review": "./SonicUSDRateProviderReview4a80.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
+    }
+  },
+  "hyperevm": {
+    "0x8Be2e3D4b85d05cac2dBbAC6c42798fb342aef45": {
+      "asset": "0x53A333e51E96FE288bC9aDd7cdC4B1EAD2CD2FfA",
+      "name": "GauntletUSDT0VaultRateProvider.md",
+      "summary": "safe",
+      "review": "./GauntletUSDT0VaultRateProviderReview8eed.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
+    },
+    "0xfa5D15F15bC1BeBf3B413d9373E27586ac799dB6": {
+      "asset": "0x9c59a9389D8f72DE2CdAf1126F36EA4790E2275e",
+      "name": "FelixUSDhlRateProvider.md",
+      "summary": "safe",
+      "review": "./FelixUSDhlRateProviderReview27b6.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   },
   "hyperevm": {
