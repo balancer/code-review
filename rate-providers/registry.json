@@ -5118,5 +5118,16 @@
       "factory": "",
       "upgradeableComponents": []
     }
+  },
+  "hyperevm": {
+    "0x8Be2e3D4b85d05cac2dBbAC6c42798fb342aef45": {
+      "asset": "0x53A333e51E96FE288bC9aDd7cdC4B1EAD2CD2FfA",
+      "name": "GauntletUSDT0VaultRateProvider.md",
+      "summary": "safe",
+      "review": "./GauntletUSDT0VaultRateProviderReview8eed.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
+    }
   }
 }
