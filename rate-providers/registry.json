@@ -5146,6 +5146,15 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0xcdAa68ce322728FE4185a60f103C194F1E2c47BC": {
+      "asset": "0x1C5164A764844356d57654ea83f9f1B72Cd10db5",
+      "name": "HyUSDT0(LoopedHype).md",
+      "summary": "safe",
+      "review": "./HyUSDT0(LoopedHype).md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   }
 }
