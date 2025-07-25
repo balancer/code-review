@@ -151,11 +151,25 @@
       "warnings": []
     }
   },
+  "hyperevm": {
+    "0x5dbad78818d4c8958eff2d5b95b28385a22113cd": {
+      "name": "StableSurgeHookV2",
+      "summary": "safe",
+      "review": "./StableSurgeHookV2.md",
+      "warnings": []
+    }
+  },
   "sonic": {
     "0x8a83aa9bb7c4cff14ae0aecec0fb9ef234901c0c": {
       "name": "StableSurgeHook",
       "summary": "safe",
       "review": "./StableSurge.md",
+      "warnings": []
+    },
+    "0x049919ae32e50aee5ea1a0998a841d175ec6f1b3": {
+      "name": "StableSurgeHookV2",
+      "summary": "safe",
+      "review": "./StableSurgeHookV2.md",
       "warnings": []
     }
   }
