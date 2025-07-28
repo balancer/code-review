@@ -3321,6 +3321,15 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0x2eA4699EC488CcbC7B58c92399F0184F0eC62fB6": {
+      "asset": "0x9FD7466f987Fd4C45a5BBDe22ED8aba5BC8D72d1",
+      "name": "Hyperwave hwHLP Rate Provider",
+      "summary": "safe",
+      "review": "./ChainLinkRateProvider.md",
+      "warnings": ["chainlink"],
+      "factory": "",
+      "upgradeableComponents": []
     }
   },
   "fantom": {
@@ -5162,6 +5171,15 @@
       "summary": "safe",
       "review": "./FelixUSDhlRateProviderReview27b6.md",
       "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
+    },
+    "0x32e60aE28EE42dE1Da5EE7237DfDDcE1f1D3D1b1": {
+      "asset": "0x9FD7466f987Fd4C45a5BBDe22ED8aba5BC8D72d1",
+      "name": "Hyperwave hwHLP Rate Provider",
+      "summary": "safe",
+      "review": "./ChainLinkRateProvider.md",
+      "warnings": ["chainlink"],
       "factory": "",
       "upgradeableComponents": []
     },
