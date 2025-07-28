@@ -1873,7 +1873,7 @@
     "0xD704254eb350E0D3BaeCD194d095862267897aE0": {
       "asset": "0x5555555555555555555555555555555555555555",
       "name": "StaticHyperLendHyperEVM WHYPE v2Erc4626Vault.md",
-      "summary": "",
+      "summary": "safe",
       "review": "./StaticHyperLendHyperEVM WHYPE v2Erc4626VaultReview22b3.md",
       "warnings": [],
       "upgradeableComponents": [
@@ -1882,9 +1882,9 @@
           "implementationReviewed": "0x4376c06d866557fac5d0b5813526639c403bfcf5"
         }
       ],
-      "canUseBufferForSwaps": "",
-      "useUnderlyingForAddRemove": "",
-      "useWrappedForAddRemove": ""
+      "canUseBufferForSwaps": false,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   }
 }
