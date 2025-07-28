@@ -23,6 +23,8 @@ import {
     mode,
 } from 'viem/chains'
 
+import { hyperEvm } from '../src/utils/customChains'
+
 import HypernativeApi from '../src/services/hypernativeApi'
 import { doOnchainCallGetName } from '../src'
 
@@ -182,7 +184,7 @@ async function main() {
             alias: 'n',
             type: 'string',
             description: 'The network the rate provider is deployed on',
-            choices: ['base', 'mainnet', 'arbitrum', 'avalanche', 'gnosis', 'fraxtal', 'optimism', 'sonic'],
+            choices: ['base', 'mainnet', 'arbitrum', 'avalanche', 'gnosis', 'fraxtal', 'optimism', 'sonic', 'hyperEvm'],
             demandOption: true,
         })
         .option('rateProviderAsset', {
@@ -212,6 +214,7 @@ async function main() {
         polygon,
         polygonZkEvm,
         mode,
+        hyperEvm,
     }
 
     let network = networks[argv.network]
@@ -264,7 +267,7 @@ async function main() {
     await writeReviewAndUpdateRegistry(rateProviderAddress, network, rateProviderAsset, argv.rpcUrl)
 
     // the registry file has been updated. All relevant information can be read from there and don't need to be passed as arguments
-    await createCustomAgents(rateProviderAddress, network)
+    // await createCustomAgents(rateProviderAddress, network)
 }
 
 main().catch((error) => {

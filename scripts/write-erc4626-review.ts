@@ -23,6 +23,8 @@ import {
     mode,
 } from 'viem/chains'
 
+import { hyperEvm } from '../src/utils/customChains'
+
 import { doOnchainCallGetName, doOnchainCallGetAsset } from '../src'
 
 dotenv.config()
@@ -124,7 +126,7 @@ async function main() {
             alias: 'n',
             type: 'string',
             description: 'The network the rate provider is deployed on',
-            choices: ['base', 'mainnet', 'arbitrum', 'avalanche', 'gnosis', 'fraxtal', 'optimism', 'sonic'],
+            choices: ['base', 'mainnet', 'arbitrum', 'avalanche', 'gnosis', 'fraxtal', 'optimism', 'sonic', 'hyperEvm'],
             demandOption: true,
         })
         .option('rpcUrl', {
@@ -148,6 +150,7 @@ async function main() {
         polygon,
         polygonZkEvm,
         mode,
+        hyperEvm,
     }
 
     let network = networks[argv.network]
