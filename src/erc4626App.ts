@@ -76,31 +76,35 @@ export default class ERC4626DataService extends RateProviderDataService {
             simulation_type: 'full',
         }
 
-        const response = await fetch(simulationUrl, {
-            method: 'POST',
-            headers: {
-                Accept: 'application/json',
-                'Content-Type': 'application/json',
-                'X-Access-Key': this.tenderlySettings.apiKey,
-            },
-            body: JSON.stringify(simulationData),
-        })
+        try {
+            const response = await fetch(simulationUrl, {
+                method: 'POST',
+                headers: {
+                    Accept: 'application/json',
+                    'Content-Type': 'application/json',
+                    'X-Access-Key': this.tenderlySettings.apiKey,
+                },
+                body: JSON.stringify(simulationData),
+            })
 
-        const responseData = await response.json()
-        const simulationId = responseData.simulation.id
+            const responseData = await response.json()
+            const simulationId = responseData.simulation.id
 
-        const shareUrl = `https://api.tenderly.co/api/v1/account/${this.tenderlySettings.accountSlug}/project/${this.tenderlySettings.projectSlug}/simulations/${simulationId}/share`
+            const shareUrl = `https://api.tenderly.co/api/v1/account/${this.tenderlySettings.accountSlug}/project/${this.tenderlySettings.projectSlug}/simulations/${simulationId}/share`
 
-        await fetch(shareUrl, {
-            method: 'POST',
-            headers: {
-                Accept: 'application/json',
-                'Content-Type': 'application/json',
-                'X-Access-Key': this.tenderlySettings.apiKey,
-            },
-        })
+            await fetch(shareUrl, {
+                method: 'POST',
+                headers: {
+                    Accept: 'application/json',
+                    'Content-Type': 'application/json',
+                    'X-Access-Key': this.tenderlySettings.apiKey,
+                },
+            })
 
-        return `https://www.tdly.co/shared/simulation/${simulationId}`
+            return `https://www.tdly.co/shared/simulation/${simulationId}`
+        } catch {
+            return `simulating failed.`
+        }
     }
     public async hasValidERC4626Interface(): Promise<boolean> {
         let abi: any[]

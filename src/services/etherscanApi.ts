@@ -1,6 +1,11 @@
 import { Address, Hex, Chain } from 'viem'
 import { TransactionData, GetContractSourceCodeResponse } from '../types/types'
 
+/**
+ * EtherscanApi class to interact with Etherscan API
+ * It uses the Etherscan API 2.0
+ * Supported chains can be found at https://docs.etherscan.io/etherscan-v2/supported-chains
+ */
 class EtherscanApi {
     public chain: Chain
     private apiKey: string
@@ -11,11 +16,8 @@ class EtherscanApi {
     }
 
     private getApiUrl(): string {
-        const blockExplorer = this.chain.blockExplorers?.default
-        if (!blockExplorer || !blockExplorer.apiUrl) {
-            throw new Error(`API URL not found for chain: ${this.chain.name}`)
-        }
-        return blockExplorer.apiUrl
+        // TODO: Validate chain is supported by EtherscanAPI.
+        return `https://api.etherscan.io/v2/api?chainid=${this.chain.id}`
     }
 
     private async fetchFromApi(url: string): Promise<any> {
@@ -28,15 +30,14 @@ class EtherscanApi {
 
     public async getDeploymentTxHashAndBlock(
         addresses: Address[],
-    ): Promise<{ address: Address; deploymentTxHash: Hex }[]> {
+    ): Promise<{ address: Address; deploymentTxHash: Hex; blockNumber: string }[]> {
         const apiUrl = this.getApiUrl()
-        const fetchingUrl = `${apiUrl}?module=contract&action=getcontractcreation&contractaddresses=${addresses.join(',')}&apikey=${this.apiKey}`
-        console.log(`Fetching deployment transaction hashes from: ${fetchingUrl}`)
+        const fetchingUrl = `${apiUrl}&module=contract&action=getcontractcreation&contractaddresses=${addresses.join(',')}&apikey=${this.apiKey}`
         const data: TransactionData = await this.fetchFromApi(fetchingUrl)
-        await new Promise((f) => setTimeout(f, 5000))
         return data.result.map((entry, index) => ({
             address: addresses[index],
             deploymentTxHash: entry.txHash,
+            blockNumber: entry.blockNumber,
         }))
     }
 
@@ -48,7 +49,7 @@ class EtherscanApi {
 
         for (const address of addresses) {
             try {
-                const fetchingUrl = `${apiUrl}?module=contract&action=getsourcecode&address=${address}&apikey=${this.apiKey}`
+                const fetchingUrl = `${apiUrl}&module=contract&action=getsourcecode&address=${address}&apikey=${this.apiKey}`
                 const data: GetContractSourceCodeResponse = await this.fetchFromApi(fetchingUrl)
 
                 if (data.status !== '1') {

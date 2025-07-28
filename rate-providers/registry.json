@@ -5135,6 +5135,24 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0xb7b5d20dba8afac9049909e3be080d4841f5f144": {
+      "asset": "0x039e2fb66102314ce7b64ce5ce3e5183bc94ad38",
+      "name": "DynamicWrappedSonicRateProvider.md",
+      "summary": "safe",
+      "review": "./WrappedSonicRateProviderReviewbc1a.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
+    },
+    "0x13024Ff3879Ce1d3A827958AB1e5fDF29250A05d": {
+      "asset": "0x50c42deacd8fc9773493ed674b675be577f2634b",
+      "name": "DynamicWrappedEthereumSonicRateProvider.md",
+      "summary": "safe",
+      "review": "./WrappedEthereumSonicRateProviderReviewd690.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   },
   "hyperevm": {
@@ -5164,6 +5182,20 @@
       "warnings": ["chainlink"],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0xde788695d8d4fba96a5e24f1975b0503afbd9c41": {
+      "asset": "0xD704254eb350E0D3BaeCD194d095862267897aE0",
+      "name": "StaticHyperLendHyperEVM WHYPE v2RateProvider.md",
+      "summary": "safe",
+      "review": "./StaticHyperLendHyperEVM WHYPE v2RateProviderReviewd9fb.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xd704254eb350e0d3baecd194d095862267897ae0",
+          "implementationReviewed": "0x4376c06d866557fac5d0b5813526639c403bfcf5"
+        }
+      ]
     }
   }
 }
