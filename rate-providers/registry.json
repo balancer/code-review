@@ -3330,7 +3330,7 @@
       "warnings": ["chainlink"],
       "factory": "",
       "upgradeableComponents": []
-    },
+    }
   },
   "fantom": {
     "0x629d4c27057915e59dd94bca8d48c6d80735b521": {
@@ -5164,6 +5164,6 @@
       "warnings": ["chainlink"],
       "factory": "",
       "upgradeableComponents": []
-    },
+    }
   }
 }
