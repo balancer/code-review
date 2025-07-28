@@ -247,7 +247,7 @@ class RateProviderDataService {
      * @returns The URL of the shared simulation.
      */
     public async getTenderlySimulation(): Promise<string> {
-        const simulationUrl = `https://api.tenderly.co/api/v1/account/${this.tenderlySettings.accountSlug}/project/${this.tenderlySettings.projectSlug}/simulate`
+        const simulationUrl = `https://api.tenderly.co/api/v1/account/${this.tenderlySettings.accountSlug}/${this.tenderlySettings.projectSlug}/project/simulate`
 
         const callData = encodeFunctionData({
             abi: rateProviderAbi,
@@ -265,31 +265,35 @@ class RateProviderDataService {
             simulation_type: 'full',
         }
 
-        const response = await fetch(simulationUrl, {
-            method: 'POST',
-            headers: {
-                Accept: 'application/json',
-                'Content-Type': 'application/json',
-                'X-Access-Key': this.tenderlySettings.apiKey,
-            },
-            body: JSON.stringify(simulationData),
-        })
+        try {
+            const response = await fetch(simulationUrl, {
+                method: 'POST',
+                headers: {
+                    Accept: 'application/json',
+                    'Content-Type': 'application/json',
+                    'X-Access-Key': this.tenderlySettings.apiKey,
+                },
+                body: JSON.stringify(simulationData),
+            })
 
-        const responseData = await response.json()
-        const simulationId = responseData.simulation.id
+            const responseData = await response.json()
+            const simulationId = responseData.simulation.id
 
-        const shareUrl = `https://api.tenderly.co/api/v1/account/${this.tenderlySettings.accountSlug}/project/${this.tenderlySettings.projectSlug}/simulations/${simulationId}/share`
+            const shareUrl = `https://api.tenderly.co/api/v1/account/${this.tenderlySettings.accountSlug}/project/${this.tenderlySettings.projectSlug}/simulations/${simulationId}/share`
 
-        await fetch(shareUrl, {
-            method: 'POST',
-            headers: {
-                Accept: 'application/json',
-                'Content-Type': 'application/json',
-                'X-Access-Key': this.tenderlySettings.apiKey,
-            },
-        })
+            await fetch(shareUrl, {
+                method: 'POST',
+                headers: {
+                    Accept: 'application/json',
+                    'Content-Type': 'application/json',
+                    'X-Access-Key': this.tenderlySettings.apiKey,
+                },
+            })
 
-        return `https://www.tdly.co/shared/simulation/${simulationId}`
+            return `https://www.tdly.co/shared/simulation/${simulationId}`
+        } catch {
+            return `simulating getRate failed.`
+        }
     }
 
     /**
@@ -371,6 +375,13 @@ class RateProviderDataService {
             case 'Sonic':
                 this.apiKey = process.env.SONICSCAN_API_KEY
                     ? process.env.SONICSCAN_API_KEY
+                    : (() => {
+                          throw new Error(`Environment variable is not set`)
+                      })()
+                break
+            case 'HyperEVM':
+                this.apiKey = process.env.HYPEREVM_API_KEY
+                    ? process.env.HYPEREVM_API_KEY
                     : (() => {
                           throw new Error(`Environment variable is not set`)
                       })()
