@@ -17,7 +17,7 @@ export const hyperEvm = /*#__PURE__*/ defineChain({
     blockExplorers: {
         default: {
             name: 'HyperEVM Explorer',
-            url: 'https://hyperevmscan.com',
+            url: 'https://hyperevmscan.io',
             apiUrl: 'https://api.etherscan.io/v2/api?chainid=999',
         },
     },
