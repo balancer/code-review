@@ -1940,6 +1940,17 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0xd19e3d00f8547f7d108abFD4bbb015486437B487": {
+      "asset": "0x5555555555555555555555555555555555555555",
+      "name": "MEVCapitalHYPEErc4626Vault.md",
+      "summary": "safe",
+      "review": "./MEVCapitalHYPEErc4626VaultReview5dcc.md",
+      "warnings": [],
+      "upgradeableComponents": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   }
 }
