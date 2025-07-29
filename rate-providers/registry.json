@@ -5306,15 +5306,6 @@
         }
       ]
     },
-    "0x95cb288041466c2e392542e21972d973686c43f2": {
-      "asset": "0x0571362ba5EA9784a97605f57483f865A37dBEAA",
-      "name": "GauntletuETHVaultRateProvider.md",
-      "summary": "safe",
-      "review": "./GauntletuETHVaultRateProviderReviewbfeb.md",
-      "warnings": [],
-      "factory": "",
-      "upgradeableComponents": []
-    },
     "0x532dA919D3EB5606b5867A6f505969c57F3A721b": {
       "asset": "0xfD739d4e423301CE9385c1fb8850539D657C296D",
       "name": "KinetiqStakedHYPERateProvider.md",
@@ -5336,6 +5327,15 @@
           "implementationReviewed": "0xecaa7cd734668e086812bd4241d6fc0260dba513"
         }
       ]
+    },
+    "0x95cb288041466c2e392542e21972d973686c43f2": {
+      "asset": "0x0571362ba5EA9784a97605f57483f865A37dBEAA",
+      "name": "GauntletuETHVaultRateProvider.md",
+      "summary": "safe",
+      "review": "./GauntletuETHVaultRateProviderReviewbfeb.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   }
 }
