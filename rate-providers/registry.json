@@ -5214,6 +5214,15 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0x03bc12a1A56B2ac9aBf448CDBC9bDAC91a3dcF9a": {
+      "asset": "0xD3A9Cb7312B9c29113290758f5ADFe12304cd16A",
+      "name": "MEVCapitalUSRRateProvider.md",
+      "summary": "safe",
+      "review": "./MEVCapitalUSRRateProviderReviewa1fb.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   }
 }
