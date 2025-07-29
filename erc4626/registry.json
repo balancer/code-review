@@ -147,9 +147,7 @@
       "name": "Superform USDC",
       "summary": "safe",
       "review": "./SuperformSuperVaultReview.md",
-      "warnings": [
-        "buffer"
-      ],
+      "warnings": ["buffer"],
       "canUseBufferForSwaps": false,
       "useUnderlyingForAddRemove": false,
       "useWrappedForAddRemove": true
@@ -351,9 +349,7 @@
       "name": "Superform USDC",
       "summary": "safe",
       "review": "./SuperformSuperVaultReview.md",
-      "warnings": [
-        "buffer"
-      ],
+      "warnings": ["buffer"],
       "canUseBufferForSwaps": false,
       "useUnderlyingForAddRemove": false,
       "useWrappedForAddRemove": true
@@ -637,9 +633,7 @@
       "name": "sDAI",
       "summary": "safe",
       "review": "./sDaiReview.md",
-      "warnings": [
-        "buffer"
-      ],
+      "warnings": ["buffer"],
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": false,
       "useWrappedForAddRemove": true
@@ -1917,13 +1911,13 @@
     "0xD3A9Cb7312B9c29113290758f5ADFe12304cd16A": {
       "asset": "0x0aD339d66BF4AeD5ce31c64Bc37B3244b6394A77",
       "name": "MEVCapitalUSRErc4626Vault.md",
-      "summary": "",
+      "summary": "safe",
       "review": "./MEVCapitalUSRErc4626VaultReviewa313.md",
       "warnings": [],
       "upgradeableComponents": [],
-      "canUseBufferForSwaps": "",
-      "useUnderlyingForAddRemove": "",
-      "useWrappedForAddRemove": ""
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   }
 }
