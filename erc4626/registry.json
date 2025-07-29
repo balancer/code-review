@@ -1896,6 +1896,17 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0x5eEC795d919FA97688Fb9844eeB0072E6B846F9d": {
+      "asset": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+      "name": "GauntletUSDeCoreErc4626Vault.md",
+      "summary": "safe",
+      "review": "./GauntletUSDeCoreErc4626VaultReviewb0a8.md",
+      "warnings": [],
+      "upgradeableComponents": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   }
 }

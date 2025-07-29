@@ -5205,6 +5205,15 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0x75c6943704bcb1a7aa959a41cf05729bbab5632a": {
+      "asset": "0x5eEC795d919FA97688Fb9844eeB0072E6B846F9d",
+      "name": "GauntletUSDeCoreRateProvider.md",
+      "summary": "safe",
+      "review": "./GauntletUSDeCoreRateProviderReviewaa52.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   }
 }
