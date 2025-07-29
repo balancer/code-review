@@ -1855,7 +1855,7 @@
       "review": "./GauntletUSDT0VaultErc4626VaultReview93a6.md",
       "warnings": [],
       "upgradeableComponents": [],
-      "canUseBufferForSwaps": false,
+      "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
     },
@@ -1866,7 +1866,7 @@
       "review": "./FelixUSDhlErc4626VaultReview8494.md",
       "warnings": [],
       "upgradeableComponents": [],
-      "canUseBufferForSwaps": false,
+      "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
     },
@@ -1882,7 +1882,7 @@
           "implementationReviewed": "0x4376c06d866557fac5d0b5813526639c403bfcf5"
         }
       ],
-      "canUseBufferForSwaps": false,
+      "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
     },
