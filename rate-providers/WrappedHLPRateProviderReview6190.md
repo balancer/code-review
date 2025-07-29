@@ -20,8 +20,7 @@ Each of the items below represents an absolute requirement for the Rate Provider
 
 ### Administrative Privileges
 - [ ] The Rate Provider is upgradeable** (e.g., via a proxy architecture).
-- [ ] Other contracts which are part of the `getRate` callchain are upgradeable**. You can find more information
-   about the involved contracts in this [tenderly simulation](simulating getRate failed.)
+- [ ] Other contracts which are part of the `getRate` callchain are upgradeable**.
 
 ## Conclusion
 **Summary judgment: USABLE**
