@@ -5250,6 +5250,15 @@
           "implementationReviewed": "0xb81131b6368b3f0a83af09db4e39ac23da96c2db"
         }
       ]
+    },
+    "0x9062a576d3e6cf6999e99e405608063033c4cff6": {
+      "asset": "0x2c910F67DbF81099e6f8e126E7265d7595DC20aD",
+      "name": "HyUSD₮0(hwHLP)- 11RateProvider.md",
+      "summary": "safe",
+      "review": "./HyUSD₮0(hwHLP)- 11RateProviderReviewf81e.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   }
 }

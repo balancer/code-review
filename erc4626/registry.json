@@ -1929,6 +1929,17 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0x2c910F67DbF81099e6f8e126E7265d7595DC20aD": {
+      "asset": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
+      "name": "HyUSD₮0(hwHLP)- 11Erc4626Vault.md",
+      "summary": "safe",
+      "review": "./HyUSD₮0(hwHLP)- 11Erc4626VaultReview37fe.md",
+      "warnings": [],
+      "upgradeableComponents": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   }
 }
