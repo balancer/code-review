@@ -23,7 +23,7 @@ Each of the items below represents an absolute requirement for the Rate Provider
 - [ ] Other contracts which are part of the `mint` callchain are upgradeable**.
 
 ## Conclusion
-**Summary judgment: USABLE/UNUSABLE**
+**Summary judgment: USABLE**
 The passing fork tests can be found at: https://github.com/balancer/balancer-v3-erc4626-tests/pull/79
 
 ** upgradeable in this context means that:
