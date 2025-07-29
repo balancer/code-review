@@ -1885,6 +1885,17 @@
       "canUseBufferForSwaps": false,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0xfc5126377f0efc0041c0969ef9ba903ce67d151e": {
+      "asset": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
+      "name": "FelixUSDT0Erc4626Vault.md",
+      "summary": "safe",
+      "review": "./FelixUSDT0Erc4626VaultReview29bb.md",
+      "warnings": [],
+      "upgradeableComponents": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   }
 }
