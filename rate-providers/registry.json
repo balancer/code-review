@@ -5223,6 +5223,15 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0x25e1154dc0e4be0b88b4f40164875b033684c39c": {
+      "asset": "0x3Bcc0a5a66bB5BdCEEf5dd8a659a4eC75F3834d8",
+      "name": "MEVCapitalUSDT0RateProvider.md",
+      "summary": "safe",
+      "review": "./MEVCapitalUSDT0RateProviderReview4100.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   }
 }
