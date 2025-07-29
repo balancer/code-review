@@ -5268,6 +5268,20 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0x0BE761301A2AE19D31860D7AC0c56faC1288E3B6": {
+      "asset": "0xD704254eb350E0D3BaeCD194d095862267897aE0",
+      "name": "StaticHyperLendHyperEVM WHYPE v2RateProvider.md",
+      "summary": "safe",
+      "review": "./StaticHyperLendHyperEVM WHYPE v2RateProviderReviewda34.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xd704254eb350e0d3baecd194d095862267897ae0",
+          "implementationReviewed": "0x4376c06d866557fac5d0b5813526639c403bfcf5"
+        }
+      ]
     }
   }
 }
