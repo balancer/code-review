@@ -5178,6 +5178,15 @@
           "implementationReviewed": "0x4376c06d866557fac5d0b5813526639c403bfcf5"
         }
       ]
+    },
+    "0x762c3B8e276A6Da1068443837384AcCa68C3536C": {
+      "asset": "0xfc5126377f0efc0041c0969ef9ba903ce67d151e",
+      "name": "FelixUSDT0RateProvider.md",
+      "summary": "safe",
+      "review": "./FelixUSDT0RateProviderReview7662.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   }
 }
