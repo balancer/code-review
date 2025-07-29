@@ -5259,6 +5259,15 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0xb5F8f253d0A6D4A18014cecA4253A2cEC6C98763": {
+      "asset": "0x5748ae796AE46A4F1348a1693de4b50560485562",
+      "name": "LoopedHYPERateProvider.md",
+      "summary": "safe",
+      "review": "./LoopedHYPERateProviderReviewa707.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   }
 }
