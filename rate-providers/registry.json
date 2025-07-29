@@ -5283,6 +5283,15 @@
         }
       ]
     },
+    "0xeffe560f6e6d122371c7f4170e0fd0e327316c50": {
+      "asset": "0xd19e3d00f8547f7d108abFD4bbb015486437B487",
+      "name": "MEVCapitalHYPERateProvider.md",
+      "summary": "safe",
+      "review": "./MEVCapitalHYPERateProviderReviewe463.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
+    },
     "0x0BE761301A2AE19D31860D7AC0c56faC1288E3B6": {
       "asset": "0xD704254eb350E0D3BaeCD194d095862267897aE0",
       "name": "StaticHyperLendHyperEVM WHYPE v2RateProvider.md",
