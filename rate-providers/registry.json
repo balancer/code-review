@@ -5232,6 +5232,24 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0x30EAcEC6BD250589043De026e45dc9A158C65a1F": {
+      "asset": "0x5e105266db42f78FA814322Bce7f388B4C2e61eb",
+      "name": "HyperbeatUSDTRateProvider.md",
+      "summary": "safe",
+      "review": "./HyperbeatUSDTRateProviderReviewe949.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x96572d32d699ce463fdf36610273cc76b7d83f9b",
+          "implementationReviewed": "0xa90e0136cb598e1cef28dc54932c17033b54538c"
+        },
+        {
+          "entrypoint": "0x24c8964338deb5204b096039147b8e8c3aea42cc",
+          "implementationReviewed": "0xb81131b6368b3f0a83af09db4e39ac23da96c2db"
+        }
+      ]
     }
   }
 }
