@@ -5283,6 +5283,15 @@
         }
       ]
     },
+    "0xeffe560f6e6d122371c7f4170e0fd0e327316c50": {
+      "asset": "0xd19e3d00f8547f7d108abFD4bbb015486437B487",
+      "name": "MEVCapitalHYPERateProvider.md",
+      "summary": "safe",
+      "review": "./MEVCapitalHYPERateProviderReviewe463.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
+    },
     "0x0BE761301A2AE19D31860D7AC0c56faC1288E3B6": {
       "asset": "0xD704254eb350E0D3BaeCD194d095862267897aE0",
       "name": "StaticHyperLendHyperEVM WHYPE v2RateProvider.md",
@@ -5305,6 +5314,28 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0x532dA919D3EB5606b5867A6f505969c57F3A721b": {
+      "asset": "0xfD739d4e423301CE9385c1fb8850539D657C296D",
+      "name": "KinetiqStakedHYPERateProvider.md",
+      "summary": "safe",
+      "review": "./KinetiqStakedHYPERateProviderReviewaefb.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x4b797a93dfc3d18cf98b7322a2b142fa8007508f",
+          "implementationReviewed": "0xf30bc7f7ce14b05937d84820ae43207d7b83af9a"
+        },
+        {
+          "entrypoint": "0xfd739d4e423301ce9385c1fb8850539d657c296d",
+          "implementationReviewed": "0x210461fca55b84f4f03a19ff3dfae6d0ffae3675"
+        },
+        {
+          "entrypoint": "0x9209648ec9d448ef57116b73a2f081835643dc7a",
+          "implementationReviewed": "0xecaa7cd734668e086812bd4241d6fc0260dba513"
+        }
+      ]
     }
   }
 }
