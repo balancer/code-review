@@ -5268,6 +5268,20 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0xA41f1552CD8Bf74002793D51C5c64CEeBe2a62a8": {
+      "asset": "0x96C6cBB6251Ee1c257b2162ca0f39AA5Fa44B1FB",
+      "name": "HyperbeatUltraHYPERateProvider.md",
+      "summary": "safe",
+      "review": "./HyperbeatUltraHYPERateProviderReviewf12b.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x96c6cbb6251ee1c257b2162ca0f39aa5fa44b1fb",
+          "implementationReviewed": "0xcd27d859bae91fbcac1deda69deae3313f07ef6b"
+        }
+      ]
     }
   }
 }
