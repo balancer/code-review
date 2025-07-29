@@ -5296,6 +5296,15 @@
           "implementationReviewed": "0x4376c06d866557fac5d0b5813526639c403bfcf5"
         }
       ]
+    },
+    "0x95cb288041466c2e392542e21972d973686c43f2": {
+      "asset": "0x0571362ba5EA9784a97605f57483f865A37dBEAA",
+      "name": "GauntletuETHVaultRateProvider.md",
+      "summary": "safe",
+      "review": "./GauntletuETHVaultRateProviderReviewbfeb.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   }
 }
