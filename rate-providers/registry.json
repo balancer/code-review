@@ -5372,6 +5372,15 @@
           "implementationReviewed": "0x4e202a7e713d00804f9ce397260362bf5e0eaaa8"
         }
       ]
+    },
+    "0xd6861b0F2b6234bEC80a3dfd3783BBd1a49B9541": {
+      "asset": "0x0a3d8466F5dE586FA5F6DE117301e2f90bCC5c48",
+      "name": "Resolv RLP Rate Provider",
+      "summary": "safe",
+      "review": "./ChainLinkRateProvider.md",
+      "warnings": ["chainlink"],
+      "factory": "",
+      "upgradeableComponents": []
     }
   }
 }
