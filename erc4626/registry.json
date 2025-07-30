@@ -1205,6 +1205,17 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0xf6bC16B79c469b94Cdd25F3e2334DD4FEE47A581": {
+      "asset": "0x29219dd400f2Bf60E5a23d13Be72B486D4038894",
+      "name": "GreenhouseUSDCErc4626Vault.md",
+      "summary": "safe",
+      "review": "./GreenhouseUSDCErc4626VaultReviewc0d8.md",
+      "warnings": [],
+      "upgradeableComponents": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   },
   "avalanche": {
