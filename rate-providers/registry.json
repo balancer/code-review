@@ -5328,6 +5328,15 @@
         }
       ]
     },
+    "0x083961C864cfB44B5B772341659587357acF21E6": {
+      "asset": "0x1359b05241cA5076c9F59605214f4F84114c0dE8",
+      "name": "WrappedHLPRateProvider.md",
+      "summary": "safe",
+      "review": "./WrappedHLPRateProviderReview6190.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
+    },
     "0x36C61230CEAe487572369ead4a8BD7FD19Ebf4fd": {
       "asset": "0x81e064d0eB539de7c3170EDF38C1A42CBd752A76",
       "name": "HyperbeatLSTVaultRateProvider.md",
