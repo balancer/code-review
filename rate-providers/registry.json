@@ -5328,6 +5328,15 @@
         }
       ]
     },
+    "0x0adfED2cFF26D1757073545FcF9f1DA23858801A": {
+      "asset": "0x06Fd9D03b3d0F18E4919919b72D30c582f0a97E5",
+      "name": "HyperlendInterestBearing USD₮0 (Wrapped HLP)RateProvider.md",
+      "summary": "safe",
+      "review": "./HyperlendInterestBearing USD₮0 (Wrapped HLP)RateProviderReview2bb9.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
+    },
     "0x083961C864cfB44B5B772341659587357acF21E6": {
       "asset": "0x1359b05241cA5076c9F59605214f4F84114c0dE8",
       "name": "WrappedHLPRateProvider.md",
