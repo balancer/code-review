@@ -1962,6 +1962,17 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0x06Fd9D03b3d0F18E4919919b72D30c582f0a97E5": {
+      "asset": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
+      "name": "HyperlendInterestBearing USD₮0 (Wrapped HLP)Erc4626Vault.md",
+      "summary": "safe",
+      "review": "./HyperlendInterestBearing USD₮0 (Wrapped HLP)Erc4626VaultReview02cf.md",
+      "warnings": [],
+      "upgradeableComponents": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   }
 }

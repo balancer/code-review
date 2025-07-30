@@ -5336,6 +5336,42 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0x0adfED2cFF26D1757073545FcF9f1DA23858801A": {
+      "asset": "0x06Fd9D03b3d0F18E4919919b72D30c582f0a97E5",
+      "name": "HyperlendInterestBearing USD₮0 (Wrapped HLP)RateProvider.md",
+      "summary": "safe",
+      "review": "./HyperlendInterestBearing USD₮0 (Wrapped HLP)RateProviderReview2bb9.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
+    },
+    "0x083961C864cfB44B5B772341659587357acF21E6": {
+      "asset": "0x1359b05241cA5076c9F59605214f4F84114c0dE8",
+      "name": "WrappedHLPRateProvider.md",
+      "summary": "safe",
+      "review": "./WrappedHLPRateProviderReview6190.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
+    },
+    "0x36C61230CEAe487572369ead4a8BD7FD19Ebf4fd": {
+      "asset": "0x81e064d0eB539de7c3170EDF38C1A42CBd752A76",
+      "name": "HyperbeatLSTVaultRateProvider.md",
+      "summary": "safe",
+      "review": "./HyperbeatLSTVaultRateProviderReview4855.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x24c8964338deb5204b096039147b8e8c3aea42cc",
+          "implementationReviewed": "0xb81131b6368b3f0a83af09db4e39ac23da96c2db"
+        },
+        {
+          "entrypoint": "0xa569e68b5d110f2a255482c2997dfdbe1b2ab912",
+          "implementationReviewed": "0x4e202a7e713d00804f9ce397260362bf5e0eaaa8"
+        }
+      ]
     }
   }
 }
