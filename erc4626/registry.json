@@ -1944,7 +1944,7 @@
     "0x0571362ba5EA9784a97605f57483f865A37dBEAA": {
       "asset": "0xBe6727B535545C67d5cAa73dEa54865B92CF7907",
       "name": "GauntletuETHVaultErc4626Vault.md",
-      "summary": "",
+      "summary": "safe",
       "review": "./GauntletuETHVaultErc4626VaultReview1975.md",
       "warnings": [],
       "upgradeableComponents": [],
