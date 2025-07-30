@@ -5153,6 +5153,15 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0x672551cef9f032f29970aeba94e2dd7a962c1083": {
+      "asset": "0xf6bC16B79c469b94Cdd25F3e2334DD4FEE47A581",
+      "name": "GreenhouseUSDCRateProvider.md",
+      "summary": "safe",
+      "review": "./GreenhouseUSDCRateProviderReviewf0eb.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   },
   "hyperevm": {
