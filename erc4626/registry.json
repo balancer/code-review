@@ -1941,6 +1941,17 @@
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
     },
+    "0x0571362ba5EA9784a97605f57483f865A37dBEAA": {
+      "asset": "0xBe6727B535545C67d5cAa73dEa54865B92CF7907",
+      "name": "GauntletuETHVaultErc4626Vault.md",
+      "summary": "safe",
+      "review": "./GauntletuETHVaultErc4626VaultReview1975.md",
+      "warnings": [],
+      "upgradeableComponents": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
     "0xd19e3d00f8547f7d108abFD4bbb015486437B487": {
       "asset": "0x5555555555555555555555555555555555555555",
       "name": "MEVCapitalHYPEErc4626Vault.md",

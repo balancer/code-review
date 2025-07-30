@@ -5328,6 +5328,15 @@
         }
       ]
     },
+    "0x95cb288041466c2e392542e21972d973686c43f2": {
+      "asset": "0x0571362ba5EA9784a97605f57483f865A37dBEAA",
+      "name": "GauntletuETHVaultRateProvider.md",
+      "summary": "safe",
+      "review": "./GauntletuETHVaultRateProviderReviewbfeb.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
+    },
     "0x0adfED2cFF26D1757073545FcF9f1DA23858801A": {
       "asset": "0x06Fd9D03b3d0F18E4919919b72D30c582f0a97E5",
       "name": "HyperlendInterestBearing USD₮0 (Wrapped HLP)RateProvider.md",
