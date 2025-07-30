@@ -22,8 +22,7 @@ Each of the items below represents an absolute requirement for the Rate Provider
 
 ### Administrative Privileges
 - [ ] The ERC4626 Vault is upgradeable** (e.g., via a proxy architecture).
-- [ ] Other contracts which are part of the `mint` callchain are upgradeable**. You can find more information
-   about the involved contracts in this [tenderly simulation](simulating failed.)
+- [ ] Other contracts which are part of the `mint` callchain are upgradeable**.
 
 ## Conclusion
 **Summary judgment: USABLE**
