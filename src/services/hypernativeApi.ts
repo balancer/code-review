@@ -30,6 +30,7 @@ class HypernativeApi {
         Sonic: 'sonic',
         Sepolia: 'sepolia',
         Polygon: 'polygon',
+        HyperEVM: 'hyperliquid_evm',
     }
 
     public async createCustomAgentRateDeviation(input: CustomAgentInput): Promise<void> {
