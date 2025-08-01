@@ -3330,6 +3330,15 @@
       "warnings": ["chainlink"],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0x1195BE91e78ab25494C855826FF595Eef784d47B": {
+      "asset": "0xa3931d71877C0E7a3148CB7Eb4463524FEc27fbD",
+      "name": "sUSDS Rate Provider",
+      "summary": "safe",
+      "review": "",
+      "warnings": [""],
+      "factory": "0xFC541f8d8c5e907E236C8931F0Df9F58e0C259Ec",
+      "upgradeableComponents": []
     }
   },
   "fantom": {
