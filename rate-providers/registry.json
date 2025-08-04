@@ -1698,7 +1698,7 @@
       "warnings": ["chainlink"],
       "factory": "0x0A973B6DB16C2ded41dC91691Cc347BEb0e2442B",
       "upgradeableComponents": []
-    },
+    }
   },
   "ethereum": {
     "0x9fA39387D479fd456367190c82739eD6dC86491D": {
