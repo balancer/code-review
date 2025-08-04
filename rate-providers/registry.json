@@ -1689,7 +1689,16 @@
           "implementationReviewed": "0x77b0e1b55915169abe2353e354749dc901ebb086"
         }
       ]
-    }
+    },
+    "0x3FC6ea5D2F5f1DA10D64e2403B019B69Cc571d66": {
+      "asset": "0x7788A3538C5fc7F9c7C8A74EAC4c898fC8d87d92",
+      "name": "sUSDX Rate Provider",
+      "summary": "safe",
+      "review": "./ChainLinkRateProvider.md",
+      "warnings": ["chainlink"],
+      "factory": "0x0A973B6DB16C2ded41dC91691Cc347BEb0e2442B",
+      "upgradeableComponents": []
+    },
   },
   "ethereum": {
     "0x9fA39387D479fd456367190c82739eD6dC86491D": {
