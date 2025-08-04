@@ -3330,6 +3330,20 @@
       "warnings": ["chainlink"],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0x1195BE91e78ab25494C855826FF595Eef784d47B": {
+      "asset": "0xa3931d71877C0E7a3148CB7Eb4463524FEc27fbD",
+      "name": "SavingsUSDSRateProvider.md",
+      "summary": "safe",
+      "review": "./SavingsUSDSRateProviderReviewab7c.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+          "implementationReviewed": "0x4e7991e5c547ce825bdeb665ee14a3274f9f61e0"
+        }
+      ]
     }
   },
   "fantom": {
