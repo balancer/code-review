@@ -5178,7 +5178,7 @@
       "upgradeableComponents": []
     },
     "0xd75a3ee8843b4b66de0f07c57d0f0e79eacd4b71": {
-      "asset": "0x53a6aBb52B2F968fA80dF6A894e4f1b1020DA975",
+      "asset": "0x41a5477364BF60d8936b90310FecFDa79593304E",
       "name": "DTRINITYUSDRateProvider.md",
       "summary": "safe",
       "review": "./DTRINITYUSDRateProviderReview5a55.md",
