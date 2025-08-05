@@ -4897,7 +4897,7 @@
     "0x4d7CF247D18f53Ed5dB067C2552dA63a68952C58": {
       "asset": "0xEEEEEEE6d95E55A468D32FeB5d6648754d10A967",
       "name": "WrappedStabilityUSDCRateProvider.md",
-      "summary": "safe",
+      "summary": "unsafe",
       "review": "./WrappedStabilityUSDCRateProviderReview68f7.md",
       "warnings": [],
       "factory": "",
@@ -5015,7 +5015,7 @@
     "0xd39ece214144a41f64373274c2a244aa1e12d92b": {
       "asset": "0xccccCCcca9FC69a2b32408730011EdB3205A93A1",
       "name": "WrappedStabilityscUSDRateProvider.md",
-      "summary": "safe",
+      "summary": "unsafe",
       "review": "./WrappedStabilityscUSDRateProviderReview3881.md",
       "warnings": [],
       "factory": "",
