@@ -5176,6 +5176,24 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0xd75a3ee8843b4b66de0f07c57d0f0e79eacd4b71": {
+      "asset": "0x53a6aBb52B2F968fA80dF6A894e4f1b1020DA975",
+      "name": "DTRINITYUSDRateProvider.md",
+      "summary": "safe",
+      "review": "./DTRINITYUSDRateProviderReview5a55.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xedc3cfb1aa36c570cc1d374876268bdda2d460cc",
+          "implementationReviewed": "0x179867c392add1bf4f7a3d4c70bf8f2f476bb8cc"
+        },
+        {
+          "entrypoint": "0x41a5477364bf60d8936b90310fecfda79593304e",
+          "implementationReviewed": "0x5f0ecae9b7b279261cc6a1cabf26b51c79fe6f8f"
+        }
+      ]
     }
   },
   "hyperevm": {
