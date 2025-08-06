@@ -325,70 +325,13 @@ class RateProviderDataService {
      * Sets the API key based on the chain.
      * @param chain The chain to set the API key for.
      */
+    // TODO: This functionality is pretty much obsolete since Etherscan moved to API 2.0
     private setApiBasedOnChain(chain: Chain) {
-        switch (chain.name) {
-            case 'Ethereum':
-                this.apiKey = process.env.ETHERSCAN_API_KEY
-                    ? process.env.ETHERSCAN_API_KEY
-                    : (() => {
-                          throw new Error(`Environment variable is not set`)
-                      })()
-                break
-            case 'Gnosis':
-                this.apiKey = process.env.GNOSISSCAN_API_KEY
-                    ? process.env.GNOSISSCAN_API_KEY
-                    : (() => {
-                          throw new Error(`Environment variable is not set`)
-                      })()
-                break
-            case 'Base':
-                this.apiKey = process.env.BASESCAN_API_KEY
-                    ? process.env.BASESCAN_API_KEY
-                    : (() => {
-                          throw new Error(`Environment variable is not set`)
-                      })()
-                break
-            case 'OP Mainnet':
-                this.apiKey = process.env.OPTIMISM_SCAN_API_KEY
-                    ? process.env.OPTIMISM_SCAN_API_KEY
-                    : (() => {
-                          throw new Error(`Environment variable is not set`)
-                      })()
-                break
-            case 'Arbitrum One':
-                this.apiKey = process.env.ARBITRUM_SCAN_API_KEY
-                    ? process.env.ARBITRUM_SCAN_API_KEY
-                    : (() => {
-                          throw new Error(`Environment variable is not set`)
-                      })()
-                break
-            case 'Fraxtal':
-                this.apiKey = process.env.FRAXSCAN_API_KEY
-                    ? process.env.FRAXSCAN_API_KEY
-                    : (() => {
-                          throw new Error(`Environment variable is not set`)
-                      })()
-                break
-            case 'Avalanche':
-                this.apiKey = ''
-                break
-            case 'Sonic':
-                this.apiKey = process.env.SONICSCAN_API_KEY
-                    ? process.env.SONICSCAN_API_KEY
-                    : (() => {
-                          throw new Error(`Environment variable is not set`)
-                      })()
-                break
-            case 'HyperEVM':
-                this.apiKey = process.env.HYPEREVM_API_KEY
-                    ? process.env.HYPEREVM_API_KEY
-                    : (() => {
-                          throw new Error(`Environment variable is not set`)
-                      })()
-                break
-            default:
-                throw new Error(`Unsupported chain: ${chain.name}`)
-        }
+        this.apiKey = process.env.ETHERSCAN_API_KEY
+            ? process.env.ETHERSCAN_API_KEY
+            : (() => {
+                  throw new Error(`ETHERSCAN_API_KEY Environment variable is not set`)
+              })()
     }
 }
 

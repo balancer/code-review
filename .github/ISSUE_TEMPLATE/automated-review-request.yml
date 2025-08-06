@@ -1,0 +1,111 @@
+name: Request for an automated Security Review
+description: Request a review for rate provider or token wrapper. This is not a substitute for a full protocol audit.
+labels: ["request"]
+assignees:
+  - mkflow27
+body:
+  - type: checkboxes
+    id: erc4626-info
+    attributes:
+      label: Additional Contract Information
+      description: Additional points clarify the intended usage of the related asset.
+      options:
+        - label: Is a combined rate provider needed (i.e. wstETH in aave)?
+        - label: Does this rate provider pertain to an ERC4626 contract?
+        - label: If so, is the intention for this ERC4626 asset to be boosted?
+        - label: If so, is the Buffer already initialized
+        - label: If so, shall the underlying asset be used to add/remove liquidity in a pool if possible? (i.e. add USDC for waUSDC)
+        - label: If so, shall the wrapped asset also be used to add/remove liquidity in a pool? (i.e. add waUSDC directly)
+  - type: dropdown
+    id: network
+    attributes:
+      label: Network
+      description: Select the network where the contract is deployed
+      options:
+        - base
+        - mainnet
+        - arbitrum
+        - avalanche
+        - gnosis
+        - fraxtal
+        - optimism
+        - sonic
+        - hyperEvm
+    validations:
+      required: true
+  - type: input
+    id: contract
+    attributes:
+      label: Rate provider contract address
+      description: Please provide the address of the rate provider to be reviewed.
+      placeholder: The address of the contract
+    validations:
+      required: true
+  - type: input
+    id: asset-contract
+    attributes:
+      label: Asset contract address
+      description: Please provide the address of the asset this rate provider points to.
+      placeholder: The address of the contract
+    validations:
+      required: true
+  - type: input
+    id: more-links
+    attributes:
+      label: audits
+      description: Please provide the link to the relevant audits for the rate provider.
+      placeholder: https://docs.balancer.fi/developer-reference/contracts/security.html#security
+    validations:
+      required: true
+  - type: input
+    id: documentation
+    attributes:
+      label: Protocol Documentation
+      description: Please provide a text based snippet to what the rate provider does.
+      placeholder: The rate provider is used to provide the rate of the underlying asset in a pool.
+    validations:
+      required: true
+  - type: input
+    id: erc4626
+    attributes:
+      label: ERC4626 Asset contract address
+      description: Please provide the address of the ERC4626 vault.
+      placeholder: The address of the contract
+    validations:
+      required: false
+  - type: input
+    id: erc4626-audits
+    attributes:
+      label: ERC4626 Asset contract audits
+      description: Please provide the links to the relevant audits for the ERC4626 vault.
+      placeholder: https://docs.balancer.fi/developer-reference/contracts/security.html#security
+    validations:
+      required: false
+  - type: input
+    id: erc4626-documentation
+    attributes:
+      label: ERC4626 Asset contract documentation
+      description: Please provide a text based snippet to what the ERC4626 vault does.
+      placeholder: The ERC4626 vault is used to provide the rate of the underlying asset in a pool.
+    validations:
+      required: false
+  - type: input
+    id: fork-tests
+    attributes:
+      label: Link to passing fork tests
+      description: Please provide a link to the fork tests that pass for the ERC4626 vault
+      placeholder: https://github.com/balancer/balancer-v3-erc4626-tests/blob/main/test/mainnet/ERC4626MainnetAaveUSDe.t.sol
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Terms and Conditions
+      description: By submitting this issue, you certify that the following are true to the best of your knowledge.
+      options:
+        - label: The protocol to be integrated has been audited by at least one security firm or independent researcher.
+          required: true
+        - label: If deployed, the contract & all involved downstream contracts are verified on etherscan.
+          required: true
+        - label: The contract does not rely upon an EOA to supply any critical data (e.g., price).
+          required: true
+        - label: If upgradeable, the contract's administrator is not an EOA.
+          required: true

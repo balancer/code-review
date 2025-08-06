@@ -20,6 +20,14 @@
           "singleQuote": true,
           "trailingComma": "all"
         }
+      },
+      {
+      "files": "*.json",
+      "options": {
+        "printWidth": 1,
+        "tabWidth": 2,
+        "bracketSpacing": true
       }
+    }
     ]
   }
