@@ -1,18 +1,17 @@
 name: create review
-on: 
+on:
   issues:
     types: [opened]
 jobs:
   write-review:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
       - name: Parse Issue
-          id: parse-issue
-          uses: GrantBirki/issue-template-parser@vX.X.X
-          with:
-            body: ${{ github.event.issue.body }}
+        id: parse-issue
+        uses: GrantBirki/issue-template-parser@vX.X.X
+        with:
+          body: ${{ github.event.issue.body }}
+
       - name: Output Issue JSON
-          id: output-issue
-          run: echo ${{ steps.issue-parser.outputs.json }}
+        id: output-issue
+        run: echo ${{ steps.issue-parser.outputs.json }}
