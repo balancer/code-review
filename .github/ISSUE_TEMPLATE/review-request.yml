@@ -9,20 +9,14 @@ body:
       value: |
         Thanks for taking the time to fill out this request form! Please be as thorough as possible to avoid delays in scoping. Someone from our team will confirm or reject your submission, or ask for clarity, within 1 business day. Confirmation of the request will be accompanied by an estimated time to completion which is typically 1 week and will not exceed 2 weeks. Estimation depends on the complexity of the smart contract and connected contracts, as well as engineering time available.
   - type: dropdown
-    id: network
+    id: type
     attributes:
-      label: Network
-      description: Select the network where the contract is deployed
+      label: Type of Smart Contract
+      description: Please describe the nature of the smart contract you'd like reviewed.
       options:
-        - base
-        - mainnet
-        - arbitrum
-        - avalanche
-        - gnosis
-        - fraxtal
-        - optimism
-        - sonic
-        - hyperEvm
+        - Rate Provider
+        - Other
+      default: 0
     validations:
       required: true
   - type: checkboxes
@@ -37,27 +31,34 @@ body:
         - label: If so, shall the underlying asset be used to add/remove liquidity in a pool if possible? (i.e. add USDC for waUSDC)
         - label: If so, shall the wrapped asset also be used to add/remove liquidity in a pool? (i.e. add waUSDC directly)
   - type: input
+    id: type-extended
+    attributes:
+      label: Type of Smart Contract (if Other)
+      description: If you selected Other above, please elaborate here.
+    validations:
+      required: false
+  - type: input
     id: contract
     attributes:
-      label: Rate Provider Source Code
+      label: Contract Source Code
       description: Please link to the verified contract deployment on the block explorer. If not yet deployed, please link to the contract source on GitHub.
-      placeholder: 0xae78736cd615f374d3085123a210448e74fc6393
+      placeholder: https://etherscan.io/address/0x1a8f81c256aee9c640e14bb0453ce247ea0dfe6f#code
     validations:
       required: true
   - type: input
     id: asset-contract
     attributes:
-      label: asset-contract / ERC4626 contract (where the rp points to)
+      label: Asset Contract Source Code
       description: Please link to the verified contract deployment of the underlying asset this rate provider corresponds to on the block explorer.
-      placeholder: 0xae78736cd615f374d3085123a210448e74fc6393
+      placeholder: https://etherscan.io/address/0xae78736cd615f374d3085123a210448e74fc6393#code
     validations:
       required: false
-  - type: input
-    id: erc4626-asset
+  - type: textarea
+    id: more-links
     attributes:
-      label: The 'asset' of the ERC4626 contract
-      description: The ERC4626 'underlying'
-      placeholder: 0xae78736cd615f374d3085123a210448e74fc6393
+      label: Additional Links
+      description: If this contract has multiple instances or is deployed to multiple networks, please provide the remaining links for both the contract and the corresponding assets here.
+      placeholder: https://etherscan.io/address/0xBA12222222228d8Ba445958a75a0704d566BF2C8#code
     validations:
       required: false
   - type: input
