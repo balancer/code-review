@@ -1,14 +1,14 @@
 name: create review
 on:
   issues:
-    types: [opened]
+    types: [opened, edited, reopened]
 jobs:
   write-review:
     runs-on: ubuntu-latest
     steps:
       - name: Parse Issue
         id: parse-issue
-        uses: GrantBirki/issue-template-parser@vX.X.X
+        uses: GrantBirki/issue-template-parser@v7.0.4
         with:
           body: ${{ github.event.issue.body }}
 
