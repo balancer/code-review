@@ -3646,6 +3646,24 @@
         }
       ]
     },
+    "0x1A63b425600D775a1E1bFc212F021273812c3b16": {
+      "asset": "0x58d9AcAC48A4077E4909181c48DEcD00E5ba5DE4",
+      "name": "Aave GHO ERC4626RateProviderer",
+      "summary": "safe",
+      "review": "./statATokenv2RateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x58d9AcAC48A4077E4909181c48DEcD00E5ba5DE4",
+          "implementationReviewed": "0x7CB7fdeEB5E71f322F8E39Be67959C32a6A3aAA3"
+        },
+        {
+          "entrypoint": "0xb50201558B00496A145fE76f7424749556E326D8",
+          "implementationReviewed": "0xF2C312BfAF4CF0429DB4DA15a0cf5F770Ea3E770"
+        }
+      ]
+    },
     "0xdDDF909076B641C51f22ACD4b134C54adad51e68": {
       "asset": "0x417bc5b940475203A18C2f320a5ba470D6c5E463",
       "name": "EURe Chainlink + Aave Rate Proivder",
