@@ -14,4 +14,4 @@ jobs:
 
       - name: Output Issue JSON
         id: output-issue
-        run: echo ${{ steps.issue-parser.outputs.json }}
+        run: echo ${{ steps.parse-issue.outputs.json }}
