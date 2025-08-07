@@ -13,4 +13,6 @@ jobs:
           body: ${{ github.event.issue.body }}
       - name: process issue content
         id: process-issue
-        run: npx tsx scripts/process-issue.ts '${{ steps.parse-issue.outputs.json }}'
+        run: npx tsx scripts/process-issue.ts
+        env:
+          ISSUE_DATA: ${{ steps.parse-issue.outputs.json }}
