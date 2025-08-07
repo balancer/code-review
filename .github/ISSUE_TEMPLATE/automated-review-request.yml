@@ -5,7 +5,7 @@ assignees:
   - mkflow27
 body:
   - type: checkboxes
-    id: erc4626
+    id: erc4626-info
     attributes:
       label: Additional Contract Information
       description: Additional points clarify the intended usage of the related asset.
@@ -20,7 +20,7 @@ body:
     attributes:
       label: Rate provider contract address
       description: Please provide the address of the rate provider to be reviewed.
-      placeholder: 0x1a8f81c256aee9c640e14bb0453ce247ea0dfe6f
+      placeholder: The address of the contract
     validations:
       required: true
   - type: input
@@ -28,7 +28,7 @@ body:
     attributes:
       label: Asset contract address
       description: Please provide the address of the asset this rate provider points to.
-      placeholder: 0xae78736cd615f374d3085123a210448e74fc6393
+      placeholder: The address of the contract
     validations:
       required: true
   - type: textarea
@@ -52,7 +52,7 @@ body:
     attributes:
       label: ERC4626 Asset contract address
       description: Please provide the address of the ERC4626 vault.
-      placeholder: 0xae78736cd615f374d3085123a210448e74fc6393
+      placeholder: The address of the contract
     validations:
       required: false
   - type: input
