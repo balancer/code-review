@@ -12,7 +12,7 @@ body:
       options:
         - label: Is a combined rate provider needed (i.e. wstETH in aave)?
         - label: Does this rate provider pertain to an ERC4626 contract?
-        - label: If so, is the intention for this ERC4626 asset to be [boosted](https://docs.balancer.fi/concepts/explore-available-balancer-pools/boosted-pool.html#advantages-of-boosted-pools)?
+        - label: If so, is the intention for this ERC4626 asset to be boosted?
         - label: If so, shall the underlying asset be used to add/remove liquidity in a pool if possible? (i.e. add USDC for waUSDC)
         - label: If so, shall the wrapped asset also be used to add/remove liquidity in a pool? (i.e. add waUSDC directly)
   - type: input
