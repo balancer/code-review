@@ -27,4 +27,6 @@ export async function processIssue(issueJson: string) {
     //await writeERC4626ReviewAndUpdateRegistry(erc4626Address, network, rpcUrl)
 }
 
-processIssue(process.argv[2])
+// Read from environment variable instead of command line
+const issueData = process.env.ISSUE_DATA || process.argv[2] || '{}'
+processIssue(issueData)
