@@ -1,0 +1,87 @@
+name: Request for an automated Security Review
+description: Request a review for rate provider or token wrapper. This is not a substitute for a full protocol audit.
+labels: ["request"]
+assignees:
+  - mkflow27
+body:
+  - type: checkboxes
+    id: erc4626
+    attributes:
+      label: Additional Contract Information
+      description: Additional points clarify the intended usage of the related asset.
+      options:
+        - label: Is a combined rate provider needed (i.e. wstETH in aave)?
+        - label: Does this rate provider pertain to an ERC4626 contract?
+        - label: If so, is the intention for this ERC4626 asset to be [boosted](https://docs.balancer.fi/concepts/explore-available-balancer-pools/boosted-pool.html#advantages-of-boosted-pools)?
+        - label: If so, shall the underlying asset be used to add/remove liquidity in a pool if possible? (i.e. add USDC for waUSDC)
+        - label: If so, shall the wrapped asset also be used to add/remove liquidity in a pool? (i.e. add waUSDC directly)
+  - type: input
+    id: contract
+    attributes:
+      label: Rate provider contract address
+      description: Please provide the address of the rate provider to be reviewed.
+      placeholder: 0x1a8f81c256aee9c640e14bb0453ce247ea0dfe6f
+    validations:
+      required: true
+  - type: input
+    id: asset-contract
+    attributes:
+      label: Asset contract address
+      description: Please provide the address of the asset this rate provider points to.
+      placeholder: 0xae78736cd615f374d3085123a210448e74fc6393
+    validations:
+      required: true
+  - type: textarea
+    id: more-links
+    attributes:
+      label: audits
+      description: Please provide the link to the relevant audits for the rate provider.
+      placeholder: https://docs.balancer.fi/developer-reference/contracts/security.html#security
+    validations:
+      required: true
+  - type: input
+    id: documentation
+    attributes:
+      label: Protocol Documentation
+      description: Please provide a text based snippet to what the rate provider does.
+      placeholder: The rate provider is used to provide the rate of the underlying asset in a pool.
+    validations:
+      required: true
+  - type: input
+    id: erc4626
+    attributes:
+      label: ERC4626 Asset contract address
+      description: Please provide the address of the ERC4626 vault.
+      placeholder: 0xae78736cd615f374d3085123a210448e74fc6393
+    validations:
+      required: false
+  - type: input
+    id: erc4626-audits
+    attributes:
+      label: ERC4626 Asset contract audits
+      description: Please provide the links to the relevant audits for the ERC4626 vault.
+      placeholder: https://docs.balancer.fi/developer-reference/contracts/security.html#security
+    validations:
+      required: false
+  - type: input
+    id: erc4626-documentation
+    attributes:
+      label: ERC4626 Asset contract documentation
+      description: Please provide a text based snippet to what the ERC4626 vault does.
+      placeholder: The ERC4626 vault is used to provide the rate of the underlying asset in a pool.
+    validations:
+      required: false
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Terms and Conditions
+      description: By submitting this issue, you certify that the following are true to the best of your knowledge.
+      options:
+        - label: The protocol to be integrated has been audited by at least one security firm or independent researcher.
+          required: true
+        - label: If deployed, the contract & all involved downstream contracts are verified on etherscan.
+          required: true
+        - label: The contract does not rely upon an EOA to supply any critical data (e.g., price).
+          required: true
+        - label: If upgradeable, the contract's administrator is not an EOA.
+          required: true
