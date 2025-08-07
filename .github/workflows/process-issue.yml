@@ -6,6 +6,8 @@ jobs:
   write-review:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
       - name: Parse Issue
         id: parse-issue
         uses: GrantBirki/issue-template-parser@v7.0.4
