@@ -44,7 +44,7 @@ const chainNameToRegistryKey: { [key: string]: string } = {
     'Mode Mainnet': 'mode',
 }
 
-async function writeReviewAndUpdateRegistry(erc4626: Address, network: Chain, rpcUrl: string) {
+export async function writeReviewAndUpdateRegistry(erc4626: Address, network: Chain, rpcUrl: string) {
     const service = new ERC4626DataService(erc4626, network)
 
     await service.initialize()

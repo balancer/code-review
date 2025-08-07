@@ -45,7 +45,7 @@ const chainNameToRegistryKey: { [key: string]: string } = {
     'Mode Mainnet': 'mode',
 }
 
-async function writeReviewAndUpdateRegistry(
+export async function writeReviewAndUpdateRegistry(
     rateProviderAddress: Address,
     network: Chain,
     rateProviderAsset: Address,
