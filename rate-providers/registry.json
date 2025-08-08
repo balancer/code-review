@@ -3353,6 +3353,32 @@
           "implementationReviewed": "0x4e7991e5c547ce825bdeb665ee14a3274f9f61e0"
         }
       ]
+    },
+    "0x2E5B31F629237475A2E83B651E9DB8017dB881c8": {
+      "asset": "0xd018A9ba579d3882748c1f1E4daD7203926Dc43B",
+      "name": "AarnaatvUSDCRateProvider.md",
+      "summary": "safe",
+      "review": "./AarnaatvUSDCRateProviderReview21ce.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "implementationReviewed": "0x43506849d7c04f9138d1a2050bbf3a0c054402dd"
+        },
+        {
+          "entrypoint": "0x43506849d7c04f9138d1a2050bbf3a0c054402dd",
+          "implementationReviewed": "0x800c32eaa2a6c93cf4cb51794450ed77fbfbb172"
+        },
+        {
+          "entrypoint": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+          "implementationReviewed": "0x97287a4f35e583d924f78ad88db8afce1379189a"
+        },
+        {
+          "entrypoint": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+          "implementationReviewed": "0xb76cf0f1d2e1a606c14044607c8c44878aae7186"
+        }
+      ]
     }
   },
   "fantom": {
