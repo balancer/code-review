@@ -43,7 +43,7 @@ async function processIssue(issueJson: string) {
 
     const issueData: IssueData = JSON.parse(issueJson)
 
-    console.log('Processing issue data:', issueData)
+    console.log('Processing issue data:', issueJson)
     console.log('issue data:', issueData)
 
     // TODO: Validate data
@@ -69,15 +69,16 @@ async function processIssue(issueJson: string) {
     // load the RPC URL from the environment variable
     const rpcUrl = process.env[`${issueData.network.toUpperCase()}_RPC_URL`]
 
-    await writeReviewAndUpdateRegistry(
+    /* await writeReviewAndUpdateRegistry(
         issueData.rate_provider_contract_address,
         network,
         issueData.erc4626_asset_contract_address,
         rpcUrl as string,
-    )
+    ) */
     //await writeERC4626ReviewAndUpdateRegistry(erc4626Address, network, rpcUrl)
 }
 
 // Read from environment variable instead of command line
 const issueData = process.env.ISSUE_DATA || process.argv[2] || '{}'
+console.log('Issue data from environment:', issueData)
 processIssue(issueData)
