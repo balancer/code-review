@@ -43,6 +43,9 @@ async function processIssue(issueJson: string) {
 
     const issueData: IssueData = JSON.parse(issueJson)
 
+    console.log('Processing issue data:', issueData)
+    console.log('issue data:', issueData)
+
     // TODO: Validate data
 
     // Map network name to Chain object
