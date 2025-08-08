@@ -8,6 +8,11 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+      - name: Create new branch
+        run: |
+          git config --local user.email "mkflow27@gmail.com"
+          git config --local user.name "mkflow27"
+          git checkout -b review/issue-${{ github.event.issue.number }}
       - name: Parse Issue
         id: parse-issue
         uses: GrantBirki/issue-template-parser@v7.0.4
@@ -18,3 +23,49 @@ jobs:
         run: npx tsx scripts/process-issue.ts
         env:
           ISSUE_DATA: ${{ steps.parse-issue.outputs.json }}
+          BASE_RPC_URL: ${{ secrets.BASE_RPC_URL }}
+          MAINNET_RPC_URL: ${{ secrets.MAINNET_RPC_URL }}
+          ARBITRUM_RPC_URL: ${{ secrets.ARBITRUM_RPC_URL }}
+          AVALANCHE_RPC_URL: ${{ secrets.AVALANCHE_RPC_URL }}
+          GNOSIS_RPC_URL: ${{ secrets.GNOSIS_RPC_URL }}
+          FRAXTAL_RPC_URL: ${{ secrets.FRAXTAL_RPC_URL }}
+          OPTIMISM_RPC_URL: ${{ secrets.OPTIMISM_RPC_URL }}
+          SONIC_RPC_URL: ${{ secrets.SONIC_RPC_URL }}
+          HYPEREVM_RPC_URL: ${{ secrets.HYPEREVM_RPC_URL }}
+          HYPERNATIVE_CLIENT_ID: ${{ secrets.HYPERNATIVE_CLIENT_ID }}
+          HYPERNATIVE_CLIENT_SECRET: ${{ secrets.HYPERNATIVE_CLIENT_SECRET }}
+      - name: Commit changes
+        run: |
+          git add .
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+            exit 0
+          else
+            git commit -m "Add review for issue #${{ github.event.issue.number }}"
+            git push origin review/issue-${{ github.event.issue.number }}
+          fi
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: review/issue-${{ github.event.issue.number }}
+          title: "Review: Rate Provider from Issue #${{ github.event.issue.number }}"
+          body: |
+            ## Automated Review Generated
+
+            This PR was automatically generated from issue #${{ github.event.issue.number }}.
+
+            **Network:** `${{ fromJson(steps.parse-issue.outputs.json).network }}`
+            **Rate Provider:** `${{ fromJson(steps.parse-issue.outputs.json).rate_provider_contract_address }}`
+            **Asset Contract:** `${{ fromJson(steps.parse-issue.outputs.json).asset_contract_address }}`
+
+            ### Generated Files:
+            - Rate provider review documentation
+            - Updated registry files
+
+            Closes #${{ github.event.issue.number }}
+          labels: |
+            automated-review
+            rate-provider
+          assignees: mkflow27
