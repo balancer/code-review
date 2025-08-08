@@ -8,6 +8,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+      - name: Install dependencies
+        run: npm install
       - name: Create new branch
         run: |
           git config --local user.email "mkflow27@gmail.com"
