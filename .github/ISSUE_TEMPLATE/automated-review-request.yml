@@ -15,6 +15,23 @@ body:
         - label: If so, is the intention for this ERC4626 asset to be boosted?
         - label: If so, shall the underlying asset be used to add/remove liquidity in a pool if possible? (i.e. add USDC for waUSDC)
         - label: If so, shall the wrapped asset also be used to add/remove liquidity in a pool? (i.e. add waUSDC directly)
+  - type: dropdown
+    id: network
+    attributes:
+      label: Network
+      description: Select the network where the contract is deployed
+      options:
+        - base
+        - mainnet
+        - arbitrum
+        - avalanche
+        - gnosis
+        - fraxtal
+        - optimism
+        - sonic
+        - hyperEvm
+    validations:
+      required: true
   - type: input
     id: contract
     attributes:
