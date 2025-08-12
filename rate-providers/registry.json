@@ -3358,7 +3358,7 @@
       "asset": "0xd018A9ba579d3882748c1f1E4daD7203926Dc43B",
       "name": "AarnaatvUSDCRateProvider.md",
       "summary": "safe",
-      "review": "./AarnaatvUSDCRateProviderReview21ce.md",
+      "review": "./AarnaatvUSDCRateProviderReview3b59.md",
       "warnings": [],
       "factory": "",
       "upgradeableComponents": [
@@ -5473,6 +5473,15 @@
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
       "warnings": ["chainlink"],
+      "factory": "",
+      "upgradeableComponents": []
+    },
+    "0xAB7dFEb522a237791077105a669D399662FD3dB3": {
+      "asset": "0x66c71204B70aE27BE6dC3eb41F9aF5868E68fDb6",
+      "name": "USDhl(Frontier)RateProvider.md",
+      "summary": "safe",
+      "review": "./USDhl(Frontier)RateProviderReviewd93b.md",
+      "warnings": [],
       "factory": "",
       "upgradeableComponents": []
     }
