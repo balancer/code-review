@@ -1994,6 +1994,17 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0x66c71204B70aE27BE6dC3eb41F9aF5868E68fDb6": {
+      "asset": "0xb50A96253aBDF803D85efcDce07Ad8becBc52BD5",
+      "name": "USDhl(Frontier)Erc4626Vault.md",
+      "summary": "safe",
+      "review": "./USDhl(Frontier)Erc4626VaultReview8c47.md",
+      "warnings": [],
+      "upgradeableComponents": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   }
 }
