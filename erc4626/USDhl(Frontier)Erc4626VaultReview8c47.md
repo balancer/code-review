@@ -24,7 +24,7 @@ Each of the items below represents an absolute requirement for the Rate Provider
 
 ## Conclusion
 **Summary judgment: USABLE**
-You can find the passing fork tests at: 
+You can find the passing fork tests at: https://github.com/balancer/balancer-v3-erc4626-tests/pull/81
 
 ** upgradeable in this context means that:
 - The contract is a proxy contract with an implementation sourced from Etherscan.
