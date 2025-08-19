@@ -36,8 +36,9 @@ describe('test networks', () => {
         hyperEvm,
     ]
 
-    config()
+    //config()
     const apiKey = process.env.ETHERSCAN_API_KEY as string
+    console.log('Using Etherscan API Key:', apiKey)
 
     testNetworks.forEach((chain) => {
         describe(`when using ${chain.name}`, () => {
