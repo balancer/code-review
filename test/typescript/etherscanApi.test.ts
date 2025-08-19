@@ -38,7 +38,6 @@ describe('test networks', () => {
 
     config()
     const apiKey = process.env.ETHERSCAN_API_KEY as string
-    console.log('Using Etherscan API Key:', apiKey)
 
     testNetworks.forEach((chain) => {
         describe(`when using ${chain.name}`, () => {
