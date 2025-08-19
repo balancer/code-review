@@ -3656,6 +3656,20 @@
           "implementationReviewed": "0xb76cf0f1d2e1a606c14044607c8c44878aae7186"
         }
       ]
+    },
+    "0xe1Fd04511671E43617E9C7E9759A7e11c8Fb6A51": {
+      "asset": "0xB33f4B9C6f0624EdeAE8881c97381837760D52CB",
+      "name": "LiquidStakedRezerve.moneyRateProvider.md",
+      "summary": "safe",
+      "review": "./LiquidStakedRezerve.moneyRateProviderReview883c.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xb33f4b9c6f0624edeae8881c97381837760d52cb",
+          "implementationReviewed": "0xd6940e909c79bb9c0c74ac3b7091119e891cfaf5"
+        }
+      ]
     }
   },
   "fantom": {
