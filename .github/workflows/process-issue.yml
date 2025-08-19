@@ -40,7 +40,10 @@ jobs:
           HYPEREVM_RPC_URL: ${{ secrets.HYPEREVM_RPC_URL }}
           HYPERNATIVE_CLIENT_ID: ${{ secrets.HYPERNATIVE_CLIENT_ID }}
           HYPERNATIVE_CLIENT_SECRET: ${{ secrets.HYPERNATIVE_CLIENT_SECRET }}
-
+      - name: Validate registry format
+        run: npm run test
+        env:
+          ETHERSCAN_API_KEY: ${{ secrets.ETHERSCAN_API_KEY }}
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v7.0.8
         with:
