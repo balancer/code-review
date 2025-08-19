@@ -12,7 +12,7 @@ jobs:
         run: npm install
       - name: Debug env vars
         run: |
-          echo "ETHERSCAN_API_KEY is set: ${{ env.ETHERSCAN_API_KEY != '' }}"
+          echo "ETHERSCAN_API_KEY is set: ${{ vars.ETHERSCAN_API_KEY != '' }}"
         env:
           ETHERSCAN_API_KEY: ${{ env.ETHERSCAN_API_KEY }}
       - name: Validate registry format
