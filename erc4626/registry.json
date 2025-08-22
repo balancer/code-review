@@ -147,7 +147,9 @@
       "name": "Superform USDC",
       "summary": "safe",
       "review": "./SuperformSuperVaultReview.md",
-      "warnings": ["buffer"],
+      "warnings": [
+        "buffer"
+      ],
       "canUseBufferForSwaps": false,
       "useUnderlyingForAddRemove": false,
       "useWrappedForAddRemove": true
@@ -349,7 +351,9 @@
       "name": "Superform USDC",
       "summary": "safe",
       "review": "./SuperformSuperVaultReview.md",
-      "warnings": ["buffer"],
+      "warnings": [
+        "buffer"
+      ],
       "canUseBufferForSwaps": false,
       "useUnderlyingForAddRemove": false,
       "useWrappedForAddRemove": true
@@ -633,7 +637,9 @@
       "name": "sDAI",
       "summary": "safe",
       "review": "./sDaiReview.md",
-      "warnings": ["buffer"],
+      "warnings": [
+        "buffer"
+      ],
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": false,
       "useWrappedForAddRemove": true
@@ -2002,6 +2008,26 @@
       "review": "./USDhl(Frontier)Erc4626VaultReview8c47.md",
       "warnings": [],
       "upgradeableComponents": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
+    "0xDC6F4239C1D8D3b955C06CB8f1A6cF18EFfc5BFe": {
+      "asset": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
+      "name": "StaticUSD₮0HypurrErc4626Vault.md",
+      "summary": "safe",
+      "review": "./StaticUSD₮0HypurrErc4626VaultReview4f04.md",
+      "warnings": [],
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xdc6f4239c1d8d3b955c06cb8f1a6cf18effc5bfe",
+          "implementationReviewed": "0x9889684ac7b2c2219fc086d46e232b4f0a7f34a8"
+        },
+        {
+          "entrypoint": "0xcecce0eb9dd2ef7996e01e25dd70e461f918a14b",
+          "implementationReviewed": "0x980bdd9cf1346800f6307e3b2301ffd3ce8c7523"
+        }
+      ],
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true

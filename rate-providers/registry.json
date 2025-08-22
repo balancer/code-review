@@ -5907,6 +5907,24 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0x1d3c598d889e9b7063fbb4532095078ace62df64": {
+      "asset": "0xDC6F4239C1D8D3b955C06CB8f1A6cF18EFfc5BFe",
+      "name": "StaticUSD₮0HypurrRateProvider.md",
+      "summary": "safe",
+      "review": "./StaticUSD₮0HypurrRateProviderReviewd7a9.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xdc6f4239c1d8d3b955c06cb8f1a6cf18effc5bfe",
+          "implementationReviewed": "0x9889684ac7b2c2219fc086d46e232b4f0a7f34a8"
+        },
+        {
+          "entrypoint": "0xcecce0eb9dd2ef7996e01e25dd70e461f918a14b",
+          "implementationReviewed": "0x980bdd9cf1346800f6307e3b2301ffd3ce8c7523"
+        }
+      ]
     }
   }
 }
