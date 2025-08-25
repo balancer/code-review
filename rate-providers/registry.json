@@ -5666,6 +5666,24 @@
           "implementationReviewed": "0x5f0ecae9b7b279261cc6a1cabf26b51c79fe6f8f"
         }
       ]
+    },
+    "0x20A7E5f22a16cFB5b33258aBDC1d6d48f104bc89": {
+      "asset": "0x0555e30da8f98308edb960aa94c0db47230d2b9c",
+      "name": "DynamicWrappedBTCRateProvider.md",
+      "summary": "safe",
+      "review": "./WrappedBTCRateProviderReview8802.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
+    },
+    "0x4881EFf86856216B38eEe74a20Bc3156A599Ec83": {
+      "asset": "0x50c42deacd8fc9773493ed674b675be577f2634b",
+      "name": "DynamicWrappedEtheronSonicRateProvider.md",
+      "summary": "safe",
+      "review": "./WrappedEtheron SonicRateProviderReview3fe5.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   },
   "hyperevm": {
