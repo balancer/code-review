@@ -5680,7 +5680,7 @@
       "asset": "0x50c42deacd8fc9773493ed674b675be577f2634b",
       "name": "DynamicWrappedEtheronSonicRateProvider.md",
       "summary": "safe",
-      "review": "./WrappedEtheron SonicRateProviderReview3fe5.md",
+      "review": "./WrappedEtheronSonicRateProviderReview3fe5.md",
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
