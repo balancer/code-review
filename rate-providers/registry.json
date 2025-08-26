@@ -3634,7 +3634,7 @@
     "0x2E5B31F629237475A2E83B651E9DB8017dB881c8": {
       "asset": "0xF30F62963CCE132F32306d7F18a8587958b30EA9",
       "name": "AarnaatvUSDCRateProvider.md",
-      "summary": "unsafe",
+      "summary": "safe",
       "review": "./AarnaatvUSDCRateProviderReview573f.md",
       "warnings": [],
       "factory": "",
