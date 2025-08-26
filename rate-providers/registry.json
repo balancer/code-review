@@ -3632,10 +3632,10 @@
       ]
     },
     "0x2E5B31F629237475A2E83B651E9DB8017dB881c8": {
-      "asset": "0xd018A9ba579d3882748c1f1E4daD7203926Dc43B",
+      "asset": "0xF30F62963CCE132F32306d7F18a8587958b30EA9",
       "name": "AarnaatvUSDCRateProvider.md",
       "summary": "safe",
-      "review": "./AarnaatvUSDCRateProviderReview3b59.md",
+      "review": "./AarnaatvUSDCRateProviderReview573f.md",
       "warnings": [],
       "factory": "",
       "upgradeableComponents": [
@@ -3648,12 +3648,8 @@
           "implementationReviewed": "0x800c32eaa2a6c93cf4cb51794450ed77fbfbb172"
         },
         {
-          "entrypoint": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
-          "implementationReviewed": "0x97287a4f35e583d924f78ad88db8afce1379189a"
-        },
-        {
-          "entrypoint": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
-          "implementationReviewed": "0xb76cf0f1d2e1a606c14044607c8c44878aae7186"
+          "entrypoint": "0xc3d688b66703497daa19211eedff47f25384cdc3",
+          "implementationReviewed": "0xb5dcf2711cf76bbe9d99f687c59a5421ca2ce13b"
         }
       ]
     },
