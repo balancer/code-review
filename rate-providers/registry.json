@@ -1335,6 +1335,24 @@
       ],
       "factory": "0xeC2C6184761ab7fE061130B4A7e3Da89c72F8395",
       "upgradeableComponents": []
+    },
+    "0xa41f1552cd8bf74002793d51c5c64ceebe2a62a8": {
+      "asset": "0x14A84F1a61cCd7D1BE596A6cc11FE33A36Bc1646",
+      "name": "TreehouseAVAXRateProvider.md",
+      "summary": "safe",
+      "review": "./TreehouseAVAXRateProviderReview2f84.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x2b2c81e08f1af8835a78bb2a90ae924ace0ea4be",
+          "implementationReviewed": "0xb791c7a42fd0d10f90deaa906a8735f79719fa53"
+        },
+        {
+          "entrypoint": "0x14a84f1a61ccd7d1be596a6cc11fe33a36bc1646",
+          "implementationReviewed": "0xb6374448c68186e3138c994fce4437d26d486d3a"
+        }
+      ]
     }
   },
   "base": {
