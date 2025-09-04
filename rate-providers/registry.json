@@ -5698,6 +5698,15 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0x5c08Bbc2C47447854958060725e437E6Dd003332": {
+      "asset": "0x7c050be1dded733bd44116b60a8a35125ba47459",
+      "name": "RsETHWrapperRateProvider.md",
+      "summary": "safe",
+      "review": "./RsETHWrapperRateProviderReview717e.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   },
   "hyperevm": {
