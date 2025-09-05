@@ -5966,6 +5966,15 @@
           "implementationReviewed": "0x980bdd9cf1346800f6307e3b2301ffd3ce8c7523"
         }
       ]
+    },
+    "0x1DF042c97cF29525f59132F957e279E62BDD8cD9": {
+      "asset": "0x5555555555555555555555555555555555555555",
+      "name": "WHYPE Rate Provider",
+      "summary": "safe",
+      "review": "./hypercore.md",
+      "warnings": [],
+      "factory": "0x9179c06629ef7f17cb5759f501d89997fe0e7b45",
+      "upgradeableComponents": []
     }
   }
 }
