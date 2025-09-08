@@ -147,7 +147,9 @@
       "name": "Superform USDC",
       "summary": "safe",
       "review": "./SuperformSuperVaultReview.md",
-      "warnings": ["buffer"],
+      "warnings": [
+        "buffer"
+      ],
       "canUseBufferForSwaps": false,
       "useUnderlyingForAddRemove": false,
       "useWrappedForAddRemove": true
@@ -349,7 +351,9 @@
       "name": "Superform USDC",
       "summary": "safe",
       "review": "./SuperformSuperVaultReview.md",
-      "warnings": ["buffer"],
+      "warnings": [
+        "buffer"
+      ],
       "canUseBufferForSwaps": false,
       "useUnderlyingForAddRemove": false,
       "useWrappedForAddRemove": true
@@ -360,7 +364,7 @@
       "summary": "unsafe",
       "review": "./MorphoVaults/V1-Incompatible-Gauntlet.md",
       "warnings": [],
-      "canUseBufferForSwaps": false,
+      "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
     },
@@ -370,7 +374,7 @@
       "summary": "unsafe",
       "review": "./MorphoVaults/V1-incompatible-Steakhouse.md",
       "warnings": [],
-      "canUseBufferForSwaps": false,
+      "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
     },
@@ -390,7 +394,7 @@
       "summary": "unsafe",
       "review": "./MorphoVaults/V1-incompatible-Steakhouse.md",
       "warnings": [],
-      "canUseBufferForSwaps": false,
+      "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
     },
@@ -633,7 +637,9 @@
       "name": "sDAI",
       "summary": "safe",
       "review": "./sDaiReview.md",
-      "warnings": ["buffer"],
+      "warnings": [
+        "buffer"
+      ],
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": false,
       "useWrappedForAddRemove": true
@@ -661,6 +667,16 @@
     "0x417bc5b940475203A18C2f320a5ba470D6c5E463": {
       "asset": "0xcB444e90D8198415266c6a2724b7900fb12FC56E",
       "name": "Wrapped Aave Gnosis EURe",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
+    "0x58d9AcAC48A4077E4909181c48DEcD00E5ba5DE4": {
+      "asset": "0xfc421aD3C883Bf9E7C4f42dE845C4e4405799e73",
+      "name": "Wrapped Aave Gnosis GHO",
       "summary": "safe",
       "review": "./StatATokenV2Review.md",
       "warnings": [],
@@ -1200,6 +1216,28 @@
       "name": "GamiCapitalscUSDErc4626Vault.md",
       "summary": "safe",
       "review": "./GamiCapitalscUSDErc4626VaultReview6cee.md",
+      "warnings": [],
+      "upgradeableComponents": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
+    "0xf6bC16B79c469b94Cdd25F3e2334DD4FEE47A581": {
+      "asset": "0x29219dd400f2Bf60E5a23d13Be72B486D4038894",
+      "name": "GreenhouseUSDCErc4626Vault.md",
+      "summary": "safe",
+      "review": "./GreenhouseUSDCErc4626VaultReviewc0d8.md",
+      "warnings": [],
+      "upgradeableComponents": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
+    "0x391b3F70E254d582588B27e97E48D1CFcdf0BE7e": {
+      "asset": "0xd3DCe716f3eF535C5Ff8d041c1A41C3bd89b97aE",
+      "name": "MithrasErc4626Vault.md",
+      "summary": "safe",
+      "review": "./MithrasErc4626VaultReview71e8.md",
       "warnings": [],
       "upgradeableComponents": [],
       "canUseBufferForSwaps": true,
@@ -1855,7 +1893,7 @@
       "review": "./GauntletUSDT0VaultErc4626VaultReview93a6.md",
       "warnings": [],
       "upgradeableComponents": [],
-      "canUseBufferForSwaps": false,
+      "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
     },
@@ -1866,7 +1904,142 @@
       "review": "./FelixUSDhlErc4626VaultReview8494.md",
       "warnings": [],
       "upgradeableComponents": [],
-      "canUseBufferForSwaps": false,
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
+    "0xD704254eb350E0D3BaeCD194d095862267897aE0": {
+      "asset": "0x5555555555555555555555555555555555555555",
+      "name": "StaticHyperLendHyperEVM WHYPE v2Erc4626Vault.md",
+      "summary": "safe",
+      "review": "./StaticHyperLendHyperEVM WHYPE v2Erc4626VaultReview22b3.md",
+      "warnings": [],
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xd704254eb350e0d3baecd194d095862267897ae0",
+          "implementationReviewed": "0x4376c06d866557fac5d0b5813526639c403bfcf5"
+        }
+      ],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
+    "0xfc5126377f0efc0041c0969ef9ba903ce67d151e": {
+      "asset": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
+      "name": "FelixUSDT0Erc4626Vault.md",
+      "summary": "safe",
+      "review": "./FelixUSDT0Erc4626VaultReview29bb.md",
+      "warnings": [],
+      "upgradeableComponents": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
+    "0x5eEC795d919FA97688Fb9844eeB0072E6B846F9d": {
+      "asset": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+      "name": "GauntletUSDeCoreErc4626Vault.md",
+      "summary": "safe",
+      "review": "./GauntletUSDeCoreErc4626VaultReviewb0a8.md",
+      "warnings": [],
+      "upgradeableComponents": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
+    "0xD3A9Cb7312B9c29113290758f5ADFe12304cd16A": {
+      "asset": "0x0aD339d66BF4AeD5ce31c64Bc37B3244b6394A77",
+      "name": "MEVCapitalUSRErc4626Vault.md",
+      "summary": "safe",
+      "review": "./MEVCapitalUSRErc4626VaultReviewa313.md",
+      "warnings": [],
+      "upgradeableComponents": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
+    "0x3Bcc0a5a66bB5BdCEEf5dd8a659a4eC75F3834d8": {
+      "asset": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
+      "name": "MEVCapitalUSDT0Erc4626Vault.md",
+      "summary": "safe",
+      "review": "./MEVCapitalUSDT0Erc4626VaultReview778c.md",
+      "warnings": [],
+      "upgradeableComponents": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
+    "0x2c910F67DbF81099e6f8e126E7265d7595DC20aD": {
+      "asset": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
+      "name": "HyUSD₮0(hwHLP)- 11Erc4626Vault.md",
+      "summary": "safe",
+      "review": "./HyUSD₮0(hwHLP)- 11Erc4626VaultReview37fe.md",
+      "warnings": [],
+      "upgradeableComponents": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
+    "0x0571362ba5EA9784a97605f57483f865A37dBEAA": {
+      "asset": "0xBe6727B535545C67d5cAa73dEa54865B92CF7907",
+      "name": "GauntletuETHVaultErc4626Vault.md",
+      "summary": "safe",
+      "review": "./GauntletuETHVaultErc4626VaultReview1975.md",
+      "warnings": [],
+      "upgradeableComponents": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
+    "0xd19e3d00f8547f7d108abFD4bbb015486437B487": {
+      "asset": "0x5555555555555555555555555555555555555555",
+      "name": "MEVCapitalHYPEErc4626Vault.md",
+      "summary": "safe",
+      "review": "./MEVCapitalHYPEErc4626VaultReview5dcc.md",
+      "warnings": [],
+      "upgradeableComponents": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
+    "0x06Fd9D03b3d0F18E4919919b72D30c582f0a97E5": {
+      "asset": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
+      "name": "HyperlendInterestBearing USD₮0 (Wrapped HLP)Erc4626Vault.md",
+      "summary": "safe",
+      "review": "./HyperlendInterestBearing USD₮0 (Wrapped HLP)Erc4626VaultReview02cf.md",
+      "warnings": [],
+      "upgradeableComponents": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
+    "0x66c71204B70aE27BE6dC3eb41F9aF5868E68fDb6": {
+      "asset": "0xb50A96253aBDF803D85efcDce07Ad8becBc52BD5",
+      "name": "USDhl(Frontier)Erc4626Vault.md",
+      "summary": "safe",
+      "review": "./USDhl(Frontier)Erc4626VaultReview8c47.md",
+      "warnings": [],
+      "upgradeableComponents": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
+    "0xDC6F4239C1D8D3b955C06CB8f1A6cF18EFfc5BFe": {
+      "asset": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
+      "name": "StaticUSD₮0HypurrErc4626Vault.md",
+      "summary": "safe",
+      "review": "./StaticUSD₮0HypurrErc4626VaultReview4f04.md",
+      "warnings": [],
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xdc6f4239c1d8d3b955c06cb8f1a6cf18effc5bfe",
+          "implementationReviewed": "0x9889684ac7b2c2219fc086d46e232b4f0a7f34a8"
+        },
+        {
+          "entrypoint": "0xcecce0eb9dd2ef7996e01e25dd70e461f918a14b",
+          "implementationReviewed": "0x980bdd9cf1346800f6307e3b2301ffd3ce8c7523"
+        }
+      ],
+      "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
     },

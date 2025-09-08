@@ -11,7 +11,17 @@ contracts/
 # Environment
 .env
 
-# Python 
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Python
+venv/
 python/venv/
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
 # Environment files
 .env

@@ -1,3 +1,5 @@
+// npx jest test/erc4626schema.test.js
+
 const fs = require("fs").promises
 const path = require("path")
 const Ajv = require("ajv")
