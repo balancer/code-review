@@ -364,7 +364,7 @@
       "summary": "unsafe",
       "review": "./MorphoVaults/V1-Incompatible-Gauntlet.md",
       "warnings": [],
-      "canUseBufferForSwaps": false,
+      "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
     },
@@ -374,7 +374,7 @@
       "summary": "unsafe",
       "review": "./MorphoVaults/V1-incompatible-Steakhouse.md",
       "warnings": [],
-      "canUseBufferForSwaps": false,
+      "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
     },
@@ -394,7 +394,7 @@
       "summary": "unsafe",
       "review": "./MorphoVaults/V1-incompatible-Steakhouse.md",
       "warnings": [],
-      "canUseBufferForSwaps": false,
+      "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
     },
