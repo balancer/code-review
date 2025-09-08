@@ -1232,6 +1232,17 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0x391b3F70E254d582588B27e97E48D1CFcdf0BE7e": {
+      "asset": "0xd3DCe716f3eF535C5Ff8d041c1A41C3bd89b97aE",
+      "name": "MithrasErc4626Vault.md",
+      "summary": "safe",
+      "review": "./MithrasErc4626VaultReview71e8.md",
+      "warnings": [],
+      "upgradeableComponents": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   },
   "avalanche": {

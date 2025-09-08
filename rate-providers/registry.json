@@ -5707,6 +5707,15 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0xa05abb80943457c1a81329f828d21730c89885e6": {
+      "asset": "0x391b3F70E254d582588B27e97E48D1CFcdf0BE7e",
+      "name": "MithrasRateProvider.md",
+      "summary": "safe",
+      "review": "./MithrasRateProviderReviewf8ad.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   },
   "hyperevm": {
