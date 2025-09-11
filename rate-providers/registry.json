@@ -3732,6 +3732,20 @@
           "implementationReviewed": "0xd6940e909c79bb9c0c74ac3b7091119e891cfaf5"
         }
       ]
+    },
+    "0xAf32870516C6301FBf4D027E7D8Ac5537FeB6904": {
+      "asset": "0x88887be419578051ff9f4eb6c858a951921d8888",
+      "name": "StakedcapUSDRateProvider.md",
+      "summary": "safe",
+      "review": "./StakedcapUSDRateProviderReview173c.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x88887be419578051ff9f4eb6c858a951921d8888",
+          "implementationReviewed": "0x42c0e0ef7c2f35de073f4d6f9c0e4483429c3d31"
+        }
+      ]
     }
   },
   "fantom": {
