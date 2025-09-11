@@ -663,6 +663,22 @@
       "canUseBufferForSwaps": false,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0x88887be419578051ff9f4eb6c858a951921d8888": {
+      "asset": "0xcCcc62962d17b8914c62D74FfB843d73B2a3cccC",
+      "name": "StakedcapUSDErc4626Vault.md",
+      "summary": "safe",
+      "review": "./StakedcapUSDErc4626VaultReview85f3.md",
+      "warnings": [],
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x88887be419578051ff9f4eb6c858a951921d8888",
+          "implementationReviewed": "0x42c0e0ef7c2f35de073f4d6f9c0e4483429c3d31"
+        }
+      ],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   },
   "gnosis": {
