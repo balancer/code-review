@@ -785,6 +785,15 @@
         }
       ]
     },
+    "0xbdb9b810a3722f066681212d33eabf1e842fcf78": {
+      "asset": "0x2BA39e5388aC6C702Cb29AEA78d52aa66832f1ee",
+      "name": "VarlamoreUSDCGrowthRateProvider.md",
+      "summary": "unsafe",
+      "review": "./VarlamoreUSDCGrowthRateProviderReview484d.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
+    },
     "0xd33935475723e51c8e0cd6e024a2e5a73a48a5e9": {
       "asset": "0x252b965400862d94bda35fecf7ee0f204a53cc36",
       "name": "YearnUSNDRateProvider.md",
