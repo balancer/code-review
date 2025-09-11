@@ -182,6 +182,17 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0x252b965400862d94bda35fecf7ee0f204a53cc36": {
+      "asset": "0x4ecf61a6c2FaB8A047CEB3B3B263B401763e9D49",
+      "name": "YearnUSNDErc4626Vault.md",
+      "summary": "safe",
+      "review": "./YearnUSNDErc4626VaultReview298f.md",
+      "warnings": [],
+      "upgradeableComponents": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   },
   "base": {
