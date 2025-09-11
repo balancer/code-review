@@ -784,6 +784,15 @@
           "implementationReviewed": "0x832ff4011a3164ea76cea06a313ee0b6cd72ba96"
         }
       ]
+    },
+    "0xbdb9b810a3722f066681212d33eabf1e842fcf78": {
+      "asset": "0x2BA39e5388aC6C702Cb29AEA78d52aa66832f1ee",
+      "name": "VarlamoreUSDCGrowthRateProvider.md",
+      "summary": "unsafe",
+      "review": "./VarlamoreUSDCGrowthRateProviderReview484d.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   },
   "avalanche": {

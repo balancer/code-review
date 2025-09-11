@@ -171,6 +171,17 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0x2BA39e5388aC6C702Cb29AEA78d52aa66832f1ee": {
+      "asset": "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
+      "name": "VarlamoreUSDCGrowthErc4626Vault.md",
+      "summary": "safe",
+      "review": "./VarlamoreUSDCGrowthErc4626VaultReviewe362.md",
+      "warnings": [],
+      "upgradeableComponents": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   },
   "base": {
