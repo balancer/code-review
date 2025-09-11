@@ -754,6 +754,36 @@
       "warnings": [],
       "factory": "0x5dbad78818d4c8958eff2d5b95b28385a22113cd",
       "upgradeableComponents": []
+    },
+    "0x1c69da5f388167cca3b9b07b7ec3472e7c380a63": {
+      "asset": "0xe4783824593a50Bfe9dc873204CEc171ebC62dE0",
+      "name": "EulerEarnUSDCRateProvider.md",
+      "summary": "safe",
+      "review": "./EulerEarnUSDCRateProviderReviewc9c4.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x78df1cf5bf06a7f27f2acc580b934238c1b80d50",
+          "implementationReviewed": "0x832ff4011a3164ea76cea06a313ee0b6cd72ba96"
+        },
+        {
+          "entrypoint": "0x05d28a86e057364f6ad1a88944297e58fc6160b3",
+          "implementationReviewed": "0x832ff4011a3164ea76cea06a313ee0b6cd72ba96"
+        },
+        {
+          "entrypoint": "0x0a1ecc5fe8c9be3c809844fcbe615b46a869b899",
+          "implementationReviewed": "0x832ff4011a3164ea76cea06a313ee0b6cd72ba96"
+        },
+        {
+          "entrypoint": "0x6afb8d3f6d4a34e9cb2f217317f4dc8e05aa673b",
+          "implementationReviewed": "0x832ff4011a3164ea76cea06a313ee0b6cd72ba96"
+        },
+        {
+          "entrypoint": "0xc078756d5722166ba6b51121bfb7bd6388c29f4e",
+          "implementationReviewed": "0x832ff4011a3164ea76cea06a313ee0b6cd72ba96"
+        }
+      ]
     }
   },
   "avalanche": {
