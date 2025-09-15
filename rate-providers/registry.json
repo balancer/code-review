@@ -1419,6 +1419,24 @@
           "implementationReviewed": "0xb6374448c68186e3138c994fce4437d26d486d3a"
         }
       ]
+    },
+    "0xAafb7a2b42395d3034A8e91b65a2bce8f86c959f": {
+      "asset": "0x94f9bb5c972285728dcee7eaece48bec2ff341ce",
+      "name": "StakedStreamUSDRateProvider.md",
+      "summary": "safe",
+      "review": "./StakedStreamUSDRateProviderReviewf6b3.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x27a6f18166691de3cec90bb76f80c353db423a53",
+          "implementationReviewed": "0xf5ee569eeed2ac5cd7f7d8052392b6cafc14000d"
+        },
+        {
+          "entrypoint": "0x49d90e2d811d4c34389966f6ada50a1288b8e5bd",
+          "implementationReviewed": "0x29db9031025046bfe5e007b504ec3f41d685a7c4"
+        }
+      ]
     }
   },
   "base": {
