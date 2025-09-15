@@ -139,6 +139,60 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": false
+    },
+    "0xe4783824593a50Bfe9dc873204CEc171ebC62dE0": {
+      "asset": "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
+      "name": "EulerEarnUSDCErc4626Vault.md",
+      "summary": "safe",
+      "review": "./EulerEarnUSDCErc4626VaultReviewa925.md",
+      "warnings": [],
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x6afb8d3f6d4a34e9cb2f217317f4dc8e05aa673b",
+          "implementationReviewed": "0x832ff4011a3164ea76cea06a313ee0b6cd72ba96"
+        },
+        {
+          "entrypoint": "0xc078756d5722166ba6b51121bfb7bd6388c29f4e",
+          "implementationReviewed": "0x832ff4011a3164ea76cea06a313ee0b6cd72ba96"
+        },
+        {
+          "entrypoint": "0x78df1cf5bf06a7f27f2acc580b934238c1b80d50",
+          "implementationReviewed": "0x832ff4011a3164ea76cea06a313ee0b6cd72ba96"
+        },
+        {
+          "entrypoint": "0x05d28a86e057364f6ad1a88944297e58fc6160b3",
+          "implementationReviewed": "0x832ff4011a3164ea76cea06a313ee0b6cd72ba96"
+        },
+        {
+          "entrypoint": "0x0a1ecc5fe8c9be3c809844fcbe615b46a869b899",
+          "implementationReviewed": "0x832ff4011a3164ea76cea06a313ee0b6cd72ba96"
+        }
+      ],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
+    "0x2BA39e5388aC6C702Cb29AEA78d52aa66832f1ee": {
+      "asset": "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
+      "name": "VarlamoreUSDCGrowthErc4626Vault.md",
+      "summary": "safe",
+      "review": "./VarlamoreUSDCGrowthErc4626VaultReviewe362.md",
+      "warnings": [],
+      "upgradeableComponents": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
+    "0x252b965400862d94bda35fecf7ee0f204a53cc36": {
+      "asset": "0x4ecf61a6c2FaB8A047CEB3B3B263B401763e9D49",
+      "name": "YearnUSNDErc4626Vault.md",
+      "summary": "safe",
+      "review": "./YearnUSNDErc4626VaultReview298f.md",
+      "warnings": [],
+      "upgradeableComponents": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   },
   "base": {
@@ -607,6 +661,22 @@
       "warnings": [],
       "upgradeableComponents": [],
       "canUseBufferForSwaps": false,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
+    "0x88887be419578051ff9f4eb6c858a951921d8888": {
+      "asset": "0xcCcc62962d17b8914c62D74FfB843d73B2a3cccC",
+      "name": "StakedcapUSDErc4626Vault.md",
+      "summary": "safe",
+      "review": "./StakedcapUSDErc4626VaultReview85f3.md",
+      "warnings": [],
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x88887be419578051ff9f4eb6c858a951921d8888",
+          "implementationReviewed": "0x42c0e0ef7c2f35de073f4d6f9c0e4483429c3d31"
+        }
+      ],
+      "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
     }
