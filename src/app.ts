@@ -163,17 +163,22 @@ class RateProviderDataService {
 
         const proxiesWithRateProviderCompleteInfo = await Promise.all(
             receipts.map(async (info) => {
-                if (!info.ABI) {
-                    throw new Error(`ABI not provided for contract at address ${info.address}`)
-                }
-                const events = parseEventLogs({
-                    logs: info.receipt.logs,
-                    abi: JSON.parse(info.ABI),
-                    eventName: 'Upgraded',
-                })
-                const wasUpgraded = events.length > 0
+                try {
+            if (!info.ABI) {
+                throw new Error(`ABI not provided for contract at address ${info.address}`)
+            }
+            const events = parseEventLogs({
+                logs: info.receipt.logs,
+                abi: JSON.parse(info.ABI),
+                eventName: 'Upgraded',
+            })
+            const wasUpgraded = events.length > 0
 
-                return { ...info, events, wasUpgraded }
+            return { ...info, events, wasUpgraded }
+        } catch (error) {
+            console.error(`Error processing contract at address ${info.address}:`, error)
+            return { ...info, events: [], wasUpgraded: false, error }
+        }
             }),
         )
 
