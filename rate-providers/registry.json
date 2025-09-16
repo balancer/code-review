@@ -1433,6 +1433,20 @@
           "implementationReviewed": "0xf5ee569eeed2ac5cd7f7d8052392b6cafc14000d"
         }
       ]
+    },
+    "0x0646cd7ffd52044bbd5b07ce14448fbeeb707e4c": {
+      "asset": "0x1f8E769B5B6010B2C2BBCd68629EA1a0a0Eda7E3",
+      "name": "MEVBTCRateProvider.md",
+      "summary": "safe",
+      "review": "./xBTCRateProviderReview.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x1f8e769b5b6010b2c2bbcd68629ea1a0a0eda7e3",
+          "implementationReviewed": "0x48766776d56d429e6beb426ccca3fae31cace06d"
+        }
+      ]
     }
   },
   "base": {

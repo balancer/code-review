@@ -1589,6 +1589,16 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0x1f8E769B5B6010B2C2BBCd68629EA1a0a0Eda7E3": {
+      "asset": "0x152b9d0FdC40C096757F570A51E494bd4b943E50",
+      "name": "mevBTC",
+      "summary": "safe",
+      "review": "./MevBTCErc4626VaultReview.md",
+      "warnings": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   },
   "sepolia": {
