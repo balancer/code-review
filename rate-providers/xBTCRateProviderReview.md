@@ -2,7 +2,7 @@
 
 ## Details
 - Reviewed by: @mkflow27
-- Checked by: @\<GitHub handle of secondary reviewer\>
+- Checked by: @zekraken-bot
 - Deployed at:
     - [avalanche:0x0646cD7FfD52044BbD5b07Ce14448FbeEb707E4c](https://snowscan.xyz/address/0x0646cd7ffd52044bbd5b07ce14448fbeeb707e4c#code)
 - Audit report(s):
