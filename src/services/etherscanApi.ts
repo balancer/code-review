@@ -61,6 +61,12 @@ class EtherscanApi {
                     continue // Skip this address
                 }
 
+                // the contract can be unverified
+                if (data.result[0].ABI === 'Contract source code not verified') {
+                    console.log(`Contract is unverified for address ${address}`)
+                    continue // Skip this address
+                }
+
                 const { Proxy, ContractName, ABI, Implementation } = data.result[0]
                 results.push({ address, Proxy, ContractName, ABI, Implementation })
             } catch (error) {
