@@ -1,6 +1,7 @@
 import { Address, Hex, Chain } from 'viem'
 import { TransactionData, GetContractSourceCodeResponse } from '../types/types'
 import { avalanche } from 'viem/chains'
+import { plasma } from '../utils/customChains'
 
 /**
  * EtherscanApi class to interact with Etherscan API
@@ -18,7 +19,10 @@ class EtherscanApi {
 
     private getApiUrl(): string {
         // TODO: Validate chain is supported by EtherscanAPI.
-        return `https://api.etherscan.io/v2/api?chainid=${this.chain.id}`
+        if (this.chain.id === plasma.id) {
+            return plasma.blockExplorers.default.apiUrl
+        }
+        return `https://api.etherscan.io/v2/api?chainid=${this.chain.id}&`
     }
 
     private async fetchFromApi(url: string): Promise<any> {
@@ -56,7 +60,7 @@ class EtherscanApi {
         addresses: Address[],
     ): Promise<{ address: Address; deploymentTxHash: Hex; blockNumber: string }[]> {
         const apiUrl = this.getApiUrl()
-        const fetchingUrl = `${apiUrl}&module=contract&action=getcontractcreation&contractaddresses=${addresses.join(',')}&apikey=${this.apiKey}`
+        const fetchingUrl = `${apiUrl}module=contract&action=getcontractcreation&contractaddresses=${addresses.join(',')}&apikey=${this.apiKey}`
         const data: TransactionData = await this.fetchFromApi(fetchingUrl)
         return data.result.map((entry, index) => ({
             address: addresses[index],
@@ -73,7 +77,8 @@ class EtherscanApi {
 
         for (const address of addresses) {
             try {
-                const fetchingUrl = `${apiUrl}&module=contract&action=getsourcecode&address=${address}&apikey=${this.apiKey}`
+                // https://api.routescan.io/v2/network/mainnet/evm/9745/etherscan/api?module=contract&action=getabi&address=0xcA11bde05977b3631167028862bE2a173976CA11&apikey=YourApiKeyToken
+                const fetchingUrl = `${apiUrl}module=contract&action=getsourcecode&address=${address}&apikey=${this.apiKey}`
                 const data: GetContractSourceCodeResponse = await this.fetchFromApi(fetchingUrl)
 
                 if (data.status !== '1') {
