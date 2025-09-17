@@ -1,5 +1,6 @@
 import { Address, Hex, Chain } from 'viem'
 import { TransactionData, GetContractSourceCodeResponse } from '../types/types'
+import { avalanche } from 'viem/chains'
 
 /**
  * EtherscanApi class to interact with Etherscan API
@@ -22,10 +23,33 @@ class EtherscanApi {
 
     private async fetchFromApi(url: string): Promise<any> {
         const response = await fetch(url)
+
         if (!response.ok) {
             throw new Error(`Error fetching data from API: ${response.statusText} for ${url}`)
         }
         return response.json()
+    }
+
+    private async tryFallbackExplorer(chain: Chain, address: Address): Promise<any | null> {
+        // Check if this is Avalanche chain and try Snowscan as fallback
+        if (this.chain.id === avalanche.id) {
+            console.log(`Trying Snowscan fallback for address ${address}`)
+            // this is a working routescan api example url https://api.routescan.io/v2/network/mainnet/evm/43114/etherscan/api?module=contract&action=getsourcecode&address=0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7
+            const snowtraceUrl = `https://api.routescan.io/v2/network/mainnet/evm/${this.chain.id}/etherscan/api?module=contract&action=getsourcecode&address=${address}`
+            try {
+                const snowtraceResponse = await fetch(snowtraceUrl)
+                if (snowtraceResponse.ok) {
+                    const fallbackData = await snowtraceResponse.json()
+                    if (fallbackData.status === '1' && fallbackData.result[0].ABI !== 'Contract source code not verified') {
+                        console.log(`Successfully found contract on Snowscan for address ${address}`)
+                        return fallbackData
+                    }
+                }
+            } catch (error) {
+                console.log(`Snowscan fallback failed for address ${address}:`, error)
+            }
+        }
+        return null
     }
 
     public async getDeploymentTxHashAndBlock(
@@ -63,7 +87,17 @@ class EtherscanApi {
 
                 // the contract can be unverified
                 if (data.result[0].ABI === 'Contract source code not verified') {
-                    console.log(`Contract is unverified for address ${address}`)
+                    console.log(`Contract is unverified for address ${address}, trying fallback block explorer`)
+                    
+                    // Try fallback explorer (e.g., Snowscan for Avalanche)
+                    const fallbackData = await this.tryFallbackExplorer(this.chain, address)
+                    if (fallbackData) {
+                        const { Proxy, ContractName, ABI, Implementation } = fallbackData.result[0]
+                        results.push({ address, Proxy, ContractName, ABI, Implementation })
+                        continue
+                    }
+                    
+                    console.log(`Contract is unverified on all explorers for address ${address}`)
                     continue // Skip this address
                 }
 
