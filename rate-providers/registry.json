@@ -1437,6 +1437,60 @@
           "implementationReviewed": "0x29db9031025046bfe5e007b504ec3f41d685a7c4"
         }
       ]
+    },
+    "0xc52b66ac835c3e1c4e2b285d4b8f7828c6ad2b0b": {
+      "asset": "0x6eAf19b2FC24552925dB245F9Ff613157a7dbb4C",
+      "name": "StakedStreamBTCRateProvider.md",
+      "summary": "safe",
+      "review": "./StakedStreamBTCRateProviderReview2afe.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xc3fed1506e69d7bd2530ea9f6160da820806d5b0",
+          "implementationReviewed": "0xf5ee569eeed2ac5cd7f7d8052392b6cafc14000d"
+        }
+      ]
+    },
+    "0x0646cd7ffd52044bbd5b07ce14448fbeeb707e4c": {
+      "asset": "0x1f8E769B5B6010B2C2BBCd68629EA1a0a0Eda7E3",
+      "name": "MEVBTCRateProvider.md",
+      "summary": "safe",
+      "review": "./xBTCRateProviderReview.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x1f8e769b5b6010b2c2bbcd68629ea1a0a0eda7e3",
+          "implementationReviewed": "0x48766776d56d429e6beb426ccca3fae31cace06d"
+        }
+      ]
+    },
+    "0x1b26c995ce8dfb878e8b99e587217d2b6375758e": {
+      "asset": "0xFECebF56f150A68dDd197c3a6101da35C46693Ac",
+      "name": "EVKVaultesdeUSD-2RateProvider.md",
+      "summary": "safe",
+      "review": "./EVKVaultesdeUSD-2RateProviderReviewfd7b.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xb57b25851fe2311cc3fe511c8f10e868932e0680",
+          "implementationReviewed": "0xe5719355575ac6fc9854c5d6a264f1bc57eeaf35"
+        },
+        {
+          "entrypoint": "0x68088c91446c7bea49ea7dbd3b96ce62b272dc96",
+          "implementationReviewed": "0xdF13139eC96072e5934A9EB2f5aA4017BB17aF91"
+        },
+        {
+          "entrypoint": "0xfecebf56f150a68ddd197c3a6101da35c46693ac",
+          "implementationReviewed": "0x29e9b639e165d919fecf02521f8a9da0492d4f21"
+        },
+        {
+          "entrypoint": "0xaf4b4c18b17f6a2b32f6c398a3910bdcd7f26181",
+          "implementationReviewed": "0x29E9b639e165d919FEcf02521F8A9dA0492D4f21"
+        }
+      ]
     }
   },
   "base": {
