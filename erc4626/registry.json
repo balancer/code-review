@@ -1599,6 +1599,26 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0xFECebF56f150A68dDd197c3a6101da35C46693Ac": {
+      "asset": "0x68088C91446c7bEa49ea7Dbd3B96Ce62B272DC96",
+      "name": "EVKVaultesdeUSD-2Erc4626Vault.md",
+      "summary": "safe",
+      "review": "./EVKVaultesdeUSD-2Erc4626VaultReviewf366.md",
+      "warnings": [],
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xfecebf56f150a68ddd197c3a6101da35c46693ac",
+          "implementationReviewed": "0x29e9b639e165d919fecf02521f8a9da0492d4f21"
+        },
+        {
+          "entrypoint": "0xaf4b4c18b17f6a2b32f6c398a3910bdcd7f26181",
+          "implementationReviewed": "0x29E9b639e165d919FEcf02521F8A9dA0492D4f21"
+        }
+      ],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   },
   "sepolia": {
