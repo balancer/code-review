@@ -3836,6 +3836,24 @@
           "implementationReviewed": "0x42c0e0ef7c2f35de073f4d6f9c0e4483429c3d31"
         }
       ]
+    },
+    "0x3bf5236dd54d3b9c4fe0f2763fbeebb457d3cbd4": {
+      "asset": "0x2fe4dc166adbc0b39edb47f4324f00a7374dabf7",
+      "name": "WrappedAaveEthereum USDtbRateProvider.md",
+      "summary": "safe",
+      "review": "./WrappedAaveEthereum USDtbRateProviderReviewcbcd.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x2fe4dc166adbc0b39edb47f4324f00a7374dabf7",
+          "implementationReviewed": "0x487c2c53c0866f0a73ae317bd1a28f63adcd9ad1"
+        },
+        {
+          "entrypoint": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+          "implementationReviewed": "0x97287a4f35e583d924f78ad88db8afce1379189a"
+        }
+      ]
     }
   },
   "fantom": {
