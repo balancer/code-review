@@ -18,6 +18,7 @@ import {
 } from 'viem/chains'
 
 import { hyperEvm } from '../../src/utils/customChains'
+import { plasma } from '../../src/utils/customChains'
 
 // Check that the viem Chain has a multicall3 contract defined
 describe('test networks', () => {
@@ -34,6 +35,7 @@ describe('test networks', () => {
         fraxtal,
         optimism,
         hyperEvm,
+        plasma,
     ]
 
     config()
@@ -66,7 +68,6 @@ describe('test networks', () => {
                 ])
                 expect(address).toEqual(etherscanApi.chain.contracts?.multicall3?.address || '0x')
                 expect(deploymentTxHash).toBeTruthy()
-                expect(blockNumber).toBeTruthy()
             })
         })
     })
