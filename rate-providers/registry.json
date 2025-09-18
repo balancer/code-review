@@ -3872,7 +3872,7 @@
     "0x1ef72036f53a0d552ada49626fe90bdac6207dc5": {
       "asset": "0x8399C8Fc273bD165C346Af74A02e65f10e4FD78F",
       "name": "VarlamoreUSDCGrowthRateProvider.md",
-      "summary": "unsafe",
+      "summary": "safe",
       "review": "./VarlamoreUSDCGrowthRateProviderReview2890.md",
       "warnings": [],
       "factory": "",
