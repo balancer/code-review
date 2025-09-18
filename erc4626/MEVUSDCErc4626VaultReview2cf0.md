@@ -24,7 +24,7 @@ Each of the items below represents an absolute requirement for the Rate Provider
    about the involved contracts in this [tenderly simulation](https://www.tdly.co/shared/simulation/1cfc479a-a409-4650-9816-ced44cf36116)
 
 ## Conclusion
-**Summary judgment: UNUSABLE**
+**Summary judgment: USABLE**
 Passing fork tests can be found at https://github.com/balancer/balancer-v3-erc4626-tests/pull/89.
 
 ** upgradeable in this context means that:
