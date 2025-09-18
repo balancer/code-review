@@ -1491,6 +1491,20 @@
           "implementationReviewed": "0x29E9b639e165d919FEcf02521F8A9dA0492D4f21"
         }
       ]
+    },
+    "0x5E0F3f5539675599e19DDD9aE0dA2691D267eDa3": {
+      "asset": "0x4dc1ce9b9f9EF00c144BfAD305f16c62293dC0E8",
+      "name": "MEVUSDCRateProvider.md",
+      "summary": "unsafe",
+      "review": "./MEVUSDCRateProviderReview5128.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x4dc1ce9b9f9ef00c144bfad305f16c62293dc0e8",
+          "implementationReviewed": "0xc30a7774d528a412c2653bde583cc8180f6d5b7a"
+        }
+      ]
     }
   },
   "base": {

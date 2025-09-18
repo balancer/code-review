@@ -1639,6 +1639,22 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0x4dc1ce9b9f9EF00c144BfAD305f16c62293dC0E8": {
+      "asset": "0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E",
+      "name": "MEVUSDCErc4626Vault.md",
+      "summary": "unsafe",
+      "review": "./MEVUSDCErc4626VaultReview2cf0.md",
+      "warnings": [],
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x4dc1ce9b9f9ef00c144bfad305f16c62293dc0e8",
+          "implementationReviewed": "0xc30a7774d528a412c2653bde583cc8180f6d5b7a"
+        }
+      ],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   },
   "sepolia": {
