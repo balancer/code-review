@@ -3877,6 +3877,20 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0x5009e302f22ef52fec4e29a9d407c2bc9308d047": {
+      "asset": "0xE2Fc85BfB48C4cF147921fBE110cf92Ef9f26F94",
+      "name": "StakedStreamUSDRateProvider.md",
+      "summary": "safe",
+      "review": "./StakedStreamUSDRateProviderReviewb2c8.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x91f37a3058a7fd3f4f66ed87d715cf05bb4fbfbd",
+          "implementationReviewed": "0x8a1bae36ee0e7b7d6ced3ffea250914bfca09292"
+        }
+      ]
     }
   },
   "fantom": {
