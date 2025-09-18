@@ -1495,7 +1495,7 @@
     "0x5E0F3f5539675599e19DDD9aE0dA2691D267eDa3": {
       "asset": "0x4dc1ce9b9f9EF00c144BfAD305f16c62293dC0E8",
       "name": "MEVUSDCRateProvider.md",
-      "summary": "unsafe",
+      "summary": "safe",
       "review": "./MEVUSDCRateProviderReview5128.md",
       "warnings": [],
       "factory": "",
