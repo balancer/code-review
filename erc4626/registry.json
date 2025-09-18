@@ -1654,7 +1654,7 @@
     "0x4dc1ce9b9f9EF00c144BfAD305f16c62293dC0E8": {
       "asset": "0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E",
       "name": "MEVUSDCErc4626Vault.md",
-      "summary": "unsafe",
+      "summary": "safe",
       "review": "./MEVUSDCErc4626VaultReview2cf0.md",
       "warnings": [],
       "upgradeableComponents": [
