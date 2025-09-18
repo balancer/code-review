@@ -79,7 +79,7 @@ export async function writeReviewAndUpdateRegistry(
     const newEntry = {
         asset: asset,
         name: `${(contractName.charAt(0).toUpperCase() + contractName.slice(1)).replace(' ', '')}Erc4626Vault.md`,
-        summary: linkToForkTests && hasInterfaceImplemented ? 'safe' : '',
+        summary: linkToForkTests && hasInterfaceImplemented ? 'safe' : 'unsafe',
         review: `./${(contractName.charAt(0).toUpperCase() + contractName.slice(1)).replace(' ', '')}Erc4626VaultReview${shortUuid}.md`,
         warnings: [],
         upgradeableComponents: upgradeData.map((contract) => ({
