@@ -104,7 +104,11 @@ async function processIssue(issueJson: string) {
     )
 
     // this step requires the registry to be read thus having the registry updated already
-    await createCustomAgents(issueData.rate_provider_contract_address, network)
+    try {
+        await createCustomAgents(issueData.rate_provider_contract_address, network)
+    } catch (error) {
+        console.log(`Failed to create custom agents for chain ${network.name}`)
+    }
 
     // Only continue with erc4626 review if
 
