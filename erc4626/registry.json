@@ -699,6 +699,17 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0x8399C8Fc273bD165C346Af74A02e65f10e4FD78F": {
+      "asset": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      "name": "VarlamoreUSDCGrowthErc4626Vault.md",
+      "summary": "safe",
+      "review": "./VarlamoreUSDCGrowthErc4626VaultReviewe581.md",
+      "warnings": [],
+      "upgradeableComponents": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   },
   "gnosis": {
@@ -1634,6 +1645,22 @@
         {
           "entrypoint": "0xaf4b4c18b17f6a2b32f6c398a3910bdcd7f26181",
           "implementationReviewed": "0x29E9b639e165d919FEcf02521F8A9dA0492D4f21"
+        }
+      ],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
+    "0x4dc1ce9b9f9EF00c144BfAD305f16c62293dC0E8": {
+      "asset": "0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E",
+      "name": "MEVUSDCErc4626Vault.md",
+      "summary": "safe",
+      "review": "./MEVUSDCErc4626VaultReview2cf0.md",
+      "warnings": [],
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x4dc1ce9b9f9ef00c144bfad305f16c62293dc0e8",
+          "implementationReviewed": "0xc30a7774d528a412c2653bde583cc8180f6d5b7a"
         }
       ],
       "canUseBufferForSwaps": true,
