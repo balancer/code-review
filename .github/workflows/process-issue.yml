@@ -38,6 +38,7 @@ jobs:
           OPTIMISM_RPC_URL: ${{ secrets.OPTIMISM_RPC_URL }}
           SONIC_RPC_URL: ${{ secrets.SONIC_RPC_URL }}
           HYPEREVM_RPC_URL: ${{ secrets.HYPEREVM_RPC_URL }}
+          PLASMA_RPC_URL: ${{ secrets.PLASMA_RPC_URL }}
           HYPERNATIVE_CLIENT_ID: ${{ secrets.HYPERNATIVE_CLIENT_ID }}
           HYPERNATIVE_CLIENT_SECRET: ${{ secrets.HYPERNATIVE_CLIENT_SECRET }}
       - name: Validate registry format

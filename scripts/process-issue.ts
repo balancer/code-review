@@ -17,7 +17,7 @@ import {
     polygonZkEvm,
     mode,
 } from 'viem/chains'
-import { hyperEvm } from '../src/utils/customChains'
+import { hyperEvm, plasma } from '../src/utils/customChains'
 import { Hex } from 'viem'
 
 /* 
@@ -70,10 +70,11 @@ async function processIssue(issueJson: string) {
         optimism,
         sonic,
         sepolia,
-        polygon,
+        polygon,    
         polygonZkEvm,
         mode,
         hyperEvm,
+        plasma,
     }
     let network = networks[issueData.network]
 
