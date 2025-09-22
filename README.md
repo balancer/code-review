@@ -20,6 +20,7 @@ Rate Provider Factories for reference
 | Sepolia    | 0xA8920455934Da4D853faac1f94Fe7bEf72943eF1 | N/A                                        |
 | zkEVM      | 0x4132f7AcC9dB7A6cF7BE2Dd3A9DC8b30C7E6E6c8 | N/A                                        |
 | HyperEVM   | 0x03362f847b4fabc12e1ce98b6b59f94401e4588e | 0xec2c6184761ab7fe061130b4a7e3da89c72f8395 |
+| Plasma     | 0x138D9E0d0Cc4906C4cD865b38c9340A5CeDD9850 | 0x4E185b1502Fea7a06B63fDdA6de38F92C9528566 |
 
 Rate Transformer Factories 
 Use these factories when an ERC4626 vault contains a yield bearing token to combine their resepctive rates of growth. This denominates the vault asset in the underlying for correlated pairs. For example Aave-wstETH pairing with Aave-wETH by denominating the assets in wETH.
