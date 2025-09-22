@@ -3894,6 +3894,20 @@
           "implementationReviewed": "0x448d17d718304a8d1a0cda581961b83ae0555fe5"
         }
       ]
+    },
+    "0x716F0c5453099690b54e7b72D9491A72b8Df445e": {
+      "asset": "0x936facdf10c8c36294e7b9d28345255539d81bc7",
+      "name": "RockSolidrETHVaultRateProvider.md",
+      "summary": "safe",
+      "review": "./RockSolidrETHVaultRateProviderReviewb72d.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x936facdf10c8c36294e7b9d28345255539d81bc7",
+          "implementationReviewed": "0xe50554ec802375c9c3f9c087a8a7bb8c26d3dedf"
+        }
+      ]
     }
   },
   "fantom": {
