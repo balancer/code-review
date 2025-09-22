@@ -43,7 +43,7 @@ describe('test networks', () => {
 
     testNetworks.forEach((chain) => {
         describe(`when using ${chain.name}`, () => {
-            jest.setTimeout(30000)
+            jest.setTimeout(50000)
             let etherscanApi: EtherscanApi
 
             beforeEach(() => {
