@@ -1845,17 +1845,6 @@
       "factory": "0x0A973B6DB16C2ded41dC91691Cc347BEb0e2442B",
       "upgradeableComponents": []
     },
-    "0x9938e1b933148dffe36697ac464a7dd420b4190c": {
-      "asset": "0x4200000000000000000000000000000000000006",
-      "name": "wETH to USD Rate Provider",
-      "summary": "safe",
-      "review": "./ChainLinkRateProvider.md",
-      "warnings": [
-        "chainlink"
-      ],
-      "factory": "0x0A973B6DB16C2ded41dC91691Cc347BEb0e2442B",
-      "upgradeableComponents": []
-    },
     "0xdBB41Da7dE45729857A09baaF98D1e9b0b1A8740": {
       "asset": "0x729F75Aff28c726e32403e80cef2aFb518CFbfa7",
       "name": "aEURC to USD AaveMarketRateTransformer",
