@@ -6232,5 +6232,16 @@
         }
       ]
     }
+  },
+  "plasma": {
+    "0x76A32B3711D849855cD7Ccc68e46Bf6f0Da50dD0": {
+      "asset": "0xA3D68b74bF0528fdD07263c60d6488749044914b",
+      "name": "WrappedeETHRateProvider.md",
+      "summary": "safe",
+      "review": "./WrappedeETHRateProviderReview1325.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
+    }
   }
 }
