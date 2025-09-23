@@ -6234,6 +6234,15 @@
     }
   },
   "plasma": {
+    "0xeC8e3f795b28E86967265A4c4715aB609CBDe68d": {
+      "asset": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2",
+      "name": "StakedUSDeRateProvider.md",
+      "summary": "safe",
+      "review": "./StakedUSDeRateProviderReview494e.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
+    },
     "0x76A32B3711D849855cD7Ccc68e46Bf6f0Da50dD0": {
       "asset": "0xA3D68b74bF0528fdD07263c60d6488749044914b",
       "name": "WrappedeETHRateProvider.md",
