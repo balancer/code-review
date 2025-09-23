@@ -6217,6 +6217,20 @@
       "warnings": [],
       "factory": "0x9179c06629ef7f17cb5759f501d89997fe0e7b45",
       "upgradeableComponents": []
+    },
+    "0x751E200b3AA15EacF077965ad1feDAaD9468d910": {
+      "asset": "0x4d0fF6a0DD9f7316b674Fb37993A3Ce28BEA340e",
+      "name": "HypedRateProvider.md",
+      "summary": "safe",
+      "review": "./HypedRateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x4d0fF6a0DD9f7316b674Fb37993A3Ce28BEA340e",
+          "implementationReviewed": "0x0Ceed10ceb31a272990F0761EC3A48c3B581e79f"
+        }
+      ]
     }
   }
 }
