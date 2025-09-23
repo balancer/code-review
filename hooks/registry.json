@@ -172,5 +172,13 @@
       "review": "./StableSurgeHookV2.md",
       "warnings": []
     }
+  },
+  "plasma": {
+    "0x6817149cb753bf529565b4d023d7507ed2ff4bc0": {
+      "name": "StableSurgeHookV2",
+      "summary": "safe",
+      "review": "./StableSurgeHookV2.md",
+      "warnings": []
+    }
   }
 }
