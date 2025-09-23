@@ -30,7 +30,7 @@ Use these factories when an ERC4626 vault contains a yield bearing token to comb
 | Arbitrum   | 0xec2c6184761ab7fe061130b4a7e3da89c72f8395 | 
 | Base       | 0x4e185b1502fea7a06b63fdda6de38f92c9528566 |
 | Ethereum   | 0xec2c6184761ab7fe061130b4a7e3da89c72f8395 | 
-| Gnosis     | 0x03362f847b4fabc12e1ce98b6b59f94401e4588e | 
+| Gnosis     | 0x03362f847b4fabc12e1ce98b6b59f94401e4588e |
  
 
 Constant Rate Provider Factories
@@ -44,7 +44,7 @@ Use this factories for Gyro pools. They report a static rate custom tailored to 
 Combined Rate Provider Factories
 Use this factories to combine rate providers, similar to AaveRateTransformers. These factories take in two different rate providers, multipliy them, and display the result as getRate. Used for nested rates to denominate the base asset. For example Aave - wstETH has a LST rate and a lending vault rate which must be combined to result in the ETH rate. 
 
-| Network    | CombinedRateProviderFactory                 | 
+| Network    | CombinedRateProviderFactory                | 
 | ---------- | -------------------------------------------|
 | Arbitrum   | 0x26dec0e6a4249f28e0f16a1a79808bf9ba308310 | 
 | Avalanche  | 0xeC2C6184761ab7fE061130B4A7e3Da89c72F8395 | 
@@ -53,6 +53,7 @@ Use this factories to combine rate providers, similar to AaveRateTransformers. T
 | Gnosis     | 0xec2c6184761ab7fe061130b4a7e3da89c72f8395 | 
 | Optimism   | 0x7d9507014cc564e3b95e4d0972a878d0862af7ae | 
 | HyperEVM   | 0x138d9e0d0cc4906c4cd865b38c9340a5cedd9850 |
+| Plasma     | 0x470C9034F50afe6633f7e84A80B9961baa893d77 |
 ---
 
 ## Setup
