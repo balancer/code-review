@@ -6232,5 +6232,16 @@
         }
       ]
     }
+  },
+  "plasma": {
+    "0xeC8e3f795b28E86967265A4c4715aB609CBDe68d": {
+      "asset": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2",
+      "name": "StakedUSDeRateProvider.md",
+      "summary": "safe",
+      "review": "./StakedUSDeRateProviderReview494e.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
+    }
   }
 }
