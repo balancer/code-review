@@ -6296,6 +6296,15 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0xB98C8D01a6d93CF98d65A213B783bdbf254499af": {
+      "asset": "0x6eAf19b2FC24552925dB245F9Ff613157a7dbb4C",
+      "name": "StakedStreamUSDRateProvider.md",
+      "summary": "safe",
+      "review": "./StakedStreamUSDRateProviderReviewae81.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   }
 }
