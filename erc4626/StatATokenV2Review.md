@@ -40,6 +40,14 @@
     - [sonic:0x6646248971427B80ce531bdD793e2Eb859347E55](https://sonicscan.org/address/0x6646248971427B80ce531bdD793e2Eb859347E55#readProxyContract)
     - [sonic:0x18B7B8695165290f2767BC63c36D3dFEa4C0F9bB](https://sonicscan.org/address/0x18B7B8695165290f2767BC63c36D3dFEa4C0F9bB#readProxyContract)
     - [sonic:0xeB5e9B0ae5bb60274786C747A1A2A798c11271E0](https://sonicscan.org/address/0xeB5e9B0ae5bb60274786C747A1A2A798c11271E0#readProxyContract)
+    - [plasma:0xE0126F0c4451B2B917064A93040fd4770D6774b5](https://plasmascan.to/address/0xE0126F0c4451B2B917064A93040fd4770D6774b5)
+    - [plasma:0xa31c7ddad8f1d66d037c4ee76f8fb725f927bc25](https://plasmascan.to/address/0xa31c7ddad8f1d66d037c4ee76f8fb725f927bc25)
+    - [plasma:0xc63f1a8c0cd4493e18f6f3371182be01ce0bef02](https://plasmascan.to/address/0xc63f1a8c0cd4493e18f6f3371182be01ce0bef02)
+    - [plasma:0x893df8f4bbfebc313fc52a53e2e23487acb28181](https://plasmascan.to/address/0x893df8f4bbfebc313fc52a53e2e23487acb28181)
+    - [plasma:0xa047fdfb3420a27a5f926735b475fe5a1e968786](https://plasmascan.to/address/0xa047fdfb3420a27a5f926735b475fe5a1e968786)
+
+
+
 
 - Audit report(s):
     - [StatATokenV2 audits](https://github.com/aave-dao/aave-v3-origin/blob/067d29eb75115179501edc4316d125d9773f7928/audits/11-09-2024_Certora_StataTokenV2.pdf)
@@ -324,3 +332,8 @@ The outlined ERC4626 Vaults should work well with Balancer pools. Upgradeability
 - aezETH: [arbitrum:0x4ff50C17df0D1b788d021ACd85039810a1aA68A1](https://github.com/balancer/balancer-v3-erc4626-tests/blob/aave-arbitrum/test/arbitrum/ERC4626ArbitrumAaveEzETH.t.sol)
 - wapyusd [ethereum:0xb51EDdDD8c47856D81C8681EA71404Cec93E92c6](https://github.com/balancer/balancer-v3-erc4626-tests/pull/21)
 - GHO [base:0x88b1cd4b430d95b406e382c3cdbae54697a0286e](https://github.com/balancer/balancer-v3-erc4626-tests/blob/208e800c185f59d3e57f4f228932af59d0458b29/test/base/test/base/ERC4626BaseAaveGho.t.sol)
+- wasUSDe: [plasma:0xa31c7ddad8f1d66d037c4ee76f8fb725f927bc25](https://github.com/balancer/balancer-v3-erc4626-tests/pull/96)
+- waUSDe: [plasma:0xc63f1a8c0cd4493e18f6f3371182be01ce0bef02](https://github.com/balancer/balancer-v3-erc4626-tests/pull/96)
+- waUSDT0: [plasma:0xE0126F0c4451B2B917064A93040fd4770D6774b5](https://github.com/balancer/balancer-v3-erc4626-tests/pull/96)
+- waweETH: [plasma:0x893df8f4bbfebc313fc52a53e2e23487acb28181](https://github.com/balancer/balancer-v3-erc4626-tests/pull/96)
+- waWETH: [plasma:0xa047fdfb3420a27a5f926735b475fe5a1e968786](https://github.com/balancer/balancer-v3-erc4626-tests/pull/96)
