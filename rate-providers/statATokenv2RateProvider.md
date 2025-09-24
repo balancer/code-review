@@ -30,6 +30,11 @@
     - Wrapped Aave Sonic USDC.e [sonic:0x2446b93ec86be9225d07379ee5dba6b0aa632c55](https://sonicscan.org/address/0x2446b93ec86be9225d07379ee5dba6b0aa632c55#readContract)
     - Wrapped Aave Sonic wS [sonic:0x25b5e53e3dfca480047b6e53f637ebe44abadd59](https://sonicscan.org/address/0x25b5e53e3dfca480047b6e53f637ebe44abadd59#readContract)
     - Wrapped Aave Sonic WETH [sonic:0xf05afb759f1bc07756329d7080987d5ccc2a26e7](https://sonicscan.org/address/0xf05afb759f1bc07756329d7080987d5ccc2a26e7#readContract)
+    - Wrapped Aave Plasma USDT0 [plasma:0x940748d30315276362f594ECcCb648A4f9aB7629](https://plasmascan.to/address/0x940748d30315276362f594ECcCb648A4f9aB7629/contract/9745/readContract)
+    - Wrapped Aave Plasma USDe [plasma:0xcb1f29103f710a0a562de7f0e9dde223d0860674](https://plasmascan.to/address/0xcb1f29103f710a0a562de7f0e9dde223d0860674/contract/9745/readContract)
+    - Wrapped Aave Plasma wETH [plasma:0xd9b86d5b91782c86bfbc72d313adaf1e06aad79e](https://plasmascan.to/address/0xd9b86d5b91782c86bfbc72d313adaf1e06aad79e/contract/9745/readContract)
+    - Wrapped Aave Plasma weETH [plasma:0x83FC1A5Ad8cD99AC3d173c7D5859FAA009A5fC8d](https://plasmascan.to/address/0x83FC1A5Ad8cD99AC3d173c7D5859FAA009A5fC8d/contract/9745/readContract)
+    - Wrapped Aave Plasma sUSDe [plasma:0x4ca14D60DFeBA405d72A000C91C63d82f61c50C6](https://plasmascan.to/address/0x4ca14D60DFeBA405d72A000C91C63d82f61c50C6/contract/9745/readContract)
 
 - Audit report(s):
     - [Formal Verification Report For StaticAToken](https://github.com/aave-dao/aave-v3-origin/blob/067d29eb75115179501edc4316d125d9773f7928/audits/11-09-2024_Certora_StataTokenV2.pdf)

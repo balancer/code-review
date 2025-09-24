@@ -6251,6 +6251,51 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0x940748d30315276362f594ECcCb648A4f9aB7629": {
+      "asset": "0xE0126F0c4451B2B917064A93040fd4770D6774b5",
+      "name": "Wrapped Aave Plasma USDT0",
+      "summary": "safe",
+      "review": "./statATokenv2RateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
+    },
+    "0xcb1f29103f710a0a562de7f0e9dde223d0860674": {
+      "asset": "0xC63F1a8c0cD4493E18f6f3371182BE01Ce0BeF02",
+      "name": "Wrapped Aave Plasma USDe",
+      "summary": "safe",
+      "review": "./statATokenv2RateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
+    },
+    "0xd9b86d5b91782c86bfbc72d313adaf1e06aad79e": {
+      "asset": "0xa047fdFb3420A27a5f926735b475fE5a1E968786",
+      "name": "Wrapped Aave Plasma wETH",
+      "summary": "safe",
+      "review": "./statATokenv2RateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
+    },
+    "0x83FC1A5Ad8cD99AC3d173c7D5859FAA009A5fC8d": {
+      "asset": "0x893df8f4bbfebc313fc52a53e2e23487acb28181",
+      "name": "Wrapped Aave Plasma weETH",
+      "summary": "safe",
+      "review": "./statATokenv2RateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
+    },
+    "0x4ca14D60DFeBA405d72A000C91C63d82f61c50C6": {
+      "asset": "0xa31c7ddad8f1d66d037c4ee76f8fb725f927bc25",
+      "name": "Wrapped Aave Plasma sUSDe",
+      "summary": "safe",
+      "review": "./statATokenv2RateProvider.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   }
 }

@@ -2201,5 +2201,62 @@
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
     }
+  },
+  "plasma": {
+    "0xa31c7ddad8f1d66d037c4ee76f8fb725f927bc25": {
+      "asset": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2",
+      "name": "wasUSDe",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": [],
+      "upgradeableComponents": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
+    "0xc63f1a8c0cd4493e18f6f3371182be01ce0bef02": {
+      "asset": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+      "name": "waUSDe",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": [],
+      "upgradeableComponents": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
+    "0xE0126F0c4451B2B917064A93040fd4770D6774b5": {
+      "asset": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
+      "name": "waUSDT0",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": [],
+      "upgradeableComponents": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
+    "0x893df8f4bbfebc313fc52a53e2e23487acb28181": {
+      "asset": "0xA3D68b74bF0528fdD07263c60d6488749044914b",
+      "name": "waweETH",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": [],
+      "upgradeableComponents": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
+    "0xa047fdfb3420a27a5f926735b475fe5a1e968786": {
+      "asset": "0x9895D81bB462A195b4922ED7De0e3ACD007c32CB",
+      "name": "waWETH",
+      "summary": "safe",
+      "review": "./StatATokenV2Review.md",
+      "warnings": [],
+      "upgradeableComponents": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    }
   }
 }
