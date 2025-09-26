@@ -10,6 +10,7 @@ body:
       label: Additional Contract Information
       description: Additional points clarify the intended usage of the related asset.
       options:
+        - label: Is the rate provider reporting a market rate?
         - label: Is a combined rate provider needed (i.e. wstETH in aave)?
         - label: Does this rate provider pertain to an ERC4626 contract?
         - label: If so, is the intention for this ERC4626 asset to be boosted?

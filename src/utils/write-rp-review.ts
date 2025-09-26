@@ -37,6 +37,10 @@ const chainNameToRegistryKey: { [key: string]: string } = {
     'Mode Mainnet': 'mode',
 }
 
+type RateProviderWarnings = {
+    isMarketRate: boolean
+}
+
 export async function writeReviewAndUpdateRegistry(
     rateProviderAddress: Address,
     network: Chain,
@@ -44,6 +48,7 @@ export async function writeReviewAndUpdateRegistry(
     rpcUrl: string,
     rateProviderDocs?: string,
     linkToAudits?: string,
+    warnings?: RateProviderWarnings,
 ): Promise<{ rateProvider: Address }> {
     const service = new RateProviderDataService(rateProviderAddress, network)
 
@@ -102,7 +107,7 @@ export async function writeReviewAndUpdateRegistry(
         name: `${(contractName.charAt(0).toUpperCase() + contractName.slice(1)).replace(' ', '')}RateProvider.md`,
         summary: templateData.isUsable === 'USABLE' ? 'safe' : 'unsafe',
         review: `./${(contractName.charAt(0).toUpperCase() + contractName.slice(1)).replace(' ', '')}RateProviderReview${shortUuid}.md`,
-        warnings: [],
+        warnings: warnings?.isMarketRate ? ['market-rate'] : [],
         factory: '',
         upgradeableComponents: upgradeData.map((contract) => ({
             entrypoint: contract.address,
