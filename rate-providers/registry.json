@@ -6305,6 +6305,15 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0xF1fD29270e61D4a7885E9B4EF6476Daf2Ab6F85D": {
+      "asset": "0xe561fe05c39075312aa9bc6af79ddae981461359",
+      "name": "RsETHWrapperRateProvider.md",
+      "summary": "safe",
+      "review": "./RsETHWrapperRateProviderReviewacb1.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   }
 }
