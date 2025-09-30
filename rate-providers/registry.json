@@ -6314,6 +6314,15 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0x2b0d44eD7D1A940bE7c19a1d46569c08a5Fb6978": {
+      "asset": "0xC4374775489CB9C56003BF2C9b12495fC64F0771",
+      "name": "SyrupUSDTRateProvider.md",
+      "summary": "safe",
+      "review": "./SyrupUSDTRateProviderReview712d.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   }
 }
