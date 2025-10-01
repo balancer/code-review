@@ -709,7 +709,7 @@
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
       "warnings": [
-        "chainlink"
+        "market-rate"
       ],
       "factory": "0x5dbad78818d4c8958eff2d5b95b28385a22113cd",
       "upgradeableComponents": []
@@ -751,7 +751,7 @@
       "name": "EURe Rate Provider",
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
-      "warnings": [],
+      "warnings": ["market-rate"],
       "factory": "0x5dbad78818d4c8958eff2d5b95b28385a22113cd",
       "upgradeableComponents": []
     },
@@ -1860,7 +1860,7 @@
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
       "warnings": [
-        "chainlink"
+        "market-rate"
       ],
       "factory": "0x0A973B6DB16C2ded41dC91691Cc347BEb0e2442B",
       "upgradeableComponents": []
@@ -2745,7 +2745,7 @@
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
       "warnings": [
-        "chainlink"
+        "market-rate"
       ],
       "factory": "0x1311Fbc9F60359639174c1e7cC2032DbDb5Cc4d1",
       "upgradeableComponents": []
@@ -3724,7 +3724,7 @@
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
       "warnings": [
-        "chainlink"
+        "market-rate"
       ],
       "factory": "",
       "upgradeableComponents": []
@@ -4046,7 +4046,7 @@
       "summary": "safe",
       "review": "./ChainLinkRateProvider.md",
       "warnings": [
-        "chainlink"
+        "market-rate"
       ],
       "factory": "",
       "upgradeableComponents": []
@@ -6214,7 +6214,7 @@
       "name": "WHYPE Rate Provider",
       "summary": "safe",
       "review": "./hypercore.md",
-      "warnings": [],
+      "warnings": ["market-rate"],
       "factory": "0x9179c06629ef7f17cb5759f501d89997fe0e7b45",
       "upgradeableComponents": []
     },
