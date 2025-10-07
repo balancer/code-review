@@ -1977,6 +1977,15 @@
       ],
       "factory": "0x0A973B6DB16C2ded41dC91691Cc347BEb0e2442B",
       "upgradeableComponents": []
+    },
+    "0x795113aD845F48F9Ef7c39E9Df4A4E8Ef9dE75fB": {
+      "asset": "0xd09ACb80C1E8f2291862c4978A008791c9167003",
+      "name": "TreehouseETHRateProvider.md",
+      "summary": "safe",
+      "review": "./TreehouseETHRateProviderReview710f.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   },
   "ethereum": {
