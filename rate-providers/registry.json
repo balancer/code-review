@@ -6362,6 +6362,20 @@
           "implementationReviewed": "0x8346BeBaA0789Eb92CFfCC07033b8bF9f3eFdcAB"
         }
       ]
+    },
+    "0x05Ad8f5d0F9D8bd90739C06C83140F00D3bCbC3F": {
+      "asset": "0x616185600989Bf8339b58aC9e539d49536598343",
+      "name": "StakedPlasmaUSDRateProvider.md",
+      "summary": "safe",
+      "review": "./StakedPlasmaUSDRateProviderReview761c.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xfe5ae64f5ba6a45b9267a5ba274620539fa59566",
+          "implementationReviewed": "0xAE7D92bEDCF6AA692e46d731a6df5eC53f8652B0"
+        }
+      ]
     }
   }
 }
