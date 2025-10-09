@@ -2285,6 +2285,17 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0x76309A9a56309104518847BbA321c261B7B4a43f": {
+      "asset": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
+      "name": "USDT0Erc4626Vault.md",
+      "summary": "safe",
+      "review": "./USDT0Erc4626VaultReview73a4.md",
+      "warnings": [],
+      "upgradeableComponents": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   }
 }
