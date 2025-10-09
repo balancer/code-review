@@ -6376,6 +6376,15 @@
           "implementationReviewed": "0xAE7D92bEDCF6AA692e46d731a6df5eC53f8652B0"
         }
       ]
+    },
+    "0x620FFE89F10fbb6FA73CfC4D237A4d4b7A976Ab1": {
+      "asset": "0xA29420057F3e3B9512D4786df135Da1674BD74D4",
+      "name": "StakedavUSDRateProvider.md",
+      "summary": "safe",
+      "review": "./StakedavUSDRateProviderReview72e5.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   }
 }
