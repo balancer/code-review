@@ -6385,6 +6385,15 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0x8AB11767C4C0bF6124d1Ec9ceBf4Fd1C513e1a0b": {
+      "asset": "0x76309A9a56309104518847BbA321c261B7B4a43f",
+      "name": "USDT0RateProvider.md",
+      "summary": "safe",
+      "review": "./USDT0RateProviderReviewbced.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   }
 }
