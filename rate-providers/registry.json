@@ -6377,6 +6377,15 @@
         }
       ]
     },
+    "0x620FFE89F10fbb6FA73CfC4D237A4d4b7A976Ab1": {
+      "asset": "0xA29420057F3e3B9512D4786df135Da1674BD74D4",
+      "name": "StakedavUSDRateProvider.md",
+      "summary": "safe",
+      "review": "./StakedavUSDRateProviderReview72e5.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
+    },
     "0x8AB11767C4C0bF6124d1Ec9ceBf4Fd1C513e1a0b": {
       "asset": "0x76309A9a56309104518847BbA321c261B7B4a43f",
       "name": "USDT0RateProvider.md",
