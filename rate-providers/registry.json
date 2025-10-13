@@ -6390,6 +6390,32 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0x59d02f49620C0b8C50C7C5E09ff884dcc6757FDc": {
+      "asset": "0x9c46EE1f01d2b551048F5fF99a4659D98d04BED1",
+      "name": "246ClubTelosCEarn USDT0RateProvider.md",
+      "summary": "safe",
+      "review": "./246ClubTelosCEarn USDT0RateProviderReviewf978.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x98d6863fa1c247d529c94e53f521897ae9a6ebf0",
+          "implementationReviewed": "0x8346BeBaA0789Eb92CFfCC07033b8bF9f3eFdcAB"
+        },
+        {
+          "entrypoint": "0xfee02e3904dfcf323851163e3b8847952f168b2e",
+          "implementationReviewed": "0x8346BeBaA0789Eb92CFfCC07033b8bF9f3eFdcAB"
+        },
+        {
+          "entrypoint": "0x9f562699511351ba3d0cf3d0df1502e776517ef3",
+          "implementationReviewed": "0x8346BeBaA0789Eb92CFfCC07033b8bF9f3eFdcAB"
+        },
+        {
+          "entrypoint": "0x42388213c6f56d7e1477632b58ae6bba9adeeea3",
+          "implementationReviewed": "0x8346BeBaA0789Eb92CFfCC07033b8bF9f3eFdcAB"
+        }
+      ]
     }
   }
 }
