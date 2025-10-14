@@ -710,6 +710,34 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0xd217A07493b6BA272Ff806EE5eaBdFF86C292cc6": {
+      "asset": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+      "name": "TelosCEarnWETHErc4626Vault.md",
+      "summary": "safe",
+      "review": "./TelosCEarnWETHErc4626VaultReview080f.md",
+      "warnings": [],
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x29a56a1b8214d9cf7c5561811750d5cbdb45cc8e",
+          "implementationReviewed": "0x8ff1c814719096b61abf00bb46ead0c9a529dd7d"
+        },
+        {
+          "entrypoint": "0xc2c4abae84fbb5b7baab52301a924b1f986c66bd",
+          "implementationReviewed": "0x8ff1c814719096b61abf00bb46ead0c9a529dd7d"
+        },
+        {
+          "entrypoint": "0xb3b36220fa7d12f7055dab5c9fd18e860e9a6bf8",
+          "implementationReviewed": "0x8ff1c814719096b61abf00bb46ead0c9a529dd7d"
+        },
+        {
+          "entrypoint": "0x211711f277f146fc947d7053b41bb71bb5b5fc2c",
+          "implementationReviewed": "0x8ff1c814719096b61abf00bb46ead0c9a529dd7d"
+        }
+      ],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   },
   "gnosis": {
