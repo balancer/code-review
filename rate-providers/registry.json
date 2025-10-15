@@ -5973,6 +5973,32 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0xc76995054ce51dfbbc954840d699b2f33d2538ee": {
+      "asset": "0xc76995054ce51dfbbc954840d699b2f33d2538ee",
+      "name": "BeetsLoopedSonicRateProvider.md",
+      "summary": "safe",
+      "review": "./BeetsLoopedSonicRateProviderReviewfe46.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x5362dbb1e601abf3a4c14c22ffeda64042e5eaa3",
+          "implementationReviewed": "0x400081eb35244820e9923d7aa35c9bf2078dd054"
+        },
+        {
+          "entrypoint": "0xeaa74d7f42267eb907092af4bc700f667eed0b8b",
+          "implementationReviewed": "0xb754640eca11e9f89022e755997f4da9b3f18ec5"
+        },
+        {
+          "entrypoint": "0xe5da20f15420ad15de0fa650600afc998bbe3955",
+          "implementationReviewed": "0xd5f7fc8ba92756a34693baa386edcc8dd5b3f141"
+        },
+        {
+          "entrypoint": "0xf6089b790fbf8f4812a79a31cfabeb00b06ba7bd",
+          "implementationReviewed": "0x03978bb90165b8f32de90e6435b32331537ae946"
+        }
+      ]
     }
   },
   "hyperevm": {
