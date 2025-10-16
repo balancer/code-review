@@ -6,7 +6,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "npx jest",
+    "test": "npx jest --testPathIgnorePatterns=etherscanApi.test.ts",
+    "test:all": "npx jest",
     "lint": "npx prettier --write 'rate-providers/registry.json'",
     "write-review": "ts-node scripts/write-review.ts",
     "write-erc4626-review": "ts-node scripts/write-erc4626-review.ts",
