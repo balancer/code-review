@@ -738,6 +738,17 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0xc5d6a7b61d18afa11435a889557b068bb9f29930": {
+      "asset": "0x4f8e5DE400DE08B164E7421B3EE387f461beCD1A",
+      "name": "SavingsUsddErc4626Vault.md",
+      "summary": "safe",
+      "review": "./SavingsUsddErc4626VaultReview7f1e.md",
+      "warnings": [],
+      "upgradeableComponents": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   },
   "gnosis": {

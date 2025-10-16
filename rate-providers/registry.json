@@ -3943,6 +3943,15 @@
           "implementationReviewed": "0x8ff1c814719096b61abf00bb46ead0c9a529dd7d"
         }
       ]
+    },
+    "0xd4546ea0934a204d7e27b697ae4fc710ca1fa4eb": {
+      "asset": "0xc5d6a7b61d18afa11435a889557b068bb9f29930",
+      "name": "SavingsUsddRateProvider.md",
+      "summary": "safe",
+      "review": "./SavingsUsddRateProviderReviewe472.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   },
   "fantom": {
