@@ -6299,6 +6299,24 @@
           "implementationReviewed": "0x0Ceed10ceb31a272990F0761EC3A48c3B581e79f"
         }
       ]
+    },
+    "0x21F001a46822Bbdcb3998720413a2c5602DBF30a": {
+      "asset": "0x20ecF3936Df08556b62fD15a4E167ae99d73b957",
+      "name": "StaticUSDHHypurrRateProvider.md",
+      "summary": "safe",
+      "review": "./StaticUSDHHypurrRateProviderReview7e15.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x20ecf3936df08556b62fd15a4e167ae99d73b957",
+          "implementationReviewed": "0x9889684ac7b2c2219fc086d46e232b4f0a7f34a8"
+        },
+        {
+          "entrypoint": "0xcecce0eb9dd2ef7996e01e25dd70e461f918a14b",
+          "implementationReviewed": "0x980bdd9cf1346800f6307e3b2301ffd3ce8c7523"
+        }
+      ]
     }
   },
   "plasma": {
