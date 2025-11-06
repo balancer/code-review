@@ -2,13 +2,14 @@ import { Address, Hex, Chain } from 'viem'
 import { TransactionData, GetContractSourceCodeResponse } from '../types/types'
 import { avalanche } from 'viem/chains'
 import { plasma } from '../utils/customChains'
+import { ChainApi } from '../types/types'
 
 /**
  * EtherscanApi class to interact with Etherscan API
  * It uses the Etherscan API 2.0
  * Supported chains can be found at https://docs.etherscan.io/etherscan-v2/supported-chains
  */
-class EtherscanApi {
+class EtherscanApi implements ChainApi {
     public chain: Chain
     private apiKey: string
 
@@ -44,7 +45,10 @@ class EtherscanApi {
                 const snowtraceResponse = await fetch(snowtraceUrl)
                 if (snowtraceResponse.ok) {
                     const fallbackData = await snowtraceResponse.json()
-                    if (fallbackData.status === '1' && fallbackData.result[0].ABI !== 'Contract source code not verified') {
+                    if (
+                        fallbackData.status === '1' &&
+                        fallbackData.result[0].ABI !== 'Contract source code not verified'
+                    ) {
                         console.log(`Successfully found contract on Snowscan for address ${address}`)
                         return fallbackData
                     }
@@ -93,7 +97,7 @@ class EtherscanApi {
                 // the contract can be unverified
                 if (data.result[0].ABI === 'Contract source code not verified') {
                     console.log(`Contract is unverified for address ${address}, trying fallback block explorer`)
-                    
+
                     // Try fallback explorer (e.g., Snowscan for Avalanche)
                     const fallbackData = await this.tryFallbackExplorer(this.chain, address)
                     if (fallbackData) {
@@ -101,7 +105,7 @@ class EtherscanApi {
                         results.push({ address, Proxy, ContractName, ABI, Implementation })
                         continue
                     }
-                    
+
                     console.log(`Contract is unverified on all explorers for address ${address}`)
                     continue // Skip this address
                 }

@@ -2,8 +2,10 @@ import { Address, parseEventLogs } from 'viem'
 import { CreateAccessListReturnType } from 'viem/_types/actions/public/createAccessList'
 import { createPublicClient, encodeFunctionData, http } from 'viem'
 import { Chain, Hex, Abi } from 'viem'
-import EtherscanApi from './services/etherscanApi'
 import { rateProviderAbi } from './utils/abi/rateProvider'
+import { xlayer } from './utils/customChains'
+import { ChainApi } from './types/types'
+import { createChainApi } from './utils/factories'
 
 class RateProviderDataService {
     public rateProvider: Address
@@ -22,6 +24,7 @@ class RateProviderDataService {
     }
 
     private apiKey!: string
+    private chainApi!: ChainApi
     public tenderlySettings!: {
         accountSlug: string
         projectSlug: string
@@ -32,6 +35,7 @@ class RateProviderDataService {
         this.rateProvider = rateProvider
         this.chain = chain
         this.setApiBasedOnChain(chain)
+        this.chainApi = createChainApi(chain)
         this.tenderlySettings = {
             accountSlug:
                 process.env.TENDERLY_ACCOUNT_SLUG ||
@@ -89,8 +93,6 @@ class RateProviderDataService {
      * @returns An array of deployment information.
      */
     public async getDeploymentBlocks(addresses: Address[]): Promise<{ address: Address; deploymentTxHash: Hex }[]> {
-        const etherscanApi = new EtherscanApi(this.chain, this.apiKey)
-
         // The addresses length can be arbitrary but the etherscan API only allows 5 addresses at a time
         // so we need to chunk the addresses and call the API sequentially
         const chunkSize = 5
@@ -98,7 +100,7 @@ class RateProviderDataService {
 
         for (let i = 0; i < addresses.length; i += chunkSize) {
             const chunk = addresses.slice(i, i + chunkSize)
-            const chunkTxHashes = await etherscanApi.getDeploymentTxHashAndBlock(chunk)
+            const chunkTxHashes = await this.chainApi.getDeploymentTxHashAndBlock(chunk)
             txHashes.push(...chunkTxHashes)
         }
 
@@ -113,8 +115,7 @@ class RateProviderDataService {
     public async getContractInfo(
         addresses: Address[],
     ): Promise<{ address: Address; Proxy: string; ContractName: string; ABI: string; Implementation: Address }[]> {
-        const etherscanApi = new EtherscanApi(this.chain, this.apiKey)
-        return await etherscanApi.getSourceCode(addresses)
+        return await this.chainApi.getSourceCode(addresses)
     }
 
     /**
@@ -136,8 +137,11 @@ class RateProviderDataService {
             allContractAddresses.push(this.rateProvider)
         }
 
+        // get info on all contracts in the access list
         const proxiesWithRateProvider = await this.getContractInfo(allContractAddresses)
+        // filter out the contracts that are not proxies
         const filteredProxiesList = proxiesWithRateProvider.filter((p) => p.Proxy === '1')
+
         const proxiesWithRateProviderDeploymentInfo = await this.getDeploymentBlocks(
             filteredProxiesList.map((p) => p.address),
         )
@@ -164,21 +168,21 @@ class RateProviderDataService {
         const proxiesWithRateProviderCompleteInfo = await Promise.all(
             receipts.map(async (info) => {
                 try {
-            if (!info.ABI) {
-                throw new Error(`ABI not provided for contract at address ${info.address}`)
-            }
-            const events = parseEventLogs({
-                logs: info.receipt.logs,
-                abi: JSON.parse(info.ABI),
-                eventName: 'Upgraded',
-            })
-            const wasUpgraded = events.length > 0
+                    if (!info.ABI) {
+                        throw new Error(`ABI not provided for contract at address ${info.address}`)
+                    }
+                    const events = parseEventLogs({
+                        logs: info.receipt.logs,
+                        abi: JSON.parse(info.ABI),
+                        eventName: 'Upgraded',
+                    })
+                    const wasUpgraded = events.length > 0
 
-            return { ...info, events, wasUpgraded }
-        } catch (error) {
-            console.error(`Error processing contract at address ${info.address}:`, error)
-            return { ...info, events: [], wasUpgraded: false, error }
-        }
+                    return { ...info, events, wasUpgraded }
+                } catch (error) {
+                    console.error(`Error processing contract at address ${info.address}:`, error)
+                    return { ...info, events: [], wasUpgraded: false, error }
+                }
             }),
         )
 
@@ -211,8 +215,7 @@ class RateProviderDataService {
     public async getContractSourceCode(
         address: Address,
     ): Promise<{ address: Address; Proxy: string; ContractName: string; ABI: string; Implementation: Address }> {
-        const etherscanApi = new EtherscanApi(this.chain, this.apiKey)
-        const sourceCodeArray = await etherscanApi.getSourceCode([address])
+        const sourceCodeArray = await this.chainApi.getSourceCode([address])
         return sourceCodeArray[0]
     }
 
@@ -320,7 +323,7 @@ class RateProviderDataService {
             return (
                 item.type === 'function' &&
                 item.name === 'getRate' &&
-                item.stateMutability === 'view' &&
+                (item.stateMutability === 'view' || item.stateMutability === 'pure') &&
                 item.outputs?.length === 1 &&
                 item.outputs[0].internalType === 'uint256'
             )
@@ -338,6 +341,9 @@ class RateProviderDataService {
             : (() => {
                   throw new Error(`ETHERSCAN_API_KEY Environment variable is not set`)
               })()
+        if (chain.id === xlayer.id) {
+            this.apiKey = process.env.XLAYER_API_KEY || ''
+        }
     }
 }
 
