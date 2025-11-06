@@ -33,6 +33,7 @@ body:
         - sonic
         - hyperEvm
         - plasma
+        - xlayer
     validations:
       required: true
   - type: input
