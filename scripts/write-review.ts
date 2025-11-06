@@ -20,7 +20,7 @@ import {
     mode,
 } from 'viem/chains'
 
-import { hyperEvm, plasma } from '../src/utils/customChains'
+import { hyperEvm, plasma, xlayer } from '../src/utils/customChains'
 import { writeReviewAndUpdateRegistry } from '../src/utils/write-rp-review'
 
 dotenv.config()
@@ -44,7 +44,19 @@ async function main() {
             alias: 'n',
             type: 'string',
             description: 'The network the rate provider is deployed on',
-            choices: ['base', 'mainnet', 'arbitrum', 'avalanche', 'gnosis', 'fraxtal', 'optimism', 'sonic', 'hyperEvm', 'plasma'],
+            choices: [
+                'base',
+                'mainnet',
+                'arbitrum',
+                'avalanche',
+                'gnosis',
+                'fraxtal',
+                'optimism',
+                'sonic',
+                'hyperEvm',
+                'plasma',
+                'xlayer',
+            ],
             demandOption: true,
         })
         .option('rateProviderAsset', {
@@ -75,7 +87,8 @@ async function main() {
         polygonZkEvm,
         mode,
         hyperEvm,
-        plasma
+        plasma,
+        xlayer,
     }
 
     let network = networks[argv.network]
