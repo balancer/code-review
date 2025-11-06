@@ -2384,5 +2384,18 @@
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
     }
+  },
+  "xlayer": {
+    "0x8942C1e1e0D48E14EFBa4cc48d2E3584116e367f": {
+      "asset": "0x1E4a5963aBFD975d8c9021ce480b42188849D41d",
+      "name": "MockERC4626Erc4626Vault.md",
+      "summary": "safe",
+      "review": "./MockERC4626Erc4626VaultReview6210.md",
+      "warnings": [],
+      "upgradeableComponents": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    }
   }
 }
