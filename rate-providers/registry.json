@@ -6512,5 +6512,16 @@
         }
       ]
     }
+  },
+  "xlayer": {
+    "0x03362f847B4fAbC12e1Ce98b6b59F94401E4588e": {
+      "asset": "0x1e4a5963abfd975d8c9021ce480b42188849d41d",
+      "name": "TetherUSDRateProvider.md",
+      "summary": "safe",
+      "review": "./TetherUSDRateProviderReviewb196.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
+    }
   }
 }
