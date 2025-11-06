@@ -17,7 +17,7 @@ import {
     polygonZkEvm,
     mode,
 } from 'viem/chains'
-import { hyperEvm, plasma } from '../src/utils/customChains'
+import { hyperEvm, plasma, xlayer } from '../src/utils/customChains'
 import { Hex } from 'viem'
 
 /* 
@@ -70,11 +70,12 @@ async function processIssue(issueJson: string) {
         optimism,
         sonic,
         sepolia,
-        polygon,    
+        polygon,
         polygonZkEvm,
         mode,
         hyperEvm,
         plasma,
+        xlayer,
     }
     let network = networks[issueData.network]
 
@@ -101,7 +102,9 @@ async function processIssue(issueJson: string) {
         rpcUrl as string,
         issueData.protocol_documentation,
         issueData.audits,
-        issueData.additional_contract_information.selected.includes('Is the rate provider reporting a market rate?') ? { isMarketRate: true } : undefined,
+        issueData.additional_contract_information.selected.includes('Is the rate provider reporting a market rate?')
+            ? { isMarketRate: true }
+            : undefined,
     )
 
     // this step requires the registry to be read thus having the registry updated already

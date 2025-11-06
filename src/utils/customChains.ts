@@ -57,3 +57,32 @@ export const plasma = /*#__PURE__*/ defineChain({
         },
     },
 })
+
+export const xlayer = /*#__PURE__*/ defineChain({
+    id: 196,
+    name: 'XLayer',
+    nativeCurrency: {
+        name: 'XLAYER',
+        symbol: 'XLAYER',
+        decimals: 18,
+    },
+    rpcUrls: {
+        default: {
+            http: ['https://rpc.xlayer.tech/'],
+            webSocket: ['wss://rpc.xlayer.tech/'],
+        },
+    },
+    blockExplorers: {
+        default: {
+            name: 'XLayer Explorer',
+            url: 'https://xlayer.io/',
+            apiUrl: 'https://api.xlayer.io/v1/api?',
+        },
+    },
+    contracts: {
+        multicall3: {
+            address: '0xcA11bde05977b3631167028862bE2a173976CA11',
+            blockCreated: 1,
+        },
+    },
+})
