@@ -6511,6 +6511,15 @@
           "implementationReviewed": "0xb14E7d488371D22D39AFF1b0C0F07Ed2b532160f"
         }
       ]
+    },
+    "0x687158B6392e71e3B35FF79cb3AfE59760CE542E": {
+      "asset": "0x888888bab58a7bd3068110749bc7b63b62ce874d",
+      "name": "StakedchUSDRateProvider.md",
+      "summary": "safe",
+      "review": "./StakedchUSDRateProviderReview394a.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   }
 }
