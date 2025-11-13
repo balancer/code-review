@@ -2259,6 +2259,26 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0x3Df418bE6Dad3f824d00A7c516DAd3Ea2A5a79C6": {
+      "asset": "0x5555555555555555555555555555555555555555",
+      "name": "StaticWHYPEHypurrErc4626Vault.md",
+      "summary": "safe",
+      "review": "./StaticWHYPEHypurrErc4626VaultReviewd85a.md",
+      "warnings": [],
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x3df418be6dad3f824d00a7c516dad3ea2a5a79c6",
+          "implementationReviewed": "0x9889684ac7b2c2219fc086d46e232b4f0a7f34a8"
+        },
+        {
+          "entrypoint": "0xcecce0eb9dd2ef7996e01e25dd70e461f918a14b",
+          "implementationReviewed": "0x980bdd9cf1346800f6307e3b2301ffd3ce8c7523"
+        }
+      ],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   },
   "plasma": {
