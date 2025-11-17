@@ -6006,6 +6006,24 @@
           "implementationReviewed": "0x03978bb90165b8f32de90e6435b32331537ae946"
         }
       ]
+    },
+    "0xa1f465d848df55571b62c06de57b9642eae42485": {
+      "asset": "0x618383942cabb00aa3a13101b825a703dc082752",
+      "name": "MainStreetYieldRateProvider.md",
+      "summary": "safe",
+      "review": "./MainStreetYieldRateProviderReview4f11.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xe5fb2ed6832def99dde57c0b9d9a56537c89121d",
+          "implementationReviewed": "0x9916673dcdcfedf7206583a83d5a2b4388b2b355"
+        },
+        {
+          "entrypoint": "0x618383942cabb00aa3a13101b825a703dc082752",
+          "implementationReviewed": "0x1810978867bcda2dc3619ec91b62f74456ae9d31"
+        }
+      ]
     }
   },
   "hyperevm": {
