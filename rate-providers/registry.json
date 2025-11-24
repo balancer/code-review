@@ -6024,6 +6024,15 @@
           "implementationReviewed": "0x1810978867bcda2dc3619ec91b62f74456ae9d31"
         }
       ]
+    },
+    "0x3c7de41078a8eb37ab8f51881c56f64783156487": {
+      "asset": "0x2dDCF85D3Cf27DEA338e0371D38409Ba80058630",
+      "name": "BMX WrappedSonic Liquidity TokenRateProvider.md",
+      "summary": "safe",
+      "review": "./BMX WrappedSonic Liquidity TokenRateProviderReviewe7a2.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   },
   "hyperevm": {
