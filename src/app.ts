@@ -2,10 +2,14 @@ import { Address, parseEventLogs } from 'viem'
 import { CreateAccessListReturnType } from 'viem/_types/actions/public/createAccessList'
 import { createPublicClient, encodeFunctionData, http } from 'viem'
 import { Chain, Hex, Abi } from 'viem'
+import { base, optimism, avalanche } from 'viem/chains'
 import { rateProviderAbi } from './utils/abi/rateProvider'
 import { xlayer } from './utils/customChains'
 import { ChainApi } from './types/types'
-import { createChainApi } from './utils/factories'
+import EtherscanApi from './services/etherscanApi'
+import XLayerApi from './services/xlayerApi'
+import BlockscoutApi from './services/BlockscoutApi'
+import RoutescanApi from './services/RoutescanApi'
 
 class RateProviderDataService {
     public rateProvider: Address
@@ -24,7 +28,6 @@ class RateProviderDataService {
     }
 
     private apiKey!: string
-    private chainApi!: ChainApi
     public tenderlySettings!: {
         accountSlug: string
         projectSlug: string
@@ -35,7 +38,6 @@ class RateProviderDataService {
         this.rateProvider = rateProvider
         this.chain = chain
         this.setApiBasedOnChain(chain)
-        this.chainApi = createChainApi(chain)
         this.tenderlySettings = {
             accountSlug:
                 process.env.TENDERLY_ACCOUNT_SLUG ||
@@ -93,6 +95,8 @@ class RateProviderDataService {
      * @returns An array of deployment information.
      */
     public async getDeploymentBlocks(addresses: Address[]): Promise<{ address: Address; deploymentTxHash: Hex }[]> {
+        const chainApi = this.getApiForFunction('getDeploymentBlocks')
+
         // The addresses length can be arbitrary but the etherscan API only allows 5 addresses at a time
         // so we need to chunk the addresses and call the API sequentially
         const chunkSize = 5
@@ -100,7 +104,7 @@ class RateProviderDataService {
 
         for (let i = 0; i < addresses.length; i += chunkSize) {
             const chunk = addresses.slice(i, i + chunkSize)
-            const chunkTxHashes = await this.chainApi.getDeploymentTxHashAndBlock(chunk)
+            const chunkTxHashes = await chainApi.getDeploymentTxHashAndBlock(chunk)
             txHashes.push(...chunkTxHashes)
         }
 
@@ -115,7 +119,8 @@ class RateProviderDataService {
     public async getContractInfo(
         addresses: Address[],
     ): Promise<{ address: Address; Proxy: string; ContractName: string; ABI: string; Implementation: Address }[]> {
-        return await this.chainApi.getSourceCode(addresses)
+        const chainApi = this.getApiForFunction('getContractInfo')
+        return await chainApi.getSourceCode(addresses)
     }
 
     /**
@@ -215,7 +220,8 @@ class RateProviderDataService {
     public async getContractSourceCode(
         address: Address,
     ): Promise<{ address: Address; Proxy: string; ContractName: string; ABI: string; Implementation: Address }> {
-        const sourceCodeArray = await this.chainApi.getSourceCode([address])
+        const chainApi = this.getApiForFunction('getContractInfo')
+        const sourceCodeArray = await chainApi.getSourceCode([address])
         return sourceCodeArray[0]
     }
 
@@ -344,6 +350,53 @@ class RateProviderDataService {
         if (chain.id === xlayer.id) {
             this.apiKey = process.env.XLAYER_API_KEY || ''
         }
+    }
+
+    /**
+     * Determines which API to use for a given function based on the chain.
+     * This allows different functions to use different API providers.
+     * 
+     * @param functionName The name of the function that needs an API
+     * @returns The appropriate ChainApi instance
+     */
+    private getApiForFunction(functionName: 'getDeploymentBlocks' | 'getContractInfo'): ChainApi {
+        // For getContractInfo: Use Etherscan all the time EXCEPT if chain is xlayer
+        if (functionName === 'getContractInfo') {
+            if (this.chain.id === xlayer.id) {
+                return new XLayerApi(
+                    this.chain,
+                    process.env.XLAYER_API_KEY || '',
+                    process.env.XLAYER_SECRET_KEY || '',
+                    process.env.XLAYER_PASSPHRASE || '',
+                )
+            }
+            return new EtherscanApi(this.chain, this.apiKey)
+        }
+
+        // For getDeploymentBlocks: Use Etherscan if chain is NOT Base, Optimism, or xlayer
+        if (functionName === 'getDeploymentBlocks') {
+            if (this.chain.id === xlayer.id) {
+                return new XLayerApi(
+                    this.chain,
+                    process.env.XLAYER_API_KEY || '',
+                    process.env.XLAYER_SECRET_KEY || '',
+                    process.env.XLAYER_PASSPHRASE || '',
+                )
+            }
+            // Base, Avalanche, BNB and Optimism are not supported via Etherscan for getDeploymentBlocks
+            // so using Blockscout api for Base & optimism
+            if (this.chain.id === base.id || this.chain.id === optimism.id) {
+                return new BlockscoutApi(this.chain, this.apiKey)
+            }
+
+            if (this.chain.id === avalanche.id) {
+                return new RoutescanApi(this.chain, this.apiKey)
+            }
+            return new EtherscanApi(this.chain, this.apiKey)
+        }
+
+        // Default fallback (should not be reached)
+        throw new Error(`Unknown function name: ${functionName}`)
     }
 }
 
