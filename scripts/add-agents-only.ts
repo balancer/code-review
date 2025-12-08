@@ -1,6 +1,9 @@
+import * as dotenv from 'dotenv'
 import HypernativeApi from 'services/hypernativeApi'
 import { hyperEvm } from 'utils/customChains'
 import { Address } from 'viem'
+
+dotenv.config()
 
 /**
  * This script is used to add Hypernative agents for rate providers.

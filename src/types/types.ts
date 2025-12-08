@@ -88,6 +88,16 @@ export interface CustomAgentInputUpgrade {
     operands?: string
 }
 
+// Minimal Hypernative agent representation used when fetching agents
+export interface HypernativeAgent {
+    id: number
+    agentName: string
+    agentType: string
+    chain: string
+    createdBy: string
+    createdAt: string
+}
+
 /**
  * Interface for chain explorer APIs that provide contract source code
  * and deployment information.
