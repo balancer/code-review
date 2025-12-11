@@ -70,12 +70,12 @@ class HypernativeApi {
             const chainString = this.getValidChainNameFromViemChain(input.chain)
 
             const agent: HypernativeAgent = {
-                id: data.id,
-                agentName: data.agentName,
-                agentType: data.agentType,
+                id: data.data.id,
+                agentName: data.data.agentName,
+                agentType: data.data.agentType,
                 chain: chainString,
-                createdBy: data.createdBy,
-                createdAt: data.createdAt,
+                createdBy: data.data.createdBy,
+                createdAt: data.data.createdAt,
             }
 
             return agent
@@ -124,11 +124,11 @@ class HypernativeApi {
 
             const agent: HypernativeAgent = {
                 id: data.id,
-                agentName: data.agentName,
-                agentType: data.agentType,
+                agentName: data.data.agentName,
+                agentType: data.data.agentType,
                 chain: chainString,
-                createdBy: data.createdBy,
-                createdAt: data.createdAt,
+                createdBy: data.data.createdBy,
+                createdAt: data.data.createdAt,
             }
 
             return agent
@@ -187,12 +187,12 @@ class HypernativeApi {
             const chainString = this.getValidChainNameFromViemChain(input.chain)
 
             const agent: HypernativeAgent = {
-                id: data.id,
-                agentName: data.agentName,
-                agentType: data.agentType,
+                id: data.data.id,
+                agentName: data.data.agentName,
+                agentType: data.data.agentType,
                 chain: chainString,
-                createdBy: data.createdBy,
-                createdAt: data.createdAt,
+                createdBy: data.data.createdBy,
+                createdAt: data.data.createdAt,
             }
 
             return agent
