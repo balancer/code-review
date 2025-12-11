@@ -1,5 +1,6 @@
 import path from 'path'
 import HypernativeApi from '../../src/services/hypernativeApi'
+import { HypernativeAgent } from '../../src/types/types'
 const fs = require('fs')
 
 import { Address, Chain } from 'viem'
@@ -13,7 +14,10 @@ const chainNameToRegistryKey: { [key: string]: string } = {
     'Mode Mainnet': 'mode',
 }
 
-export async function createCustomAgents(rateProvider: Address, chain: Chain) {
+export async function createCustomAgents(
+    rateProvider: Address,
+    chain: Chain,
+): Promise<HypernativeAgent[]> {
     // get the relevant information from the registry
     const registryPath = path.join(__dirname, '../../rate-providers/registry.json')
     const registry = JSON.parse(fs.readFileSync(registryPath, 'utf-8'))
@@ -31,7 +35,8 @@ export async function createCustomAgents(rateProvider: Address, chain: Chain) {
         process.env.HYPERNATIVE_CLIENT_SECRET || '',
     )
 
-    await hypernativeApi.createCustomAgentRateDeviation({
+    // Create the three agents sequentially and collect their minimal representations
+    const rateDeviationAgent = await hypernativeApi.createCustomAgentRateDeviation({
         chain,
         ruleString: `On ${chain.name}: when ${rateProvider}: getRate().uint256 changed by 10% in less than 10 blocks.\nSample every 5 blocks`,
         contractAddress: rateProvider,
@@ -40,16 +45,18 @@ export async function createCustomAgents(rateProvider: Address, chain: Chain) {
         rateProvider: rateProvider,
     })
 
-    await hypernativeApi.createCustomAgentUpgrade({
+    const upgradeAgent = await hypernativeApi.createCustomAgentUpgrade({
         chain,
-        ruleString: `On ${chain.name}: when ${upgradeableComponents.map((component: string) => component).join(' or ')}: Upgraded(indexed address implementation)}`,
+        ruleString: `On ${chain.name}: when ${upgradeableComponents
+            .map((component: string) => component)
+            .join(' or ')}: Upgraded(indexed address implementation)}`,
         contractAddress: upgradeableComponents,
         contractAlias: upgradeableComponents.map((component: string) => component).join(' or '),
         agentName: `${rateProvider.slice(-4)}-upgrade`,
         rateProvider: rateProvider,
     })
 
-    await hypernativeApi.createCustomAgentRateRevert({
+    const rateRevertAgent = await hypernativeApi.createCustomAgentRateRevert({
         chain,
         ruleString: `On ${chain.name}: when ${rateProvider}: getRate() reverts`,
         contractAddress: rateProvider,
@@ -57,4 +64,6 @@ export async function createCustomAgents(rateProvider: Address, chain: Chain) {
         agentName: `${rateProvider.slice(-4)}rate-revert`,
         rateProvider: rateProvider,
     })
+
+    return [rateDeviationAgent, upgradeAgent, rateRevertAgent]
 }

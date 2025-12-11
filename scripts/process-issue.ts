@@ -1,6 +1,8 @@
 import { writeReviewAndUpdateRegistry as writeERC4626ReviewAndUpdateRegistry } from '../src/utils/write-erc4626-review'
 import { writeReviewAndUpdateRegistry } from '../src/utils/write-rp-review'
 import { createCustomAgents } from 'utils'
+import { HypernativeAgent } from '../src/types/types'
+import * as fs from 'fs'
 
 import {
     base,
@@ -108,10 +110,23 @@ async function processIssue(issueJson: string) {
     )
 
     // this step requires the registry to be read thus having the registry updated already
+    let createdAgents: HypernativeAgent[] = []
     try {
-        await createCustomAgents(issueData.rate_provider_contract_address, network)
+        createdAgents = await createCustomAgents(issueData.rate_provider_contract_address, network)
     } catch (error) {
         console.log(`Failed to create custom agents for chain ${network.name}`)
+    }
+
+    // If we successfully created any Hypernative agents, expose simple variables
+    // via the GitHub Actions step outputs (GITHUB_OUTPUT). The workflow can then
+    // use these in a markdown template in the PR body.
+    if (createdAgents.length > 0 && process.env.GITHUB_OUTPUT) {
+        const outputPath = process.env.GITHUB_OUTPUT
+        const ids = createdAgents.map((agent) => agent.id).join(', ')
+        const names = createdAgents.map((agent) => agent.agentName).join(', ')
+
+        fs.appendFileSync(outputPath, `hypernative_agent_ids=${ids}\n`)
+        fs.appendFileSync(outputPath, `hypernative_agent_names=${names}\n`)
     }
 
     // Only continue with erc4626 review if

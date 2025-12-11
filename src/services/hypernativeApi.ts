@@ -33,7 +33,7 @@ class HypernativeApi {
         HyperEVM: 'hyperliquid_evm',
     }
 
-    public async createCustomAgentRateDeviation(input: CustomAgentInput): Promise<void> {
+    public async createCustomAgentRateDeviation(input: CustomAgentInput): Promise<HypernativeAgent> {
         const customAgentRule = { ...rateProviderRateDeviationRule }
 
         // Modify the rule based on input
@@ -63,15 +63,29 @@ class HypernativeApi {
                 const responseBody = await response.text()
                 console.error('Response Status:', response.status)
                 console.error('Response Body:', responseBody)
-                // throw new Error(`HTTP error! status: ${response.status}`)
+                throw new Error(`HTTP error! status: ${response.status}`)
             }
+
+            const data: any = await response.json()
+            const chainString = this.getValidChainNameFromViemChain(input.chain)
+
+            const agent: HypernativeAgent = {
+                id: data.id,
+                agentName: data.agentName,
+                agentType: data.agentType,
+                chain: chainString,
+                createdBy: data.createdBy,
+                createdAt: data.createdAt,
+            }
+
+            return agent
         } catch (error) {
             console.error('Error during API call:', error)
             throw error // Re-throw the error to propagate it
         }
     }
 
-    public async createCustomAgentUpgrade(input: CustomAgentInputUpgrade): Promise<void> {
+    public async createCustomAgentUpgrade(input: CustomAgentInputUpgrade): Promise<HypernativeAgent> {
         const customAgentRule = { ...rateProviderUpgradeRule }
 
         // Modify the rule based on input
@@ -102,15 +116,29 @@ class HypernativeApi {
                 const responseBody = await response.text()
                 console.error('Response Status:', response.status)
                 console.error('Response Body:', responseBody)
-                //throw new Error(`HTTP error! status: ${response.status}`)
+                throw new Error(`HTTP error! status: ${response.status}`)
             }
+
+            const data: any = await response.json()
+            const chainString = this.getValidChainNameFromViemChain(input.chain)
+
+            const agent: HypernativeAgent = {
+                id: data.id,
+                agentName: data.agentName,
+                agentType: data.agentType,
+                chain: chainString,
+                createdBy: data.createdBy,
+                createdAt: data.createdAt,
+            }
+
+            return agent
         } catch (error) {
             console.error('Error during API call:', error)
             throw error // Re-throw the error to propagate it
         }
     }
 
-    public async createCustomAgentRateRevert(input: CustomAgentInput): Promise<void> {
+    public async createCustomAgentRateRevert(input: CustomAgentInput): Promise<HypernativeAgent> {
         // This custom agent rule is already complete it only needs modification for rate provider address
         const customAgentRule = { ...rateProviderRateRevertRule }
 
@@ -152,8 +180,22 @@ class HypernativeApi {
                 const responseBody = await response.text()
                 console.error('Response Status:', response.status)
                 console.error('Response Body:', responseBody)
-                // throw new Error(`HTTP error! status: ${response.status}`)
+                throw new Error(`HTTP error! status: ${response.status}`)
             }
+
+            const data: any = await response.json()
+            const chainString = this.getValidChainNameFromViemChain(input.chain)
+
+            const agent: HypernativeAgent = {
+                id: data.id,
+                agentName: data.agentName,
+                agentType: data.agentType,
+                chain: chainString,
+                createdBy: data.createdBy,
+                createdAt: data.createdAt,
+            }
+
+            return agent
         } catch (error) {
             console.error('Error during API call:', error)
             throw error // Re-throw the error to propagate it

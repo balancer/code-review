@@ -69,6 +69,10 @@ jobs:
             - Rate provider review documentation
             - Updated registry files
 
+            ### Hypernative agents
+            - IDs: `${{ steps.process-issue.outputs.hypernative_agent_ids }}`
+            - Names: `${{ steps.process-issue.outputs.hypernative_agent_names }}`
+
             Closes #${{ github.event.issue.number }}
           labels: |
             automated-review
