@@ -121,6 +121,10 @@ async function processIssue(issueJson: string) {
         const outputPath = process.env.GITHUB_OUTPUT
         const ids = createdAgents.map((agent) => agent.id).join(', ')
         const names = createdAgents.map((agent) => agent.agentName).join(', ')
+        
+        console.log('GITHUB_OUTPUT path:', outputPath)
+        console.log('hypernative_agent_ids value:', ids)
+        console.log('hypernative_agent_names value:', names)
 
         fs.appendFileSync(outputPath, `hypernative_agent_ids=${ids}\n`)
         fs.appendFileSync(outputPath, `hypernative_agent_names=${names}\n`)
