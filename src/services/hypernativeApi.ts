@@ -117,7 +117,7 @@ class HypernativeApi {
             const chainString = this.getValidChainNameFromViemChain(input.chain)
 
             const agent: HypernativeAgent = {
-                id: data.id,
+                id: data.data.id,
                 agentName: data.data.agentName,
                 agentType: data.data.agentType,
                 chain: chainString,
