@@ -113,6 +113,7 @@ async function processIssue(issueJson: string) {
     let createdAgents: HypernativeAgent[] = []
     try {
         createdAgents = await createCustomAgents(issueData.rate_provider_contract_address, network)
+        console.log('createdAgents:', createdAgents)
     } catch (error) {
         console.log(`Failed to create custom agents for chain ${network.name}`)
     }
