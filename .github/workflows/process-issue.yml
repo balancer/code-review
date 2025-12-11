@@ -53,7 +53,7 @@ jobs:
         run: |
           echo "GITHUB_OUTPUT: ${{ env.GITHUB_OUTPUT }}"
           echo "hypernative_agent_ids: '${{ steps.process-issue.outputs.hypernative_agent_ids }}'"
-          echo "hypernative_agent_names: '${{ steps.process-issue.outputs.hypernative_agent_names }}'"      - name: Create Pull Request
+      - name: Create Pull Request
         uses: peter-evans/create-pull-request@v7.0.8
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
