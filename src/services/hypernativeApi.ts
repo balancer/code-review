@@ -43,9 +43,6 @@ class HypernativeApi {
         customAgentRule.rule.contractAddressAlias = input.contractAlias
         customAgentRule.agentName = input.agentName
 
-        // Log the request body
-        console.log('Request Body:', JSON.stringify(customAgentRule, null, 2))
-
         // Make the API call
         try {
             const response = await fetch('https://api.hypernative.xyz/custom-agents', {
@@ -95,9 +92,6 @@ class HypernativeApi {
         customAgentRule.rule.contractAddressAlias = input.rateProvider
         customAgentRule.agentName = input.agentName
         customAgentRule.rule.transactionParams[0].operands = input.contractAddress
-
-        // Log the request body
-        console.log('Request Body:', JSON.stringify(customAgentRule, null, 2))
 
         // Make the API call
         try {
@@ -160,8 +154,6 @@ class HypernativeApi {
 
         const requestBody = customAgentRule
 
-        // Log the request body
-        console.log('Request Body:', JSON.stringify(requestBody, null, 2))
 
         // Make the API call
         try {
