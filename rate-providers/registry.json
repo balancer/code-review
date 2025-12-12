@@ -1505,6 +1505,15 @@
           "implementationReviewed": "0xc30a7774d528a412c2653bde583cc8180f6d5b7a"
         }
       ]
+    },
+    "0xee7befdaf63dab8ee4d82995932ba2c4fdb151bc": {
+      "asset": "0x1F0570a081FeE0e4dF6eAC470f9d2D53CDEDa1c5",
+      "name": "GamiUSDCRateProvider.md",
+      "summary": "unsafe",
+      "review": "./GamiUSDCRateProviderReviewfcb9.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   },
   "base": {
