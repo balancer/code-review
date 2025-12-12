@@ -1705,6 +1705,17 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0x1F0570a081FeE0e4dF6eAC470f9d2D53CDEDa1c5": {
+      "asset": "0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E",
+      "name": "GamiUSDCErc4626Vault.md",
+      "summary": "safe",
+      "review": "./GamiUSDCErc4626VaultReview58b6.md",
+      "warnings": [],
+      "upgradeableComponents": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   },
   "sepolia": {
