@@ -24,7 +24,7 @@ Each of the items below represents an absolute requirement for the Rate Provider
    about the involved contracts in this [tenderly simulation](https://www.tdly.co/shared/simulation/08b36f92-9b09-4c5b-9e84-e9619e69629c)
 
 ## Conclusion
-**Summary judgment: UNUSABLE**
+**Summary judgment: USABLE**
 
 ** upgradeable in this context means that:
 - The contract is a proxy contract with an implementation sourced from Etherscan and the proxy emitted an "Upgraded" event.
