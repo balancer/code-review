@@ -3872,20 +3872,6 @@
       "factory": "",
       "upgradeableComponents": []
     },
-    "0x5009e302f22ef52fec4e29a9d407c2bc9308d047": {
-      "asset": "0xE2Fc85BfB48C4cF147921fBE110cf92Ef9f26F94",
-      "name": "StakedStreamUSDRateProvider.md",
-      "summary": "safe",
-      "review": "./StakedStreamUSDRateProviderReviewb2c8.md",
-      "warnings": [],
-      "factory": "",
-      "upgradeableComponents": [
-        {
-          "entrypoint": "0x91f37a3058a7fd3f4f66ed87d715cf05bb4fbfbd",
-          "implementationReviewed": "0x8a1bae36ee0e7b7d6ced3ffea250914bfca09292"
-        }
-      ]
-    },
     "0xc5EA4b3fe030d6da69462d026E4475Fe121c2Cc9": {
       "asset": "0x3839A0DD920463eB5d8231eFe4d8c5edC44145eC",
       "name": "USDR2029BondRateProvider.md",
@@ -4838,9 +4824,9 @@
     },
     "0x91151ba698253e24c23a754d94f94049a17e8084": {
       "asset": "0x5bff88ca1442c2496f7e475e9e7786383bc070c0",
-      "name": "StakedFraxUSDRateProvider.md",
+      "name": "StakedFraRateProvider.md",
       "summary": "safe",
-      "review": "./StakedFraxUSDRateProviderReview280f.md",
+      "review": "./StakedFraRateProviderReview280f.md",
       "warnings": [],
       "factory": "",
       "upgradeableComponents": [
@@ -5220,7 +5206,7 @@
     },
     "0x5f26085ad72aa51ed443d84c1f08bbaa7dd5425e": {
       "asset": "0xdA14A41DbdA731F03A94cb722191639DD22b35b2",
-      "name": "Silo frxUSD-37 Rateprovider",
+      "name": "Silo fr-37 Rateprovider",
       "summary": "safe",
       "review": "./SiloWrappedRateprovider.md",
       "warnings": [
@@ -6045,9 +6031,9 @@
     },
     "0xfa5D15F15bC1BeBf3B413d9373E27586ac799dB6": {
       "asset": "0x9c59a9389D8f72DE2CdAf1126F36EA4790E2275e",
-      "name": "FelixUSDhlRateProvider.md",
+      "name": "FelihlRateProvider.md",
       "summary": "safe",
-      "review": "./FelixUSDhlRateProviderReview27b6.md",
+      "review": "./FelihlRateProviderReview27b6.md",
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
@@ -6088,9 +6074,9 @@
     },
     "0x762c3B8e276A6Da1068443837384AcCa68C3536C": {
       "asset": "0xfc5126377f0efc0041c0969ef9ba903ce67d151e",
-      "name": "FelixUSDT0RateProvider.md",
+      "name": "FeliT0RateProvider.md",
       "summary": "safe",
-      "review": "./FelixUSDT0RateProviderReview7662.md",
+      "review": "./FeliT0RateProviderReview7662.md",
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
