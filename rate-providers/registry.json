@@ -3925,6 +3925,24 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0x1592d6f331460ead0b3f757b5d1aa6e696c31147": {
+      "asset": "0x890A5122Aa1dA30fEC4286DE7904Ff808F0bd74A",
+      "name": "MsYRateProvider.md",
+      "summary": "safe",
+      "review": "./MsYRateProviderReviewe31c.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x890a5122aa1da30fec4286de7904ff808f0bd74a",
+          "implementationReviewed": "0x42ced7dce66df68a6828f74ea73612fb511471a7"
+        },
+        {
+          "entrypoint": "0x4ba01f22827018b4772cd326c7627fb4956a7c00",
+          "implementationReviewed": "0x7ea01d56932f82370b11686dee4d8fa777845bd8"
+        }
+      ]
     }
   },
   "fantom": {
