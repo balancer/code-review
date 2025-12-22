@@ -3943,6 +3943,24 @@
           "implementationReviewed": "0x7ea01d56932f82370b11686dee4d8fa777845bd8"
         }
       ]
+    },
+    "0xa3cc6d07bedbeb3160c9fa673fd07a453b14897b": {
+      "asset": "0xc8CF6D7991f15525488b2A83Df53468D682Ba4B0",
+      "name": "StakedFalconUSDRateProvider.md",
+      "summary": "safe",
+      "review": "./StakedFalconUSDRateProviderReviewb1b6.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xc8cf6d7991f15525488b2a83df53468d682ba4b0",
+          "implementationReviewed": "0x0d132bee412e6619a4863aeedad97541bfda3f34"
+        },
+        {
+          "entrypoint": "0xfa2b947eec368f42195f24f36d2af29f7c24cec2",
+          "implementationReviewed": "0x3adf34c09dac24e4baefb1b1df4c2992edc2b789"
+        }
+      ]
     }
   },
   "fantom": {
