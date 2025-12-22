@@ -749,6 +749,26 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0xc8CF6D7991f15525488b2A83Df53468D682Ba4B0": {
+      "asset": "0xFa2B947eEc368f42195f24F36d2aF29f7c24CeC2",
+      "name": "StakedFalconUSDErc4626Vault.md",
+      "summary": "safe",
+      "review": "./StakedFalconUSDErc4626VaultReview72fd.md",
+      "warnings": [],
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xfa2b947eec368f42195f24f36d2af29f7c24cec2",
+          "implementationReviewed": "0x3adf34c09dac24e4baefb1b1df4c2992edc2b789"
+        },
+        {
+          "entrypoint": "0xc8cf6d7991f15525488b2a83df53468d682ba4b0",
+          "implementationReviewed": "0x0d132bee412e6619a4863aeedad97541bfda3f34"
+        }
+      ],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   },
   "gnosis": {
