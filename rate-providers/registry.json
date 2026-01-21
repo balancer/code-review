@@ -1995,7 +1995,7 @@
     "0xD8BC11AA3F7aA53193dC098aDb0d8776fa1e194B": {
       "asset": "0xE9185Ee218cae427aF7B9764A011bb89FeA761B4",
       "name": "BRZTokenRateProvider.md",
-      "summary": "unsafe",
+      "summary": "safe",
       "review": "./BRZTokenRateProviderReview9871.md",
       "warnings": [],
       "factory": "",
