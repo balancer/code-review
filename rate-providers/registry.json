@@ -2000,6 +2000,15 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0xfd9F651ca1e136f47d50C102D33D6cd342673C65": {
+      "asset": "0x18Bc5bcC660cf2B9cE3cd51a404aFe1a0cBD3C22",
+      "name": "IDRXRateProvider.md",
+      "summary": "safe",
+      "review": "./IDRXRateProviderReview7547.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   },
   "ethereum": {
