@@ -1992,6 +1992,15 @@
       "factory": "",
       "upgradeableComponents": []
     },
+    "0xD8BC11AA3F7aA53193dC098aDb0d8776fa1e194B": {
+      "asset": "0xE9185Ee218cae427aF7B9764A011bb89FeA761B4",
+      "name": "BRZTokenRateProvider.md",
+      "summary": "safe",
+      "review": "./BRZTokenRateProviderReview9871.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
+    },
     "0xfd9F651ca1e136f47d50C102D33D6cd342673C65": {
       "asset": "0x18Bc5bcC660cf2B9cE3cd51a404aFe1a0cBD3C22",
       "name": "IDRXRateProvider.md",
