@@ -1,8 +1,11 @@
+import * as dotenv from 'dotenv'
 import { writeReviewAndUpdateRegistry as writeERC4626ReviewAndUpdateRegistry } from '../src/utils/write-erc4626-review'
 import { writeReviewAndUpdateRegistry } from '../src/utils/write-rp-review'
-import { createCustomAgents } from 'utils'
+import { createCustomAgents } from '../src/utils'
 import { HypernativeAgent } from '../src/types/types'
 import * as fs from 'fs'
+
+dotenv.config()
 
 import {
     base,
@@ -163,4 +166,5 @@ async function processIssue(issueJson: string) {
 // Read from environment variable instead of command line
 const issueData = process.env.ISSUE_DATA || process.argv[2] || '{}'
 //console.log('Issue data from environment:', issueData)
+
 processIssue(issueData)
