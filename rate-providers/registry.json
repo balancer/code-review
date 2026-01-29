@@ -6453,5 +6453,16 @@
         }
       ]
     }
+  },
+  "monad": {
+    "0xeC2C6184761ab7fE061130B4A7e3Da89c72F8395": {
+      "asset": "0x754704Bc059F8C67012fEd69BC8A327a5aafb603",
+      "name": "USDCRateProvider.md",
+      "summary": "safe",
+      "review": "./USDCRateProviderReviewddd6.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
+    }
   }
 }
