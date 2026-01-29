@@ -18,6 +18,7 @@ import {
     optimism,
     polygonZkEvm,
     mode,
+    monad
 } from 'viem/chains'
 
 import { hyperEvm, plasma, xlayer } from '../src/utils/customChains'
@@ -56,6 +57,7 @@ async function main() {
                 'hyperEvm',
                 'plasma',
                 'xlayer',
+                'monad'
             ],
             demandOption: true,
         })
@@ -89,6 +91,7 @@ async function main() {
         hyperEvm,
         plasma,
         xlayer,
+        monad
     }
 
     let network = networks[argv.network]

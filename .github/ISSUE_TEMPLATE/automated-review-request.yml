@@ -34,6 +34,7 @@ body:
         - hyperEvm
         - plasma
         - xlayer
+        - monad
     validations:
       required: true
   - type: input

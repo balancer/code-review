@@ -31,6 +31,7 @@ class HypernativeApi {
         Sepolia: 'sepolia',
         Polygon: 'polygon',
         HyperEVM: 'hyperliquid_evm',
+        'Monad': 'monad',
     }
 
     public async createCustomAgentRateDeviation(input: CustomAgentInput): Promise<HypernativeAgent> {

@@ -21,6 +21,7 @@ import {
     optimism,
     polygonZkEvm,
     mode,
+    monad,
 } from 'viem/chains'
 import { hyperEvm, plasma, xlayer } from '../src/utils/customChains'
 import { Hex } from 'viem'
@@ -77,6 +78,7 @@ async function processIssue(issueJson: string) {
         hyperEvm,
         plasma,
         xlayer,
+        monad
     }
     let network = networks[issueData.network]
 
