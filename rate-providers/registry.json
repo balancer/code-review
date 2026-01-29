@@ -1227,96 +1227,6 @@
       "factory": "",
       "upgradeableComponents": []
     },
-    "0xfEFCB3d15100f87911631f0A625bAf87dfFb8a5f": {
-      "asset": "0x39dE0f00189306062D79eDEC6DcA5bb6bFd108f9",
-      "name": "EVKVaulteUSDC-2RateProvider.md",
-      "summary": "safe",
-      "review": "./EVKVaulteUSDC-2RateProviderReview.md",
-      "warnings": [],
-      "factory": "",
-      "upgradeableComponents": [
-        {
-          "entrypoint": "0xaf4b4c18b17f6a2b32f6c398a3910bdcd7f26181",
-          "implementationReviewed": "0x29E9b639e165d919FEcf02521F8A9dA0492D4f21"
-        },
-        {
-          "entrypoint": "0x39de0f00189306062d79edec6dca5bb6bfd108f9",
-          "implementationReviewed": "0x29E9b639e165d919FEcf02521F8A9dA0492D4f21"
-        }
-      ]
-    },
-    "0x4e7cE59ccBF84fA0C1d012Ae2F86f990d324A038": {
-      "asset": "0xa446938b0204Aa4055cdFEd68Ddf0E0d1BAB3E9E",
-      "name": "EVKVaulteUSDt-3RateProvider.md",
-      "summary": "safe",
-      "review": "./EVKVaulteUSDt-3RateProviderReview.md",
-      "warnings": [],
-      "factory": "",
-      "upgradeableComponents": [
-        {
-          "entrypoint": "0xa446938b0204aa4055cdfed68ddf0e0d1bab3e9e",
-          "implementationReviewed": "0x29E9b639e165d919FEcf02521F8A9dA0492D4f21"
-        },
-        {
-          "entrypoint": "0xaf4b4c18b17f6a2b32f6c398a3910bdcd7f26181",
-          "implementationReviewed": "0x29E9b639e165d919FEcf02521F8A9dA0492D4f21"
-        }
-      ]
-    },
-    "0x392Eb09258cEC61C3f7278A4c855d6686202aF85": {
-      "asset": "0x2137568666f12fc5A026f5430Ae7194F1C1362aB",
-      "name": "EVKVaulteAUSD-2RateProvider.md",
-      "summary": "safe",
-      "review": "./EVKVaulteAUSD-2RateProviderReview.md",
-      "warnings": [],
-      "factory": "",
-      "upgradeableComponents": [
-        {
-          "entrypoint": "0xaf4b4c18b17f6a2b32f6c398a3910bdcd7f26181",
-          "implementationReviewed": "0x29E9b639e165d919FEcf02521F8A9dA0492D4f21"
-        },
-        {
-          "entrypoint": "0x2137568666f12fc5a026f5430ae7194f1c1362ab",
-          "implementationReviewed": "0x29E9b639e165d919FEcf02521F8A9dA0492D4f21"
-        }
-      ]
-    },
-    "0xfa5D15F15bC1BeBf3B413d9373E27586ac799dB6": {
-      "asset": "0x06d47F3fb376649c3A9Dafe069B3D6E35572219E",
-      "name": "StakedavUSDRateProvider.md",
-      "summary": "safe",
-      "review": "./StakedavUSDRateProviderReviewd696.md",
-      "warnings": [],
-      "factory": "",
-      "upgradeableComponents": [
-        {
-          "entrypoint": "0x5030183b3dd0105d69d7d45595c120fc4b542ec3",
-          "implementationReviewed": "0x29E9b639e165d919FEcf02521F8A9dA0492D4f21"
-        },
-        {
-          "entrypoint": "0xaf4b4c18b17f6a2b32f6c398a3910bdcd7f26181",
-          "implementationReviewed": "0x29E9b639e165d919FEcf02521F8A9dA0492D4f21"
-        }
-      ]
-    },
-    "0x9062a576D3e6Cf6999e99e405608063033c4CFF6": {
-      "asset": "0x72F92a966f1874f74e1b601BEe7CF57031B53A03",
-      "name": "EVKVaultesavUSD-2RateProvider.md",
-      "summary": "safe",
-      "review": "./EVKVaultesavUSD-2RateProviderReview911d.md",
-      "warnings": [],
-      "factory": "",
-      "upgradeableComponents": [
-        {
-          "entrypoint": "0x72f92a966f1874f74e1b601bee7cf57031b53a03",
-          "implementationReviewed": "0x29E9b639e165d919FEcf02521F8A9dA0492D4f21"
-        },
-        {
-          "entrypoint": "0xaf4b4c18b17f6a2b32f6c398a3910bdcd7f26181",
-          "implementationReviewed": "0x29E9b639e165d919FEcf02521F8A9dA0492D4f21"
-        }
-      ]
-    },
     "0x41F21f6eE1742e15775efcf52e0ecFD2CE8309C2": {
       "asset": "0x6C7d727a0432D03351678F91FAA1126a5B871DF5",
       "name": "SolvBTCAvalancheRateProvider.md",
@@ -1354,24 +1264,6 @@
         {
           "entrypoint": "0xdbc5192a6b6ffee7451301bb4ec312f844f02b4a",
           "implementationReviewed": "0x639C72EEA35E50F5e2911891389FC4E8422587C4"
-        }
-      ]
-    },
-    "0x121CE3929a4b7162a84345c9b6296439a82A841c": {
-      "asset": "0x51b47B3013863c52CA28D603De3C2d7a5FEf50B9",
-      "name": "EVKVaulteweETH-1RateProvider.md",
-      "summary": "safe",
-      "review": "./EVKVaulteweETH-1RateProviderReview9da2.md",
-      "warnings": [],
-      "factory": "",
-      "upgradeableComponents": [
-        {
-          "entrypoint": "0xaf4b4c18b17f6a2b32f6c398a3910bdcd7f26181",
-          "implementationReviewed": "0x29E9b639e165d919FEcf02521F8A9dA0492D4f21"
-        },
-        {
-          "entrypoint": "0x51b47b3013863c52ca28d603de3c2d7a5fef50b9",
-          "implementationReviewed": "0x29E9b639e165d919FEcf02521F8A9dA0492D4f21"
         }
       ]
     },
@@ -1463,32 +1355,6 @@
         {
           "entrypoint": "0x1f8e769b5b6010b2c2bbcd68629ea1a0a0eda7e3",
           "implementationReviewed": "0x48766776d56d429e6beb426ccca3fae31cace06d"
-        }
-      ]
-    },
-    "0x1b26c995ce8dfb878e8b99e587217d2b6375758e": {
-      "asset": "0xFECebF56f150A68dDd197c3a6101da35C46693Ac",
-      "name": "EVKVaultesdeUSD-2RateProvider.md",
-      "summary": "safe",
-      "review": "./EVKVaultesdeUSD-2RateProviderReviewfd7b.md",
-      "warnings": [],
-      "factory": "",
-      "upgradeableComponents": [
-        {
-          "entrypoint": "0xb57b25851fe2311cc3fe511c8f10e868932e0680",
-          "implementationReviewed": "0xe5719355575ac6fc9854c5d6a264f1bc57eeaf35"
-        },
-        {
-          "entrypoint": "0x68088c91446c7bea49ea7dbd3b96ce62b272dc96",
-          "implementationReviewed": "0xdF13139eC96072e5934A9EB2f5aA4017BB17aF91"
-        },
-        {
-          "entrypoint": "0xfecebf56f150a68ddd197c3a6101da35c46693ac",
-          "implementationReviewed": "0x29e9b639e165d919fecf02521f8a9da0492d4f21"
-        },
-        {
-          "entrypoint": "0xaf4b4c18b17f6a2b32f6c398a3910bdcd7f26181",
-          "implementationReviewed": "0x29E9b639e165d919FEcf02521F8A9dA0492D4f21"
         }
       ]
     },
@@ -6483,32 +6349,6 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
-    },
-    "0x72A33D49181729A93CCF4D823bBb634781FD0c75": {
-      "asset": "0xa9C251F8304b1B3Fc2b9e8fcae78D94Eff82Ac66",
-      "name": "TelosCEarnUSDT0RateProvider.md",
-      "summary": "safe",
-      "review": "./TelosCEarnUSDT0RateProviderReviewbef7.md",
-      "warnings": [],
-      "factory": "",
-      "upgradeableComponents": [
-        {
-          "entrypoint": "0xb0004ad99f0e383cc413ba69acff7c229d930112",
-          "implementationReviewed": "0x8346BeBaA0789Eb92CFfCC07033b8bF9f3eFdcAB"
-        },
-        {
-          "entrypoint": "0x42388213c6f56d7e1477632b58ae6bba9adeeea3",
-          "implementationReviewed": "0x8346BeBaA0789Eb92CFfCC07033b8bF9f3eFdcAB"
-        },
-        {
-          "entrypoint": "0xfa00abff8e404b4fe939115409035f708a109842",
-          "implementationReviewed": "0x8346BeBaA0789Eb92CFfCC07033b8bF9f3eFdcAB"
-        },
-        {
-          "entrypoint": "0x9f562699511351ba3d0cf3d0df1502e776517ef3",
-          "implementationReviewed": "0x8346BeBaA0789Eb92CFfCC07033b8bF9f3eFdcAB"
-        }
-      ]
     },
     "0x05Ad8f5d0F9D8bd90739C06C83140F00D3bCbC3F": {
       "asset": "0x616185600989Bf8339b58aC9e539d49536598343",

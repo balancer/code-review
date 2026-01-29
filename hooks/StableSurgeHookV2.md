@@ -12,6 +12,7 @@
     - [avalanche:0x86705Ee19c0509Ff68F1118C55ee2ebdE383D122](https://snowtrace.io/address/0x86705Ee19c0509Ff68F1118C55ee2ebdE383D122/contract/43114/code)
     - [optimism:0xF39CA6ede9BF7820a952b52f3c94af526bAB9015](https://optimistic.etherscan.io/address/0xF39CA6ede9BF7820a952b52f3c94af526bAB9015#code)
     - [plasma:0x6817149cb753bf529565b4d023d7507ed2ff4bc0](https://plasmascan.to/address/0x6817149cb753BF529565B4D023d7507eD2ff4Bc0/contract/9745/code)
+    - [monad:0x6817149cb753BF529565B4D023d7507eD2ff4Bc0](https://monadvision.com/address/0x6817149cb753BF529565B4D023d7507eD2ff4Bc0?tab=Contract)
 - Audit report(s):
     - [Certora audit](https://github.com/balancer/balancer-v3-monorepo/blob/main/audits/certora/2025-01-30.pdf)
 

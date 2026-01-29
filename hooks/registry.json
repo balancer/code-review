@@ -180,5 +180,13 @@
       "review": "./StableSurgeHookV2.md",
       "warnings": []
     }
+  },
+  "monad": {
+    "0x6817149cb753BF529565B4D023d7507eD2ff4Bc0": {
+      "name": "StableSurgeHookV2",
+      "summary": "safe",
+      "review": "./StableSurgeHookV2.md",
+      "warnings": []
+    }
   }
 }
