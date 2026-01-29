@@ -58,6 +58,7 @@ jobs:
         uses: peter-evans/create-pull-request@v7.0.8
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          author: mkflow27 <mkflow27@users.noreply.github.com>
           branch: review/issue-${{ github.event.issue.number }}
           base: main
           title: "Review: Rate Provider from Issue #${{ github.event.issue.number }}"
