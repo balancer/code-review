@@ -25,3 +25,6 @@ python/venv/
 
 # Environment files
 .env
+
+# notes
+OVERVIEW.md
