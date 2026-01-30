@@ -22,6 +22,7 @@ Rate Provider Factories for reference
 | HyperEVM   | 0x03362f847b4fabc12e1ce98b6b59f94401e4588e | 0xec2c6184761ab7fe061130b4a7e3da89c72f8395 |
 | Plasma     | 0x138D9E0d0Cc4906C4cD865b38c9340A5CeDD9850 | 0x4E185b1502Fea7a06B63fDdA6de38F92C9528566 |
 | Xlayer     | 0x467665D4ae90e7A99c9C9AF785791058426d6eA0 | 0xeC2C6184761ab7fE061130B4A7e3Da89c72F8395 |
+| Monad      | 0x138D9E0d0Cc4906C4cD865b38c9340A5CeDD9850 | 0xb0334C5287Bfb15A8C9464898CDB0248ED176332 |
 
 Rate Transformer Factories 
 Use these factories when an ERC4626 vault contains a yield bearing token to combine their resepctive rates of growth. This denominates the vault asset in the underlying for correlated pairs. For example Aave-wstETH pairing with Aave-wETH by denominating the assets in wETH.
@@ -56,6 +57,7 @@ Use this factories to combine rate providers, similar to AaveRateTransformers. T
 | HyperEVM   | 0x138d9e0d0cc4906c4cd865b38c9340a5cedd9850 |
 | Plasma     | 0x470C9034F50afe6633f7e84A80B9961baa893d77 |
 | Xlayer     | 0x138D9E0d0Cc4906C4cD865b38c9340A5CeDD9850 |
+| Monad      | 0x8942C1e1e0D48E14EFBa4cc48d2E3584116e367f |
 
 ---
 
