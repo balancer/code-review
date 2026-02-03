@@ -3713,6 +3713,15 @@
           "implementationReviewed": "0x3adf34c09dac24e4baefb1b1df4c2992edc2b789"
         }
       ]
+    },
+    "0x8c56323368eeca7ec625c419c1c09481d2a5ccd0": {
+      "asset": "0xBb50A5341368751024ddf33385BA8cf61fE65FF9",
+      "name": "KpkETHPrime V2RateProvider.md",
+      "summary": "safe",
+      "review": "./KpkETHPrime V2RateProviderReview9686.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   },
   "fantom": {

@@ -769,6 +769,17 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0xBb50A5341368751024ddf33385BA8cf61fE65FF9": {
+      "asset": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+      "name": "KpkETHPrime V2Erc4626Vault.md",
+      "summary": "safe",
+      "review": "./KpkETHPrime V2Erc4626VaultReview6ac0.md",
+      "warnings": [],
+      "upgradeableComponents": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   },
   "gnosis": {
