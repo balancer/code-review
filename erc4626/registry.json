@@ -2470,5 +2470,18 @@
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
     }
+  },
+  "monad": {
+    "0x8E94704607E857eB3E10Bd21D90bf8C1Ecba0452": {
+      "asset": "0x00000000eFE302BEAA2b3e6e1b18d08D69a9012a",
+      "name": "CurvanceAUSDErc4626Vault.md",
+      "summary": "safe",
+      "review": "./CurvanceAUSDErc4626VaultReview3e50.md",
+      "warnings": [],
+      "upgradeableComponents": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    }
   }
 }
