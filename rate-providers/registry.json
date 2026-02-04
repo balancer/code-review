@@ -6330,5 +6330,16 @@
         }
       ]
     }
+  },
+  "monad": {
+    "0x019002b4479a614a15e855c57fb1d7da8fc4a049": {
+      "asset": "0x8E94704607E857eB3E10Bd21D90bf8C1Ecba0452",
+      "name": "CurvanceAUSDRateProvider.md",
+      "summary": "safe",
+      "review": "./CurvanceAUSDRateProviderReview63a1.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
+    }
   }
 }
