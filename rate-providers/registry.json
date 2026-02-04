@@ -6340,6 +6340,15 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0x5be32a96e2cc7645ea5532d14bb6d0acb43ccca5": {
+      "asset": "0x0fcEd51b526BfA5619F83d97b54a57e3327eB183",
+      "name": "CurvanceWrappedMONRateProvider.md",
+      "summary": "safe",
+      "review": "./CurvanceWrappedMONRateProviderReview96a0.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   }
 }
