@@ -6341,6 +6341,15 @@
       "factory": "",
       "upgradeableComponents": []
     },
+    "0x5be32a96e2cc7645ea5532d14bb6d0acb43ccca5": {
+      "asset": "0x0fcEd51b526BfA5619F83d97b54a57e3327eB183",
+      "name": "CurvanceWrappedMONRateProvider.md",
+      "summary": "safe",
+      "review": "./CurvanceWrappedMONRateProviderReview96a0.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
+    },
     "0x421977ac45f34a57d9d732cc3254b04ea024954c": {
       "asset": "0xf473568b26B8C5aadCa9fbC0eA17E1728d5ec925",
       "name": "CurvanceWrappedMONRateProvider.md",
