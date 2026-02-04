@@ -6358,6 +6358,15 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0x05Ad8f5d0F9D8bd90739C06C83140F00D3bCbC3F": {
+      "asset": "0x1b68626dca36c7fe922fd2d55e4f631d962de19c",
+      "name": "ShMonadRateProvider.md",
+      "summary": "safe",
+      "review": "./ShMonadRateProviderReview7fc9.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   }
 }
