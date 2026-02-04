@@ -2482,6 +2482,17 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0xf473568b26B8C5aadCa9fbC0eA17E1728d5ec925": {
+      "asset": "0x3bd359C1119dA7Da1D913D1C4D2B7c461115433A",
+      "name": "CurvanceWrappedMONErc4626Vault.md",
+      "summary": "safe",
+      "review": "./CurvanceWrappedMONErc4626VaultRevieweff3.md",
+      "warnings": [],
+      "upgradeableComponents": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   }
 }
