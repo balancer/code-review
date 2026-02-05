@@ -85,7 +85,7 @@ class RateProviderDataService {
         return await publicClient.createAccessList({
             data: callData,
             to: this.rateProvider,
-            gas: 100000n, // Set a reasonable gas limit for the call
+            //gas: 100000n, // Set a reasonable gas limit for the call
         })
     }
 
