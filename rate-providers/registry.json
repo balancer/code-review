@@ -6367,6 +6367,32 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0x76A32B3711D849855cD7Ccc68e46Bf6f0Da50dD0": {
+      "asset": "0x484be0540aD49f351eaa04eeB35dF0f937D4E73f",
+      "name": "StakedYuzuUSDRateProvider.md",
+      "summary": "safe",
+      "review": "./StakedYuzuUSDRateProviderReviewd13f.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xa79f7363fca5118b4141eceff6dd2a83d5047344",
+          "implementationReviewed": "0xe2e45a53ee023e1ef89f73323b7233ad2c18821b"
+        },
+        {
+          "entrypoint": "0x22d47686b3aec9068768f84efd8ce2637a347b0a",
+          "implementationReviewed": "0xb9d0073acb296719c26a8bf156e4b599174fe1d5"
+        },
+        {
+          "entrypoint": "0x368ee51e47a594fe1e9908b48228748a30bc7ca4",
+          "implementationReviewed": "0xe4bfe4071d363e1d4274fb8f79cb510b75913020"
+        },
+        {
+          "entrypoint": "0x98dc6e90d4c2f212ed9d124ad2afba4833268633",
+          "implementationReviewed": "0xe94c9f9a1893f23be38a5c0394e46ac05e8a5f8c"
+        }
+      ]
     }
   }
 }
