@@ -3731,6 +3731,20 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0xa3cEAcA6577Fd5FB9E7cB84ae6217d86D08B033C": {
+      "asset": "0x4AA8949bb47da4b4F27345404Ba1e5E7EA90bdb3",
+      "name": "StakedJUSDRateProvider.md",
+      "summary": "safe",
+      "review": "./StakedJUSDRateProviderReviewf023.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x4aa8949bb47da4b4f27345404ba1e5e7ea90bdb3",
+          "implementationReviewed": "0x4ccd1aa42259bfebc314f8454a1090538d947e81"
+        }
+      ]
     }
   },
   "fantom": {
