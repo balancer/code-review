@@ -85,7 +85,7 @@ class RateProviderDataService {
         return await publicClient.createAccessList({
             data: callData,
             to: this.rateProvider,
-            //gas: 100000n, // Set a reasonable gas limit for the call
+            gas: 500_000n, // Set a reasonable gas limit for the call
         })
     }
 
@@ -355,7 +355,7 @@ class RateProviderDataService {
     /**
      * Determines which API to use for a given function based on the chain.
      * This allows different functions to use different API providers.
-     * 
+     *
      * @param functionName The name of the function that needs an API
      * @returns The appropriate ChainApi instance
      */
