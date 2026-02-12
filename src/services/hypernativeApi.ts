@@ -308,6 +308,16 @@ class HypernativeApi {
         return timeFiltered
     }
 
+
+    public async getRateDeviationAgents(): Promise<HypernativeAgent[]> {
+        const agents = await this.getCustomAgents()
+    
+        return agents.filter((agent) =>
+            agent.agentName.toLowerCase().includes('rate-deviation'),
+        )
+    }
+
+
     /**
      * Deletes one or more Hypernative agents by ID, using client ID/secret authentication.
      */
