@@ -26,8 +26,6 @@ async function main() {
         })
         console.log(`Updated channels for agent ${agent.id} (${agent.agentName})`)
     }
-
-    const x = 5
 }
 
 async function updateChannelConfigurationForAgent(params: { agentId: number; clientId: string; clientSecret: string }) {
