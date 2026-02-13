@@ -45,6 +45,10 @@ export const rateProviderRateDeviationRule = {
             id: 2451,
             name: 'rate-provider-alerts',
         },
+        {
+            id: 6731,
+            name: 'Balancer V3 Rate Provider Pause',
+        },
     ],
     securitySuitIds: [1373],
     remindersConfigurations: [],
