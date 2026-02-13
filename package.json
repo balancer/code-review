@@ -13,7 +13,8 @@
     "write-erc4626-review": "ts-node scripts/write-erc4626-review.ts",
     "generate-agent": "ts-node scripts/create-agent.ts",
     "format": "npx prettier --write 'scripts/**/*.ts' 'src/**/*.ts'",
-    "process-issue": "ts-node scripts/process-issue.ts \"$(cat test/utils/issueString.json)\""
+    "process-issue": "ts-node scripts/process-issue.ts \"$(cat test/utils/issueString.json)\"",
+    "check-env": "npx ts-node scripts/check-env.ts"
   },
   "author": "",
   "license": "MIT",
