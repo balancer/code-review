@@ -3732,6 +3732,20 @@
       "factory": "",
       "upgradeableComponents": []
     },
+    "0xa3cEAcA6577Fd5FB9E7cB84ae6217d86D08B033C": {
+      "asset": "0x4AA8949bb47da4b4F27345404Ba1e5E7EA90bdb3",
+      "name": "StakedJUSDRateProvider.md",
+      "summary": "safe",
+      "review": "./StakedJUSDRateProviderReviewf023.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x4aa8949bb47da4b4f27345404ba1e5e7ea90bdb3",
+          "implementationReviewed": "0x4ccd1aa42259bfebc314f8454a1090538d947e81"
+        }
+      ]
+    },
     "0x7D5e115161991Ed498aD0A90169ca17C25576B4a": {
       "asset": "0x4Ef53d2cAa51C447fdFEEedee8F07FD1962C9ee6",
       "name": "KpkUSDCPrime V2RateProvider.md",
