@@ -780,6 +780,26 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0x4Ef53d2cAa51C447fdFEEedee8F07FD1962C9ee6": {
+      "asset": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      "name": "KpkUSDCPrime V2Erc4626Vault.md",
+      "summary": "safe",
+      "review": "./KpkUSDCPrime V2Erc4626VaultReview8e7b.md",
+      "warnings": [],
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x43506849d7c04f9138d1a2050bbf3a0c054402dd",
+          "implementationReviewed": "0x800c32eaa2a6c93cf4cb51794450ed77fbfbb172"
+        },
+        {
+          "entrypoint": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "implementationReviewed": "0x43506849d7c04f9138d1a2050bbf3a0c054402dd"
+        }
+      ],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   },
   "gnosis": {
