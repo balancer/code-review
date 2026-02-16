@@ -6487,6 +6487,24 @@
           "implementationReviewed": "0xe3b56aad3c21531055f39e73a51e8ff29daad049"
         }
       ]
+    },
+    "0xeb53499457d0b09a2384048ec0416c41b0f2de56": {
+      "asset": "0xdB39A9D4a1f1b4e93A5684d602207628aD60613C",
+      "name": "WrappedNeverlandWMONRateProvider.md",
+      "summary": "safe",
+      "review": "./WrappedNeverlandWMONRateProviderReview4d48.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xdb39a9d4a1f1b4e93a5684d602207628ad60613c",
+          "implementationReviewed": "0xf20a545013b74f7ed0239399217b130e4177e085"
+        },
+        {
+          "entrypoint": "0x80f00661b13cc5f6ccd3885be7b4c9c67545d585",
+          "implementationReviewed": "0xe3b56aad3c21531055f39e73a51e8ff29daad049"
+        }
+      ]
     }
   }
 }
