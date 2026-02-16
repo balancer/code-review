@@ -6497,7 +6497,6 @@
       "factory": "",
       "upgradeableComponents": [
         {
-          "entrypoint": "0x8d5c2df3eef09088fcccf3376d8ecd0dd505f642",
           "entrypoint": "0x4e8aaecce10ad9394e96fe5f2bd4e587a7b04298",
           "implementationReviewed": "0xf20a545013b74f7ed0239399217b130e4177e085"
         },
@@ -6516,7 +6515,6 @@
       "factory": "",
       "upgradeableComponents": [
         {
-          "entrypoint": "0x4e8aaecce10ad9394e96fe5f2bd4e587a7b04298",
           "entrypoint": "0x82c370ba90e38ef6acd8b1b078d34fd86fc6bac9",
           "implementationReviewed": "0xf20a545013b74f7ed0239399217b130e4177e085"
         },
@@ -6536,6 +6534,24 @@
       "upgradeableComponents": [
         {
           "entrypoint": "0xdb39a9d4a1f1b4e93a5684d602207628ad60613c",
+          "implementationReviewed": "0xf20a545013b74f7ed0239399217b130e4177e085"
+        },
+        {
+          "entrypoint": "0x80f00661b13cc5f6ccd3885be7b4c9c67545d585",
+          "implementationReviewed": "0xe3b56aad3c21531055f39e73a51e8ff29daad049"
+        }
+      ]
+    },
+    "0x16167267d6C4b69Df7831Cc05aC8A97A3918f866": {
+      "asset": "0xD786F7569C39A9F64E6A54Eb77db21364E90F279",
+      "name": "WrappedNeverlandloAZNDRateProvider.md",
+      "summary": "safe",
+      "review": "./WrappedNeverlandloAZNDRateProviderReviewce6d.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xd786f7569c39a9f64e6a54eb77db21364e90f279",
           "implementationReviewed": "0xf20a545013b74f7ed0239399217b130e4177e085"
         },
         {
