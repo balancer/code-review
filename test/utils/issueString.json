@@ -1,32 +1,36 @@
 {
-    "additional_contract_information": {
-      "selected": [],
-      "unselected": [
-        "Is the rate provider reporting a market rate?",
-        "Is a combined rate provider needed (i.e. wstETH in aave)?",
-        "Does this rate provider pertain to an ERC4626 contract?",
-        "If so, is the intention for this ERC4626 asset to be boosted?",
-        "If so, is the Buffer already initialized",
-        "If so, shall the underlying asset be used to add/remove liquidity in a pool if possible? (i.e. add USDC for waUSDC)",
-        "If so, shall the wrapped asset also be used to add/remove liquidity in a pool? (i.e. add waUSDC directly)"
-      ]
-    },
-    "network": "base",
-    "rate_provider_contract_address": "0xfd9F651ca1e136f47d50C102D33D6cd342673C65",
-    "asset_contract_address": "0x18Bc5bcC660cf2B9cE3cd51a404aFe1a0cBD3C22",
-    "audits": "https://dfb-chain.github.io/dfb-delfos/",
-    "protocol_documentation": "This rate provider tracks the market price of IDR/USD",
-    "erc4626_asset_contract_address": null,
-    "erc4626_asset_contract_audits": null,
-    "erc4626_asset_contract_documentation": null,
-    "link_to_passing_fork_tests": null,
-    "terms_and_conditions": {
-      "selected": [
-        "The protocol to be integrated has been audited by at least one security firm or independent researcher.",
-        "If deployed, the contract & all involved downstream contracts are verified on etherscan.",
-        "The contract does not rely upon an EOA to supply any critical data (e.g., price).",
-        "If upgradeable, the contract's administrator is not an EOA."
-      ],
-      "unselected": []
-    }
+  "additional_contract_information": {
+    "selected": [
+      "Does this rate provider pertain to an ERC4626 contract?",
+      "If so, is the intention for this ERC4626 asset to be boosted?",
+      "If so, is the Buffer already initialized",
+      "If so, shall the underlying asset be used to add/remove liquidity in a pool if possible? (i.e. add USDC for waUSDC)",
+      "If so, shall the wrapped asset also be used to add/remove liquidity in a pool? (i.e. add waUSDC directly)"
+    ],
+    "unselected": [
+      "Is the rate provider reporting a market rate?",
+      "Is a combined rate provider needed (i.e. wstETH in aave)?"
+    ]
+  },
+  "network": "monad",
+  "rate_provider_contract_address": "0x7D4Da35a2E04935a7aF18734ba1e7F57196F8555",
+  "asset_contract_address": "0x82c370ba90E38ef6Acd8b1b078d34fD86FC6bAC9",
+  "audits": "https://github.com/Neverland-Money/security-audits",
+  "protocol_documentation": [
+    "Neverland is built on the Aave V3 architecture: a battle-tested",
+    "highly secure lending protocol."
+  ],
+  "erc4626_asset_contract_address": "0x82c370ba90E38ef6Acd8b1b078d34fD86FC6bAC9",
+  "erc4626_asset_contract_audits": "https://github.com/Neverland-Money/security-audits",
+  "erc4626_asset_contract_documentation": "The ERC4626 Rate Provider tracks the embedded yield within the vault.",
+  "link_to_passing_fork_tests": "https://github.com/balancer/balancer-v3-erc4626-tests/pull/111",
+  "terms_and_conditions": {
+    "selected": [
+      "The protocol to be integrated has been audited by at least one security firm or independent researcher.",
+      "If deployed, the contract & all involved downstream contracts are verified on etherscan.",
+      "The contract does not rely upon an EOA to supply any critical data (e.g., price).",
+      "If upgradeable, the contract's administrator is not an EOA."
+    ],
+    "unselected": []
   }
+}
