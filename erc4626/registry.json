@@ -2604,6 +2604,26 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0xD786F7569C39A9F64E6A54Eb77db21364E90F279": {
+      "asset": "0x9c82eB49B51F7Dc61e22Ff347931CA32aDc6cd90",
+      "name": "WrappedNeverlandloAZNDErc4626Vault.md",
+      "summary": "safe",
+      "review": "./WrappedNeverlandloAZNDErc4626VaultReview15a6.md",
+      "warnings": [],
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xd786f7569c39a9f64e6a54eb77db21364e90f279",
+          "implementationReviewed": "0xf20a545013b74f7ed0239399217b130e4177e085"
+        },
+        {
+          "entrypoint": "0x80f00661b13cc5f6ccd3885be7b4c9c67545d585",
+          "implementationReviewed": "0xe3b56aad3c21531055f39e73a51e8ff29daad049"
+        }
+      ],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   }
 }
