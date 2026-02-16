@@ -51,7 +51,7 @@ export default class ERC4626DataService extends RateProviderDataService {
         return await publicClient.createAccessList({
             data: callData,
             to: this.rateProvider,
-            gas: 100000n, // Set a reasonable gas limit for the call
+            gas: 500_000n, // Set a reasonable gas limit for the call
         })
     }
 
