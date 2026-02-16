@@ -2524,6 +2524,26 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0x82c370ba90E38ef6Acd8b1b078d34fD86FC6bAC9": {
+      "asset": "0x00000000eFE302BEAA2b3e6e1b18d08D69a9012a",
+      "name": "WrappedNeverlandAUSDErc4626Vault.md",
+      "summary": "safe",
+      "review": "./WrappedNeverlandAUSDErc4626VaultReview7d5a.md",
+      "warnings": [],
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x82c370ba90e38ef6acd8b1b078d34fd86fc6bac9",
+          "implementationReviewed": "0xf20a545013b74f7ed0239399217b130e4177e085"
+        },
+        {
+          "entrypoint": "0x80f00661b13cc5f6ccd3885be7b4c9c67545d585",
+          "implementationReviewed": "0xe3b56aad3c21531055f39e73a51e8ff29daad049"
+        }
+      ],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   }
 }
