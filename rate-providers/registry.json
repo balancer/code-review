@@ -6559,6 +6559,32 @@
           "implementationReviewed": "0xe3b56aad3c21531055f39e73a51e8ff29daad049"
         }
       ]
+    },
+    "0xd3e6123815c6c0a75f1f23bbf0ae570af456f905": {
+      "asset": "0xa3227c5969757783154c60bf0bc1944180ed81b9",
+      "name": "KintsuStakedMonadRateProvider.md",
+      "summary": "safe",
+      "review": "./KintsuStakedMonadRateProviderReviewb10f.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xe77456457619ad1948336fbabc3883cb965b50d1",
+          "implementationReviewed": "0xb12c4bdf99c4ed3b78137b921a0eae382e710ddc"
+        },
+        {
+          "entrypoint": "0x22d47686b3aec9068768f84efd8ce2637a347b0a",
+          "implementationReviewed": "0xb9d0073acb296719c26a8bf156e4b599174fe1d5"
+        },
+        {
+          "entrypoint": "0x368ee51e47a594fe1e9908b48228748a30bc7ca4",
+          "implementationReviewed": "0xe4bfe4071d363e1d4274fb8f79cb510b75913020"
+        },
+        {
+          "entrypoint": "0x98dc6e90d4c2f212ed9d124ad2afba4833268633",
+          "implementationReviewed": "0xe94c9f9a1893f23be38a5c0394e46ac05e8a5f8c"
+        }
+      ]
     }
   }
 }
