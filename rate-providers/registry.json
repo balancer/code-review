@@ -6193,6 +6193,32 @@
           "implementationReviewed": "0x05de079a28386135e048369cdf0bc4d326d5ebdf"
         }
       ]
+    },
+    "0x4d1938cb414a4499aeb0a7228edc65e11707a60f": {
+      "asset": "0xe8b10461ea0b04FF30F4cBfc3E93957Cac00DEd4",
+      "name": "HypurrFiEarnHYPERateProvider.md",
+      "summary": "safe",
+      "review": "./HypurrFiEarnHYPERateProviderReviewcba9.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xf73c654d468f5485bf15f3470b78851a49257704",
+          "implementationReviewed": "0x05de079a28386135e048369cdf0bc4d326d5ebdf"
+        },
+        {
+          "entrypoint": "0xc7e7861352df6919e7152c007832c48a777f2a4c",
+          "implementationReviewed": "0x05de079a28386135e048369cdf0bc4d326d5ebdf"
+        },
+        {
+          "entrypoint": "0xd7dd8df84baf57329cc01bdd8a1264cfaf7a0b3d",
+          "implementationReviewed": "0x05de079a28386135e048369cdf0bc4d326d5ebdf"
+        },
+        {
+          "entrypoint": "0xcf5552580fd364cdbbfcb5ae345f75674c59273a",
+          "implementationReviewed": "0x05de079a28386135e048369cdf0bc4d326d5ebdf"
+        }
+      ]
     }
   },
   "plasma": {
