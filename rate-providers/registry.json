@@ -3763,6 +3763,24 @@
           "implementationReviewed": "0x43506849d7c04f9138d1a2050bbf3a0c054402dd"
         }
       ]
+    },
+    "0x79487FE3dd16a2EF3E234CB274F048051720F570": {
+      "asset": "0xD5cCe260E7a755DDf0Fb9cdF06443d593AaeaA13",
+      "name": "KpkUSDCYield V2RateProvider.md",
+      "summary": "safe",
+      "review": "./KpkUSDCYield V2RateProviderReview96e3.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "implementationReviewed": "0x43506849d7c04f9138d1a2050bbf3a0c054402dd"
+        },
+        {
+          "entrypoint": "0x43506849d7c04f9138d1a2050bbf3a0c054402dd",
+          "implementationReviewed": "0x800c32eaa2a6c93cf4cb51794450ed77fbfbb172"
+        }
+      ]
     }
   },
   "fantom": {
