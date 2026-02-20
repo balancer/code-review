@@ -1,9 +1,9 @@
 // npx jest test/schema.test.js
 
-import Ajv from "ajv"
+const Ajv = require("ajv")
 const ajv = new Ajv({ allErrors: true })
-import fs from "node:fs/promises"
-import path from "node:path"
+const fs = require("fs").promises
+const path = require("path")
 
 // registry.json schema definition
 const schema = {

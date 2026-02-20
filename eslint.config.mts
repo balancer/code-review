@@ -9,6 +9,13 @@ export default defineConfig([
   },
   js.configs.recommended,
   ...tseslint.configs.recommended,
+  // Allow CommonJS `require()` in plain `.js` files (useful for Jest configs/tests)
+  {
+    files: ["test/**/*.js", "scripts/**/*.js", "src/**/*.js"],
+    rules: {
+      "@typescript-eslint/no-require-imports": "off",
+    },
+  },
   {
     files: ["**/*.{ts,mts,cts}"],
     rules: {

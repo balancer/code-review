@@ -1,8 +1,8 @@
 // npx jest test/erc4626schema.test.js
 
-import fs from "node:fs/promises"
-import path from "node:path"
-import Ajv from "ajv"
+const fs = require("fs").promises
+const path = require("path")
+const Ajv = require("ajv")
 const ajv = new Ajv()
 
 // Define the schema for the ERC4626 registry
