@@ -2380,6 +2380,26 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0xc200aab602cd7046389b5c8fb088884323f8dd0f": {
+      "asset": "0xb88339CB7199b77E23DB6E890353E22632Ba630f",
+      "name": "EVKVaulteUSDC-3Erc4626Vault.md",
+      "summary": "safe",
+      "review": "./EVKVaulteUSDC-3Erc4626VaultReviewdc88.md",
+      "warnings": [],
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xcf5552580fd364cdbbfcb5ae345f75674c59273a",
+          "implementationReviewed": "0x05de079a28386135e048369cdf0bc4d326d5ebdf"
+        },
+        {
+          "entrypoint": "0xc200aab602cd7046389b5c8fb088884323f8dd0f",
+          "implementationReviewed": "0x05de079a28386135e048369cdf0bc4d326d5ebdf"
+        }
+      ],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   },
   "plasma": {
