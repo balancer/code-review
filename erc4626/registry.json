@@ -800,6 +800,17 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0xe5f130253ff137f9917c0107659a4c5262abf6b0": {
+      "asset": "0xB58E61C3098d85632Df34EecfB899A1Ed80921cB",
+      "name": "SavingsVaultZCHFErc4626Vault.md",
+      "summary": "safe",
+      "review": "./SavingsVaultZCHFErc4626VaultReviewa38f.md",
+      "warnings": [],
+      "upgradeableComponents": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   },
   "gnosis": {
