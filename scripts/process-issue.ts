@@ -2,7 +2,8 @@ import * as dotenv from 'dotenv'
 import { writeReviewAndUpdateRegistry as writeERC4626ReviewAndUpdateRegistry } from '../src/utils/write-erc4626-review'
 import { writeReviewAndUpdateRegistry } from '../src/utils/write-rp-review'
 import { createCustomAgents } from '../src/utils'
-import { HypernativeAgent } from '../src/types/types'
+import { HypernativeAgent, RateProviderDependencies } from '../src/types/types'
+import { http, createPublicClient } from 'viem'
 import * as fs from 'fs'
 
 dotenv.config()
@@ -60,7 +61,6 @@ async function processIssue(issueJson: string) {
 
     const issueData: IssueData = JSON.parse(issueJson)
 
-
     // Map network name to Chain object
     const networks: { [key: string]: Chain } = {
         base,
@@ -78,12 +78,21 @@ async function processIssue(issueJson: string) {
         hyperEvm,
         plasma,
         xlayer,
-        monad
+        monad,
     }
     let network = networks[issueData.network]
 
     // load the RPC URL from the environment variable
     const rpcUrl = process.env[`${issueData.network.toUpperCase()}_RPC_URL`] as string
+
+    const explorerApiKeyData =
+        issueData.network === 'xlayer'
+            ? {
+                  apiKey: process.env.XLAYER_API_KEY || '',
+                  secretKey: process.env.XLAYER_SECRET_KEY || '',
+                  passPhrase: process.env.XLAYER_PASSPHRASE || '',
+              }
+            : process.env.ETHERSCAN_API_KEY || ''
 
     // replace the default network url with the passed one
     // Override the default RPC URL
@@ -98,11 +107,28 @@ async function processIssue(issueJson: string) {
         },
     }
 
+    const publicClient = createPublicClient({
+        chain: network,
+        transport: http(rpcUrl),
+    })
+
+    const deps: RateProviderDependencies = {
+        tenderly: {
+            accountSlug: process.env.TENDERLY_ACCOUNT_SLUG || '',
+            projectSlug: process.env.TENDERLY_PROJECT_SLUG || '',
+            apiKey: process.env.TENDERLY_API_ACCESS_KEY || '',
+        },
+        explorerConfig: {
+            explorerApiKeyData,
+        },
+    }
+
+    // rp review
     await writeReviewAndUpdateRegistry(
         issueData.rate_provider_contract_address,
-        network,
         issueData.asset_contract_address,
-        rpcUrl as string,
+        publicClient,
+        deps,
         issueData.protocol_documentation,
         issueData.audits,
         issueData.additional_contract_information.selected.includes('Is the rate provider reporting a market rate?')
@@ -126,7 +152,7 @@ async function processIssue(issueJson: string) {
         const outputPath = process.env.GITHUB_OUTPUT
         const ids = createdAgents.map((agent) => agent.id).join(', ')
         const names = createdAgents.map((agent) => agent.agentName).join(', ')
-        
+
         console.log('GITHUB_OUTPUT path:', outputPath)
         console.log('hypernative_agent_ids value:', ids)
         console.log('hypernative_agent_names value:', names)
@@ -145,8 +171,8 @@ async function processIssue(issueJson: string) {
     ) {
         await writeERC4626ReviewAndUpdateRegistry(
             issueData.erc4626_asset_contract_address,
-            network,
-            rpcUrl,
+            publicClient,
+            deps,
             issueData.erc4626_asset_contract_audits, //link to audits
             issueData.erc4626_asset_contract_documentation, //written docs excerpt
             issueData.link_to_passing_fork_tests, // are fork tests passing?

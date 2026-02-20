@@ -1,11 +1,14 @@
 import ERC4626DataService from '../erc4626App'
 import { doOnchainCallGetAsset, doOnchainCallGetName } from './onchainCallHelpers'
 import { erc4626Template } from './erc4626Template'
+import { PublicClient } from 'viem'
 
 import { Address, Chain } from 'viem'
 import crypto from 'crypto'
 const fs = require('fs')
 import path from 'path'
+import { RateProviderDependencies, ApiFor } from '../types/types'
+import { createApiFor } from './createApiFor'
 
 // Mapping of chain names to registry keys
 const chainNameToRegistryKey: { [key: string]: string } = {
@@ -18,8 +21,8 @@ const chainNameToRegistryKey: { [key: string]: string } = {
 
 export async function writeReviewAndUpdateRegistry(
     erc4626: Address,
-    network: Chain,
-    rpcUrl: string,
+    client: PublicClient<any, Chain>,
+    deps: RateProviderDependencies,
     linkToAudits?: string,
     erc4626Docs?: string,
     passingForkTests?: string,
@@ -28,15 +31,15 @@ export async function writeReviewAndUpdateRegistry(
     useUnderlyingForAddRemove?: boolean,
     useWrappedForAddRemove?: boolean,
 ) {
-    const service = new ERC4626DataService(erc4626, network)
+    const apiFor = createApiFor(client, deps.explorerConfig)
+    const service = new ERC4626DataService(erc4626, client, deps, apiFor)
 
     await service.initialize()
     const upgradeData = await service.getUpgradeableContracts()
     const tenderlysimUrl = await service.getTenderlySimulation()
 
-    //const [{ ContractName }] = await service.getContractInfo([rateProviderAsset])
-    const contractName = await doOnchainCallGetName(erc4626, network, rpcUrl)
-    const asset = await doOnchainCallGetAsset(erc4626, network, rpcUrl)
+    const contractName = await doOnchainCallGetName(erc4626, client)
+    const asset = await doOnchainCallGetAsset(erc4626, client)
     const hasInterfaceImplemented = await service.hasValidERC4626Interface()
 
     // Write report
@@ -49,13 +52,13 @@ export async function writeReviewAndUpdateRegistry(
     const filledTemplate = erc4626Template
         .replace('{{date}}', new Date().toLocaleDateString('en-GB'))
         .replace('{{erc4626}}', contractName)
-        .replace('{{network}}', service.chain.name)
+        .replace('{{network}}', client.chain.name)
         .replace('{{erc4626Address}}', erc4626)
         .replace('{{hasPassingForkTests}}', passingForkTests ? 'x' : ' ')
         .replace('{{hasRequiredFunctionsImplemented}}', hasInterfaceImplemented ? 'x' : ' ')
         .replace(
             '{{chainExplorer}}',
-            `${service.chain.blockExplorers?.default.url}/address/${service.rateProvider}` || '',
+            `${client.chain.blockExplorers?.default.url}/address/${service.rateProvider}` || '',
         )
         .replace('{{linkToAudits}}', linkToAudits || '')
         .replace('{{erc4626Docs}}', erc4626Docs || '')
@@ -90,7 +93,7 @@ export async function writeReviewAndUpdateRegistry(
         useUnderlyingForAddRemove: useUnderlyingForAddRemove,
         useWrappedForAddRemove: useWrappedForAddRemove,
     }
-    const registryKey = chainNameToRegistryKey[service.chain.name] || service.chain.name.toLowerCase()
+    const registryKey = chainNameToRegistryKey[client.chain.name] || client.chain.name.toLowerCase()
 
     if (!registry[registryKey]) {
         registry[registryKey] = {}

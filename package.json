@@ -6,6 +6,7 @@
     "test": "test"
   },
   "scripts": {
+    "typecheck": "tsc -p tsconfig.json --noEmit",
     "test": "npx jest --testPathIgnorePatterns=etherscanApi.test.ts",
     "test:all": "npx jest",
     "lint": "npx prettier --write 'rate-providers/registry.json'",
