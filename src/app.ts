@@ -1,15 +1,9 @@
 import { Address, parseEventLogs } from 'viem'
 import { CreateAccessListReturnType } from 'viem/_types/actions/public/createAccessList'
-import { createPublicClient, encodeFunctionData, http } from 'viem'
+import { encodeFunctionData, PublicClient } from 'viem'
 import { Chain, Hex, Abi } from 'viem'
-import { base, optimism, avalanche } from 'viem/chains'
 import { rateProviderAbi } from './utils/abi/rateProvider'
-import { xlayer } from './utils/customChains'
-import { ChainApi } from './types/types'
-import EtherscanApi from './services/etherscanApi'
-import XLayerApi from './services/xlayerApi'
-import BlockscoutApi from './services/BlockscoutApi'
-import RoutescanApi from './services/RoutescanApi'
+import { ChainApi, RateProviderDependencies, ApiFor } from './types/types'
 
 class RateProviderDataService {
     public rateProvider: Address
@@ -17,7 +11,7 @@ class RateProviderDataService {
         address: Address
         implementation: Address
     }[]
-    public chain: Chain
+    public client: PublicClient<any, Chain>
     public accessList!: CreateAccessListReturnType
     public sourceCode!: {
         address: Address
@@ -27,34 +21,21 @@ class RateProviderDataService {
         Implementation: Address
     }
 
-    private apiKey!: string
-    public tenderlySettings!: {
-        accountSlug: string
-        projectSlug: string
-        apiKey: string
-    }
+    //private apiKey!: string
+    private readonly apiFor: ApiFor
 
-    constructor(rateProvider: Address, chain: Chain) {
+    public dependencies: RateProviderDependencies
+
+    constructor(
+        rateProvider: Address,
+        client: PublicClient<any, Chain>,
+        dependencies: RateProviderDependencies,
+        apiFor: ApiFor,
+    ) {
         this.rateProvider = rateProvider
-        this.chain = chain
-        this.setApiBasedOnChain(chain)
-        this.tenderlySettings = {
-            accountSlug:
-                process.env.TENDERLY_ACCOUNT_SLUG ||
-                (() => {
-                    throw new Error('TENDERLY_ACCOUNT_SLUG is not set')
-                })(),
-            projectSlug:
-                process.env.TENDERLY_PROJECT_SLUG ||
-                (() => {
-                    throw new Error('TENDERLY_PROJECT is not set')
-                })(),
-            apiKey:
-                process.env.TENDERLY_API_ACCESS_KEY ||
-                (() => {
-                    throw new Error('TENDERLY_API_KEY is not set')
-                })(),
-        }
+        this.client = client
+        this.dependencies = dependencies
+        this.apiFor = apiFor
     }
 
     /**
@@ -76,13 +57,7 @@ class RateProviderDataService {
             functionName: 'getRate',
         })
 
-        // RPC endpoint must support this call
-        const publicClient = createPublicClient({
-            chain: this.chain,
-            transport: http(this.chain.rpcUrls.default.http[0]),
-        })
-
-        return await publicClient.createAccessList({
+        return await this.client.createAccessList({
             data: callData,
             to: this.rateProvider,
             gas: 500_000n, // Set a reasonable gas limit for the call
@@ -151,11 +126,6 @@ class RateProviderDataService {
             filteredProxiesList.map((p) => p.address),
         )
 
-        const publicClient = createPublicClient({
-            chain: this.chain,
-            transport: http(this.chain.rpcUrls.default.http[0]),
-        })
-
         const mergedInfo = proxiesWithRateProviderDeploymentInfo.map((d) => {
             const proxyInfo = proxiesWithRateProvider.find((p) => p.address === d.address)
             return { ...d, ...proxyInfo }
@@ -163,7 +133,7 @@ class RateProviderDataService {
 
         const receipts = await Promise.all(
             mergedInfo.map(async (contract) => {
-                const receipt = await publicClient.getTransactionReceipt({
+                const receipt = await this.client.getTransactionReceipt({
                     hash: contract.deploymentTxHash,
                 })
                 return { ...contract, receipt }
@@ -230,12 +200,7 @@ class RateProviderDataService {
      * @returns An object containing scale18 and rateScale18 information.
      */
     public async isRateScale18(): Promise<{ scale18: boolean; rateScale18: bigint }> {
-        const publicClient = createPublicClient({
-            chain: this.chain,
-            transport: http(this.chain.rpcUrls.default.http[0]),
-        })
-
-        const data = (await publicClient.readContract({
+        const data = (await this.client.readContract({
             address: this.rateProvider,
             abi: rateProviderAbi,
             functionName: 'getRate',
@@ -262,7 +227,7 @@ class RateProviderDataService {
      * @returns The URL of the shared simulation.
      */
     public async getTenderlySimulation(): Promise<string> {
-        const simulationUrl = `https://api.tenderly.co/api/v1/account/${this.tenderlySettings.accountSlug}/${this.tenderlySettings.projectSlug}/project/simulate`
+        const simulationUrl = `https://api.tenderly.co/api/v1/account/${this.dependencies.tenderly.accountSlug}/${this.dependencies.tenderly.projectSlug}/project/simulate`
 
         const callData = encodeFunctionData({
             abi: rateProviderAbi,
@@ -270,7 +235,7 @@ class RateProviderDataService {
         })
 
         const simulationData = {
-            network_id: this.chain.id,
+            network_id: this.client.chain.id,
             from: '0x0000000000000000000000000000000000000000',
             to: this.rateProvider,
             input: callData,
@@ -286,7 +251,7 @@ class RateProviderDataService {
                 headers: {
                     Accept: 'application/json',
                     'Content-Type': 'application/json',
-                    'X-Access-Key': this.tenderlySettings.apiKey,
+                    'X-Access-Key': this.dependencies.tenderly.apiKey,
                 },
                 body: JSON.stringify(simulationData),
             })
@@ -294,14 +259,14 @@ class RateProviderDataService {
             const responseData = await response.json()
             const simulationId = responseData.simulation.id
 
-            const shareUrl = `https://api.tenderly.co/api/v1/account/${this.tenderlySettings.accountSlug}/project/${this.tenderlySettings.projectSlug}/simulations/${simulationId}/share`
+            const shareUrl = `https://api.tenderly.co/api/v1/account/${this.dependencies.tenderly.accountSlug}/project/${this.dependencies.tenderly.projectSlug}/simulations/${simulationId}/share`
 
             await fetch(shareUrl, {
                 method: 'POST',
                 headers: {
                     Accept: 'application/json',
                     'Content-Type': 'application/json',
-                    'X-Access-Key': this.tenderlySettings.apiKey,
+                    'X-Access-Key': this.dependencies.tenderly.apiKey,
                 },
             })
 
@@ -337,22 +302,6 @@ class RateProviderDataService {
     }
 
     /**
-     * Sets the API key based on the chain.
-     * @param chain The chain to set the API key for.
-     */
-    // TODO: This functionality is pretty much obsolete since Etherscan moved to API 2.0
-    private setApiBasedOnChain(chain: Chain) {
-        this.apiKey = process.env.ETHERSCAN_API_KEY
-            ? process.env.ETHERSCAN_API_KEY
-            : (() => {
-                  throw new Error(`ETHERSCAN_API_KEY Environment variable is not set`)
-              })()
-        if (chain.id === xlayer.id) {
-            this.apiKey = process.env.XLAYER_API_KEY || ''
-        }
-    }
-
-    /**
      * Determines which API to use for a given function based on the chain.
      * This allows different functions to use different API providers.
      *
@@ -360,43 +309,7 @@ class RateProviderDataService {
      * @returns The appropriate ChainApi instance
      */
     private getApiForFunction(functionName: 'getDeploymentBlocks' | 'getContractInfo'): ChainApi {
-        // For getContractInfo: Use Etherscan all the time EXCEPT if chain is xlayer
-        if (functionName === 'getContractInfo') {
-            if (this.chain.id === xlayer.id) {
-                return new XLayerApi(
-                    this.chain,
-                    process.env.XLAYER_API_KEY || '',
-                    process.env.XLAYER_SECRET_KEY || '',
-                    process.env.XLAYER_PASSPHRASE || '',
-                )
-            }
-            return new EtherscanApi(this.chain, this.apiKey)
-        }
-
-        // For getDeploymentBlocks: Use Etherscan if chain is NOT Base, Optimism, or xlayer
-        if (functionName === 'getDeploymentBlocks') {
-            if (this.chain.id === xlayer.id) {
-                return new XLayerApi(
-                    this.chain,
-                    process.env.XLAYER_API_KEY || '',
-                    process.env.XLAYER_SECRET_KEY || '',
-                    process.env.XLAYER_PASSPHRASE || '',
-                )
-            }
-            // Base, Avalanche, BNB and Optimism are not supported via Etherscan for getDeploymentBlocks
-            // so using Blockscout api for Base & optimism
-            if (this.chain.id === base.id || this.chain.id === optimism.id) {
-                return new BlockscoutApi(this.chain, this.apiKey)
-            }
-
-            if (this.chain.id === avalanche.id) {
-                return new RoutescanApi(this.chain, this.apiKey)
-            }
-            return new EtherscanApi(this.chain, this.apiKey)
-        }
-
-        // Default fallback (should not be reached)
-        throw new Error(`Unknown function name: ${functionName}`)
+        return this.apiFor(functionName)
     }
 }
 

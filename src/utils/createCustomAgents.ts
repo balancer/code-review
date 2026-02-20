@@ -1,7 +1,7 @@
 import path from 'path'
 import HypernativeApi from '../../src/services/hypernativeApi'
 import { HypernativeAgent } from '../../src/types/types'
-const fs = require('fs')
+import fs from 'node:fs'
 
 import { Address, Chain } from 'viem'
 
@@ -14,10 +14,7 @@ const chainNameToRegistryKey: { [key: string]: string } = {
     'Mode Mainnet': 'mode',
 }
 
-export async function createCustomAgents(
-    rateProvider: Address,
-    chain: Chain,
-): Promise<HypernativeAgent[]> {
+export async function createCustomAgents(rateProvider: Address, chain: Chain): Promise<HypernativeAgent[]> {
     // get the relevant information from the registry
     const registryPath = path.join(__dirname, '../../rate-providers/registry.json')
     const registry = JSON.parse(fs.readFileSync(registryPath, 'utf-8'))

@@ -1,32 +1,16 @@
 import path from 'path'
-import * as dotenv from 'dotenv'
 import crypto from 'crypto'
-import { Address } from 'viem'
+import { Address, PublicClient } from 'viem'
+import { RateProviderDependencies } from 'types'
 
 import RateProviderDataService from '../app'
 import { template } from './template'
-import {
-    base,
-    mainnet,
-    arbitrum,
-    avalanche,
-    gnosis,
-    sonic,
-    sepolia,
-    polygon,
-    fraxtal,
-    Chain,
-    optimism,
-    polygonZkEvm,
-    mode,
-} from 'viem/chains'
+import { Chain } from 'viem/chains'
 
-import { hyperEvm } from './customChains'
-
-import HypernativeApi from '../services/hypernativeApi'
 import { doOnchainCallGetName } from '../utils'
+import { createApiFor } from './createApiFor'
 
-const fs = require('fs')
+import fs from 'node:fs'
 
 // Mapping of chain names to registry keys
 const chainNameToRegistryKey: { [key: string]: string } = {
@@ -43,14 +27,15 @@ type RateProviderWarnings = {
 
 export async function writeReviewAndUpdateRegistry(
     rateProviderAddress: Address,
-    network: Chain,
     rateProviderAsset: Address,
-    rpcUrl: string,
+    client: PublicClient<any, Chain>,
+    deps: RateProviderDependencies,
     rateProviderDocs?: string,
     linkToAudits?: string,
     warnings?: RateProviderWarnings,
 ): Promise<{ rateProvider: Address }> {
-    const service = new RateProviderDataService(rateProviderAddress, network)
+    const apiFor = createApiFor(client, deps.explorerConfig)
+    const service = new RateProviderDataService(rateProviderAddress, client, deps, apiFor)
 
     await service.initialize()
     const upgradeData = await service.getUpgradeableContracts()
@@ -61,7 +46,7 @@ export async function writeReviewAndUpdateRegistry(
     const tenderlysimUrl = await service.getTenderlySimulation()
 
     //const [{ ContractName }] = await service.getContractInfo([rateProviderAsset])
-    const contractName = await doOnchainCallGetName(rateProviderAsset, network, rpcUrl)
+    const contractName = await doOnchainCallGetName(rateProviderAsset, client)
 
     // Write report
     const templateData = {
@@ -78,12 +63,9 @@ export async function writeReviewAndUpdateRegistry(
     const filledTemplate = template
         .replace('{{date}}', new Date().toLocaleDateString('en-GB'))
         .replace('{{rateProvider}}', contractName)
-        .replace('{{network}}', service.chain.name)
+        .replace('{{network}}', client.chain.name)
         .replace('{{rateProviderAddress}}', rateProviderAddress)
-        .replace(
-            '{{chainExplorer}}',
-            `${service.chain.blockExplorers?.default.url}/address/${service.rateProvider}` || '',
-        )
+        .replace('{{chainExplorer}}', `${client.chain.blockExplorers?.default.url}/address/${service.rateProvider}`)
         .replace('{{linkToAudits}}', linkToAudits || '')
         .replace('{{rateProviderDocs}}', rateProviderDocs || '')
         .replace('{{hasInterface}}', templateData.hasInterface)
@@ -114,7 +96,7 @@ export async function writeReviewAndUpdateRegistry(
             implementationReviewed: contract.implementation,
         })),
     }
-    const registryKey = chainNameToRegistryKey[service.chain.name] || service.chain.name.toLowerCase()
+    const registryKey = chainNameToRegistryKey[client.chain.name] || client.chain.name.toLowerCase()
 
     if (!registry[registryKey]) {
         registry[registryKey] = {}

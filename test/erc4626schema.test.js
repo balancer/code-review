@@ -79,7 +79,7 @@ describe("ERC4626 Review files exist", () => {
     for (const review of reviews) {
       try {
         await fs.access(review)
-      } catch (error) {
+      } catch {
         console.log(`Missing file: ${review}`)
         missingReviews.push(review)
       }

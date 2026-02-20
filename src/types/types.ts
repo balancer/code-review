@@ -16,6 +16,30 @@ export interface GetContractSourceCodeResult {
     SwarmSource: string
 }
 
+type ApiRole = 'getContractInfo' | 'getDeploymentBlocks'
+export type ApiFor = (role: ApiRole) => ChainApi
+
+export type TenderlySettings = {
+    accountSlug: string
+    projectSlug: string
+    apiKey: string
+}
+
+export type XLayerChainExplorerConfig = {
+    apiKey: string
+    secretKey: string
+    passPhrase: string
+}
+
+export type ExplorerConfig = {
+    explorerApiKeyData: string | XLayerChainExplorerConfig
+}
+
+export type RateProviderDependencies = {
+    tenderly: TenderlySettings
+    explorerConfig: ExplorerConfig
+}
+
 export interface GetContractSourceCodeResponse {
     status: string
     message: string

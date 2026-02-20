@@ -1,7 +1,8 @@
 import * as dotenv from 'dotenv'
 import yargs from 'yargs'
 import { hideBin } from 'yargs/helpers'
-import { Address } from 'viem'
+import { Address, createPublicClient, http } from 'viem'
+import { RateProviderDependencies } from 'types'
 
 import {
     base,
@@ -17,7 +18,7 @@ import {
     optimism,
     polygonZkEvm,
     mode,
-    monad
+    monad,
 } from 'viem/chains'
 
 import { hyperEvm, plasma, xlayer } from '../src/utils/customChains'
@@ -55,7 +56,7 @@ async function main() {
                 'hyperEvm',
                 'plasma',
                 'xlayer',
-                'monad'
+                'monad',
             ],
             demandOption: true,
         })
@@ -83,7 +84,7 @@ async function main() {
         hyperEvm,
         plasma,
         xlayer,
-        monad
+        monad,
     }
 
     let network = networks[argv.network]
@@ -127,7 +128,33 @@ async function main() {
               throw new Error(`Invalid erc4626Address: ${argv.erc4626Address}. It must start with "0x".`)
           })()
 
-    await writeReviewAndUpdateRegistry(erc4626Address, network, argv.rpcUrl)
+    // build the required dependencies
+    const publicClient = createPublicClient({
+        chain: network,
+        transport: http(argv.rpcUrl),
+    })
+
+    const explorerApiKeyData =
+        argv.network === 'xlayer'
+            ? {
+                  apiKey: process.env.XLAYER_API_KEY || '',
+                  secretKey: process.env.XLAYER_SECRET_KEY || '',
+                  passPhrase: process.env.XLAYER_PASSPHRASE || '',
+              }
+            : process.env.ETHERSCAN_API_KEY || ''
+
+    const deps: RateProviderDependencies = {
+        tenderly: {
+            accountSlug: process.env.TENDERLY_ACCOUNT_SLUG || '',
+            projectSlug: process.env.TENDERLY_PROJECT_SLUG || '',
+            apiKey: process.env.TENDERLY_API_ACCESS_KEY || '',
+        },
+        explorerConfig: {
+            explorerApiKeyData,
+        },
+    }
+
+    await writeReviewAndUpdateRegistry(erc4626Address, publicClient, deps)
 }
 
 main().catch((error) => {

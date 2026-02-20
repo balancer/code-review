@@ -1,20 +1,20 @@
-import { Chain } from 'viem'
-import { Address, parseEventLogs } from 'viem'
+import { Chain, PublicClient, encodeFunctionData, Address } from 'viem'
 import { CreateAccessListReturnType } from 'viem/_types/actions/public/createAccessList'
-import { createPublicClient, encodeFunctionData, http } from 'viem'
 import { erc4626Abi } from './utils/abi/erc4626'
 import { erc20Abi } from 'viem'
 
 import RateProviderDataService from './app'
-// previewRedeem, previewWithdraw (in _unwrapWithBuffer)
-// redeem, withdraw (in _unwrapWithBuffer)
-// previewDeposit, previewMint (_wrapWithBuffer)
-// deposit, mint (_wrapWithBuffer)
+import { ApiFor, RateProviderDependencies } from 'types'
 
 export default class ERC4626DataService extends RateProviderDataService {
     public decimals!: number
-    constructor(erc4626Vault: Address, chain: Chain) {
-        super(erc4626Vault, chain)
+    constructor(
+        erc4626Vault: Address,
+        client: PublicClient<any, Chain>,
+        dependencies: RateProviderDependencies,
+        apiFor: ApiFor,
+    ) {
+        super(erc4626Vault, client, dependencies, apiFor)
     }
 
     /**
@@ -23,13 +23,9 @@ export default class ERC4626DataService extends RateProviderDataService {
      */
     public async getAccessList(): Promise<CreateAccessListReturnType> {
         // RPC endpoint must support this call
-        const publicClient = createPublicClient({
-            chain: this.chain,
-            transport: http(this.chain.rpcUrls.default.http[0]),
-        })
 
         // Step 1: Call the `decimals` function on the ERC4626 contract
-        const decimals = (await publicClient.readContract({
+        const decimals = (await this.client.readContract({
             abi: erc20Abi,
             functionName: 'decimals',
             address: this.rateProvider,
@@ -48,7 +44,7 @@ export default class ERC4626DataService extends RateProviderDataService {
         })
 
         // Step 4: Create the access list
-        return await publicClient.createAccessList({
+        return await this.client.createAccessList({
             data: callData,
             to: this.rateProvider,
             gas: 500_000n, // Set a reasonable gas limit for the call
@@ -56,7 +52,7 @@ export default class ERC4626DataService extends RateProviderDataService {
     }
 
     public async getTenderlySimulation(): Promise<string> {
-        const simulationUrl = `https://api.tenderly.co/api/v1/account/${this.tenderlySettings.accountSlug}/${this.tenderlySettings.projectSlug}/project/simulate`
+        const simulationUrl = `https://api.tenderly.co/api/v1/account/${this.dependencies.tenderly.accountSlug}/${this.dependencies.tenderly.projectSlug}/project/simulate`
 
         const oneShare = BigInt(10 ** this.decimals)
 
@@ -67,7 +63,7 @@ export default class ERC4626DataService extends RateProviderDataService {
         })
 
         const simulationData = {
-            network_id: this.chain.id,
+            network_id: this.client.chain.id,
             from: '0x0000000000000000000000000000000000000000',
             to: this.rateProvider,
             input: callData,
@@ -83,7 +79,7 @@ export default class ERC4626DataService extends RateProviderDataService {
                 headers: {
                     Accept: 'application/json',
                     'Content-Type': 'application/json',
-                    'X-Access-Key': this.tenderlySettings.apiKey,
+                    'X-Access-Key': this.dependencies.tenderly.apiKey,
                 },
                 body: JSON.stringify(simulationData),
             })
@@ -91,14 +87,14 @@ export default class ERC4626DataService extends RateProviderDataService {
             const responseData = await response.json()
             const simulationId = responseData.simulation.id
 
-            const shareUrl = `https://api.tenderly.co/api/v1/account/${this.tenderlySettings.accountSlug}/project/${this.tenderlySettings.projectSlug}/simulations/${simulationId}/share`
+            const shareUrl = `https://api.tenderly.co/api/v1/account/${this.dependencies.tenderly.accountSlug}/project/${this.dependencies.tenderly.projectSlug}/simulations/${simulationId}/share`
 
             await fetch(shareUrl, {
                 method: 'POST',
                 headers: {
                     Accept: 'application/json',
                     'Content-Type': 'application/json',
-                    'X-Access-Key': this.tenderlySettings.apiKey,
+                    'X-Access-Key': this.dependencies.tenderly.apiKey,
                 },
             })
 

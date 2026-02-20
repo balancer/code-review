@@ -45,11 +45,11 @@ class RoutescanApi implements ChainApi {
     ): Promise<{ address: Address; deploymentTxHash: Hex; blockNumber: string }[]> {
         const apiUrl = this.getApiUrl()
         const contractAddresses = addresses.join(',')
-        
+
         // Build URL with optional API key
         const apiKeyParam = this.apiKey ? `&apikey=${this.apiKey}` : ''
         const fetchingUrl = `${apiUrl}module=contract&action=getcontractcreation&contractaddresses=${contractAddresses}${apiKeyParam}`
-        
+
         const data = await this.fetchFromApi(fetchingUrl)
 
         if (data.status !== '1') {
@@ -76,11 +76,10 @@ class RoutescanApi implements ChainApi {
      * Not implemented yet - will throw an error.
      */
     public async getSourceCode(
-        addresses: Address[],
+        _addresses: Address[],
     ): Promise<{ address: Address; Proxy: string; ContractName: string; ABI: string; Implementation: Address }[]> {
         throw new Error('getSourceCode is not yet implemented for RoutescanApi')
     }
 }
 
 export default RoutescanApi
-
