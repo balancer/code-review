@@ -1,34 +1,16 @@
 import path from 'path'
-import * as dotenv from 'dotenv'
 import crypto from 'crypto'
 import { Address, PublicClient } from 'viem'
 import { RateProviderDependencies } from 'types'
 
 import RateProviderDataService from '../app'
 import { template } from './template'
-import {
-    base,
-    mainnet,
-    arbitrum,
-    avalanche,
-    gnosis,
-    sonic,
-    sepolia,
-    polygon,
-    fraxtal,
-    Chain,
-    optimism,
-    polygonZkEvm,
-    mode,
-} from 'viem/chains'
+import { Chain } from 'viem/chains'
 
-import { hyperEvm } from './customChains'
-
-import HypernativeApi from '../services/hypernativeApi'
 import { doOnchainCallGetName } from '../utils'
 import { createApiFor } from './createApiFor'
 
-const fs = require('fs')
+import fs from 'node:fs'
 
 // Mapping of chain names to registry keys
 const chainNameToRegistryKey: { [key: string]: string } = {
@@ -83,10 +65,7 @@ export async function writeReviewAndUpdateRegistry(
         .replace('{{rateProvider}}', contractName)
         .replace('{{network}}', client.chain.name)
         .replace('{{rateProviderAddress}}', rateProviderAddress)
-        .replace(
-            '{{chainExplorer}}',
-            `${client.chain.blockExplorers?.default.url}/address/${service.rateProvider}` || '',
-        )
+        .replace('{{chainExplorer}}', `${client.chain.blockExplorers?.default.url}/address/${service.rateProvider}`)
         .replace('{{linkToAudits}}', linkToAudits || '')
         .replace('{{rateProviderDocs}}', rateProviderDocs || '')
         .replace('{{hasInterface}}', templateData.hasInterface)

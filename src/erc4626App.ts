@@ -1,16 +1,10 @@
-import { Chain, PublicClient } from 'viem'
-import { Address, parseEventLogs } from 'viem'
+import { Chain, PublicClient, encodeFunctionData, Address } from 'viem'
 import { CreateAccessListReturnType } from 'viem/_types/actions/public/createAccessList'
-import { createPublicClient, encodeFunctionData, http } from 'viem'
 import { erc4626Abi } from './utils/abi/erc4626'
 import { erc20Abi } from 'viem'
 
 import RateProviderDataService from './app'
 import { ApiFor, RateProviderDependencies } from 'types'
-// previewRedeem, previewWithdraw (in _unwrapWithBuffer)
-// redeem, withdraw (in _unwrapWithBuffer)
-// previewDeposit, previewMint (_wrapWithBuffer)
-// deposit, mint (_wrapWithBuffer)
 
 export default class ERC4626DataService extends RateProviderDataService {
     public decimals!: number

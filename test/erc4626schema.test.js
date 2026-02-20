@@ -1,8 +1,8 @@
 // npx jest test/erc4626schema.test.js
 
-const fs = require("fs").promises
-const path = require("path")
-const Ajv = require("ajv")
+import fs from "node:fs/promises"
+import path from "node:path"
+import Ajv from "ajv"
 const ajv = new Ajv()
 
 // Define the schema for the ERC4626 registry
@@ -79,7 +79,7 @@ describe("ERC4626 Review files exist", () => {
     for (const review of reviews) {
       try {
         await fs.access(review)
-      } catch (error) {
+      } catch {
         console.log(`Missing file: ${review}`)
         missingReviews.push(review)
       }

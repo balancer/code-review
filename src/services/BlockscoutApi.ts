@@ -56,7 +56,7 @@ class BlockscoutApi implements ChainApi {
         const contractAddresses = addresses.join(',')
 
         const fetchingUrl = `${apiUrl}module=contract&action=getcontractcreation&contractaddresses=${contractAddresses}`
-        
+
         const data = await this.fetchFromApi(fetchingUrl)
 
         if (data.status !== '1') {
@@ -82,7 +82,7 @@ class BlockscoutApi implements ChainApi {
      * Not implemented yet - will throw an error.
      */
     public async getSourceCode(
-        addresses: Address[],
+        _addresses: Address[],
     ): Promise<{ address: Address; Proxy: string; ContractName: string; ABI: string; Implementation: Address }[]> {
         throw new Error('getSourceCode is not yet implemented for BlockscoutApi')
     }
@@ -96,4 +96,3 @@ class BlockscoutApi implements ChainApi {
 }
 
 export default BlockscoutApi
-

@@ -1,11 +1,9 @@
 import { Address, parseEventLogs } from 'viem'
 import { CreateAccessListReturnType } from 'viem/_types/actions/public/createAccessList'
-import { createPublicClient, encodeFunctionData, http, PublicClient } from 'viem'
+import { encodeFunctionData, PublicClient } from 'viem'
 import { Chain, Hex, Abi } from 'viem'
 import { rateProviderAbi } from './utils/abi/rateProvider'
 import { ChainApi, RateProviderDependencies, ApiFor } from './types/types'
-
-import { createApiFor } from 'utils/createApiFor'
 
 class RateProviderDataService {
     public rateProvider: Address

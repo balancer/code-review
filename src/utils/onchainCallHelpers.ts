@@ -1,6 +1,5 @@
-import { createPublicClient, http, erc20Abi, erc4626Abi, PublicClient } from 'viem'
-import { Address, Chain } from 'viem'
-import { mainnet } from 'viem/chains'
+import { erc20Abi, erc4626Abi, PublicClient } from 'viem'
+import { Address } from 'viem'
 
 /**
  * Fetches the name of an ERC20 contract by making an on-chain call.

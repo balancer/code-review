@@ -5,9 +5,9 @@ import { PublicClient } from 'viem'
 
 import { Address, Chain } from 'viem'
 import crypto from 'crypto'
-const fs = require('fs')
+import fs from 'node:fs'
 import path from 'path'
-import { RateProviderDependencies, ApiFor } from '../types/types'
+import { RateProviderDependencies } from '../types/types'
 import { createApiFor } from './createApiFor'
 
 // Mapping of chain names to registry keys
@@ -56,10 +56,7 @@ export async function writeReviewAndUpdateRegistry(
         .replace('{{erc4626Address}}', erc4626)
         .replace('{{hasPassingForkTests}}', passingForkTests ? 'x' : ' ')
         .replace('{{hasRequiredFunctionsImplemented}}', hasInterfaceImplemented ? 'x' : ' ')
-        .replace(
-            '{{chainExplorer}}',
-            `${client.chain.blockExplorers?.default.url}/address/${service.rateProvider}` || '',
-        )
+        .replace('{{chainExplorer}}', `${client.chain.blockExplorers?.default.url}/address/${service.rateProvider}`)
         .replace('{{linkToAudits}}', linkToAudits || '')
         .replace('{{erc4626Docs}}', erc4626Docs || '')
         .replace('{{isUpgradeable}}', templateData.isUpgradeable)

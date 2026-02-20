@@ -141,7 +141,7 @@ async function processIssue(issueJson: string) {
     try {
         createdAgents = await createCustomAgents(issueData.rate_provider_contract_address, network)
         console.log('createdAgents:', createdAgents)
-    } catch (error) {
+    } catch {
         console.log(`Failed to create custom agents for chain ${network.name}`)
     }
 

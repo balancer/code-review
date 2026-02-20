@@ -23,10 +23,9 @@ import {
 
 import { hyperEvm, plasma, xlayer } from '../src/utils/customChains'
 import { writeReviewAndUpdateRegistry } from '../src/utils/write-rp-review'
-import { ApiFor, RateProviderDependencies } from '../src/types/types'
+import { RateProviderDependencies } from '../src/types/types'
 
 dotenv.config()
-const fs = require('fs')
 
 // to use this script use the command below
 // for network see the viem chains
