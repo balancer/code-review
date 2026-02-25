@@ -1768,6 +1768,15 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0x95f70f0577ebd1c1c03c02d28f0f6bd4be1b5a57": {
+      "asset": "0x98eFe85735F253a0ed0Be8e2915ff39f9e4AfF0F",
+      "name": "WrappedExtraXBase USRRateProvider.md",
+      "summary": "safe",
+      "review": "./WrappedExtraXBase USRRateProviderReview8f67.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   },
   "ethereum": {
