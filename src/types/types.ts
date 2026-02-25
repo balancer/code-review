@@ -75,7 +75,7 @@ export interface CustomAgentInput {
     contractAlias: string
     rateProvider: string
     agentName: string
-    operands?: string
+    operands: string[]
 }
 
 export interface CustomAgentInputUpgrade {

@@ -17,6 +17,7 @@ const chainNameToRegistryKey: { [key: string]: string } = {
 export async function createCustomAgents(
     rateProvider: Address,
     chain: Chain,
+    isStablecoin: boolean,
 ): Promise<HypernativeAgent[]> {
     // get the relevant information from the registry
     const registryPath = path.join(__dirname, '../../rate-providers/registry.json')
@@ -36,14 +37,34 @@ export async function createCustomAgents(
     )
 
     // Create the three agents sequentially and collect their minimal representations
-    const rateDeviationAgent = await hypernativeApi.createCustomAgentRateDeviation({
-        chain,
-        ruleString: `On ${chain.name}: when ${rateProvider}: getRate().uint256 changed by 10% in less than 10 blocks.\nSample every 5 blocks`,
-        contractAddress: rateProvider,
-        contractAlias: rateProvider,
-        agentName: `${rateProvider.slice(-4)}rate-deviation`,
-        rateProvider: rateProvider,
-    })
+    // the rate deviation agent changes based on isStableCoin:
+    // if is Stablecoin 10% over 10 blocks
+    // if volatile coin 25% over 10 blocks
+
+    let rateDeviationAgent: HypernativeAgent
+
+    if (isStablecoin) {
+        rateDeviationAgent = await hypernativeApi.createCustomAgentRateDeviation({
+            chain,
+            ruleString: `On ${chain.name}: when ${rateProvider}: getRate().uint256 changed by 10% in less than 10 blocks.\nSample every 5 blocks`,
+            contractAddress: rateProvider,
+            contractAlias: rateProvider,
+            agentName: `${rateProvider.slice(-4)}rate-deviation`,
+            rateProvider: rateProvider,
+            operands: ['10'],
+        })
+    } else {
+        // volatile
+        rateDeviationAgent = await hypernativeApi.createCustomAgentRateDeviation({
+            chain,
+            ruleString: `On ${chain.name}: when ${rateProvider}: getRate().uint256 changed by 25% in less than 10 blocks.\nSample every 5 blocks`,
+            contractAddress: rateProvider,
+            contractAlias: rateProvider,
+            agentName: `${rateProvider.slice(-4)}rate-deviation`,
+            rateProvider: rateProvider,
+            operands: ['25'],
+        })
+    }
 
     const upgradeAgent = await hypernativeApi.createCustomAgentUpgrade({
         chain,
@@ -63,6 +84,7 @@ export async function createCustomAgents(
         contractAlias: rateProvider,
         agentName: `${rateProvider.slice(-4)}rate-revert`,
         rateProvider: rateProvider,
+        operands: [],
     })
 
     return [rateDeviationAgent, upgradeAgent, rateRevertAgent]

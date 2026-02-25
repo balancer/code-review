@@ -18,7 +18,7 @@ import {
     optimism,
     polygonZkEvm,
     mode,
-    monad
+    monad,
 } from 'viem/chains'
 
 import { hyperEvm, plasma, xlayer } from '../src/utils/customChains'
@@ -41,6 +41,12 @@ async function main() {
             description: 'The address of the rate provider',
             demandOption: true,
         })
+        .option('isStablecoin', {
+            alias: 's',
+            type: 'string',
+            description: 'The rate provider reports for a usd stablecoin',
+            demandOption: true,
+        })
         .option('network', {
             alias: 'n',
             type: 'string',
@@ -57,7 +63,7 @@ async function main() {
                 'hyperEvm',
                 'plasma',
                 'xlayer',
-                'monad'
+                'monad',
             ],
             demandOption: true,
         })
@@ -91,7 +97,7 @@ async function main() {
         hyperEvm,
         plasma,
         xlayer,
-        monad
+        monad,
     }
 
     let network = networks[argv.network]
@@ -144,7 +150,8 @@ async function main() {
     await writeReviewAndUpdateRegistry(rateProviderAddress, network, rateProviderAsset, argv.rpcUrl)
 
     // the registry file has been updated. All relevant information can be read from there and don't need to be passed as arguments
-    await createCustomAgents(rateProviderAddress, network)
+    const isStablecoin = argv.isStablecoin === 'true' ? true : false
+    await createCustomAgents(rateProviderAddress, network, isStablecoin)
 }
 
 main().catch((error) => {

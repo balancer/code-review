@@ -60,7 +60,6 @@ async function processIssue(issueJson: string) {
 
     const issueData: IssueData = JSON.parse(issueJson)
 
-
     // Map network name to Chain object
     const networks: { [key: string]: Chain } = {
         base,
@@ -78,7 +77,7 @@ async function processIssue(issueJson: string) {
         hyperEvm,
         plasma,
         xlayer,
-        monad
+        monad,
     }
     let network = networks[issueData.network]
 
@@ -113,7 +112,12 @@ async function processIssue(issueJson: string) {
     // this step requires the registry to be read thus having the registry updated already
     let createdAgents: HypernativeAgent[] = []
     try {
-        createdAgents = await createCustomAgents(issueData.rate_provider_contract_address, network)
+        const isStablecoin = issueData.additional_contract_information.selected.includes(
+                'Is the rate provider reporting for a stable coin - in USD terms?',
+            )
+                ? true
+                : false,
+            createdAgents = await createCustomAgents(issueData.rate_provider_contract_address, network, isStablecoin)
         console.log('createdAgents:', createdAgents)
     } catch (error) {
         console.log(`Failed to create custom agents for chain ${network.name}`)
@@ -126,7 +130,7 @@ async function processIssue(issueJson: string) {
         const outputPath = process.env.GITHUB_OUTPUT
         const ids = createdAgents.map((agent) => agent.id).join(', ')
         const names = createdAgents.map((agent) => agent.agentName).join(', ')
-        
+
         console.log('GITHUB_OUTPUT path:', outputPath)
         console.log('hypernative_agent_ids value:', ids)
         console.log('hypernative_agent_names value:', names)

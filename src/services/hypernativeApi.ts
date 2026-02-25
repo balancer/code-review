@@ -31,7 +31,7 @@ class HypernativeApi {
         Sepolia: 'sepolia',
         Polygon: 'polygon',
         HyperEVM: 'hyperliquid_evm',
-        'Monad': 'monad',
+        Monad: 'monad',
     }
 
     public async createCustomAgentRateDeviation(input: CustomAgentInput): Promise<HypernativeAgent> {
@@ -43,6 +43,7 @@ class HypernativeApi {
         customAgentRule.rule.contractAddress = input.contractAddress
         customAgentRule.rule.contractAddressAlias = input.contractAlias
         customAgentRule.agentName = input.agentName
+        customAgentRule.rule.operands = input.operands
 
         // Make the API call
         try {
@@ -155,7 +156,6 @@ class HypernativeApi {
 
         const requestBody = customAgentRule
 
-
         // Make the API call
         try {
             const response = await fetch('https://api.hypernative.xyz/custom-agents', {
@@ -263,10 +263,7 @@ class HypernativeApi {
         const hypernativeChain = this.getValidChainNameFromViemChain(chain)
 
         // 4. First filter by suffix and chain
-        const baseMatches = agents.filter(
-            (agent) =>
-                agent.agentName.toLowerCase().includes(suffix)
-        )
+        const baseMatches = agents.filter((agent) => agent.agentName.toLowerCase().includes(suffix))
 
         if (baseMatches.length === 0) {
             return []
@@ -282,9 +279,7 @@ class HypernativeApi {
 
         // Prefer non-rate-revert agent on the target chain
         const referenceAgent = baseMatches.find(
-            (agent) =>
-                agent.chain === hypernativeChain &&
-                agent.agentName.toLowerCase() !== rateRevertName,
+            (agent) => agent.chain === hypernativeChain && agent.agentName.toLowerCase() !== rateRevertName,
         )
 
         if (!referenceAgent) {
@@ -308,15 +303,11 @@ class HypernativeApi {
         return timeFiltered
     }
 
-
     public async getRateDeviationAgents(): Promise<HypernativeAgent[]> {
         const agents = await this.getCustomAgents()
-    
-        return agents.filter((agent) =>
-            agent.agentName.toLowerCase().includes('rate-deviation'),
-        )
-    }
 
+        return agents.filter((agent) => agent.agentName.toLowerCase().includes('rate-deviation'))
+    }
 
     /**
      * Deletes one or more Hypernative agents by ID, using client ID/secret authentication.
