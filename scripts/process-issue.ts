@@ -113,11 +113,10 @@ async function processIssue(issueJson: string) {
     let createdAgents: HypernativeAgent[] = []
     try {
         const isStablecoin = issueData.additional_contract_information.selected.includes(
-                'Is the rate provider reporting for a stable coin - in USD terms?',
-            )
-                ? true
-                : false,
-            createdAgents = await createCustomAgents(issueData.rate_provider_contract_address, network, isStablecoin)
+            'Is the rate provider reporting for a stable coin - in USD terms?',
+        )
+
+        createdAgents = await createCustomAgents(issueData.rate_provider_contract_address, network, isStablecoin)
         console.log('createdAgents:', createdAgents)
     } catch (error) {
         console.log(`Failed to create custom agents for chain ${network.name}`)
