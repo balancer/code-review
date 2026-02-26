@@ -6634,6 +6634,20 @@
           "implementationReviewed": "0xe94c9f9a1893f23be38a5c0394e46ac05e8a5f8c"
         }
       ]
+    },
+    "0xE2dDae411296Fc14464d6FD44053a497Df6aa032": {
+      "asset": "0xe9c082921dc3564e10196c5cc15dB1250AC7d5C6",
+      "name": "EtherfuseKTBRateProvider.md",
+      "summary": "safe",
+      "review": "./EtherfuseKTBRateProviderReview98c7.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x0087a2b1b36dbb75963b8ed25dfb370ec1604460",
+          "implementationReviewed": "0xb45a3109bbe59b8812f7e4201531008c76f7de32"
+        }
+      ]
     }
   }
 }
