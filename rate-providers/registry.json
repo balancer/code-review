@@ -3786,6 +3786,15 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0xC354cDaf83F0182405788783027f72e9DF220aAE": {
+      "asset": "0xe108fbc04852B5df72f9E44d7C29F47e7A993aDd",
+      "name": "KpkUSDC PrimeRateProvider.md",
+      "summary": "safe",
+      "review": "./KpkUSDC PrimeRateProviderReviewa3a3.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   },
   "fantom": {

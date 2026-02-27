@@ -811,6 +811,17 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0xe108fbc04852B5df72f9E44d7C29F47e7A993aDd": {
+      "asset": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      "name": "KpkUSDC PrimeErc4626Vault.md",
+      "summary": "safe",
+      "review": "./KpkUSDC PrimeErc4626VaultReviewb97d.md",
+      "warnings": [],
+      "upgradeableComponents": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   },
   "gnosis": {
