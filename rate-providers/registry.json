@@ -6692,7 +6692,7 @@
         }
       ]
     },
-   "0x9f80b425Fe4A6A31Da5f5fCDd285d951244D1ea1": {
+    "0x9f80b425Fe4A6A31Da5f5fCDd285d951244D1ea1": {
       "asset": "0x08139339dd9A480CEB84D9C7CcE48BE436dB20b3",
       "name": "WrappedNeverlandsMONRateProvider.md",
       "summary": "safe",
@@ -6701,7 +6701,6 @@
       "factory": "",
       "upgradeableComponents": [
         {
-          "entrypoint": "0x29d2075e5151b1a6863bdc40ea86bd5e8afd1705",
           "entrypoint": "0x08139339dd9a480ceb84d9c7cce48be436db20b3",
           "implementationReviewed": "0xf20a545013b74f7ed0239399217b130e4177e085"
         },
@@ -6710,8 +6709,6 @@
           "implementationReviewed": "0xe3b56aad3c21531055f39e73a51e8ff29daad049"
         },
         {
-          "entrypoint": "0x8c9f39f0d08ee284a4fe0198524fe7c28630ceab",
-          "implementationReviewed": "0x4d6092fde125ad5cb9f2941e095040bc8dc39a95"
           "entrypoint": "0xe77456457619ad1948336fbabc3883cb965b50d1",
           "implementationReviewed": "0xb12c4bdf99c4ed3b78137b921a0eae382e710ddc"
         },
@@ -6738,29 +6735,12 @@
       "factory": "",
       "upgradeableComponents": [
         {
-          "entrypoint": "0x08139339dd9a480ceb84d9c7cce48be436db20b3",
           "entrypoint": "0x5e073494678fb7fa4a05bb17d45941dd9dc469c1",
           "implementationReviewed": "0xf20a545013b74f7ed0239399217b130e4177e085"
         },
         {
           "entrypoint": "0x80f00661b13cc5f6ccd3885be7b4c9c67545d585",
           "implementationReviewed": "0xe3b56aad3c21531055f39e73a51e8ff29daad049"
-        },
-        {
-          "entrypoint": "0xe77456457619ad1948336fbabc3883cb965b50d1",
-          "implementationReviewed": "0xb12c4bdf99c4ed3b78137b921a0eae382e710ddc"
-        },
-        {
-          "entrypoint": "0x22d47686b3aec9068768f84efd8ce2637a347b0a",
-          "implementationReviewed": "0xf6de0bbe3b277a7c1d56139e4084e917aaaa74d2"
-        },
-        {
-          "entrypoint": "0x368ee51e47a594fe1e9908b48228748a30bc7ca4",
-          "implementationReviewed": "0xe4bfe4071d363e1d4274fb8f79cb510b75913020"
-        },
-        {
-          "entrypoint": "0x98dc6e90d4c2f212ed9d124ad2afba4833268633",
-          "implementationReviewed": "0xe94c9f9a1893f23be38a5c0394e46ac05e8a5f8c"
         }
       ]
     }
