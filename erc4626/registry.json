@@ -2714,6 +2714,46 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0x08139339dd9A480CEB84D9C7CcE48BE436dB20b3": {
+      "asset": "0xA3227C5969757783154C60bF0bC1944180ed81B9",
+      "name": "WrappedNeverlandsMONErc4626Vault.md",
+      "summary": "safe",
+      "review": "./WrappedNeverlandsMONErc4626VaultReviewda69.md",
+      "warnings": [],
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x08139339dd9a480ceb84d9c7cce48be436db20b3",
+          "implementationReviewed": "0xf20a545013b74f7ed0239399217b130e4177e085"
+        },
+        {
+          "entrypoint": "0x80f00661b13cc5f6ccd3885be7b4c9c67545d585",
+          "implementationReviewed": "0xe3b56aad3c21531055f39e73a51e8ff29daad049"
+        }
+      ],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
+    "0x5e073494678fB7FA4a05bB17d45941Dd9Dc469c1": {
+      "asset": "0x1B68626dCa36c7fE922fD2d55E4f631d962dE19c",
+      "name": "WrappedNeverlandshMONErc4626Vault.md",
+      "summary": "safe",
+      "review": "./WrappedNeverlandshMONErc4626VaultReviewf5f7.md",
+      "warnings": [],
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x5e073494678fb7fa4a05bb17d45941dd9dc469c1",
+          "implementationReviewed": "0xf20a545013b74f7ed0239399217b130e4177e085"
+        },
+        {
+          "entrypoint": "0x80f00661b13cc5f6ccd3885be7b4c9c67545d585",
+          "implementationReviewed": "0xe3b56aad3c21531055f39e73a51e8ff29daad049"
+        }
+      ],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   }
 }
