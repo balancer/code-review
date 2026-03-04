@@ -3795,6 +3795,15 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0x449a17096E8A853842233b7A5e0D098fC81DF582": {
+      "asset": "0xc582F04d8a82795aa2Ff9c8bb4c1c889fe7b754e",
+      "name": "GauntletUSDCFrontierRateProvider.md",
+      "summary": "safe",
+      "review": "./GauntletUSDCFrontierRateProviderReview2997.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   },
   "fantom": {
