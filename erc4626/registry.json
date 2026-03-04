@@ -822,6 +822,17 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0xc582F04d8a82795aa2Ff9c8bb4c1c889fe7b754e": {
+      "asset": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      "name": "GauntletUSDCFrontierErc4626Vault.md",
+      "summary": "safe",
+      "review": "./GauntletUSDCFrontierErc4626VaultReview31b9.md",
+      "warnings": [],
+      "upgradeableComponents": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   },
   "gnosis": {
