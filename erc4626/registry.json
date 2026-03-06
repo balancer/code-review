@@ -833,6 +833,17 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0xb45ad160634c528cc3d2926d9807104fa3157305": {
+      "asset": "0x865377367054516e17014CcdED1e7d814EDC9ce4",
+      "name": "StakedDolaErc4626Vault.md",
+      "summary": "safe",
+      "review": "./StakedDolaErc4626VaultReview5690.md",
+      "warnings": [],
+      "upgradeableComponents": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   },
   "gnosis": {

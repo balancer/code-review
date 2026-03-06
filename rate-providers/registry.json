@@ -3804,6 +3804,15 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0xd02011c6c8aee310d0aa42aa98bfe9dca547fcc0": {
+      "asset": "0xb45ad160634c528cc3d2926d9807104fa3157305",
+      "name": "StakedDolaRateProvider.md",
+      "summary": "safe",
+      "review": "./StakedDolaRateProviderReviewe3da.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   },
   "fantom": {
