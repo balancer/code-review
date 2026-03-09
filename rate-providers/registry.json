@@ -5761,6 +5761,15 @@
       "factory": "",
       "upgradeableComponents": []
     },
+    "0x2282f82e4c59109cdad376fb65dce365c3b29964": {
+      "asset": "0x039e2fb66102314ce7b64ce5ce3e5183bc94ad38",
+      "name": "DynamicWrappedSonicRateProvider.md",
+      "summary": "safe",
+      "review": "./WrappedSonicRateProviderReviewbc1a.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
+    },
     "0x13024Ff3879Ce1d3A827958AB1e5fDF29250A05d": {
       "asset": "0x50c42deacd8fc9773493ed674b675be577f2634b",
       "name": "DynamicWrappedEthereumSonicRateProvider.md",
