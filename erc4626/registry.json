@@ -1478,6 +1478,17 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0x423a7A5709213dEa0F0C2368e5fB16338c87bBA7": {
+      "asset": "0x29219dd400f2Bf60E5a23d13Be72B486D4038894",
+      "name": "OpenErc4626Vault.md",
+      "summary": "safe",
+      "review": "./OpenErc4626VaultReview9d0c.md",
+      "warnings": [],
+      "upgradeableComponents": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   },
   "avalanche": {

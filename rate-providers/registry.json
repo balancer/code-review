@@ -5894,6 +5894,15 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0xaff87d11e1222908b624f80c70111115ea7067cc": {
+      "asset": "0x423a7A5709213dEa0F0C2368e5fB16338c87bBA7",
+      "name": "OpenRateProvider.md",
+      "summary": "safe",
+      "review": "./OpenRateProviderReviewb153.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   },
   "hyperevm": {
