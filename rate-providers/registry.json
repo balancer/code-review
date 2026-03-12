@@ -3816,6 +3816,15 @@
           "implementationReviewed": "0x4e7991e5c547ce825bdeb665ee14a3274f9f61e0"
         }
       ]
+    },
+    "0xf32dc0eE2cC78Dca2160bb4A9B614108F28B176c": {
+      "asset": "0xe5f130253ff137f9917c0107659a4c5262abf6b0",
+      "name": "SavingsVaultZCHFRateProvider.md",
+      "summary": "safe",
+      "review": "./SavingsVaultZCHFRateProviderReview6db3.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   },
   "fantom": {
