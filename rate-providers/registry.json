@@ -3802,6 +3802,20 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0xc17a22a7d1f0Ca3f392F5920E7142240AEa8B2Ae": {
+      "asset": "0xa3931d71877C0E7a3148CB7Eb4463524FEc27fbD",
+      "name": "SavingsUSDSRateProvider.md",
+      "summary": "safe",
+      "review": "./SavingsUSDSRateProviderReview06b8.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+          "implementationReviewed": "0x4e7991e5c547ce825bdeb665ee14a3274f9f61e0"
+        }
+      ]
     }
   },
   "fantom": {
