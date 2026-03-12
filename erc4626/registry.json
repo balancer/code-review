@@ -820,6 +820,22 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0xa3931d71877C0E7a3148CB7Eb4463524FEc27fbD": {
+      "asset": "0xdC035D45d973E3EC169d2276DDab16f1e407384F",
+      "name": "SavingsUSDSErc4626Vault.md",
+      "summary": "safe",
+      "review": "./SavingsUSDSErc4626VaultReview4bc9.md",
+      "warnings": [],
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+          "implementationReviewed": "0x4e7991e5c547ce825bdeb665ee14a3274f9f61e0"
+        }
+      ],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   },
   "gnosis": {
