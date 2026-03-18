@@ -6494,6 +6494,24 @@
           "implementationReviewed": "0x8346BeBaA0789Eb92CFfCC07033b8bF9f3eFdcAB"
         }
       ]
+    },
+    "0xA304F679649956429462A144e9191A278a03B69a": {
+      "asset": "0x28C48A7630A730F5f2297dA7A72b7F31d9E99e19",
+      "name": "WrappedAavePlasma GHORateProvider.md",
+      "summary": "safe",
+      "review": "./WrappedAavePlasma GHORateProviderReviewd397.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x28c48a7630a730f5f2297da7a72b7f31d9e99e19",
+          "implementationReviewed": "0xe6de1e4bde35161add4eb852d8a885a3959fe873"
+        },
+        {
+          "entrypoint": "0x925a2a7214ed92428b5b1b090f80b25700095e12",
+          "implementationReviewed": "0x2f762d4b63bd3c0e4e13d716e8bc8a49f95dcf09"
+        }
+      ]
     }
   },
   "monad": {

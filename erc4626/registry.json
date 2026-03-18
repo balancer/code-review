@@ -2595,6 +2595,26 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0x28C48A7630A730F5f2297dA7A72b7F31d9E99e19": {
+      "asset": "0xb77E872A68C62CfC0dFb02C067Ecc3DA23B4bbf3",
+      "name": "WrappedAavePlasma GHOErc4626Vault.md",
+      "summary": "safe",
+      "review": "./WrappedAavePlasma GHOErc4626VaultReview79c1.md",
+      "warnings": [],
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x925a2a7214ed92428b5b1b090f80b25700095e12",
+          "implementationReviewed": "0x2f762d4b63bd3c0e4e13d716e8bc8a49f95dcf09"
+        },
+        {
+          "entrypoint": "0x28c48a7630a730f5f2297da7a72b7f31d9e99e19",
+          "implementationReviewed": "0xe6de1e4bde35161add4eb852d8a885a3959fe873"
+        }
+      ],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   },
   "monad": {
