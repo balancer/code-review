@@ -3825,6 +3825,15 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0x7Ff03b19348F5FD1391FB22928860813ca5B9e10": {
+      "asset": "0x9F4330700a36B29952869fac9b33f45EEdd8A3d8",
+      "name": "YearnBOLDRateProvider.md",
+      "summary": "safe",
+      "review": "./YearnBOLDRateProviderReview67ea.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   },
   "fantom": {

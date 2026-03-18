@@ -836,6 +836,17 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0x9F4330700a36B29952869fac9b33f45EEdd8A3d8": {
+      "asset": "0x6440f144b7e50D6a8439336510312d2F54beB01D",
+      "name": "YearnBOLDErc4626Vault.md",
+      "summary": "safe",
+      "review": "./YearnBOLDErc4626VaultReviewa9ae.md",
+      "warnings": [],
+      "upgradeableComponents": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   },
   "gnosis": {
