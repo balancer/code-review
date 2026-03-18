@@ -1,8 +1,8 @@
 import { Address, Hex, Chain } from 'viem'
 import { TransactionData, GetContractSourceCodeResponse } from '../types/types'
 import { avalanche } from 'viem/chains'
-import { plasma } from '../utils/customChains'
 import { ChainApi } from '../types/types'
+
 
 /**
  * EtherscanApi class to interact with Etherscan API
@@ -20,9 +20,6 @@ class EtherscanApi implements ChainApi {
 
     private getApiUrl(): string {
         // TODO: Validate chain is supported by EtherscanAPI.
-        if (this.chain.id === plasma.id) {
-            return plasma.blockExplorers.default.apiUrl
-        }
         return `https://api.etherscan.io/v2/api?chainid=${this.chain.id}&`
     }
 
@@ -57,6 +54,7 @@ class EtherscanApi implements ChainApi {
                 console.log(`Snowscan fallback failed for address ${address}:`, error)
             }
         }
+
         return null
     }
 

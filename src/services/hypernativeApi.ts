@@ -32,6 +32,7 @@ class HypernativeApi {
         Polygon: 'polygon',
         HyperEVM: 'hyperliquid_evm',
         Monad: 'monad',
+        Plasma: 'plasma',
     }
 
     public async createCustomAgentRateDeviation(input: CustomAgentInput): Promise<HypernativeAgent> {
