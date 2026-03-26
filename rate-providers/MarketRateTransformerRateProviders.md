@@ -177,17 +177,6 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
         - admin type: Aave governance system.
             - multisig timelock? YES: 24 hours.
 
-    #### Wrapped Aave Arbitrum rETH
-    - [arbitrum:0xbB8A61425DFE172AA3a6f882aAFaBA00B32b7d59](https://arbiscan.io/address/0xbB8A61425DFE172AA3a6f882aAFaBA00B32b7d59)
-        - upgradeable component: `StataTokenV2` ([arbitrum:0xbB8A61425DFE172AA3a6f882aAFaBA00B32b7d59](https://arbiscan.io/address/0xbB8A61425DFE172AA3a6f882aAFaBA00B32b7d59#readProxyContract))
-        - admin address: [arbitrum:0xFF1137243698CaA18EE364Cc966CF0e02A4e6327](https://arbiscan.io/address/0xFF1137243698CaA18EE364Cc966CF0e02A4e6327)
-        - admin type: Aave governance system.
-            - multisig timelock? YES: 24 hours.
-        - upgradeable component: `L2PoolInstance` ([arbitrum:0x794a61358D6845594F94dc1DB02A252b5b4814aD](https://arbiscan.io/address/0x794a61358D6845594F94dc1DB02A252b5b4814aD))
-        - admin address: [arbitrum:0xFF1137243698CaA18EE364Cc966CF0e02A4e6327](https://arbiscan.io/address/0xFF1137243698CaA18EE364Cc966CF0e02A4e6327)
-        - admin type: Aave governance system.
-            - multisig timelock? YES: 24 hours.
-
     #### Wrapped Aave Arbitrum ezETH
     - [arbitrum:0x4ff50C17df0D1b788d021ACd85039810a1aA68A1](https://arbiscan.io/address/0xbB8A61425DFE172AA3a6f882aAFaBA00B32b7d59)
         - upgradeable component: `StataTokenV2` ([arbitrum:0x4ff50C17df0D1b788d021ACd85039810a1aA68A1](https://arbiscan.io/address/0xbB8A61425DFE172AA3a6f882aAFaBA00B32b7d59#readProxyContract))
