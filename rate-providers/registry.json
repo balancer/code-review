@@ -400,7 +400,7 @@
     },
     "0xbB8A61425DFE172AA3a6f882aAFaBA00B32b7d59": {
       "asset": "0xbB8A61425DFE172AA3a6f882aAFaBA00B32b7d59",
-      "name": "Wrapped Aave Arbitrum ARB",
+      "name": "Wrapped Aave Arbitrum rETH",
       "summary": "safe",
       "review": "./MarketRateTransformerRateProviders.md",
       "warnings": [
