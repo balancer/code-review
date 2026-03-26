@@ -8,8 +8,6 @@
 - Deployed at:
     - [avalanche:0xd6Fd021662B83bb1aAbC2006583A62Ad2Efb8d4A](https://snowtrace.io/address/0xd6Fd021662B83bb1aAbC2006583A62Ad2Efb8d4A#code)
     - [arbitrum:0xFC8d81A01deD207aD3DEB4FE91437CAe52deD0b5](https://arbiscan.io/address/0xFC8d81A01deD207aD3DEB4FE91437CAe52deD0b5#code)
-    - [zkevm:0xFC8d81A01deD207aD3DEB4FE91437CAe52deD0b5](https://zkevm.polygonscan.com/address/0xfc8d81a01ded207ad3deb4fe91437cae52ded0b5#code)
-
 ## Context
 `ankrETH` is a liquid staking token developed by Ankr. The `ankrETH` tokens are bridged via a custom bridge developed by Ankr (see [audit](https://assets.ankr.com/earn/ankr_bridge_security_audit.pdf)). The bridged version of `ankrETH` is called `InternetBond` and is a `BeaconProxy`.
 
