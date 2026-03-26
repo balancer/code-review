@@ -2,7 +2,7 @@ name: Request for an automated Security Review
 description: Request a review for rate provider or token wrapper. This is not a substitute for a full protocol audit.
 labels: ["request"]
 assignees:
-  - mkflow27
+  - zekraken-bot
 body:
   - type: checkboxes
     id: erc4626-info
@@ -10,7 +10,7 @@ body:
       label: Additional Contract Information
       description: Additional points clarify the intended usage of the related asset.
       options:
-        - label: Is the rate provider reporting for a stable coin - in USD terms?
+        - label: Is the rate provider reporting for a stable coin/FX/Yield tracking?
         - label: Is the rate provider reporting a market rate?
         - label: Is a combined rate provider needed (i.e. wstETH in aave)?
         - label: Does this rate provider pertain to an ERC4626 contract?

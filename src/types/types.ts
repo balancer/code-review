@@ -78,16 +78,6 @@ export interface CustomAgentInput {
     operands: string[]
 }
 
-export interface CustomAgentInputUpgrade {
-    chain: Chain
-    ruleString: string
-    contractAddress: string[]
-    contractAlias: string
-    rateProvider: string
-    agentName: string
-    operands?: string
-}
-
 // Minimal Hypernative agent representation used when fetching agents
 export interface HypernativeAgent {
     id: number
