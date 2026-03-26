@@ -4,7 +4,6 @@
 - Reviewed by: @mkflow27
 - Checked by: @danielmkm
 - Deployed at:
-    - [arbitrum:0x4d494eF5CB1143991F7F767567aD7f55bCfDc279](https://arbiscan.io/address/0x4d494eF5CB1143991F7F767567aD7f55bCfDc279#code)
     - [ethereum:0x51b7F50044a2a1A9A846575Be33c00A68e0172DF](https://etherscan.io/address/0x51b7F50044a2a1A9A846575Be33c00A68e0172DF#code)
 - Audit report(s):
     - [USDL audits](https://github.com/paxosglobal/ybs-contract/blob/master/audits/REP-final-20240301T145234Z.pdf)

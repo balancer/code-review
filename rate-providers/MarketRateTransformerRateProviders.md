@@ -8,10 +8,6 @@
         - ERC4626RateProvider: aave wsteth market
         - ERC4626Vault's `asset` rate provider: Wrapped Staked Eth
 
-    - csUSDL (Steakhouse) [ethereum:0x9CC54cb63E61c7D5231c506e4206Eb459250D2A7](https://etherscan.io/address/0x9CC54cb63E61c7D5231c506e4206Eb459250D2A7#code)
-        - ERC4626RateProvider: MetaMorpho
-        - ERC4626Vault's `asset` rate provider: Wrapped USDL (wUSDL) ERC4626 Rate Provider
-
     - a-wstETH [gnosis:0x30EAcEC6BD250589043De026e45dc9A158C65a1F](https://gnosisscan.io/address/0x30EAcEC6BD250589043De026e45dc9A158C65a1F#readContract)
         - ERC4626RateProvider: aave wsteth market
         - ERC4626Vault's `asset` rate provider: Wrapped Staked Eth
@@ -97,23 +93,6 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
         - admin address: [gnosis:0x1dF462e2712496373A347f8ad10802a5E95f053D](https://gnosisscan.io/address/0x1dF462e2712496373A347f8ad10802a5E95f053D#code)
         - admin type: Aave governance system.
             - multisig timelock? YES: 24 hours
-
-    #### Coinshift USDL (csUSDL)
-    The Metamorpho Vault
-    - Part of the rate computation relies of `totalAssets` being calculated. This function iterates over a list of Ids. This list of Ids can be changed by the Allocator role. The potential impact has not been thoroughly investigated. There are however protections in place to protect against invalid changes such as
-        - `revert ErrorsLib.DuplicateMarket(id);`
-        - `revert ErrorsLib.InvalidMarketRemovalNonZeroCap(id);`
-        - `revert ErrorsLib.PendingCap(id);`
-        - `ErrorsLib.InvalidMarketRemovalNonZeroSupply(id);`
-        - `ErrorsLib.InvalidMarketRemovalTimelockNotElapsed(id);`
-    - Also take into account the vaultAssetPriceFeed. This was investigated as part of the [review](./wUSDLPaxosRateProvider.md) with the upgradeable component: `wYBSV1` ([ethereum:0x7751E2F4b8ae93EF6B79d86419d42FE3295A4559](https://etherscan.io/address/0x7751E2F4b8ae93EF6B79d86419d42FE3295A4559#readProxyContract))
-    - admin address: [ethereum:0x60Be07b68214d49aF3Ec8fa89c7fc0970De0A94E](https://etherscan.io/address/0x60Be07b68214d49aF3Ec8fa89c7fc0970De0A94E#code)
-    - admin type: multisig
-        - multisig threshold/signers: 3/20
-    - upgradeable component: `YBSV1` ([ethereum:0xbdC7c08592Ee4aa51D06C27Ee23D5087D65aDbcD](https://etherscan.io/address/0xbdC7c08592Ee4aa51D06C27Ee23D5087D65aDbcD#code))
-    - admin address: [ethereum:0x65bcf790Cb8ADf60D5f54eC2E10DE8C83886E0AE](https://etherscan.io/address/0x65bcf790Cb8ADf60D5f54eC2E10DE8C83886E0AE#code)
-    - admin type: multisig
-        - multisig threshold/signers: 3/17
 
     #### Coinshift USDL (csUSDL) v1.1
     The Metamorpho Vault
