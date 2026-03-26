@@ -10,10 +10,9 @@ dotenv.config()
  * It uses the Hypernative API to create custom agents based on the provided input.
  */
 const rateProvider = '' as Address
-const upgradeableComponents: Address[] = []
 const chain = hyperEvm
 
-async function addHypernativeAgents(rateProvider: Address, upgradeableComponents: Address[]) {
+async function addHypernativeAgents(rateProvider: Address) {
     const hypernativeApi = new HypernativeApi(
         chain,
         process.env.HYPERNATIVE_CLIENT_ID || '',
@@ -27,15 +26,7 @@ async function addHypernativeAgents(rateProvider: Address, upgradeableComponents
         contractAlias: rateProvider,
         agentName: `${rateProvider.slice(-4)}rate-deviation-${chain.name}`,
         rateProvider: rateProvider,
-    })
-
-    await hypernativeApi.createCustomAgentUpgrade({
-        chain: chain,
-        ruleString: `On ${chain.name}: when ${upgradeableComponents.map((component: string) => component).join(' or ')}: Upgraded(indexed address implementation)}`,
-        contractAddress: upgradeableComponents,
-        contractAlias: upgradeableComponents.map((component: string) => component).join(' or '),
-        agentName: `${rateProvider.slice(-4)}-upgrade-${chain.name}`,
-        rateProvider: rateProvider,
+        operands: ['10'],
     })
 
     await hypernativeApi.createCustomAgentRateRevert({
@@ -45,10 +36,11 @@ async function addHypernativeAgents(rateProvider: Address, upgradeableComponents
         contractAlias: rateProvider,
         agentName: `${rateProvider.slice(-4)}rate-revert-${chain.name}`,
         rateProvider: rateProvider,
+        operands: [],
     })
 }
 
-addHypernativeAgents(rateProvider, upgradeableComponents)
+addHypernativeAgents(rateProvider)
     .then(() => {
         console.log('Hypernative agents added successfully.')
     })

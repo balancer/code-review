@@ -1,9 +1,8 @@
 import { Address, Chain } from 'viem'
 import { rateProviderRateDeviationRule } from '../utils/hypernative/rate-provider-rate-deviation'
-import { rateProviderUpgradeRule } from '../utils/hypernative/rate-provider-upgrade'
 import { rateProviderRateRevertRule } from '../utils/hypernative/rate-provider-rate-revert'
 
-import { CustomAgentInput, CustomAgentInputUpgrade, HypernativeAgent } from '../types/types'
+import { CustomAgentInput, HypernativeAgent } from '../types/types'
 
 class HypernativeApi {
     public chain: Chain
@@ -45,56 +44,6 @@ class HypernativeApi {
         customAgentRule.rule.contractAddressAlias = input.contractAlias
         customAgentRule.agentName = input.agentName
         customAgentRule.rule.operands = input.operands
-
-        // Make the API call
-        try {
-            const response = await fetch('https://api.hypernative.xyz/custom-agents', {
-                method: 'POST',
-                headers: {
-                    accept: 'application/json',
-                    'x-client-id': this.clientId,
-                    'x-client-secret': this.clientSecret,
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(customAgentRule),
-            })
-
-            if (!response.ok) {
-                const responseBody = await response.text()
-                console.error('Response Status:', response.status)
-                console.error('Response Body:', responseBody)
-                throw new Error(`HTTP error! status: ${response.status}`)
-            }
-
-            const data: any = await response.json()
-            const chainString = this.getValidChainNameFromViemChain(input.chain)
-
-            const agent: HypernativeAgent = {
-                id: data.data.id,
-                agentName: data.data.agentName,
-                agentType: data.data.agentType,
-                chain: chainString,
-                createdBy: data.data.createdBy,
-                createdAt: data.data.createdAt,
-            }
-
-            return agent
-        } catch (error) {
-            console.error('Error during API call:', error)
-            throw error // Re-throw the error to propagate it
-        }
-    }
-
-    public async createCustomAgentUpgrade(input: CustomAgentInputUpgrade): Promise<HypernativeAgent> {
-        const customAgentRule = { ...rateProviderUpgradeRule }
-
-        // Modify the rule based on input
-        customAgentRule.rule.chain = this.getValidChainNameFromViemChain(input.chain)
-        customAgentRule.rule.ruleString = input.ruleString
-        customAgentRule.rule.contractAddress = input.rateProvider
-        customAgentRule.rule.contractAddressAlias = input.rateProvider
-        customAgentRule.agentName = input.agentName
-        customAgentRule.rule.transactionParams[0].operands = input.contractAddress
 
         // Make the API call
         try {
