@@ -4,7 +4,6 @@
 - Reviewed by: @mkflow27
 - Checked by: @danielmkm
 - Deployed at:
-    - [ethereum:0x343281Bb5029C4b698fE736D800115ac64D5De39](https://etherscan.io/address/0x343281bb5029c4b698fe736d800115ac64d5de39#code)
     - [ethereum:0x8bC73134A736437da780570308d3b37b67174ddb](https://etherscan.io/address/0x8bC73134A736437da780570308d3b37b67174ddb#readContract)
 - Audit report(s):
     - [InceptionLRT](https://docs.inceptionlrt.com/security/audit-reports)
@@ -37,20 +36,6 @@ If none of these is checked, then this might be a pretty great Rate Provider! If
 - [ ] The Rate Provider is upgradeable (e.g., via a proxy architecture or an `onlyOwner` function that updates the price source address).
 
 - [x] Some other portion of the price pipeline is upgradeable (e.g., the token itself, an oracle, or some piece of a larger system that tracks the price).
-    - [ethereum:0x343281Bb5029C4b698fE736D800115ac64D5De39](https://etherscan.io/address/0x343281Bb5029C4b698fE736D800115ac64D5De39#code)
-        - upgradeable component: `InceptionVault` ([ethereum:0x814CC6B8fd2555845541FB843f37418b05977d8d](https://etherscan.io/address/0x814CC6B8fd2555845541FB843f37418b05977d8d))
-        - admin address: [ethereum:0x8e6C8799B542E507bfDDCA1a424867e885D96e79](https://etherscan.io/address/0x8e6C8799B542E507bfDDCA1a424867e885D96e79#readProxyContract)
-        - comment: The admin address has the `EXECUTOR`role on the [`TimeLockController`](https://etherscan.io/address/0x650bD9Dee50E3eE15cbb49749ff6ABcf55A8FB1e#code) which can upgrade the `InceptionVault`
-        - admin type: multisig
-            - multisig threshold/signers: 3/5
-            - multisig timelock? YES: 24 hours
-        - upgradeable component: `InceptionToken` ([ethereum:0x7FA768E035F956c41d6aeaa3Bd857e7E5141CAd5](https://etherscan.io/address/0x7FA768E035F956c41d6aeaa3Bd857e7E5141CAd5#readProxyContract))
-        - admin address: [ethereum:0x8e6C8799B542E507bfDDCA1a424867e885D96e79](https://etherscan.io/address/0x8e6C8799B542E507bfDDCA1a424867e885D96e79#readProxyContract)
-        - comment: The admin address has the `EXECUTOR` role on the [`TimeLockController`](https://etherscan.io/address/0x650bD9Dee50E3eE15cbb49749ff6ABcf55A8FB1e#code) which can upgrade the `InceptionVault`
-        - admin type: multisig
-            - multisig threshold/signers: 3/5
-            - multisig timelock? YES: 24 hours
-
     - [ethereum:0x8bC73134A736437da780570308d3b37b67174ddb](https://etherscan.io/address/0x8bC73134A736437da780570308d3b37b67174ddb#readContract)
         - upgradeable component: `InVault_E1` ([ethereum:0x36B429439AB227fAB170A4dFb3321741c8815e55](https://etherscan.io/address/0x36B429439AB227fAB170A4dFb3321741c8815e55#readProxyContract))
         - admin address: [ethereum:0x8e6C8799B542E507bfDDCA1a424867e885D96e79](https://etherscan.io/address/0x8e6C8799B542E507bfDDCA1a424867e885D96e79)
