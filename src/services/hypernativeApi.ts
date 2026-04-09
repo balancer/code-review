@@ -98,6 +98,10 @@ class HypernativeApi {
         customAgentRule.rule.conditions[1].operands[0].variable_extraction[3].contract_address = input.contractAddress
         customAgentRule.rule.conditions[1].operands[0].eval.custom_description = input.ruleString
 
+        customAgentRule.rule.time_based_trigger.chain = this.getValidChainNameFromViemChain(input.chain)
+
+        customAgentRule.graphData.nodes[0].data.chain = this.getValidChainNameFromViemChain(input.chain)
+
         customAgentRule.graphData.nodes[1].data.chain = this.getValidChainNameFromViemChain(input.chain)
         customAgentRule.graphData.nodes[1].data.contractAddress = input.contractAddress
         customAgentRule.graphData.nodes[1].data.contractAddressAlias = input.contractAddress
