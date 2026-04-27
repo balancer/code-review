@@ -4012,9 +4012,9 @@
     },
     "0x9062a576d3e6cf6999e99e405608063033c4cff6": {
       "asset": "0x2c910F67DbF81099e6f8e126E7265d7595DC20aD",
-      "name": "HyUSD\u20ae0(hwHLP)- 11RateProvider.md",
+      "name": "HyUSD₮0(hwHLP)- 11RateProvider.md",
       "summary": "safe",
-      "review": "./HyUSD\u20ae0(hwHLP)- 11RateProviderReviewf81e.md",
+      "review": "./HyUSD₮0(hwHLP)- 11RateProviderReviewf81e.md",
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
@@ -4098,9 +4098,9 @@
     },
     "0x0adfED2cFF26D1757073545FcF9f1DA23858801A": {
       "asset": "0x06Fd9D03b3d0F18E4919919b72D30c582f0a97E5",
-      "name": "HyperlendInterestBearing USD\u20ae0 (Wrapped HLP)RateProvider.md",
+      "name": "HyperlendInterestBearing USD₮0 (Wrapped HLP)RateProvider.md",
       "summary": "safe",
-      "review": "./HyperlendInterestBearing USD\u20ae0 (Wrapped HLP)RateProviderReview2bb9.md",
+      "review": "./HyperlendInterestBearing USD₮0 (Wrapped HLP)RateProviderReview2bb9.md",
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
@@ -4143,9 +4143,9 @@
     },
     "0x1d3c598d889e9b7063fbb4532095078ace62df64": {
       "asset": "0xDC6F4239C1D8D3b955C06CB8f1A6cF18EFfc5BFe",
-      "name": "StaticUSD\u20ae0HypurrRateProvider.md",
+      "name": "StaticUSD₮0HypurrRateProvider.md",
       "summary": "safe",
-      "review": "./StaticUSD\u20ae0HypurrRateProviderReviewd7a9.md",
+      "review": "./StaticUSD₮0HypurrRateProviderReviewd7a9.md",
       "warnings": [],
       "factory": "",
       "upgradeableComponents": [
@@ -4739,6 +4739,24 @@
       "upgradeableComponents": [
         {
           "entrypoint": "0x5e073494678fb7fa4a05bb17d45941dd9dc469c1",
+          "implementationReviewed": "0xf20a545013b74f7ed0239399217b130e4177e085"
+        },
+        {
+          "entrypoint": "0x80f00661b13cc5f6ccd3885be7b4c9c67545d585",
+          "implementationReviewed": "0xe3b56aad3c21531055f39e73a51e8ff29daad049"
+        }
+      ]
+    },
+    "0x5e95d1387aace1b649136401e0d89570be2a2600": {
+      "asset": "0xB3b850ac62B89fe9f4eFB652b516108a8aEb8848",
+      "name": "WrappedNeverlandWETHRateProvider.md",
+      "summary": "safe",
+      "review": "./WrappedNeverlandWETHRateProviderReview53c7.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xb3b850ac62b89fe9f4efb652b516108a8aeb8848",
           "implementationReviewed": "0xf20a545013b74f7ed0239399217b130e4177e085"
         },
         {
