@@ -4765,6 +4765,32 @@
         }
       ]
     },
+    "0xa5871869c4250514E630313BeE52613c878503Ed": {
+      "asset": "0xA3D68b74bF0528fdD07263c60d6488749044914b",
+      "name": "WrappedeETHRateProvider.md",
+      "summary": "safe",
+      "review": "./WrappedeETHRateProviderReview8a75.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xb3c5be567817f127412d1758048b376d4d35ec51",
+          "implementationReviewed": "0xa75cc459de167de5bc21ccdeccdb85e86377b00f"
+        },
+        {
+          "entrypoint": "0x22d47686b3aec9068768f84efd8ce2637a347b0a",
+          "implementationReviewed": "0xf6de0bbe3b277a7c1d56139e4084e917aaaa74d2"
+        },
+        {
+          "entrypoint": "0x368ee51e47a594fe1e9908b48228748a30bc7ca4",
+          "implementationReviewed": "0xe4bfe4071d363e1d4274fb8f79cb510b75913020"
+        },
+        {
+          "entrypoint": "0x98dc6e90d4c2f212ed9d124ad2afba4833268633",
+          "implementationReviewed": "0xe94c9f9a1893f23be38a5c0394e46ac05e8a5f8c"
+        }
+      ]
+    },
     "0x80ef8be641FA6FEA2AbfFc2829dD4DFdf38780D6": {
       "asset": "0xC50f2e735eDd9dCD8Ccd41EcFE9894E679e3195f",
       "name": "RocketPoolETHRateProvider.md",
