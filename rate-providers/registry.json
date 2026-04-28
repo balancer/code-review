@@ -4764,6 +4764,15 @@
           "implementationReviewed": "0xe3b56aad3c21531055f39e73a51e8ff29daad049"
         }
       ]
+    },
+    "0x80ef8be641FA6FEA2AbfFc2829dD4DFdf38780D6": {
+      "asset": "0xC50f2e735eDd9dCD8Ccd41EcFE9894E679e3195f",
+      "name": "RocketPoolETHRateProvider.md",
+      "summary": "safe",
+      "review": "./RocketPoolETHRateProviderReview572c.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   }
 }
