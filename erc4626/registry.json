@@ -848,6 +848,26 @@
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
     },
+    "0x8c106EEDAd96553e64287A5A6839c3Cc78afA3D0": {
+      "asset": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      "name": "GauntletUSDCPrimeErc4626Vault.md",
+      "summary": "safe",
+      "review": "./GauntletUSDCPrimeErc4626VaultReview4dd3.md",
+      "warnings": [],
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "implementationReviewed": "0x43506849d7c04f9138d1a2050bbf3a0c054402dd"
+        },
+        {
+          "entrypoint": "0x43506849d7c04f9138d1a2050bbf3a0c054402dd",
+          "implementationReviewed": "0x800c32eaa2a6c93cf4cb51794450ed77fbfbb172"
+        }
+      ],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
     "0x870F0BF29A25A40E7CC087cD5C53e70C11F2C8A8": {
       "asset": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
       "name": "KpkUSDTPrime V2Erc4626Vault.md",

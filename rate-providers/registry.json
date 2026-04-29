@@ -2712,6 +2712,24 @@
       "factory": "",
       "upgradeableComponents": []
     },
+    "0x1dC897E9740073F21204B39681deBECdfc9308d1": {
+      "asset": "0x8c106EEDAd96553e64287A5A6839c3Cc78afA3D0",
+      "name": "GauntletUSDCPrimeRateProvider.md",
+      "summary": "safe",
+      "review": "./GauntletUSDCPrimeRateProviderReview046e.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x43506849d7c04f9138d1a2050bbf3a0c054402dd",
+          "implementationReviewed": "0x800c32eaa2a6c93cf4cb51794450ed77fbfbb172"
+        },
+        {
+          "entrypoint": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "implementationReviewed": "0x43506849d7c04f9138d1a2050bbf3a0c054402dd"
+        }
+      ]
+    },
     "0x89f70f5424E22A106D789c61BeDd8001F2195444": {
       "asset": "0x870F0BF29A25A40E7CC087cD5C53e70C11F2C8A8",
       "name": "KpkUSDTPrime V2RateProvider.md",
