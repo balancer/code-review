@@ -2711,6 +2711,15 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0x89f70f5424E22A106D789c61BeDd8001F2195444": {
+      "asset": "0x870F0BF29A25A40E7CC087cD5C53e70C11F2C8A8",
+      "name": "KpkUSDTPrime V2RateProvider.md",
+      "summary": "safe",
+      "review": "./KpkUSDTPrime V2RateProviderReviewb5fb.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   },
   "fantom": {},
