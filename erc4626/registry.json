@@ -864,6 +864,9 @@
           "implementationReviewed": "0x800c32eaa2a6c93cf4cb51794450ed77fbfbb172"
         }
       ],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     },
     "0x870F0BF29A25A40E7CC087cD5C53e70C11F2C8A8": {
       "asset": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
