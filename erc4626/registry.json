@@ -864,6 +864,14 @@
           "implementationReviewed": "0x800c32eaa2a6c93cf4cb51794450ed77fbfbb172"
         }
       ],
+    },
+    "0x870F0BF29A25A40E7CC087cD5C53e70C11F2C8A8": {
+      "asset": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "name": "KpkUSDTPrime V2Erc4626Vault.md",
+      "summary": "safe",
+      "review": "./KpkUSDTPrime V2Erc4626VaultReview9b08.md",
+      "warnings": [],
+      "upgradeableComponents": [],
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
