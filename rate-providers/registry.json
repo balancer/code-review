@@ -2738,6 +2738,20 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0xaE8AeAB2eD10376bb8A791fe7e3b25886c8287Bc": {
+      "asset": "0xD166337499E176bbC38a1FBd113Ab144e5bd2Df7",
+      "name": "StakedUSDatRateProvider.md",
+      "summary": "safe",
+      "review": "./StakedUSDatRateProviderReview3b4d.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xd166337499e176bbc38a1fbd113ab144e5bd2df7",
+          "implementationReviewed": "0x2005e0ca201a37694125ff267ae57872bea0a0ce"
+        }
+      ]
     }
   },
   "fantom": {},
