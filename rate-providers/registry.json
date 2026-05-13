@@ -4322,6 +4322,20 @@
           "implementationReviewed": "0x4376c06d866557fac5d0b5813526639c403bfcf5"
         }
       ]
+    },
+    "0xe01b2Cb0C8D16B6AA51beD36FE2654193f43Da1F": {
+      "asset": "0xb83D27f0f4133a7B0377a88089583131A903FDc7",
+      "name": "TreehouseHYPERateProvider.md",
+      "summary": "safe",
+      "review": "./TreehouseHYPERateProviderReviewc825.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xb83d27f0f4133a7b0377a88089583131a903fdc7",
+          "implementationReviewed": "0xb9d95339f7d7b0e85d3f83d3e3df1eae334325f2"
+        }
+      ]
     }
   },
   "plasma": {
