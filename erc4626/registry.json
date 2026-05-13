@@ -2478,6 +2478,26 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0xb2A2104D9fC202a38d74d8F6c3c45Da6eef8F5e0": {
+      "asset": "0xfD739d4e423301CE9385c1fb8850539D657C296D",
+      "name": "StaticHyperLendHyperEVM kHYPE v2Erc4626Vault.md",
+      "summary": "safe",
+      "review": "./StaticHyperLendHyperEVM kHYPE v2Erc4626VaultReview8537.md",
+      "warnings": [],
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x00a89d7a5a02160f20150ebea7a2b5e4879a1a8b",
+          "implementationReviewed": "0xbebb62c7ff8b96db4325d9481c44e09a92d49b06"
+        },
+        {
+          "entrypoint": "0xb2a2104d9fc202a38d74d8f6c3c45da6eef8f5e0",
+          "implementationReviewed": "0x4376c06d866557fac5d0b5813526639c403bfcf5"
+        }
+      ],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   },
   "plasma": {
