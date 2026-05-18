@@ -878,6 +878,22 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0xE1753F2e00940cC31213dd92013cF019DFE4ca1d": {
+      "asset": "0x40D16FC0246aD3160Ccc09B8D0D3A2cD28aE6C2f",
+      "name": "SGhoErc4626Vault.md",
+      "summary": "safe",
+      "review": "./SGhoErc4626VaultReview71ca.md",
+      "warnings": [],
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xe1753f2e00940cc31213dd92013cf019dfe4ca1d",
+          "implementationReviewed": "0xff229a0bbb614a284de8ae0e41e5974878fd7c04"
+        }
+      ],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   },
   "gnosis": {
