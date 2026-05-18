@@ -2752,6 +2752,20 @@
           "implementationReviewed": "0x2005e0ca201a37694125ff267ae57872bea0a0ce"
         }
       ]
+    },
+    "0xFFf48aE7B60dC72E7DaA61d96d3F22Ca028d37bb": {
+      "asset": "0xE1753F2e00940cC31213dd92013cF019DFE4ca1d",
+      "name": "SGhoRateProvider.md",
+      "summary": "safe",
+      "review": "./SGhoRateProviderReview210e.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xe1753f2e00940cc31213dd92013cf019dfe4ca1d",
+          "implementationReviewed": "0xff229a0bbb614a284de8ae0e41e5974878fd7c04"
+        }
+      ]
     }
   },
   "fantom": {},
