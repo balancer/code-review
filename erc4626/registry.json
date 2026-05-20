@@ -894,6 +894,17 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0x08d23468A467d2bb86FaE0e32F247A26C7E2e994": {
+      "asset": "0x41D5D79431A913C4aE7d69a668ecdfE5fF9DFB68",
+      "name": "StakedInvErc4626Vault.md",
+      "summary": "safe",
+      "review": "./StakedInvErc4626VaultReview75ba.md",
+      "warnings": [],
+      "upgradeableComponents": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   },
   "gnosis": {
