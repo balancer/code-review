@@ -2766,6 +2766,15 @@
           "implementationReviewed": "0xff229a0bbb614a284de8ae0e41e5974878fd7c04"
         }
       ]
+    },
+    "0x2563795ff93056a791966635ae7515CdcCafd5AF": {
+      "asset": "0x08d23468A467d2bb86FaE0e32F247A26C7E2e994",
+      "name": "StakedInvRateProvider.md",
+      "summary": "safe",
+      "review": "./StakedInvRateProviderReview8d50.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   },
   "fantom": {},
