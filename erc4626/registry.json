@@ -905,6 +905,26 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0x2DF6DfbD281F127a3690c87E4572076778a9EDa5": {
+      "asset": "0xe343167631d89B6Ffc58B88d6b7fB0228795491D",
+      "name": "WrappedAaveEthereum USDGErc4626Vault.md",
+      "summary": "safe",
+      "review": "./WrappedAaveEthereum USDGErc4626VaultReviewf3dd.md",
+      "warnings": [],
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x2df6dfbd281f127a3690c87e4572076778a9eda5",
+          "implementationReviewed": "0x487c2c53c0866f0a73ae317bd1a28f63adcd9ad1"
+        },
+        {
+          "entrypoint": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+          "implementationReviewed": "0x8147b99df7672a21809c9093e6f6ce1a60f119bd"
+        }
+      ],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   },
   "gnosis": {
