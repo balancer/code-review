@@ -13,6 +13,7 @@ export const rateProviderRateRevertRule = {
         inputDataType: [],
         outputDataType: [],
         idlJson: {},
+        abi: {},
         contractFunctionObject: {},
         outputIndex: '',
         funcSig: '',
@@ -23,6 +24,7 @@ export const rateProviderRateRevertRule = {
             period_unit: 'blocks',
             chain: 'ethereum',
         },
+        typeIds: [],
         fileName: 'some_file_name.json',
         operands: [],
         operator: '',
@@ -67,6 +69,9 @@ export const rateProviderRateRevertRule = {
                                 func_sig: 'getRate()',
                                 chain: 'base',
                                 var_name: 'getRateOutput',
+                                contract_function_object: null,
+                                idl_json: null,
+                                abi_string: null,
                             },
                             {
                                 type: 'json_processing',
@@ -75,8 +80,14 @@ export const rateProviderRateRevertRule = {
                                 var_name: 'is_null',
                             },
                             {
+                                type: 'python_processing',
+                                source_code: '',
+                                var_name: 'consecutive_revert_count',
+                                entry_point: 'my_function',
+                            },
+                            {
                                 type: 'json_processing',
-                                json_path: 'aXNfbnVsbCA+IDA=',
+                                json_path: 'Y29uc2VjdXRpdmVfcmV2ZXJ0X2NvdW50ID49IDEwMA==',
                                 json_path_engine: 'jsonata',
                                 var_name: 'condition_0',
                             },
@@ -92,6 +103,10 @@ export const rateProviderRateRevertRule = {
             },
         ],
         isReminderEnabled: false,
+        module: '',
+        moduleName: '',
+        typeArguments: [],
+        genericTypeParams: [],
         advanced: ['customDescription'],
         customDescription: 'On Base - the getRate() function reverted. contract 0xe1b1..4ddd',
         ruleString: '',
@@ -105,6 +120,8 @@ export const rateProviderRateRevertRule = {
         },
     ],
     remindersConfigurations: [],
+    endAlertsOption: 'sameAsStart',
+    endAlertsConfigurations: [],
     delay: 600,
     securitySuitIds: [1373],
     graphData: {
@@ -120,14 +137,19 @@ export const rateProviderRateRevertRule = {
                 target: '6c41586c-ced7-4db6-86cb-fe2f85f73f9e',
             },
             {
-                id: 'xy-edge__6c41586c-ced7-4db6-86cb-fe2f85f73f9e-6aecd52f-8b2f-49f5-9707-12952ef36557',
-                source: '6c41586c-ced7-4db6-86cb-fe2f85f73f9e',
-                target: '6aecd52f-8b2f-49f5-9707-12952ef36557',
-            },
-            {
                 id: 'xy-edge__6aecd52f-8b2f-49f5-9707-12952ef36557-b6d012b6-03e1-4295-9389-a2288fbfb211',
                 source: '6aecd52f-8b2f-49f5-9707-12952ef36557',
                 target: 'b6d012b6-03e1-4295-9389-a2288fbfb211',
+            },
+            {
+                id: 'xy-edge__6c41586c-ced7-4db6-86cb-fe2f85f73f9e-cf43c1f0-b099-4f21-af4c-4925c07d7ec5',
+                source: '6c41586c-ced7-4db6-86cb-fe2f85f73f9e',
+                target: 'cf43c1f0-b099-4f21-af4c-4925c07d7ec5',
+            },
+            {
+                id: 'xy-edge__cf43c1f0-b099-4f21-af4c-4925c07d7ec5-6aecd52f-8b2f-49f5-9707-12952ef36557',
+                source: 'cf43c1f0-b099-4f21-af4c-4925c07d7ec5',
+                target: '6aecd52f-8b2f-49f5-9707-12952ef36557',
             },
         ],
         nodes: [
@@ -141,7 +163,7 @@ export const rateProviderRateRevertRule = {
                 type: 'time-based-node',
                 measured: {
                     width: 158,
-                    height: 99,
+                    height: 107,
                 },
                 position: {
                     x: 1000,
@@ -180,7 +202,7 @@ export const rateProviderRateRevertRule = {
                 type: 'read-contract-node',
                 measured: {
                     width: 269,
-                    height: 286,
+                    height: 341,
                 },
                 position: {
                     x: 710,
@@ -198,7 +220,7 @@ export const rateProviderRateRevertRule = {
                 type: 'calculation-node',
                 measured: {
                     width: 269,
-                    height: 148,
+                    height: 157,
                 },
                 position: {
                     x: 1093,
@@ -208,17 +230,18 @@ export const rateProviderRateRevertRule = {
             {
                 id: '6aecd52f-8b2f-49f5-9707-12952ef36557',
                 data: {
-                    valueA: 'is_null',
-                    valueB: '0',
-                    condition: '>',
+                    valueA: 'consecutive_revert_count',
+                    valueB: '100',
+                    condition: 'gte',
                     description: '',
                     valueAMultiplier: 0,
                     valueBMultiplier: 0,
+                    valueCMultiplier: 0,
                 },
                 type: 'condition-node',
                 measured: {
                     width: 269,
-                    height: 84,
+                    height: 92,
                 },
                 position: {
                     x: 1223,
@@ -241,7 +264,27 @@ export const rateProviderRateRevertRule = {
                     y: 455,
                 },
             },
+            {
+                id: 'cf43c1f0-b099-4f21-af4c-4925c07d7ec5',
+                data: {
+                    alias: 'consecutive_revert_count',
+                    aliasType: 'number',
+                    entryPoint: 'my_function',
+                    pythonCode: '',
+                    description: '',
+                },
+                type: 'python-function-node',
+                measured: {
+                    width: 269,
+                    height: 111,
+                },
+                position: {
+                    x: 1414.49634369287,
+                    y: 149.54816042047526,
+                },
+            },
         ],
         description: '',
     },
+    mode: 'onchain',
 }
