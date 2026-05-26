@@ -2793,6 +2793,15 @@
           "implementationReviewed": "0x8147b99df7672a21809c9093e6f6ce1a60f119bd"
         }
       ]
+    },
+    "0x72F332dA42E21721Ba047B95f8f6fB1fd34340Be": {
+      "asset": "0xF17D6f98A5C6EAA99d149079984119e0A4EF6900",
+      "name": "SavingsUSGRateProvider.md",
+      "summary": "safe",
+      "review": "./SavingsUSGRateProviderReview565c.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   },
   "fantom": {},
