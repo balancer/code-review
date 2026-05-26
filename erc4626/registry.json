@@ -925,6 +925,17 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0xF17D6f98A5C6EAA99d149079984119e0A4EF6900": {
+      "asset": "0xB1c2Db5d6cA03FCe73dBd304d320bF76C55Ae1B1",
+      "name": "SavingsUSGErc4626Vault.md",
+      "summary": "safe",
+      "review": "./SavingsUSGErc4626VaultReview9758.md",
+      "warnings": [],
+      "upgradeableComponents": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   },
   "gnosis": {
