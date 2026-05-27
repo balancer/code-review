@@ -4386,6 +4386,32 @@
           "implementationReviewed": "0xb9d95339f7d7b0e85d3f83d3e3df1eae334325f2"
         }
       ]
+    },
+    "0x9abbAE37DB7d974dd37e91ec90163A9b5d914624": {
+      "asset": "0x6dd448d5cb73DC96788d5BE605DD3C5c83864a36",
+      "name": "ClearstarEarnUSDT0RateProvider.md",
+      "summary": "safe",
+      "review": "./ClearstarEarnUSDT0RateProviderReview7097.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xcf5552580fd364cdbbfcb5ae345f75674c59273a",
+          "implementationReviewed": "0x05de079a28386135e048369cdf0bc4d326d5ebdf"
+        },
+        {
+          "entrypoint": "0x9e9508a22ec4fca38807b7c0363b6065c5af6729",
+          "implementationReviewed": "0x05de079a28386135e048369cdf0bc4d326d5ebdf"
+        },
+        {
+          "entrypoint": "0x28fca2611d1dd8109c26f748cd2cf3bb4fc6d2cd",
+          "implementationReviewed": "0x05de079a28386135e048369cdf0bc4d326d5ebdf"
+        },
+        {
+          "entrypoint": "0x94f5c76a93f12057d73991ae5b4f70e9287b5b28",
+          "implementationReviewed": "0x05de079a28386135e048369cdf0bc4d326d5ebdf"
+        }
+      ]
     }
   },
   "plasma": {
