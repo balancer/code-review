@@ -2570,6 +2570,7 @@
         },
         {
           "entrypoint": "0x28fca2611d1dd8109c26f748cd2cf3bb4fc6d2cd",
+          "implementationReviewed": "0x05de079a28386135e048369cdf0bc4d326d5ebdf"
         }
       ],
       "canUseBufferForSwaps": true,
@@ -2601,6 +2602,7 @@
         },
         {
           "entrypoint": "0x94f5c76a93f12057d73991ae5b4f70e9287b5b28",
+          "implementationReviewed": "0x05de079a28386135e048369cdf0bc4d326d5ebdf"
         }
       ],
       "canUseBufferForSwaps": true,
