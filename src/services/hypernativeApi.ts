@@ -15,33 +15,6 @@ class HypernativeApi {
         this.clientSecret = clientSecret
     }
 
-    // Python source for the python_processing node in rate-revert agents.
-    // Tracks consecutive revert count in the account-wide KV store so that the
-    // alert only fires after 100 consecutive reverts.
-    private static buildRevertPythonSource(kvKey: string): string {
-        return `def my_function(extracted_variables):
-  """Your custom Python logic goes here.
-  The \`extracted_variables\` dictionary
-  contains variables from previous nodes.
-  The return value will be stored in the
-  variable defined below."""
-  is_null = extracted_variables["is_null"]
-  key = "${kvKey}"
-  base = "https://api.hypernative.xyz/custom-agents/values"
-
-  if is_null == 1:
-        existing = hn_api_get(f"{base}/{key}").json()["data"]
-        if existing is None:
-            count = 1
-        else:
-            count = int(existing) + 1
-  else:
-        count = 0
-
-  hn_api_put(f"{base}/{key}", {"value": str(count)})
-  return count`
-    }
-
     // Mapping of viem chain names to Hypernative chain strings
     private static chainNameToHypernativeKey: { [key: string]: string } = {
         'Arbitrum One': 'arbitrum',
@@ -116,11 +89,6 @@ class HypernativeApi {
         const customAgentRule = JSON.parse(JSON.stringify(rateProviderRateRevertRule))
         const chainKey = this.getValidChainNameFromViemChain(input.chain)
 
-        // Per-agent KV key for the persistent revert counter (account-wide store)
-        const kvKey = `revert_count_${chainKey}_${input.contractAddress.slice(-4).toLowerCase()}`
-        const pythonSource = HypernativeApi.buildRevertPythonSource(kvKey)
-        const pythonSourceB64 = Buffer.from(pythonSource, 'utf-8').toString('base64')
-
         // Modify the rule based on input
         customAgentRule.rule.chain = chainKey
         customAgentRule.rule.ruleString = input.ruleString
@@ -129,29 +97,31 @@ class HypernativeApi {
         customAgentRule.agentName = input.agentName
         customAgentRule.rule.customDescription = input.ruleString
 
+        // Update all three gcr extractions (block offsets 0, -25, -50) with the
+        // target contract address & chain.
         const extractions = customAgentRule.rule.conditions[1].operands[0].variable_extraction
-        // [3] gcr node
-        extractions[3].contract_address = input.contractAddress.toLowerCase()
-        extractions[3].chain = chainKey
-        // [5] python_processing node — inject per-agent source
-        const pythonExt = extractions.find((e: any) => e.type === 'python_processing')
-        if (pythonExt) pythonExt.source_code = pythonSourceB64
+        for (const ext of extractions) {
+            if (ext.type === 'gcr') {
+                ext.contract_address = input.contractAddress.toLowerCase()
+                ext.chain = chainKey
+            }
+        }
 
         customAgentRule.rule.conditions[1].operands[0].eval.custom_description = input.ruleString
-
         customAgentRule.rule.time_based_trigger.chain = chainKey
 
-        // Look up graph nodes by type so positional shifts don't break the wiring
-        const nodesByType: Record<string, any> = {}
+        // Update graph nodes — there are 3 read-contract-nodes (one per sample block).
         for (const node of customAgentRule.graphData.nodes) {
-            nodesByType[node.type] = node
+            if (node.type === 'time-based-node') {
+                node.data.chain = chainKey
+            } else if (node.type === 'read-contract-node') {
+                node.data.chain = chainKey
+                node.data.contractAddress = input.contractAddress
+                node.data.contractAddressAlias = input.contractAddress
+            } else if (node.type === 'send-alert-node') {
+                node.data.message = input.ruleString
+            }
         }
-        nodesByType['time-based-node'].data.chain = chainKey
-        nodesByType['read-contract-node'].data.chain = chainKey
-        nodesByType['read-contract-node'].data.contractAddress = input.contractAddress
-        nodesByType['read-contract-node'].data.contractAddressAlias = input.contractAddress
-        nodesByType['send-alert-node'].data.message = input.ruleString
-        nodesByType['python-function-node'].data.pythonCode = pythonSourceB64
 
         const requestBody = customAgentRule
 

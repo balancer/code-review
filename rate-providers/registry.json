@@ -4396,6 +4396,19 @@
       "factory": "",
       "upgradeableComponents": [
         {
+          "entrypoint": "0x2521f31a8996b61f69159583067870f3c46503a1",
+          "implementationReviewed": "0x05de079a28386135e048369cdf0bc4d326d5ebdf"
+        },
+        {
+          "entrypoint": "0xc200aab602cd7046389b5c8fb088884323f8dd0f",
+          "entrypoint": "0x83c34784e355ad2670db77623b845273844fa480",
+          "implementationReviewed": "0x05de079a28386135e048369cdf0bc4d326d5ebdf"
+        },
+        {
+          "entrypoint": "0xdf23a06c1332aa5575b5d7c6a90d98356235b83d",
+          "implementationReviewed": "0x05de079a28386135e048369cdf0bc4d326d5ebdf"
+        },
+        {
           "entrypoint": "0xcf5552580fd364cdbbfcb5ae345f75674c59273a",
           "implementationReviewed": "0x05de079a28386135e048369cdf0bc4d326d5ebdf"
         },
@@ -4409,6 +4422,81 @@
         },
         {
           "entrypoint": "0x94f5c76a93f12057d73991ae5b4f70e9287b5b28",
+          "entrypoint": "0xf9bb65e113418292d1a3555515fbd64637a0be18",
+          "entrypoint": "0x09a6ad87eff280755bdf3e2c863358d27d81262d",
+          "implementationReviewed": "0x05de079a28386135e048369cdf0bc4d326d5ebdf"
+        }
+      ]
+    },
+    "0x2562850bdbbED7E1E50d87eF171Ca87Dc1089764": {
+      "asset": "0xF868A2B30854FE13e26F7AB7a92609cCb6b9c0e1",
+      "name": "ClearstarEarnUSDCRateProvider.md",
+      "summary": "safe",
+      "review": "./ClearstarEarnUSDCRateProviderReview6fd1.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x2521f31a8996b61f69159583067870f3c46503a1",
+          "implementationReviewed": "0x05de079a28386135e048369cdf0bc4d326d5ebdf"
+        },
+        {
+          "entrypoint": "0xc200aab602cd7046389b5c8fb088884323f8dd0f",
+          "entrypoint": "0x83c34784e355ad2670db77623b845273844fa480",
+          "implementationReviewed": "0x05de079a28386135e048369cdf0bc4d326d5ebdf"
+        },
+        {
+          "entrypoint": "0xdf23a06c1332aa5575b5d7c6a90d98356235b83d",
+          "implementationReviewed": "0x05de079a28386135e048369cdf0bc4d326d5ebdf"
+        },
+        {
+          "entrypoint": "0xcf5552580fd364cdbbfcb5ae345f75674c59273a",
+          "implementationReviewed": "0x05de079a28386135e048369cdf0bc4d326d5ebdf"
+        },
+        {
+          "entrypoint": "0x9e9508a22ec4fca38807b7c0363b6065c5af6729",
+          "implementationReviewed": "0x05de079a28386135e048369cdf0bc4d326d5ebdf"
+        },
+        {
+          "entrypoint": "0x28fca2611d1dd8109c26f748cd2cf3bb4fc6d2cd",
+          "implementationReviewed": "0x05de079a28386135e048369cdf0bc4d326d5ebdf"
+        },
+        {
+          "entrypoint": "0x94f5c76a93f12057d73991ae5b4f70e9287b5b28",
+          "entrypoint": "0xf9bb65e113418292d1a3555515fbd64637a0be18",
+          "entrypoint": "0x09a6ad87eff280755bdf3e2c863358d27d81262d",
+          "implementationReviewed": "0x05de079a28386135e048369cdf0bc4d326d5ebdf"
+        }
+      ]
+    },
+    "0x8a8C6Bb9d435D83e93E0953059AE3F274556c24a": {
+      "asset": "0xF38eA9DE758a8F6be08B6E65bc0Ff2f3e3aB741b",
+      "name": "ClearstarEarnUSDHRateProvider.md",
+      "summary": "safe",
+      "review": "./ClearstarEarnUSDHRateProviderReviewaffb.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x2521f31a8996b61f69159583067870f3c46503a1",
+          "implementationReviewed": "0x05de079a28386135e048369cdf0bc4d326d5ebdf"
+        },
+        {
+          "entrypoint": "0xc200aab602cd7046389b5c8fb088884323f8dd0f",
+          "entrypoint": "0x83c34784e355ad2670db77623b845273844fa480",
+          "implementationReviewed": "0x05de079a28386135e048369cdf0bc4d326d5ebdf"
+        },
+        {
+          "entrypoint": "0xdf23a06c1332aa5575b5d7c6a90d98356235b83d",
+          "implementationReviewed": "0x05de079a28386135e048369cdf0bc4d326d5ebdf"
+        },
+        {
+          "entrypoint": "0xcf5552580fd364cdbbfcb5ae345f75674c59273a",
+          "implementationReviewed": "0x05de079a28386135e048369cdf0bc4d326d5ebdf"
+        },
+        {
+          "entrypoint": "0xf9bb65e113418292d1a3555515fbd64637a0be18",
+          "entrypoint": "0x09a6ad87eff280755bdf3e2c863358d27d81262d",
           "implementationReviewed": "0x05de079a28386135e048369cdf0bc4d326d5ebdf"
         }
       ]
