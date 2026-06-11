@@ -3019,6 +3019,22 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0xE1BcA19baA63894D374578320551633320436523": {
+      "asset": "0x754704Bc059F8C67012fEd69BC8A327a5aafb603",
+      "name": "ClearstarEarnUSDCErc4626Vault.md",
+      "summary": "safe",
+      "review": "./ClearstarEarnUSDCErc4626VaultReview59d5.md",
+      "warnings": [],
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x1905eddf5943ef6c92ccf1469bd40fc2cb4a77b0",
+          "implementationReviewed": "0xef17750d3a162e28a302e266c474ff8989d60ecd"
+        }
+      ],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   }
 }

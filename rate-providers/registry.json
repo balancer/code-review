@@ -4400,7 +4400,6 @@
           "implementationReviewed": "0x05de079a28386135e048369cdf0bc4d326d5ebdf"
         },
         {
-          "entrypoint": "0xc200aab602cd7046389b5c8fb088884323f8dd0f",
           "entrypoint": "0x83c34784e355ad2670db77623b845273844fa480",
           "implementationReviewed": "0x05de079a28386135e048369cdf0bc4d326d5ebdf"
         },
@@ -4421,8 +4420,6 @@
           "implementationReviewed": "0x05de079a28386135e048369cdf0bc4d326d5ebdf"
         },
         {
-          "entrypoint": "0x94f5c76a93f12057d73991ae5b4f70e9287b5b28",
-          "entrypoint": "0xf9bb65e113418292d1a3555515fbd64637a0be18",
           "entrypoint": "0x09a6ad87eff280755bdf3e2c863358d27d81262d",
           "implementationReviewed": "0x05de079a28386135e048369cdf0bc4d326d5ebdf"
         }
@@ -4441,7 +4438,6 @@
           "implementationReviewed": "0x05de079a28386135e048369cdf0bc4d326d5ebdf"
         },
         {
-          "entrypoint": "0xc200aab602cd7046389b5c8fb088884323f8dd0f",
           "entrypoint": "0x83c34784e355ad2670db77623b845273844fa480",
           "implementationReviewed": "0x05de079a28386135e048369cdf0bc4d326d5ebdf"
         },
@@ -4462,8 +4458,6 @@
           "implementationReviewed": "0x05de079a28386135e048369cdf0bc4d326d5ebdf"
         },
         {
-          "entrypoint": "0x94f5c76a93f12057d73991ae5b4f70e9287b5b28",
-          "entrypoint": "0xf9bb65e113418292d1a3555515fbd64637a0be18",
           "entrypoint": "0x09a6ad87eff280755bdf3e2c863358d27d81262d",
           "implementationReviewed": "0x05de079a28386135e048369cdf0bc4d326d5ebdf"
         }
@@ -4482,7 +4476,6 @@
           "implementationReviewed": "0x05de079a28386135e048369cdf0bc4d326d5ebdf"
         },
         {
-          "entrypoint": "0xc200aab602cd7046389b5c8fb088884323f8dd0f",
           "entrypoint": "0x83c34784e355ad2670db77623b845273844fa480",
           "implementationReviewed": "0x05de079a28386135e048369cdf0bc4d326d5ebdf"
         },
@@ -4495,7 +4488,6 @@
           "implementationReviewed": "0x05de079a28386135e048369cdf0bc4d326d5ebdf"
         },
         {
-          "entrypoint": "0xf9bb65e113418292d1a3555515fbd64637a0be18",
           "entrypoint": "0x09a6ad87eff280755bdf3e2c863358d27d81262d",
           "implementationReviewed": "0x05de079a28386135e048369cdf0bc4d326d5ebdf"
         }
@@ -5045,6 +5037,20 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0x72203C536f9Aba952F34dA5cE9d07D972CBC06e6": {
+      "asset": "0xE1BcA19baA63894D374578320551633320436523",
+      "name": "ClearstarEarnUSDCRateProvider.md",
+      "summary": "safe",
+      "review": "./ClearstarEarnUSDCRateProviderReviewfd29.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x1905eddf5943ef6c92ccf1469bd40fc2cb4a77b0",
+          "implementationReviewed": "0xef17750d3a162e28a302e266c474ff8989d60ecd"
+        }
+      ]
     }
   }
 }
