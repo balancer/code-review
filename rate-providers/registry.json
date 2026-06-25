@@ -2802,6 +2802,24 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0x3888Bb14cae8C313F5Bbd5B03Ae272D06868726f": {
+      "asset": "0x19ebb35279A16207Ec4ba82799CC64715065F7F6",
+      "name": "HastraPRIMERateProvider.md",
+      "summary": "safe",
+      "review": "./HastraPRIMERateProviderReviewab36.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xdf4ab20fa7752be52e41e42f1fd667f37964d6a3",
+          "implementationReviewed": "0xbc6023cb49f8e8ca6cef563d5fd97ba4c6a5d937"
+        },
+        {
+          "entrypoint": "0x19ebb35279a16207ec4ba82799cc64715065f7f6",
+          "implementationReviewed": "0x90fd843c68db38e2de0618acbb39341cba5a5abd"
+        }
+      ]
     }
   },
   "fantom": {},
