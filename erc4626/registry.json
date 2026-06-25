@@ -936,6 +936,26 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0x19ebb35279A16207Ec4ba82799CC64715065F7F6": {
+      "asset": "0x6aD038cA6C04e885630851278ca0a856Ad9a66Cc",
+      "name": "HastraPRIMEErc4626Vault.md",
+      "summary": "safe",
+      "review": "./HastraPRIMEErc4626VaultReview51ba.md",
+      "warnings": [],
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xdf4ab20fa7752be52e41e42f1fd667f37964d6a3",
+          "implementationReviewed": "0xbc6023cb49f8e8ca6cef563d5fd97ba4c6a5d937"
+        },
+        {
+          "entrypoint": "0x19ebb35279a16207ec4ba82799cc64715065f7f6",
+          "implementationReviewed": "0x90fd843c68db38e2de0618acbb39341cba5a5abd"
+        }
+      ],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   },
   "gnosis": {
