@@ -2820,6 +2820,20 @@
           "implementationReviewed": "0x90fd843c68db38e2de0618acbb39341cba5a5abd"
         }
       ]
+    },
+    "0x9Ba7cB68fA96D022E20C3Dd2DD26b7Bf3e42fC1b": {
+      "asset": "0x098697bA3Fee4eA76294C5d6A466a4e3b3E95FE6",
+      "name": "USPYieldOptimized StablecoinRateProvider.md",
+      "summary": "safe",
+      "review": "./USPYieldOptimized StablecoinRateProviderReview35b8.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x433471901ba1a8bde764e8421790c7d9bab33552",
+          "implementationReviewed": "0x62c49b6138d9926fcf86bb15b66193fcc9004470"
+        }
+      ]
     }
   },
   "fantom": {},
