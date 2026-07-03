@@ -2821,6 +2821,20 @@
         }
       ]
     },
+    "0x9Ba7cB68fA96D022E20C3Dd2DD26b7Bf3e42fC1b": {
+      "asset": "0x098697bA3Fee4eA76294C5d6A466a4e3b3E95FE6",
+      "name": "USPYieldOptimized StablecoinRateProvider.md",
+      "summary": "safe",
+      "review": "./USPYieldOptimized StablecoinRateProviderReview35b8.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x433471901ba1a8bde764e8421790c7d9bab33552",
+          "implementationReviewed": "0x62c49b6138d9926fcf86bb15b66193fcc9004470"
+        }
+      ]
+    },
     "0x1892Aba528652B7C3Bbd356363ba1023687c096e": {
       "asset": "0x827Ce7E8e35861D9Ac7fE002755767b695A5594a",
       "name": "MoriniStockMarketTRBasisTradeVaultRateProvider.md",
@@ -2830,6 +2844,8 @@
       "factory": "",
       "upgradeableComponents": [
         {
+          "entrypoint": "0x433471901ba1a8bde764e8421790c7d9bab33552",
+          "implementationReviewed": "0x62c49b6138d9926fcf86bb15b66193fcc9004470"
           "entrypoint": "0x1c7bec0281080c0a4f85e55151191af27ec69940",
           "implementationReviewed": "0xe6e024d77bded06b6b38593886f5441dfe020923"
         }
