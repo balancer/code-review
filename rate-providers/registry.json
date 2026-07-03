@@ -2846,6 +2846,8 @@
         {
           "entrypoint": "0x433471901ba1a8bde764e8421790c7d9bab33552",
           "implementationReviewed": "0x62c49b6138d9926fcf86bb15b66193fcc9004470"
+        },
+        {
           "entrypoint": "0x1c7bec0281080c0a4f85e55151191af27ec69940",
           "implementationReviewed": "0xe6e024d77bded06b6b38593886f5441dfe020923"
         }
