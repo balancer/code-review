@@ -2853,21 +2853,21 @@
         }
       ]
     },
-    "0x46C966f8f31DD512f830B30a00bcad36F9C86318": {
-      "asset": "0x58C14a5E061c9bC6926c5b853445290F296C2F7B",
-      "name": "WrappedAaveCore GHORateProvider.md",
+    "0x0E6013eb5540dbF81e19Fb76674CeC59b2a242a4": {
+      "asset": "0x531E90a2376902DE8915789Fcc1075e3B0c153E7",
+      "name": "WrappedAaveCore USDCRateProvider.md",
       "summary": "safe",
-      "review": "./WrappedAaveCore GHORateProviderReviewb573.md",
+      "review": "./WrappedAaveCore USDCRateProviderReview0b4b.md",
       "warnings": [],
       "factory": "",
       "upgradeableComponents": [
         {
-          "entrypoint": "0x58c14a5e061c9bc6926c5b853445290f296c2f7b",
-          "implementationReviewed": "0xdd0927be9d412ae8d44b49c53c034f5e5eea1cfa"
-        },
-        {
           "entrypoint": "0xcca852bc40e560adc3b1cc58ca5b55638ce826c9",
           "implementationReviewed": "0xfe89fd96f270ac3c0f11921af0390dbb1340f704"
+        },
+        {
+          "entrypoint": "0x531e90a2376902de8915789fcc1075e3b0c153e7",
+          "implementationReviewed": "0x1ee96dcb226cccf609c80dc394badcbf47d05326"
         }
       ]
     }

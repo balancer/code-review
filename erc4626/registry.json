@@ -957,11 +957,11 @@
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
     },
-    "0x58C14a5E061c9bC6926c5b853445290F296C2F7B": {
-      "asset": "0x40D16FC0246aD3160Ccc09B8D0D3A2cD28aE6C2f",
-      "name": "WrappedAaveCore GHOErc4626Vault.md",
+    "0x531E90a2376902DE8915789Fcc1075e3B0c153E7": {
+      "asset": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      "name": "WrappedAaveCore USDCErc4626Vault.md",
       "summary": "safe",
-      "review": "./WrappedAaveCore GHOErc4626VaultReview89ec.md",
+      "review": "./WrappedAaveCore USDCErc4626VaultReview5a17.md",
       "warnings": [],
       "upgradeableComponents": [
         {
@@ -969,8 +969,8 @@
           "implementationReviewed": "0xfe89fd96f270ac3c0f11921af0390dbb1340f704"
         },
         {
-          "entrypoint": "0x58c14a5e061c9bc6926c5b853445290f296c2f7b",
-          "implementationReviewed": "0xdd0927be9d412ae8d44b49c53c034f5e5eea1cfa"
+          "entrypoint": "0x531e90a2376902de8915789fcc1075e3b0c153e7",
+          "implementationReviewed": "0x1ee96dcb226cccf609c80dc394badcbf47d05326"
         }
       ],
       "canUseBufferForSwaps": true,
