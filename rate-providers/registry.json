@@ -2853,21 +2853,21 @@
         }
       ]
     },
-    "0x03905d9877f5aF95B520AcB33a2733BAF26D87dd": {
-      "asset": "0x5eC44a70F309854fe04d495cFE1B5dA63DD1cc73",
-      "name": "WrappedAaveCore USDTRateProvider.md",
+    "0x46C966f8f31DD512f830B30a00bcad36F9C86318": {
+      "asset": "0x58C14a5E061c9bC6926c5b853445290F296C2F7B",
+      "name": "WrappedAaveCore GHORateProvider.md",
       "summary": "safe",
-      "review": "./WrappedAaveCore USDTRateProviderReviewf5cc.md",
+      "review": "./WrappedAaveCore GHORateProviderReviewb573.md",
       "warnings": [],
       "factory": "",
       "upgradeableComponents": [
         {
-          "entrypoint": "0xcca852bc40e560adc3b1cc58ca5b55638ce826c9",
-          "implementationReviewed": "0xfe89fd96f270ac3c0f11921af0390dbb1340f704"
+          "entrypoint": "0x58c14a5e061c9bc6926c5b853445290f296c2f7b",
+          "implementationReviewed": "0xdd0927be9d412ae8d44b49c53c034f5e5eea1cfa"
         },
         {
-          "entrypoint": "0x5ec44a70f309854fe04d495cfe1b5da63dd1cc73",
-          "implementationReviewed": "0x03d5f18fdf82c2a9ea32a7a731e18b2544f6ebe8"
+          "entrypoint": "0xcca852bc40e560adc3b1cc58ca5b55638ce826c9",
+          "implementationReviewed": "0xfe89fd96f270ac3c0f11921af0390dbb1340f704"
         }
       ]
     }
