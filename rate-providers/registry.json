@@ -2852,6 +2852,24 @@
           "implementationReviewed": "0xe6e024d77bded06b6b38593886f5441dfe020923"
         }
       ]
+    },
+    "0x03905d9877f5aF95B520AcB33a2733BAF26D87dd": {
+      "asset": "0x5eC44a70F309854fe04d495cFE1B5dA63DD1cc73",
+      "name": "WrappedAaveCore USDTRateProvider.md",
+      "summary": "safe",
+      "review": "./WrappedAaveCore USDTRateProviderReviewf5cc.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xcca852bc40e560adc3b1cc58ca5b55638ce826c9",
+          "implementationReviewed": "0xfe89fd96f270ac3c0f11921af0390dbb1340f704"
+        },
+        {
+          "entrypoint": "0x5ec44a70f309854fe04d495cfe1b5da63dd1cc73",
+          "implementationReviewed": "0x03d5f18fdf82c2a9ea32a7a731e18b2544f6ebe8"
+        }
+      ]
     }
   },
   "fantom": {},
