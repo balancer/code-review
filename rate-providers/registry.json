@@ -5137,6 +5137,60 @@
           "implementationReviewed": "0xbd940fc427878eaa998f0713a16fed1cb5e892b1"
         }
       ]
+    },
+    "0x09425A7c3D25A0e743F5242f2769f776d5b70849": {
+      "asset": "0xAC2435E3C25e8246870D33ce0a26988A46d5DB68",
+      "name": "WrappedAaveCore USDGRateProvider.md",
+      "summary": "safe",
+      "review": "./WrappedAaveCore USDGRateProviderReviewe99c.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xcca852bc40e560adc3b1cc58ca5b55638ce826c9",
+          "implementationReviewed": "0xfe89fd96f270ac3c0f11921af0390dbb1340f704"
+        },
+        {
+          "entrypoint": "0xac2435e3c25e8246870d33ce0a26988a46d5db68",
+          "implementationReviewed": "0x992266a94dff038ebc0e132c65c4536594326a21"
+        }
+      ]
+    },
+    "0x03905d9877f5aF95B520AcB33a2733BAF26D87dd": {
+      "asset": "0x5eC44a70F309854fe04d495cFE1B5dA63DD1cc73",
+      "name": "WrappedAaveCore USDTRateProvider.md",
+      "summary": "safe",
+      "review": "./WrappedAaveCore USDTRateProviderReviewf5cc.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xcca852bc40e560adc3b1cc58ca5b55638ce826c9",
+          "implementationReviewed": "0xfe89fd96f270ac3c0f11921af0390dbb1340f704"
+        },
+        {
+          "entrypoint": "0x5ec44a70f309854fe04d495cfe1b5da63dd1cc73",
+          "implementationReviewed": "0x03d5f18fdf82c2a9ea32a7a731e18b2544f6ebe8"
+        }
+      ]
+    },
+    "0x0E6013eb5540dbF81e19Fb76674CeC59b2a242a4": {
+      "asset": "0x531E90a2376902DE8915789Fcc1075e3B0c153E7",
+      "name": "WrappedAaveCore USDCRateProvider.md",
+      "summary": "safe",
+      "review": "./WrappedAaveCore USDCRateProviderReview0b4b.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xcca852bc40e560adc3b1cc58ca5b55638ce826c9",
+          "implementationReviewed": "0xfe89fd96f270ac3c0f11921af0390dbb1340f704"
+        },
+        {
+          "entrypoint": "0x531e90a2376902de8915789fcc1075e3b0c153e7",
+          "implementationReviewed": "0x1ee96dcb226cccf609c80dc394badcbf47d05326"
+        }
+      ]
     }
   }
 }
