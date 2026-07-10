@@ -976,6 +976,66 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0x58C14a5E061c9bC6926c5b853445290F296C2F7B": {
+      "asset": "0x40D16FC0246aD3160Ccc09B8D0D3A2cD28aE6C2f",
+      "name": "WrappedAaveCore GHOErc4626Vault.md",
+      "summary": "safe",
+      "review": "./WrappedAaveCore GHOErc4626VaultReview89ec.md",
+      "warnings": [],
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xcca852bc40e560adc3b1cc58ca5b55638ce826c9",
+          "implementationReviewed": "0xfe89fd96f270ac3c0f11921af0390dbb1340f704"
+        },
+        {
+          "entrypoint": "0x58c14a5e061c9bc6926c5b853445290f296c2f7b",
+          "implementationReviewed": "0xdd0927be9d412ae8d44b49c53c034f5e5eea1cfa"
+        }
+      ],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
+    "0x5eC44a70F309854fe04d495cFE1B5dA63DD1cc73": {
+      "asset": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "name": "WrappedAaveCore USDTErc4626Vault.md",
+      "summary": "safe",
+      "review": "./WrappedAaveCore USDTErc4626VaultReviewe83b.md",
+      "warnings": [],
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x5ec44a70f309854fe04d495cfe1b5da63dd1cc73",
+          "implementationReviewed": "0x03d5f18fdf82c2a9ea32a7a731e18b2544f6ebe8"
+        },
+        {
+          "entrypoint": "0xcca852bc40e560adc3b1cc58ca5b55638ce826c9",
+          "implementationReviewed": "0xfe89fd96f270ac3c0f11921af0390dbb1340f704"
+        }
+      ],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
+    "0xAC2435E3C25e8246870D33ce0a26988A46d5DB68": {
+      "asset": "0xe343167631d89B6Ffc58B88d6b7fB0228795491D",
+      "name": "WrappedAaveCore USDGErc4626Vault.md",
+      "summary": "safe",
+      "review": "./WrappedAaveCore USDGErc4626VaultReview2f2a.md",
+      "warnings": [],
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xcca852bc40e560adc3b1cc58ca5b55638ce826c9",
+          "implementationReviewed": "0xfe89fd96f270ac3c0f11921af0390dbb1340f704"
+        },
+        {
+          "entrypoint": "0xac2435e3c25e8246870d33ce0a26988a46d5db68",
+          "implementationReviewed": "0x992266a94dff038ebc0e132c65c4536594326a21"
+        }
+      ],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   },
   "gnosis": {
@@ -3093,66 +3153,6 @@
         }
       ],
       "canUseBufferForSwaps": false,
-      "useUnderlyingForAddRemove": true,
-      "useWrappedForAddRemove": true
-    },
-    "0x531E90a2376902DE8915789Fcc1075e3B0c153E7": {
-      "asset": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
-      "name": "WrappedAaveCore USDCErc4626Vault.md",
-      "summary": "safe",
-      "review": "./WrappedAaveCore USDCErc4626VaultReview5a17.md",
-      "warnings": [],
-      "upgradeableComponents": [
-        {
-          "entrypoint": "0xcca852bc40e560adc3b1cc58ca5b55638ce826c9",
-          "implementationReviewed": "0xfe89fd96f270ac3c0f11921af0390dbb1340f704"
-        },
-        {
-          "entrypoint": "0x531e90a2376902de8915789fcc1075e3b0c153e7",
-          "implementationReviewed": "0x1ee96dcb226cccf609c80dc394badcbf47d05326"
-        }
-      ],
-      "canUseBufferForSwaps": true,
-      "useUnderlyingForAddRemove": true,
-      "useWrappedForAddRemove": true
-    },
-    "0x5eC44a70F309854fe04d495cFE1B5dA63DD1cc73": {
-      "asset": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
-      "name": "WrappedAaveCore USDTErc4626Vault.md",
-      "summary": "safe",
-      "review": "./WrappedAaveCore USDTErc4626VaultReviewe83b.md",
-      "warnings": [],
-      "upgradeableComponents": [
-        {
-          "entrypoint": "0x5ec44a70f309854fe04d495cfe1b5da63dd1cc73",
-          "implementationReviewed": "0x03d5f18fdf82c2a9ea32a7a731e18b2544f6ebe8"
-        },
-        {
-          "entrypoint": "0xcca852bc40e560adc3b1cc58ca5b55638ce826c9",
-          "implementationReviewed": "0xfe89fd96f270ac3c0f11921af0390dbb1340f704"
-        }
-      ],
-      "canUseBufferForSwaps": true,
-      "useUnderlyingForAddRemove": true,
-      "useWrappedForAddRemove": true
-    },
-    "0xAC2435E3C25e8246870D33ce0a26988A46d5DB68": {
-      "asset": "0xe343167631d89B6Ffc58B88d6b7fB0228795491D",
-      "name": "WrappedAaveCore USDGErc4626Vault.md",
-      "summary": "safe",
-      "review": "./WrappedAaveCore USDGErc4626VaultReview2f2a.md",
-      "warnings": [],
-      "upgradeableComponents": [
-        {
-          "entrypoint": "0xcca852bc40e560adc3b1cc58ca5b55638ce826c9",
-          "implementationReviewed": "0xfe89fd96f270ac3c0f11921af0390dbb1340f704"
-        },
-        {
-          "entrypoint": "0xac2435e3c25e8246870d33ce0a26988a46d5db68",
-          "implementationReviewed": "0x992266a94dff038ebc0e132c65c4536594326a21"
-        }
-      ],
-      "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
     }
