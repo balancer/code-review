@@ -2014,6 +2014,30 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0x01D7f7B7CE2123192fECC20bd1caF3e4d9e4C10D": {
+      "asset": "0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E",
+      "name": "WrappedAaveCore USDCErc4626Vault.md",
+      "summary": "safe",
+      "review": "./WrappedAaveCore USDCErc4626VaultReview4ffa.md",
+      "warnings": [],
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x01d7f7b7ce2123192fecc20bd1caf3e4d9e4c10d",
+          "implementationReviewed": "0x5fc83e3304ad94d085a2dc3c658b49065879c811"
+        },
+        {
+          "entrypoint": "0xd07369fae4a5bb13c9ce446b052c7867b1abdf6e",
+          "implementationReviewed": "0xfacde4e3f0368e15f767d9e2db0b67817af52c1c"
+        },
+        {
+          "entrypoint": "0x01D7f7B7CE2123192fECC20bd1caF3e4d9e4C10D",
+          "implementationReviewed": "0x5fc83e3304ad94d085a2dc3c658b49065879c811"
+        }
+      ],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   },
   "sepolia": {
