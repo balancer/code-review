@@ -2015,6 +2015,30 @@
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
     },
+    "0x2E4BA06fF97E10D09FA4F5a270e97301eae729A9": {
+      "asset": "0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7",
+      "name": "WrappedAaveCore USDTErc4626Vault.md",
+      "summary": "safe",
+      "review": "./WrappedAaveCore USDTErc4626VaultReview7330.md",
+      "warnings": [],
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0xd07369fae4a5bb13c9ce446b052c7867b1abdf6e",
+          "implementationReviewed": "0xfacde4e3f0368e15f767d9e2db0b67817af52c1c"
+        },
+        {
+          "entrypoint": "0x2e4ba06ff97e10d09fa4f5a270e97301eae729a9",
+          "implementationReviewed": "0xe5e48faca240ff94e7c923b0b08c138e6a2ed950"
+        },
+        {
+          "entrypoint": "0x2E4BA06fF97E10D09FA4F5a270e97301eae729A9",
+          "implementationReviewed": "0xe5e48faca240ff94e7c923b0b08c138e6a2ed950"
+        }
+      ],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
     "0x01D7f7B7CE2123192fECC20bd1caF3e4d9e4C10D": {
       "asset": "0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E",
       "name": "WrappedAaveCore USDCErc4626Vault.md",
