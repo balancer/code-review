@@ -1080,6 +1080,24 @@
           "implementationReviewed": "0xfacde4e3f0368e15f767d9e2db0b67817af52c1c"
         }
       ]
+    },
+    "0xa80cF9898257D221FdF889Fc37Fb322b9a3d145c": {
+      "asset": "0x7b538a1840EAf2Ed92EEB67eE744AE627335e201",
+      "name": "WrappedAaveCore EURCRateProvider.md",
+      "summary": "safe",
+      "review": "./WrappedAaveCore EURCRateProviderReview0d03.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x7b538a1840eaf2ed92eeb67ee744ae627335e201",
+          "implementationReviewed": "0x63deb2d293c87c9a19623ba656ba59f4f7280025"
+        },
+        {
+          "entrypoint": "0xd07369fae4a5bb13c9ce446b052c7867b1abdf6e",
+          "implementationReviewed": "0xfacde4e3f0368e15f767d9e2db0b67817af52c1c"
+        }
+      ]
     }
   },
   "base": {
