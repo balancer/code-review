@@ -115,7 +115,7 @@ export const rateProviderRateRevertRule = {
                             },
                             {
                                 type: 'json_processing',
-                                json_path: 'Z2V0UmF0ZU91dHB1dD1udWxsID8gMTowZ2V0UmF0ZU91dHB1dF8xPW51bGwgPyAxOjBnZXRSYXRlT3V0cHV0XzI9bnVsbCA/IDE6MA==',
+                                json_path: 'Z2V0UmF0ZU91dHB1dCA9IG51bGwgYW5kIGdldFJhdGVPdXRwdXRfMSA9IG51bGwgYW5kIGdldFJhdGVPdXRwdXRfMiA9IG51bGw=',
                                 var_name: 'is_null',
                                 json_path_engine: 'jsonata',
                             },
@@ -255,7 +255,7 @@ export const rateProviderRateRevertRule = {
                 id: '6c41586c-ced7-4db6-86cb-fe2f85f73f9e',
                 data: {
                     alias: 'is_null',
-                    formula: '{{getRateOutput}}=null ? 1:0\n{{getRateOutput_1}}=null ? 1:0\n{{getRateOutput_2}}=null ? 1:0',
+                    formula: '{{getRateOutput}} = null and {{getRateOutput_1}} = null and {{getRateOutput_2}} = null',
                     aliasType: 'boolean',
                     description: '',
                 },
