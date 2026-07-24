@@ -5362,7 +5362,7 @@
           "implementationReviewed": "0xbd940fc427878eaa998f0713a16fed1cb5e892b1"
         }
       ]
-    }
+    },
     "0x9a6a74291f75594414417c92B5b97ac69b3B1bdE": {
       "asset": "0x4eC854a6fDF52Eb64F8CabF87FafD3B1f1743a00",
       "name": "WrappedAaveMonad sUSDeRateProvider.md",
