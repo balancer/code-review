@@ -38,8 +38,31 @@ const chainNameToRegistryKey: { [key: string]: string } = {
 }
 
 type RateProviderWarnings = {
-    isMarketRate: boolean
+    isMarketRate?: boolean
+    // The price source stops publishing on a schedule rather than updating continuously, either because it
+    // follows a venue calendar or because it publishes a periodic valuation. Determined from the source's
+    // publication record, not from the asset class: a tokenized real-world asset may publish continuously.
+    hasPublicationGaps?: boolean
 }
+
+// Emitted in place of the freshness notes, which cannot be determined on chain. It is deliberately not a
+// checkbox: an unchecked box in this checklist reads as "this red flag does not apply", which would assert
+// that freshness was reviewed when nobody had looked at it.
+const FRESHNESS_PLACEHOLDER =
+    '\\<to be completed: where freshness is enforced (Rate Provider/source contract/nowhere), the maximum age if any, and the expected update cadence\\>'
+
+// Follow-up questions emitted only when the source has scheduled publication gaps. A maximum age cannot
+// answer these, because no single bound both survives a routine gap and catches a failure between
+// publications. The decisive questions are what the value does while the source is silent, and how far it
+// actually moved: a gap only matters when the value behind it can move meaningfully while nobody publishes.
+const PUBLICATION_GAPS_DETAIL = `    - publication pattern: \\<to be completed\\>
+    - longest routine gap: \\<to be completed: measure it on chain rather than assuming\\>
+    - is the published value a live market quote, or a periodic valuation? \\<to be completed\\>
+    - while the source is silent, can the value move discontinuously? \\<to be completed: this decides whether the gap is a risk or just how the source works\\>
+    - how far did the value actually move across the longest gap? \\<to be completed: record the movement next to the gap; a long gap on a value that barely moves is not the same risk as a short gap on one that does\\>
+    - does the source publish a market state or session field? \\<to be completed: name the field and its values, or NO\\>
+    - what does \\\`getRate\\\` return during a gap? \\<to be completed: the last published value served as though current, or reverts\\>
+`
 
 export async function writeReviewAndUpdateRegistry(
     rateProviderAddress: Address,
@@ -70,6 +93,7 @@ export async function writeReviewAndUpdateRegistry(
         isScale18: `${rateInfo.scale18 ? 'x' : ' '}`,
         isUpgradeable: `${upgradeData.map((c) => c.address).includes(rateProviderAddress) ? 'x' : ' '}`,
         hasUpgradeableElements: `${upgradeData.filter((contract) => contract.address !== rateProviderAddress).length > 0 ? 'x' : ' '}`,
+        hasPublicationGaps: `${warnings?.hasPublicationGaps ? 'x' : ' '}`,
         isUsable: `${hasInterfaceImplemented && rateInfo.scale18 ? 'USABLE' : 'UNUSABLE'}`,
     }
 
@@ -90,6 +114,9 @@ export async function writeReviewAndUpdateRegistry(
         .replace('{{isScale18}}', templateData.isScale18)
         .replace('{{isUpgradeable}}', templateData.isUpgradeable)
         .replace('{{hasUpgradeableElements}}', templateData.hasUpgradeableElements)
+        .replace('{{hasPublicationGaps}}', templateData.hasPublicationGaps)
+        .replace('{{publicationGapsDetail}}', warnings?.hasPublicationGaps ? PUBLICATION_GAPS_DETAIL : '')
+        .replace('{{freshnessNotes}}', FRESHNESS_PLACEHOLDER)
         .replace('{{isUsable}}', templateData.isUsable)
         .replace('{{tenderlySimUrl}}', tenderlysimUrl)
 
@@ -107,7 +134,10 @@ export async function writeReviewAndUpdateRegistry(
         name: `${(contractName.charAt(0).toUpperCase() + contractName.slice(1)).replace(' ', '')}RateProvider.md`,
         summary: templateData.isUsable === 'USABLE' ? 'safe' : 'unsafe',
         review: `./${(contractName.charAt(0).toUpperCase() + contractName.slice(1)).replace(' ', '')}RateProviderReview${shortUuid}.md`,
-        warnings: warnings?.isMarketRate ? ['market-rate'] : [],
+        warnings: [
+            ...(warnings?.isMarketRate ? ['market-rate'] : []),
+            ...(warnings?.hasPublicationGaps ? ['publication-gaps'] : []),
+        ],
         factory: '',
         upgradeableComponents: upgradeData.map((contract) => ({
             entrypoint: contract.address,
