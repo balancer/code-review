@@ -54,6 +54,7 @@ jobs:
         run: |
           echo "GITHUB_OUTPUT: ${{ env.GITHUB_OUTPUT }}"
           echo "hypernative_agent_ids: '${{ steps.process-issue.outputs.hypernative_agent_ids }}'"
+          echo "hypernative_agent_error: '${{ steps.process-issue.outputs.hypernative_agent_error }}'"
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v7.0.8
         with:
@@ -78,6 +79,7 @@ jobs:
             ### Hypernative agents
             - IDs: `${{ steps.process-issue.outputs.hypernative_agent_ids }}`
             - Names: `${{ steps.process-issue.outputs.hypernative_agent_names }}`
+            ${{ steps.process-issue.outputs.hypernative_agent_error != '' && format('- **Creation failed:** {0}', steps.process-issue.outputs.hypernative_agent_error) || '' }}
 
             Closes #${{ github.event.issue.number }}
           labels: |
