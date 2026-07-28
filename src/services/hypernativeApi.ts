@@ -60,10 +60,7 @@ class HypernativeApi {
             })
 
             if (!response.ok) {
-                const responseBody = await response.text()
-                console.error('Response Status:', response.status)
-                console.error('Response Body:', responseBody)
-                throw new Error(`HTTP error! status: ${response.status}`)
+                await this.throwHttpError(response)
             }
 
             const data: any = await response.json()
@@ -140,10 +137,7 @@ class HypernativeApi {
             })
 
             if (!response.ok) {
-                const responseBody = await response.text()
-                console.error('Response Status:', response.status)
-                console.error('Response Body:', responseBody)
-                throw new Error(`HTTP error! status: ${response.status}`)
+                await this.throwHttpError(response)
             }
 
             const data: any = await response.json()
@@ -313,6 +307,28 @@ class HypernativeApi {
             throw new Error(`Unsupported chain: ${chain.name}`)
         }
         return validChainName
+    }
+
+    private async throwHttpError(response: Response): Promise<never> {
+        const responseBody = await response.text()
+        console.error('Response Status:', response.status)
+        console.error('Response Body:', responseBody)
+
+        let detail = `HTTP ${response.status}`
+        try {
+            const parsed = JSON.parse(responseBody)
+            if (parsed?.error) {
+                detail = `${detail}: ${parsed.error}`
+            } else if (responseBody) {
+                detail = `${detail}: ${responseBody}`
+            }
+        } catch {
+            if (responseBody) {
+                detail = `${detail}: ${responseBody}`
+            }
+        }
+
+        throw new Error(detail)
     }
 }
 
