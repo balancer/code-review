@@ -4668,6 +4668,32 @@
           "implementationReviewed": "0x05de079a28386135e048369cdf0bc4d326d5ebdf"
         }
       ]
+    },
+    "0xeC8e3f795b28E86967265A4c4715aB609CBDe68d": {
+      "asset": "0xb83d27f0f4133a7b0377a88089583131a903fdc7",
+      "name": "TreehouseHYPERateProvider.md",
+      "summary": "safe",
+      "review": "./TreehouseHYPERateProviderRevieweeb6.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x9209648ec9d448ef57116b73a2f081835643dc7a",
+          "implementationReviewed": "0x1bbfe538ccebe1df35c2ebe35203d40cb18fdae0"
+        },
+        {
+          "entrypoint": "0xb83d27f0f4133a7b0377a88089583131a903fdc7",
+          "implementationReviewed": "0xb9d95339f7d7b0e85d3f83d3e3df1eae334325f2"
+        },
+        {
+          "entrypoint": "0xfd739d4e423301ce9385c1fb8850539d657c296d",
+          "implementationReviewed": "0xfe3216d46448efd7708435eeb851950742681975"
+        },
+        {
+          "entrypoint": "0x4b797a93dfc3d18cf98b7322a2b142fa8007508f",
+          "implementationReviewed": "0x7576dfe1f86cb38048cc6a6dd68c5d5a9c28df14"
+        }
+      ]
     }
   },
   "plasma": {
