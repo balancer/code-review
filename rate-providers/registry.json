@@ -5360,6 +5360,22 @@
           "implementationReviewed": "0xbd940fc427878eaa998f0713a16fed1cb5e892b1"
         }
       ]
+    },
+    "0x3ADD1546a0236a84512DCb9f17d2D346aba7402f": {
+      "asset": "0x4FC5B9f8933597D3ecf84d0611687E1Dc8DD576f",
+      "name": "SPDRBloomberg1-3M T-Bill aStockRateProvider.md",
+      "summary": "safe",
+      "review": "./SPDRBloomberg1-3M T-Bill aStockRateProviderReviewcd17.md",
+      "warnings": [
+        "market-rate"
+      ],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x037848af338c38e1e0ab722be80bf4c2e612a1f7",
+          "implementationReviewed": "0x8745912828473e9bef9d843ce8629bee3dcb9fec"
+        }
+      ]
     }
   }
 }
