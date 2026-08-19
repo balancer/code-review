@@ -240,38 +240,6 @@
         }
       ]
     },
-    "0x3222d3De5A9a3aB884751828903044CC4ADC627e": {
-      "asset": "0x4186BFC76E2E237523CBC30FD220FE055156b41F",
-      "name": "RsETHRateProvider",
-      "summary": "safe",
-      "review": "./rsETHRateProviderArbitrum.md",
-      "warnings": [
-        "donation"
-      ],
-      "factory": "",
-      "upgradeableComponents": [
-        {
-          "entrypoint": "0x349A73444b1a310BAe67ef67973022020d70020d",
-          "implementationReviewed": "0x8B9991f89Fc31600DCE064566ccE28dC174Fb8E4"
-        },
-        {
-          "entrypoint": "0x947Cb49334e6571ccBFEF1f1f1178d8469D65ec7",
-          "implementationReviewed": "0xc5cD38d47D0c2BD7Fe18c64a50c512063DC29700"
-        },
-        {
-          "entrypoint": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7",
-          "implementationReviewed": "0x60FF20BACD9A647e4025Ed8b17CE30e40095A1d2"
-        },
-        {
-          "entrypoint": "0x3D08ccb47ccCde84755924ED6B0642F9aB30dFd2",
-          "implementationReviewed": "0x0379E85188BC416A1D43Ab04b28F38B5c63F129E"
-        },
-        {
-          "entrypoint": "0x8546A7C8C3C537914C3De24811070334568eF427",
-          "implementationReviewed": "0xD7DB9604EF925aF96CDa6B45026Be64C691C7704"
-        }
-      ]
-    },
     "0x3a216B01db971Bf28D171C9dA44Cc8C89867697F": {
       "asset": "0xCA5d8F8a8d49439357d3CF46Ca2e720702F132b8",
       "name": "ConstantRateProvider",
@@ -3394,20 +3362,6 @@
       "factory": "0x83E443EF4f9963C77bd860f94500075556668cb8",
       "upgradeableComponents": []
     },
-    "0x1373A61449C26CC3F48C1B4c547322eDAa36eB12": {
-      "asset": "0x4186BFC76E2E237523CBC30FD220FE055156b41F",
-      "name": "RSETHRateReceiver",
-      "summary": "safe",
-      "review": "./rsETHRateProviderOptimism.md",
-      "warnings": [],
-      "factory": "",
-      "upgradeableComponents": [
-        {
-          "entrypoint": "0x1373A61449C26CC3F48C1B4c547322eDAa36eB12",
-          "implementationReviewed": "0x1373A61449C26CC3F48C1B4c547322eDAa36eB12"
-        }
-      ]
-    },
     "0x0643b504c2fa33b7f98a99b92138d94d372998de": {
       "asset": "0x61b620FAd391b53A2D0973b10a3Ed69558d5c66E",
       "name": "WrappedAaveOptimism DAIRateProvider.md",
@@ -4116,15 +4070,6 @@
       "factory": "",
       "upgradeableComponents": []
     },
-    "0x5c08Bbc2C47447854958060725e437E6Dd003332": {
-      "asset": "0x7c050be1dded733bd44116b60a8a35125ba47459",
-      "name": "RsETHWrapperRateProvider.md",
-      "summary": "safe",
-      "review": "./RsETHWrapperRateProviderReview717e.md",
-      "warnings": [],
-      "factory": "",
-      "upgradeableComponents": []
-    },
     "0xc76995054ce51dfbbc954840d699b2f33d2538ee": {
       "asset": "0xc76995054ce51dfbbc954840d699b2f33d2538ee",
       "name": "BeetsLoopedSonicRateProvider.md",
@@ -4756,15 +4701,6 @@
       "name": "Wrapped Aave Plasma sUSDe",
       "summary": "safe",
       "review": "./statATokenv2RateProvider.md",
-      "warnings": [],
-      "factory": "",
-      "upgradeableComponents": []
-    },
-    "0xF1fD29270e61D4a7885E9B4EF6476Daf2Ab6F85D": {
-      "asset": "0xe561fe05c39075312aa9bc6af79ddae981461359",
-      "name": "RsETHWrapperRateProvider.md",
-      "summary": "safe",
-      "review": "./RsETHWrapperRateProviderReviewacb1.md",
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
