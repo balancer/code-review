@@ -5428,7 +5428,7 @@
     "0x3ADD1546a0236a84512DCb9f17d2D346aba7402f": {
       "asset": "0x4FC5B9f8933597D3ecf84d0611687E1Dc8DD576f",
       "name": "SPDRBloomberg1-3M T-Bill aStockRateProvider.md",
-      "summary": "unsafe",
+      "summary": "safe",
       "review": "./SPDRBloomberg1-3M T-Bill aStockRateProviderReviewcd17.md",
       "warnings": [
         "market-rate"

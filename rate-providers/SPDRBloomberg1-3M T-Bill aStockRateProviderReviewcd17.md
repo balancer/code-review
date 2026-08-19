@@ -16,7 +16,7 @@ Public docs at https://docs.anchored.finance/. aBIL is Anchored's tokenized SPDR
 Each of the items below represents an absolute requirement for the Rate Provider. If any of these is unchecked, the Rate Provider is unfit to use.
 
 - [x] Implements the [`IRateProvider`](https://github.com/balancer/balancer-v2-monorepo/blob/bc3b3fee6e13e01d2efe610ed8118fdb74dfc1f2/pkg/interfaces/contracts/pool-utils/IRateProvider.sol) interface.
-- [ ] `getRate` returns an 18-decimal fixed point number (i.e., 1 == 1e18) regardless of underlying token decimals.
+- [x] `getRate` returns an 18-decimal fixed point number (i.e., 1 == 1e18) regardless of underlying token decimals.
 
 ### Administrative Privileges
 - [ ] The Rate Provider is upgradeable** (e.g., via a proxy architecture).
@@ -24,7 +24,7 @@ Each of the items below represents an absolute requirement for the Rate Provider
    about the involved contracts in this [tenderly simulation](https://www.tdly.co/shared/simulation/9a151a97-4cd6-4846-9b84-d9b375f00b60)
 
 ## Conclusion
-**Summary judgment: UNUSABLE**
+**Summary judgment: USABLE**
 
 ** upgradeable in this context means that:
 - The contract is a proxy contract with an implementation sourced from Etherscan and the proxy emitted an "Upgraded" event.
