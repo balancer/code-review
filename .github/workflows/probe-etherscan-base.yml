@@ -1,6 +1,11 @@
 name: probe etherscan base deployment
 on:
   workflow_dispatch:
+  pull_request:
+    paths:
+      - '.github/workflows/probe-etherscan-base.yml'
+      - 'scripts/probe-etherscan-base-deployment.ts'
+      - 'src/app.ts'
 jobs:
   probe:
     runs-on: ubuntu-latest
