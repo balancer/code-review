@@ -16,15 +16,42 @@ const ADDRESSES = [
     '0x9c2dcdbdb3f0a0f628d1112bbcabd9ae75353df3', // asset from issue #806
 ] as Address[]
 
+async function probeRaw(apiKey: string) {
+    const url =
+        `https://api.etherscan.io/v2/api?chainid=${base.id}` +
+        `&module=contract&action=getcontractcreation` +
+        `&contractaddresses=${ADDRESSES.join(',')}` +
+        `&apikey=${apiKey}`
+
+    const response = await fetch(url)
+    const data = await response.json()
+    console.log(`HTTP ${response.status}`)
+    console.log(`status=${data.status} message=${data.message}`)
+    console.log(`result_type=${Array.isArray(data.result) ? 'array' : typeof data.result}`)
+    if (typeof data.result === 'string') {
+        console.log(`result=${data.result}`)
+    } else if (Array.isArray(data.result)) {
+        console.log(`result_len=${data.result.length}`)
+    }
+    return data
+}
+
 async function main() {
     const apiKey = process.env.ETHERSCAN_API_KEY
     if (!apiKey) {
         throw new Error('ETHERSCAN_API_KEY is not set')
     }
 
-    const api = new EtherscanApi(base, apiKey)
     console.log(`Probing Etherscan V2 getcontractcreation on Base for ${ADDRESSES.length} addresses...`)
+    const raw = await probeRaw(apiKey)
 
+    if (raw.status !== '1' || !Array.isArray(raw.result)) {
+        throw new Error(
+            `Etherscan V2 Base getcontractcreation failed: status=${raw.status} message=${raw.message} result=${typeof raw.result === 'string' ? raw.result : JSON.stringify(raw.result)?.slice(0, 200)}`,
+        )
+    }
+
+    const api = new EtherscanApi(base, apiKey)
     const results = await api.getDeploymentTxHashAndBlock(ADDRESSES)
 
     for (const result of results) {
