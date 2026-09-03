@@ -1,0 +1,17 @@
+name: probe etherscan base deployment
+on:
+  workflow_dispatch:
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Probe Etherscan V2 Base getcontractcreation
+        run: npx tsx scripts/probe-etherscan-base-deployment.ts
+        env:
+          ETHERSCAN_API_KEY: ${{ secrets.ETHERSCAN_API_KEY }}

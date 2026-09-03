@@ -97,10 +97,36 @@ class RateProviderDataService {
     public async getDeploymentBlocks(addresses: Address[]): Promise<{ address: Address; deploymentTxHash: Hex }[]> {
         const chainApi = this.getApiForFunction('getDeploymentBlocks')
 
-        // The addresses length can be arbitrary but the etherscan API only allows 5 addresses at a time
-        // so we need to chunk the addresses and call the API sequentially
+        try {
+            return await this.fetchDeploymentBlocksFromApi(chainApi, addresses)
+        } catch (error) {
+            // Base/Optimism use Blockscout for getDeploymentBlocks, but that endpoint is often
+            // flaky (HTTP 500) or rate-limited. Fall back to Etherscan V2 when a key is available.
+            const canFallbackToEtherscan =
+                (this.chain.id === base.id || this.chain.id === optimism.id) && Boolean(this.apiKey)
+
+            if (!canFallbackToEtherscan) {
+                throw error
+            }
+
+            console.warn(
+                `Blockscout getDeploymentBlocks failed for ${this.chain.name}; falling back to Etherscan V2:`,
+                error instanceof Error ? error.message : error,
+            )
+            return await this.fetchDeploymentBlocksFromApi(new EtherscanApi(this.chain, this.apiKey), addresses)
+        }
+    }
+
+    /**
+     * Chunks addresses and fetches deployment info from the given explorer API.
+     * Explorer APIs typically allow at most 5 addresses per getcontractcreation call.
+     */
+    private async fetchDeploymentBlocksFromApi(
+        chainApi: ChainApi,
+        addresses: Address[],
+    ): Promise<{ address: Address; deploymentTxHash: Hex }[]> {
         const chunkSize = 5
-        const txHashes = []
+        const txHashes: { address: Address; deploymentTxHash: Hex }[] = []
 
         for (let i = 0; i < addresses.length; i += chunkSize) {
             const chunk = addresses.slice(i, i + chunkSize)
