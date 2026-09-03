@@ -5376,6 +5376,15 @@
           "implementationReviewed": "0x8745912828473e9bef9d843ce8629bee3dcb9fec"
         }
       ]
+    },
+    "0xa321A4bC2a55E9EC674897fe3fC9Dd08beFf1d5c": {
+      "asset": "0x215394B5677Cb7a18B6fA8cc2cD155C024ee6b2E",
+      "name": "BlueberryUSDCRateProvider.md",
+      "summary": "safe",
+      "review": "./BlueberryUSDCRateProviderReview8a9a.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   }
 }
