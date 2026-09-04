@@ -5483,6 +5483,15 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0x497BDBc39B9f70b7CE781cc74e45E1cB897843C0": {
+      "asset": "0xC2ddc1004CA0d6cC4bFd1dCD03Dcf855bED8E670",
+      "name": "BlueberryAUSDRateProvider.md",
+      "summary": "safe",
+      "review": "./BlueberryAUSDRateProviderReview3269.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": []
     }
   }
 }

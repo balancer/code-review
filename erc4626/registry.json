@@ -3458,6 +3458,17 @@
       "canUseBufferForSwaps": true,
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
+    },
+    "0xC2ddc1004CA0d6cC4bFd1dCD03Dcf855bED8E670": {
+      "asset": "0x00000000eFE302BEAA2b3e6e1b18d08D69a9012a",
+      "name": "BlueberryAUSDErc4626Vault.md",
+      "summary": "safe",
+      "review": "./BlueberryAUSDErc4626VaultReview0d43.md",
+      "warnings": [],
+      "upgradeableComponents": [],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
     }
   }
 }
