@@ -23,6 +23,13 @@ Each of the items below represents an absolute requirement for the Rate Provider
 - [{{hasUpgradeableElements}}] Other contracts which are part of the \`getRate\` callchain are upgradeable**. You can find more information
    about the involved contracts in this [tenderly simulation]({{tenderlySimUrl}})
 
+### Oracles
+- [{{hasPublicationGaps}}] The source stops publishing on a schedule rather than updating continuously (e.g., it follows market hours, or it
+   publishes a periodic valuation). An elapsed-time staleness bound cannot be calibrated for such a source: any bound short enough to
+   catch a failure between publications also rejects every routine gap. Whether the gap is a risk depends on what the value does while
+   the source is silent. A live market quote can gap when the venue reopens; a smooth accrual cannot.
+{{publicationGapsDetail}}- Freshness: {{freshnessNotes}}
+
 ## Conclusion
 **Summary judgment: {{isUsable}}**
 

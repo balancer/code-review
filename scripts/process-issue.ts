@@ -97,6 +97,16 @@ async function processIssue(issueJson: string) {
         },
     }
 
+    // These strings must match the checkbox labels in .github/ISSUE_TEMPLATE/automated-review-request.yml
+    // exactly. A label that no longer matches silently reads as unselected rather than failing.
+    const selected = issueData.additional_contract_information.selected
+    const warnings = {
+        isMarketRate: selected.includes('Is the rate provider reporting a market rate?'),
+        hasPublicationGaps: selected.includes(
+            'Does the price source stop publishing on a schedule (market hours, or a periodic valuation) rather than updating continuously?',
+        ),
+    }
+
     await writeReviewAndUpdateRegistry(
         issueData.rate_provider_contract_address,
         network,
@@ -104,9 +114,7 @@ async function processIssue(issueJson: string) {
         rpcUrl as string,
         issueData.protocol_documentation,
         issueData.audits,
-        issueData.additional_contract_information.selected.includes('Is the rate provider reporting a market rate?')
-            ? { isMarketRate: true }
-            : undefined,
+        warnings,
     )
 
     // this step requires the registry to be read thus having the registry updated already

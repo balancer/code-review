@@ -30,7 +30,7 @@ const fs = require('fs')
 // to use this script use the command below
 // for network see the viem chains
 // Important: The custom RPC URL in the .env must support createAccessList (or the viem default rpc url)
-// npm run write-review -- --rateProviderAddress <address> --network <network> --rateProviderAsset <asset> --rpcUrl <rpcUrl>
+// npm run write-review -- --rateProviderAddress <address> --network <network> --rateProviderAsset <asset> --rpcUrl <rpcUrl> --isStablecoin <true|false> --publicationGaps <true|false>
 
 // Parse command-line arguments using yargs
 async function main() {
@@ -71,6 +71,13 @@ async function main() {
             alias: 'a',
             type: 'string',
             description: 'The asset the rate provider provides the rate for',
+            demandOption: true,
+        })
+        .option('publicationGaps', {
+            alias: 'g',
+            type: 'string',
+            description:
+                "The price source stops publishing on a schedule rather than updating continuously, either following a venue calendar or publishing a periodic valuation. Read the source's publication record to answer this; the asset class does not decide it",
             demandOption: true,
         })
         .option('rpcUrl', {
@@ -147,7 +154,11 @@ async function main() {
               throw new Error(`Invalid rateProviderAsset: ${argv.rateProviderAsset}. It must start with "0x".`)
           })()
 
-    await writeReviewAndUpdateRegistry(rateProviderAddress, network, rateProviderAsset, argv.rpcUrl)
+    const hasPublicationGaps = argv.publicationGaps === 'true' ? true : false
+
+    await writeReviewAndUpdateRegistry(rateProviderAddress, network, rateProviderAsset, argv.rpcUrl, undefined, undefined, {
+        hasPublicationGaps,
+    })
 
     // the registry file has been updated. All relevant information can be read from there and don't need to be passed as arguments
     const isStablecoin = argv.isStablecoin === 'true' ? true : false
