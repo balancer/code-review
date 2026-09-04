@@ -5418,6 +5418,24 @@
           "implementationReviewed": "0x8745912828473e9bef9d843ce8629bee3dcb9fec"
         }
       ]
+    },
+    "0x90769892781817682FEEd2EdbD74092c50C6204f": {
+      "asset": "0x8959f4e6ed1f4567a464959793d5f8f6f33c1c8b",
+      "name": "WrappedNeverlandWBTCRateProvider.md",
+      "summary": "safe",
+      "review": "./WrappedNeverlandWBTCRateProviderReviewb422.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x80f00661b13cc5f6ccd3885be7b4c9c67545d585",
+          "implementationReviewed": "0x507c53de7b334dae1ecfe2e6d8cf75716431c3fc"
+        },
+        {
+          "entrypoint": "0x8959f4e6ed1f4567a464959793d5f8f6f33c1c8b",
+          "implementationReviewed": "0xd75d6bf28519acd719ae59cbc47d9af0a0792af1"
+        }
+      ]
     }
   }
 }
