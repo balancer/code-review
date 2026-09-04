@@ -126,11 +126,12 @@ class RateProviderDataService {
     /**
      * Fetches upgradeable contracts information. Includes the rate provider if upgradeable.
      * @returns An array of upgradeable contracts information.
+     * `wasUpgraded` is `null` when deployment/upgrade history could not be verified.
      */
     public async getUpgradeableContracts(): Promise<
         {
             address: Address
-            wasUpgraded: boolean
+            wasUpgraded: boolean | null
             implementation: Address
         }[]
     > {
@@ -147,9 +148,29 @@ class RateProviderDataService {
         // filter out the contracts that are not proxies
         const filteredProxiesList = proxiesWithRateProvider.filter((p) => p.Proxy === '1')
 
-        const proxiesWithRateProviderDeploymentInfo = await this.getDeploymentBlocks(
-            filteredProxiesList.map((p) => p.address),
-        )
+        let proxiesWithRateProviderDeploymentInfo: { address: Address; deploymentTxHash: Hex }[]
+        try {
+            proxiesWithRateProviderDeploymentInfo = await this.getDeploymentBlocks(
+                filteredProxiesList.map((p) => p.address),
+            )
+        } catch (error) {
+            // Explorer deployment lookup can fail (e.g. Blockscout HTTP 500 on Base).
+            // Reviews only need proxy + implementation; leave wasUpgraded unknown.
+            console.warn(
+                `Failed to determine upgrade history for ${this.chain.name}; continuing with proxy list only:`,
+                error instanceof Error ? error.message : error,
+            )
+            return filteredProxiesList.map((p) => {
+                if (!p.Implementation) {
+                    throw new Error(`Implementation is undefined for contract at address ${p.address}`)
+                }
+                return {
+                    address: p.address,
+                    wasUpgraded: null,
+                    implementation: p.Implementation,
+                }
+            })
+        }
 
         const publicClient = createPublicClient({
             chain: this.chain,
@@ -205,11 +226,15 @@ class RateProviderDataService {
 
     /**
      * Checks if the rate provider is upgradeable.
-     * @returns True if the rate provider is upgradeable, false otherwise.
+     * @returns True if an Upgraded event was positively observed.
+     * @throws If upgrade history could not be verified for any proxy.
      */
     public async getIsRateProviderUpgradeable(): Promise<boolean> {
         const upgradeableContracts = await this.getUpgradeableContracts()
-        return upgradeableContracts.some((c) => c.wasUpgraded)
+        if (upgradeableContracts.some((c) => c.wasUpgraded === null)) {
+            throw new Error(`Upgrade history could not be verified for one or more proxies on ${this.chain.name}`)
+        }
+        return upgradeableContracts.some((c) => c.wasUpgraded === true)
     }
 
     /**
