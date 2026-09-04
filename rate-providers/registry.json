@@ -1430,6 +1430,48 @@
       "warnings": [],
       "factory": "",
       "upgradeableComponents": []
+    },
+    "0x586d1D28D5F8aeD81dA8AEf7016c4108f7A4ce51": {
+      "asset": "0x9C2dCDbDB3F0A0F628D1112bBCABD9AE75353df3",
+      "name": "EmberHilbertBTCRateProvider.md",
+      "summary": "safe",
+      "review": "./EmberHilbertBTCRateProviderReview4689.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x1be88d8b5696a69378973729523f3a135921854b",
+          "implementationReviewed": "0xb872a1e6f37c66cce3eb704cc756ea681c0e5b5a"
+        },
+        {
+          "entrypoint": "0xe32ba1c7546cf0793ce88ddcb7883d37fba83789",
+          "implementationReviewed": "0xb872a1e6f37c66cce3eb704cc756ea681c0e5b5a"
+        },
+        {
+          "entrypoint": "0xb3201cde011873f604bf3f9be6bf3570ecc29b23",
+          "implementationReviewed": "0x029b8117fd9be010e32b19d7d9e35dca9e44ae6e"
+        },
+        {
+          "entrypoint": "0x9c2dcdbdb3f0a0f628d1112bbcabd9ae75353df3",
+          "implementationReviewed": "0x23cc7e7e237d84b1ec055e863097e864aa282a1c"
+        },
+        {
+          "entrypoint": "0x2bf9fa23f038057249e975213cf2b31bf8c512d8",
+          "implementationReviewed": "0x20745842191bef60f9ed0debdfd166f04f8abd4d"
+        },
+        {
+          "entrypoint": "0x586d1d28d5f8aed81da8aef7016c4108f7a4ce51",
+          "implementationReviewed": "0x20745842191bef60f9ed0debdfd166f04f8abd4d"
+        },
+        {
+          "entrypoint": "0xb6862ada846003e66e2bc2de1e1acc4687f2ccb3",
+          "implementationReviewed": "0x029b8117fd9be010e32b19d7d9e35dca9e44ae6e"
+        },
+        {
+          "entrypoint": "0x586d1D28D5F8aeD81dA8AEf7016c4108f7A4ce51",
+          "implementationReviewed": "0x20745842191bef60f9ed0debdfd166f04f8abd4d"
+        }
+      ]
     }
   },
   "ethereum": {
