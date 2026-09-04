@@ -5437,6 +5437,44 @@
         }
       ]
     },
+    "0xD68F059373f91c12c1D72A2b3d897Bc6DE79DdB1": {
+      "asset": "0x98a297e6424787e57af119949d7e00b721f832bb",
+      "name": "WrappedNeverlandcbBTCRateProvider.md",
+      "summary": "safe",
+      "review": "./WrappedNeverlandcbBTCRateProviderReview44a4.md",
+      "warnings": [],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x80f00661b13cc5f6ccd3885be7b4c9c67545d585",
+          "implementationReviewed": "0x507c53de7b334dae1ecfe2e6d8cf75716431c3fc"
+        },
+        {
+          "entrypoint": "0x98a297e6424787e57af119949d7e00b721f832bb",
+          "implementationReviewed": "0xd75d6bf28519acd719ae59cbc47d9af0a0792af1"
+        }
+      ]
+    },
+    "0x0c11574bbeBf7cC803C35a48785AeE4826E43318": {
+      "asset": "0x22139a346b6312eb0a9812c67cfce4a694676d59",
+      "name": "WrappedNeverlandXAUt0RateProvider.md",
+      "summary": "safe",
+      "review": "./WrappedNeverlandXAUt0RateProviderReview5d0b.md",
+      "warnings": [
+        "market-rate"
+      ],
+      "factory": "",
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x22139a346b6312eb0a9812c67cfce4a694676d59",
+          "implementationReviewed": "0xd75d6bf28519acd719ae59cbc47d9af0a0792af1"
+        },
+        {
+          "entrypoint": "0x80f00661b13cc5f6ccd3885be7b4c9c67545d585",
+          "implementationReviewed": "0x507c53de7b334dae1ecfe2e6d8cf75716431c3fc"
+        }
+      ]
+    },
     "0xa321A4bC2a55E9EC674897fe3fC9Dd08beFf1d5c": {
       "asset": "0x215394B5677Cb7a18B6fA8cc2cD155C024ee6b2E",
       "name": "BlueberryUSDCRateProvider.md",

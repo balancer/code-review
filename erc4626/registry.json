@@ -3408,6 +3408,46 @@
       "useUnderlyingForAddRemove": true,
       "useWrappedForAddRemove": true
     },
+    "0x98a297e6424787e57af119949d7e00b721f832bb": {
+      "asset": "0xd18B7EC58Cdf4876f6AFebd3Ed1730e4Ce10414b",
+      "name": "WrappedNeverlandcbBTCErc4626Vault.md",
+      "summary": "safe",
+      "review": "./WrappedNeverlandcbBTCErc4626VaultReview329b.md",
+      "warnings": [],
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x80f00661b13cc5f6ccd3885be7b4c9c67545d585",
+          "implementationReviewed": "0x507c53de7b334dae1ecfe2e6d8cf75716431c3fc"
+        },
+        {
+          "entrypoint": "0x98a297e6424787e57af119949d7e00b721f832bb",
+          "implementationReviewed": "0xd75d6bf28519acd719ae59cbc47d9af0a0792af1"
+        }
+      ],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
+    "0x22139a346b6312eb0a9812c67cfce4a694676d59": {
+      "asset": "0x01bFF41798a0BcF287b996046Ca68b395DbC1071",
+      "name": "WrappedNeverlandXAUt0Erc4626Vault.md",
+      "summary": "safe",
+      "review": "./WrappedNeverlandXAUt0Erc4626VaultReview167e.md",
+      "warnings": [],
+      "upgradeableComponents": [
+        {
+          "entrypoint": "0x22139a346b6312eb0a9812c67cfce4a694676d59",
+          "implementationReviewed": "0xd75d6bf28519acd719ae59cbc47d9af0a0792af1"
+        },
+        {
+          "entrypoint": "0x80f00661b13cc5f6ccd3885be7b4c9c67545d585",
+          "implementationReviewed": "0x507c53de7b334dae1ecfe2e6d8cf75716431c3fc"
+        }
+      ],
+      "canUseBufferForSwaps": true,
+      "useUnderlyingForAddRemove": true,
+      "useWrappedForAddRemove": true
+    },
     "0x215394B5677Cb7a18B6fA8cc2cD155C024ee6b2E": {
       "asset": "0x754704Bc059F8C67012fEd69BC8A327a5aafb603",
       "name": "BlueberryUSDCErc4626Vault.md",
