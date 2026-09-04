@@ -2537,9 +2537,9 @@
     },
     "0x2c910F67DbF81099e6f8e126E7265d7595DC20aD": {
       "asset": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
-      "name": "HyUSD\u20ae0(hwHLP)- 11Erc4626Vault.md",
+      "name": "HyUSD₮0(hwHLP)- 11Erc4626Vault.md",
       "summary": "safe",
-      "review": "./HyUSD\u20ae0(hwHLP)- 11Erc4626VaultReview37fe.md",
+      "review": "./HyUSD₮0(hwHLP)- 11Erc4626VaultReview37fe.md",
       "warnings": [],
       "upgradeableComponents": [],
       "canUseBufferForSwaps": true,
@@ -2570,9 +2570,9 @@
     },
     "0x06Fd9D03b3d0F18E4919919b72D30c582f0a97E5": {
       "asset": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
-      "name": "HyperlendInterestBearing USD\u20ae0 (Wrapped HLP)Erc4626Vault.md",
+      "name": "HyperlendInterestBearing USD₮0 (Wrapped HLP)Erc4626Vault.md",
       "summary": "safe",
-      "review": "./HyperlendInterestBearing USD\u20ae0 (Wrapped HLP)Erc4626VaultReview02cf.md",
+      "review": "./HyperlendInterestBearing USD₮0 (Wrapped HLP)Erc4626VaultReview02cf.md",
       "warnings": [],
       "upgradeableComponents": [],
       "canUseBufferForSwaps": true,
@@ -2592,9 +2592,9 @@
     },
     "0xDC6F4239C1D8D3b955C06CB8f1A6cF18EFfc5BFe": {
       "asset": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
-      "name": "StaticUSD\u20ae0HypurrErc4626Vault.md",
+      "name": "StaticUSD₮0HypurrErc4626Vault.md",
       "summary": "safe",
-      "review": "./StaticUSD\u20ae0HypurrErc4626VaultReview4f04.md",
+      "review": "./StaticUSD₮0HypurrErc4626VaultReview4f04.md",
       "warnings": [],
       "upgradeableComponents": [
         {
@@ -2612,7 +2612,7 @@
     },
     "0x1C5164A764844356d57654ea83f9f1B72Cd10db5": {
       "asset": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
-      "name": "HyUSD\u20ae0(LoopedHYPE).md",
+      "name": "HyUSD₮0(LoopedHYPE).md",
       "summary": "safe",
       "review": "./HyUSDT0(LoopedHYPE).md",
       "warnings": [],
